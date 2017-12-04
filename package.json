@@ -1,0 +1,16 @@
+{
+  "name": "gci-leaders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scrap.js && node generate.js"
+  },
+  "keywords": [],
+  "author": "blazeu <neversleepman@tfwno.gf>",
+  "license": "MIT",
+  "dependencies": {
+    "mustache": "^2.3.0",
+    "node-fetch": "^1.7.3"
+  }
+}
