@@ -26,7 +26,7 @@ async function searchGitHubOrgs(query) {
   const res = await fetch(
     `${GITHUB_API_BASE}/search/users?q=${query}%20type:org`,
     {
-      headers: token ? { Authorization: `token ${token}` } : {}
+      headers: token ? { Authorization: `token ${token}` } : {},
     }
   )
   const { items } = await res.json()
@@ -42,7 +42,7 @@ async function findOrganization({
   blog_url,
   guide_to_working_url,
 }) {
-  const ghPattern = /(?:https?:\/\/)?(?:github\.com|gitter\.im)\/([a-zA-Z0-9-]+)/i
+  const pattern = /(?:https?:\/\/)?(?:github\.com|gitter\.im)\/([a-zA-Z0-9-]+)/i
   const websites = [
     mailing_list,
     website_url,
@@ -52,14 +52,14 @@ async function findOrganization({
   ]
 
   const orgFromWebsites = websites
-    .map(website => (ghPattern.exec(website) || [])[1])
+    .map(website => (pattern.exec(website) || [])[1])
     .find(org => org)
 
   if (orgFromWebsites) {
     return orgFromWebsites
   }
 
-  const orgFromDescription = (ghPattern.exec(description) || [])[1]
+  const orgFromDescription = (pattern.exec(description) || [])[1]
 
   if (orgFromDescription) {
     return orgFromDescription
@@ -97,10 +97,10 @@ async function fetchOrgsWithData() {
 
 ;(async () => {
   const data = await fetchOrgsWithData()
-  
+
   // sort data by completed_task_instance_count
-  data.sort((a, b) => 
-    b.completed_task_instance_count - a.completed_task_instance_count
+  data.sort(
+    (a, b) => b.completed_task_instance_count - a.completed_task_instance_count
   )
 
   fs.writeFileSync('out/data.json', JSON.stringify(data))

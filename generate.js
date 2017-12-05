@@ -2,6 +2,9 @@ const fs = require('fs')
 const Mustache = require('mustache')
 const orgs = require('./out/data.json')
 
+const githubImage =
+  'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png'
+
 const template = `
 <!DOCTYPE html>
 <html>
@@ -43,16 +46,24 @@ const template = `
   </head>
   <body>
     <h1>GCI Current Leaders</h1>
-    <i>The leading participants for each organization are listed alphabetically according to their "display name"</i>
+    <i>
+      The leading participants for each organization are listed alphabetically
+      according to their "display name"
+    </i>
     <div class="orgs">
       {{#orgs}}
         <div class="org">
           <h3>
-            <a href="https://codein.withgoogle.com/organizations/{{slug}}">{{name}}</a>
+            <a href="https://codein.withgoogle.com/organizations/{{slug}}">
+              {{name}}
+            </a>
             <p>Task Completed: {{completed_task_instance_count}}</p>
             {{#github}}
             <a href="https://github.com/{{github}}">
-              <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" height="14" />
+              <img
+                src="${githubImage}"
+                height="18"
+              />
             </a>
             {{/github}}
           </h3>
