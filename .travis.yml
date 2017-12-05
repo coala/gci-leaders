@@ -1,13 +1,21 @@
-sudo: false
-language: node_js
+language: python
+python: 3.6
+
+before_install:
+  - nvm install 8
+  - npm install
+  - pip3 install coala-bears
+  - export PATH=$PATH:./node_modules/.bin
+  - export NODE_PATH=$NODE_PATH:./node_modules
 
 script:
+  - coala --non-interactive -V
   - npm run build
 
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  github_token: $GITHUB_TOKEN
   local_dir: out
-  on:
+  "on":
     branch: master

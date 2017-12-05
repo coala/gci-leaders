@@ -1,0 +1,13 @@
+---
+parserOptions:
+  ecmaVersion: 2017
+plugins:
+  - prettier
+rules:
+  prettier/prettier:
+    - error
+    - singleQuote: true
+      semi: false
+      trailingComma: es5
+      bracketSpacing: true
+      arrowParens: avoid

@@ -1,0 +1,31 @@
+[all]
+files = *.js
+max_line_length = 80
+use_spaces = True
+eslint_config = .eslintrc
+
+[all.whitespace]
+bears = SpaceConsistencyBear
+default_actions = *: ApplyPatchAction
+
+[all.eslint]
+bears = ESLintBear
+default_actions = *: ApplyPatchAction
+
+[all.linelength]
+ignore = generate.js
+bears = LineLengthBear
+
+[all.links]
+bears = InvalidLinkBear
+
+[json]
+files = *.json
+ignore = package-lock.json
+bears = JSONFormatBear
+indent_size = 2
+default_actions = *: ApplyPatchAction
+
+[yaml]
+files = *.yml, .eslintrc
+bears = YAMLLintBear
