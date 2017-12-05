@@ -47,8 +47,15 @@ const template = `
     <div class="orgs">
       {{#orgs}}
         <div class="org">
-          <h3><a href="https://codein.withgoogle.com/organizations/{{slug}}">{{name}}</a></h3>
-          <p>Task Completed: {{completed_task_instance_count}}</p>
+          <h3>
+            <a href="https://codein.withgoogle.com/organizations/{{slug}}">{{name}}</a>
+            <p>Task Completed: {{completed_task_instance_count}}</p>
+            {{#github}}
+            <a href="https://github.com/{{github}}">
+              <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" height="14" />
+            </a>
+            {{/github}}
+          </h3>
           <ul>
             {{#leaders}}
               <li>{{display_name}}</li>
