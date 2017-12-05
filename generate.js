@@ -47,7 +47,7 @@ const template = `
     <div class="orgs">
       {{#orgs}}
         <div class="org">
-          <h3>{{name}}</h3>
+          <h3><a href="https://codein.withgoogle.com/organizations/{{slug}}">{{name}}</a></h3>
           <ul>
             {{#leaders}}
               <li>{{display_name}}</li>
