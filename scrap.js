@@ -31,5 +31,11 @@ async function fetchOrgsWithLeaders() {
 
 ;(async () => {
   const data = await fetchOrgsWithLeaders()
+  
+  // sort data by completed_task_instance_count
+  data.sort((a, b) => 
+    b.completed_task_instance_count - a.completed_task_instance_count
+  )
+
   fs.writeFileSync('out/data.json', JSON.stringify(data))
 })()
