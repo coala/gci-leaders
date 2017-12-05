@@ -1,5 +1,5 @@
 [all]
-files = *.js
+files = *.js, static/js/*.js
 max_line_length = 80
 use_spaces = True
 eslint_config = .eslintrc

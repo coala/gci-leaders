@@ -8,6 +8,8 @@
   </head>
   <body>
     <h1>GCI Current Leaders</h1>
+    <small id="time" data-time="{{datetime}}">Last updated: {{datetime}} <span id="ago"></span></small>
+    <hr>
     <i>
       The leading participants for each organization are listed alphabetically
       according to their "display name".
@@ -40,5 +42,6 @@
         </div>
       {{/orgs}}
     </div>
+    <script src="static/js/app.js"></script>
   </body>
 </html>
