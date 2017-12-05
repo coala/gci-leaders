@@ -43,11 +43,12 @@ const template = `
   </head>
   <body>
     <h1>GCI Current Leaders</h1>
-    <i>Names are listed alphabetically</i>
+    <i>The leading participants for each organization are listed alphabetically according to their "display name"</i>
     <div class="orgs">
       {{#orgs}}
         <div class="org">
           <h3><a href="https://codein.withgoogle.com/organizations/{{slug}}">{{name}}</a></h3>
+          <p>Task Completed: {{completed_task_instance_count}}</p>
           <ul>
             {{#leaders}}
               <li>{{display_name}}</li>
