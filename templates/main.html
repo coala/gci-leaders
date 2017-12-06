@@ -4,10 +4,18 @@
     <meta charset="utf-8">
     <title>GCI Leaders</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="GCI Current Leaders">
+    <meta property="og:description" content="Google Code-in 2017 Current Leaders">
+    <meta property="og:image" content="{{{rootURL}}}/static/images/GCI-logo.jpg">
     <link rel="stylesheet" href="static/css/main.css">
   </head>
   <body>
-    <h1>GCI Current Leaders</h1>
+    <div>
+      <a href="http://codein.withgoogle.com">
+        <img class="gci-logo" src="static/images/GCI-logo.jpg">
+      </a>
+      <h1>Google Code-in 2017 Current Leaders</h1>
+    </div>
     <small id="time" data-time="{{datetime}}">Last updated: {{datetime}} <span id="ago"></span></small>
     <hr>
     <i>
@@ -42,6 +50,9 @@
         </div>
       {{/orgs}}
     </div>
+    <footer>
+      <small>Google Code-in and the Google Code-in logo are trademarks of Google Inc.</small>
+    </footer>
     <script src="static/js/app.js"></script>
   </body>
 </html>

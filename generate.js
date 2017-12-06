@@ -4,6 +4,7 @@ const ncp = require('ncp').ncp
 const orgs = require('./out/data.json')
 
 const datetime = new Date(fs.statSync('./out/data.json').mtime).toUTCString()
+const rootURL = process.env.URL
 
 ncp('static', 'out/static', err => {
   if (err) {
@@ -16,5 +17,6 @@ fs.writeFileSync(
   Mustache.render(fs.readFileSync('templates/main.html').toString(), {
     orgs,
     datetime,
+    rootURL,
   })
 )

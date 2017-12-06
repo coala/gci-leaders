@@ -32,6 +32,17 @@ ul {
   padding-left: 1em;
 }
 
+.gci-logo {
+  float: left;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+footer {
+  text-align: center;
+}
+
 @media only screen and (max-width : 450px) {
   .org {
     flex: 0 0 100%;
