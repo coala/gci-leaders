@@ -19,6 +19,15 @@ bears = LineLengthBear
 [all.links]
 bears = InvalidLinkBear
 
+[css]
+files = static/css/*.css
+bears = CSSLintBear
+
+[html]
+files = templates/*.html
+bears = HTMLLintBear
+htmllint_ignore = optional
+
 [json]
 files = *.json
 ignore = package-lock.json

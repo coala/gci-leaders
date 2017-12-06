@@ -1,0 +1,33 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 1em;
+}
+
+h1 {
+  margin: .5em 0 0 0;
+}
+
+.orgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.org {
+  flex: 0 0 25%;
+  margin-bottom: 1em;
+}
+
+.none {
+  color: gray;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1em;
+}
