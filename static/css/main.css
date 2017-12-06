@@ -31,3 +31,21 @@ ul {
   margin: 0;
   padding-left: 1em;
 }
+
+@media only screen and (max-width : 450px) {
+  .org {
+    flex: 0 0 100%;
+  }
+}
+
+@media only screen and (min-width : 450px) and (max-width : 600px) {
+  .org {
+    flex: 0 0 50%;
+  }
+}
+
+@media only screen and (min-width : 600px) and (max-width : 750px) {
+  .org {
+    flex: 0 0 33.333333%;
+  }
+}
