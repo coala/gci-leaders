@@ -1,7 +1,14 @@
 ---
+env:
+  node: true
+  browser: true
+  es6: true
 parserOptions:
   ecmaVersion: 2017
 plugins:
+  - prettier
+extends:
+  - eslint:recommended
   - prettier
 rules:
   prettier/prettier:
@@ -11,3 +18,4 @@ rules:
       trailingComma: es5
       bracketSpacing: true
       arrowParens: avoid
+  no-console: 0
