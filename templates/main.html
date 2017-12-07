@@ -22,7 +22,7 @@
       The leading participants for each organization are listed randomly. 
     </i>
     <div class="orgs">
-      {{#orgs}}
+      {{#withLeader}}
         <div class="org">
           <h3>
             <a href="https://codein.withgoogle.com/organizations/{{slug}}">
@@ -47,8 +47,32 @@
             {{/leaders}}
           </ul>
         </div>
-      {{/orgs}}
+      {{/withLeader}}
     </div>
+    {{#noLeader.length}}
+      <h3>Organization(s) with no listed leaders</h3>
+      <hr>
+      <div class="orgs">
+        {{#noLeader}}
+          <div class="org">
+            <h3>
+              <a href="https://codein.withgoogle.com/organizations/{{slug}}">
+                {{name}}
+              </a>
+              <p>Task Completed: {{completed_task_instance_count}}</p>
+              {{#github}}
+              <a href="https://github.com/{{github}}">
+                <img
+                  src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
+                  height="18"
+                />
+              </a>
+              {{/github}}
+            </h3>
+          </div>
+        {{/noLeader}}
+      </div>
+    {{/noLeader.length}}
     <footer>
       <small>Google Code-in and the Google Code-in logo are trademarks of Google Inc.</small>
     </footer>

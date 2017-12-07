@@ -12,11 +12,18 @@ ncp('static', 'out/static', err => {
   }
 })
 
+const noLeader = []
+const withLeader = orgs.filter(org => {
+  if (!org.leaders.length) noLeader.push(org)
+  return org.leaders.length
+})
+
 fs.writeFileSync(
   'out/index.html',
   Mustache.render(fs.readFileSync('templates/main.html').toString(), {
-    orgs,
+    withLeader,
     datetime,
     rootURL,
+    noLeader,
   })
 )
