@@ -26,3 +26,12 @@ function timeDifference(current, previous) {
     return 'approximately ' + Math.round(elapsed / msPerYear) + ' years ago'
   }
 }
+
+// select all leaderboards
+var allLeaders = document.querySelectorAll('div.org ul')
+allLeaders.forEach(function(orgList) {
+  // shuffle each leaderboard
+  for (var i = orgList.children.length; i >= 0; i--) {
+    orgList.appendChild(orgList.children[(Math.random() * i) | 0])
+  }
+})
