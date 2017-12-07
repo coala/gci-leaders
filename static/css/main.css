@@ -23,6 +23,10 @@ h1 {
   margin-bottom: 1em;
 }
 
+.org-image {
+  width: 80%;
+}
+
 .none {
   color: gray;
 }
@@ -58,5 +62,8 @@ footer {
 @media only screen and (min-width : 600px) and (max-width : 750px) {
   .org {
     flex: 0 0 33.333333%;
+  }
+  .org-image {
+    width: 100%;
   }
 }
