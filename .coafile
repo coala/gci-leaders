@@ -38,3 +38,12 @@ default_actions = *: ApplyPatchAction
 [yaml]
 files = *.yml, .eslintrc
 bears = YAMLLintBear
+
+[commit]
+bears = GitCommitBear
+shortlog_trailing_period = False
+shortlog_regex = ([^:]*|[^:]+: [A-Z0-9*].*)
+body_close_issue = True
+body_close_issue_full_url = True
+body_close_issue_on_last_line = True
+body_enforce_issue_reference = False
