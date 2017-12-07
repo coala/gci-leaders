@@ -66,6 +66,10 @@ ul {
   width: 40px;
 }
 
+.twitter > iframe {
+  width: 100% !important; /* csslint allow: important */
+}
+
 footer {
   padding-bottom: 1em;
   text-align: center;
