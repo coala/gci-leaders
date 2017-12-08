@@ -24,29 +24,35 @@
     <div class="orgs">
       {{#withLeader}}
         <div class="org">
-          <h3>
+          <div class="org-image">
             <a href="https://codein.withgoogle.com/organizations/{{slug}}">
-              <img class="org-image" src="https://{{image_url}}"> 
-              {{name}}
+              <img class="org-image" src="https://{{image_url}}">
             </a>
-            <p>Task Completed: {{completed_task_instance_count}}</p>
-            {{#github}}
-            <a href="https://github.com/{{github}}">
-              <img
-                src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
-                height="18"
-              />
-            </a>
-            {{/github}}
-          </h3>
-          <ul>
-            {{#leaders}}
-              <li>{{display_name}}</li>
-            {{/leaders}}
-            {{^leaders}}
-              <li class="none">None</li>
-            {{/leaders}}
-          </ul>
+          </div>
+          <div class="org-info">
+            <h3>
+              <a href="https://codein.withgoogle.com/organizations/{{slug}}">
+                {{name}}
+              </a>
+            </h3>
+            <p>Tasks Completed: {{completed_task_instance_count}}
+              {{#github}}
+              <a href="https://github.com/{{github}}">
+                <img
+                  src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
+                  class="github"
+                />
+              </a>
+              {{/github}}
+            </p>
+            <div class="org-leaderboard">
+              <ul>
+                {{#leaders}}
+                  <li>{{display_name}}</li>
+                {{/leaders}}
+              </ul>
+            </div>
+          </div>
         </div>
       {{/withLeader}}
     </div>
@@ -55,23 +61,30 @@
       <hr>
       <div class="orgs">
         {{#noLeader}}
-          <div class="org">
+        <div class="org">
+          <div class="org-image">
+            <a href="https://codein.withgoogle.com/organizations/{{slug}}">
+              <img class="org-image" src="https://{{image_url}}">
+            </a>
+          </div>
+          <div class="org-info">
             <h3>
               <a href="https://codein.withgoogle.com/organizations/{{slug}}">
-                <img class="org-image" src="https://{{image_url}}"> 
                 {{name}}
               </a>
-              <p>Task Completed: {{completed_task_instance_count}}</p>
+            </h3>
+            <p>Tasks Completed: {{completed_task_instance_count}}
               {{#github}}
               <a href="https://github.com/{{github}}">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
-                  height="18"
+                  class="github"
                 />
               </a>
               {{/github}}
-            </h3>
+            </p>
           </div>
+        </div>
         {{/noLeader}}
       </div>
     {{/noLeader.length}}

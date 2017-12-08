@@ -12,6 +12,11 @@ h1 {
   margin: .5em 0 0 0;
 }
 
+a {
+  color: #039be5;
+  text-decoration: none;
+}
+
 .orgs {
   display: flex;
   flex-wrap: wrap;
@@ -19,22 +24,39 @@ h1 {
 }
 
 .org {
-  flex: 0 0 25%;
-  margin-bottom: 1em;
+  margin: 1em 0;
+  width: 100%;
 }
 
 .org-image {
-  display: block;
-  width: 80%;
+  clear: none;
+  float: left;
+  width: 20%;
 }
 
-.none {
-  color: gray;
+.org-image img {
+  width: 100%;
+}
+
+.org-info {
+  margin-left: 25%;
+  max-width: 80%;
+}
+
+.org-leaderboard li {
+  float: left;
+  width: 50%;
+}
+
+.github {
+  height: 1.5em;
+  vertical-align: top;
 }
 
 ul {
+  list-style: disc inside;
   margin: 0;
-  padding-left: 1em;
+  padding: 0;
 }
 
 .gci-logo {
@@ -45,26 +67,12 @@ ul {
 }
 
 footer {
+  padding-bottom: 1em;
   text-align: center;
 }
 
-@media only screen and (max-width : 450px) {
-  .org {
-    flex: 0 0 100%;
-  }
-}
-
-@media only screen and (min-width : 450px) and (max-width : 600px) {
-  .org {
-    flex: 0 0 50%;
-  }
-}
-
-@media only screen and (min-width : 600px) and (max-width : 750px) {
-  .org {
-    flex: 0 0 33.333333%;
-  }
-  .org-image {
+@media only screen and (max-width: 600px) {
+  .org-leaderboard li {
     width: 100%;
   }
 }
