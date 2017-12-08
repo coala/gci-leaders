@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node scrape.js && node generate.js"
+    "build": "node ./lib/scrape.js && node ./lib/generate.js"
   },
   "keywords": [],
   "author": "blazeu <neversleepman@tfwno.gf>",
