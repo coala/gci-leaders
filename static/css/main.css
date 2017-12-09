@@ -1,0 +1,82 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 1em;
+}
+
+h1 {
+  margin: .5em 0 0 0;
+}
+
+a {
+  color: #039be5;
+  text-decoration: none;
+}
+
+.orgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.org {
+  margin: 1em 0;
+  width: 100%;
+}
+
+.org-image {
+  clear: none;
+  float: left;
+  width: 20%;
+}
+
+.org-image img {
+  width: 100%;
+}
+
+.org-info {
+  margin-left: 25%;
+  max-width: 80%;
+}
+
+.org-leaderboard li {
+  float: left;
+  width: 50%;
+}
+
+.github {
+  height: 1.5em;
+  vertical-align: top;
+}
+
+ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.gci-logo {
+  float: left;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.twitter > iframe {
+  width: 100% !important; /* csslint allow: important */
+}
+
+footer {
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .org-leaderboard li {
+    width: 100%;
+  }
+}
