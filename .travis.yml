@@ -11,6 +11,7 @@ before_install:
 script:
   - coala --non-interactive -V
   - npm run build
+  - ./.ci/deploy.sh
 
 deploy:
   provider: pages
@@ -19,3 +20,4 @@ deploy:
   local_dir: out
   "on":
     branch: master
+    condition: -z "$ENCRYPTION_LABEL"
