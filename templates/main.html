@@ -12,7 +12,7 @@
   <body>
     <div>
       <a href="http://codein.withgoogle.com">
-        <img class="gci-logo" src="static/images/GCI-logo.jpg">
+        <img class="gci-logo" src="static/images/logos/gci.jpg">
       </a>
       <h1>Google Code-in 2017 Current Leaders</h1>
     </div>
@@ -44,6 +44,16 @@
                 />
               </a>
               {{/github}}
+              {{#mailing_list}}
+              <a href="{{mailing_list}}">
+                <img src="static/images/mail.png" class="chat" />
+              </a>
+              {{/mailing_list}}
+              {{#chat}}
+              <a href="{{chat.url}}">
+                <img src="{{chat.image}}" class="chat" />
+              </a>
+              {{/chat}}
             </p>
             <div class="org-leaderboard">
               <ul>
@@ -82,6 +92,16 @@
                 />
               </a>
               {{/github}}
+              {{#mailing_list}}
+              <a href="{{mailing_list}}">
+                <img src="static/images/mail.png" class="chat" />
+              </a>
+              {{/mailing_list}}
+              {{#chat}}
+              <a href="{{chat.url}}">
+                <img src="{{chat.image}}" class="chat" />
+              </a>
+              {{/chat}}
             </p>
           </div>
         </div>
