@@ -10,7 +10,8 @@
       {
         "program_year": 2017,
         "display_name": "bolt108",
-        "id": 5012061400596480
+        "id": 5012061400596480,
+        "github_account": "Bolt108"
       },
       {
         "program_year": 2017,
@@ -25,17 +26,20 @@
       {
         "program_year": 2017,
         "display_name": "Saba Khukhunashvili",
-        "id": 5901508325408768
+        "id": 5901508325408768,
+        "github_account": "SabaKhukhunashvili"
       },
       {
         "program_year": 2017,
         "display_name": "Sachin Rammoorthy",
-        "id": 5772338727485440
+        "id": 5772338727485440,
+        "github_account": "SachinRammoorthy"
       },
       {
         "program_year": 2017,
         "display_name": "Sidhya Tikku",
-        "id": 5078331336687616
+        "id": 5078331336687616,
+        "github_account": "sidhyatikku"
       },
       {
         "program_year": 2017,
@@ -132,7 +136,8 @@
       {
         "program_year": 2017,
         "display_name": "Padam Chopra",
-        "id": 4598257072209920
+        "id": 4598257072209920,
+        "github_account": "padamchopra"
       },
       {
         "program_year": 2017,
@@ -142,7 +147,8 @@
       {
         "program_year": 2017,
         "display_name": "Shravya Nandyala",
-        "id": 6116509246029824
+        "id": 6116509246029824,
+        "github_account": "shravyanandyala"
       },
       {
         "program_year": 2017,
@@ -204,7 +210,8 @@
       {
         "program_year": 2017,
         "display_name": "kipply",
-        "id": 4521787192770560
+        "id": 4521787192770560,
+        "github_account": "kipply"
       },
       {
         "program_year": 2017,
@@ -246,7 +253,7 @@
       "css"
     ],
     "guide_to_working_url": "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background",
-    "completed_task_instance_count": 334,
+    "completed_task_instance_count": 335,
     "id": 4879181169033216,
     "winners": {},
     "mailing_list": "http://lists.sugarlabs.org/",
@@ -282,7 +289,8 @@
       {
         "program_year": 2017,
         "display_name": "Abishek V Ashok",
-        "id": 6198775896866816
+        "id": 6198775896866816,
+        "github_account": "abishekvashok"
       },
       {
         "program_year": 2017,
@@ -474,12 +482,14 @@
       {
         "program_year": 2017,
         "display_name": "synicalsyntax",
-        "id": 4625321003319296
+        "id": 4625321003319296,
+        "github_account": "synicalsyntax"
       },
       {
         "program_year": 2017,
         "display_name": "Xavier Cooney",
-        "id": 4711113914580992
+        "id": 4711113914580992,
+        "github_account": "XavierCooney"
       }
     ],
     "accepted_org_tos": true,
@@ -651,7 +661,7 @@
       "html/css"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 207,
+    "completed_task_instance_count": 208,
     "id": 5154791065911296,
     "winners": {},
     "mailing_list": "http://brlcad.org/wiki/Mailing_lists",
@@ -761,7 +771,8 @@
       {
         "program_year": 2017,
         "display_name": "Hemang Rajvanshy",
-        "id": 4772500808400896
+        "id": 4772500808400896,
+        "github_account": "HemangRajvanshy"
       },
       {
         "program_year": 2017,
@@ -786,7 +797,8 @@
       {
         "program_year": 2017,
         "display_name": "TheFaR8",
-        "id": 5878255708012544
+        "id": 5878255708012544,
+        "github_account": "TheFaR8"
       }
     ],
     "accepted_org_tos": true,
@@ -910,7 +922,8 @@
       {
         "program_year": 2017,
         "display_name": "Damillora",
-        "id": 5679153909071872
+        "id": 5679153909071872,
+        "github_account": "Damillora"
       },
       {
         "program_year": 2017,
@@ -1089,7 +1102,8 @@
       {
         "program_year": 2017,
         "display_name": "Jyothsna Ashok",
-        "id": 4671819661443072
+        "id": 4671819661443072,
+        "github_account": "JyothsnaAshok"
       },
       {
         "program_year": 2017,
@@ -1253,7 +1267,8 @@
       {
         "program_year": 2017,
         "display_name": "Nalin Bhardwaj",
-        "id": 4552227639263232
+        "id": 4552227639263232,
+        "github_account": "nalinbhardwaj"
       },
       {
         "program_year": 2017,
@@ -1314,7 +1329,8 @@
       {
         "program_year": 2017,
         "display_name": "eviltak",
-        "id": 5751156015890432
+        "id": 5751156015890432,
+        "github_account": "eviltak"
       },
       {
         "program_year": 2017,
@@ -1482,7 +1498,8 @@
       {
         "program_year": 2017,
         "display_name": "Akshit Dewan",
-        "id": 6268439662428160
+        "id": 6268439662428160,
+        "github_account": "akshitdewan"
       },
       {
         "program_year": 2017,
@@ -1600,7 +1617,8 @@
       {
         "program_year": 2017,
         "display_name": "MigDinny",
-        "id": 5815887145730048
+        "id": 5815887145730048,
+        "github_account": "MigDinny"
       },
       {
         "program_year": 2017,
