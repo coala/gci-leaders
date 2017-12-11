@@ -45,26 +45,40 @@
                 {{name}}
               </a>
             </h3>
-            <p>Tasks Completed: {{completed_task_instance_count}}
-              {{#github}}
+            <p>Tasks Completed: {{completed_task_instance_count}}</p>
+            {{#github}}
               <a href="https://github.com/{{github}}">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
                   class="github"
                 />
               </a>
-              {{/github}}
-              {{#mailing_list}}
+            {{/github}}
+            {{#mailing_list}}
               <a href="{{mailing_list}}">
                 <img src="static/images/mail.png" class="chat" />
               </a>
-              {{/mailing_list}}
-              {{#chat}}
+            {{/mailing_list}}
+            {{#chat}}
               <a href="{{chat.url}}">
                 <img src="{{chat.image}}" class="chat" />
               </a>
-              {{/chat}}
-            </p>
+            {{/chat}}
+            {{#twitter_url}}
+              <a href="{{twitter_url}}">
+                <img src="static/images/logos/twitter.png" class="chat" />
+              </a>
+            {{/twitter_url}}
+            {{#gplus_url}}
+              <a href="{{gplus_url}}">
+                <img src="static/images/logos/gplus.png" class="chat" />
+              </a>
+            {{/gplus_url}}
+            {{#website_url}}
+              <a href="{{website_url}}">
+                <img src="static/images/logos/global.png" class="chat" />
+              </a>
+            {{/website_url}}
             <div class="org-leaderboard">
               <ul>
                 {{#leaders}}
@@ -101,26 +115,40 @@
                 {{name}}
               </a>
             </h3>
-            <p>Tasks Completed: {{completed_task_instance_count}}
-              {{#github}}
+            <p>Tasks Completed: {{completed_task_instance_count}}</p>
+            {{#github}}
               <a href="https://github.com/{{github}}">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
                   class="github"
                 />
               </a>
-              {{/github}}
-              {{#mailing_list}}
+            {{/github}}
+            {{#mailing_list}}
               <a href="{{mailing_list}}">
                 <img src="static/images/mail.png" class="chat" />
               </a>
-              {{/mailing_list}}
-              {{#chat}}
+            {{/mailing_list}}
+            {{#chat}}
               <a href="{{chat.url}}">
                 <img src="{{chat.image}}" class="chat" />
               </a>
-              {{/chat}}
-            </p>
+            {{/chat}}
+            {{#twitter_url}}
+              <a href="{{twitter_url}}">
+                <img src="static/images/logos/twitter.png" class="chat" />
+              </a>
+            {{/twitter_url}}
+            {{#gplus_url}}
+              <a href="{{gplus_url}}">
+                <img src="static/images/logos/gplus.png" class="chat" />
+              </a>
+            {{/gplus_url}}
+            {{#website_url}}
+              <a href="{{website_url}}">
+                <img src="static/images/logos/global.png" class="chat" />
+              </a>
+            {{/website_url}}
           </div>
         </div>
         {{/noLeader}}
