@@ -43,6 +43,10 @@ a {
   max-width: 80%;
 }
 
+.org-leaderboard {
+  margin-top: 1em;
+}
+
 .org-leaderboard li {
   float: left;
   width: 50%;
