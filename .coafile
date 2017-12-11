@@ -1,23 +1,25 @@
 [all]
-files = lib/*.js, static/js/*.js
+files = **.js, **.json, **.css, **.yml, **.html, .eslintrc
+ignore = node_modules/**, out/**, package-lock.json
 max_line_length = 80
 use_spaces = True
-eslint_config = .eslintrc
 
 [all.whitespace]
 bears = SpaceConsistencyBear
 default_actions = *: ApplyPatchAction
 
-[all.eslint]
-bears = ESLintBear
-default_actions = *: ApplyPatchAction
-
 [all.linelength]
-ignore = generate.js
+ignore += **.html
 bears = LineLengthBear
 
 [all.links]
 bears = InvalidLinkBear
+
+[js]
+files = lib/**/*.js, static/js/**/*.js
+bears = ESLintBear
+eslint_config = .eslintrc
+default_actions = *: ApplyPatchAction
 
 [css]
 files = static/css/*.css
