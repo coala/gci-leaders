@@ -1,3 +1,5 @@
 node_modules
 out/*
 !out/.keep
+yarn.lock
+.DS_Store
