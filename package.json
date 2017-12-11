@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "chattie": "0.0.4",
+    "json2yaml": "^1.1.0",
     "mustache": "^2.3.0",
     "ncp": "^2.0.0",
     "node-fetch": "^1.7.3"
