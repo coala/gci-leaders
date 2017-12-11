@@ -349,7 +349,7 @@
       "python"
     ],
     "guide_to_working_url": "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/",
-    "completed_task_instance_count": 315,
+    "completed_task_instance_count": 316,
     "id": 6237166344601600,
     "winners": {},
     "mailing_list": "http://groups.google.com/group/fossasia",
@@ -1075,7 +1075,7 @@
       "photoshop"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 137,
+    "completed_task_instance_count": 138,
     "id": 5735606506225664,
     "winners": {},
     "mailing_list": "http://systers.anitab.org",
@@ -1196,6 +1196,78 @@
     }
   },
   {
+    "primary_open_source_license": "Affero GNU Public License",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Alexander Voronkov",
+        "id": 5057457392975872
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Andrew Dassonville",
+        "id": 5302037795307520
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Nalin Bhardwaj",
+        "id": 4552227639263232,
+        "github_account": "nalinbhardwaj"
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Shukai Ni",
+        "id": 5178132149567488
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Tio Irawan",
+        "id": 6214590973083648
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": "https://plus.google.com/communities/110223386465813667851",
+    "programming_languages": [
+      "python",
+      "python 3",
+      "abstract syntax tree",
+      "errbot"
+    ],
+    "guide_to_working_url": "https://projects.coala.io/",
+    "completed_task_instance_count": 129,
+    "id": 4884530416582656,
+    "winners": {},
+    "mailing_list": "https://github.com/coala/coala/wiki/Mailing-Lists",
+    "website_url": "https://coala.io/",
+    "status": 2,
+    "program_year": 2017,
+    "description": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below.",
+    "tags": [
+      "linting",
+      "static code analysis",
+      "code quality",
+      "automation",
+      "devops"
+    ],
+    "twitter_url": "http://twitter.com/coala_io",
+    "contact_email": null,
+    "irc_channel": "https://coala.zulipchat.com/",
+    "slug": "coala",
+    "preferred_contact_method": null,
+    "guide_to_working": "Join [Zulip](https://coala.zulipchat.com/) or [Gitter](https://gitter.im/coala/gci) to ask mentors questions .\r\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\r\nFollow the [Newcomer Guide](http://coala.io/newcomer).",
+    "name": "coala",
+    "precis": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used.Plugins may by native Python or wrap external linters.",
+    "image_url": "//lh3.googleusercontent.com/4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG",
+    "blog_url": "https://blog.coala.io/",
+    "github": "coala",
+    "chat": {
+      "url": "https://coala.zulipchat.com/",
+      "platform": "ZULIP",
+      "image": "static/images/logos/zulip.png"
+    }
+  },
+  {
     "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
     "leaders": [
       {
@@ -1281,78 +1353,6 @@
       "url": "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC",
       "platform": "IRC",
       "image": "static/images/logos/irc.png"
-    }
-  },
-  {
-    "primary_open_source_license": "Affero GNU Public License",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Alexander Voronkov",
-        "id": 5057457392975872
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Andrew Dassonville",
-        "id": 5302037795307520
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Nalin Bhardwaj",
-        "id": 4552227639263232,
-        "github_account": "nalinbhardwaj"
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Shukai Ni",
-        "id": 5178132149567488
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Tio Irawan",
-        "id": 6214590973083648
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": "https://plus.google.com/communities/110223386465813667851",
-    "programming_languages": [
-      "python",
-      "python 3",
-      "abstract syntax tree",
-      "errbot"
-    ],
-    "guide_to_working_url": "https://projects.coala.io/",
-    "completed_task_instance_count": 128,
-    "id": 4884530416582656,
-    "winners": {},
-    "mailing_list": "https://github.com/coala/coala/wiki/Mailing-Lists",
-    "website_url": "https://coala.io/",
-    "status": 2,
-    "program_year": 2017,
-    "description": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below.",
-    "tags": [
-      "linting",
-      "static code analysis",
-      "code quality",
-      "automation",
-      "devops"
-    ],
-    "twitter_url": "http://twitter.com/coala_io",
-    "contact_email": null,
-    "irc_channel": "https://coala.zulipchat.com/",
-    "slug": "coala",
-    "preferred_contact_method": null,
-    "guide_to_working": "Join [Zulip](https://coala.zulipchat.com/) or [Gitter](https://gitter.im/coala/gci) to ask mentors questions .\r\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\r\nFollow the [Newcomer Guide](http://coala.io/newcomer).",
-    "name": "coala",
-    "precis": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used.Plugins may by native Python or wrap external linters.",
-    "image_url": "//lh3.googleusercontent.com/4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG",
-    "blog_url": "https://blog.coala.io/",
-    "github": "coala",
-    "chat": {
-      "url": "https://coala.zulipchat.com/",
-      "platform": "ZULIP",
-      "image": "static/images/logos/zulip.png"
     }
   },
   {
@@ -1539,7 +1539,7 @@
       "android"
     ],
     "guide_to_working_url": "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn",
-    "completed_task_instance_count": 104,
+    "completed_task_instance_count": 105,
     "id": 6299430183501824,
     "winners": {},
     "mailing_list": "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss",
