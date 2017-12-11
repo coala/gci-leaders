@@ -28,7 +28,8 @@
     </div>
     <hr>
     <i>
-      The leading participants for each organization are listed randomly. 
+      The leading participants for each organization (and their GitHub accounts,
+      if applicable) are listed randomly.
     </i>
     <div class="orgs">
       {{#withLeader}}
@@ -67,7 +68,15 @@
             <div class="org-leaderboard">
               <ul>
                 {{#leaders}}
-                  <li>{{display_name}}</li>
+                  <li>
+                    {{#github_account}}
+                      <a href="https://github.com/{{github_account}}">
+                    {{/github_account}}
+                    {{display_name}}
+                    {{#github_account}}
+                      </a>
+                    {{/github_account}}
+                  </li>
                 {{/leaders}}
               </ul>
             </div>
