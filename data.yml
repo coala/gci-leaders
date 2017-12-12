@@ -765,7 +765,7 @@
       - "html"
       - "css"
     guide_to_working_url: "http://openwisp.io/docs/developer/contributing.html"
-    completed_task_instance_count: 189
+    completed_task_instance_count: 190
     id: 5693741010518016
     winners: {}
     mailing_list: "https://groups.google.com/d/forum/openwisp/join"
@@ -1033,6 +1033,81 @@
       platform: "TELEGRAM"
       image: "static/images/logos/telegram.png"
   - 
+    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "eviltak"
+        id: 5751156015890432
+        github_account: "eviltak"
+      - 
+        program_year: 2017
+        display_name: "Jason Huang"
+        id: 6563090390843392
+      - 
+        program_year: 2017
+        display_name: "Nicholas Bates"
+        id: 5288288933904384
+      - 
+        program_year: 2017
+        display_name: "Rajat Patel"
+        id: 6323289079152640
+      - 
+        program_year: 2017
+        display_name: "Sagar Gupta"
+        id: 5593677617430528
+      - 
+        program_year: 2017
+        display_name: "Soundwave"
+        id: 4896844943458304
+      - 
+        program_year: 2017
+        display_name: "Steven Rachman"
+        id: 6739799975133184
+      - 
+        program_year: 2017
+        display_name: "Thomas O'Keeffe"
+        id: 6106213647384576
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/+Terasology"
+    programming_languages: 
+      - "java"
+      - "lwjgl"
+      - "json"
+      - "gradle"
+      - "blender"
+    guide_to_working_url: "https://github.com/MovingBlocks/Terasology/wiki/GCI"
+    completed_task_instance_count: 136
+    id: 5693523175145472
+    winners: {}
+    mailing_list: null
+    website_url: "http://terasology.org"
+    status: 2
+    program_year: 2017
+    description: "# Why Terasology\n\nWe set out to see how an open source and super extensible voxel game inspired by Minecraft could go beyond it, aiming for gameplay like seen in Dwarf Fortress or Dungeon Keeper. What would modders come up with if you could create and ship a mod with a few simple commands, making it available immediately for download in-game by others, in a secure sandboxed environment?\n\n# Minimal Engine\n\nOur engine is intended to be as bare-bone as possible. It even excludes such basics as inventory, health, creatures, or combat. A series of minimal modules are bundled with the game's standard distribution to offer a sort of vanilla game experience. All such modules are community owned and maintained, guaranteed to work with every release, and fully replaceable.\n\n# Extensibility\n\nAny content is wrapped in modules ranging from tiny frameworks supporting commonly needed utility to large gameplay templates commonly referred to as mod packs in the Minecraft world, that in turn can depend on dozens of the smaller pieces, maximizing reusability. Other JVM languages can be added too.\n\nCreating a new module is as easy as running a single console command, having a community repository created on GitHub is another single request away, and fetching source for any such community module is yet another single command. Dependency resolution is supported within the engine framework both for development and for runtime usage, including auto-downloading from a running game server to connecting clients."
+    tags: 
+      - "game"
+      - "voxel"
+      - "minecraft"
+      - "sandbox"
+      - "modding"
+    twitter_url: "https://twitter.com/Terasology"
+    contact_email: "terasology@gmail.com"
+    irc_channel: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
+    slug: "movingblocks"
+    preferred_contact_method: null
+    guide_to_working: ""
+    name: "MovingBlocks"
+    precis: "Terasology: like an open source Minecraft - imagine the possibilities!"
+    image_url: "//lh3.googleusercontent.com/xXnPqLkLDZYuz6XBxkKKTcaRWcsgzLcMgLx21ADAAIv2BAtRIyk9lI0ryrEBhh7K3r6YXdJOHAHu5hl9e2iNQ-Rn"
+    blog_url: "http://forum.terasology.org"
+    github: "MovingBlocks"
+    chat: 
+      url: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
+      platform: "IRC"
+      image: "static/images/logos/irc.png"
+  - 
     primary_open_source_license: "Affero GNU Public License"
     leaders: 
       - 
@@ -1098,81 +1173,6 @@
       url: "https://coala.zulipchat.com/"
       platform: "ZULIP"
       image: "static/images/logos/zulip.png"
-  - 
-    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "eviltak"
-        id: 5751156015890432
-        github_account: "eviltak"
-      - 
-        program_year: 2017
-        display_name: "Jason Huang"
-        id: 6563090390843392
-      - 
-        program_year: 2017
-        display_name: "Nicholas Bates"
-        id: 5288288933904384
-      - 
-        program_year: 2017
-        display_name: "Rajat Patel"
-        id: 6323289079152640
-      - 
-        program_year: 2017
-        display_name: "Sagar Gupta"
-        id: 5593677617430528
-      - 
-        program_year: 2017
-        display_name: "Soundwave"
-        id: 4896844943458304
-      - 
-        program_year: 2017
-        display_name: "Steven Rachman"
-        id: 6739799975133184
-      - 
-        program_year: 2017
-        display_name: "Thomas O'Keeffe"
-        id: 6106213647384576
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/+Terasology"
-    programming_languages: 
-      - "java"
-      - "lwjgl"
-      - "json"
-      - "gradle"
-      - "blender"
-    guide_to_working_url: "https://github.com/MovingBlocks/Terasology/wiki/GCI"
-    completed_task_instance_count: 135
-    id: 5693523175145472
-    winners: {}
-    mailing_list: null
-    website_url: "http://terasology.org"
-    status: 2
-    program_year: 2017
-    description: "# Why Terasology\n\nWe set out to see how an open source and super extensible voxel game inspired by Minecraft could go beyond it, aiming for gameplay like seen in Dwarf Fortress or Dungeon Keeper. What would modders come up with if you could create and ship a mod with a few simple commands, making it available immediately for download in-game by others, in a secure sandboxed environment?\n\n# Minimal Engine\n\nOur engine is intended to be as bare-bone as possible. It even excludes such basics as inventory, health, creatures, or combat. A series of minimal modules are bundled with the game's standard distribution to offer a sort of vanilla game experience. All such modules are community owned and maintained, guaranteed to work with every release, and fully replaceable.\n\n# Extensibility\n\nAny content is wrapped in modules ranging from tiny frameworks supporting commonly needed utility to large gameplay templates commonly referred to as mod packs in the Minecraft world, that in turn can depend on dozens of the smaller pieces, maximizing reusability. Other JVM languages can be added too.\n\nCreating a new module is as easy as running a single console command, having a community repository created on GitHub is another single request away, and fetching source for any such community module is yet another single command. Dependency resolution is supported within the engine framework both for development and for runtime usage, including auto-downloading from a running game server to connecting clients."
-    tags: 
-      - "game"
-      - "voxel"
-      - "minecraft"
-      - "sandbox"
-      - "modding"
-    twitter_url: "https://twitter.com/Terasology"
-    contact_email: "terasology@gmail.com"
-    irc_channel: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
-    slug: "movingblocks"
-    preferred_contact_method: null
-    guide_to_working: ""
-    name: "MovingBlocks"
-    precis: "Terasology: like an open source Minecraft - imagine the possibilities!"
-    image_url: "//lh3.googleusercontent.com/xXnPqLkLDZYuz6XBxkKKTcaRWcsgzLcMgLx21ADAAIv2BAtRIyk9lI0ryrEBhh7K3r6YXdJOHAHu5hl9e2iNQ-Rn"
-    blog_url: "http://forum.terasology.org"
-    github: "MovingBlocks"
-    chat: 
-      url: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
-      platform: "IRC"
-      image: "static/images/logos/irc.png"
   - 
     primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
     leaders: 
