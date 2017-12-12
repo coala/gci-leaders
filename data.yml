@@ -56,7 +56,7 @@
       - "javascript"
       - "html"
     guide_to_working_url: ""
-    completed_task_instance_count: 757
+    completed_task_instance_count: 762
     id: 5733899491606528
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/jboss-community-gci/"
@@ -142,7 +142,7 @@
       - "node"
       - "python"
     guide_to_working_url: ""
-    completed_task_instance_count: 418
+    completed_task_instance_count: 423
     id: 4923880235859968
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/score-community"
@@ -215,7 +215,7 @@
       - "javascript"
       - "css"
     guide_to_working_url: "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background"
-    completed_task_instance_count: 343
+    completed_task_instance_count: 345
     id: 4879181169033216
     winners: {}
     mailing_list: "http://lists.sugarlabs.org/"
@@ -304,7 +304,7 @@
       - "web technologies"
       - "python"
     guide_to_working_url: "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/"
-    completed_task_instance_count: 337
+    completed_task_instance_count: 340
     id: 6237166344601600
     winners: {}
     mailing_list: "http://groups.google.com/group/fossasia"
@@ -370,7 +370,7 @@
       - "javascript"
       - "sql"
     guide_to_working_url: "https://wiki.musicbrainz.org/Google_Code-in/2017"
-    completed_task_instance_count: 277
+    completed_task_instance_count: 279
     id: 5936087526539264
     winners: {}
     mailing_list: "https://community.metabrainz.org/"
@@ -441,7 +441,7 @@
       - "html"
       - "visual design"
     guide_to_working_url: "https://github.com/zulip/zulip-gci"
-    completed_task_instance_count: 239
+    completed_task_instance_count: 245
     id: 5744567921934336
     winners: {}
     mailing_list: null
@@ -483,6 +483,10 @@
         id: 4819991738187776
       - 
         program_year: 2017
+        display_name: "C. F. Fairfeld"
+        id: 4759011792519168
+      - 
+        program_year: 2017
         display_name: "David Sn"
         id: 6744722544525312
       - 
@@ -519,7 +523,7 @@
       - "lua"
       - "wiki"
     guide_to_working_url: "https://www.mediawiki.org/wiki/Google_Code-in/2017"
-    completed_task_instance_count: 227
+    completed_task_instance_count: 231
     id: 5740205476675584
     winners: {}
     mailing_list: "https://lists.wikimedia.org/mailman/listinfo/wikitech-l"
@@ -545,6 +549,68 @@
     github: "wikimedia"
     chat: 
       url: "https://www.mediawiki.org/wiki/MediaWiki_on_IRC"
+      platform: "IRC"
+      image: "static/images/logos/irc.png"
+  - 
+    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Accelerator"
+        id: 5456412610134016
+      - 
+        program_year: 2017
+        display_name: "Aden"
+        id: 4563995715436544
+      - 
+        program_year: 2017
+        display_name: "Heesen Ponnusawmy"
+        id: 5164862177017856
+      - 
+        program_year: 2017
+        display_name: "Ivan Fonseca"
+        id: 6742578886082560
+      - 
+        program_year: 2017
+        display_name: "Marcin Mikołajczak"
+        id: 5470339310026752
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/+Ubuntu"
+    programming_languages: 
+      - "python"
+      - "javascript"
+      - "snapcraft"
+      - "gnome"
+      - "c/c++"
+    guide_to_working_url: ""
+    completed_task_instance_count: 227
+    id: 5133577048031232
+    winners: {}
+    mailing_list: "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc"
+    website_url: "https://www.ubuntu.com"
+    status: 2
+    program_year: 2017
+    description: "We believe in fast, effective computing for everyone. Created by the open-source community and Canonical, Ubuntu is free to use and share, at home and in business. \n\n## The Ubuntu Promise\n\nUbuntu is free. Always has been and always will be. From the operating system to security updates, storage to software. Ubuntu is fast to load, easy to use, available in most languages and accessible to all. Ubuntu applications are all free and open source — so you can share them with anyone you like, as often as you like. Ubuntu comes with full support and all kinds of services available worldwide.\n\n## Open-source software\n\nUbuntu is created by open-source developers because we believe that everybody should have access to the best possible technologies. This passionate global community works together to continually evolve the best systems in the world and then make them available to everybody, absolutely free."
+    tags: 
+      - "desktop"
+      - "server"
+      - "cloud"
+      - "iot"
+      - "linux"
+    twitter_url: "https://twitter.com/ubuntu"
+    contact_email: "popey@ubuntu.com"
+    irc_channel: "http://webchat.freenode.net?channels=%23ubuntu-google"
+    slug: "ubuntu"
+    preferred_contact_method: null
+    guide_to_working: "Most tasks you will require that you have a Launchpad account.\n\n  * https://help.launchpad.net/YourAccount"
+    name: "Ubuntu"
+    precis: "Ubuntu is an open source software operating system that runs from the desktop, to the cloud, to all your internet connected things"
+    image_url: "//lh3.googleusercontent.com/ky-5tp5CtzdbCtLI2j8xlAM30zMSzqHmwRLSQ_6CBQ051am1WgQy64hhtMBKvSe-QytQ8uwhx3cpLRSpXxBsInM"
+    blog_url: "https://insights.ubuntu.com/"
+    github: "ubuntu"
+    chat: 
+      url: "irc://irc.freenode.net/ubuntu-google"
       platform: "IRC"
       image: "static/images/logos/irc.png"
   - 
@@ -588,7 +654,7 @@
       - "three.js"
       - "html/css"
     guide_to_working_url: ""
-    completed_task_instance_count: 221
+    completed_task_instance_count: 223
     id: 5154791065911296
     winners: {}
     mailing_list: "http://brlcad.org/wiki/Mailing_lists"
@@ -615,60 +681,6 @@
     github: "BRL-CAD"
     chat: 
       url: "http://brlcad.org/wiki/IRC"
-      platform: "IRC"
-      image: "static/images/logos/irc.png"
-  - 
-    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Aden"
-        id: 4563995715436544
-      - 
-        program_year: 2017
-        display_name: "Heesen Ponnusawmy"
-        id: 5164862177017856
-      - 
-        program_year: 2017
-        display_name: "Marcin Mikołajczak"
-        id: 5470339310026752
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/+Ubuntu"
-    programming_languages: 
-      - "python"
-      - "javascript"
-      - "snapcraft"
-      - "gnome"
-      - "c/c++"
-    guide_to_working_url: ""
-    completed_task_instance_count: 219
-    id: 5133577048031232
-    winners: {}
-    mailing_list: "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc"
-    website_url: "https://www.ubuntu.com"
-    status: 2
-    program_year: 2017
-    description: "We believe in fast, effective computing for everyone. Created by the open-source community and Canonical, Ubuntu is free to use and share, at home and in business. \n\n## The Ubuntu Promise\n\nUbuntu is free. Always has been and always will be. From the operating system to security updates, storage to software. Ubuntu is fast to load, easy to use, available in most languages and accessible to all. Ubuntu applications are all free and open source — so you can share them with anyone you like, as often as you like. Ubuntu comes with full support and all kinds of services available worldwide.\n\n## Open-source software\n\nUbuntu is created by open-source developers because we believe that everybody should have access to the best possible technologies. This passionate global community works together to continually evolve the best systems in the world and then make them available to everybody, absolutely free."
-    tags: 
-      - "desktop"
-      - "server"
-      - "cloud"
-      - "iot"
-      - "linux"
-    twitter_url: "https://twitter.com/ubuntu"
-    contact_email: "popey@ubuntu.com"
-    irc_channel: "http://webchat.freenode.net?channels=%23ubuntu-google"
-    slug: "ubuntu"
-    preferred_contact_method: null
-    guide_to_working: "Most tasks you will require that you have a Launchpad account.\n\n  * https://help.launchpad.net/YourAccount"
-    name: "Ubuntu"
-    precis: "Ubuntu is an open source software operating system that runs from the desktop, to the cloud, to all your internet connected things"
-    image_url: "//lh3.googleusercontent.com/ky-5tp5CtzdbCtLI2j8xlAM30zMSzqHmwRLSQ_6CBQ051am1WgQy64hhtMBKvSe-QytQ8uwhx3cpLRSpXxBsInM"
-    blog_url: "https://insights.ubuntu.com/"
-    github: "ubuntu"
-    chat: 
-      url: "irc://irc.freenode.net/ubuntu-google"
       platform: "IRC"
       image: "static/images/logos/irc.png"
   - 
@@ -718,7 +730,7 @@
       - "linux"
       - "windows"
     guide_to_working_url: ""
-    completed_task_instance_count: 201
+    completed_task_instance_count: 204
     id: 5731053304020992
     winners: {}
     mailing_list: null
@@ -756,6 +768,10 @@
         id: 5288208805920768
       - 
         program_year: 2017
+        display_name: "Aditya"
+        id: 6573208931139584
+      - 
+        program_year: 2017
         display_name: "Alan Zhu"
         id: 6075101978034176
       - 
@@ -777,7 +793,7 @@
       - "html"
       - "css"
     guide_to_working_url: "http://openwisp.io/docs/developer/contributing.html"
-    completed_task_instance_count: 191
+    completed_task_instance_count: 199
     id: 5693741010518016
     winners: {}
     mailing_list: "https://groups.google.com/d/forum/openwisp/join"
@@ -970,6 +986,76 @@
       platform: "SLACK"
       image: "static/images/logos/slack.png"
   - 
+    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Akash Bhave"
+        id: 6479705412730880
+      - 
+        program_year: 2017
+        display_name: "Chirag Gupta"
+        id: 6471766769664000
+      - 
+        program_year: 2017
+        display_name: "janicek"
+        id: 5742982516965376
+      - 
+        program_year: 2017
+        display_name: "Matthew Katz"
+        id: 4529584303243264
+      - 
+        program_year: 2017
+        display_name: "Shivam kumar Singh"
+        id: 5079096713281536
+      - 
+        program_year: 2017
+        display_name: "Vaibhav Vijay"
+        id: 6329140703657984
+      - 
+        program_year: 2017
+        display_name: "Yibin Long"
+        id: 5828654942650368
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/+MifosOrg1"
+    programming_languages: 
+      - "java"
+      - "angular"
+      - "android"
+      - "html"
+      - "mysql"
+    guide_to_working_url: "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
+    completed_task_instance_count: 143
+    id: 6239808655458304
+    winners: {}
+    mailing_list: "http://mifos.org/resources/community/communications/#mailing-lists"
+    website_url: "http://mifos.org"
+    status: 2
+    program_year: 2017
+    description: "The Mifos Initiative is a US-based 501(c)3 non-profit whose mission is to speed the elimination of poverty by leading a global community that builds, supports, and uses Mifos X, a free and open source banking platform to bring responsible financial services to the world’s 2 billion poor and unbanked. We combine fintech, the cloud, mobile apps, and open source community to create a game-changing approach to technology-enabled financial inclusion. With Mifos, you can help build cutting edge web and mobile banking apps, research trends in financial services, analyze new fintech innovations, design UX for consumer banking, enable collaboration amongst our global community, and conduct outreach for a global nonprofit.\n\nMore than 7 million clients are being reached by 300 financial institutions & fintech innovators who use Mifos software to power their operations across 40 countries. They are supported by a global community of 110 deployment partners & hundreds of volunteers who sustainably build impactful innovations in digital financial services. \n\nFor the past decade, we've been at the forefront of transformative technology for financial services to the poor. Our technology stack provides complete banking infrastructure that is cloud-ready, mobile-enabled, and scalable to the billions in need of cost-effective financial services. Our projects center around web & mobile apps using APIs from Apache Fineract, the world's only API-driven open source platform for financial inclusion."
+    tags: 
+      - "fintech"
+      - "financial services"
+      - "cloud"
+      - "mobile"
+      - "big data"
+    twitter_url: "https://twitter.com/mifos"
+    contact_email: "info@mifos.org"
+    irc_channel: "https://gitter.im/openMF/mifos"
+    slug: "the-mifos-initiative"
+    preferred_contact_method: null
+    guide_to_working: "Visit our wiki for learning more about Mifos, our community, our mentors, our projects, and the tasks you'll be working on at https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
+    name: "The Mifos Initiative"
+    precis: "End Poverty One Line of Code at a Time - FinTech non-profit using the cloud, mobile, and OSS community to bring financial services to the world's 2 billion poor & unbanked."
+    image_url: "//lh3.googleusercontent.com/Pm-PAmQYDOeLBMB08vk0HwLNzp2RynM8p6iCxl0HI750AZzjwWtZd0f-hVE-NWmQNYm_Ce5ebaJNd524F-PWWQ"
+    blog_url: "http://mifos.org/blog"
+    github: "openMF"
+    chat: 
+      url: "https://gitter.im/openMF/mifos"
+      platform: "GITTER"
+      image: "static/images/logos/gitter.png"
+  - 
     primary_open_source_license: "Mozilla Public License 2.0 (MPL-2.0)"
     leaders: 
       - 
@@ -1045,6 +1131,81 @@
       platform: "TELEGRAM"
       image: "static/images/logos/telegram.png"
   - 
+    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "eviltak"
+        id: 5751156015890432
+        github_account: "eviltak"
+      - 
+        program_year: 2017
+        display_name: "Jason Huang"
+        id: 6563090390843392
+      - 
+        program_year: 2017
+        display_name: "Nicholas Bates"
+        id: 5288288933904384
+      - 
+        program_year: 2017
+        display_name: "Rajat Patel"
+        id: 6323289079152640
+      - 
+        program_year: 2017
+        display_name: "Sagar Gupta"
+        id: 5593677617430528
+      - 
+        program_year: 2017
+        display_name: "Soundwave"
+        id: 4896844943458304
+      - 
+        program_year: 2017
+        display_name: "Steven Rachman"
+        id: 6739799975133184
+      - 
+        program_year: 2017
+        display_name: "Thomas O'Keeffe"
+        id: 6106213647384576
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/+Terasology"
+    programming_languages: 
+      - "java"
+      - "lwjgl"
+      - "json"
+      - "gradle"
+      - "blender"
+    guide_to_working_url: "https://github.com/MovingBlocks/Terasology/wiki/GCI"
+    completed_task_instance_count: 139
+    id: 5693523175145472
+    winners: {}
+    mailing_list: null
+    website_url: "http://terasology.org"
+    status: 2
+    program_year: 2017
+    description: "# Why Terasology\n\nWe set out to see how an open source and super extensible voxel game inspired by Minecraft could go beyond it, aiming for gameplay like seen in Dwarf Fortress or Dungeon Keeper. What would modders come up with if you could create and ship a mod with a few simple commands, making it available immediately for download in-game by others, in a secure sandboxed environment?\n\n# Minimal Engine\n\nOur engine is intended to be as bare-bone as possible. It even excludes such basics as inventory, health, creatures, or combat. A series of minimal modules are bundled with the game's standard distribution to offer a sort of vanilla game experience. All such modules are community owned and maintained, guaranteed to work with every release, and fully replaceable.\n\n# Extensibility\n\nAny content is wrapped in modules ranging from tiny frameworks supporting commonly needed utility to large gameplay templates commonly referred to as mod packs in the Minecraft world, that in turn can depend on dozens of the smaller pieces, maximizing reusability. Other JVM languages can be added too.\n\nCreating a new module is as easy as running a single console command, having a community repository created on GitHub is another single request away, and fetching source for any such community module is yet another single command. Dependency resolution is supported within the engine framework both for development and for runtime usage, including auto-downloading from a running game server to connecting clients."
+    tags: 
+      - "game"
+      - "voxel"
+      - "minecraft"
+      - "sandbox"
+      - "modding"
+    twitter_url: "https://twitter.com/Terasology"
+    contact_email: "terasology@gmail.com"
+    irc_channel: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
+    slug: "movingblocks"
+    preferred_contact_method: null
+    guide_to_working: ""
+    name: "MovingBlocks"
+    precis: "Terasology: like an open source Minecraft - imagine the possibilities!"
+    image_url: "//lh3.googleusercontent.com/xXnPqLkLDZYuz6XBxkKKTcaRWcsgzLcMgLx21ADAAIv2BAtRIyk9lI0ryrEBhh7K3r6YXdJOHAHu5hl9e2iNQ-Rn"
+    blog_url: "http://forum.terasology.org"
+    github: "MovingBlocks"
+    chat: 
+      url: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
+      platform: "IRC"
+      image: "static/images/logos/irc.png"
+  - 
     primary_open_source_license: "Affero GNU Public License"
     leaders: 
       - 
@@ -1082,7 +1243,7 @@
       - "abstract syntax tree"
       - "errbot"
     guide_to_working_url: "https://projects.coala.io/"
-    completed_task_instance_count: 138
+    completed_task_instance_count: 139
     id: 4884530416582656
     winners: {}
     mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
@@ -1160,7 +1321,7 @@
     programming_languages: 
       - "visual programming language (catrobat)"
     guide_to_working_url: "http://catrob.at/cgcicti"
-    completed_task_instance_count: 137
+    completed_task_instance_count: 139
     id: 5135243763777536
     winners: {}
     mailing_list: "http://catrob.at/PocketCodeUserForum"
@@ -1188,151 +1349,6 @@
     chat: 
       url: null
   - 
-    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Akash Bhave"
-        id: 6479705412730880
-      - 
-        program_year: 2017
-        display_name: "Chirag Gupta"
-        id: 6471766769664000
-      - 
-        program_year: 2017
-        display_name: "janicek"
-        id: 5742982516965376
-      - 
-        program_year: 2017
-        display_name: "Matthew Katz"
-        id: 4529584303243264
-      - 
-        program_year: 2017
-        display_name: "Shivam kumar Singh"
-        id: 5079096713281536
-      - 
-        program_year: 2017
-        display_name: "Vaibhav Vijay"
-        id: 6329140703657984
-      - 
-        program_year: 2017
-        display_name: "Yibin Long"
-        id: 5828654942650368
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/+MifosOrg1"
-    programming_languages: 
-      - "java"
-      - "angular"
-      - "android"
-      - "html"
-      - "mysql"
-    guide_to_working_url: "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
-    completed_task_instance_count: 137
-    id: 6239808655458304
-    winners: {}
-    mailing_list: "http://mifos.org/resources/community/communications/#mailing-lists"
-    website_url: "http://mifos.org"
-    status: 2
-    program_year: 2017
-    description: "The Mifos Initiative is a US-based 501(c)3 non-profit whose mission is to speed the elimination of poverty by leading a global community that builds, supports, and uses Mifos X, a free and open source banking platform to bring responsible financial services to the world’s 2 billion poor and unbanked. We combine fintech, the cloud, mobile apps, and open source community to create a game-changing approach to technology-enabled financial inclusion. With Mifos, you can help build cutting edge web and mobile banking apps, research trends in financial services, analyze new fintech innovations, design UX for consumer banking, enable collaboration amongst our global community, and conduct outreach for a global nonprofit.\n\nMore than 7 million clients are being reached by 300 financial institutions & fintech innovators who use Mifos software to power their operations across 40 countries. They are supported by a global community of 110 deployment partners & hundreds of volunteers who sustainably build impactful innovations in digital financial services. \n\nFor the past decade, we've been at the forefront of transformative technology for financial services to the poor. Our technology stack provides complete banking infrastructure that is cloud-ready, mobile-enabled, and scalable to the billions in need of cost-effective financial services. Our projects center around web & mobile apps using APIs from Apache Fineract, the world's only API-driven open source platform for financial inclusion."
-    tags: 
-      - "fintech"
-      - "financial services"
-      - "cloud"
-      - "mobile"
-      - "big data"
-    twitter_url: "https://twitter.com/mifos"
-    contact_email: "info@mifos.org"
-    irc_channel: "https://gitter.im/openMF/mifos"
-    slug: "the-mifos-initiative"
-    preferred_contact_method: null
-    guide_to_working: "Visit our wiki for learning more about Mifos, our community, our mentors, our projects, and the tasks you'll be working on at https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
-    name: "The Mifos Initiative"
-    precis: "End Poverty One Line of Code at a Time - FinTech non-profit using the cloud, mobile, and OSS community to bring financial services to the world's 2 billion poor & unbanked."
-    image_url: "//lh3.googleusercontent.com/Pm-PAmQYDOeLBMB08vk0HwLNzp2RynM8p6iCxl0HI750AZzjwWtZd0f-hVE-NWmQNYm_Ce5ebaJNd524F-PWWQ"
-    blog_url: "http://mifos.org/blog"
-    github: "openMF"
-    chat: 
-      url: "https://gitter.im/openMF/mifos"
-      platform: "GITTER"
-      image: "static/images/logos/gitter.png"
-  - 
-    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "eviltak"
-        id: 5751156015890432
-        github_account: "eviltak"
-      - 
-        program_year: 2017
-        display_name: "Jason Huang"
-        id: 6563090390843392
-      - 
-        program_year: 2017
-        display_name: "Nicholas Bates"
-        id: 5288288933904384
-      - 
-        program_year: 2017
-        display_name: "Rajat Patel"
-        id: 6323289079152640
-      - 
-        program_year: 2017
-        display_name: "Sagar Gupta"
-        id: 5593677617430528
-      - 
-        program_year: 2017
-        display_name: "Soundwave"
-        id: 4896844943458304
-      - 
-        program_year: 2017
-        display_name: "Steven Rachman"
-        id: 6739799975133184
-      - 
-        program_year: 2017
-        display_name: "Thomas O'Keeffe"
-        id: 6106213647384576
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/+Terasology"
-    programming_languages: 
-      - "java"
-      - "lwjgl"
-      - "json"
-      - "gradle"
-      - "blender"
-    guide_to_working_url: "https://github.com/MovingBlocks/Terasology/wiki/GCI"
-    completed_task_instance_count: 136
-    id: 5693523175145472
-    winners: {}
-    mailing_list: null
-    website_url: "http://terasology.org"
-    status: 2
-    program_year: 2017
-    description: "# Why Terasology\n\nWe set out to see how an open source and super extensible voxel game inspired by Minecraft could go beyond it, aiming for gameplay like seen in Dwarf Fortress or Dungeon Keeper. What would modders come up with if you could create and ship a mod with a few simple commands, making it available immediately for download in-game by others, in a secure sandboxed environment?\n\n# Minimal Engine\n\nOur engine is intended to be as bare-bone as possible. It even excludes such basics as inventory, health, creatures, or combat. A series of minimal modules are bundled with the game's standard distribution to offer a sort of vanilla game experience. All such modules are community owned and maintained, guaranteed to work with every release, and fully replaceable.\n\n# Extensibility\n\nAny content is wrapped in modules ranging from tiny frameworks supporting commonly needed utility to large gameplay templates commonly referred to as mod packs in the Minecraft world, that in turn can depend on dozens of the smaller pieces, maximizing reusability. Other JVM languages can be added too.\n\nCreating a new module is as easy as running a single console command, having a community repository created on GitHub is another single request away, and fetching source for any such community module is yet another single command. Dependency resolution is supported within the engine framework both for development and for runtime usage, including auto-downloading from a running game server to connecting clients."
-    tags: 
-      - "game"
-      - "voxel"
-      - "minecraft"
-      - "sandbox"
-      - "modding"
-    twitter_url: "https://twitter.com/Terasology"
-    contact_email: "terasology@gmail.com"
-    irc_channel: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
-    slug: "movingblocks"
-    preferred_contact_method: null
-    guide_to_working: ""
-    name: "MovingBlocks"
-    precis: "Terasology: like an open source Minecraft - imagine the possibilities!"
-    image_url: "//lh3.googleusercontent.com/xXnPqLkLDZYuz6XBxkKKTcaRWcsgzLcMgLx21ADAAIv2BAtRIyk9lI0ryrEBhh7K3r6YXdJOHAHu5hl9e2iNQ-Rn"
-    blog_url: "http://forum.terasology.org"
-    github: "MovingBlocks"
-    chat: 
-      url: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
-      platform: "IRC"
-      image: "static/images/logos/irc.png"
-  - 
     primary_open_source_license: "GNU Library or \"Lesser\" General Public License version 2.1 (LGPL-2.1)"
     leaders: 
       - 
@@ -1354,7 +1370,7 @@
       - "css"
       - "android"
     guide_to_working_url: "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn"
-    completed_task_instance_count: 110
+    completed_task_instance_count: 111
     id: 6299430183501824
     winners: {}
     mailing_list: "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss"
@@ -1407,7 +1423,7 @@
       - "c++"
       - "javascript"
     guide_to_working_url: "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students"
-    completed_task_instance_count: 97
+    completed_task_instance_count: 100
     id: 5139786496999424
     winners: {}
     mailing_list: "http://www.osgeo.org/content/faq/mailing_lists.html"
@@ -1508,7 +1524,7 @@
       - "css"
       - "symfony"
     guide_to_working_url: "https://www.drupal.org/node/984014"
-    completed_task_instance_count: 78
+    completed_task_instance_count: 83
     id: 5636094664114176
     winners: {}
     mailing_list: "https://drupal.org/mailing-lists"
@@ -1594,7 +1610,7 @@
       - "css"
       - "jquery"
     guide_to_working_url: "https://gitter.im/Cloud-CV/"
-    completed_task_instance_count: 42
+    completed_task_instance_count: 48
     id: 4854733644759040
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/cloudcv"
