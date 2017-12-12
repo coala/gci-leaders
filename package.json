@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node ./lib/scrape.js && node ./lib/generate.js"
+    "scrape": "node ./lib/scrape.js",
+    "generate": "node ./lib/generate.js",
+    "gather": "node ./lib/gather.js",
+    "clean": "rm -rf out/*",
+    "build": "npm run gather && npm run scrape && npm run generate",
+    "build:clean": "npm run clean && npm run scrape && npm run generate"
   },
   "keywords": [],
   "author": "blazeu <neversleepman@tfwno.gf>",
