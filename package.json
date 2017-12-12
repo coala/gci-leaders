@@ -14,7 +14,8 @@
     "json2yaml": "^1.1.0",
     "mustache": "^2.3.0",
     "ncp": "^2.0.0",
-    "node-fetch": "^1.7.3"
+    "node-fetch": "^1.7.3",
+    "valid-github-username": "0.0.1"
   },
   "devDependencies": {
     "csslint": "^1.0.5",
