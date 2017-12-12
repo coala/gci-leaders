@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>GCI Leaders</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="GCI Current Leaders">
     <meta property="og:description" content="Google Code-in 2017 Current Leaders">
     <meta property="og:image" content="{{{rootURL}}}/static/images/GCI-logo.jpg">
@@ -12,7 +12,7 @@
   <body>
     <div>
       <a href="http://codein.withgoogle.com">
-        <img class="gci-logo" src="static/images/logos/gci.jpg">
+        <img class="gci-logo" src="images/logos/gci.png" alt="Code-In logo">
       </a>
       <h1>Google Code-in 2017 Current Leaders</h1>
     </div>
@@ -36,7 +36,7 @@
         <div class="org">
           <div class="org-image">
             <a href="https://codein.withgoogle.com/organizations/{{slug}}">
-              <img class="org-image" src="https://{{image_url}}">
+              <img class="org-image" alt="{{name}} logo" src="https://{{image_url}}">
             </a>
           </div>
           <div class="org-info">
@@ -51,42 +51,43 @@
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
                   class="github"
+                  alt="Find them on GitHub"
                 />
               </a>
             {{/github}}
             {{#mailing_list}}
               <a href="{{mailing_list}}">
-                <img src="static/images/mail.png" class="chat" />
+                <img src="static/images/mail.png" class="chat" alt="Join their mailing list" />
               </a>
             {{/mailing_list}}
             {{#chat}}
               <a href="{{chat.url}}">
-                <img src="{{chat.image}}" class="chat" />
+                <img src="{{chat.image}}" class="chat" alt="Join their chat" />
               </a>
             {{/chat}}
             {{#twitter_url}}
               <a href="{{twitter_url}}">
-                <img src="static/images/logos/twitter.png" class="chat" />
+                <img src="static/images/logos/twitter.png" class="chat" alt="Find them on Twitter" />
               </a>
             {{/twitter_url}}
             {{#gplus_url}}
               <a href="{{gplus_url}}">
-                <img src="static/images/logos/gplus.png" class="chat" />
+                <img src="static/images/logos/gplus.png" class="chat" alt="Find them on Google+" />
               </a>
             {{/gplus_url}}
             {{#website_url}}
               <a href="{{website_url}}">
-                <img src="static/images/logos/global.png" class="chat" />
+                <img src="static/images/logos/global.png" class="chat" alt="Visit their website" />
               </a>
             {{/website_url}}
             {{#wikipedia_urls.en}}
               <a href="{{wikipedia_urls.en}}">
-                <img src="static/images/logos/wikipedia.png" class="chat" />
+                <img src="images/logos/wikipedia.png" class="chat" alt="Read about them on Wikipedia" />
               </a>
             {{/wikipedia_urls.en}}
             {{#wikidata_url}}
               <a href="{{wikidata_url}}">
-                <img src="static/images/logos/wikidata.png" class="chat" />
+                <img src="images/logos/wikidata.png" class="chat" alt="See them on Wikidata" />
               </a>
             {{/wikidata_url}}
             <div class="org-leaderboard">
@@ -116,7 +117,7 @@
         <div class="org">
           <div class="org-image">
             <a href="https://codein.withgoogle.com/organizations/{{slug}}">
-              <img class="org-image" src="https://{{image_url}}">
+              <img class="org-image" src="https://{{image_url}}" alt="{{name}} logo">
             </a>
           </div>
           <div class="org-info">
@@ -131,42 +132,43 @@
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
                   class="github"
+                  alt="Find them on GitHub"
                 />
               </a>
             {{/github}}
             {{#mailing_list}}
               <a href="{{mailing_list}}">
-                <img src="static/images/mail.png" class="chat" />
+                <img src="static/images/mail.png" class="chat" alt="Join their mailing list" />
               </a>
             {{/mailing_list}}
             {{#chat}}
               <a href="{{chat.url}}">
-                <img src="{{chat.image}}" class="chat" />
+                <img src="{{chat.image}}" class="chat" alt="Join their chat" />
               </a>
             {{/chat}}
             {{#twitter_url}}
               <a href="{{twitter_url}}">
-                <img src="static/images/logos/twitter.png" class="chat" />
+                <img src="static/images/logos/twitter.png" class="chat" alt="Find them on Twitter" />
               </a>
             {{/twitter_url}}
             {{#gplus_url}}
               <a href="{{gplus_url}}">
-                <img src="static/images/logos/gplus.png" class="chat" />
+                <img src="static/images/logos/gplus.png" class="chat" alt="Find them on Google+" />
               </a>
             {{/gplus_url}}
             {{#website_url}}
               <a href="{{website_url}}">
-                <img src="static/images/logos/global.png" class="chat" />
+                <img src="static/images/logos/global.png" class="chat" alt="Visit their website" />
               </a>
             {{/website_url}}
             {{#wikipedia_urls.en}}
               <a href="{{wikipedia_urls.en}}">
-                <img src="static/images/logos/wikipedia.png" class="chat" />
+                <img src="images/logos/wikipedia.png" class="chat" alt="Read about them on Wikipedia" />
               </a>
             {{/wikipedia_urls.en}}
             {{#wikidata_url}}
               <a href="{{wikidata_url}}">
-                <img src="static/images/logos/wikidata.png" class="chat" />
+                <img src="images/logos/wikidata.png" class="chat" alt="See them on Wikidata" />
               </a>
             {{/wikidata_url}}
           </div>
