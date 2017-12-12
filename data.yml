@@ -56,7 +56,7 @@
       - "javascript"
       - "html"
     guide_to_working_url: ""
-    completed_task_instance_count: 751
+    completed_task_instance_count: 757
     id: 5733899491606528
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/jboss-community-gci/"
@@ -142,7 +142,7 @@
       - "node"
       - "python"
     guide_to_working_url: ""
-    completed_task_instance_count: 405
+    completed_task_instance_count: 418
     id: 4923880235859968
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/score-community"
@@ -254,22 +254,27 @@
         program_year: 2017
         display_name: "Aditya Dutt"
         id: 4556923112259584
+        github_account: "duttaditya18"
       - 
         program_year: 2017
         display_name: "Kartikeya Singh"
         id: 5689414720159744
+        github_account: "kartikeya23"
       - 
         program_year: 2017
         display_name: "Kuba Michalski"
         id: 5361327000256512
+        github_account: "kubami9"
       - 
         program_year: 2017
         display_name: "Naveen Rajan"
         id: 5635654950060032
+        github_account: "naveentherocker"
       - 
         program_year: 2017
         display_name: "Saarthak Chaturvedi"
         id: 4572716310986752
+        github_account: "saarthakchats"
       - 
         program_year: 2017
         display_name: "Samyak Jain"
@@ -278,10 +283,12 @@
         program_year: 2017
         display_name: "Supun_TE"
         id: 6598335160909824
+        github_account: "STEdirisuriya"
       - 
         program_year: 2017
         display_name: "Tushar Kumar"
         id: 4633252734173184
+        github_account: "awesometushar000"
       - 
         program_year: 2017
         display_name: "Yash Kumar Verma"
@@ -297,7 +304,7 @@
       - "web technologies"
       - "python"
     guide_to_working_url: "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/"
-    completed_task_instance_count: 331
+    completed_task_instance_count: 337
     id: 6237166344601600
     winners: {}
     mailing_list: "http://groups.google.com/group/fossasia"
@@ -335,6 +342,11 @@
         id: 4916088141774848
       - 
         program_year: 2017
+        display_name: "Eshan Singh"
+        id: 5077106331484160
+        github_account: "eshansingh"
+      - 
+        program_year: 2017
         display_name: "Hartama"
         id: 5976468456734720
       - 
@@ -358,7 +370,7 @@
       - "javascript"
       - "sql"
     guide_to_working_url: "https://wiki.musicbrainz.org/Google_Code-in/2017"
-    completed_task_instance_count: 269
+    completed_task_instance_count: 277
     id: 5936087526539264
     winners: {}
     mailing_list: "https://community.metabrainz.org/"
@@ -429,7 +441,7 @@
       - "html"
       - "visual design"
     guide_to_working_url: "https://github.com/zulip/zulip-gci"
-    completed_task_instance_count: 238
+    completed_task_instance_count: 239
     id: 5744567921934336
     winners: {}
     mailing_list: null
@@ -536,6 +548,76 @@
       platform: "IRC"
       image: "static/images/logos/irc.png"
   - 
+    primary_open_source_license: "MIT license (MIT)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Jeff Sieu"
+        id: 6542100483014656
+      - 
+        program_year: 2017
+        display_name: "Lucas Prieels"
+        id: 6244362344202240
+      - 
+        program_year: 2017
+        display_name: "Mahdi Dolatabadi"
+        id: 4776983546298368
+      - 
+        program_year: 2017
+        display_name: "Michal Hanus"
+        id: 6596174926577664
+      - 
+        program_year: 2017
+        display_name: "Mitesh Gulecha"
+        id: 5131978431004672
+      - 
+        program_year: 2017
+        display_name: "Naseef"
+        id: 4654514969772032
+      - 
+        program_year: 2017
+        display_name: "Siddharth Nayak"
+        id: 5451995370487808
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: null
+    programming_languages: 
+      - "c"
+      - "c++"
+      - "javascript"
+      - "three.js"
+      - "html/css"
+    guide_to_working_url: ""
+    completed_task_instance_count: 221
+    id: 5154791065911296
+    winners: {}
+    mailing_list: "http://brlcad.org/wiki/Mailing_lists"
+    website_url: "https://brlcad.org"
+    status: 2
+    program_year: 2017
+    description: "BRL-CAD is a feature-filled computer graphics modeling system that is notoriously complex and challenging to learn.  Help us make it easier so people can quickly use it for things like 3D printing or rendering cool pictures!\n\nOur team is excited to help you get started no matter what experience you have.  There are hundreds of things you can work on, from web development to programming to 3D modeling and design tasks.  If you're new to Open Source, computer graphics, or 3D modeling, we will guide you through your first steps.  If you're not new, you will be helping us revolutionize an industry!\n\nA third of our tasks are C/C++, a third are Javascript/HTML/CSS, and a third require no coding experience whatsoever."
+    tags: 
+      - "computer graphics"
+      - "geometry kernel"
+      - "raytrace visualization and rendering"
+      - "3d modeling and 3d printing"
+      - "cad web infrastructure"
+    twitter_url: "https://twitter.com/BRL_CAD"
+    contact_email: "devs@brlcad.org"
+    irc_channel: "http://brlcad.org/wiki/IRC"
+    slug: "brl-cad"
+    preferred_contact_method: null
+    guide_to_working: "**Hey! IF YOU HAVE A QUESTION, submit your task for review.**\n\nWANT A STICKER? Subscribe https://sf.net/projects/brlcad/lists/brlcad-news & ask parents to send postal address to devs@brlcad.org\nWant to talk?  Install Zulip, connect to brlcad.zulipchat.com"
+    name: "BRL-CAD"
+    precis: "We work on computer graphics, geometry, visualization computer-aided design (CAD), and 3D modeling!"
+    image_url: "//lh3.googleusercontent.com/PrOnR0Su_lb-6IhLAPuPLfb7hRmSTZoRfSDi11CAt4dFK-hvIh_D252TYtl3Li9PHcF6HNTWfR9lP8TwZS6UK6mK"
+    blog_url: "https://fb.me/brlcad"
+    github: "BRL-CAD"
+    chat: 
+      url: "http://brlcad.org/wiki/IRC"
+      platform: "IRC"
+      image: "static/images/logos/irc.png"
+  - 
     primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
     leaders: 
       - 
@@ -590,76 +672,6 @@
       platform: "IRC"
       image: "static/images/logos/irc.png"
   - 
-    primary_open_source_license: "MIT license (MIT)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Jeff Sieu"
-        id: 6542100483014656
-      - 
-        program_year: 2017
-        display_name: "Lucas Prieels"
-        id: 6244362344202240
-      - 
-        program_year: 2017
-        display_name: "Mahdi Dolatabadi"
-        id: 4776983546298368
-      - 
-        program_year: 2017
-        display_name: "Michal Hanus"
-        id: 6596174926577664
-      - 
-        program_year: 2017
-        display_name: "Mitesh Gulecha"
-        id: 5131978431004672
-      - 
-        program_year: 2017
-        display_name: "Naseef"
-        id: 4654514969772032
-      - 
-        program_year: 2017
-        display_name: "Siddharth Nayak"
-        id: 5451995370487808
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: null
-    programming_languages: 
-      - "c"
-      - "c++"
-      - "javascript"
-      - "three.js"
-      - "html/css"
-    guide_to_working_url: ""
-    completed_task_instance_count: 218
-    id: 5154791065911296
-    winners: {}
-    mailing_list: "http://brlcad.org/wiki/Mailing_lists"
-    website_url: "https://brlcad.org"
-    status: 2
-    program_year: 2017
-    description: "BRL-CAD is a feature-filled computer graphics modeling system that is notoriously complex and challenging to learn.  Help us make it easier so people can quickly use it for things like 3D printing or rendering cool pictures!\n\nOur team is excited to help you get started no matter what experience you have.  There are hundreds of things you can work on, from web development to programming to 3D modeling and design tasks.  If you're new to Open Source, computer graphics, or 3D modeling, we will guide you through your first steps.  If you're not new, you will be helping us revolutionize an industry!\n\nA third of our tasks are C/C++, a third are Javascript/HTML/CSS, and a third require no coding experience whatsoever."
-    tags: 
-      - "computer graphics"
-      - "geometry kernel"
-      - "raytrace visualization and rendering"
-      - "3d modeling and 3d printing"
-      - "cad web infrastructure"
-    twitter_url: "https://twitter.com/BRL_CAD"
-    contact_email: "devs@brlcad.org"
-    irc_channel: "http://brlcad.org/wiki/IRC"
-    slug: "brl-cad"
-    preferred_contact_method: null
-    guide_to_working: "**Hey! IF YOU HAVE A QUESTION, submit your task for review.**\n\nWANT A STICKER? Subscribe https://sf.net/projects/brlcad/lists/brlcad-news & ask parents to send postal address to devs@brlcad.org\nWant to talk?  Install Zulip, connect to brlcad.zulipchat.com"
-    name: "BRL-CAD"
-    precis: "We work on computer graphics, geometry, visualization computer-aided design (CAD), and 3D modeling!"
-    image_url: "//lh3.googleusercontent.com/PrOnR0Su_lb-6IhLAPuPLfb7hRmSTZoRfSDi11CAt4dFK-hvIh_D252TYtl3Li9PHcF6HNTWfR9lP8TwZS6UK6mK"
-    blog_url: "https://fb.me/brlcad"
-    github: "BRL-CAD"
-    chat: 
-      url: "http://brlcad.org/wiki/IRC"
-      platform: "IRC"
-      image: "static/images/logos/irc.png"
-  - 
     primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
     leaders: 
       - 
@@ -706,7 +718,7 @@
       - "linux"
       - "windows"
     guide_to_working_url: ""
-    completed_task_instance_count: 200
+    completed_task_instance_count: 201
     id: 5731053304020992
     winners: {}
     mailing_list: null
@@ -765,7 +777,7 @@
       - "html"
       - "css"
     guide_to_working_url: "http://openwisp.io/docs/developer/contributing.html"
-    completed_task_instance_count: 190
+    completed_task_instance_count: 191
     id: 5693741010518016
     winners: {}
     mailing_list: "https://groups.google.com/d/forum/openwisp/join"
@@ -844,7 +856,7 @@
       - "bash"
       - "html"
     guide_to_working_url: "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails"
-    completed_task_instance_count: 181
+    completed_task_instance_count: 182
     id: 6281461650948096
     winners: {}
     mailing_list: "https://www.haiku-os.org/community/ml"
@@ -928,7 +940,7 @@
       - "illustrator"
       - "photoshop"
     guide_to_working_url: ""
-    completed_task_instance_count: 148
+    completed_task_instance_count: 149
     id: 5735606506225664
     winners: {}
     mailing_list: "http://systers.anitab.org"
@@ -1033,6 +1045,219 @@
       platform: "TELEGRAM"
       image: "static/images/logos/telegram.png"
   - 
+    primary_open_source_license: "Affero GNU Public License"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Alexander Voronkov"
+        id: 5057457392975872
+      - 
+        program_year: 2017
+        display_name: "Andrew Dassonville"
+        id: 5302037795307520
+        github_account: "andrewda"
+      - 
+        program_year: 2017
+        display_name: "Daniel O'Brien"
+        id: 4973831292715008
+      - 
+        program_year: 2017
+        display_name: "Nalin Bhardwaj"
+        id: 4552227639263232
+        github_account: "nalinbhardwaj"
+      - 
+        program_year: 2017
+        display_name: "Shukai Ni"
+        id: 5178132149567488
+      - 
+        program_year: 2017
+        display_name: "Tio Irawan"
+        id: 6214590973083648
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/communities/110223386465813667851"
+    programming_languages: 
+      - "python"
+      - "python 3"
+      - "abstract syntax tree"
+      - "errbot"
+    guide_to_working_url: "https://projects.coala.io/"
+    completed_task_instance_count: 138
+    id: 4884530416582656
+    winners: {}
+    mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
+    website_url: "https://coala.io/"
+    status: 2
+    program_year: 2017
+    description: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below."
+    tags: 
+      - "linting"
+      - "static code analysis"
+      - "code quality"
+      - "automation"
+      - "devops"
+    twitter_url: "http://twitter.com/coala_io"
+    contact_email: null
+    irc_channel: "https://coala.zulipchat.com/"
+    slug: "coala"
+    preferred_contact_method: null
+    guide_to_working: "Join [Zulip](https://coala.zulipchat.com/) or [Gitter](https://gitter.im/coala/gci) to ask mentors questions .\r\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\r\nFollow the [Newcomer Guide](http://coala.io/newcomer)."
+    name: "coala"
+    precis: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used.Plugins may by native Python or wrap external linters."
+    image_url: "//lh3.googleusercontent.com/4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG"
+    blog_url: "https://blog.coala.io/"
+    github: "coala"
+    chat: 
+      url: "https://coala.zulipchat.com/"
+      platform: "ZULIP"
+      image: "static/images/logos/zulip.png"
+  - 
+    primary_open_source_license: "GNU Affero General Public License v3 (AGPL-3.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Alejandro Heredia"
+        id: 5243643889713152
+      - 
+        program_year: 2017
+        display_name: "Andreas Lukita"
+        id: 4692396648431616
+      - 
+        program_year: 2017
+        display_name: "Chandra Chou"
+        id: 6189747405848576
+      - 
+        program_year: 2017
+        display_name: "headhunter"
+        id: 5126869030535168
+      - 
+        program_year: 2017
+        display_name: "Mateusz Komajda"
+        id: 4979968129892352
+      - 
+        program_year: 2017
+        display_name: "Nikita Kotenev"
+        id: 6003849812770816
+      - 
+        program_year: 2017
+        display_name: "Sarthak Agrawal"
+        id: 5394417575788544
+      - 
+        program_year: 2017
+        display_name: "Siddh Jain"
+        id: 6267827092717568
+      - 
+        program_year: 2017
+        display_name: "Yudhistira G.S."
+        id: 4611923993690112
+      - 
+        program_year: 2017
+        display_name: "Łukasz Ameljan"
+        id: 5096542534893568
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/communities/116816272940643231129"
+    programming_languages: 
+      - "visual programming language (catrobat)"
+    guide_to_working_url: "http://catrob.at/cgcicti"
+    completed_task_instance_count: 137
+    id: 5135243763777536
+    winners: {}
+    mailing_list: "http://catrob.at/PocketCodeUserForum"
+    website_url: "https://www.catrobat.org/"
+    status: 2
+    program_year: 2017
+    description: "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!"
+    tags: 
+      - "mobile"
+      - "games"
+      - "visual programming"
+      - "apps"
+      - "animations"
+    twitter_url: "http://twitter.com/Pocket_Code"
+    contact_email: "user_forum@catrobat.org"
+    irc_channel: null
+    slug: "catrobat"
+    preferred_contact_method: null
+    guide_to_working: "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions."
+    name: "Catrobat"
+    precis: "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!"
+    image_url: "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE"
+    blog_url: null
+    github: "Catrobat"
+    chat: 
+      url: null
+  - 
+    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Akash Bhave"
+        id: 6479705412730880
+      - 
+        program_year: 2017
+        display_name: "Chirag Gupta"
+        id: 6471766769664000
+      - 
+        program_year: 2017
+        display_name: "janicek"
+        id: 5742982516965376
+      - 
+        program_year: 2017
+        display_name: "Matthew Katz"
+        id: 4529584303243264
+      - 
+        program_year: 2017
+        display_name: "Shivam kumar Singh"
+        id: 5079096713281536
+      - 
+        program_year: 2017
+        display_name: "Vaibhav Vijay"
+        id: 6329140703657984
+      - 
+        program_year: 2017
+        display_name: "Yibin Long"
+        id: 5828654942650368
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/+MifosOrg1"
+    programming_languages: 
+      - "java"
+      - "angular"
+      - "android"
+      - "html"
+      - "mysql"
+    guide_to_working_url: "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
+    completed_task_instance_count: 137
+    id: 6239808655458304
+    winners: {}
+    mailing_list: "http://mifos.org/resources/community/communications/#mailing-lists"
+    website_url: "http://mifos.org"
+    status: 2
+    program_year: 2017
+    description: "The Mifos Initiative is a US-based 501(c)3 non-profit whose mission is to speed the elimination of poverty by leading a global community that builds, supports, and uses Mifos X, a free and open source banking platform to bring responsible financial services to the world’s 2 billion poor and unbanked. We combine fintech, the cloud, mobile apps, and open source community to create a game-changing approach to technology-enabled financial inclusion. With Mifos, you can help build cutting edge web and mobile banking apps, research trends in financial services, analyze new fintech innovations, design UX for consumer banking, enable collaboration amongst our global community, and conduct outreach for a global nonprofit.\n\nMore than 7 million clients are being reached by 300 financial institutions & fintech innovators who use Mifos software to power their operations across 40 countries. They are supported by a global community of 110 deployment partners & hundreds of volunteers who sustainably build impactful innovations in digital financial services. \n\nFor the past decade, we've been at the forefront of transformative technology for financial services to the poor. Our technology stack provides complete banking infrastructure that is cloud-ready, mobile-enabled, and scalable to the billions in need of cost-effective financial services. Our projects center around web & mobile apps using APIs from Apache Fineract, the world's only API-driven open source platform for financial inclusion."
+    tags: 
+      - "fintech"
+      - "financial services"
+      - "cloud"
+      - "mobile"
+      - "big data"
+    twitter_url: "https://twitter.com/mifos"
+    contact_email: "info@mifos.org"
+    irc_channel: "https://gitter.im/openMF/mifos"
+    slug: "the-mifos-initiative"
+    preferred_contact_method: null
+    guide_to_working: "Visit our wiki for learning more about Mifos, our community, our mentors, our projects, and the tasks you'll be working on at https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
+    name: "The Mifos Initiative"
+    precis: "End Poverty One Line of Code at a Time - FinTech non-profit using the cloud, mobile, and OSS community to bring financial services to the world's 2 billion poor & unbanked."
+    image_url: "//lh3.googleusercontent.com/Pm-PAmQYDOeLBMB08vk0HwLNzp2RynM8p6iCxl0HI750AZzjwWtZd0f-hVE-NWmQNYm_Ce5ebaJNd524F-PWWQ"
+    blog_url: "http://mifos.org/blog"
+    github: "openMF"
+    chat: 
+      url: "https://gitter.im/openMF/mifos"
+      platform: "GITTER"
+      image: "static/images/logos/gitter.png"
+  - 
     primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
     leaders: 
       - 
@@ -1108,206 +1333,6 @@
       platform: "IRC"
       image: "static/images/logos/irc.png"
   - 
-    primary_open_source_license: "Affero GNU Public License"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Alexander Voronkov"
-        id: 5057457392975872
-      - 
-        program_year: 2017
-        display_name: "Andrew Dassonville"
-        id: 5302037795307520
-      - 
-        program_year: 2017
-        display_name: "Daniel O'Brien"
-        id: 4973831292715008
-      - 
-        program_year: 2017
-        display_name: "Nalin Bhardwaj"
-        id: 4552227639263232
-        github_account: "nalinbhardwaj"
-      - 
-        program_year: 2017
-        display_name: "Shukai Ni"
-        id: 5178132149567488
-      - 
-        program_year: 2017
-        display_name: "Tio Irawan"
-        id: 6214590973083648
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/communities/110223386465813667851"
-    programming_languages: 
-      - "python"
-      - "python 3"
-      - "abstract syntax tree"
-      - "errbot"
-    guide_to_working_url: "https://projects.coala.io/"
-    completed_task_instance_count: 136
-    id: 4884530416582656
-    winners: {}
-    mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
-    website_url: "https://coala.io/"
-    status: 2
-    program_year: 2017
-    description: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below."
-    tags: 
-      - "linting"
-      - "static code analysis"
-      - "code quality"
-      - "automation"
-      - "devops"
-    twitter_url: "http://twitter.com/coala_io"
-    contact_email: null
-    irc_channel: "https://coala.zulipchat.com/"
-    slug: "coala"
-    preferred_contact_method: null
-    guide_to_working: "Join [Zulip](https://coala.zulipchat.com/) or [Gitter](https://gitter.im/coala/gci) to ask mentors questions .\r\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\r\nFollow the [Newcomer Guide](http://coala.io/newcomer)."
-    name: "coala"
-    precis: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used.Plugins may by native Python or wrap external linters."
-    image_url: "//lh3.googleusercontent.com/4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG"
-    blog_url: "https://blog.coala.io/"
-    github: "coala"
-    chat: 
-      url: "https://coala.zulipchat.com/"
-      platform: "ZULIP"
-      image: "static/images/logos/zulip.png"
-  - 
-    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Chirag Gupta"
-        id: 6471766769664000
-      - 
-        program_year: 2017
-        display_name: "janicek"
-        id: 5742982516965376
-      - 
-        program_year: 2017
-        display_name: "Matthew Katz"
-        id: 4529584303243264
-      - 
-        program_year: 2017
-        display_name: "Shivam kumar Singh"
-        id: 5079096713281536
-      - 
-        program_year: 2017
-        display_name: "Vaibhav Vijay"
-        id: 6329140703657984
-      - 
-        program_year: 2017
-        display_name: "Yibin Long"
-        id: 5828654942650368
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/+MifosOrg1"
-    programming_languages: 
-      - "java"
-      - "angular"
-      - "android"
-      - "html"
-      - "mysql"
-    guide_to_working_url: "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
-    completed_task_instance_count: 135
-    id: 6239808655458304
-    winners: {}
-    mailing_list: "http://mifos.org/resources/community/communications/#mailing-lists"
-    website_url: "http://mifos.org"
-    status: 2
-    program_year: 2017
-    description: "The Mifos Initiative is a US-based 501(c)3 non-profit whose mission is to speed the elimination of poverty by leading a global community that builds, supports, and uses Mifos X, a free and open source banking platform to bring responsible financial services to the world’s 2 billion poor and unbanked. We combine fintech, the cloud, mobile apps, and open source community to create a game-changing approach to technology-enabled financial inclusion. With Mifos, you can help build cutting edge web and mobile banking apps, research trends in financial services, analyze new fintech innovations, design UX for consumer banking, enable collaboration amongst our global community, and conduct outreach for a global nonprofit.\n\nMore than 7 million clients are being reached by 300 financial institutions & fintech innovators who use Mifos software to power their operations across 40 countries. They are supported by a global community of 110 deployment partners & hundreds of volunteers who sustainably build impactful innovations in digital financial services. \n\nFor the past decade, we've been at the forefront of transformative technology for financial services to the poor. Our technology stack provides complete banking infrastructure that is cloud-ready, mobile-enabled, and scalable to the billions in need of cost-effective financial services. Our projects center around web & mobile apps using APIs from Apache Fineract, the world's only API-driven open source platform for financial inclusion."
-    tags: 
-      - "fintech"
-      - "financial services"
-      - "cloud"
-      - "mobile"
-      - "big data"
-    twitter_url: "https://twitter.com/mifos"
-    contact_email: "info@mifos.org"
-    irc_channel: "https://gitter.im/openMF/mifos"
-    slug: "the-mifos-initiative"
-    preferred_contact_method: null
-    guide_to_working: "Visit our wiki for learning more about Mifos, our community, our mentors, our projects, and the tasks you'll be working on at https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
-    name: "The Mifos Initiative"
-    precis: "End Poverty One Line of Code at a Time - FinTech non-profit using the cloud, mobile, and OSS community to bring financial services to the world's 2 billion poor & unbanked."
-    image_url: "//lh3.googleusercontent.com/Pm-PAmQYDOeLBMB08vk0HwLNzp2RynM8p6iCxl0HI750AZzjwWtZd0f-hVE-NWmQNYm_Ce5ebaJNd524F-PWWQ"
-    blog_url: "http://mifos.org/blog"
-    github: "openMF"
-    chat: 
-      url: "https://gitter.im/openMF/mifos"
-      platform: "GITTER"
-      image: "static/images/logos/gitter.png"
-  - 
-    primary_open_source_license: "GNU Affero General Public License v3 (AGPL-3.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Alejandro Heredia"
-        id: 5243643889713152
-      - 
-        program_year: 2017
-        display_name: "Chandra Chou"
-        id: 6189747405848576
-      - 
-        program_year: 2017
-        display_name: "headhunter"
-        id: 5126869030535168
-      - 
-        program_year: 2017
-        display_name: "Nikita Kotenev"
-        id: 6003849812770816
-      - 
-        program_year: 2017
-        display_name: "Sarthak Agrawal"
-        id: 5394417575788544
-      - 
-        program_year: 2017
-        display_name: "Siddh Jain"
-        id: 6267827092717568
-      - 
-        program_year: 2017
-        display_name: "Yudhistira G.S."
-        id: 4611923993690112
-      - 
-        program_year: 2017
-        display_name: "Łukasz Ameljan"
-        id: 5096542534893568
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/communities/116816272940643231129"
-    programming_languages: 
-      - "visual programming language (catrobat)"
-    guide_to_working_url: "http://catrob.at/cgcicti"
-    completed_task_instance_count: 130
-    id: 5135243763777536
-    winners: {}
-    mailing_list: "http://catrob.at/PocketCodeUserForum"
-    website_url: "https://www.catrobat.org/"
-    status: 2
-    program_year: 2017
-    description: "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!"
-    tags: 
-      - "mobile"
-      - "games"
-      - "visual programming"
-      - "apps"
-      - "animations"
-    twitter_url: "http://twitter.com/Pocket_Code"
-    contact_email: "user_forum@catrobat.org"
-    irc_channel: null
-    slug: "catrobat"
-    preferred_contact_method: null
-    guide_to_working: "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions."
-    name: "Catrobat"
-    precis: "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!"
-    image_url: "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE"
-    blog_url: null
-    github: "Catrobat"
-    chat: 
-      url: null
-  - 
     primary_open_source_license: "GNU Library or \"Lesser\" General Public License version 2.1 (LGPL-2.1)"
     leaders: 
       - 
@@ -1362,6 +1387,10 @@
     leaders: 
       - 
         program_year: 2017
+        display_name: "Ethan Zhao"
+        id: 6556823228252160
+      - 
+        program_year: 2017
         display_name: "Jerry Huang"
         id: 5364363542134784
       - 
@@ -1378,7 +1407,7 @@
       - "c++"
       - "javascript"
     guide_to_working_url: "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students"
-    completed_task_instance_count: 95
+    completed_task_instance_count: 97
     id: 5139786496999424
     winners: {}
     mailing_list: "http://www.osgeo.org/content/faq/mailing_lists.html"
