@@ -15,7 +15,8 @@
     "mustache": "^2.3.0",
     "ncp": "^2.0.0",
     "node-fetch": "^1.7.3",
-    "valid-github-username": "0.0.1"
+    "valid-github-username": "0.0.1",
+    "wikidata-sdk": "^5.5.0"
   },
   "devDependencies": {
     "csslint": "^1.0.5",
