@@ -68,7 +68,7 @@
       "html"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 762,
+    "completed_task_instance_count": 765,
     "id": 5733899491606528,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/jboss-community-gci/",
@@ -98,6 +98,10 @@
       "url": "https://gitter.im/jboss-outreach/gci",
       "platform": "GITTER",
       "image": "static/images/logos/gitter.png"
+    },
+    "wiki": {
+      "wikipedia": null,
+      "wikidata": null
     }
   },
   {
@@ -169,7 +173,7 @@
       "python"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 423,
+    "completed_task_instance_count": 432,
     "id": 4923880235859968,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/score-community",
@@ -199,6 +203,10 @@
       "url": "https://gitter.im/scorelab/scorelab",
       "platform": "GITTER",
       "image": "static/images/logos/gitter.png"
+    },
+    "wiki": {
+      "wikipedia": null,
+      "wikidata": null
     }
   },
   {
@@ -255,7 +263,7 @@
       "css"
     ],
     "guide_to_working_url": "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background",
-    "completed_task_instance_count": 345,
+    "completed_task_instance_count": 348,
     "id": 4879181169033216,
     "winners": {},
     "mailing_list": "http://lists.sugarlabs.org/",
@@ -283,6 +291,15 @@
       "url": "https://chat.sugarlabs.org",
       "platform": "OTHER",
       "image": "static/images/chat.png"
+    },
+    "wiki": {
+      "wikipedia": {
+        "en": "https://en.wikipedia.org/wiki/Sugar_Labs",
+        "fa": "https://fa.wikipedia.org/wiki/%D8%A2%D8%B2%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87_%D8%B4%DA%A9%D8%B1",
+        "ja": "https://ja.wikipedia.org/wiki/Sugar_Labs",
+        "pl": "https://pl.wikipedia.org/wiki/Sugar_Labs"
+      },
+      "wikidata": "//www.wikidata.org/wiki/Q5935028"
     }
   },
   {
@@ -359,7 +376,7 @@
       "python"
     ],
     "guide_to_working_url": "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/",
-    "completed_task_instance_count": 340,
+    "completed_task_instance_count": 344,
     "id": 6237166344601600,
     "winners": {},
     "mailing_list": "http://groups.google.com/group/fossasia",
@@ -389,6 +406,17 @@
       "url": "https://gitter.im/fossasia/fossasia",
       "platform": "GITTER",
       "image": "static/images/logos/gitter.png"
+    },
+    "wiki": {
+      "wikipedia": {
+        "de": "https://de.wikipedia.org/wiki/FOSSASIA",
+        "hi": "https://hi.wikipedia.org/wiki/%E0%A4%AB%E0%A5%89%E0%A4%B8%E0%A4%8F%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "pl": "https://pl.wikipedia.org/wiki/FOSSASIA",
+        "ro": "https://ro.wikipedia.org/wiki/FOSSASIA",
+        "vi": "https://vi.wikipedia.org/wiki/FOSSASIA",
+        "zh": "https://zh.wikipedia.org/wiki/FOSSASIA"
+      },
+      "wikidata": "//www.wikidata.org/wiki/Q16957617"
     }
   },
   {
@@ -436,7 +464,7 @@
       "sql"
     ],
     "guide_to_working_url": "https://wiki.musicbrainz.org/Google_Code-in/2017",
-    "completed_task_instance_count": 279,
+    "completed_task_instance_count": 287,
     "id": 5936087526539264,
     "winners": {},
     "mailing_list": "https://community.metabrainz.org/",
@@ -465,6 +493,15 @@
       "url": "irc://irc.freenode.net/musicbrainz",
       "platform": "IRC",
       "image": "static/images/logos/irc.png"
+    },
+    "wiki": {
+      "wikipedia": {
+        "en": "https://en.wikipedia.org/wiki/MetaBrainz_Foundation",
+        "es": "https://es.wikipedia.org/wiki/MetaBrainz_Foundation",
+        "fa": "https://fa.wikipedia.org/wiki/%D8%A8%D9%86%DB%8C%D8%A7%D8%AF_%D9%85%D8%AA%D8%A7%D8%A8%D8%B1%DB%8C%D9%86%D8%B2",
+        "fr": "https://fr.wikipedia.org/wiki/MetaBrainz"
+      },
+      "wikidata": "//www.wikidata.org/wiki/Q952204"
     }
   },
   {
@@ -519,7 +556,7 @@
       "visual design"
     ],
     "guide_to_working_url": "https://github.com/zulip/zulip-gci",
-    "completed_task_instance_count": 245,
+    "completed_task_instance_count": 249,
     "id": 5744567921934336,
     "winners": {},
     "mailing_list": null,
@@ -549,6 +586,267 @@
       "url": "https://chat.zulip.org",
       "platform": "ZULIP",
       "image": "static/images/logos/zulip.png"
+    },
+    "wiki": {
+      "wikipedia": {
+        "en": "https://en.wikipedia.org/wiki/Zulip",
+        "ru": "https://ru.wikipedia.org/wiki/Zulip"
+      },
+      "wikidata": "//www.wikidata.org/wiki/Q23680052"
+    }
+  },
+  {
+    "primary_open_source_license": "GNU General Public License version 3.0 (GPL-3.0)",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Accelerator",
+        "id": 5456412610134016
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Aden",
+        "id": 4563995715436544
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Heesen Ponnusawmy",
+        "id": 5164862177017856
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Ivan Fonseca",
+        "id": 6742578886082560
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Konrad Krawiec",
+        "id": 5887809686601728
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Marcin Mikołajczak",
+        "id": 5470339310026752
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": "https://plus.google.com/+Ubuntu",
+    "programming_languages": [
+      "python",
+      "javascript",
+      "snapcraft",
+      "gnome",
+      "c/c++"
+    ],
+    "guide_to_working_url": "",
+    "completed_task_instance_count": 236,
+    "id": 5133577048031232,
+    "winners": {},
+    "mailing_list": "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc",
+    "website_url": "https://www.ubuntu.com",
+    "status": 2,
+    "program_year": 2017,
+    "description": "We believe in fast, effective computing for everyone. Created by the open-source community and Canonical, Ubuntu is free to use and share, at home and in business. \n\n## The Ubuntu Promise\n\nUbuntu is free. Always has been and always will be. From the operating system to security updates, storage to software. Ubuntu is fast to load, easy to use, available in most languages and accessible to all. Ubuntu applications are all free and open source — so you can share them with anyone you like, as often as you like. Ubuntu comes with full support and all kinds of services available worldwide.\n\n## Open-source software\n\nUbuntu is created by open-source developers because we believe that everybody should have access to the best possible technologies. This passionate global community works together to continually evolve the best systems in the world and then make them available to everybody, absolutely free.",
+    "tags": [
+      "desktop",
+      "server",
+      "cloud",
+      "iot",
+      "linux"
+    ],
+    "twitter_url": "https://twitter.com/ubuntu",
+    "contact_email": "popey@ubuntu.com",
+    "irc_channel": "http://webchat.freenode.net?channels=%23ubuntu-google",
+    "slug": "ubuntu",
+    "preferred_contact_method": null,
+    "guide_to_working": "Most tasks you will require that you have a Launchpad account.\n\n  * https://help.launchpad.net/YourAccount",
+    "name": "Ubuntu",
+    "precis": "Ubuntu is an open source software operating system that runs from the desktop, to the cloud, to all your internet connected things",
+    "image_url": "//lh3.googleusercontent.com/ky-5tp5CtzdbCtLI2j8xlAM30zMSzqHmwRLSQ_6CBQ051am1WgQy64hhtMBKvSe-QytQ8uwhx3cpLRSpXxBsInM",
+    "blog_url": "https://insights.ubuntu.com/",
+    "github": "Ubuntu",
+    "chat": {
+      "url": "irc://irc.freenode.net/ubuntu-google",
+      "platform": "IRC",
+      "image": "static/images/logos/irc.png"
+    },
+    "wiki": {
+      "wikipedia": {
+        "af": "https://af.wikipedia.org/wiki/Ubuntu_%28Linux%29",
+        "als": "https://als.wikipedia.org/wiki/Ubuntu_Linux",
+        "am": "https://am.wikipedia.org/wiki/%E1%8A%A1%E1%89%A1%E1%8A%95%E1%89%B1",
+        "ang": "https://ang.wikipedia.org/wiki/Ubuntu",
+        "ar": "https://ar.wikipedia.org/wiki/%D8%A3%D9%88%D8%A8%D9%88%D9%86%D8%AA%D9%88",
+        "ast": "https://ast.wikipedia.org/wiki/Ubuntu",
+        "as": "https://as.wikipedia.org/wiki/%E0%A6%87%E0%A6%89%E0%A6%AC%E0%A6%BE%E0%A6%A3%E0%A7%8D%E0%A6%9F%E0%A7%81",
+        "ay": "https://ay.wikipedia.org/wiki/Ubuntu",
+        "azb": "https://azb.wikipedia.org/wiki/%D8%A7%D9%88%D8%A8%D9%88%D9%86%D8%AA%D9%88",
+        "az": "https://az.wikipedia.org/wiki/Ubuntu",
+        "bat_smg": "https://bat_smg.wikipedia.org/wiki/Ubuntu",
+        "ba": "https://ba.wikipedia.org/wiki/Ubuntu",
+        "bcl": "https://bcl.wikipedia.org/wiki/Ubuntu",
+        "be_x_old": "https://be_x_old.wikipedia.org/wiki/Ubuntu",
+        "be": "https://be.wikipedia.org/wiki/Ubuntu",
+        "bg": "https://bg.wikipedia.org/wiki/Ubuntu_Linux",
+        "bm": "https://bm.wikipedia.org/wiki/Ubuntu",
+        "bn": "https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%AC%E0%A7%81%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%81_%28%E0%A6%B2%E0%A6%BF%E0%A6%A8%E0%A6%BE%E0%A6%95%E0%A7%8D%E0%A6%B8_%E0%A6%A1%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%AC%E0%A6%BF%E0%A6%89%E0%A6%B6%E0%A6%A8%29",
+        "br": "https://br.wikipedia.org/wiki/Ubuntu",
+        "bs": "https://bs.wikipedia.org/wiki/Ubuntu_%28operativni_sistem%29",
+        "ca": "https://ca.wikipedia.org/wiki/Ubuntu",
+        "cawikib": "https://ca.wikibooks.org/wiki/Guia_Ubuntu",
+        "cbk_zam": "https://cbk_zam.wikipedia.org/wiki/Ubuntu",
+        "cdo": "https://cdo.wikipedia.org/wiki/Ubuntu",
+        "ceb": "https://ceb.wikipedia.org/wiki/Ubuntu_%28operatibo_sa_sistema%29",
+        "ce": "https://ce.wikipedia.org/wiki/Ubuntu",
+        "ckb": "https://ckb.wikipedia.org/wiki/%D8%A6%D9%88%D8%A8%D9%88%D9%86%D8%AA%D9%88",
+        "commons": "https://commons.wikipedia.org/wiki/Ubuntu",
+        "co": "https://co.wikipedia.org/wiki/Ubuntu",
+        "crh": "https://crh.wikipedia.org/wiki/Ubuntu",
+        "csb": "https://csb.wikipedia.org/wiki/Ubuntu_Linux",
+        "cs": "https://cs.wikipedia.org/wiki/Ubuntu",
+        "cswikiver": "https://cs.wikiversity.org/wiki/Ubuntu",
+        "cv": "https://cv.wikipedia.org/wiki/Ubuntu",
+        "cy": "https://cy.wikipedia.org/wiki/Ubuntu",
+        "da": "https://da.wikipedia.org/wiki/Ubuntu",
+        "de": "https://de.wikipedia.org/wiki/Ubuntu",
+        "dewikib": "https://de.wikibooks.org/wiki/Ubuntu-Anwenderhandbuch",
+        "dsb": "https://dsb.wikipedia.org/wiki/Ubuntu",
+        "ee": "https://ee.wikipedia.org/wiki/Ubuntu",
+        "el": "https://el.wikipedia.org/wiki/Ubuntu",
+        "elwikiver": "https://el.wikiversity.org/wiki/%CE%A4%CE%BC%CE%AE%CE%BC%CE%B1%3AUbuntu",
+        "en": "https://en.wikipedia.org/wiki/Ubuntu_%28operating_system%29",
+        "enwikib": "https://en.wikibooks.org/wiki/Using_Ubuntu_Linux",
+        "enwikiver": "https://en.wikiversity.org/wiki/Ubuntu",
+        "eo": "https://eo.wikipedia.org/wiki/Ubuntu_%28operaciumo%29",
+        "eowikib": "https://eo.wikibooks.org/wiki/Ubuntu",
+        "es": "https://es.wikipedia.org/wiki/Ubuntu",
+        "et": "https://et.wikipedia.org/wiki/Ubuntu",
+        "eu": "https://eu.wikipedia.org/wiki/Ubuntu_%28Linux_banaketa%29",
+        "fa": "https://fa.wikipedia.org/wiki/%D8%A7%D9%88%D8%A8%D9%88%D9%86%D8%AA%D9%88",
+        "fawikib": "https://fa.wikibooks.org/wiki/%D8%AE%D9%88%D8%AF%D8%A2%D9%85%D9%88%D8%B2_%D8%A7%D9%88%D8%A8%D9%88%D9%86%D8%AA%D9%88",
+        "fi": "https://fi.wikipedia.org/wiki/Ubuntu",
+        "fiwikib": "https://fi.wikibooks.org/wiki/Ubuntu_tutuksi",
+        "fo": "https://fo.wikipedia.org/wiki/Ubuntu",
+        "fr": "https://fr.wikipedia.org/wiki/Ubuntu",
+        "frwikib": "https://fr.wikibooks.org/wiki/Ubuntu",
+        "fy": "https://fy.wikipedia.org/wiki/Ubuntu_Linux",
+        "ga": "https://ga.wikipedia.org/wiki/Ubuntu",
+        "glk": "https://glk.wikipedia.org/wiki/%D8%A7%DB%8A%D8%A8%DB%8A%D9%86%D8%AA%DB%8A",
+        "gl": "https://gl.wikipedia.org/wiki/Ubuntu_%28GNU%2FLinux%29",
+        "gn": "https://gn.wikipedia.org/wiki/Ubuntu",
+        "gu": "https://gu.wikipedia.org/wiki/%E0%AA%89%E0%AA%AC%E0%AB%81%E0%AA%A8%E0%AB%8D%E0%AA%9F%E0%AB%81_%28%E0%AA%93%E0%AA%AA%E0%AA%B0%E0%AB%87%E0%AA%9F%E0%AA%BF%E0%AA%82%E0%AA%97_%E0%AA%B8%E0%AA%BF%E0%AA%B8%E0%AB%8D%E0%AA%9F%E0%AA%AE%29",
+        "he": "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%91%D7%95%D7%A0%D7%98%D7%95_%28%D7%9C%D7%99%D7%A0%D7%95%D7%A7%D7%A1%29",
+        "hi": "https://hi.wikipedia.org/wiki/%E0%A4%89%E0%A4%AC%E0%A4%A3%E0%A5%8D%E0%A4%9F%E0%A5%82",
+        "hr": "https://hr.wikipedia.org/wiki/Ubuntu",
+        "hrwikib": "https://hr.wikibooks.org/wiki/Ubuntu",
+        "hsb": "https://hsb.wikipedia.org/wiki/Ubuntu",
+        "ht": "https://ht.wikipedia.org/wiki/Ubuntu",
+        "hu": "https://hu.wikipedia.org/wiki/Ubuntu_%28Linux-disztrib%C3%BAci%C3%B3%29",
+        "hy": "https://hy.wikipedia.org/wiki/%D5%88%D6%82%D5%A2%D5%B8%D6%82%D5%B6%D5%BF%D5%B8%D6%82",
+        "ia": "https://ia.wikipedia.org/wiki/Ubuntu",
+        "id": "https://id.wikipedia.org/wiki/Ubuntu",
+        "ie": "https://ie.wikipedia.org/wiki/Ubuntu",
+        "ig": "https://ig.wikipedia.org/wiki/Ubuntu",
+        "ilo": "https://ilo.wikipedia.org/wiki/Ubuntu",
+        "is": "https://is.wikipedia.org/wiki/Ubuntu",
+        "it": "https://it.wikipedia.org/wiki/Ubuntu",
+        "itwikib": "https://it.wikibooks.org/wiki/Ubuntu",
+        "ja": "https://ja.wikipedia.org/wiki/Ubuntu",
+        "jbo": "https://jbo.wikipedia.org/wiki/ubuntus",
+        "jv": "https://jv.wikipedia.org/wiki/Ubuntu",
+        "ka": "https://ka.wikipedia.org/wiki/Ubuntu",
+        "kg": "https://kg.wikipedia.org/wiki/Ubuntu",
+        "kk": "https://kk.wikipedia.org/wiki/Ubuntu",
+        "km": "https://km.wikipedia.org/wiki/Ubuntu",
+        "kn": "https://kn.wikipedia.org/wiki/%E0%B2%89%E0%B2%AC%E0%B3%81%E0%B2%82%E0%B2%9F%E0%B3%81",
+        "ko": "https://ko.wikipedia.org/wiki/%EC%9A%B0%EB%B6%84%ED%88%AC_%28%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C%29",
+        "ku": "https://ku.wikipedia.org/wiki/Ubuntu",
+        "ky": "https://ky.wikipedia.org/wiki/%D0%A3%D0%B1%D1%83%D0%BD%D1%82%D1%83",
+        "la": "https://la.wikipedia.org/wiki/Ubuntu_%28systema_internum%29",
+        "lb": "https://lb.wikipedia.org/wiki/Ubuntu",
+        "li": "https://li.wikipedia.org/wiki/Ubuntu",
+        "lmo": "https://lmo.wikipedia.org/wiki/Ubuntu",
+        "ln": "https://ln.wikipedia.org/wiki/Ubuntu",
+        "lo": "https://lo.wikipedia.org/wiki/%E0%BA%AD%E0%BA%B8%E0%BA%9A%E0%BA%B8%E0%BA%99%E0%BA%95%E0%BA%B9",
+        "lt": "https://lt.wikipedia.org/wiki/Ubuntu",
+        "lv": "https://lv.wikipedia.org/wiki/Ubuntu_Linux",
+        "map_bms": "https://map_bms.wikipedia.org/wiki/Ubuntu",
+        "mg": "https://mg.wikipedia.org/wiki/Ubuntu",
+        "mk": "https://mk.wikipedia.org/wiki/Ubuntu",
+        "ml": "https://ml.wikipedia.org/wiki/%E0%B4%89%E0%B4%AC%E0%B5%81%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B5%81",
+        "mlwikib": "https://ml.wikibooks.org/wiki/%E0%B4%89%E0%B4%AC%E0%B5%81%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B5%81_%E0%B4%B2%E0%B4%BF%E0%B4%A8%E0%B4%95%E0%B5%8D%E0%B4%B8%E0%B5%8D",
+        "mn": "https://mn.wikipedia.org/wiki/%D2%AE%D0%B1%D2%AF%D0%BD%D1%82%D2%AF",
+        "mr": "https://mr.wikipedia.org/wiki/%E0%A4%89%E0%A4%AC%E0%A5%81%E0%A4%82%E0%A4%9F%E0%A5%82",
+        "ms": "https://ms.wikipedia.org/wiki/Ubuntu",
+        "my": "https://my.wikipedia.org/wiki/%E1%80%A6%E1%80%B8%E1%80%98%E1%80%BD%E1%80%94%E1%80%BA%E1%80%B8%E1%80%90%E1%80%AF",
+        "na": "https://na.wikipedia.org/wiki/Ubuntu",
+        "nds_nl": "https://nds_nl.wikipedia.org/wiki/Ubuntu_%28Linux%29",
+        "nds": "https://nds.wikipedia.org/wiki/Ubuntu",
+        "ne": "https://ne.wikipedia.org/wiki/%E0%A4%89%E0%A4%AC%E0%A5%81%E0%A4%A8%E0%A5%8D%E0%A4%9F%E0%A5%81",
+        "nl": "https://nl.wikipedia.org/wiki/Ubuntu_%28Linuxdistributie%29",
+        "nlwikib": "https://nl.wikibooks.org/wiki/Ubuntu%3A_Linux_voor_mensen",
+        "nn": "https://nn.wikipedia.org/wiki/Ubuntu_Linux",
+        "nov": "https://nov.wikipedia.org/wiki/Ubuntu",
+        "no": "https://no.wikipedia.org/wiki/Ubuntu_%28operativsystem%29",
+        "oc": "https://oc.wikipedia.org/wiki/Ubuntu",
+        "om": "https://om.wikipedia.org/wiki/Ubuntu",
+        "or": "https://or.wikipedia.org/wiki/%E0%AC%89%E0%AC%AC%E0%AD%81%E0%AC%A3%E0%AD%8D%E0%AC%9F%E0%AD%81_%28%E0%AC%85%E0%AC%AA%E0%AC%B0%E0%AD%87%E0%AC%9F%E0%AC%BF%E0%AC%99%E0%AD%8D%E0%AC%97_%E0%AC%B8%E0%AC%BF%E0%AC%B7%E0%AD%8D%E0%AC%9F%E0%AC%AE%29",
+        "os": "https://os.wikipedia.org/wiki/Ubuntu",
+        "pag": "https://pag.wikipedia.org/wiki/Ubuntu",
+        "pa": "https://pa.wikipedia.org/wiki/%E0%A8%89%E0%A8%AC%E0%A9%81%E0%A9%B0%E0%A8%9F%E0%A9%82_%28%E0%A8%86%E0%A8%AA%E0%A8%B0%E0%A9%87%E0%A8%9F%E0%A8%BF%E0%A9%B0%E0%A8%97_%E0%A8%B8%E0%A8%BF%E0%A8%B8%E0%A8%9F%E0%A8%AE%29",
+        "pl": "https://pl.wikipedia.org/wiki/Ubuntu",
+        "plwikib": "https://pl.wikibooks.org/wiki/Ubuntu",
+        "pt": "https://pt.wikipedia.org/wiki/Ubuntu",
+        "rm": "https://rm.wikipedia.org/wiki/Ubuntu",
+        "ro": "https://ro.wikipedia.org/wiki/Ubuntu",
+        "ru": "https://ru.wikipedia.org/wiki/Ubuntu",
+        "ruwikib": "https://ru.wikibooks.org/wiki/Ubuntu",
+        "sah": "https://sah.wikipedia.org/wiki/Ubuntu",
+        "scn": "https://scn.wikipedia.org/wiki/Ubuntu_%28Linux%29",
+        "sco": "https://sco.wikipedia.org/wiki/Ubuntu_%28operatin_seestem%29",
+        "sc": "https://sc.wikipedia.org/wiki/Ubuntu",
+        "sd": "https://sd.wikipedia.org/wiki/%D8%A7%D9%8F%D8%A8%D9%86%D9%BD%D9%88_%28%D8%A2%D9%BE%D8%B1%D9%8A%D9%BD%D9%86%DA%AF_%D9%86%D8%B8%D8%A7%D9%85%29",
+        "sh": "https://sh.wikipedia.org/wiki/Ubuntu_%28Linux_distribucija%29",
+        "simple": "https://simple.wikipedia.org/wiki/Ubuntu",
+        "si": "https://si.wikipedia.org/wiki/%E0%B6%8B%E0%B6%B6%E0%B7%94%E0%B6%B1%E0%B7%8A%E0%B6%A7%E0%B7%94_%28%E0%B6%B4%E0%B6%BB%E0%B7%92%E0%B6%9C%E0%B6%AB%E0%B6%9A_%E0%B6%B8%E0%B7%99%E0%B7%84%E0%B7%99%E0%B6%BA%E0%B7%94%E0%B6%B8%E0%B7%8A_%E0%B6%B4%E0%B6%AF%E0%B7%8A%E0%B6%B0%E0%B6%AD%E0%B7%92%E0%B6%BA%29",
+        "sk": "https://sk.wikipedia.org/wiki/Ubuntu",
+        "sl": "https://sl.wikipedia.org/wiki/Ubuntu",
+        "sm": "https://sm.wikipedia.org/wiki/Ubuntu",
+        "sq": "https://sq.wikipedia.org/wiki/Ubuntu",
+        "sr": "https://sr.wikipedia.org/wiki/Ubuntu",
+        "stq": "https://stq.wikipedia.org/wiki/Ubuntu",
+        "su": "https://su.wikipedia.org/wiki/Ubuntu",
+        "sv": "https://sv.wikipedia.org/wiki/Ubuntu",
+        "szl": "https://szl.wikipedia.org/wiki/Ubuntu",
+        "ta": "https://ta.wikipedia.org/wiki/%E0%AE%89%E0%AE%AA%E0%AF%81%E0%AE%A3%E0%AF%8D%E0%AE%9F%E0%AF%81_%28%E0%AE%87%E0%AE%AF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AE%B3%E0%AE%AE%E0%AF%8D%29",
+        "tet": "https://tet.wikipedia.org/wiki/Ubuntu",
+        "te": "https://te.wikipedia.org/wiki/%E0%B0%89%E0%B0%AC%E0%B1%81%E0%B0%82%E0%B0%9F%E0%B1%81",
+        "tg": "https://tg.wikipedia.org/wiki/%D0%A3%D0%B1%D1%83%D0%BD%D1%82%D1%83",
+        "th": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B9%E0%B8%9A%E0%B8%B8%E0%B8%99%E0%B8%95%E0%B8%B9",
+        "tl": "https://tl.wikipedia.org/wiki/Ubuntu",
+        "tpi": "https://tpi.wikipedia.org/wiki/Ubuntu",
+        "tr": "https://tr.wikipedia.org/wiki/Ubuntu_%28i%C5%9Fletim_sistemi%29",
+        "tt": "https://tt.wikipedia.org/wiki/Ubuntu",
+        "ty": "https://ty.wikipedia.org/wiki/Ubuntu",
+        "udm": "https://udm.wikipedia.org/wiki/Ubuntu",
+        "uk": "https://uk.wikipedia.org/wiki/Ubuntu",
+        "ur": "https://ur.wikipedia.org/wiki/%D8%A7%D9%88%D8%A8%D9%86%D9%B9%D9%88",
+        "uz": "https://uz.wikipedia.org/wiki/Ubuntu_%28Linux_distributivi%29",
+        "vec": "https://vec.wikipedia.org/wiki/Ubuntu",
+        "vi": "https://vi.wikipedia.org/wiki/Ubuntu",
+        "vls": "https://vls.wikipedia.org/wiki/Ubuntu",
+        "war": "https://war.wikipedia.org/wiki/Ubuntu",
+        "yi": "https://yi.wikipedia.org/wiki/%D7%90%D7%95%D7%91%D7%95%D7%A0%D7%98%D7%95",
+        "zea": "https://zea.wikipedia.org/wiki/Ubuntu",
+        "zh_classical": "https://zh_classical.wikipedia.org/wiki/%E7%83%8F%E9%82%A6%E5%9C%9F",
+        "zh_min_nan": "https://zh_min_nan.wikipedia.org/wiki/Ubuntu",
+        "zh_yue": "https://zh_yue.wikipedia.org/wiki/Ubuntu",
+        "zh": "https://zh.wikipedia.org/wiki/Ubuntu",
+        "zhwikib": "https://zh.wikibooks.org/wiki/Ubuntu",
+        "zu": "https://zu.wikipedia.org/wiki/Ubuntu_%28uhlelo%29"
+      },
+      "wikidata": "//www.wikidata.org/wiki/Q381"
     }
   },
   {
@@ -616,7 +914,7 @@
       "wiki"
     ],
     "guide_to_working_url": "https://www.mediawiki.org/wiki/Google_Code-in/2017",
-    "completed_task_instance_count": 231,
+    "completed_task_instance_count": 234,
     "id": 5740205476675584,
     "winners": {},
     "mailing_list": "https://lists.wikimedia.org/mailman/listinfo/wikitech-l",
@@ -645,78 +943,170 @@
       "url": "https://www.mediawiki.org/wiki/MediaWiki_on_IRC",
       "platform": "IRC",
       "image": "static/images/logos/irc.png"
-    }
-  },
-  {
-    "primary_open_source_license": "GNU General Public License version 3.0 (GPL-3.0)",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Accelerator",
-        "id": 5456412610134016
+    },
+    "wiki": {
+      "wikipedia": {
+        "af": "https://af.wikipedia.org/wiki/Wikimedia-stigting",
+        "als": "https://als.wikipedia.org/wiki/Wikimedia_Foundation",
+        "an": "https://an.wikipedia.org/wiki/Fundaci%C3%B3n_Wikimedia",
+        "ar": "https://ar.wikipedia.org/wiki/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9_%D9%88%D9%8A%D9%83%D9%8A%D9%85%D9%8A%D8%AF%D9%8A%D8%A7",
+        "arwiki": "https://ar.wikinews.org/wiki/%D8%AA%D8%B5%D9%86%D9%8A%D9%81%3A%D9%88%D9%8A%D9%83%D9%8A%D9%85%D9%8A%D8%AF%D9%8A%D8%A7",
+        "arz": "https://arz.wikipedia.org/wiki/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9_%D9%88%D9%8A%D9%83%D9%8A%D9%85%D9%8A%D8%AF%D9%8A%D8%A7",
+        "ast": "https://ast.wikipedia.org/wiki/Fundaci%C3%B3n_Wikimedia",
+        "as": "https://as.wikipedia.org/wiki/%E0%A7%B1%E0%A6%BF%E0%A6%95%E0%A6%BF%E0%A6%AE%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AB%E0%A6%BE%E0%A6%89%E0%A6%A3%E0%A7%8D%E0%A6%A1%E0%A7%87%E0%A6%B6%E0%A7%8D%E0%A6%AF%E0%A6%A8",
+        "av": "https://av.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0",
+        "az": "https://az.wikipedia.org/wiki/Vikimedia_Fondu",
+        "bat_smg": "https://bat_smg.wikipedia.org/wiki/Vikimed%C4%97j%C4%97",
+        "ba": "https://ba.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D1%84%D0%BE%D0%BD%D0%B4%D1%8B",
+        "be_x_old": "https://be_x_old.wikipedia.org/wiki/%D0%A4%D1%83%D0%BD%D0%B4%D0%B0%D1%86%D1%8B%D1%8F_%C2%AB%D0%92%D1%96%D0%BA%D1%96%D0%BC%D1%8D%D0%B4%D1%8B%D1%8F%C2%BB",
+        "be": "https://be.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D1%96%D0%BA%D1%96%D0%BC%D0%B5%D0%B4%D1%8B%D1%8F",
+        "bg": "https://bg.wikipedia.org/wiki/%D0%A3%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%8F",
+        "bh": "https://bh.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%82%E0%A4%A1%E0%A5%87%E0%A4%B6%E0%A4%A8",
+        "bjn": "https://bjn.wikipedia.org/wiki/Wikimedia_Foundation",
+        "bn": "https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AE%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AB%E0%A6%BE%E0%A6%89%E0%A6%A8%E0%A7%8D%E0%A6%A1%E0%A7%87%E0%A6%B6%E0%A6%A8",
+        "bpy": "https://bpy.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%3A%E0%A6%AC%E0%A6%A8%E0%A6%95_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%95%E0%A6%B2%E0%A7%8D%E0%A6%AA%E0%A6%B9%E0%A6%BE%E0%A6%A8%E0%A6%BF",
+        "br": "https://br.wikipedia.org/wiki/Wikimedia_Foundation",
+        "ca": "https://ca.wikipedia.org/wiki/Fundaci%C3%B3_Wikimedia",
+        "cdo": "https://cdo.wikipedia.org/wiki/Wikimedia",
+        "ceb": "https://ceb.wikipedia.org/wiki/Wikimedia_Foundation",
+        "ce": "https://ce.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%BD_%D1%84%D0%BE%D0%BD%D0%B4",
+        "ch": "https://ch.wikipedia.org/wiki/Wikimedia_Foundation",
+        "ckb": "https://ckb.wikipedia.org/wiki/%D8%AF%D8%A7%D9%85%DB%95%D8%B2%D8%B1%D8%A7%D9%88%DB%95%DB%8C_%D9%88%DB%8C%DA%A9%DB%8C%D9%85%DB%8C%D8%AF%DB%8C%D8%A7",
+        "commons": "https://commons.wikipedia.org/wiki/Wikimedia_Foundation",
+        "cs": "https://cs.wikipedia.org/wiki/Nadace_Wikimedia",
+        "cswiki": "https://cs.wikinews.org/wiki/Kategorie%3AWikimedia_Foundation",
+        "cv": "https://cv.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D1%84%D0%BE%D0%BD%D1%87%C4%95",
+        "cy": "https://cy.wikipedia.org/wiki/Sefydliad_Wicimedia",
+        "da": "https://da.wikipedia.org/wiki/Wikimedia",
+        "de": "https://de.wikipedia.org/wiki/Wikimedia_Foundation",
+        "el": "https://el.wikipedia.org/wiki/%CE%8A%CE%B4%CF%81%CF%85%CE%BC%CE%B1_Wikimedia",
+        "elwikiq": "https://el.wikiquote.org/wiki/%CE%8A%CE%B4%CF%81%CF%85%CE%BC%CE%B1_Wikimedia",
+        "eml": "https://eml.wikipedia.org/wiki/Wikimedia_Foundation",
+        "en": "https://en.wikipedia.org/wiki/Wikimedia_Foundation",
+        "enwiki": "https://en.wikinews.org/wiki/Category%3AWikimedia_Foundation",
+        "enwikiver": "https://en.wikiversity.org/wiki/Wikimedia_Foundation",
+        "eo": "https://eo.wikipedia.org/wiki/Fonda%C4%B5o_Vikimedio",
+        "es": "https://es.wikipedia.org/wiki/Fundaci%C3%B3n_Wikimedia",
+        "eswikiq": "https://es.wikiquote.org/wiki/Fundaci%C3%B3n_Wikimedia",
+        "et": "https://et.wikipedia.org/wiki/Wikimedia_Foundation",
+        "eu": "https://eu.wikipedia.org/wiki/Wikimedia_Fundazioa",
+        "ext": "https://ext.wikipedia.org/wiki/Hundaci%C3%B3n_Wikimedia",
+        "fa": "https://fa.wikipedia.org/wiki/%D8%A8%D9%86%DB%8C%D8%A7%D8%AF_%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D9%85%D8%AF%DB%8C%D8%A7",
+        "fiu_vro": "https://fiu_vro.wikipedia.org/wiki/Vikimeedi%C3%A4_Tsihts%C3%A4%C3%A4d%C3%BCng",
+        "fi": "https://fi.wikipedia.org/wiki/Wikimedia_Foundation",
+        "fiwiki": "https://fi.wikinews.org/wiki/Luokka%3AWikimedia",
+        "fo": "https://fo.wikipedia.org/wiki/Wikimedia",
+        "fr": "https://fr.wikipedia.org/wiki/Wikimedia_Foundation",
+        "frwikiq": "https://fr.wikiquote.org/wiki/Wikimedia_Foundation",
+        "ga": "https://ga.wikipedia.org/wiki/Wikimedia_Foundation",
+        "gd": "https://gd.wikipedia.org/wiki/Wikimedia",
+        "gl": "https://gl.wikipedia.org/wiki/Fundaci%C3%B3n_Wikimedia",
+        "gu": "https://gu.wikipedia.org/wiki/%E0%AA%B5%E0%AA%BF%E0%AA%95%E0%AA%BF%E0%AA%AE%E0%AB%80%E0%AA%A1%E0%AA%BF%E0%AA%AF%E0%AA%BE_%E0%AA%AB%E0%AA%BE%E0%AA%89%E0%AA%A8%E0%AB%8D%E0%AA%A1%E0%AB%87%E0%AA%B6%E0%AA%A8",
+        "gv": "https://gv.wikipedia.org/wiki/Wikimedia",
+        "hak": "https://hak.wikipedia.org/wiki/Wikimedia",
+        "he": "https://he.wikipedia.org/wiki/%D7%A7%D7%A8%D7%9F_%D7%95%D7%99%D7%A7%D7%99%D7%9E%D7%93%D7%99%D7%94",
+        "hi": "https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%B8%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%A8",
+        "hr": "https://hr.wikipedia.org/wiki/Zaklada_Wikimedija",
+        "hu": "https://hu.wikipedia.org/wiki/Wikim%C3%A9dia_Alap%C3%ADtv%C3%A1ny",
+        "hy": "https://hy.wikipedia.org/wiki/%D5%8E%D5%AB%D6%84%D5%AB%D5%B4%D5%A5%D5%A4%D5%AB%D5%A1_%D5%80%D5%AB%D5%B4%D5%B6%D5%A1%D5%A4%D6%80%D5%A1%D5%B4",
+        "ia": "https://ia.wikipedia.org/wiki/Wikimedia",
+        "id": "https://id.wikipedia.org/wiki/Wikimedia_Foundation",
+        "ilo": "https://ilo.wikipedia.org/wiki/Pundasion_ti_Wikimedia",
+        "is": "https://is.wikipedia.org/wiki/Wikimedia",
+        "it": "https://it.wikipedia.org/wiki/Wikimedia_Foundation",
+        "jam": "https://jam.wikipedia.org/wiki/Wikimedia_Foundation",
+        "ja": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E8%B2%A1%E5%9B%A3",
+        "jv": "https://jv.wikipedia.org/wiki/Wikimedia_Foundation",
+        "ka": "https://ka.wikipedia.org/wiki/%E1%83%A4%E1%83%9D%E1%83%9C%E1%83%93%E1%83%98_%E1%83%95%E1%83%98%E1%83%99%E1%83%98%E1%83%9B%E1%83%94%E1%83%93%E1%83%98%E1%83%90",
+        "kk": "https://kk.wikipedia.org/wiki/%D0%A3%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D2%9B%D0%BE%D1%80%D1%8B",
+        "kn": "https://kn.wikipedia.org/wiki/%E0%B2%B5%E0%B2%BF%E0%B2%95%E0%B2%BF%E0%B2%AA%E0%B3%80%E0%B2%A1%E0%B2%BF%E0%B2%AF%3A%E0%B2%AF%E0%B3%8B%E0%B2%9C%E0%B2%A8%E0%B3%86",
+        "ko": "https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%AF%B8%EB%94%94%EC%96%B4_%EC%9E%AC%EB%8B%A8",
+        "kowikiso": "https://ko.wikisource.org/wiki/%EC%9C%84%ED%82%A4%EB%AC%B8%ED%97%8C%3A%EC%9C%84%ED%82%A4%EB%AF%B8%EB%94%94%EC%96%B4_%EC%9E%AC%EB%8B%A8",
+        "krc": "https://krc.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D1%84%D0%BE%D0%BD%D0%B4",
+        "ku": "https://ku.wikipedia.org/wiki/Weqfa_W%C3%AEk%C3%AEmedya",
+        "lad": "https://lad.wikipedia.org/wiki/Fondasion_Wikimedia",
+        "la": "https://la.wikipedia.org/wiki/Vicimedia",
+        "lb": "https://lb.wikipedia.org/wiki/Wikimedia",
+        "li": "https://li.wikipedia.org/wiki/Wikimedia_Foundation",
+        "lt": "https://lt.wikipedia.org/wiki/Vikimedijos_fondas",
+        "lv": "https://lv.wikipedia.org/wiki/Wikimedia_Foundation",
+        "mai": "https://mai.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A4%BF%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%A8%E0%A5%8D%E0%A4%A1%E0%A5%87%E0%A4%B8%E0%A4%A8",
+        "map_bms": "https://map_bms.wikipedia.org/wiki/Wikimedia_Foundation",
+        "meta": "https://meta.wikipedia.org/wiki/Wikimedia_Foundation",
+        "mg": "https://mg.wikipedia.org/wiki/Wikimedia_Foundation",
+        "mk": "https://mk.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D1%98%D0%B0_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%98%D0%B0",
+        "ml": "https://ml.wikipedia.org/wiki/%E0%B4%B5%E0%B4%BF%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%BF%E0%B4%AE%E0%B5%80%E0%B4%A1%E0%B4%BF%E0%B4%AF_%E0%B4%AB%E0%B5%97%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B5%87%E0%B4%B7%E0%B5%BB",
+        "mo": "https://mo.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%8F",
+        "mr": "https://mr.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%82%E0%A4%A1%E0%A5%87%E0%A4%B6%E0%A4%A8",
+        "ms": "https://ms.wikipedia.org/wiki/Wikimedia_Foundation",
+        "mt": "https://mt.wikipedia.org/wiki/Fondazzjoni_Wikimedia",
+        "my": "https://my.wikipedia.org/wiki/%E1%80%9D%E1%80%AE%E1%80%80%E1%80%AE%E1%80%99%E1%80%AE%E1%80%92%E1%80%AE%E1%80%9A%E1%80%AC_%E1%80%96%E1%80%B1%E1%80%AC%E1%80%84%E1%80%BA%E1%80%92%E1%80%B1%E1%80%B8%E1%80%9B%E1%80%BE%E1%80%84%E1%80%BA%E1%80%B8",
+        "nap": "https://nap.wikipedia.org/wiki/Funnazzione_Wikimedia",
+        "nds_nl": "https://nds_nl.wikipedia.org/wiki/Wikimedia_Foundation",
+        "ne": "https://ne.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A4%BF%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%A8%E0%A5%8D%E0%A4%A1%E0%A5%87%E0%A4%B8%E0%A4%A8",
+        "nl": "https://nl.wikipedia.org/wiki/Wikimedia_Foundation",
+        "nn": "https://nn.wikipedia.org/wiki/Wikimedia",
+        "no": "https://no.wikipedia.org/wiki/Wikimedia_Foundation",
+        "oc": "https://oc.wikipedia.org/wiki/Wikimedia_Foundation",
+        "or": "https://or.wikipedia.org/wiki/%E0%AC%89%E0%AC%87%E0%AC%95%E0%AC%BF%E0%AC%AE%E0%AC%BF%E0%AC%A1%E0%AC%BC%E0%AC%BF%E0%AC%86_%E0%AC%AB%E0%AC%BE%E0%AC%89%E0%AC%A3%E0%AD%8D%E0%AC%A1%E0%AD%87%E0%AC%B8%E0%AC%A8",
+        "pam": "https://pam.wikipedia.org/wiki/Katatagan_Wikimedia",
+        "pap": "https://pap.wikipedia.org/wiki/Fundashon_Wikipedia",
+        "pa": "https://pa.wikipedia.org/wiki/%E0%A8%B5%E0%A8%BF%E0%A8%95%E0%A9%80%E0%A8%AE%E0%A9%80%E0%A8%A1%E0%A9%80%E0%A8%86_%E0%A8%AB%E0%A8%BC%E0%A8%BE%E0%A8%8A%E0%A8%82%E0%A8%A1%E0%A9%87%E0%A8%B8%E0%A8%BC%E0%A8%A8",
+        "pl": "https://pl.wikipedia.org/wiki/Wikimedia_Foundation",
+        "plwikiq": "https://pl.wikiquote.org/wiki/Wikimedia_Foundation",
+        "ps": "https://ps.wikipedia.org/wiki/%D9%88%D9%8A%DA%A9%D9%8A%D9%85%DB%90%DA%89%D9%8A%D8%A7_%D8%A8%D9%86%D8%B3%D9%BC",
+        "pt": "https://pt.wikipedia.org/wiki/Wikimedia",
+        "ptwiki": "https://pt.wikinews.org/wiki/Categoria%3AWikimedia_Foundation",
+        "qu": "https://qu.wikipedia.org/wiki/Wikimedia",
+        "ro": "https://ro.wikipedia.org/wiki/Wikimedia_Foundation",
+        "rue": "https://rue.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D1%96%D0%BA%D1%96%D0%BC%D0%B5%D0%B4%D1%96%D1%8F",
+        "ru": "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0",
+        "ruwiki": "https://ru.wikinews.org/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%3A%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0",
+        "sah": "https://sah.wikipedia.org/wiki/Wikimedia",
+        "sa": "https://sa.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "scn": "https://scn.wikipedia.org/wiki/Funnaziuni_Wikimedia",
+        "sco": "https://sco.wikipedia.org/wiki/Wikimedia_Foundation",
+        "sd": "https://sd.wikipedia.org/wiki/%D9%88%DA%AA%D9%8A%D9%85%D9%8A%DA%8A%D9%8A%D8%A7_%D9%81%D8%A7%D8%A6%D9%88%D9%86%DA%8A%D9%8A%D8%B4%D9%86",
+        "sh": "https://sh.wikipedia.org/wiki/Wikimedia_Foundation",
+        "simple": "https://simple.wikipedia.org/wiki/Wikimedia_Foundation",
+        "si": "https://si.wikipedia.org/wiki/%E0%B7%80%E0%B7%92%E0%B6%9A%E0%B7%92%E0%B6%B8%E0%B7%93%E0%B6%A9%E0%B7%92%E0%B6%BA%E0%B7%8F_%E0%B6%B4%E0%B6%AF%E0%B6%B1%E0%B6%B8",
+        "sk": "https://sk.wikipedia.org/wiki/Wikimedia_Foundation",
+        "sl": "https://sl.wikipedia.org/wiki/Fundacija_Wikimedia",
+        "so": "https://so.wikipedia.org/wiki/Wikimedia",
+        "species": "https://species.wikipedia.org/wiki/Wikimedia_Foundation",
+        "sq": "https://sq.wikipedia.org/wiki/Fondacioni_Wikimedia",
+        "sr": "https://sr.wikipedia.org/wiki/%D0%97%D0%B0%D0%B4%D1%83%D0%B6%D0%B1%D0%B8%D0%BD%D0%B0_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%98%D0%B0",
+        "sv": "https://sv.wikipedia.org/wiki/Wikimedia_Foundation",
+        "sw": "https://sw.wikipedia.org/wiki/Wikimedia_Foundation",
+        "ta": "https://ta.wikipedia.org/wiki/%E0%AE%B5%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%BF%E0%AE%AE%E0%AF%80%E0%AE%9F%E0%AE%BF%E0%AE%AF%E0%AE%BE_%E0%AE%A8%E0%AE%BF%E0%AE%B1%E0%AF%81%E0%AE%B5%E0%AE%A9%E0%AE%AE%E0%AF%8D",
+        "te": "https://te.wikipedia.org/wiki/%E0%B0%B5%E0%B0%BF%E0%B0%95%E0%B1%80%E0%B0%AE%E0%B1%80%E0%B0%A1%E0%B0%BF%E0%B0%AF%E0%B0%BE_%E0%B0%AB%E0%B1%8C%E0%B0%82%E0%B0%A1%E0%B1%87%E0%B0%B7%E0%B0%A8%E0%B1%8D",
+        "tg": "https://tg.wikipedia.org/wiki/%D0%91%D1%83%D0%BD%D1%91%D0%B4%D0%B8_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0",
+        "th": "https://th.wikipedia.org/wiki/%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%99%E0%B8%B4%E0%B8%98%E0%B8%B4%E0%B8%A7%E0%B8%B4%E0%B8%81%E0%B8%B4%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2",
+        "tl": "https://tl.wikipedia.org/wiki/Pundasyong_Wikimedia",
+        "tr": "https://tr.wikipedia.org/wiki/Wikimedia_Vakf%C4%B1",
+        "trwiki": "https://tr.wikinews.org/wiki/Kategori%3AVikimedya_Vakf%C4%B1",
+        "ts": "https://ts.wikipedia.org/wiki/Wikimedia",
+        "tt": "https://tt.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D0%A4%D0%BE%D0%BD%D0%B4%D1%8B",
+        "ug": "https://ug.wikipedia.org/wiki/%DB%8B%D9%89%D9%83%D9%89%D9%BE%DB%90%D8%AF%D9%89%D9%8A%DB%95_%DB%8B%DB%95%D8%AE%D9%BE%D9%89",
+        "uk": "https://uk.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D1%96%D0%BA%D1%96%D0%BC%D0%B5%D0%B4%D1%96%D0%B0",
+        "ur": "https://ur.wikipedia.org/wiki/%D9%88%DB%8C%DA%A9%DB%8C%D9%85%DB%8C%DA%88%DB%8C%D8%A7_%D9%81%D8%A7%D8%A4%D9%86%DA%88%DB%8C%D8%B4%D9%86",
+        "uz": "https://uz.wikipedia.org/wiki/Vikimedia_Jamg%CA%BBarmasi",
+        "vec": "https://vec.wikipedia.org/wiki/Wikimedia_Foundation",
+        "vep": "https://vep.wikipedia.org/wiki/Vikimedii",
+        "vi": "https://vi.wikipedia.org/wiki/Wikimedia_Foundation",
+        "war": "https://war.wikipedia.org/wiki/Wikimedia_Foundation",
+        "xal": "https://xal.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D0%BA%D3%A9%D1%80%D2%A3",
+        "xmf": "https://xmf.wikipedia.org/wiki/%E1%83%A4%E1%83%9D%E1%83%9C%E1%83%93%E1%83%98_%E1%83%95%E1%83%98%E1%83%99%E1%83%98%E1%83%9B%E1%83%94%E1%83%93%E1%83%98%E1%83%90",
+        "yi": "https://yi.wikipedia.org/wiki/%D7%95%D7%95%D7%99%D7%A7%D7%99%D7%9E%D7%A2%D7%93%D7%99%D7%A2_%D7%A4%D7%95%D7%A0%D7%93%D7%90%D7%A6%D7%99%D7%A2",
+        "yo": "https://yo.wikipedia.org/wiki/Wikimedia",
+        "za": "https://za.wikipedia.org/wiki/Veizgiek_Meizdij_Gihginhvei",
+        "zh_classical": "https://zh_classical.wikipedia.org/wiki/%E7%B6%AD%E5%9F%BA%E5%AA%92%E9%AB%94%E5%9F%BA%E9%87%91%E6%9C%83",
+        "zh_min_nan": "https://zh_min_nan.wikipedia.org/wiki/Wikimedia",
+        "zh_yue": "https://zh_yue.wikipedia.org/wiki/%E7%B6%AD%E5%9F%BA%E5%AA%92%E9%AB%94%E5%9F%BA%E9%87%91%E6%9C%83",
+        "zh": "https://zh.wikipedia.org/wiki/%E7%BB%B4%E5%9F%BA%E5%AA%92%E4%BD%93%E5%9F%BA%E9%87%91%E4%BC%9A",
+        "zhwiki": "https://zh.wikinews.org/wiki/Category%3A%E7%BB%B4%E5%9F%BA%E5%AA%92%E4%BD%93"
       },
-      {
-        "program_year": 2017,
-        "display_name": "Aden",
-        "id": 4563995715436544
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Heesen Ponnusawmy",
-        "id": 5164862177017856
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Ivan Fonseca",
-        "id": 6742578886082560
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Marcin Mikołajczak",
-        "id": 5470339310026752
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": "https://plus.google.com/+Ubuntu",
-    "programming_languages": [
-      "python",
-      "javascript",
-      "snapcraft",
-      "gnome",
-      "c/c++"
-    ],
-    "guide_to_working_url": "",
-    "completed_task_instance_count": 227,
-    "id": 5133577048031232,
-    "winners": {},
-    "mailing_list": "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc",
-    "website_url": "https://www.ubuntu.com",
-    "status": 2,
-    "program_year": 2017,
-    "description": "We believe in fast, effective computing for everyone. Created by the open-source community and Canonical, Ubuntu is free to use and share, at home and in business. \n\n## The Ubuntu Promise\n\nUbuntu is free. Always has been and always will be. From the operating system to security updates, storage to software. Ubuntu is fast to load, easy to use, available in most languages and accessible to all. Ubuntu applications are all free and open source — so you can share them with anyone you like, as often as you like. Ubuntu comes with full support and all kinds of services available worldwide.\n\n## Open-source software\n\nUbuntu is created by open-source developers because we believe that everybody should have access to the best possible technologies. This passionate global community works together to continually evolve the best systems in the world and then make them available to everybody, absolutely free.",
-    "tags": [
-      "desktop",
-      "server",
-      "cloud",
-      "iot",
-      "linux"
-    ],
-    "twitter_url": "https://twitter.com/ubuntu",
-    "contact_email": "popey@ubuntu.com",
-    "irc_channel": "http://webchat.freenode.net?channels=%23ubuntu-google",
-    "slug": "ubuntu",
-    "preferred_contact_method": null,
-    "guide_to_working": "Most tasks you will require that you have a Launchpad account.\n\n  * https://help.launchpad.net/YourAccount",
-    "name": "Ubuntu",
-    "precis": "Ubuntu is an open source software operating system that runs from the desktop, to the cloud, to all your internet connected things",
-    "image_url": "//lh3.googleusercontent.com/ky-5tp5CtzdbCtLI2j8xlAM30zMSzqHmwRLSQ_6CBQ051am1WgQy64hhtMBKvSe-QytQ8uwhx3cpLRSpXxBsInM",
-    "blog_url": "https://insights.ubuntu.com/",
-    "github": "ubuntu",
-    "chat": {
-      "url": "irc://irc.freenode.net/ubuntu-google",
-      "platform": "IRC",
-      "image": "static/images/logos/irc.png"
+      "wikidata": "//www.wikidata.org/wiki/Q180"
     }
   },
   {
@@ -769,7 +1159,7 @@
       "html/css"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 223,
+    "completed_task_instance_count": 231,
     "id": 5154791065911296,
     "winners": {},
     "mailing_list": "http://brlcad.org/wiki/Mailing_lists",
@@ -799,6 +1189,96 @@
       "url": "http://brlcad.org/wiki/IRC",
       "platform": "IRC",
       "image": "static/images/logos/irc.png"
+    },
+    "wiki": {
+      "wikipedia": {
+        "commons": "https://commons.wikipedia.org/wiki/Category%3ABRL-CAD",
+        "cs": "https://cs.wikipedia.org/wiki/BRL-CAD",
+        "de": "https://de.wikipedia.org/wiki/BRL-CAD",
+        "en": "https://en.wikipedia.org/wiki/BRL-CAD",
+        "fr": "https://fr.wikipedia.org/wiki/BRL-CAD",
+        "it": "https://it.wikipedia.org/wiki/BRL-CAD",
+        "ru": "https://ru.wikipedia.org/wiki/BRL-CAD",
+        "uk": "https://uk.wikipedia.org/wiki/BRL-CAD"
+      },
+      "wikidata": "//www.wikidata.org/wiki/Q796941"
+    }
+  },
+  {
+    "primary_open_source_license": "GNU General Public License version 3.0 (GPL-3.0)",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Aarnav Bos",
+        "id": 5288208805920768
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Aditya",
+        "id": 6573208931139584
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Alan Zhu",
+        "id": 6075101978034176
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Hizkia Felix",
+        "id": 5631601239130112
+      },
+      {
+        "program_year": 2017,
+        "display_name": "phyxkal",
+        "id": 5246606410514432,
+        "github_account": "phyxkal"
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": null,
+    "programming_languages": [
+      "python",
+      "django",
+      "javascript",
+      "html",
+      "css"
+    ],
+    "guide_to_working_url": "http://openwisp.io/docs/developer/contributing.html",
+    "completed_task_instance_count": 205,
+    "id": 5693741010518016,
+    "winners": {},
+    "mailing_list": "https://groups.google.com/d/forum/openwisp/join",
+    "website_url": "http://openwisp.org",
+    "status": 2,
+    "program_year": 2017,
+    "description": "In the summer of 2008 the [Metropolitan City of Rome](http://www.cittametropolitanaroma.gov.it/) decided to start a **free of charge and public Wi-Fi network** to be spread over its 5352 SQ KM territory including Rome and 120 other cities for a total of about 4.5 million inhabitants. The main objective of the project, called **ProvinciaWiFi** (later renamed [WiFi Metropolitano](http://www.cittametropolitanaroma.gov.it/index.php/wifimetropolitano-english-version)), was to take a decisive step to reduce the existing **digital divide** by fostering and facilitating the use of ICT by citizens.\nFrom the outset it was decided to commit the project to a completely open philosophy. For this reason a clear choice towards open software and operating systems and the availability of every modification, update and improvement to the community was made. The same approach was adopted for the knowledge and the experience acquired within the project. In order to pursue this goals the Province of Rome called the university consortium *CASPUR* (later merged in the [CINECA](https://www.cineca.it/en) consortium) to develop the technical solution. In this context, a research project conducted by the *CINECA* consortium found its perfect application. This project proposed an innovative methodology for the distribution of networks (more precisely Virtual LANs used for Wi-Fi connectivity) between geographically distant sites. \n\n The software tools, including the OpenWISP 2 [wifi controller](http://openwisp.org/whatis.html#wifi-controller) and the various [NetJSON](http://netjson.org/) implementations used are released to the public free of charge under open-source licenses, hoping this will allow a broader audience to benefit from our work.",
+    "tags": [
+      "networking",
+      "web",
+      "wifi",
+      "mesh",
+      "iot"
+    ],
+    "twitter_url": "https://twitter.com/openwisp",
+    "contact_email": null,
+    "irc_channel": "http://openwisp.org/support.html",
+    "slug": "openwisp",
+    "preferred_contact_method": null,
+    "guide_to_working": "Must read pages:\n\n- [How to run a successful GCI and become an OpenWISP star](http://openwisp.io/docs/developer/google-code-in.html)\n- [Guidelines for contributing to OpenWISP](http://openwisp.io/docs/developer/contributing.html)\n\nDon't forget to [join the our live chat and mailing list](http://openwisp.org/support.html) to ask questions.",
+    "name": "OpenWISP",
+    "precis": "OpenWISP is an open source solution designed to build and manage low cost networks: from public wifi, to university wifi, mesh networks and IoT and much more.",
+    "image_url": "//lh3.googleusercontent.com/Df4vqOzYseDWiInoUvC-4jjXTjJVUBAGib9FqQdyHJGb00mHFWOqeZt8NmiM-hyouN2LCz14Q7XDtn3U9ylClBI",
+    "blog_url": null,
+    "github": "openwisp",
+    "chat": {
+      "url": "http://openwisp.org/support.html",
+      "platform": "OTHER",
+      "image": "static/images/chat.png"
+    },
+    "wiki": {
+      "wikipedia": null,
+      "wikidata": null
     }
   },
   {
@@ -858,7 +1338,7 @@
       "windows"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 204,
+    "completed_task_instance_count": 205,
     "id": 5731053304020992,
     "winners": {},
     "mailing_list": null,
@@ -888,79 +1368,10 @@
       "url": "https://ccextractor.org/public:general:support",
       "platform": "OTHER",
       "image": "static/images/chat.png"
-    }
-  },
-  {
-    "primary_open_source_license": "GNU General Public License version 3.0 (GPL-3.0)",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Aarnav Bos",
-        "id": 5288208805920768
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Aditya",
-        "id": 6573208931139584
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Alan Zhu",
-        "id": 6075101978034176
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Hizkia Felix",
-        "id": 5631601239130112
-      },
-      {
-        "program_year": 2017,
-        "display_name": "phyxkal",
-        "id": 5246606410514432,
-        "github_account": "phyxkal"
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": null,
-    "programming_languages": [
-      "python",
-      "django",
-      "javascript",
-      "html",
-      "css"
-    ],
-    "guide_to_working_url": "http://openwisp.io/docs/developer/contributing.html",
-    "completed_task_instance_count": 199,
-    "id": 5693741010518016,
-    "winners": {},
-    "mailing_list": "https://groups.google.com/d/forum/openwisp/join",
-    "website_url": "http://openwisp.org",
-    "status": 2,
-    "program_year": 2017,
-    "description": "In the summer of 2008 the [Metropolitan City of Rome](http://www.cittametropolitanaroma.gov.it/) decided to start a **free of charge and public Wi-Fi network** to be spread over its 5352 SQ KM territory including Rome and 120 other cities for a total of about 4.5 million inhabitants. The main objective of the project, called **ProvinciaWiFi** (later renamed [WiFi Metropolitano](http://www.cittametropolitanaroma.gov.it/index.php/wifimetropolitano-english-version)), was to take a decisive step to reduce the existing **digital divide** by fostering and facilitating the use of ICT by citizens.\nFrom the outset it was decided to commit the project to a completely open philosophy. For this reason a clear choice towards open software and operating systems and the availability of every modification, update and improvement to the community was made. The same approach was adopted for the knowledge and the experience acquired within the project. In order to pursue this goals the Province of Rome called the university consortium *CASPUR* (later merged in the [CINECA](https://www.cineca.it/en) consortium) to develop the technical solution. In this context, a research project conducted by the *CINECA* consortium found its perfect application. This project proposed an innovative methodology for the distribution of networks (more precisely Virtual LANs used for Wi-Fi connectivity) between geographically distant sites. \n\n The software tools, including the OpenWISP 2 [wifi controller](http://openwisp.org/whatis.html#wifi-controller) and the various [NetJSON](http://netjson.org/) implementations used are released to the public free of charge under open-source licenses, hoping this will allow a broader audience to benefit from our work.",
-    "tags": [
-      "networking",
-      "web",
-      "wifi",
-      "mesh",
-      "iot"
-    ],
-    "twitter_url": "https://twitter.com/openwisp",
-    "contact_email": null,
-    "irc_channel": "http://openwisp.org/support.html",
-    "slug": "openwisp",
-    "preferred_contact_method": null,
-    "guide_to_working": "Must read pages:\n\n- [How to run a successful GCI and become an OpenWISP star](http://openwisp.io/docs/developer/google-code-in.html)\n- [Guidelines for contributing to OpenWISP](http://openwisp.io/docs/developer/contributing.html)\n\nDon't forget to [join the our live chat and mailing list](http://openwisp.org/support.html) to ask questions.",
-    "name": "OpenWISP",
-    "precis": "OpenWISP is an open source solution designed to build and manage low cost networks: from public wifi, to university wifi, mesh networks and IoT and much more.",
-    "image_url": "//lh3.googleusercontent.com/Df4vqOzYseDWiInoUvC-4jjXTjJVUBAGib9FqQdyHJGb00mHFWOqeZt8NmiM-hyouN2LCz14Q7XDtn3U9ylClBI",
-    "blog_url": null,
-    "github": "openwisp",
-    "chat": {
-      "url": "http://openwisp.org/support.html",
-      "platform": "OTHER",
-      "image": "static/images/chat.png"
+    },
+    "wiki": {
+      "wikipedia": null,
+      "wikidata": null
     }
   },
   {
@@ -1024,7 +1435,7 @@
       "html"
     ],
     "guide_to_working_url": "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails",
-    "completed_task_instance_count": 182,
+    "completed_task_instance_count": 184,
     "id": 6281461650948096,
     "winners": {},
     "mailing_list": "https://www.haiku-os.org/community/ml",
@@ -1054,6 +1465,110 @@
       "url": "irc://chat.freenode.net/haiku",
       "platform": "IRC",
       "image": "static/images/logos/irc.png"
+    },
+    "wiki": {
+      "wikipedia": {
+        "af": "https://af.wikipedia.org/wiki/Haikoe",
+        "als": "https://als.wikipedia.org/wiki/Haiku",
+        "ar": "https://ar.wikipedia.org/wiki/%D9%87%D8%A7%D9%8A%D9%83%D9%88",
+        "ast": "https://ast.wikipedia.org/wiki/Haiku",
+        "as": "https://as.wikipedia.org/wiki/%E0%A6%B9%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81",
+        "az": "https://az.wikipedia.org/wiki/Hokku",
+        "bar": "https://bar.wikipedia.org/wiki/Haiku",
+        "be_x_old": "https://be_x_old.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B9%D0%BA%D1%83",
+        "be": "https://be.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B9%D0%BA%D1%83",
+        "bg": "https://bg.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B9%D0%BA%D1%83",
+        "bi": "https://bi.wikipedia.org/wiki/Haiku",
+        "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B9%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81",
+        "bo": "https://bo.wikipedia.org/wiki/%E0%BD%A7%E0%BD%A0%E0%BD%B2%E0%BC%8B%E0%BD%82%E0%BD%B4%E0%BC%8D",
+        "br": "https://br.wikipedia.org/wiki/Haiku",
+        "ca": "https://ca.wikipedia.org/wiki/Haiku",
+        "ckb": "https://ckb.wikipedia.org/wiki/%DA%BE%D8%A7%DB%8C%DA%A9%D9%88",
+        "commons": "https://commons.wikipedia.org/wiki/Category%3AHaiku_%28poetry%29",
+        "cs": "https://cs.wikipedia.org/wiki/Haiku",
+        "cu": "https://cu.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B8%D0%BA%D0%BE%D1%83",
+        "cy": "https://cy.wikipedia.org/wiki/Haiku",
+        "da": "https://da.wikipedia.org/wiki/Haiku",
+        "de": "https://de.wikipedia.org/wiki/Haiku",
+        "el": "https://el.wikipedia.org/wiki/%CE%A7%CE%B1%CF%8A%CE%BA%CE%BF%CF%8D",
+        "elwikiq": "https://el.wikiquote.org/wiki/%CE%A7%CE%B1%CF%8A%CE%BA%CE%BF%CF%8D",
+        "en": "https://en.wikipedia.org/wiki/Haiku",
+        "eo": "https://eo.wikipedia.org/wiki/Hajko",
+        "es": "https://es.wikipedia.org/wiki/Haiku",
+        "et": "https://et.wikipedia.org/wiki/Haiku",
+        "eu": "https://eu.wikipedia.org/wiki/Haiku",
+        "fa": "https://fa.wikipedia.org/wiki/%D9%87%D8%A7%DB%8C%DA%A9%D9%88",
+        "fi": "https://fi.wikipedia.org/wiki/Haiku",
+        "fr": "https://fr.wikipedia.org/wiki/Ha%C3%AFku",
+        "fy": "https://fy.wikipedia.org/wiki/Haik%C3%BB",
+        "gan": "https://gan.wikipedia.org/wiki/%E4%BF%B3%E5%8F%A5",
+        "gl": "https://gl.wikipedia.org/wiki/Haiku",
+        "he": "https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%99%D7%A7%D7%95",
+        "hewikiq": "https://he.wikiquote.org/wiki/%D7%94%D7%90%D7%99%D7%A7%D7%95",
+        "hi": "https://hi.wikipedia.org/wiki/%E0%A4%B9%E0%A4%BE%E0%A4%87%E0%A4%95%E0%A5%81",
+        "hr": "https://hr.wikipedia.org/wiki/Haiku",
+        "hu": "https://hu.wikipedia.org/wiki/Haiku",
+        "hy": "https://hy.wikipedia.org/wiki/%D5%80%D5%B8%D6%84%D5%B8%D6%82",
+        "ia": "https://ia.wikipedia.org/wiki/Haiku",
+        "id": "https://id.wikipedia.org/wiki/Haiku",
+        "io": "https://io.wikipedia.org/wiki/Haiku",
+        "is": "https://is.wikipedia.org/wiki/H%C3%A6ka",
+        "it": "https://it.wikipedia.org/wiki/Haiku",
+        "itwikiq": "https://it.wikiquote.org/wiki/Haiku",
+        "jam": "https://jam.wikipedia.org/wiki/Aikuu",
+        "ja": "https://ja.wikipedia.org/wiki/%E4%BF%B3%E5%8F%A5",
+        "ka": "https://ka.wikipedia.org/wiki/%E1%83%B0%E1%83%90%E1%83%98%E1%83%99%E1%83%A3",
+        "ko": "https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%EC%BF%A0",
+        "ku": "https://ku.wikipedia.org/wiki/Haik%C3%BB",
+        "ky": "https://ky.wikipedia.org/wiki/%D0%A5%D0%BE%D0%BA%D0%BA%D1%83_%28%D1%85%D0%B0%D0%B9%D0%BA%D1%83%29",
+        "la": "https://la.wikipedia.org/wiki/Haicu",
+        "lb": "https://lb.wikipedia.org/wiki/Haiku",
+        "li": "https://li.wikipedia.org/wiki/Haiku_%28dichvorm%29",
+        "ln": "https://ln.wikipedia.org/wiki/Haiku",
+        "lt": "https://lt.wikipedia.org/wiki/Haiku",
+        "lv": "https://lv.wikipedia.org/wiki/Haiku",
+        "mk": "https://mk.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B8%D0%BA%D1%83",
+        "ml": "https://ml.wikipedia.org/wiki/%E0%B4%B9%E0%B5%88%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%81",
+        "ms": "https://ms.wikipedia.org/wiki/Haiku",
+        "nds_nl": "https://nds_nl.wikipedia.org/wiki/Haiku_%28dichtv%C3%B6rm%29",
+        "ne": "https://ne.wikipedia.org/wiki/%E0%A4%B9%E0%A4%BE%E0%A4%87%E0%A4%95%E0%A5%81",
+        "nl": "https://nl.wikipedia.org/wiki/Haiku_%28dichtvorm%29",
+        "nn": "https://nn.wikipedia.org/wiki/Haiku",
+        "nnwikiq": "https://nn.wikiquote.org/wiki/Haiku",
+        "no": "https://no.wikipedia.org/wiki/Haiku",
+        "nrm": "https://nrm.wikipedia.org/wiki/Haiku",
+        "pa": "https://pa.wikipedia.org/wiki/%E0%A8%B9%E0%A8%BE%E0%A8%87%E0%A8%95%E0%A9%82",
+        "pcd": "https://pcd.wikipedia.org/wiki/Ha%C3%AFku",
+        "pl": "https://pl.wikipedia.org/wiki/Haiku",
+        "pms": "https://pms.wikipedia.org/wiki/Haiku",
+        "pnb": "https://pnb.wikipedia.org/wiki/%DB%81%D8%A7%D8%A6%DB%8C%DA%A9%D9%88",
+        "ps": "https://ps.wikipedia.org/wiki/%D9%87%D8%A7%D9%8A%DA%A9%D9%88",
+        "pt": "https://pt.wikipedia.org/wiki/Haiku",
+        "ro": "https://ro.wikipedia.org/wiki/Haiku",
+        "ru": "https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B9%D0%BA%D1%83",
+        "ruwikiq": "https://ru.wikiquote.org/wiki/%D0%A5%D0%B0%D0%B9%D0%BA%D1%83",
+        "sco": "https://sco.wikipedia.org/wiki/Haiku",
+        "sh": "https://sh.wikipedia.org/wiki/Haiku",
+        "simple": "https://simple.wikipedia.org/wiki/Haiku",
+        "sk": "https://sk.wikipedia.org/wiki/Haiku",
+        "sl": "https://sl.wikipedia.org/wiki/Haiku",
+        "sq": "https://sq.wikipedia.org/wiki/Haiku",
+        "sr": "https://sr.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B8%D0%BA%D1%83",
+        "sv": "https://sv.wikipedia.org/wiki/Haiku",
+        "sw": "https://sw.wikipedia.org/wiki/Haiku",
+        "ta": "https://ta.wikipedia.org/wiki/%E0%AE%90%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%82",
+        "th": "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%AE%E0%B8%81%E0%B8%B8",
+        "tl": "https://tl.wikipedia.org/wiki/Haiku",
+        "tr": "https://tr.wikipedia.org/wiki/Haiku",
+        "uk": "https://uk.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B9%D0%BA%D1%83",
+        "ur": "https://ur.wikipedia.org/wiki/%DB%81%D8%A7%D8%A6%DB%8C%DA%A9%D9%88",
+        "vi": "https://vi.wikipedia.org/wiki/Haiku",
+        "wa": "https://wa.wikipedia.org/wiki/Haycou",
+        "zh_classical": "https://zh_classical.wikipedia.org/wiki/%E4%BF%B3%E5%8F%A5",
+        "zh_yue": "https://zh_yue.wikipedia.org/wiki/%E4%BF%B3%E5%8F%A5",
+        "zh": "https://zh.wikipedia.org/wiki/%E4%BF%B3%E5%8F%A5"
+      },
+      "wikidata": "//www.wikidata.org/wiki/Q37707"
     }
   },
   {
@@ -1123,7 +1638,7 @@
       "photoshop"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 149,
+    "completed_task_instance_count": 158,
     "id": 5735606506225664,
     "winners": {},
     "mailing_list": "http://systers.anitab.org",
@@ -1153,6 +1668,10 @@
       "url": "http://systers.io/slack-systers-opensource/",
       "platform": "SLACK",
       "image": "static/images/logos/slack.png"
+    },
+    "wiki": {
+      "wikipedia": null,
+      "wikidata": null
     }
   },
   {
@@ -1205,7 +1724,7 @@
       "mysql"
     ],
     "guide_to_working_url": "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki",
-    "completed_task_instance_count": 143,
+    "completed_task_instance_count": 145,
     "id": 6239808655458304,
     "winners": {},
     "mailing_list": "http://mifos.org/resources/community/communications/#mailing-lists",
@@ -1235,6 +1754,94 @@
       "url": "https://gitter.im/openMF/mifos",
       "platform": "GITTER",
       "image": "static/images/logos/gitter.png"
+    },
+    "wiki": {
+      "wikipedia": null,
+      "wikidata": null
+    }
+  },
+  {
+    "primary_open_source_license": "Affero GNU Public License",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Alexander Voronkov",
+        "id": 5057457392975872
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Andrew Dassonville",
+        "id": 5302037795307520,
+        "github_account": "andrewda"
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Daniel O'Brien",
+        "id": 4973831292715008
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Nalin Bhardwaj",
+        "id": 4552227639263232,
+        "github_account": "nalinbhardwaj"
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Shukai Ni",
+        "id": 5178132149567488
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Tio Irawan",
+        "id": 6214590973083648
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": "https://plus.google.com/communities/110223386465813667851",
+    "programming_languages": [
+      "python",
+      "python 3",
+      "abstract syntax tree",
+      "errbot"
+    ],
+    "guide_to_working_url": "https://projects.coala.io/",
+    "completed_task_instance_count": 143,
+    "id": 4884530416582656,
+    "winners": {},
+    "mailing_list": "https://github.com/coala/coala/wiki/Mailing-Lists",
+    "website_url": "https://coala.io/",
+    "status": 2,
+    "program_year": 2017,
+    "description": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below.",
+    "tags": [
+      "linting",
+      "static code analysis",
+      "code quality",
+      "automation",
+      "devops"
+    ],
+    "twitter_url": "http://twitter.com/coala_io",
+    "contact_email": null,
+    "irc_channel": "https://coala.zulipchat.com/",
+    "slug": "coala",
+    "preferred_contact_method": null,
+    "guide_to_working": "Join [Zulip](https://coala.zulipchat.com/) or [Gitter](https://gitter.im/coala/gci) to ask mentors questions .\r\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\r\nFollow the [Newcomer Guide](http://coala.io/newcomer).",
+    "name": "coala",
+    "precis": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used.Plugins may by native Python or wrap external linters.",
+    "image_url": "//lh3.googleusercontent.com/4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG",
+    "blog_url": "https://blog.coala.io/",
+    "github": "coala",
+    "chat": {
+      "url": "https://coala.zulipchat.com/",
+      "platform": "ZULIP",
+      "image": "static/images/logos/zulip.png"
+    },
+    "wiki": {
+      "wikipedia": {
+        "en": "https://en.wikipedia.org/wiki/Coala_%28software%29"
+      },
+      "wikidata": "//www.wikidata.org/wiki/Q25215462"
     }
   },
   {
@@ -1293,7 +1900,7 @@
       "css"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 140,
+    "completed_task_instance_count": 143,
     "id": 5753409548320768,
     "winners": {},
     "mailing_list": "http://om.rs/gcitalk",
@@ -1323,172 +1930,12 @@
       "url": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q",
       "platform": "TELEGRAM",
       "image": "static/images/logos/telegram.png"
-    }
-  },
-  {
-    "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "eviltak",
-        "id": 5751156015890432,
-        "github_account": "eviltak"
+    },
+    "wiki": {
+      "wikipedia": {
+        "en": "https://en.wikipedia.org/wiki/OpenMRS"
       },
-      {
-        "program_year": 2017,
-        "display_name": "Jason Huang",
-        "id": 6563090390843392
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Nicholas Bates",
-        "id": 5288288933904384
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Rajat Patel",
-        "id": 6323289079152640
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Sagar Gupta",
-        "id": 5593677617430528
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Soundwave",
-        "id": 4896844943458304
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Steven Rachman",
-        "id": 6739799975133184
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Thomas O'Keeffe",
-        "id": 6106213647384576
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": "https://plus.google.com/+Terasology",
-    "programming_languages": [
-      "java",
-      "lwjgl",
-      "json",
-      "gradle",
-      "blender"
-    ],
-    "guide_to_working_url": "https://github.com/MovingBlocks/Terasology/wiki/GCI",
-    "completed_task_instance_count": 139,
-    "id": 5693523175145472,
-    "winners": {},
-    "mailing_list": null,
-    "website_url": "http://terasology.org",
-    "status": 2,
-    "program_year": 2017,
-    "description": "# Why Terasology\n\nWe set out to see how an open source and super extensible voxel game inspired by Minecraft could go beyond it, aiming for gameplay like seen in Dwarf Fortress or Dungeon Keeper. What would modders come up with if you could create and ship a mod with a few simple commands, making it available immediately for download in-game by others, in a secure sandboxed environment?\n\n# Minimal Engine\n\nOur engine is intended to be as bare-bone as possible. It even excludes such basics as inventory, health, creatures, or combat. A series of minimal modules are bundled with the game's standard distribution to offer a sort of vanilla game experience. All such modules are community owned and maintained, guaranteed to work with every release, and fully replaceable.\n\n# Extensibility\n\nAny content is wrapped in modules ranging from tiny frameworks supporting commonly needed utility to large gameplay templates commonly referred to as mod packs in the Minecraft world, that in turn can depend on dozens of the smaller pieces, maximizing reusability. Other JVM languages can be added too.\n\nCreating a new module is as easy as running a single console command, having a community repository created on GitHub is another single request away, and fetching source for any such community module is yet another single command. Dependency resolution is supported within the engine framework both for development and for runtime usage, including auto-downloading from a running game server to connecting clients.",
-    "tags": [
-      "game",
-      "voxel",
-      "minecraft",
-      "sandbox",
-      "modding"
-    ],
-    "twitter_url": "https://twitter.com/Terasology",
-    "contact_email": "terasology@gmail.com",
-    "irc_channel": "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC",
-    "slug": "movingblocks",
-    "preferred_contact_method": null,
-    "guide_to_working": "",
-    "name": "MovingBlocks",
-    "precis": "Terasology: like an open source Minecraft - imagine the possibilities!",
-    "image_url": "//lh3.googleusercontent.com/xXnPqLkLDZYuz6XBxkKKTcaRWcsgzLcMgLx21ADAAIv2BAtRIyk9lI0ryrEBhh7K3r6YXdJOHAHu5hl9e2iNQ-Rn",
-    "blog_url": "http://forum.terasology.org",
-    "github": "MovingBlocks",
-    "chat": {
-      "url": "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC",
-      "platform": "IRC",
-      "image": "static/images/logos/irc.png"
-    }
-  },
-  {
-    "primary_open_source_license": "Affero GNU Public License",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Alexander Voronkov",
-        "id": 5057457392975872
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Andrew Dassonville",
-        "id": 5302037795307520,
-        "github_account": "andrewda"
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Daniel O'Brien",
-        "id": 4973831292715008
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Nalin Bhardwaj",
-        "id": 4552227639263232,
-        "github_account": "nalinbhardwaj"
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Shukai Ni",
-        "id": 5178132149567488
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Tio Irawan",
-        "id": 6214590973083648
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": "https://plus.google.com/communities/110223386465813667851",
-    "programming_languages": [
-      "python",
-      "python 3",
-      "abstract syntax tree",
-      "errbot"
-    ],
-    "guide_to_working_url": "https://projects.coala.io/",
-    "completed_task_instance_count": 139,
-    "id": 4884530416582656,
-    "winners": {},
-    "mailing_list": "https://github.com/coala/coala/wiki/Mailing-Lists",
-    "website_url": "https://coala.io/",
-    "status": 2,
-    "program_year": 2017,
-    "description": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below.",
-    "tags": [
-      "linting",
-      "static code analysis",
-      "code quality",
-      "automation",
-      "devops"
-    ],
-    "twitter_url": "http://twitter.com/coala_io",
-    "contact_email": null,
-    "irc_channel": "https://coala.zulipchat.com/",
-    "slug": "coala",
-    "preferred_contact_method": null,
-    "guide_to_working": "Join [Zulip](https://coala.zulipchat.com/) or [Gitter](https://gitter.im/coala/gci) to ask mentors questions .\r\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\r\nFollow the [Newcomer Guide](http://coala.io/newcomer).",
-    "name": "coala",
-    "precis": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used.Plugins may by native Python or wrap external linters.",
-    "image_url": "//lh3.googleusercontent.com/4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG",
-    "blog_url": "https://blog.coala.io/",
-    "github": "coala",
-    "chat": {
-      "url": "https://coala.zulipchat.com/",
-      "platform": "ZULIP",
-      "image": "static/images/logos/zulip.png"
+      "wikidata": "//www.wikidata.org/wiki/Q7095826"
     }
   },
   {
@@ -1552,7 +1999,7 @@
       "visual programming language (catrobat)"
     ],
     "guide_to_working_url": "http://catrob.at/cgcicti",
-    "completed_task_instance_count": 139,
+    "completed_task_instance_count": 142,
     "id": 5135243763777536,
     "winners": {},
     "mailing_list": "http://catrob.at/PocketCodeUserForum",
@@ -1580,6 +2027,102 @@
     "github": "Catrobat",
     "chat": {
       "url": null
+    },
+    "wiki": {
+      "wikipedia": null,
+      "wikidata": null
+    }
+  },
+  {
+    "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "eviltak",
+        "id": 5751156015890432,
+        "github_account": "eviltak"
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Jason Huang",
+        "id": 6563090390843392
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Nicholas Bates",
+        "id": 5288288933904384
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Rajat Patel",
+        "id": 6323289079152640
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Sagar Gupta",
+        "id": 5593677617430528
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Soundwave",
+        "id": 4896844943458304
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Steven Rachman",
+        "id": 6739799975133184
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Thomas O'Keeffe",
+        "id": 6106213647384576
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": "https://plus.google.com/+Terasology",
+    "programming_languages": [
+      "java",
+      "lwjgl",
+      "json",
+      "gradle",
+      "blender"
+    ],
+    "guide_to_working_url": "https://github.com/MovingBlocks/Terasology/wiki/GCI",
+    "completed_task_instance_count": 141,
+    "id": 5693523175145472,
+    "winners": {},
+    "mailing_list": null,
+    "website_url": "http://terasology.org",
+    "status": 2,
+    "program_year": 2017,
+    "description": "# Why Terasology\n\nWe set out to see how an open source and super extensible voxel game inspired by Minecraft could go beyond it, aiming for gameplay like seen in Dwarf Fortress or Dungeon Keeper. What would modders come up with if you could create and ship a mod with a few simple commands, making it available immediately for download in-game by others, in a secure sandboxed environment?\n\n# Minimal Engine\n\nOur engine is intended to be as bare-bone as possible. It even excludes such basics as inventory, health, creatures, or combat. A series of minimal modules are bundled with the game's standard distribution to offer a sort of vanilla game experience. All such modules are community owned and maintained, guaranteed to work with every release, and fully replaceable.\n\n# Extensibility\n\nAny content is wrapped in modules ranging from tiny frameworks supporting commonly needed utility to large gameplay templates commonly referred to as mod packs in the Minecraft world, that in turn can depend on dozens of the smaller pieces, maximizing reusability. Other JVM languages can be added too.\n\nCreating a new module is as easy as running a single console command, having a community repository created on GitHub is another single request away, and fetching source for any such community module is yet another single command. Dependency resolution is supported within the engine framework both for development and for runtime usage, including auto-downloading from a running game server to connecting clients.",
+    "tags": [
+      "game",
+      "voxel",
+      "minecraft",
+      "sandbox",
+      "modding"
+    ],
+    "twitter_url": "https://twitter.com/Terasology",
+    "contact_email": "terasology@gmail.com",
+    "irc_channel": "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC",
+    "slug": "movingblocks",
+    "preferred_contact_method": null,
+    "guide_to_working": "",
+    "name": "MovingBlocks",
+    "precis": "Terasology: like an open source Minecraft - imagine the possibilities!",
+    "image_url": "//lh3.googleusercontent.com/xXnPqLkLDZYuz6XBxkKKTcaRWcsgzLcMgLx21ADAAIv2BAtRIyk9lI0ryrEBhh7K3r6YXdJOHAHu5hl9e2iNQ-Rn",
+    "blog_url": "http://forum.terasology.org",
+    "github": "MovingBlocks",
+    "chat": {
+      "url": "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC",
+      "platform": "IRC",
+      "image": "static/images/logos/irc.png"
+    },
+    "wiki": {
+      "wikipedia": null,
+      "wikidata": "//www.wikidata.org/wiki/Q40881750"
     }
   },
   {
@@ -1637,6 +2180,21 @@
       "url": "http://dev.xwiki.org/xwiki/bin/view/Community/Chat",
       "platform": "OTHER",
       "image": "static/images/chat.png"
+    },
+    "wiki": {
+      "wikipedia": {
+        "ca": "https://ca.wikipedia.org/wiki/XWiki",
+        "commons": "https://commons.wikipedia.org/wiki/Category%3AXwiki",
+        "en": "https://en.wikipedia.org/wiki/XWiki",
+        "es": "https://es.wikipedia.org/wiki/XWiki",
+        "fa": "https://fa.wikipedia.org/wiki/%D8%A7%DA%A9%D8%B3%E2%80%8C%D9%88%DB%8C%DA%A9%DB%8C",
+        "fr": "https://fr.wikipedia.org/wiki/XWiki",
+        "ja": "https://ja.wikipedia.org/wiki/XWiki",
+        "mr": "https://mr.wikipedia.org/wiki/%E0%A4%8F%E0%A4%95%E0%A5%8D%E0%A4%B8%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A5%80",
+        "pt": "https://pt.wikipedia.org/wiki/XWiki",
+        "zh": "https://zh.wikipedia.org/wiki/XWiki"
+      },
+      "wikidata": "//www.wikidata.org/wiki/Q526699"
     }
   },
   {
@@ -1669,7 +2227,7 @@
       "javascript"
     ],
     "guide_to_working_url": "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students",
-    "completed_task_instance_count": 100,
+    "completed_task_instance_count": 103,
     "id": 5139786496999424,
     "winners": {},
     "mailing_list": "http://www.osgeo.org/content/faq/mailing_lists.html",
@@ -1699,6 +2257,26 @@
       "url": "irc://irc.freenode.net/osgeo",
       "platform": "IRC",
       "image": "static/images/logos/irc.png"
+    },
+    "wiki": {
+      "wikipedia": {
+        "cs": "https://cs.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
+        "de": "https://de.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
+        "en": "https://en.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
+        "es": "https://es.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
+        "fr": "https://fr.wikipedia.org/wiki/Fondation_Open_Source_Geospatial",
+        "gl": "https://gl.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
+        "hr": "https://hr.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
+        "it": "https://it.wikipedia.org/wiki/OSGeo",
+        "ja": "https://ja.wikipedia.org/wiki/OSGeo%E8%B2%A1%E5%9B%A3",
+        "km": "https://km.wikipedia.org/wiki/OSGeo",
+        "ko": "https://ko.wikipedia.org/wiki/%EC%98%A4%ED%94%88_%EC%86%8C%EC%8A%A4_%EC%A7%80%EB%A6%AC%EA%B3%B5%EA%B0%84_%EC%9E%AC%EB%8B%A8",
+        "ml": "https://ml.wikipedia.org/wiki/%E0%B4%93%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%BA_%E0%B4%B8%E0%B5%8B%E0%B4%B4%E0%B5%8D%E0%B4%B8%E0%B5%8D_%E0%B4%9C%E0%B4%BF%E0%B4%AF%E0%B5%8B%E0%B4%B8%E0%B5%8D%E0%B4%AA%E0%B5%87%E0%B4%B7%E0%B5%8D%E0%B4%AF%E0%B5%BD_%E0%B4%AB%E0%B5%97%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B5%87%E0%B4%B7%E0%B5%BB",
+        "pl": "https://pl.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
+        "sr": "https://sr.wikipedia.org/wiki/%D0%9E%D0%A1%D0%93%D0%B5%D0%BE",
+        "zh": "https://zh.wikipedia.org/wiki/%E5%BC%80%E6%BA%90%E5%9C%B0%E7%90%86%E7%A9%BA%E9%97%B4%E5%9F%BA%E9%87%91%E4%BC%9A"
+      },
+      "wikidata": "//www.wikidata.org/wiki/Q1197305"
     }
   },
   {
@@ -1730,7 +2308,7 @@
       "javascript"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 87,
+    "completed_task_instance_count": 88,
     "id": 5165875202097152,
     "winners": {},
     "mailing_list": "https://forums.librehealth.io/gci",
@@ -1758,11 +2336,20 @@
       "url": "https://chat.librehealth.io/channel/gci",
       "platform": "ROCKET",
       "image": "static/images/logos/rocket.png"
+    },
+    "wiki": {
+      "wikipedia": null,
+      "wikidata": null
     }
   },
   {
     "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
     "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "MaskyS",
+        "id": 6719751873101824
+      },
       {
         "program_year": 2017,
         "display_name": "Tanish Kapur",
@@ -1785,7 +2372,7 @@
       "symfony"
     ],
     "guide_to_working_url": "https://www.drupal.org/node/984014",
-    "completed_task_instance_count": 83,
+    "completed_task_instance_count": 86,
     "id": 5636094664114176,
     "winners": {},
     "mailing_list": "https://drupal.org/mailing-lists",
@@ -1815,6 +2402,73 @@
       "url": "irc://irc.freenode.net/drupal",
       "platform": "IRC",
       "image": "static/images/logos/irc.png"
+    },
+    "wiki": {
+      "wikipedia": {
+        "ar": "https://ar.wikipedia.org/wiki/%D8%AF%D8%B1%D9%88%D8%A8%D8%A7%D9%84",
+        "az": "https://az.wikipedia.org/wiki/Drupal",
+        "be": "https://be.wikipedia.org/wiki/Drupal",
+        "bg": "https://bg.wikipedia.org/wiki/Drupal",
+        "bs": "https://bs.wikipedia.org/wiki/Drupal",
+        "ca": "https://ca.wikipedia.org/wiki/Drupal",
+        "ckb": "https://ckb.wikipedia.org/wiki/%D8%AF%D8%B1%D9%88%D9%BE%D8%A7%D9%84",
+        "commons": "https://commons.wikipedia.org/wiki/Category%3ADrupal",
+        "cs": "https://cs.wikipedia.org/wiki/Drupal",
+        "cv": "https://cv.wikipedia.org/wiki/Drupal",
+        "da": "https://da.wikipedia.org/wiki/Drupal",
+        "de": "https://de.wikipedia.org/wiki/Drupal",
+        "el": "https://el.wikipedia.org/wiki/Drupal",
+        "en": "https://en.wikipedia.org/wiki/Drupal",
+        "enwikiver": "https://en.wikiversity.org/wiki/Drupal",
+        "eo": "https://eo.wikipedia.org/wiki/Drupal",
+        "es": "https://es.wikipedia.org/wiki/Drupal",
+        "eu": "https://eu.wikipedia.org/wiki/Drupal",
+        "fa": "https://fa.wikipedia.org/wiki/%D8%AF%D8%B1%D9%88%D9%BE%D8%A7%D9%84",
+        "fi": "https://fi.wikipedia.org/wiki/Drupal",
+        "fr": "https://fr.wikipedia.org/wiki/Drupal",
+        "frwikib": "https://fr.wikibooks.org/wiki/Drupal",
+        "he": "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%95%D7%A4%D7%9C",
+        "hi": "https://hi.wikipedia.org/wiki/%E0%A4%A1%E0%A5%8D%E0%A4%B0%E0%A5%81%E0%A4%AA%E0%A4%B2",
+        "hu": "https://hu.wikipedia.org/wiki/Drupal",
+        "hy": "https://hy.wikipedia.org/wiki/%D4%B4%D6%80%D5%B8%D6%82%D6%83%D5%A1%D5%AC",
+        "id": "https://id.wikipedia.org/wiki/Drupal",
+        "it": "https://it.wikipedia.org/wiki/Drupal",
+        "ja": "https://ja.wikipedia.org/wiki/Drupal",
+        "jv": "https://jv.wikipedia.org/wiki/Drupal",
+        "kk": "https://kk.wikipedia.org/wiki/Drupal",
+        "ko": "https://ko.wikipedia.org/wiki/%EB%93%9C%EB%A3%A8%ED%8C%94",
+        "lt": "https://lt.wikipedia.org/wiki/Drupal",
+        "lv": "https://lv.wikipedia.org/wiki/Drupal",
+        "map_bms": "https://map_bms.wikipedia.org/wiki/Drupal",
+        "mk": "https://mk.wikipedia.org/wiki/%D0%94%D1%80%D1%83%D0%BF%D0%B0%D0%BB",
+        "ml": "https://ml.wikipedia.org/wiki/%E0%B4%A6%E0%B5%8D%E0%B4%B0%E0%B5%81%E0%B4%AA%E0%B4%BE%E0%B5%BD",
+        "nl": "https://nl.wikipedia.org/wiki/Drupal",
+        "no": "https://no.wikipedia.org/wiki/Drupal",
+        "pl": "https://pl.wikipedia.org/wiki/Drupal",
+        "pt": "https://pt.wikipedia.org/wiki/Drupal",
+        "ro": "https://ro.wikipedia.org/wiki/Drupal",
+        "ru": "https://ru.wikipedia.org/wiki/Drupal",
+        "ruwikib": "https://ru.wikibooks.org/wiki/%D0%A2%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F_Drupal",
+        "sco": "https://sco.wikipedia.org/wiki/Drupal",
+        "simple": "https://simple.wikipedia.org/wiki/Drupal",
+        "si": "https://si.wikipedia.org/wiki/%E0%B6%A9%E0%B7%98%E0%B6%B4%E0%B6%BD%E0%B7%8A",
+        "sk": "https://sk.wikipedia.org/wiki/Drupal",
+        "sl": "https://sl.wikipedia.org/wiki/Drupal",
+        "sq": "https://sq.wikipedia.org/wiki/Drupal",
+        "sr": "https://sr.wikipedia.org/wiki/%D0%94%D1%80%D1%83%D0%BF%D0%B0%D0%BB",
+        "sv": "https://sv.wikipedia.org/wiki/Drupal",
+        "ta": "https://ta.wikipedia.org/wiki/%E0%AE%9F%E0%AF%81%E0%AE%B0%E0%AF%82%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%B2%E0%AF%8D",
+        "tet": "https://tet.wikipedia.org/wiki/Drupal",
+        "te": "https://te.wikipedia.org/wiki/%E0%B0%A1%E0%B1%84%E0%B0%AA%E0%B0%B2%E0%B1%8D",
+        "tg": "https://tg.wikipedia.org/wiki/%D0%94%D1%80%D1%83%D0%BF%D0%B0%D0%BB",
+        "th": "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%B1%E0%B8%A5",
+        "tr": "https://tr.wikipedia.org/wiki/Drupal",
+        "uk": "https://uk.wikipedia.org/wiki/Drupal",
+        "vi": "https://vi.wikipedia.org/wiki/Drupal",
+        "zh_yue": "https://zh_yue.wikipedia.org/wiki/Drupal",
+        "zh": "https://zh.wikipedia.org/wiki/Drupal"
+      },
+      "wikidata": "//www.wikidata.org/wiki/Q170855"
     }
   },
   {
@@ -1837,7 +2491,7 @@
       "java"
     ],
     "guide_to_working_url": "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html",
-    "completed_task_instance_count": 56,
+    "completed_task_instance_count": 60,
     "id": 5067404587565056,
     "winners": {},
     "mailing_list": "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html",
@@ -1865,6 +2519,10 @@
     "github": "LiquidGalaxy",
     "chat": {
       "url": null
+    },
+    "wiki": {
+      "wikipedia": null,
+      "wikidata": null
     }
   },
   {
@@ -1911,6 +2569,10 @@
       "url": "https://gitter.im/Cloud-CV/",
       "platform": "GITTER",
       "image": "static/images/logos/gitter.png"
+    },
+    "wiki": {
+      "wikipedia": null,
+      "wikidata": null
     }
   },
   {
@@ -1927,7 +2589,7 @@
       "bash"
     ],
     "guide_to_working_url": "http://wiki.apertium.org/wiki/Task_ideas_for_Google_Code-in/Getting_started",
-    "completed_task_instance_count": 29,
+    "completed_task_instance_count": 30,
     "id": 6541403171586048,
     "winners": {},
     "mailing_list": "http://wiki.apertium.org/wiki/Contact",
@@ -1957,6 +2619,62 @@
       "url": "irc://irc.freenode.net/#apertium",
       "platform": "IRC",
       "image": "static/images/logos/irc.png"
+    },
+    "wiki": {
+      "wikipedia": {
+        "af": "https://af.wikipedia.org/wiki/Apertium",
+        "ar": "https://ar.wikipedia.org/wiki/%D8%A3%D8%A8%D8%B1%D8%AA%D9%8A%D9%88%D9%85",
+        "ast": "https://ast.wikipedia.org/wiki/Apertium",
+        "az": "https://az.wikipedia.org/wiki/Apertium",
+        "bg": "https://bg.wikipedia.org/wiki/Apertium",
+        "bs": "https://bs.wikipedia.org/wiki/Apertium",
+        "ca": "https://ca.wikipedia.org/wiki/Apertium",
+        "commons": "https://commons.wikipedia.org/wiki/Category%3AApertium",
+        "cs": "https://cs.wikipedia.org/wiki/Apertium",
+        "cy": "https://cy.wikipedia.org/wiki/Apertium",
+        "da": "https://da.wikipedia.org/wiki/Apertium",
+        "de": "https://de.wikipedia.org/wiki/Apertium",
+        "en": "https://en.wikipedia.org/wiki/Apertium",
+        "eo": "https://eo.wikipedia.org/wiki/Apertium",
+        "es": "https://es.wikipedia.org/wiki/Apertium",
+        "et": "https://et.wikipedia.org/wiki/Apertium",
+        "eu": "https://eu.wikipedia.org/wiki/Apertium",
+        "fa": "https://fa.wikipedia.org/wiki/%D8%A2%D9%BE%D8%B1%D8%AA%DB%8C%D9%88%D9%85",
+        "fi": "https://fi.wikipedia.org/wiki/Apertium",
+        "fr": "https://fr.wikipedia.org/wiki/Apertium",
+        "frwikib": "https://fr.wikibooks.org/wiki/Apertium",
+        "ga": "https://ga.wikipedia.org/wiki/Apertium",
+        "gl": "https://gl.wikipedia.org/wiki/Apertium",
+        "hi": "https://hi.wikipedia.org/wiki/%E0%A4%85%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%85%E0%A4%AE%E0%A5%8D",
+        "hr": "https://hr.wikipedia.org/wiki/Apertium",
+        "id": "https://id.wikipedia.org/wiki/Apertium",
+        "it": "https://it.wikipedia.org/wiki/Apertium",
+        "ja": "https://ja.wikipedia.org/wiki/Apertium",
+        "ko": "https://ko.wikipedia.org/wiki/Apertium",
+        "mk": "https://mk.wikipedia.org/wiki/Apertium",
+        "nap": "https://nap.wikipedia.org/wiki/Apertium",
+        "nl": "https://nl.wikipedia.org/wiki/Apertium",
+        "nn": "https://nn.wikipedia.org/wiki/Apertium",
+        "no": "https://no.wikipedia.org/wiki/Apertium",
+        "oc": "https://oc.wikipedia.org/wiki/Apertium",
+        "pl": "https://pl.wikipedia.org/wiki/Apertium",
+        "pt": "https://pt.wikipedia.org/wiki/Apertium",
+        "ro": "https://ro.wikipedia.org/wiki/Apertium",
+        "ru": "https://ru.wikipedia.org/wiki/Apertium",
+        "sah": "https://sah.wikipedia.org/wiki/Apertium",
+        "scn": "https://scn.wikipedia.org/wiki/Apertium",
+        "sc": "https://sc.wikipedia.org/wiki/Apertium",
+        "sh": "https://sh.wikipedia.org/wiki/Apertium",
+        "sk": "https://sk.wikipedia.org/wiki/Apertium",
+        "sl": "https://sl.wikipedia.org/wiki/Apertium",
+        "tg": "https://tg.wikipedia.org/wiki/%D0%90%D0%BF%D0%B5%D1%80%D1%82%D0%B8%D1%83%D0%BC",
+        "tr": "https://tr.wikipedia.org/wiki/Apertium",
+        "tt": "https://tt.wikipedia.org/wiki/Apertium",
+        "uk": "https://uk.wikipedia.org/wiki/Apertium",
+        "ur": "https://ur.wikipedia.org/wiki/%D8%A7%D9%BE%D8%B1%D9%B9%DB%8C%D9%85_%28%D8%A2%D9%84%D8%A7%D8%AA%DB%8C_%D8%AA%D8%B1%D8%AC%D9%85%DB%81_%D9%85%D8%B5%D9%86%D8%B9_%D9%84%D8%B7%DB%8C%D9%81%29",
+        "zh": "https://zh.wikipedia.org/wiki/Apertium"
+      },
+      "wikidata": "//www.wikidata.org/wiki/Q184835"
     }
   }
 ]
