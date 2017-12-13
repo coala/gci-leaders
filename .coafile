@@ -9,7 +9,7 @@ bears = SpaceConsistencyBear
 default_actions = *: ApplyPatchAction
 
 [all.linelength]
-ignore += **.html
+ignore += **.html, static/js/i18n/**.json
 bears = LineLengthBear
 
 [all.links]

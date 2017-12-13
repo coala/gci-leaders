@@ -8,15 +8,26 @@
     <meta property="og:description" content="Google Code-in 2017 Current Leaders">
     <meta property="og:image" content="{{{rootURL}}}/images/GCI-logo.jpg">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- i18n libraries -->
+    <script src="https://cdn.rawgit.com/santhoshtr/CLDRPluralRuleParser/8baf9aedc4/src/CLDRPluralRuleParser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.4/jquery.i18n.min.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.messagestore.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.fallbacks.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.language.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.parser.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.emitter.js"></script>
+    <!-- global translation engine -->
+    <script src="js/global.js"></script>
   </head>
   <body>
     <div>
       <a href="http://codein.withgoogle.com">
         <img class="gci-logo" src="images/logos/gci.png" alt="Code-In logo">
       </a>
-      <h1>Google Code-in 2017 Current Leaders</h1>
+      <h1 data-i18n="page-title">Google Code-in 2017 Current Leaders</h1>
     </div>
-    <small id="time" data-time="{{datetime}}">Last updated: {{datetime}} <span id="ago"></span></small>
+    <small id="time" data-time="{{datetime}}"><span data-i18n="last-updated">Last updated</span>: {{datetime}} <span id="ago"></span></small>
     <div>
       <div class="progress-outer">
         <div class="progress-inner">
@@ -27,10 +38,11 @@
       <span class="progress-text"><i id="progress" data-noclaims="{{noClaims}}" data-competitionopen="{{competitionOpen}}"></i></span>
     </div>
     <hr>
-    <i>
+    <i data-i18n="order-info">
       The leading participants for each organization (and their GitHub accounts,
       if applicable) are listed randomly.
     </i>
+    <div class="chooser">&#x1F310;&nbsp;<select id="lang-select"></select></div>
     <div class="orgs">
       {{#withLeader}}
         <div class="org">
@@ -45,7 +57,7 @@
                 {{name}}
               </a>
             </h3>
-            <p>Tasks Completed: {{completed_task_instance_count}}</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: {{completed_task_instance_count}}</p>
             {{#github}}
               <a href="https://github.com/{{github}}">
                 <img
@@ -110,7 +122,7 @@
       {{/withLeader}}
     </div>
     {{#noLeader.length}}
-      <h3>Organization(s) with no listed leaders</h3>
+      <h3 data-i18n="orgs-no-listed">Organization(s) with no listed leaders</h3>
       <hr>
       <div class="orgs">
         {{#noLeader}}
@@ -126,7 +138,7 @@
                 {{name}}
               </a>
             </h3>
-            <p>Tasks Completed: {{completed_task_instance_count}}</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: {{completed_task_instance_count}}</p>
             {{#github}}
               <a href="https://github.com/{{github}}">
                 <img
@@ -182,9 +194,8 @@
       </a>
     </div>
     <footer>
-      <small>Google Code-in and the Google Code-in logo are trademarks of Google Inc.</small>
+      <small data-i18n="footer-text">Google Code-in and the Google Code-in logo are trademarks of Google Inc.</small>
     </footer>
-    <script src="js/app.js"></script>
     <script src="js/twitter.js"></script>
   </body>
 </html>

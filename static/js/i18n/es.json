@@ -1,0 +1,21 @@
+{
+  "page-title": "Líderes actuales de Google Code-in 2017",
+  "last-updated": "Última actualización",
+  "order-info": "Los participantes líderes de cada organización (y sus respectivas cuentas de GitHub) están listados de forma aleatoria.",
+  "tasks-completed": "Tareas completadas",
+  "footer-text": "Google Code-in y su logotipo son marcas registradas de Google Inc.",
+  "orgs-no-listed": "Organizacion(es) sin listado de líderes",
+  "passed": "$1% completado, aproximadamente $2 hasta que termine el periodo de tareas",
+  "seconds-ago": "hace $1 {{PLURAL:$1|segundo|segundos}}",
+  "minutes-ago": "hace $1 {{PLURAL:$1|minuto|minutos}}",
+  "hours-ago": "hace $1 {{PLURAL:$1|hora|horas}}",
+  "days-ago": "hace $1 {{PLURAL:$1|día|días}}",
+  "months-ago": "hace $1 {{PLURAL:$1|mes|meses}}",
+  "years-ago": "hace $1 {{PLURAL:$1|año|años}}",
+  "seconds": "$1 {{PLURAL:$1|segundo|segundos}}",
+  "minutes": "$1 {{PLURAL:$1|minuto|minutos}}",
+  "hours": "$1 {{PLURAL:$1|hora|horas}}",
+  "days": "$1 {{PLURAL:$1|día|días}}",
+  "months": "$1 {{PLURAL:$1|mes|meses}}",
+  "years": "$1 {{PLURAL:$1|año|años}}"
+}

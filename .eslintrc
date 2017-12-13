@@ -3,6 +3,7 @@ env:
   node: true
   browser: true
   es6: true
+  jquery: true
 parserOptions:
   ecmaVersion: 2017
 plugins:
