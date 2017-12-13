@@ -68,7 +68,7 @@
       "html"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 765,
+    "completed_task_instance_count": 769,
     "id": 5733899491606528,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/jboss-community-gci/",
@@ -173,7 +173,7 @@
       "python"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 432,
+    "completed_task_instance_count": 433,
     "id": 4923880235859968,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/score-community",
@@ -337,6 +337,11 @@
       },
       {
         "program_year": 2017,
+        "display_name": "Phúc Ngô",
+        "id": 5199904546750464
+      },
+      {
+        "program_year": 2017,
         "display_name": "Saarthak Chaturvedi",
         "id": 4572716310986752,
         "github_account": "saarthakchats"
@@ -351,12 +356,6 @@
         "display_name": "Supun_TE",
         "id": 6598335160909824,
         "github_account": "STEdirisuriya"
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Tushar Kumar",
-        "id": 4633252734173184,
-        "github_account": "awesometushar000"
       },
       {
         "program_year": 2017,
@@ -376,7 +375,7 @@
       "python"
     ],
     "guide_to_working_url": "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/",
-    "completed_task_instance_count": 344,
+    "completed_task_instance_count": 347,
     "id": 6237166344601600,
     "winners": {},
     "mailing_list": "http://groups.google.com/group/fossasia",
@@ -464,7 +463,7 @@
       "sql"
     ],
     "guide_to_working_url": "https://wiki.musicbrainz.org/Google_Code-in/2017",
-    "completed_task_instance_count": 287,
+    "completed_task_instance_count": 289,
     "id": 5936087526539264,
     "winners": {},
     "mailing_list": "https://community.metabrainz.org/",
@@ -640,7 +639,7 @@
       "c/c++"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 236,
+    "completed_task_instance_count": 239,
     "id": 5133577048031232,
     "winners": {},
     "mailing_list": "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc",
@@ -1159,7 +1158,7 @@
       "html/css"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 231,
+    "completed_task_instance_count": 233,
     "id": 5154791065911296,
     "winners": {},
     "mailing_list": "http://brlcad.org/wiki/Mailing_lists",
@@ -1245,7 +1244,7 @@
       "css"
     ],
     "guide_to_working_url": "http://openwisp.io/docs/developer/contributing.html",
-    "completed_task_instance_count": 205,
+    "completed_task_instance_count": 207,
     "id": 5693741010518016,
     "winners": {},
     "mailing_list": "https://groups.google.com/d/forum/openwisp/join",
@@ -1338,7 +1337,7 @@
       "windows"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 205,
+    "completed_task_instance_count": 207,
     "id": 5731053304020992,
     "winners": {},
     "mailing_list": null,
@@ -1724,7 +1723,7 @@
       "mysql"
     ],
     "guide_to_working_url": "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki",
-    "completed_task_instance_count": 145,
+    "completed_task_instance_count": 146,
     "id": 6239808655458304,
     "winners": {},
     "mailing_list": "http://mifos.org/resources/community/communications/#mailing-lists",
@@ -1806,7 +1805,7 @@
       "errbot"
     ],
     "guide_to_working_url": "https://projects.coala.io/",
-    "completed_task_instance_count": 143,
+    "completed_task_instance_count": 145,
     "id": 4884530416582656,
     "winners": {},
     "mailing_list": "https://github.com/coala/coala/wiki/Mailing-Lists",
@@ -1842,100 +1841,6 @@
         "en": "https://en.wikipedia.org/wiki/Coala_%28software%29"
       },
       "wikidata": "//www.wikidata.org/wiki/Q25215462"
-    }
-  },
-  {
-    "primary_open_source_license": "Mozilla Public License 2.0 (MPL-2.0)",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Bartłomiej Rasztabiga",
-        "id": 4851396136402944
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Fawwaz Yusran",
-        "id": 4893093289525248
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Jyothsna Ashok",
-        "id": 4671819661443072,
-        "github_account": "JyothsnaAshok"
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Matthew Whitaker",
-        "id": 6052785999052800
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Said Yaka",
-        "id": 5971293960667136
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Sanskar Jindal",
-        "id": 5064391886110720
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Tomasz Domagała",
-        "id": 6531598482669568
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Ziyao Zhang",
-        "id": 4602477213122560
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": "https://plus.google.com/+OpenMRSorg",
-    "programming_languages": [
-      "java",
-      "groovy",
-      "javascript",
-      "html5",
-      "css"
-    ],
-    "guide_to_working_url": "",
-    "completed_task_instance_count": 143,
-    "id": 5753409548320768,
-    "winners": {},
-    "mailing_list": "http://om.rs/gcitalk",
-    "website_url": "http://om.rs/gci",
-    "status": 2,
-    "program_year": 2017,
-    "description": "[OpenMRS](http://openmrs.org) is a collaborative open source project to develop software to support the delivery of health care in developing countries. We are a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. [Our mission](http://openmrs.org/about/mission/) is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software.\r\n\r\nThe [OpenMRS software platform](http://openmrs.org/about/) and a reference application enables design of a customized medical records system with no programming knowledge. It is a common platform upon which medical informatics efforts in developing countries can be built.\r\n\r\nWorking on Google Code-in tasks for OpenMRS is a great way to join the free and open source software movement, and at the same time use your talents to help people in developing countries and around the world on the front lines of the battle against HIV/AIDS, TB, Malaria, and other public health challenges. For more detailed about OpenMRS and GCI, visit http://openmrs.org/ and watch [this short video](https://www.youtube.com/watch?v=HPxx1_svu_A) created by a previous OpenMRS GCI participant.",
-    "tags": [
-      "hospitals",
-      "healthcare",
-      "emr",
-      "medical",
-      "webapp"
-    ],
-    "twitter_url": "https://twitter.com/OpenMRS",
-    "contact_email": "community@openmrs.org",
-    "irc_channel": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q",
-    "slug": "openmrs",
-    "preferred_contact_method": null,
-    "guide_to_working": "",
-    "name": "OpenMRS",
-    "precis": "Write Code, Save Lives",
-    "image_url": "//lh3.googleusercontent.com/DtRzzebTaA7bRBx4t0hAWTcyoiFP84r64T0uG8eNRoBnfyG9sUaVf5xkXuq-ffTzuT4voJY2JE3YXUh3Amvg4cmD",
-    "blog_url": "http://openmrs.org/blog/",
-    "github": "openmrs",
-    "chat": {
-      "url": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q",
-      "platform": "TELEGRAM",
-      "image": "static/images/logos/telegram.png"
-    },
-    "wiki": {
-      "wikipedia": {
-        "en": "https://en.wikipedia.org/wiki/OpenMRS"
-      },
-      "wikidata": "//www.wikidata.org/wiki/Q7095826"
     }
   },
   {
@@ -1999,7 +1904,7 @@
       "visual programming language (catrobat)"
     ],
     "guide_to_working_url": "http://catrob.at/cgcicti",
-    "completed_task_instance_count": 142,
+    "completed_task_instance_count": 144,
     "id": 5135243763777536,
     "winners": {},
     "mailing_list": "http://catrob.at/PocketCodeUserForum",
@@ -2031,6 +1936,100 @@
     "wiki": {
       "wikipedia": null,
       "wikidata": null
+    }
+  },
+  {
+    "primary_open_source_license": "Mozilla Public License 2.0 (MPL-2.0)",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Bartłomiej Rasztabiga",
+        "id": 4851396136402944
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Fawwaz Yusran",
+        "id": 4893093289525248
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Jyothsna Ashok",
+        "id": 4671819661443072,
+        "github_account": "JyothsnaAshok"
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Matthew Whitaker",
+        "id": 6052785999052800
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Said Yaka",
+        "id": 5971293960667136
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Sanskar Jindal",
+        "id": 5064391886110720
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Tomasz Domagała",
+        "id": 6531598482669568
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Ziyao Zhang",
+        "id": 4602477213122560
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": "https://plus.google.com/+OpenMRSorg",
+    "programming_languages": [
+      "java",
+      "groovy",
+      "javascript",
+      "html5",
+      "css"
+    ],
+    "guide_to_working_url": "",
+    "completed_task_instance_count": 144,
+    "id": 5753409548320768,
+    "winners": {},
+    "mailing_list": "http://om.rs/gcitalk",
+    "website_url": "http://om.rs/gci",
+    "status": 2,
+    "program_year": 2017,
+    "description": "[OpenMRS](http://openmrs.org) is a collaborative open source project to develop software to support the delivery of health care in developing countries. We are a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. [Our mission](http://openmrs.org/about/mission/) is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software.\r\n\r\nThe [OpenMRS software platform](http://openmrs.org/about/) and a reference application enables design of a customized medical records system with no programming knowledge. It is a common platform upon which medical informatics efforts in developing countries can be built.\r\n\r\nWorking on Google Code-in tasks for OpenMRS is a great way to join the free and open source software movement, and at the same time use your talents to help people in developing countries and around the world on the front lines of the battle against HIV/AIDS, TB, Malaria, and other public health challenges. For more detailed about OpenMRS and GCI, visit http://openmrs.org/ and watch [this short video](https://www.youtube.com/watch?v=HPxx1_svu_A) created by a previous OpenMRS GCI participant.",
+    "tags": [
+      "hospitals",
+      "healthcare",
+      "emr",
+      "medical",
+      "webapp"
+    ],
+    "twitter_url": "https://twitter.com/OpenMRS",
+    "contact_email": "community@openmrs.org",
+    "irc_channel": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q",
+    "slug": "openmrs",
+    "preferred_contact_method": null,
+    "guide_to_working": "",
+    "name": "OpenMRS",
+    "precis": "Write Code, Save Lives",
+    "image_url": "//lh3.googleusercontent.com/DtRzzebTaA7bRBx4t0hAWTcyoiFP84r64T0uG8eNRoBnfyG9sUaVf5xkXuq-ffTzuT4voJY2JE3YXUh3Amvg4cmD",
+    "blog_url": "http://openmrs.org/blog/",
+    "github": "openmrs",
+    "chat": {
+      "url": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q",
+      "platform": "TELEGRAM",
+      "image": "static/images/logos/telegram.png"
+    },
+    "wiki": {
+      "wikipedia": {
+        "en": "https://en.wikipedia.org/wiki/OpenMRS"
+      },
+      "wikidata": "//www.wikidata.org/wiki/Q7095826"
     }
   },
   {
@@ -2151,7 +2150,7 @@
       "android"
     ],
     "guide_to_working_url": "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn",
-    "completed_task_instance_count": 111,
+    "completed_task_instance_count": 113,
     "id": 6299430183501824,
     "winners": {},
     "mailing_list": "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss",
@@ -2227,7 +2226,7 @@
       "javascript"
     ],
     "guide_to_working_url": "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students",
-    "completed_task_instance_count": 103,
+    "completed_task_instance_count": 104,
     "id": 5139786496999424,
     "winners": {},
     "mailing_list": "http://www.osgeo.org/content/faq/mailing_lists.html",
@@ -2539,7 +2538,7 @@
       "jquery"
     ],
     "guide_to_working_url": "https://gitter.im/Cloud-CV/",
-    "completed_task_instance_count": 48,
+    "completed_task_instance_count": 49,
     "id": 4854733644759040,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/cloudcv",
@@ -2589,7 +2588,7 @@
       "bash"
     ],
     "guide_to_working_url": "http://wiki.apertium.org/wiki/Task_ideas_for_Google_Code-in/Getting_started",
-    "completed_task_instance_count": 30,
+    "completed_task_instance_count": 31,
     "id": 6541403171586048,
     "winners": {},
     "mailing_list": "http://wiki.apertium.org/wiki/Contact",
