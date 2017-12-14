@@ -56,7 +56,7 @@
       - "javascript"
       - "html"
     guide_to_working_url: ""
-    completed_task_instance_count: 775
+    completed_task_instance_count: 798
     id: 5733899491606528
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/jboss-community-gci/"
@@ -149,7 +149,7 @@
       - "node"
       - "python"
     guide_to_working_url: ""
-    completed_task_instance_count: 440
+    completed_task_instance_count: 453
     id: 4923880235859968
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/score-community"
@@ -241,7 +241,7 @@
       - "web technologies"
       - "python"
     guide_to_working_url: "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/"
-    completed_task_instance_count: 361
+    completed_task_instance_count: 383
     id: 6237166344601600
     winners: {}
     mailing_list: "http://groups.google.com/group/fossasia"
@@ -312,6 +312,10 @@
         id: 4710024200847360
       - 
         program_year: 2017
+        display_name: "Satyam Kumar"
+        id: 5188049791090688
+      - 
+        program_year: 2017
         display_name: "Łukasz Myśliwiec"
         id: 6411656957526016
     accepted_org_tos: true
@@ -322,7 +326,7 @@
       - "javascript"
       - "css"
     guide_to_working_url: "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background"
-    completed_task_instance_count: 351
+    completed_task_instance_count: 362
     id: 4879181169033216
     winners: {}
     mailing_list: "http://lists.sugarlabs.org/"
@@ -373,6 +377,10 @@
         id: 5976468456734720
       - 
         program_year: 2017
+        display_name: "hasia"
+        id: 5953782171041792
+      - 
+        program_year: 2017
         display_name: "J Young Kim"
         id: 6367732863860736
       - 
@@ -392,7 +400,7 @@
       - "javascript"
       - "sql"
     guide_to_working_url: "https://wiki.musicbrainz.org/Google_Code-in/2017"
-    completed_task_instance_count: 291
+    completed_task_instance_count: 305
     id: 5936087526539264
     winners: {}
     mailing_list: "https://community.metabrainz.org/"
@@ -443,6 +451,10 @@
         id: 6577413972557824
       - 
         program_year: 2017
+        display_name: "Kai Chen"
+        id: 5554705755275264
+      - 
+        program_year: 2017
         display_name: "Marco Burstein"
         id: 4597515116609536
       - 
@@ -469,7 +481,7 @@
       - "html"
       - "visual design"
     guide_to_working_url: "https://github.com/zulip/zulip-gci"
-    completed_task_instance_count: 255
+    completed_task_instance_count: 268
     id: 5744567921934336
     winners: {}
     mailing_list: null
@@ -543,7 +555,7 @@
       - "gnome"
       - "c/c++"
     guide_to_working_url: ""
-    completed_task_instance_count: 253
+    completed_task_instance_count: 266
     id: 5133577048031232
     winners: {}
     mailing_list: "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc"
@@ -799,7 +811,7 @@
       - "lua"
       - "wiki"
     guide_to_working_url: "https://www.mediawiki.org/wiki/Google_Code-in/2017"
-    completed_task_instance_count: 239
+    completed_task_instance_count: 250
     id: 5740205476675584
     winners: {}
     mailing_list: "https://lists.wikimedia.org/mailman/listinfo/wikitech-l"
@@ -1029,7 +1041,7 @@
       - "three.js"
       - "html/css"
     guide_to_working_url: ""
-    completed_task_instance_count: 235
+    completed_task_instance_count: 246
     id: 5154791065911296
     winners: {}
     mailing_list: "http://brlcad.org/wiki/Mailing_lists"
@@ -1119,7 +1131,7 @@
       - "linux"
       - "windows"
     guide_to_working_url: ""
-    completed_task_instance_count: 212
+    completed_task_instance_count: 218
     id: 5731053304020992
     winners: {}
     mailing_list: null
@@ -1184,7 +1196,7 @@
       - "html"
       - "css"
     guide_to_working_url: "http://openwisp.io/docs/developer/contributing.html"
-    completed_task_instance_count: 211
+    completed_task_instance_count: 214
     id: 5693741010518016
     winners: {}
     mailing_list: "https://groups.google.com/d/forum/openwisp/join"
@@ -1241,6 +1253,10 @@
         id: 6702015805652992
       - 
         program_year: 2017
+        display_name: "Max Levchuk"
+        id: 6240118648078336
+      - 
+        program_year: 2017
         display_name: "Mochammad Nur Afandi"
         id: 5177112698814464
       - 
@@ -1265,7 +1281,7 @@
       - "bash"
       - "html"
     guide_to_working_url: "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails"
-    completed_task_instance_count: 184
+    completed_task_instance_count: 190
     id: 6281461650948096
     winners: {}
     mailing_list: "https://www.haiku-os.org/community/ml"
@@ -1450,7 +1466,7 @@
       - "illustrator"
       - "photoshop"
     guide_to_working_url: ""
-    completed_task_instance_count: 164
+    completed_task_instance_count: 173
     id: 5735606506225664
     winners: {}
     mailing_list: "http://systers.anitab.org"
@@ -1489,6 +1505,7 @@
         program_year: 2017
         display_name: "Akash Bhave"
         id: 6479705412730880
+        github_account: "AkashBhave"
       - 
         program_year: 2017
         display_name: "Chirag Gupta"
@@ -1523,7 +1540,7 @@
       - "html"
       - "mysql"
     guide_to_working_url: "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
-    completed_task_instance_count: 147
+    completed_task_instance_count: 161
     id: 6239808655458304
     winners: {}
     mailing_list: "http://mifos.org/resources/community/communications/#mailing-lists"
@@ -1558,76 +1575,6 @@
       es: "https://es.wikipedia.org/wiki/Mifos"
       pl: "https://pl.wikipedia.org/wiki/Mifos"
     wikidata_url: "//www.wikidata.org/wiki/Q3347450"
-  - 
-    primary_open_source_license: "Affero GNU Public License"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Alexander Voronkov"
-        id: 5057457392975872
-      - 
-        program_year: 2017
-        display_name: "Andrew Dassonville"
-        id: 5302037795307520
-        github_account: "andrewda"
-      - 
-        program_year: 2017
-        display_name: "Daniel O'Brien"
-        id: 4973831292715008
-      - 
-        program_year: 2017
-        display_name: "Nalin Bhardwaj"
-        id: 4552227639263232
-        github_account: "nalinbhardwaj"
-      - 
-        program_year: 2017
-        display_name: "Shukai Ni"
-        id: 5178132149567488
-      - 
-        program_year: 2017
-        display_name: "Tio Irawan"
-        id: 6214590973083648
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/communities/110223386465813667851"
-    programming_languages: 
-      - "python"
-      - "python 3"
-      - "abstract syntax tree"
-      - "errbot"
-    guide_to_working_url: "https://projects.coala.io/"
-    completed_task_instance_count: 146
-    id: 4884530416582656
-    winners: {}
-    mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
-    website_url: "https://coala.io/"
-    status: 2
-    program_year: 2017
-    description: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below."
-    tags: 
-      - "linting"
-      - "static code analysis"
-      - "code quality"
-      - "automation"
-      - "devops"
-    twitter_url: "http://twitter.com/coala_io"
-    contact_email: null
-    irc_channel: "https://coala.zulipchat.com/"
-    slug: "coala"
-    preferred_contact_method: null
-    guide_to_working: "Join [Zulip](https://coala.zulipchat.com/) or [Gitter](https://gitter.im/coala/gci) to ask mentors questions .\r\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\r\nFollow the [Newcomer Guide](http://coala.io/newcomer)."
-    name: "coala"
-    precis: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used.Plugins may by native Python or wrap external linters."
-    image_url: "//lh3.googleusercontent.com/4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG"
-    blog_url: "https://blog.coala.io/"
-    github: "coala"
-    chat: 
-      url: "https://coala.zulipchat.com/"
-      platform: "ZULIP"
-      image: "static/images/logos/zulip.png"
-    wikipedia_urls: 
-      en: "https://en.wikipedia.org/wiki/Coala_%28software%29"
-    wikidata_url: "//www.wikidata.org/wiki/Q25215462"
   - 
     primary_open_source_license: "GNU Affero General Public License v3 (AGPL-3.0)"
     leaders: 
@@ -1677,7 +1624,7 @@
     programming_languages: 
       - "visual programming language (catrobat)"
     guide_to_working_url: "http://catrob.at/cgcicti"
-    completed_task_instance_count: 146
+    completed_task_instance_count: 154
     id: 5135243763777536
     winners: {}
     mailing_list: "http://catrob.at/PocketCodeUserForum"
@@ -1707,6 +1654,76 @@
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q45341807"
   - 
+    primary_open_source_license: "Affero GNU Public License"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Alexander Voronkov"
+        id: 5057457392975872
+      - 
+        program_year: 2017
+        display_name: "Andrew Dassonville"
+        id: 5302037795307520
+        github_account: "andrewda"
+      - 
+        program_year: 2017
+        display_name: "Daniel O'Brien"
+        id: 4973831292715008
+      - 
+        program_year: 2017
+        display_name: "Nalin Bhardwaj"
+        id: 4552227639263232
+        github_account: "nalinbhardwaj"
+      - 
+        program_year: 2017
+        display_name: "Shukai Ni"
+        id: 5178132149567488
+      - 
+        program_year: 2017
+        display_name: "Tio Irawan"
+        id: 6214590973083648
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/communities/110223386465813667851"
+    programming_languages: 
+      - "python"
+      - "python 3"
+      - "abstract syntax tree"
+      - "errbot"
+    guide_to_working_url: "https://projects.coala.io/"
+    completed_task_instance_count: 153
+    id: 4884530416582656
+    winners: {}
+    mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
+    website_url: "https://coala.io/"
+    status: 2
+    program_year: 2017
+    description: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below."
+    tags: 
+      - "linting"
+      - "static code analysis"
+      - "code quality"
+      - "automation"
+      - "devops"
+    twitter_url: "http://twitter.com/coala_io"
+    contact_email: null
+    irc_channel: "https://coala.zulipchat.com/"
+    slug: "coala"
+    preferred_contact_method: null
+    guide_to_working: "Join [Zulip](https://coala.zulipchat.com/) or [Gitter](https://gitter.im/coala/gci) to ask mentors questions .\r\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\r\nFollow the [Newcomer Guide](http://coala.io/newcomer)."
+    name: "coala"
+    precis: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used.Plugins may by native Python or wrap external linters."
+    image_url: "//lh3.googleusercontent.com/4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG"
+    blog_url: "https://blog.coala.io/"
+    github: "coala"
+    chat: 
+      url: "https://coala.zulipchat.com/"
+      platform: "ZULIP"
+      image: "static/images/logos/zulip.png"
+    wikipedia_urls: 
+      en: "https://en.wikipedia.org/wiki/Coala_%28software%29"
+    wikidata_url: "//www.wikidata.org/wiki/Q25215462"
+  - 
     primary_open_source_license: "Mozilla Public License 2.0 (MPL-2.0)"
     leaders: 
       - 
@@ -1726,6 +1743,10 @@
         program_year: 2017
         display_name: "Matthew Whitaker"
         id: 6052785999052800
+      - 
+        program_year: 2017
+        display_name: "Raghav Khandelwal"
+        id: 6537397560934400
       - 
         program_year: 2017
         display_name: "Said Yaka"
@@ -1752,7 +1773,7 @@
       - "html5"
       - "css"
     guide_to_working_url: ""
-    completed_task_instance_count: 145
+    completed_task_instance_count: 152
     id: 5753409548320768
     winners: {}
     mailing_list: "http://om.rs/gcitalk"
@@ -1835,7 +1856,7 @@
       - "gradle"
       - "blender"
     guide_to_working_url: "https://github.com/MovingBlocks/Terasology/wiki/GCI"
-    completed_task_instance_count: 142
+    completed_task_instance_count: 148
     id: 5693523175145472
     winners: {}
     mailing_list: null
@@ -1854,7 +1875,7 @@
     irc_channel: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
     slug: "movingblocks"
     preferred_contact_method: null
-    guide_to_working: ""
+    guide_to_working: "To contact a mentor please the [our IRC service](https://metaterasology.github.io/docs/developerIntro/usingIrc.html) or our [Discord server](https://discord.gg/4uKbB8J).  \n*Comments left on a task are often not noticed by mentors.*\n\nFor guides on setting up Terasology please [look at our fledgling docs site](https://metaterasology.github.io/docs/developerIntro/developerIntro.html).\nGood luck and have fun :)"
     name: "MovingBlocks"
     precis: "Terasology: like an open source Minecraft - imagine the possibilities!"
     image_url: "//lh3.googleusercontent.com/xXnPqLkLDZYuz6XBxkKKTcaRWcsgzLcMgLx21ADAAIv2BAtRIyk9lI0ryrEBhh7K3r6YXdJOHAHu5hl9e2iNQ-Rn"
@@ -1888,7 +1909,7 @@
       - "css"
       - "android"
     guide_to_working_url: "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn"
-    completed_task_instance_count: 115
+    completed_task_instance_count: 121
     id: 6299430183501824
     winners: {}
     mailing_list: "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss"
@@ -1953,7 +1974,7 @@
       - "c++"
       - "javascript"
     guide_to_working_url: "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students"
-    completed_task_instance_count: 105
+    completed_task_instance_count: 110
     id: 5139786496999424
     winners: {}
     mailing_list: "http://www.osgeo.org/content/faq/mailing_lists.html"
@@ -2023,7 +2044,7 @@
       - "php"
       - "javascript"
     guide_to_working_url: ""
-    completed_task_instance_count: 88
+    completed_task_instance_count: 91
     id: 5165875202097152
     winners: {}
     mailing_list: "https://forums.librehealth.io/gci"
@@ -2061,6 +2082,10 @@
         id: 6719751873101824
       - 
         program_year: 2017
+        display_name: "Neel Gopaul"
+        id: 4576133293015040
+      - 
+        program_year: 2017
         display_name: "Tanish Kapur"
         id: 6374141223501824
       - 
@@ -2077,7 +2102,7 @@
       - "css"
       - "symfony"
     guide_to_working_url: "https://www.drupal.org/node/984014"
-    completed_task_instance_count: 87
+    completed_task_instance_count: 89
     id: 5636094664114176
     winners: {}
     mailing_list: "https://drupal.org/mailing-lists"
@@ -2187,7 +2212,7 @@
       - "css"
       - "java"
     guide_to_working_url: "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html"
-    completed_task_instance_count: 63
+    completed_task_instance_count: 74
     id: 5067404587565056
     winners: {}
     mailing_list: "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html"
@@ -2230,7 +2255,7 @@
       - "css"
       - "jquery"
     guide_to_working_url: "https://gitter.im/Cloud-CV/"
-    completed_task_instance_count: 54
+    completed_task_instance_count: 60
     id: 4854733644759040
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/cloudcv"
@@ -2274,7 +2299,7 @@
       - "html"
       - "bash"
     guide_to_working_url: "http://wiki.apertium.org/wiki/Task_ideas_for_Google_Code-in/Getting_started"
-    completed_task_instance_count: 33
+    completed_task_instance_count: 35
     id: 6541403171586048
     winners: {}
     mailing_list: "http://wiki.apertium.org/wiki/Contact"
