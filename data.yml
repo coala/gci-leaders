@@ -149,7 +149,7 @@
       - "node"
       - "python"
     guide_to_working_url: ""
-    completed_task_instance_count: 481
+    completed_task_instance_count: 482
     id: 4923880235859968
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/score-community"
@@ -241,7 +241,7 @@
       - "web technologies"
       - "python"
     guide_to_working_url: "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/"
-    completed_task_instance_count: 394
+    completed_task_instance_count: 396
     id: 6237166344601600
     winners: {}
     mailing_list: "http://groups.google.com/group/fossasia"
@@ -819,7 +819,7 @@
       - "lua"
       - "wiki"
     guide_to_working_url: "https://www.mediawiki.org/wiki/Google_Code-in/2017"
-    completed_task_instance_count: 256
+    completed_task_instance_count: 258
     id: 5740205476675584
     winners: {}
     mailing_list: "https://lists.wikimedia.org/mailman/listinfo/wikitech-l"
@@ -1103,6 +1103,7 @@
         program_year: 2017
         display_name: "Hemang Rajvanshy"
         id: 4772500808400896
+        github_account: "HemangRajvanshy"
       - 
         program_year: 2017
         display_name: "John Chew"
@@ -1127,6 +1128,7 @@
         program_year: 2017
         display_name: "TheFaR8"
         id: 5878255708012544
+        github_account: "TheFaR8"
     accepted_org_tos: true
     dev_mailing_list: null
     gplus_url: null
@@ -1161,7 +1163,7 @@
     precis: "We make the software that generates the subtitles everyone uses to watch TV and movies when they need them either because they are learning a second language or have a hearing disability."
     image_url: "//lh3.googleusercontent.com/VjwFkSuq7AQSJvQzZHBAtNIEwe_vGEhzrLtYWtbc42NWMXfl9P2nyiykAqqZkQGU0YzwNJaFKolUKfTKWxJWKJk"
     blog_url: null
-    github: null
+    github: "CCExtractor"
     chat: 
       url: "https://ccextractor.org/public:general:support"
       platform: "OTHER"
