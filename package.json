@@ -4,18 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "planet": "node ./lib/planet.js",
     "scrape": "node ./lib/scrape.js",
     "generate": "node ./lib/generate.js",
     "gather": "node ./lib/gather.js",
     "clean": "rm -rf out/*",
-    "build": "npm run gather && npm run scrape && npm run generate",
-    "build:clean": "npm run clean && npm run scrape && npm run generate"
+    "build": "npm run gather && npm run scrape && npm run planet && npm run generate",
+    "build:clean": "npm run clean && npm run build"
   },
   "keywords": [],
   "author": "blazeu <neversleepman@tfwno.gf>",
   "license": "MIT",
   "dependencies": {
     "chattie": "0.0.4",
+    "feed-read-parser": "^0.0.6",
+    "find-rss": "^1.6.4",
     "json2yaml": "^1.1.0",
     "mustache": "^2.3.0",
     "ncp": "^2.0.0",

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Google Code-in Blog Planet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to the Google Code-In Blog Planet</h1>
+      <hr />
+    </div>
+    <div>
+      {{#planet}}
+      <a class="title" href={{link}}><h1>{{title}}</h1></a>
+      <h5>{{published}}</h5>
+      <i class="author">{{author}}</i>
+      <div class="content">
+        {{{content}}}
+      </div>
+      {{/planet}}
+    </div>
+    <footer>
+      <small>Google Code-in and the Google Code-in logo are trademarks of Google Inc.</small>
+    </footer>
+  </body>
+</html>
