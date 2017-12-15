@@ -68,7 +68,7 @@
       "html"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 806,
+    "completed_task_instance_count": 814,
     "id": 5733899491606528,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/jboss-community-gci/",
@@ -177,7 +177,7 @@
       "python"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 482,
+    "completed_task_instance_count": 496,
     "id": 4923880235859968,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/score-community",
@@ -284,7 +284,7 @@
       "python"
     ],
     "guide_to_working_url": "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/",
-    "completed_task_instance_count": 396,
+    "completed_task_instance_count": 399,
     "id": 6237166344601600,
     "winners": {},
     "mailing_list": "http://groups.google.com/group/fossasia",
@@ -384,7 +384,7 @@
       "css"
     ],
     "guide_to_working_url": "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background",
-    "completed_task_instance_count": 367,
+    "completed_task_instance_count": 376,
     "id": 4879181169033216,
     "winners": {},
     "mailing_list": "http://lists.sugarlabs.org/",
@@ -476,7 +476,7 @@
       "sql"
     ],
     "guide_to_working_url": "https://wiki.musicbrainz.org/Google_Code-in/2017",
-    "completed_task_instance_count": 321,
+    "completed_task_instance_count": 323,
     "id": 5936087526539264,
     "winners": {},
     "mailing_list": "https://community.metabrainz.org/",
@@ -569,7 +569,7 @@
       "c/c++"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 287,
+    "completed_task_instance_count": 289,
     "id": 5133577048031232,
     "winners": {},
     "mailing_list": "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc",
@@ -833,7 +833,7 @@
       "visual design"
     ],
     "guide_to_working_url": "https://github.com/zulip/zulip-gci",
-    "completed_task_instance_count": 271,
+    "completed_task_instance_count": 278,
     "id": 5744567921934336,
     "winners": {},
     "mailing_list": null,
@@ -935,7 +935,7 @@
       "wiki"
     ],
     "guide_to_working_url": "https://www.mediawiki.org/wiki/Google_Code-in/2017",
-    "completed_task_instance_count": 258,
+    "completed_task_instance_count": 260,
     "id": 5740205476675584,
     "winners": {},
     "mailing_list": "https://lists.wikimedia.org/mailman/listinfo/wikitech-l",
@@ -1178,7 +1178,7 @@
       "html/css"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 250,
+    "completed_task_instance_count": 252,
     "id": 5154791065911296,
     "winners": {},
     "mailing_list": "http://brlcad.org/wiki/Mailing_lists",
@@ -1283,7 +1283,7 @@
       "windows"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 223,
+    "completed_task_instance_count": 225,
     "id": 5731053304020992,
     "winners": {},
     "mailing_list": null,
@@ -1358,7 +1358,7 @@
       "css"
     ],
     "guide_to_working_url": "http://openwisp.io/docs/developer/contributing.html",
-    "completed_task_instance_count": 218,
+    "completed_task_instance_count": 221,
     "id": 5693741010518016,
     "winners": {},
     "mailing_list": "https://groups.google.com/d/forum/openwisp/join",
@@ -1458,7 +1458,7 @@
       "html"
     ],
     "guide_to_working_url": "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails",
-    "completed_task_instance_count": 196,
+    "completed_task_instance_count": 199,
     "id": 6281461650948096,
     "winners": {},
     "mailing_list": "https://www.haiku-os.org/community/ml",
@@ -1659,7 +1659,7 @@
       "photoshop"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 186,
+    "completed_task_instance_count": 187,
     "id": 5735606506225664,
     "winners": {},
     "mailing_list": "http://systers.anitab.org",
@@ -1746,7 +1746,7 @@
       "mysql"
     ],
     "guide_to_working_url": "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki",
-    "completed_task_instance_count": 165,
+    "completed_task_instance_count": 166,
     "id": 6239808655458304,
     "winners": {},
     "mailing_list": "http://mifos.org/resources/community/communications/#mailing-lists",
@@ -1784,6 +1784,99 @@
       "pl": "https://pl.wikipedia.org/wiki/Mifos"
     },
     "wikidata_url": "//www.wikidata.org/wiki/Q3347450"
+  },
+  {
+    "primary_open_source_license": "GNU Affero General Public License v3 (AGPL-3.0)",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Alejandro Heredia",
+        "id": 5243643889713152
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Andreas Lukita",
+        "id": 4692396648431616
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Chandra Chou",
+        "id": 6189747405848576
+      },
+      {
+        "program_year": 2017,
+        "display_name": "headhunter",
+        "id": 5126869030535168
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Mateusz Komajda",
+        "id": 4979968129892352
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Nikita Kotenev",
+        "id": 6003849812770816
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Sarthak Agrawal",
+        "id": 5394417575788544
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Siddh Jain",
+        "id": 6267827092717568
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Yudhistira G.S.",
+        "id": 4611923993690112
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Łukasz Ameljan",
+        "id": 5096542534893568
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": "https://plus.google.com/communities/116816272940643231129",
+    "programming_languages": [
+      "visual programming language (catrobat)"
+    ],
+    "guide_to_working_url": "http://catrob.at/cgcicti",
+    "completed_task_instance_count": 164,
+    "id": 5135243763777536,
+    "winners": {},
+    "mailing_list": "http://catrob.at/PocketCodeUserForum",
+    "website_url": "https://www.catrobat.org/",
+    "status": 2,
+    "program_year": 2017,
+    "description": "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!",
+    "tags": [
+      "mobile",
+      "games",
+      "visual programming",
+      "apps",
+      "animations"
+    ],
+    "twitter_url": "http://twitter.com/Pocket_Code",
+    "contact_email": "user_forum@catrobat.org",
+    "irc_channel": null,
+    "slug": "catrobat",
+    "preferred_contact_method": null,
+    "guide_to_working": "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions.",
+    "name": "Catrobat",
+    "precis": "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!",
+    "image_url": "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE",
+    "blog_url": null,
+    "github": "Catrobat",
+    "chat": {
+      "url": null
+    },
+    "wikipedia_urls": null,
+    "wikidata_url": "//www.wikidata.org/wiki/Q45341807"
   },
   {
     "primary_open_source_license": "Mozilla Public License 2.0 (MPL-2.0)",
@@ -1851,7 +1944,7 @@
       "css"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 162,
+    "completed_task_instance_count": 163,
     "id": 5753409548320768,
     "winners": {},
     "mailing_list": "http://om.rs/gcitalk",
@@ -1886,99 +1979,6 @@
       "en": "https://en.wikipedia.org/wiki/OpenMRS"
     },
     "wikidata_url": "//www.wikidata.org/wiki/Q7095826"
-  },
-  {
-    "primary_open_source_license": "GNU Affero General Public License v3 (AGPL-3.0)",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Alejandro Heredia",
-        "id": 5243643889713152
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Andreas Lukita",
-        "id": 4692396648431616
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Chandra Chou",
-        "id": 6189747405848576
-      },
-      {
-        "program_year": 2017,
-        "display_name": "headhunter",
-        "id": 5126869030535168
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Mateusz Komajda",
-        "id": 4979968129892352
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Nikita Kotenev",
-        "id": 6003849812770816
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Sarthak Agrawal",
-        "id": 5394417575788544
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Siddh Jain",
-        "id": 6267827092717568
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Yudhistira G.S.",
-        "id": 4611923993690112
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Łukasz Ameljan",
-        "id": 5096542534893568
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": "https://plus.google.com/communities/116816272940643231129",
-    "programming_languages": [
-      "visual programming language (catrobat)"
-    ],
-    "guide_to_working_url": "http://catrob.at/cgcicti",
-    "completed_task_instance_count": 160,
-    "id": 5135243763777536,
-    "winners": {},
-    "mailing_list": "http://catrob.at/PocketCodeUserForum",
-    "website_url": "https://www.catrobat.org/",
-    "status": 2,
-    "program_year": 2017,
-    "description": "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!",
-    "tags": [
-      "mobile",
-      "games",
-      "visual programming",
-      "apps",
-      "animations"
-    ],
-    "twitter_url": "http://twitter.com/Pocket_Code",
-    "contact_email": "user_forum@catrobat.org",
-    "irc_channel": null,
-    "slug": "catrobat",
-    "preferred_contact_method": null,
-    "guide_to_working": "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions.",
-    "name": "Catrobat",
-    "precis": "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!",
-    "image_url": "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE",
-    "blog_url": null,
-    "github": "Catrobat",
-    "chat": {
-      "url": null
-    },
-    "wikipedia_urls": null,
-    "wikidata_url": "//www.wikidata.org/wiki/Q45341807"
   },
   {
     "primary_open_source_license": "Affero GNU Public License",
@@ -2026,7 +2026,7 @@
       "errbot"
     ],
     "guide_to_working_url": "https://projects.coala.io/",
-    "completed_task_instance_count": 158,
+    "completed_task_instance_count": 160,
     "id": 4884530416582656,
     "winners": {},
     "mailing_list": "https://github.com/coala/coala/wiki/Mailing-Lists",
@@ -2189,7 +2189,7 @@
       "android"
     ],
     "guide_to_working_url": "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn",
-    "completed_task_instance_count": 121,
+    "completed_task_instance_count": 122,
     "id": 6299430183501824,
     "winners": {},
     "mailing_list": "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss",
@@ -2263,7 +2263,7 @@
       "javascript"
     ],
     "guide_to_working_url": "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students",
-    "completed_task_instance_count": 111,
+    "completed_task_instance_count": 116,
     "id": 5139786496999424,
     "winners": {},
     "mailing_list": "http://www.osgeo.org/content/faq/mailing_lists.html",
@@ -2299,6 +2299,7 @@
       "de": "https://de.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
       "en": "https://en.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
       "es": "https://es.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
+      "fi": "https://fi.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
       "fr": "https://fr.wikipedia.org/wiki/Fondation_Open_Source_Geospatial",
       "gl": "https://gl.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
       "hr": "https://hr.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
@@ -2342,7 +2343,7 @@
       "javascript"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 95,
+    "completed_task_instance_count": 96,
     "id": 5165875202097152,
     "winners": {},
     "mailing_list": "https://forums.librehealth.io/gci",
@@ -2526,7 +2527,7 @@
       "java"
     ],
     "guide_to_working_url": "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html",
-    "completed_task_instance_count": 75,
+    "completed_task_instance_count": 77,
     "id": 5067404587565056,
     "winners": {},
     "mailing_list": "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html",
@@ -2574,7 +2575,7 @@
       "jquery"
     ],
     "guide_to_working_url": "https://gitter.im/Cloud-CV/",
-    "completed_task_instance_count": 62,
+    "completed_task_instance_count": 63,
     "id": 4854733644759040,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/cloudcv",
@@ -2610,7 +2611,13 @@
   },
   {
     "primary_open_source_license": "GNU General Public License version 3.0 (GPL-3.0)",
-    "leaders": [],
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Alexander Mamaev",
+        "id": 5417131376115712
+      }
+    ],
     "accepted_org_tos": true,
     "dev_mailing_list": null,
     "gplus_url": null,
@@ -2622,7 +2629,7 @@
       "bash"
     ],
     "guide_to_working_url": "http://wiki.apertium.org/wiki/Task_ideas_for_Google_Code-in/Getting_started",
-    "completed_task_instance_count": 37,
+    "completed_task_instance_count": 39,
     "id": 6541403171586048,
     "winners": {},
     "mailing_list": "http://wiki.apertium.org/wiki/Contact",
