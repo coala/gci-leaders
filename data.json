@@ -97,7 +97,7 @@
     "chat": {
       "url": "https://gitter.im/jboss-outreach/gci",
       "platform": "GITTER",
-      "image": "static/images/logos/gitter.png"
+      "image": "images/logos/gitter.png"
     },
     "wikipedia_urls": {
       "ca": "https://ca.wikipedia.org/wiki/JBoss_Inc",
@@ -206,7 +206,7 @@
     "chat": {
       "url": "https://gitter.im/scorelab/scorelab",
       "platform": "GITTER",
-      "image": "static/images/logos/gitter.png"
+      "image": "images/logos/gitter.png"
     },
     "wikipedia_urls": null,
     "wikidata_url": "//www.wikidata.org/wiki/Q45341439"
@@ -313,7 +313,7 @@
     "chat": {
       "url": "https://gitter.im/fossasia/fossasia",
       "platform": "GITTER",
-      "image": "static/images/logos/gitter.png"
+      "image": "images/logos/gitter.png"
     },
     "wikipedia_urls": {
       "de": "https://de.wikipedia.org/wiki/FOSSASIA",
@@ -411,7 +411,7 @@
     "chat": {
       "url": "https://chat.sugarlabs.org",
       "platform": "OTHER",
-      "image": "static/images/chat.png"
+      "image": "images/chat.png"
     },
     "wikipedia_urls": {
       "en": "https://en.wikipedia.org/wiki/Sugar_Labs",
@@ -504,7 +504,7 @@
     "chat": {
       "url": "irc://irc.freenode.net/musicbrainz",
       "platform": "IRC",
-      "image": "static/images/logos/irc.png"
+      "image": "images/logos/irc.png"
     },
     "wikipedia_urls": {
       "en": "https://en.wikipedia.org/wiki/MetaBrainz_Foundation",
@@ -598,7 +598,7 @@
     "chat": {
       "url": "irc://irc.freenode.net/ubuntu-google",
       "platform": "IRC",
-      "image": "static/images/logos/irc.png"
+      "image": "images/logos/irc.png"
     },
     "wikipedia_urls": {
       "af": "https://af.wikipedia.org/wiki/Ubuntu_%28Linux%29",
@@ -862,7 +862,7 @@
     "chat": {
       "url": "https://chat.zulip.org",
       "platform": "ZULIP",
-      "image": "static/images/logos/zulip.png"
+      "image": "images/logos/zulip.png"
     },
     "wikipedia_urls": {
       "en": "https://en.wikipedia.org/wiki/Zulip",
@@ -963,7 +963,7 @@
     "chat": {
       "url": "https://www.mediawiki.org/wiki/MediaWiki_on_IRC",
       "platform": "IRC",
-      "image": "static/images/logos/irc.png"
+      "image": "images/logos/irc.png"
     },
     "wikipedia_urls": {
       "af": "https://af.wikipedia.org/wiki/Wikimedia-stigting",
@@ -1207,7 +1207,7 @@
     "chat": {
       "url": "http://brlcad.org/wiki/IRC",
       "platform": "IRC",
-      "image": "static/images/logos/irc.png"
+      "image": "images/logos/irc.png"
     },
     "wikipedia_urls": {
       "commons": "https://commons.wikipedia.org/wiki/Category%3ABRL-CAD",
@@ -1237,8 +1237,7 @@
       {
         "program_year": 2017,
         "display_name": "Hemang Rajvanshy",
-        "id": 4772500808400896,
-        "github_account": "HemangRajvanshy"
+        "id": 4772500808400896
       },
       {
         "program_year": 2017,
@@ -1268,8 +1267,7 @@
       {
         "program_year": 2017,
         "display_name": "TheFaR8",
-        "id": 5878255708012544,
-        "github_account": "TheFaR8"
+        "id": 5878255708012544
       }
     ],
     "accepted_org_tos": true,
@@ -1308,11 +1306,11 @@
     "precis": "We make the software that generates the subtitles everyone uses to watch TV and movies when they need them either because they are learning a second language or have a hearing disability.",
     "image_url": "//lh3.googleusercontent.com/VjwFkSuq7AQSJvQzZHBAtNIEwe_vGEhzrLtYWtbc42NWMXfl9P2nyiykAqqZkQGU0YzwNJaFKolUKfTKWxJWKJk",
     "blog_url": null,
-    "github": "CCExtractor",
+    "github": null,
     "chat": {
       "url": "https://ccextractor.org/public:general:support",
       "platform": "OTHER",
-      "image": "static/images/chat.png"
+      "image": "images/chat.png"
     },
     "wikipedia_urls": null,
     "wikidata_url": "//www.wikidata.org/wiki/Q45341716"
@@ -1387,7 +1385,7 @@
     "chat": {
       "url": "http://openwisp.org/support.html",
       "platform": "OTHER",
-      "image": "static/images/chat.png"
+      "image": "images/chat.png"
     },
     "wikipedia_urls": null,
     "wikidata_url": "//www.wikidata.org/wiki/Q45341562"
@@ -1487,7 +1485,7 @@
     "chat": {
       "url": "irc://chat.freenode.net/haiku",
       "platform": "IRC",
-      "image": "static/images/logos/irc.png"
+      "image": "images/logos/irc.png"
     },
     "wikipedia_urls": {
       "af": "https://af.wikipedia.org/wiki/Haikoe",
@@ -1688,7 +1686,7 @@
     "chat": {
       "url": "http://systers.io/slack-systers-opensource/",
       "platform": "SLACK",
-      "image": "static/images/logos/slack.png"
+      "image": "images/logos/slack.png"
     },
     "wikipedia_urls": {
       "en": "https://en.wikipedia.org/wiki/Systers"
@@ -1775,7 +1773,7 @@
     "chat": {
       "url": "https://gitter.im/openMF/mifos",
       "platform": "GITTER",
-      "image": "static/images/logos/gitter.png"
+      "image": "images/logos/gitter.png"
     },
     "wikipedia_urls": {
       "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BF%E0%A6%AB%E0%A6%B8",
@@ -1880,7 +1878,7 @@
     "chat": {
       "url": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q",
       "platform": "TELEGRAM",
-      "image": "static/images/logos/telegram.png"
+      "image": "images/logos/telegram.png"
     },
     "wikipedia_urls": {
       "en": "https://en.wikipedia.org/wiki/OpenMRS"
@@ -2055,7 +2053,7 @@
     "chat": {
       "url": "https://coala.zulipchat.com/",
       "platform": "ZULIP",
-      "image": "static/images/logos/zulip.png"
+      "image": "images/logos/zulip.png"
     },
     "wikipedia_urls": {
       "en": "https://en.wikipedia.org/wiki/Coala_%28software%29"
@@ -2158,7 +2156,7 @@
     "chat": {
       "url": "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC",
       "platform": "IRC",
-      "image": "static/images/logos/irc.png"
+      "image": "images/logos/irc.png"
     },
     "wikipedia_urls": null,
     "wikidata_url": "//www.wikidata.org/wiki/Q40881750"
@@ -2217,7 +2215,7 @@
     "chat": {
       "url": "http://dev.xwiki.org/xwiki/bin/view/Community/Chat",
       "platform": "OTHER",
-      "image": "static/images/chat.png"
+      "image": "images/chat.png"
     },
     "wikipedia_urls": {
       "ca": "https://ca.wikipedia.org/wiki/XWiki",
@@ -2292,7 +2290,7 @@
     "chat": {
       "url": "irc://irc.freenode.net/osgeo",
       "platform": "IRC",
-      "image": "static/images/logos/irc.png"
+      "image": "images/logos/irc.png"
     },
     "wikipedia_urls": {
       "cs": "https://cs.wikipedia.org/wiki/Open_Source_Geospatial_Foundation",
@@ -2369,7 +2367,7 @@
     "chat": {
       "url": "https://chat.librehealth.io/channel/gci",
       "platform": "ROCKET",
-      "image": "static/images/logos/rocket.png"
+      "image": "images/logos/rocket.png"
     },
     "wikipedia_urls": null,
     "wikidata_url": "//www.wikidata.org/wiki/Q45341906"
@@ -2438,7 +2436,7 @@
     "chat": {
       "url": "irc://irc.freenode.net/drupal",
       "platform": "IRC",
-      "image": "static/images/logos/irc.png"
+      "image": "images/logos/irc.png"
     },
     "wikipedia_urls": {
       "ar": "https://ar.wikipedia.org/wiki/%D8%AF%D8%B1%D9%88%D8%A8%D8%A7%D9%84",
@@ -2603,7 +2601,7 @@
     "chat": {
       "url": "https://gitter.im/Cloud-CV/",
       "platform": "GITTER",
-      "image": "static/images/logos/gitter.png"
+      "image": "images/logos/gitter.png"
     },
     "wikipedia_urls": null,
     "wikidata_url": "//www.wikidata.org/wiki/Q45341943"
@@ -2651,7 +2649,7 @@
     "chat": {
       "url": "irc://irc.freenode.net/#apertium",
       "platform": "IRC",
-      "image": "static/images/logos/irc.png"
+      "image": "images/logos/irc.png"
     },
     "wikipedia_urls": {
       "af": "https://af.wikipedia.org/wiki/Apertium",

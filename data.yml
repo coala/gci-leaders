@@ -84,7 +84,7 @@
     chat: 
       url: "https://gitter.im/jboss-outreach/gci"
       platform: "GITTER"
-      image: "static/images/logos/gitter.png"
+      image: "images/logos/gitter.png"
     wikipedia_urls: 
       ca: "https://ca.wikipedia.org/wiki/JBoss_Inc"
       de: "https://de.wikipedia.org/wiki/JBoss"
@@ -177,7 +177,7 @@
     chat: 
       url: "https://gitter.im/scorelab/scorelab"
       platform: "GITTER"
-      image: "static/images/logos/gitter.png"
+      image: "images/logos/gitter.png"
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q45341439"
   - 
@@ -269,7 +269,7 @@
     chat: 
       url: "https://gitter.im/fossasia/fossasia"
       platform: "GITTER"
-      image: "static/images/logos/gitter.png"
+      image: "images/logos/gitter.png"
     wikipedia_urls: 
       de: "https://de.wikipedia.org/wiki/FOSSASIA"
       hi: "https://hi.wikipedia.org/wiki/%E0%A4%AB%E0%A5%89%E0%A4%B8%E0%A4%8F%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%BE"
@@ -352,7 +352,7 @@
     chat: 
       url: "https://chat.sugarlabs.org"
       platform: "OTHER"
-      image: "static/images/chat.png"
+      image: "images/chat.png"
     wikipedia_urls: 
       en: "https://en.wikipedia.org/wiki/Sugar_Labs"
       fa: "https://fa.wikipedia.org/wiki/%D8%A2%D8%B2%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87_%D8%B4%DA%A9%D8%B1"
@@ -431,7 +431,7 @@
     chat: 
       url: "irc://irc.freenode.net/musicbrainz"
       platform: "IRC"
-      image: "static/images/logos/irc.png"
+      image: "images/logos/irc.png"
     wikipedia_urls: 
       en: "https://en.wikipedia.org/wiki/MetaBrainz_Foundation"
       es: "https://es.wikipedia.org/wiki/MetaBrainz_Foundation"
@@ -511,7 +511,7 @@
     chat: 
       url: "irc://irc.freenode.net/ubuntu-google"
       platform: "IRC"
-      image: "static/images/logos/irc.png"
+      image: "images/logos/irc.png"
     wikipedia_urls: 
       af: "https://af.wikipedia.org/wiki/Ubuntu_%28Linux%29"
       als: "https://als.wikipedia.org/wiki/Ubuntu_Linux"
@@ -761,7 +761,7 @@
     chat: 
       url: "https://chat.zulip.org"
       platform: "ZULIP"
-      image: "static/images/logos/zulip.png"
+      image: "images/logos/zulip.png"
     wikipedia_urls: 
       en: "https://en.wikipedia.org/wiki/Zulip"
       ru: "https://ru.wikipedia.org/wiki/Zulip"
@@ -846,7 +846,7 @@
     chat: 
       url: "https://www.mediawiki.org/wiki/MediaWiki_on_IRC"
       platform: "IRC"
-      image: "static/images/logos/irc.png"
+      image: "images/logos/irc.png"
     wikipedia_urls: 
       af: "https://af.wikipedia.org/wiki/Wikimedia-stigting"
       als: "https://als.wikipedia.org/wiki/Wikimedia_Foundation"
@@ -1077,7 +1077,7 @@
     chat: 
       url: "http://brlcad.org/wiki/IRC"
       platform: "IRC"
-      image: "static/images/logos/irc.png"
+      image: "images/logos/irc.png"
     wikipedia_urls: 
       commons: "https://commons.wikipedia.org/wiki/Category%3ABRL-CAD"
       cs: "https://cs.wikipedia.org/wiki/BRL-CAD"
@@ -1103,7 +1103,6 @@
         program_year: 2017
         display_name: "Hemang Rajvanshy"
         id: 4772500808400896
-        github_account: "HemangRajvanshy"
       - 
         program_year: 2017
         display_name: "John Chew"
@@ -1128,7 +1127,6 @@
         program_year: 2017
         display_name: "TheFaR8"
         id: 5878255708012544
-        github_account: "TheFaR8"
     accepted_org_tos: true
     dev_mailing_list: null
     gplus_url: null
@@ -1163,11 +1161,11 @@
     precis: "We make the software that generates the subtitles everyone uses to watch TV and movies when they need them either because they are learning a second language or have a hearing disability."
     image_url: "//lh3.googleusercontent.com/VjwFkSuq7AQSJvQzZHBAtNIEwe_vGEhzrLtYWtbc42NWMXfl9P2nyiykAqqZkQGU0YzwNJaFKolUKfTKWxJWKJk"
     blog_url: null
-    github: "CCExtractor"
+    github: null
     chat: 
       url: "https://ccextractor.org/public:general:support"
       platform: "OTHER"
-      image: "static/images/chat.png"
+      image: "images/chat.png"
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q45341716"
   - 
@@ -1232,7 +1230,7 @@
     chat: 
       url: "http://openwisp.org/support.html"
       platform: "OTHER"
-      image: "static/images/chat.png"
+      image: "images/chat.png"
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q45341562"
   - 
@@ -1317,7 +1315,7 @@
     chat: 
       url: "irc://chat.freenode.net/haiku"
       platform: "IRC"
-      image: "static/images/logos/irc.png"
+      image: "images/logos/irc.png"
     wikipedia_urls: 
       af: "https://af.wikipedia.org/wiki/Haikoe"
       als: "https://als.wikipedia.org/wiki/Haiku"
@@ -1502,7 +1500,7 @@
     chat: 
       url: "http://systers.io/slack-systers-opensource/"
       platform: "SLACK"
-      image: "static/images/logos/slack.png"
+      image: "images/logos/slack.png"
     wikipedia_urls: 
       en: "https://en.wikipedia.org/wiki/Systers"
     wikidata_url: "//www.wikidata.org/wiki/Q7663887"
@@ -1576,7 +1574,7 @@
     chat: 
       url: "https://gitter.im/openMF/mifos"
       platform: "GITTER"
-      image: "static/images/logos/gitter.png"
+      image: "images/logos/gitter.png"
     wikipedia_urls: 
       bn: "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BF%E0%A6%AB%E0%A6%B8"
       en: "https://en.wikipedia.org/wiki/Mifos_Initiative"
@@ -1665,7 +1663,7 @@
     chat: 
       url: "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q"
       platform: "TELEGRAM"
-      image: "static/images/logos/telegram.png"
+      image: "images/logos/telegram.png"
     wikipedia_urls: 
       en: "https://en.wikipedia.org/wiki/OpenMRS"
     wikidata_url: "//www.wikidata.org/wiki/Q7095826"
@@ -1813,7 +1811,7 @@
     chat: 
       url: "https://coala.zulipchat.com/"
       platform: "ZULIP"
-      image: "static/images/logos/zulip.png"
+      image: "images/logos/zulip.png"
     wikipedia_urls: 
       en: "https://en.wikipedia.org/wiki/Coala_%28software%29"
     wikidata_url: "//www.wikidata.org/wiki/Q25215462"
@@ -1900,7 +1898,7 @@
     chat: 
       url: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
       platform: "IRC"
-      image: "static/images/logos/irc.png"
+      image: "images/logos/irc.png"
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q40881750"
   - 
@@ -1952,7 +1950,7 @@
     chat: 
       url: "http://dev.xwiki.org/xwiki/bin/view/Community/Chat"
       platform: "OTHER"
-      image: "static/images/chat.png"
+      image: "images/chat.png"
     wikipedia_urls: 
       ca: "https://ca.wikipedia.org/wiki/XWiki"
       commons: "https://commons.wikipedia.org/wiki/Category%3AXwiki"
@@ -2018,7 +2016,7 @@
     chat: 
       url: "irc://irc.freenode.net/osgeo"
       platform: "IRC"
-      image: "static/images/logos/irc.png"
+      image: "images/logos/irc.png"
     wikipedia_urls: 
       cs: "https://cs.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
       de: "https://de.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
@@ -2086,7 +2084,7 @@
     chat: 
       url: "https://chat.librehealth.io/channel/gci"
       platform: "ROCKET"
-      image: "static/images/logos/rocket.png"
+      image: "images/logos/rocket.png"
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q45341906"
   - 
@@ -2146,7 +2144,7 @@
     chat: 
       url: "irc://irc.freenode.net/drupal"
       platform: "IRC"
-      image: "static/images/logos/irc.png"
+      image: "images/logos/irc.png"
     wikipedia_urls: 
       ar: "https://ar.wikipedia.org/wiki/%D8%AF%D8%B1%D9%88%D8%A8%D8%A7%D9%84"
       az: "https://az.wikipedia.org/wiki/Drupal"
@@ -2299,7 +2297,7 @@
     chat: 
       url: "https://gitter.im/Cloud-CV/"
       platform: "GITTER"
-      image: "static/images/logos/gitter.png"
+      image: "images/logos/gitter.png"
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q45341943"
   - 
@@ -2343,7 +2341,7 @@
     chat: 
       url: "irc://irc.freenode.net/#apertium"
       platform: "IRC"
-      image: "static/images/logos/irc.png"
+      image: "images/logos/irc.png"
     wikipedia_urls: 
       af: "https://af.wikipedia.org/wiki/Apertium"
       ar: "https://ar.wikipedia.org/wiki/%D8%A3%D8%A8%D8%B1%D8%AA%D9%8A%D9%88%D9%85"
