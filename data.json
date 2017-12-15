@@ -68,7 +68,7 @@
       "html"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 798,
+    "completed_task_instance_count": 806,
     "id": 5733899491606528,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/jboss-community-gci/",
@@ -177,7 +177,7 @@
       "python"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 453,
+    "completed_task_instance_count": 481,
     "id": 4923880235859968,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/score-community",
@@ -284,7 +284,7 @@
       "python"
     ],
     "guide_to_working_url": "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/",
-    "completed_task_instance_count": 383,
+    "completed_task_instance_count": 394,
     "id": 6237166344601600,
     "winners": {},
     "mailing_list": "http://groups.google.com/group/fossasia",
@@ -384,7 +384,7 @@
       "css"
     ],
     "guide_to_working_url": "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background",
-    "completed_task_instance_count": 362,
+    "completed_task_instance_count": 367,
     "id": 4879181169033216,
     "winners": {},
     "mailing_list": "http://lists.sugarlabs.org/",
@@ -431,6 +431,11 @@
       },
       {
         "program_year": 2017,
+        "display_name": "Ashish Kamathi-1",
+        "id": 6663981454327808
+      },
+      {
+        "program_year": 2017,
         "display_name": "Eshan Singh",
         "id": 5077106331484160,
         "github_account": "eshansingh"
@@ -471,7 +476,7 @@
       "sql"
     ],
     "guide_to_working_url": "https://wiki.musicbrainz.org/Google_Code-in/2017",
-    "completed_task_instance_count": 305,
+    "completed_task_instance_count": 321,
     "id": 5936087526539264,
     "winners": {},
     "mailing_list": "https://community.metabrainz.org/",
@@ -510,100 +515,6 @@
     "wikidata_url": "//www.wikidata.org/wiki/Q952204"
   },
   {
-    "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Freddie Miller",
-        "id": 5962704562946048
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Ivan Trajkov",
-        "id": 6494687667945472
-      },
-      {
-        "program_year": 2017,
-        "display_name": "jwzhang",
-        "id": 6577413972557824
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Kai Chen",
-        "id": 5554705755275264
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Marco Burstein",
-        "id": 4597515116609536
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Priyank Patel",
-        "id": 5679157667168256
-      },
-      {
-        "program_year": 2017,
-        "display_name": "synicalsyntax",
-        "id": 4625321003319296,
-        "github_account": "synicalsyntax"
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Xavier Cooney",
-        "id": 4711113914580992,
-        "github_account": "XavierCooney"
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": null,
-    "programming_languages": [
-      "python",
-      "javascript",
-      "django",
-      "html",
-      "visual design"
-    ],
-    "guide_to_working_url": "https://github.com/zulip/zulip-gci",
-    "completed_task_instance_count": 268,
-    "id": 5744567921934336,
-    "winners": {},
-    "mailing_list": null,
-    "website_url": "https://zulipchat.com",
-    "status": 2,
-    "program_year": 2017,
-    "description": "Zulip is a powerful, open source group chat application. It competes with Slack, IRC, Jabber, and dozens of other group chat tools designed to help teams (whether open source projects or at companies) collaborate effectively. Zulip supports fast search, drag-and-drop file uploads, image previews, group private messages, audible notifications, missed-message emails, desktop apps, markdown message rendering, and [much more](https://zulipchat.com/features) -- essentially everything you might want.\r\n\r\nUnlike Slack, it’s open source and has a welcoming community of over 350 volunteer contributors. Unlike IRC/Jabber/etc., Zulip is a complete, modern application, with a web version, mobile apps for iOS and Android, and desktop apps for Mac/Linux/Windows. And unlike all other popular group chat tools, Zulip is designed to make conversations more efficient through its unique threading system that helps teams manage large numbers of messages. In particular, Zulip makes it easy to have multiple conversations at the same time with the same groups of people, and easy to catch up on hundreds or thousands of messages quickly without missing anything important.\r\n\r\nZulip is known for its extensive developer documentation (100,000 words and growing!), code quality, and tooling, and thus is a great project to work on to learn how to build a high-quality web application.\r\n\r\nWe have tons of tasks across all parts of the Zulip project, and we're especially excited about expanding Zulip's library of bots and integrations!",
-    "tags": [
-      "chat",
-      "bots",
-      "integrations",
-      "fun",
-      "great tooling"
-    ],
-    "twitter_url": "https://twitter.com/zulip",
-    "contact_email": null,
-    "irc_channel": "http://zulip.readthedocs.io/en/latest/contributing/chat-zulip-org.html",
-    "slug": "zulip",
-    "preferred_contact_method": null,
-    "guide_to_working": "",
-    "name": "Zulip",
-    "precis": "Powerful, modern, open source group chat, complete with apps for every major platform.",
-    "image_url": "//lh3.googleusercontent.com/YbMgqT311MJWm_QWTkJC8yN9xCICqOPjoD_Sf0ACjSkk42HjzRaHu4O9GYa5nuQiU_yRPHLCiK9XypW2xsHY",
-    "blog_url": "https://blog.zulip.org",
-    "github": "zulip",
-    "chat": {
-      "url": "https://chat.zulip.org",
-      "platform": "ZULIP",
-      "image": "static/images/logos/zulip.png"
-    },
-    "wikipedia_urls": {
-      "en": "https://en.wikipedia.org/wiki/Zulip",
-      "ru": "https://ru.wikipedia.org/wiki/Zulip"
-    },
-    "wikidata_url": "//www.wikidata.org/wiki/Q23680052"
-  },
-  {
     "primary_open_source_license": "GNU General Public License version 3.0 (GPL-3.0)",
     "leaders": [
       {
@@ -640,6 +551,11 @@
         "program_year": 2017,
         "display_name": "Marcin Mikołajczak",
         "id": 5470339310026752
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Varun Patel",
+        "id": 5472854818684928
       }
     ],
     "accepted_org_tos": true,
@@ -653,7 +569,7 @@
       "c/c++"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 266,
+    "completed_task_instance_count": 287,
     "id": 5133577048031232,
     "winners": {},
     "mailing_list": "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc",
@@ -861,6 +777,100 @@
     "wikidata_url": "//www.wikidata.org/wiki/Q381"
   },
   {
+    "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Freddie Miller",
+        "id": 5962704562946048
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Ivan Trajkov",
+        "id": 6494687667945472
+      },
+      {
+        "program_year": 2017,
+        "display_name": "jwzhang",
+        "id": 6577413972557824
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Kai Chen",
+        "id": 5554705755275264
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Marco Burstein",
+        "id": 4597515116609536
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Priyank Patel",
+        "id": 5679157667168256
+      },
+      {
+        "program_year": 2017,
+        "display_name": "synicalsyntax",
+        "id": 4625321003319296,
+        "github_account": "synicalsyntax"
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Xavier Cooney",
+        "id": 4711113914580992,
+        "github_account": "XavierCooney"
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": null,
+    "programming_languages": [
+      "python",
+      "javascript",
+      "django",
+      "html",
+      "visual design"
+    ],
+    "guide_to_working_url": "https://github.com/zulip/zulip-gci",
+    "completed_task_instance_count": 271,
+    "id": 5744567921934336,
+    "winners": {},
+    "mailing_list": null,
+    "website_url": "https://zulipchat.com",
+    "status": 2,
+    "program_year": 2017,
+    "description": "Zulip is a powerful, open source group chat application. It competes with Slack, IRC, Jabber, and dozens of other group chat tools designed to help teams (whether open source projects or at companies) collaborate effectively. Zulip supports fast search, drag-and-drop file uploads, image previews, group private messages, audible notifications, missed-message emails, desktop apps, markdown message rendering, and [much more](https://zulipchat.com/features) -- essentially everything you might want.\r\n\r\nUnlike Slack, it’s open source and has a welcoming community of over 350 volunteer contributors. Unlike IRC/Jabber/etc., Zulip is a complete, modern application, with a web version, mobile apps for iOS and Android, and desktop apps for Mac/Linux/Windows. And unlike all other popular group chat tools, Zulip is designed to make conversations more efficient through its unique threading system that helps teams manage large numbers of messages. In particular, Zulip makes it easy to have multiple conversations at the same time with the same groups of people, and easy to catch up on hundreds or thousands of messages quickly without missing anything important.\r\n\r\nZulip is known for its extensive developer documentation (100,000 words and growing!), code quality, and tooling, and thus is a great project to work on to learn how to build a high-quality web application.\r\n\r\nWe have tons of tasks across all parts of the Zulip project, and we're especially excited about expanding Zulip's library of bots and integrations!",
+    "tags": [
+      "chat",
+      "bots",
+      "integrations",
+      "fun",
+      "great tooling"
+    ],
+    "twitter_url": "https://twitter.com/zulip",
+    "contact_email": null,
+    "irc_channel": "http://zulip.readthedocs.io/en/latest/contributing/chat-zulip-org.html",
+    "slug": "zulip",
+    "preferred_contact_method": null,
+    "guide_to_working": "",
+    "name": "Zulip",
+    "precis": "Powerful, modern, open source group chat, complete with apps for every major platform.",
+    "image_url": "//lh3.googleusercontent.com/YbMgqT311MJWm_QWTkJC8yN9xCICqOPjoD_Sf0ACjSkk42HjzRaHu4O9GYa5nuQiU_yRPHLCiK9XypW2xsHY",
+    "blog_url": "https://blog.zulip.org",
+    "github": "zulip",
+    "chat": {
+      "url": "https://chat.zulip.org",
+      "platform": "ZULIP",
+      "image": "static/images/logos/zulip.png"
+    },
+    "wikipedia_urls": {
+      "en": "https://en.wikipedia.org/wiki/Zulip",
+      "ru": "https://ru.wikipedia.org/wiki/Zulip"
+    },
+    "wikidata_url": "//www.wikidata.org/wiki/Q23680052"
+  },
+  {
     "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
     "leaders": [
       {
@@ -925,7 +935,7 @@
       "wiki"
     ],
     "guide_to_working_url": "https://www.mediawiki.org/wiki/Google_Code-in/2017",
-    "completed_task_instance_count": 250,
+    "completed_task_instance_count": 256,
     "id": 5740205476675584,
     "winners": {},
     "mailing_list": "https://lists.wikimedia.org/mailman/listinfo/wikitech-l",
@@ -1168,7 +1178,7 @@
       "html/css"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 246,
+    "completed_task_instance_count": 250,
     "id": 5154791065911296,
     "winners": {},
     "mailing_list": "http://brlcad.org/wiki/Mailing_lists",
@@ -1273,7 +1283,7 @@
       "windows"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 218,
+    "completed_task_instance_count": 223,
     "id": 5731053304020992,
     "winners": {},
     "mailing_list": null,
@@ -1348,7 +1358,7 @@
       "css"
     ],
     "guide_to_working_url": "http://openwisp.io/docs/developer/contributing.html",
-    "completed_task_instance_count": 214,
+    "completed_task_instance_count": 218,
     "id": 5693741010518016,
     "winners": {},
     "mailing_list": "https://groups.google.com/d/forum/openwisp/join",
@@ -1397,6 +1407,11 @@
       },
       {
         "program_year": 2017,
+        "display_name": "Benz Le",
+        "id": 4850503454294016
+      },
+      {
+        "program_year": 2017,
         "display_name": "Damillora",
         "id": 5679153909071872,
         "github_account": "Damillora"
@@ -1410,11 +1425,6 @@
         "program_year": 2017,
         "display_name": "Leorize",
         "id": 6702015805652992
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Max Levchuk",
-        "id": 6240118648078336
       },
       {
         "program_year": 2017,
@@ -1448,7 +1458,7 @@
       "html"
     ],
     "guide_to_working_url": "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails",
-    "completed_task_instance_count": 190,
+    "completed_task_instance_count": 196,
     "id": 6281461650948096,
     "winners": {},
     "mailing_list": "https://www.haiku-os.org/community/ml",
@@ -1593,6 +1603,11 @@
       },
       {
         "program_year": 2017,
+        "display_name": "Aryaman Agrawal",
+        "id": 4770355203801088
+      },
+      {
+        "program_year": 2017,
         "display_name": "Erika Tan",
         "id": 4717477579718656
       },
@@ -1610,11 +1625,6 @@
         "program_year": 2017,
         "display_name": "Mu'aaz Kasker",
         "id": 5851158759342080
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Rosemarie van de Ven",
-        "id": 6535413755805696
       },
       {
         "program_year": 2017,
@@ -1649,7 +1659,7 @@
       "photoshop"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 173,
+    "completed_task_instance_count": 186,
     "id": 5735606506225664,
     "winners": {},
     "mailing_list": "http://systers.anitab.org",
@@ -1736,7 +1746,7 @@
       "mysql"
     ],
     "guide_to_working_url": "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki",
-    "completed_task_instance_count": 161,
+    "completed_task_instance_count": 165,
     "id": 6239808655458304,
     "winners": {},
     "mailing_list": "http://mifos.org/resources/community/communications/#mailing-lists",
@@ -1774,6 +1784,108 @@
       "pl": "https://pl.wikipedia.org/wiki/Mifos"
     },
     "wikidata_url": "//www.wikidata.org/wiki/Q3347450"
+  },
+  {
+    "primary_open_source_license": "Mozilla Public License 2.0 (MPL-2.0)",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Bartłomiej Rasztabiga",
+        "id": 4851396136402944
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Fawwaz Yusran",
+        "id": 4893093289525248
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Jyothsna Ashok",
+        "id": 4671819661443072,
+        "github_account": "JyothsnaAshok"
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Matthew Whitaker",
+        "id": 6052785999052800
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Nayansh Gupta",
+        "id": 6094997608726528
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Raghav Khandelwal",
+        "id": 6537397560934400
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Said Yaka",
+        "id": 5971293960667136
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Sanskar Jindal",
+        "id": 5064391886110720
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Tomasz Domagała",
+        "id": 6531598482669568
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Ziyao Zhang",
+        "id": 4602477213122560
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": "https://plus.google.com/+OpenMRSorg",
+    "programming_languages": [
+      "java",
+      "groovy",
+      "javascript",
+      "html5",
+      "css"
+    ],
+    "guide_to_working_url": "",
+    "completed_task_instance_count": 162,
+    "id": 5753409548320768,
+    "winners": {},
+    "mailing_list": "http://om.rs/gcitalk",
+    "website_url": "http://om.rs/gci",
+    "status": 2,
+    "program_year": 2017,
+    "description": "[OpenMRS](http://openmrs.org) is a collaborative open source project to develop software to support the delivery of health care in developing countries. We are a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. [Our mission](http://openmrs.org/about/mission/) is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software.\r\n\r\nThe [OpenMRS software platform](http://openmrs.org/about/) and a reference application enables design of a customized medical records system with no programming knowledge. It is a common platform upon which medical informatics efforts in developing countries can be built.\r\n\r\nWorking on Google Code-in tasks for OpenMRS is a great way to join the free and open source software movement, and at the same time use your talents to help people in developing countries and around the world on the front lines of the battle against HIV/AIDS, TB, Malaria, and other public health challenges. For more detailed about OpenMRS and GCI, visit http://openmrs.org/ and watch [this short video](https://www.youtube.com/watch?v=HPxx1_svu_A) created by a previous OpenMRS GCI participant.",
+    "tags": [
+      "hospitals",
+      "healthcare",
+      "emr",
+      "medical",
+      "webapp"
+    ],
+    "twitter_url": "https://twitter.com/OpenMRS",
+    "contact_email": "community@openmrs.org",
+    "irc_channel": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q",
+    "slug": "openmrs",
+    "preferred_contact_method": null,
+    "guide_to_working": "",
+    "name": "OpenMRS",
+    "precis": "Write Code, Save Lives",
+    "image_url": "//lh3.googleusercontent.com/DtRzzebTaA7bRBx4t0hAWTcyoiFP84r64T0uG8eNRoBnfyG9sUaVf5xkXuq-ffTzuT4voJY2JE3YXUh3Amvg4cmD",
+    "blog_url": "http://openmrs.org/blog/",
+    "github": "openmrs",
+    "chat": {
+      "url": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q",
+      "platform": "TELEGRAM",
+      "image": "static/images/logos/telegram.png"
+    },
+    "wikipedia_urls": {
+      "en": "https://en.wikipedia.org/wiki/OpenMRS"
+    },
+    "wikidata_url": "//www.wikidata.org/wiki/Q7095826"
   },
   {
     "primary_open_source_license": "GNU Affero General Public License v3 (AGPL-3.0)",
@@ -1836,7 +1948,7 @@
       "visual programming language (catrobat)"
     ],
     "guide_to_working_url": "http://catrob.at/cgcicti",
-    "completed_task_instance_count": 154,
+    "completed_task_instance_count": 160,
     "id": 5135243763777536,
     "winners": {},
     "mailing_list": "http://catrob.at/PocketCodeUserForum",
@@ -1914,7 +2026,7 @@
       "errbot"
     ],
     "guide_to_working_url": "https://projects.coala.io/",
-    "completed_task_instance_count": 153,
+    "completed_task_instance_count": 158,
     "id": 4884530416582656,
     "winners": {},
     "mailing_list": "https://github.com/coala/coala/wiki/Mailing-Lists",
@@ -1951,105 +2063,13 @@
     "wikidata_url": "//www.wikidata.org/wiki/Q25215462"
   },
   {
-    "primary_open_source_license": "Mozilla Public License 2.0 (MPL-2.0)",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Bartłomiej Rasztabiga",
-        "id": 4851396136402944
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Fawwaz Yusran",
-        "id": 4893093289525248
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Jyothsna Ashok",
-        "id": 4671819661443072,
-        "github_account": "JyothsnaAshok"
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Matthew Whitaker",
-        "id": 6052785999052800
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Raghav Khandelwal",
-        "id": 6537397560934400
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Said Yaka",
-        "id": 5971293960667136
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Sanskar Jindal",
-        "id": 5064391886110720
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Tomasz Domagała",
-        "id": 6531598482669568
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Ziyao Zhang",
-        "id": 4602477213122560
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": "https://plus.google.com/+OpenMRSorg",
-    "programming_languages": [
-      "java",
-      "groovy",
-      "javascript",
-      "html5",
-      "css"
-    ],
-    "guide_to_working_url": "",
-    "completed_task_instance_count": 152,
-    "id": 5753409548320768,
-    "winners": {},
-    "mailing_list": "http://om.rs/gcitalk",
-    "website_url": "http://om.rs/gci",
-    "status": 2,
-    "program_year": 2017,
-    "description": "[OpenMRS](http://openmrs.org) is a collaborative open source project to develop software to support the delivery of health care in developing countries. We are a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. [Our mission](http://openmrs.org/about/mission/) is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software.\r\n\r\nThe [OpenMRS software platform](http://openmrs.org/about/) and a reference application enables design of a customized medical records system with no programming knowledge. It is a common platform upon which medical informatics efforts in developing countries can be built.\r\n\r\nWorking on Google Code-in tasks for OpenMRS is a great way to join the free and open source software movement, and at the same time use your talents to help people in developing countries and around the world on the front lines of the battle against HIV/AIDS, TB, Malaria, and other public health challenges. For more detailed about OpenMRS and GCI, visit http://openmrs.org/ and watch [this short video](https://www.youtube.com/watch?v=HPxx1_svu_A) created by a previous OpenMRS GCI participant.",
-    "tags": [
-      "hospitals",
-      "healthcare",
-      "emr",
-      "medical",
-      "webapp"
-    ],
-    "twitter_url": "https://twitter.com/OpenMRS",
-    "contact_email": "community@openmrs.org",
-    "irc_channel": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q",
-    "slug": "openmrs",
-    "preferred_contact_method": null,
-    "guide_to_working": "",
-    "name": "OpenMRS",
-    "precis": "Write Code, Save Lives",
-    "image_url": "//lh3.googleusercontent.com/DtRzzebTaA7bRBx4t0hAWTcyoiFP84r64T0uG8eNRoBnfyG9sUaVf5xkXuq-ffTzuT4voJY2JE3YXUh3Amvg4cmD",
-    "blog_url": "http://openmrs.org/blog/",
-    "github": "openmrs",
-    "chat": {
-      "url": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q",
-      "platform": "TELEGRAM",
-      "image": "static/images/logos/telegram.png"
-    },
-    "wikipedia_urls": {
-      "en": "https://en.wikipedia.org/wiki/OpenMRS"
-    },
-    "wikidata_url": "//www.wikidata.org/wiki/Q7095826"
-  },
-  {
     "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
     "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Alberto",
+        "id": 6264983153278976
+      },
       {
         "program_year": 2017,
         "display_name": "eviltak",
@@ -2109,7 +2129,7 @@
       "blender"
     ],
     "guide_to_working_url": "https://github.com/MovingBlocks/Terasology/wiki/GCI",
-    "completed_task_instance_count": 148,
+    "completed_task_instance_count": 157,
     "id": 5693523175145472,
     "winners": {},
     "mailing_list": null,
@@ -2243,7 +2263,7 @@
       "javascript"
     ],
     "guide_to_working_url": "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students",
-    "completed_task_instance_count": 110,
+    "completed_task_instance_count": 111,
     "id": 5139786496999424,
     "winners": {},
     "mailing_list": "http://www.osgeo.org/content/faq/mailing_lists.html",
@@ -2322,7 +2342,7 @@
       "javascript"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 91,
+    "completed_task_instance_count": 95,
     "id": 5165875202097152,
     "winners": {},
     "mailing_list": "https://forums.librehealth.io/gci",
@@ -2389,7 +2409,7 @@
       "symfony"
     ],
     "guide_to_working_url": "https://www.drupal.org/node/984014",
-    "completed_task_instance_count": 89,
+    "completed_task_instance_count": 93,
     "id": 5636094664114176,
     "winners": {},
     "mailing_list": "https://drupal.org/mailing-lists",
@@ -2506,7 +2526,7 @@
       "java"
     ],
     "guide_to_working_url": "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html",
-    "completed_task_instance_count": 74,
+    "completed_task_instance_count": 75,
     "id": 5067404587565056,
     "winners": {},
     "mailing_list": "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html",
@@ -2554,7 +2574,7 @@
       "jquery"
     ],
     "guide_to_working_url": "https://gitter.im/Cloud-CV/",
-    "completed_task_instance_count": 60,
+    "completed_task_instance_count": 62,
     "id": 4854733644759040,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/cloudcv",
@@ -2602,7 +2622,7 @@
       "bash"
     ],
     "guide_to_working_url": "http://wiki.apertium.org/wiki/Task_ideas_for_Google_Code-in/Getting_started",
-    "completed_task_instance_count": 35,
+    "completed_task_instance_count": 37,
     "id": 6541403171586048,
     "winners": {},
     "mailing_list": "http://wiki.apertium.org/wiki/Contact",
