@@ -8,9 +8,8 @@
         id: 6387345966235648
       - 
         program_year: 2017
-        display_name: "bolt108"
-        id: 5012061400596480
-        github_account: "Bolt108"
+        display_name: "Aniol Vicens Lloret"
+        id: 5258573665796096
       - 
         program_year: 2017
         display_name: "Divyansh Kulshreshtha"
@@ -56,7 +55,7 @@
       - "javascript"
       - "html"
     guide_to_working_url: ""
-    completed_task_instance_count: 814
+    completed_task_instance_count: 833
     id: 5733899491606528
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/jboss-community-gci/"
@@ -149,7 +148,7 @@
       - "node"
       - "python"
     guide_to_working_url: ""
-    completed_task_instance_count: 496
+    completed_task_instance_count: 516
     id: 4923880235859968
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/score-community"
@@ -241,7 +240,7 @@
       - "web technologies"
       - "python"
     guide_to_working_url: "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/"
-    completed_task_instance_count: 399
+    completed_task_instance_count: 418
     id: 6237166344601600
     winners: {}
     mailing_list: "http://groups.google.com/group/fossasia"
@@ -326,7 +325,7 @@
       - "javascript"
       - "css"
     guide_to_working_url: "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background"
-    completed_task_instance_count: 376
+    completed_task_instance_count: 396
     id: 4879181169033216
     winners: {}
     mailing_list: "http://lists.sugarlabs.org/"
@@ -404,7 +403,7 @@
       - "javascript"
       - "sql"
     guide_to_working_url: "https://wiki.musicbrainz.org/Google_Code-in/2017"
-    completed_task_instance_count: 323
+    completed_task_instance_count: 335
     id: 5936087526539264
     winners: {}
     mailing_list: "https://community.metabrainz.org/"
@@ -471,6 +470,10 @@
         id: 5470339310026752
       - 
         program_year: 2017
+        display_name: "Simran Singh"
+        id: 5455531898568704
+      - 
+        program_year: 2017
         display_name: "Varun Patel"
         id: 5472854818684928
     accepted_org_tos: true
@@ -483,7 +486,7 @@
       - "gnome"
       - "c/c++"
     guide_to_working_url: ""
-    completed_task_instance_count: 289
+    completed_task_instance_count: 305
     id: 5133577048031232
     winners: {}
     mailing_list: "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc"
@@ -733,7 +736,7 @@
       - "html"
       - "visual design"
     guide_to_working_url: "https://github.com/zulip/zulip-gci"
-    completed_task_instance_count: 278
+    completed_task_instance_count: 291
     id: 5744567921934336
     winners: {}
     mailing_list: null
@@ -819,7 +822,7 @@
       - "lua"
       - "wiki"
     guide_to_working_url: "https://www.mediawiki.org/wiki/Google_Code-in/2017"
-    completed_task_instance_count: 260
+    completed_task_instance_count: 276
     id: 5740205476675584
     winners: {}
     mailing_list: "https://lists.wikimedia.org/mailman/listinfo/wikitech-l"
@@ -1049,7 +1052,7 @@
       - "three.js"
       - "html/css"
     guide_to_working_url: ""
-    completed_task_instance_count: 252
+    completed_task_instance_count: 257
     id: 5154791065911296
     winners: {}
     mailing_list: "http://brlcad.org/wiki/Mailing_lists"
@@ -1139,7 +1142,7 @@
       - "linux"
       - "windows"
     guide_to_working_url: ""
-    completed_task_instance_count: 225
+    completed_task_instance_count: 232
     id: 5731053304020992
     winners: {}
     mailing_list: null
@@ -1204,7 +1207,7 @@
       - "html"
       - "css"
     guide_to_working_url: "http://openwisp.io/docs/developer/contributing.html"
-    completed_task_instance_count: 221
+    completed_task_instance_count: 227
     id: 5693741010518016
     winners: {}
     mailing_list: "https://groups.google.com/d/forum/openwisp/join"
@@ -1265,6 +1268,10 @@
         id: 6702015805652992
       - 
         program_year: 2017
+        display_name: "Max Levchuk"
+        id: 6240118648078336
+      - 
+        program_year: 2017
         display_name: "Mochammad Nur Afandi"
         id: 5177112698814464
       - 
@@ -1275,10 +1282,6 @@
         program_year: 2017
         display_name: "Owen"
         id: 6035804772106240
-      - 
-        program_year: 2017
-        display_name: "Stephanie Fu"
-        id: 6126573402980352
     accepted_org_tos: true
     dev_mailing_list: null
     gplus_url: null
@@ -1289,7 +1292,7 @@
       - "bash"
       - "html"
     guide_to_working_url: "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails"
-    completed_task_instance_count: 199
+    completed_task_instance_count: 209
     id: 6281461650948096
     winners: {}
     mailing_list: "https://www.haiku-os.org/community/ml"
@@ -1474,7 +1477,7 @@
       - "illustrator"
       - "photoshop"
     guide_to_working_url: ""
-    completed_task_instance_count: 187
+    completed_task_instance_count: 203
     id: 5735606506225664
     winners: {}
     mailing_list: "http://systers.anitab.org"
@@ -1506,83 +1509,6 @@
     wikipedia_urls: 
       en: "https://en.wikipedia.org/wiki/Systers"
     wikidata_url: "//www.wikidata.org/wiki/Q7663887"
-  - 
-    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Akash Bhave"
-        id: 6479705412730880
-        github_account: "AkashBhave"
-      - 
-        program_year: 2017
-        display_name: "Chirag Gupta"
-        id: 6471766769664000
-      - 
-        program_year: 2017
-        display_name: "janicek"
-        id: 5742982516965376
-      - 
-        program_year: 2017
-        display_name: "Matthew Katz"
-        id: 4529584303243264
-      - 
-        program_year: 2017
-        display_name: "Shivam kumar Singh"
-        id: 5079096713281536
-      - 
-        program_year: 2017
-        display_name: "Vaibhav Vijay"
-        id: 6329140703657984
-      - 
-        program_year: 2017
-        display_name: "Yibin Long"
-        id: 5828654942650368
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/+MifosOrg1"
-    programming_languages: 
-      - "java"
-      - "angular"
-      - "android"
-      - "html"
-      - "mysql"
-    guide_to_working_url: "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
-    completed_task_instance_count: 166
-    id: 6239808655458304
-    winners: {}
-    mailing_list: "http://mifos.org/resources/community/communications/#mailing-lists"
-    website_url: "http://mifos.org"
-    status: 2
-    program_year: 2017
-    description: "The Mifos Initiative is a US-based 501(c)3 non-profit whose mission is to speed the elimination of poverty by leading a global community that builds, supports, and uses Mifos X, a free and open source banking platform to bring responsible financial services to the world’s 2 billion poor and unbanked. We combine fintech, the cloud, mobile apps, and open source community to create a game-changing approach to technology-enabled financial inclusion. With Mifos, you can help build cutting edge web and mobile banking apps, research trends in financial services, analyze new fintech innovations, design UX for consumer banking, enable collaboration amongst our global community, and conduct outreach for a global nonprofit.\n\nMore than 7 million clients are being reached by 300 financial institutions & fintech innovators who use Mifos software to power their operations across 40 countries. They are supported by a global community of 110 deployment partners & hundreds of volunteers who sustainably build impactful innovations in digital financial services. \n\nFor the past decade, we've been at the forefront of transformative technology for financial services to the poor. Our technology stack provides complete banking infrastructure that is cloud-ready, mobile-enabled, and scalable to the billions in need of cost-effective financial services. Our projects center around web & mobile apps using APIs from Apache Fineract, the world's only API-driven open source platform for financial inclusion."
-    tags: 
-      - "fintech"
-      - "financial services"
-      - "cloud"
-      - "mobile"
-      - "big data"
-    twitter_url: "https://twitter.com/mifos"
-    contact_email: "info@mifos.org"
-    irc_channel: "https://gitter.im/openMF/mifos"
-    slug: "the-mifos-initiative"
-    preferred_contact_method: null
-    guide_to_working: "Visit our wiki for learning more about Mifos, our community, our mentors, our projects, and the tasks you'll be working on at https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
-    name: "The Mifos Initiative"
-    precis: "End Poverty One Line of Code at a Time - FinTech non-profit using the cloud, mobile, and OSS community to bring financial services to the world's 2 billion poor & unbanked."
-    image_url: "//lh3.googleusercontent.com/Pm-PAmQYDOeLBMB08vk0HwLNzp2RynM8p6iCxl0HI750AZzjwWtZd0f-hVE-NWmQNYm_Ce5ebaJNd524F-PWWQ"
-    blog_url: "http://mifos.org/blog"
-    github: "openMF"
-    chat: 
-      url: "https://gitter.im/openMF/mifos"
-      platform: "GITTER"
-      image: "images/logos/gitter.png"
-    wikipedia_urls: 
-      bn: "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BF%E0%A6%AB%E0%A6%B8"
-      en: "https://en.wikipedia.org/wiki/Mifos_Initiative"
-      es: "https://es.wikipedia.org/wiki/Mifos"
-      pl: "https://pl.wikipedia.org/wiki/Mifos"
-    wikidata_url: "//www.wikidata.org/wiki/Q3347450"
   - 
     primary_open_source_license: "GNU Affero General Public License v3 (AGPL-3.0)"
     leaders: 
@@ -1632,7 +1558,7 @@
     programming_languages: 
       - "visual programming language (catrobat)"
     guide_to_working_url: "http://catrob.at/cgcicti"
-    completed_task_instance_count: 164
+    completed_task_instance_count: 170
     id: 5135243763777536
     winners: {}
     mailing_list: "http://catrob.at/PocketCodeUserForum"
@@ -1661,6 +1587,83 @@
       url: null
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q45341807"
+  - 
+    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Akash Bhave"
+        id: 6479705412730880
+        github_account: "AkashBhave"
+      - 
+        program_year: 2017
+        display_name: "Chirag Gupta"
+        id: 6471766769664000
+      - 
+        program_year: 2017
+        display_name: "janicek"
+        id: 5742982516965376
+      - 
+        program_year: 2017
+        display_name: "Matthew Katz"
+        id: 4529584303243264
+      - 
+        program_year: 2017
+        display_name: "Shivam kumar Singh"
+        id: 5079096713281536
+      - 
+        program_year: 2017
+        display_name: "Vaibhav Vijay"
+        id: 6329140703657984
+      - 
+        program_year: 2017
+        display_name: "Yibin Long"
+        id: 5828654942650368
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/+MifosOrg1"
+    programming_languages: 
+      - "java"
+      - "angular"
+      - "android"
+      - "html"
+      - "mysql"
+    guide_to_working_url: "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
+    completed_task_instance_count: 169
+    id: 6239808655458304
+    winners: {}
+    mailing_list: "http://mifos.org/resources/community/communications/#mailing-lists"
+    website_url: "http://mifos.org"
+    status: 2
+    program_year: 2017
+    description: "The Mifos Initiative is a US-based 501(c)3 non-profit whose mission is to speed the elimination of poverty by leading a global community that builds, supports, and uses Mifos X, a free and open source banking platform to bring responsible financial services to the world’s 2 billion poor and unbanked. We combine fintech, the cloud, mobile apps, and open source community to create a game-changing approach to technology-enabled financial inclusion. With Mifos, you can help build cutting edge web and mobile banking apps, research trends in financial services, analyze new fintech innovations, design UX for consumer banking, enable collaboration amongst our global community, and conduct outreach for a global nonprofit.\n\nMore than 7 million clients are being reached by 300 financial institutions & fintech innovators who use Mifos software to power their operations across 40 countries. They are supported by a global community of 110 deployment partners & hundreds of volunteers who sustainably build impactful innovations in digital financial services. \n\nFor the past decade, we've been at the forefront of transformative technology for financial services to the poor. Our technology stack provides complete banking infrastructure that is cloud-ready, mobile-enabled, and scalable to the billions in need of cost-effective financial services. Our projects center around web & mobile apps using APIs from Apache Fineract, the world's only API-driven open source platform for financial inclusion."
+    tags: 
+      - "fintech"
+      - "financial services"
+      - "cloud"
+      - "mobile"
+      - "big data"
+    twitter_url: "https://twitter.com/mifos"
+    contact_email: "info@mifos.org"
+    irc_channel: "https://gitter.im/openMF/mifos"
+    slug: "the-mifos-initiative"
+    preferred_contact_method: null
+    guide_to_working: "Visit our wiki for learning more about Mifos, our community, our mentors, our projects, and the tasks you'll be working on at https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
+    name: "The Mifos Initiative"
+    precis: "End Poverty One Line of Code at a Time - FinTech non-profit using the cloud, mobile, and OSS community to bring financial services to the world's 2 billion poor & unbanked."
+    image_url: "//lh3.googleusercontent.com/Pm-PAmQYDOeLBMB08vk0HwLNzp2RynM8p6iCxl0HI750AZzjwWtZd0f-hVE-NWmQNYm_Ce5ebaJNd524F-PWWQ"
+    blog_url: "http://mifos.org/blog"
+    github: "openMF"
+    chat: 
+      url: "https://gitter.im/openMF/mifos"
+      platform: "GITTER"
+      image: "images/logos/gitter.png"
+    wikipedia_urls: 
+      bn: "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BF%E0%A6%AB%E0%A6%B8"
+      en: "https://en.wikipedia.org/wiki/Mifos_Initiative"
+      es: "https://es.wikipedia.org/wiki/Mifos"
+      pl: "https://pl.wikipedia.org/wiki/Mifos"
+    wikidata_url: "//www.wikidata.org/wiki/Q3347450"
   - 
     primary_open_source_license: "Mozilla Public License 2.0 (MPL-2.0)"
     leaders: 
@@ -1715,7 +1718,7 @@
       - "html5"
       - "css"
     guide_to_working_url: ""
-    completed_task_instance_count: 163
+    completed_task_instance_count: 168
     id: 5753409548320768
     winners: {}
     mailing_list: "http://om.rs/gcitalk"
@@ -1765,6 +1768,10 @@
         id: 4973831292715008
       - 
         program_year: 2017
+        display_name: "Joshua Chung"
+        id: 6479102439587840
+      - 
+        program_year: 2017
         display_name: "Nalin Bhardwaj"
         id: 4552227639263232
         github_account: "nalinbhardwaj"
@@ -1785,7 +1792,7 @@
       - "abstract syntax tree"
       - "errbot"
     guide_to_working_url: "https://projects.coala.io/"
-    completed_task_instance_count: 160
+    completed_task_instance_count: 165
     id: 4884530416582656
     winners: {}
     mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
@@ -1872,7 +1879,7 @@
       - "gradle"
       - "blender"
     guide_to_working_url: "https://github.com/MovingBlocks/Terasology/wiki/GCI"
-    completed_task_instance_count: 157
+    completed_task_instance_count: 159
     id: 5693523175145472
     winners: {}
     mailing_list: null
@@ -1901,7 +1908,8 @@
       url: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
       platform: "IRC"
       image: "images/logos/irc.png"
-    wikipedia_urls: null
+    wikipedia_urls: 
+      commons: "https://commons.wikipedia.org/wiki/Category%3AMovingBlocks"
     wikidata_url: "//www.wikidata.org/wiki/Q40881750"
   - 
     primary_open_source_license: "GNU Library or \"Lesser\" General Public License version 2.1 (LGPL-2.1)"
@@ -1925,7 +1933,7 @@
       - "css"
       - "android"
     guide_to_working_url: "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn"
-    completed_task_instance_count: 122
+    completed_task_instance_count: 126
     id: 6299430183501824
     winners: {}
     mailing_list: "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss"
@@ -1990,7 +1998,7 @@
       - "c++"
       - "javascript"
     guide_to_working_url: "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students"
-    completed_task_instance_count: 116
+    completed_task_instance_count: 126
     id: 5139786496999424
     winners: {}
     mailing_list: "http://www.osgeo.org/content/faq/mailing_lists.html"
@@ -2053,6 +2061,10 @@
         program_year: 2017
         display_name: "nulxis"
         id: 6241077499527168
+      - 
+        program_year: 2017
+        display_name: "Shaurya Nathan"
+        id: 4988221043769344
     accepted_org_tos: true
     dev_mailing_list: ""
     gplus_url: ""
@@ -2061,7 +2073,7 @@
       - "php"
       - "javascript"
     guide_to_working_url: ""
-    completed_task_instance_count: 96
+    completed_task_instance_count: 109
     id: 5165875202097152
     winners: {}
     mailing_list: "https://forums.librehealth.io/gci"
@@ -2119,7 +2131,7 @@
       - "css"
       - "symfony"
     guide_to_working_url: "https://www.drupal.org/node/984014"
-    completed_task_instance_count: 93
+    completed_task_instance_count: 97
     id: 5636094664114176
     winners: {}
     mailing_list: "https://drupal.org/mailing-lists"
@@ -2217,6 +2229,18 @@
     leaders: 
       - 
         program_year: 2017
+        display_name: "Shivansh Yadav"
+        id: 4670031679979520
+      - 
+        program_year: 2017
+        display_name: "Shruti Singh"
+        id: 5809459819446272
+      - 
+        program_year: 2017
+        display_name: "Surya"
+        id: 6607311776776192
+      - 
+        program_year: 2017
         display_name: "Syed"
         id: 6685363949010944
     accepted_org_tos: true
@@ -2229,7 +2253,7 @@
       - "css"
       - "java"
     guide_to_working_url: "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html"
-    completed_task_instance_count: 77
+    completed_task_instance_count: 86
     id: 5067404587565056
     winners: {}
     mailing_list: "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html"
@@ -2261,7 +2285,15 @@
     wikidata_url: "//www.wikidata.org/wiki/Q21463290"
   - 
     primary_open_source_license: "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
-    leaders: []
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Adarsh Kumar"
+        id: 4563919077113856
+      - 
+        program_year: 2017
+        display_name: "Owen Leong"
+        id: 6207559977402368
     accepted_org_tos: true
     dev_mailing_list: null
     gplus_url: null
@@ -2272,7 +2304,7 @@
       - "css"
       - "jquery"
     guide_to_working_url: "https://gitter.im/Cloud-CV/"
-    completed_task_instance_count: 63
+    completed_task_instance_count: 67
     id: 4854733644759040
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/cloudcv"
@@ -2320,7 +2352,7 @@
       - "html"
       - "bash"
     guide_to_working_url: "http://wiki.apertium.org/wiki/Task_ideas_for_Google_Code-in/Getting_started"
-    completed_task_instance_count: 39
+    completed_task_instance_count: 41
     id: 6541403171586048
     winners: {}
     mailing_list: "http://wiki.apertium.org/wiki/Contact"
