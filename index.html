@@ -8,15 +8,26 @@
     <meta property="og:description" content="Google Code-in 2017 Current Leaders">
     <meta property="og:image" content="/images/GCI-logo.jpg">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- i18n libraries -->
+    <script src="https://cdn.rawgit.com/santhoshtr/CLDRPluralRuleParser/8baf9aedc4/src/CLDRPluralRuleParser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.4/jquery.i18n.min.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.messagestore.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.fallbacks.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.language.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.parser.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.emitter.js"></script>
+    <!-- global translation engine -->
+    <script src="js/global.js"></script>
   </head>
   <body>
     <div>
       <a href="http://codein.withgoogle.com">
         <img class="gci-logo" src="images/logos/gci.png" alt="Code-In logo">
       </a>
-      <h1>Google Code-in 2017 Current Leaders</h1>
+      <h1 data-i18n="page-title">Google Code-in 2017 Current Leaders</h1>
     </div>
-    <small id="time" data-time="Sat, 16 Dec 2017 16:59:42 GMT">Last updated: Sat, 16 Dec 2017 16:59:42 GMT <span id="ago"></span></small>
+    <small id="time" data-time="Sun, 17 Dec 2017 16:22:57 GMT"><span data-i18n="last-updated">Last updated</span>: Sun, 17 Dec 2017 16:22:57 GMT <span id="ago"></span></small>
     <div>
       <div class="progress-outer">
         <div class="progress-inner">
@@ -27,10 +38,11 @@
       <span class="progress-text"><i id="progress" data-noclaims="Mon Jan 15 2018 16:59:59 GMT+0000 (UTC)" data-competitionopen="Tue Nov 28 2017 17:00:00 GMT+0000 (UTC)"></i></span>
     </div>
     <hr>
-    <i>
+    <i data-i18n="order-info">
       The leading participants for each organization (and their GitHub accounts,
       if applicable) are listed randomly.
     </i>
+    <div class="chooser">&#x1F310;&nbsp;<select id="lang-select"></select></div>
     <div class="orgs">
         <div class="org">
           <div class="org-image">
@@ -44,7 +56,7 @@
                 JBoss Community
               </a>
             </h3>
-            <p>Tasks Completed: 833</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 851</p>
               <a href="https://github.com/jboss-outreach">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -127,7 +139,7 @@
                 Sustainable Computing Research Group (SCoRe)
               </a>
             </h3>
-            <p>Tasks Completed: 516</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 536</p>
               <a href="https://github.com/scorelab">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -209,7 +221,7 @@
                 FOSSASIA
               </a>
             </h3>
-            <p>Tasks Completed: 418</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 437</p>
               <a href="https://github.com/fossasia">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -263,7 +275,9 @@
                       </a>
                   </li>
                   <li>
-                    Phúc Ngô
+                      <a href="https://github.com/0x48piraj">
+                    Piyush Raj
+                      </a>
                   </li>
                   <li>
                       <a href="https://github.com/saarthakchats">
@@ -299,7 +313,7 @@
                 Sugar Labs
               </a>
             </h3>
-            <p>Tasks Completed: 396</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 410</p>
               <a href="https://github.com/sugarlabs">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -369,7 +383,7 @@
                 MetaBrainz Foundation
               </a>
             </h3>
-            <p>Tasks Completed: 335</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 348</p>
               <a href="https://github.com/metabrainz">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -439,7 +453,7 @@
                 Ubuntu
               </a>
             </h3>
-            <p>Tasks Completed: 305</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 319</p>
               <a href="https://github.com/Ubuntu">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -513,7 +527,7 @@
                 Zulip
               </a>
             </h3>
-            <p>Tasks Completed: 291</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 297</p>
               <a href="https://github.com/zulip">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -582,7 +596,7 @@
                 Wikimedia
               </a>
             </h3>
-            <p>Tasks Completed: 276</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 294</p>
               <a href="https://github.com/wikimedia">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -614,9 +628,6 @@
                     Albert Wolszon
                   </li>
                   <li>
-                    Anmol Singh-1
-                  </li>
-                  <li>
                     C. F. Fairfeld
                   </li>
                   <li>
@@ -624,6 +635,9 @@
                   </li>
                   <li>
                     Gabe Mitnick
+                  </li>
+                  <li>
+                    Jan Nowosielski
                   </li>
                   <li>
                     Phantom42
@@ -656,7 +670,7 @@
                 BRL-CAD
               </a>
             </h3>
-            <p>Tasks Completed: 257</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 270</p>
               <a href="https://github.com/BRL-CAD">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -685,6 +699,9 @@
             <div class="org-leaderboard">
               <ul>
                   <li>
+                    Agape Gonzales
+                  </li>
+                  <li>
                     Jeff Sieu
                   </li>
                   <li>
@@ -705,6 +722,9 @@
                   <li>
                     Siddharth Nayak
                   </li>
+                  <li>
+                    Wasim Afser
+                  </li>
               </ul>
             </div>
           </div>
@@ -721,7 +741,7 @@
                 CCExtractor Development
               </a>
             </h3>
-            <p>Tasks Completed: 232</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 235</p>
               <a href="https://github.com/CCExtractor">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -787,7 +807,7 @@
                 OpenWISP
               </a>
             </h3>
-            <p>Tasks Completed: 227</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 232</p>
               <a href="https://github.com/openwisp">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -845,7 +865,7 @@
                 Haiku
               </a>
             </h3>
-            <p>Tasks Completed: 209</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 224</p>
               <a href="https://github.com/haiku">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -921,7 +941,7 @@
                 Systers Community
               </a>
             </h3>
-            <p>Tasks Completed: 203</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 212</p>
               <a href="https://github.com/systers">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -992,6 +1012,157 @@
         </div>
         <div class="org">
           <div class="org-image">
+            <a href="https://codein.withgoogle.com/organizations/the-mifos-initiative">
+              <img class="org-image" alt="The Mifos Initiative logo" src="https://&#x2F;&#x2F;lh3.googleusercontent.com&#x2F;Pm-PAmQYDOeLBMB08vk0HwLNzp2RynM8p6iCxl0HI750AZzjwWtZd0f-hVE-NWmQNYm_Ce5ebaJNd524F-PWWQ">
+            </a>
+          </div>
+          <div class="org-info">
+            <h3>
+              <a href="https://codein.withgoogle.com/organizations/the-mifos-initiative">
+                The Mifos Initiative
+              </a>
+            </h3>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 178</p>
+              <a href="https://github.com/openMF">
+                <img
+                  src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
+                  class="github"
+                  alt="Find them on GitHub"
+                />
+              </a>
+              <a href="http:&#x2F;&#x2F;mifos.org&#x2F;resources&#x2F;community&#x2F;communications&#x2F;#mailing-lists">
+                <img src="images/mail.png" class="chat" alt="Join their mailing list" />
+              </a>
+              <a href="https:&#x2F;&#x2F;gitter.im&#x2F;openMF&#x2F;mifos">
+                <img src="images&#x2F;logos&#x2F;gitter.png" class="chat" alt="Join their chat" />
+              </a>
+              <a href="https:&#x2F;&#x2F;twitter.com&#x2F;mifos">
+                <img src="images/logos/twitter.png" class="chat" alt="Find them on Twitter" />
+              </a>
+              <a href="https:&#x2F;&#x2F;plus.google.com&#x2F;+MifosOrg1">
+                <img src="images/logos/gplus.png" class="chat" alt="Find them on Google+" />
+              </a>
+              <a href="http:&#x2F;&#x2F;mifos.org">
+                <img src="images/logos/global.png" class="chat" alt="Visit their website" />
+              </a>
+              <a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Mifos_Initiative">
+                <img src="images/logos/wikipedia.png" class="chat" alt="Read about them on Wikipedia" />
+              </a>
+              <a href="&#x2F;&#x2F;www.wikidata.org&#x2F;wiki&#x2F;Q3347450">
+                <img src="images/logos/wikidata.png" class="chat" alt="See them on Wikidata" />
+              </a>
+            <div class="org-leaderboard">
+              <ul>
+                  <li>
+                      <a href="https://github.com/AkashBhave">
+                    Akash Bhave
+                      </a>
+                  </li>
+                  <li>
+                    Chirag Gupta
+                  </li>
+                  <li>
+                    Daniel Genkin
+                  </li>
+                  <li>
+                    janicek
+                  </li>
+                  <li>
+                    luphieanza
+                  </li>
+                  <li>
+                    Matthew Katz
+                  </li>
+                  <li>
+                    Shivam kumar Singh
+                  </li>
+                  <li>
+                    Vaibhav Vijay
+                  </li>
+                  <li>
+                    Yibin Long
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="org">
+          <div class="org-image">
+            <a href="https://codein.withgoogle.com/organizations/coala">
+              <img class="org-image" alt="coala logo" src="https://&#x2F;&#x2F;lh3.googleusercontent.com&#x2F;4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG">
+            </a>
+          </div>
+          <div class="org-info">
+            <h3>
+              <a href="https://codein.withgoogle.com/organizations/coala">
+                coala
+              </a>
+            </h3>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 175</p>
+              <a href="https://github.com/coala">
+                <img
+                  src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
+                  class="github"
+                  alt="Find them on GitHub"
+                />
+              </a>
+              <a href="https:&#x2F;&#x2F;github.com&#x2F;coala&#x2F;coala&#x2F;wiki&#x2F;Mailing-Lists">
+                <img src="images/mail.png" class="chat" alt="Join their mailing list" />
+              </a>
+              <a href="https:&#x2F;&#x2F;coala.zulipchat.com&#x2F;">
+                <img src="images&#x2F;logos&#x2F;zulip.png" class="chat" alt="Join their chat" />
+              </a>
+              <a href="http:&#x2F;&#x2F;twitter.com&#x2F;coala_io">
+                <img src="images/logos/twitter.png" class="chat" alt="Find them on Twitter" />
+              </a>
+              <a href="https:&#x2F;&#x2F;plus.google.com&#x2F;communities&#x2F;110223386465813667851">
+                <img src="images/logos/gplus.png" class="chat" alt="Find them on Google+" />
+              </a>
+              <a href="https:&#x2F;&#x2F;coala.io&#x2F;">
+                <img src="images/logos/global.png" class="chat" alt="Visit their website" />
+              </a>
+              <a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Coala_%28software%29">
+                <img src="images/logos/wikipedia.png" class="chat" alt="Read about them on Wikipedia" />
+              </a>
+              <a href="&#x2F;&#x2F;www.wikidata.org&#x2F;wiki&#x2F;Q25215462">
+                <img src="images/logos/wikidata.png" class="chat" alt="See them on Wikidata" />
+              </a>
+            <div class="org-leaderboard">
+              <ul>
+                  <li>
+                    Alexander Voronkov
+                  </li>
+                  <li>
+                      <a href="https://github.com/andrewda">
+                    Andrew Dassonville
+                      </a>
+                  </li>
+                  <li>
+                    Daniel O&#39;Brien
+                  </li>
+                  <li>
+                    Joshua Chung
+                  </li>
+                  <li>
+                    Marcos Gómez
+                  </li>
+                  <li>
+                      <a href="https://github.com/nalinbhardwaj">
+                    Nalin Bhardwaj
+                      </a>
+                  </li>
+                  <li>
+                    Shukai Ni
+                  </li>
+                  <li>
+                    Tio Irawan
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="org">
+          <div class="org-image">
             <a href="https://codein.withgoogle.com/organizations/catrobat">
               <img class="org-image" alt="Catrobat logo" src="https://&#x2F;&#x2F;lh3.googleusercontent.com&#x2F;jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE">
             </a>
@@ -1002,7 +1173,7 @@
                 Catrobat
               </a>
             </h3>
-            <p>Tasks Completed: 170</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 175</p>
               <a href="https://github.com/Catrobat">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -1066,76 +1237,6 @@
         </div>
         <div class="org">
           <div class="org-image">
-            <a href="https://codein.withgoogle.com/organizations/the-mifos-initiative">
-              <img class="org-image" alt="The Mifos Initiative logo" src="https://&#x2F;&#x2F;lh3.googleusercontent.com&#x2F;Pm-PAmQYDOeLBMB08vk0HwLNzp2RynM8p6iCxl0HI750AZzjwWtZd0f-hVE-NWmQNYm_Ce5ebaJNd524F-PWWQ">
-            </a>
-          </div>
-          <div class="org-info">
-            <h3>
-              <a href="https://codein.withgoogle.com/organizations/the-mifos-initiative">
-                The Mifos Initiative
-              </a>
-            </h3>
-            <p>Tasks Completed: 169</p>
-              <a href="https://github.com/openMF">
-                <img
-                  src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
-                  class="github"
-                  alt="Find them on GitHub"
-                />
-              </a>
-              <a href="http:&#x2F;&#x2F;mifos.org&#x2F;resources&#x2F;community&#x2F;communications&#x2F;#mailing-lists">
-                <img src="images/mail.png" class="chat" alt="Join their mailing list" />
-              </a>
-              <a href="https:&#x2F;&#x2F;gitter.im&#x2F;openMF&#x2F;mifos">
-                <img src="images&#x2F;logos&#x2F;gitter.png" class="chat" alt="Join their chat" />
-              </a>
-              <a href="https:&#x2F;&#x2F;twitter.com&#x2F;mifos">
-                <img src="images/logos/twitter.png" class="chat" alt="Find them on Twitter" />
-              </a>
-              <a href="https:&#x2F;&#x2F;plus.google.com&#x2F;+MifosOrg1">
-                <img src="images/logos/gplus.png" class="chat" alt="Find them on Google+" />
-              </a>
-              <a href="http:&#x2F;&#x2F;mifos.org">
-                <img src="images/logos/global.png" class="chat" alt="Visit their website" />
-              </a>
-              <a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Mifos_Initiative">
-                <img src="images/logos/wikipedia.png" class="chat" alt="Read about them on Wikipedia" />
-              </a>
-              <a href="&#x2F;&#x2F;www.wikidata.org&#x2F;wiki&#x2F;Q3347450">
-                <img src="images/logos/wikidata.png" class="chat" alt="See them on Wikidata" />
-              </a>
-            <div class="org-leaderboard">
-              <ul>
-                  <li>
-                      <a href="https://github.com/AkashBhave">
-                    Akash Bhave
-                      </a>
-                  </li>
-                  <li>
-                    Chirag Gupta
-                  </li>
-                  <li>
-                    janicek
-                  </li>
-                  <li>
-                    Matthew Katz
-                  </li>
-                  <li>
-                    Shivam kumar Singh
-                  </li>
-                  <li>
-                    Vaibhav Vijay
-                  </li>
-                  <li>
-                    Yibin Long
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="org">
-          <div class="org-image">
             <a href="https://codein.withgoogle.com/organizations/openmrs">
               <img class="org-image" alt="OpenMRS logo" src="https://&#x2F;&#x2F;lh3.googleusercontent.com&#x2F;DtRzzebTaA7bRBx4t0hAWTcyoiFP84r64T0uG8eNRoBnfyG9sUaVf5xkXuq-ffTzuT4voJY2JE3YXUh3Amvg4cmD">
             </a>
@@ -1146,7 +1247,7 @@
                 OpenMRS
               </a>
             </h3>
-            <p>Tasks Completed: 168</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 172</p>
               <a href="https://github.com/openmrs">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -1215,78 +1316,6 @@
         </div>
         <div class="org">
           <div class="org-image">
-            <a href="https://codein.withgoogle.com/organizations/coala">
-              <img class="org-image" alt="coala logo" src="https://&#x2F;&#x2F;lh3.googleusercontent.com&#x2F;4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG">
-            </a>
-          </div>
-          <div class="org-info">
-            <h3>
-              <a href="https://codein.withgoogle.com/organizations/coala">
-                coala
-              </a>
-            </h3>
-            <p>Tasks Completed: 165</p>
-              <a href="https://github.com/coala">
-                <img
-                  src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
-                  class="github"
-                  alt="Find them on GitHub"
-                />
-              </a>
-              <a href="https:&#x2F;&#x2F;github.com&#x2F;coala&#x2F;coala&#x2F;wiki&#x2F;Mailing-Lists">
-                <img src="images/mail.png" class="chat" alt="Join their mailing list" />
-              </a>
-              <a href="https:&#x2F;&#x2F;coala.zulipchat.com&#x2F;">
-                <img src="images&#x2F;logos&#x2F;zulip.png" class="chat" alt="Join their chat" />
-              </a>
-              <a href="http:&#x2F;&#x2F;twitter.com&#x2F;coala_io">
-                <img src="images/logos/twitter.png" class="chat" alt="Find them on Twitter" />
-              </a>
-              <a href="https:&#x2F;&#x2F;plus.google.com&#x2F;communities&#x2F;110223386465813667851">
-                <img src="images/logos/gplus.png" class="chat" alt="Find them on Google+" />
-              </a>
-              <a href="https:&#x2F;&#x2F;coala.io&#x2F;">
-                <img src="images/logos/global.png" class="chat" alt="Visit their website" />
-              </a>
-              <a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Coala_%28software%29">
-                <img src="images/logos/wikipedia.png" class="chat" alt="Read about them on Wikipedia" />
-              </a>
-              <a href="&#x2F;&#x2F;www.wikidata.org&#x2F;wiki&#x2F;Q25215462">
-                <img src="images/logos/wikidata.png" class="chat" alt="See them on Wikidata" />
-              </a>
-            <div class="org-leaderboard">
-              <ul>
-                  <li>
-                    Alexander Voronkov
-                  </li>
-                  <li>
-                      <a href="https://github.com/andrewda">
-                    Andrew Dassonville
-                      </a>
-                  </li>
-                  <li>
-                    Daniel O&#39;Brien
-                  </li>
-                  <li>
-                    Joshua Chung
-                  </li>
-                  <li>
-                      <a href="https://github.com/nalinbhardwaj">
-                    Nalin Bhardwaj
-                      </a>
-                  </li>
-                  <li>
-                    Shukai Ni
-                  </li>
-                  <li>
-                    Tio Irawan
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="org">
-          <div class="org-image">
             <a href="https://codein.withgoogle.com/organizations/movingblocks">
               <img class="org-image" alt="MovingBlocks logo" src="https://&#x2F;&#x2F;lh3.googleusercontent.com&#x2F;xXnPqLkLDZYuz6XBxkKKTcaRWcsgzLcMgLx21ADAAIv2BAtRIyk9lI0ryrEBhh7K3r6YXdJOHAHu5hl9e2iNQ-Rn">
             </a>
@@ -1297,7 +1326,7 @@
                 MovingBlocks
               </a>
             </h3>
-            <p>Tasks Completed: 159</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 168</p>
               <a href="https://github.com/MovingBlocks">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -1372,7 +1401,7 @@
                 XWiki
               </a>
             </h3>
-            <p>Tasks Completed: 126</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 135</p>
               <a href="https://github.com/xwiki">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -1424,7 +1453,7 @@
                 OSGeo
               </a>
             </h3>
-            <p>Tasks Completed: 126</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 130</p>
               <a href="https://github.com/OSGeo">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -1480,7 +1509,7 @@
                 LibreHealth
               </a>
             </h3>
-            <p>Tasks Completed: 109</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 120</p>
               <a href="https://github.com/LibreHealthIO">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -1535,7 +1564,7 @@
                 Drupal
               </a>
             </h3>
-            <p>Tasks Completed: 97</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 106</p>
               <a href="https://github.com/drupal">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -1567,6 +1596,9 @@
             <div class="org-leaderboard">
               <ul>
                   <li>
+                    Kartik Goel
+                  </li>
+                  <li>
                     MaskyS
                   </li>
                   <li>
@@ -1594,7 +1626,7 @@
                 Liquid Galaxy project
               </a>
             </h3>
-            <p>Tasks Completed: 86</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 90</p>
               <a href="https://github.com/LiquidGalaxy">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -1647,7 +1679,7 @@
                 CloudCV
               </a>
             </h3>
-            <p>Tasks Completed: 67</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 70</p>
               <a href="https://github.com/Cloud-CV">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -1676,6 +1708,9 @@
                     Adarsh Kumar
                   </li>
                   <li>
+                    Naman Sood
+                  </li>
+                  <li>
                     Owen Leong
                   </li>
               </ul>
@@ -1694,7 +1729,7 @@
                 Apertium
               </a>
             </h3>
-            <p>Tasks Completed: 41</p>
+            <p><span data-i18n="tasks-completed">Tasks Completed</span>: 46</p>
               <a href="https://github.com/apertium-lmf">
                 <img
                   src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
@@ -1733,9 +1768,8 @@
       </a>
     </div>
     <footer>
-      <small>Google Code-in and the Google Code-in logo are trademarks of Google Inc.</small>
+      <small data-i18n="footer-text">Google Code-in and the Google Code-in logo are trademarks of Google Inc.</small>
     </footer>
-    <script src="js/app.js"></script>
     <script src="js/twitter.js"></script>
   </body>
 </html>

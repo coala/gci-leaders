@@ -114,3 +114,7 @@ footer {
   color: grey;
   display: inline-block;
 }
+
+.chooser {
+  margin-top: 0.5em;
+}
