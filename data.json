@@ -67,7 +67,7 @@
       "html"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 864,
+    "completed_task_instance_count": 866,
     "id": 5733899491606528,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/jboss-community-gci/",
@@ -112,11 +112,6 @@
     "leaders": [
       {
         "program_year": 2017,
-        "display_name": "Aashir Shukla",
-        "id": 6235295131369472
-      },
-      {
-        "program_year": 2017,
         "display_name": "Alexius Adhitya K.",
         "id": 6455949881507840
       },
@@ -130,6 +125,11 @@
         "program_year": 2017,
         "display_name": "Gaurav",
         "id": 6188768153305088
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Kalyan C",
+        "id": 5351898834010112
       },
       {
         "program_year": 2017,
@@ -176,7 +176,7 @@
       "python"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 553,
+    "completed_task_instance_count": 562,
     "id": 4923880235859968,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/score-community",
@@ -284,7 +284,7 @@
       "python"
     ],
     "guide_to_working_url": "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/",
-    "completed_task_instance_count": 444,
+    "completed_task_instance_count": 445,
     "id": 6237166344601600,
     "winners": {},
     "mailing_list": "http://groups.google.com/group/fossasia",
@@ -389,7 +389,7 @@
       "css"
     ],
     "guide_to_working_url": "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background",
-    "completed_task_instance_count": 419,
+    "completed_task_instance_count": 425,
     "id": 4879181169033216,
     "winners": {},
     "mailing_list": "http://lists.sugarlabs.org/",
@@ -486,7 +486,7 @@
       "sql"
     ],
     "guide_to_working_url": "https://wiki.musicbrainz.org/Google_Code-in/2017",
-    "completed_task_instance_count": 360,
+    "completed_task_instance_count": 363,
     "id": 5936087526539264,
     "winners": {},
     "mailing_list": "https://community.metabrainz.org/",
@@ -554,6 +554,11 @@
       },
       {
         "program_year": 2017,
+        "display_name": "KARTHIK RAMAKRISHNAN",
+        "id": 6164884645478400
+      },
+      {
+        "program_year": 2017,
         "display_name": "Konrad Krawiec",
         "id": 5887809686601728
       },
@@ -569,8 +574,8 @@
       },
       {
         "program_year": 2017,
-        "display_name": "Varun Patel",
-        "id": 5472854818684928
+        "display_name": "WinningIt",
+        "id": 5420514023571456
       }
     ],
     "accepted_org_tos": true,
@@ -584,7 +589,7 @@
       "c/c++"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 322,
+    "completed_task_instance_count": 347,
     "id": 5133577048031232,
     "winners": {},
     "mailing_list": "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc",
@@ -801,6 +806,11 @@
       },
       {
         "program_year": 2017,
+        "display_name": "Callum F^",
+        "id": 6612838997032960
+      },
+      {
+        "program_year": 2017,
         "display_name": "Freddie Miller",
         "id": 5962704562946048
       },
@@ -813,11 +823,6 @@
         "program_year": 2017,
         "display_name": "jwzhang",
         "id": 6577413972557824
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Kai Chen",
-        "id": 5554705755275264
       },
       {
         "program_year": 2017,
@@ -858,7 +863,7 @@
       "visual design"
     ],
     "guide_to_working_url": "https://github.com/zulip/zulip-gci",
-    "completed_task_instance_count": 310,
+    "completed_task_instance_count": 317,
     "id": 5744567921934336,
     "winners": {},
     "mailing_list": null,
@@ -960,7 +965,7 @@
       "wiki"
     ],
     "guide_to_working_url": "https://www.mediawiki.org/wiki/Google_Code-in/2017",
-    "completed_task_instance_count": 304,
+    "completed_task_instance_count": 306,
     "id": 5740205476675584,
     "winners": {},
     "mailing_list": "https://lists.wikimedia.org/mailman/listinfo/wikitech-l",
@@ -1213,7 +1218,7 @@
       "html/css"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 278,
+    "completed_task_instance_count": 279,
     "id": 5154791065911296,
     "winners": {},
     "mailing_list": "http://brlcad.org/wiki/Mailing_lists",
@@ -1318,7 +1323,7 @@
       "windows"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 243,
+    "completed_task_instance_count": 244,
     "id": 5731053304020992,
     "winners": {},
     "mailing_list": null,
@@ -1398,7 +1403,7 @@
       "css"
     ],
     "guide_to_working_url": "http://openwisp.io/docs/developer/contributing.html",
-    "completed_task_instance_count": 237,
+    "completed_task_instance_count": 238,
     "id": 5693741010518016,
     "winners": {},
     "mailing_list": "https://groups.google.com/d/forum/openwisp/join",
@@ -1498,7 +1503,7 @@
       "html"
     ],
     "guide_to_working_url": "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails",
-    "completed_task_instance_count": 230,
+    "completed_task_instance_count": 232,
     "id": 6281461650948096,
     "winners": {},
     "mailing_list": "https://www.haiku-os.org/community/ml",
@@ -1699,7 +1704,7 @@
       "photoshop"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 223,
+    "completed_task_instance_count": 225,
     "id": 5735606506225664,
     "winners": {},
     "mailing_list": "http://systers.anitab.org",
@@ -1796,7 +1801,7 @@
       "mysql"
     ],
     "guide_to_working_url": "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki",
-    "completed_task_instance_count": 183,
+    "completed_task_instance_count": 187,
     "id": 6239808655458304,
     "winners": {},
     "mailing_list": "http://mifos.org/resources/community/communications/#mailing-lists",
@@ -1834,98 +1839,6 @@
       "pl": "https://pl.wikipedia.org/wiki/Mifos"
     },
     "wikidata_url": "//www.wikidata.org/wiki/Q3347450"
-  },
-  {
-    "primary_open_source_license": "Affero GNU Public License",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Alexander Voronkov",
-        "id": 5057457392975872
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Andrew Dassonville",
-        "id": 5302037795307520,
-        "github_account": "andrewda"
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Daniel O'Brien",
-        "id": 4973831292715008
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Joshua Chung",
-        "id": 6479102439587840
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Marcos Gómez",
-        "id": 5557452655296512
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Nalin Bhardwaj",
-        "id": 4552227639263232,
-        "github_account": "nalinbhardwaj"
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Shukai Ni",
-        "id": 5178132149567488
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Tio Irawan",
-        "id": 6214590973083648
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": "https://plus.google.com/communities/110223386465813667851",
-    "programming_languages": [
-      "python",
-      "python 3",
-      "abstract syntax tree",
-      "errbot"
-    ],
-    "guide_to_working_url": "https://projects.coala.io/",
-    "completed_task_instance_count": 183,
-    "id": 4884530416582656,
-    "winners": {},
-    "mailing_list": "https://github.com/coala/coala/wiki/Mailing-Lists",
-    "website_url": "https://coala.io/",
-    "status": 2,
-    "program_year": 2017,
-    "description": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below.",
-    "tags": [
-      "linting",
-      "static code analysis",
-      "code quality",
-      "automation",
-      "devops"
-    ],
-    "twitter_url": "http://twitter.com/coala_io",
-    "contact_email": null,
-    "irc_channel": "https://coala.zulipchat.com/",
-    "slug": "coala",
-    "preferred_contact_method": null,
-    "guide_to_working": "Join [Zulip](https://coala.zulipchat.com/) or [Gitter](https://gitter.im/coala/gci) to ask mentors questions .\r\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\r\nFollow the [Newcomer Guide](http://coala.io/newcomer).",
-    "name": "coala",
-    "precis": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used.Plugins may by native Python or wrap external linters.",
-    "image_url": "//lh3.googleusercontent.com/4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG",
-    "blog_url": "https://blog.coala.io/",
-    "github": "coala",
-    "chat": {
-      "url": "https://coala.zulipchat.com/",
-      "platform": "ZULIP",
-      "image": "images/logos/zulip.png"
-    },
-    "wikipedia_urls": {
-      "en": "https://en.wikipedia.org/wiki/Coala_%28software%29"
-    },
-    "wikidata_url": "//www.wikidata.org/wiki/Q25215462"
   },
   {
     "primary_open_source_license": "GNU Affero General Public License v3 (AGPL-3.0)",
@@ -1988,7 +1901,7 @@
       "visual programming language (catrobat)"
     ],
     "guide_to_working_url": "http://catrob.at/cgcicti",
-    "completed_task_instance_count": 183,
+    "completed_task_instance_count": 187,
     "id": 5135243763777536,
     "winners": {},
     "mailing_list": "http://catrob.at/PocketCodeUserForum",
@@ -2021,6 +1934,98 @@
     "wikidata_url": "//www.wikidata.org/wiki/Q45341807"
   },
   {
+    "primary_open_source_license": "Affero GNU Public License",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Alexander Voronkov",
+        "id": 5057457392975872
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Andrew Dassonville",
+        "id": 5302037795307520,
+        "github_account": "andrewda"
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Daniel O'Brien",
+        "id": 4973831292715008
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Joshua Chung",
+        "id": 6479102439587840
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Marcos Gómez",
+        "id": 5557452655296512
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Nalin Bhardwaj",
+        "id": 4552227639263232,
+        "github_account": "nalinbhardwaj"
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Shukai Ni",
+        "id": 5178132149567488
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Tio Irawan",
+        "id": 6214590973083648
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": "https://plus.google.com/communities/110223386465813667851",
+    "programming_languages": [
+      "python",
+      "python 3",
+      "abstract syntax tree",
+      "errbot"
+    ],
+    "guide_to_working_url": "https://projects.coala.io/",
+    "completed_task_instance_count": 186,
+    "id": 4884530416582656,
+    "winners": {},
+    "mailing_list": "https://github.com/coala/coala/wiki/Mailing-Lists",
+    "website_url": "https://coala.io/",
+    "status": 2,
+    "program_year": 2017,
+    "description": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below.",
+    "tags": [
+      "linting",
+      "static code analysis",
+      "code quality",
+      "automation",
+      "devops"
+    ],
+    "twitter_url": "http://twitter.com/coala_io",
+    "contact_email": null,
+    "irc_channel": "https://coala.zulipchat.com/",
+    "slug": "coala",
+    "preferred_contact_method": null,
+    "guide_to_working": "Join [Zulip](https://coala.zulipchat.com/) or [Gitter](https://gitter.im/coala/gci) to ask mentors questions .\r\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\r\nFollow the [Newcomer Guide](http://coala.io/newcomer).",
+    "name": "coala",
+    "precis": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used.Plugins may by native Python or wrap external linters.",
+    "image_url": "//lh3.googleusercontent.com/4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG",
+    "blog_url": "https://blog.coala.io/",
+    "github": "coala",
+    "chat": {
+      "url": "https://coala.zulipchat.com/",
+      "platform": "ZULIP",
+      "image": "images/logos/zulip.png"
+    },
+    "wikipedia_urls": {
+      "en": "https://en.wikipedia.org/wiki/Coala_%28software%29"
+    },
+    "wikidata_url": "//www.wikidata.org/wiki/Q25215462"
+  },
+  {
     "primary_open_source_license": "Mozilla Public License 2.0 (MPL-2.0)",
     "leaders": [
       {
@@ -2051,11 +2056,6 @@
       },
       {
         "program_year": 2017,
-        "display_name": "Raghav Khandelwal",
-        "id": 6537397560934400
-      },
-      {
-        "program_year": 2017,
         "display_name": "Said Yaka",
         "id": 5971293960667136
       },
@@ -2063,6 +2063,12 @@
         "program_year": 2017,
         "display_name": "Sanskar Jindal",
         "id": 5064391886110720
+      },
+      {
+        "program_year": 2017,
+        "display_name": "SR",
+        "id": 5255833879314432,
+        "github_account": "maurya"
       },
       {
         "program_year": 2017,
@@ -2086,7 +2092,7 @@
       "css"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 174,
+    "completed_task_instance_count": 175,
     "id": 5753409548320768,
     "winners": {},
     "mailing_list": "http://om.rs/gcitalk",
@@ -2189,7 +2195,7 @@
       "blender"
     ],
     "guide_to_working_url": "https://github.com/MovingBlocks/Terasology/wiki/GCI",
-    "completed_task_instance_count": 174,
+    "completed_task_instance_count": 175,
     "id": 5693523175145472,
     "winners": {},
     "mailing_list": null,
@@ -2251,7 +2257,7 @@
       "android"
     ],
     "guide_to_working_url": "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn",
-    "completed_task_instance_count": 141,
+    "completed_task_instance_count": 144,
     "id": 6299430183501824,
     "winners": {},
     "mailing_list": "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss",
@@ -2305,6 +2311,11 @@
       },
       {
         "program_year": 2017,
+        "display_name": "Jason Wong-1",
+        "id": 6503206198706176
+      },
+      {
+        "program_year": 2017,
         "display_name": "Jerry Huang",
         "id": 5364363542134784
       },
@@ -2325,7 +2336,7 @@
       "javascript"
     ],
     "guide_to_working_url": "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students",
-    "completed_task_instance_count": 134,
+    "completed_task_instance_count": 136,
     "id": 5139786496999424,
     "winners": {},
     "mailing_list": "http://www.osgeo.org/content/faq/mailing_lists.html",
@@ -2410,7 +2421,7 @@
       "javascript"
     ],
     "guide_to_working_url": "https://gitlab.com/librehealth/gci/wikis/",
-    "completed_task_instance_count": 127,
+    "completed_task_instance_count": 132,
     "id": 5165875202097152,
     "winners": {},
     "mailing_list": "https://forums.librehealth.io/gci",
@@ -2606,6 +2617,11 @@
         "program_year": 2017,
         "display_name": "Syed",
         "id": 6685363949010944
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Terence Chan Zun Mun",
+        "id": 6011586793701376
       }
     ],
     "accepted_org_tos": true,
@@ -2619,7 +2635,7 @@
       "java"
     ],
     "guide_to_working_url": "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html",
-    "completed_task_instance_count": 96,
+    "completed_task_instance_count": 102,
     "id": 5067404587565056,
     "winners": {},
     "mailing_list": "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html",
