@@ -55,7 +55,7 @@
       - "javascript"
       - "html"
     guide_to_working_url: ""
-    completed_task_instance_count: 866
+    completed_task_instance_count: 870
     id: 5733899491606528
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/jboss-community-gci/"
@@ -148,7 +148,7 @@
       - "node"
       - "python"
     guide_to_working_url: ""
-    completed_task_instance_count: 562
+    completed_task_instance_count: 570
     id: 4923880235859968
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/score-community"
@@ -241,7 +241,7 @@
       - "web technologies"
       - "python"
     guide_to_working_url: "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/"
-    completed_task_instance_count: 445
+    completed_task_instance_count: 450
     id: 6237166344601600
     winners: {}
     mailing_list: "http://groups.google.com/group/fossasia"
@@ -330,7 +330,7 @@
       - "javascript"
       - "css"
     guide_to_working_url: "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background"
-    completed_task_instance_count: 425
+    completed_task_instance_count: 439
     id: 4879181169033216
     winners: {}
     mailing_list: "http://lists.sugarlabs.org/"
@@ -412,7 +412,7 @@
       - "javascript"
       - "sql"
     guide_to_working_url: "https://wiki.musicbrainz.org/Google_Code-in/2017"
-    completed_task_instance_count: 363
+    completed_task_instance_count: 369
     id: 5936087526539264
     winners: {}
     mailing_list: "https://community.metabrainz.org/"
@@ -499,7 +499,7 @@
       - "gnome"
       - "c/c++"
     guide_to_working_url: ""
-    completed_task_instance_count: 347
+    completed_task_instance_count: 360
     id: 5133577048031232
     winners: {}
     mailing_list: "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc"
@@ -757,7 +757,7 @@
       - "html"
       - "visual design"
     guide_to_working_url: "https://github.com/zulip/zulip-gci"
-    completed_task_instance_count: 317
+    completed_task_instance_count: 319
     id: 5744567921934336
     winners: {}
     mailing_list: null
@@ -815,6 +815,10 @@
         id: 4862270347673600
       - 
         program_year: 2017
+        display_name: "Linda Thelen"
+        id: 5289130839769088
+      - 
+        program_year: 2017
         display_name: "Phantom42"
         id: 5855143146815488
       - 
@@ -825,10 +829,6 @@
         program_year: 2017
         display_name: "Rafid Aslam"
         id: 4789845765390336
-      - 
-        program_year: 2017
-        display_name: "Ryan Chang"
-        id: 4891685077123072
       - 
         program_year: 2017
         display_name: "Yifei He"
@@ -843,7 +843,7 @@
       - "lua"
       - "wiki"
     guide_to_working_url: "https://www.mediawiki.org/wiki/Google_Code-in/2017"
-    completed_task_instance_count: 306
+    completed_task_instance_count: 315
     id: 5740205476675584
     winners: {}
     mailing_list: "https://lists.wikimedia.org/mailman/listinfo/wikitech-l"
@@ -1081,7 +1081,7 @@
       - "three.js"
       - "html/css"
     guide_to_working_url: ""
-    completed_task_instance_count: 279
+    completed_task_instance_count: 295
     id: 5154791065911296
     winners: {}
     mailing_list: "http://brlcad.org/wiki/Mailing_lists"
@@ -1171,7 +1171,7 @@
       - "linux"
       - "windows"
     guide_to_working_url: ""
-    completed_task_instance_count: 244
+    completed_task_instance_count: 246
     id: 5731053304020992
     winners: {}
     mailing_list: null
@@ -1240,7 +1240,7 @@
       - "html"
       - "css"
     guide_to_working_url: "http://openwisp.io/docs/developer/contributing.html"
-    completed_task_instance_count: 238
+    completed_task_instance_count: 239
     id: 5693741010518016
     winners: {}
     mailing_list: "https://groups.google.com/d/forum/openwisp/join"
@@ -1274,10 +1274,6 @@
   - 
     primary_open_source_license: "MIT license (MIT)"
     leaders: 
-      - 
-        program_year: 2017
-        display_name: "Alex O'Brien"
-        id: 6267144998223872
       - 
         program_year: 2017
         display_name: "Bach Nguyen"
@@ -1315,6 +1311,10 @@
         program_year: 2017
         display_name: "Owen"
         id: 6035804772106240
+      - 
+        program_year: 2017
+        display_name: "Trần Thái Sơn"
+        id: 5951955736199168
     accepted_org_tos: true
     dev_mailing_list: null
     gplus_url: null
@@ -1325,7 +1325,7 @@
       - "bash"
       - "html"
     guide_to_working_url: "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails"
-    completed_task_instance_count: 232
+    completed_task_instance_count: 235
     id: 6281461650948096
     winners: {}
     mailing_list: "https://www.haiku-os.org/community/ml"
@@ -1510,7 +1510,7 @@
       - "illustrator"
       - "photoshop"
     guide_to_working_url: ""
-    completed_task_instance_count: 225
+    completed_task_instance_count: 226
     id: 5735606506225664
     winners: {}
     mailing_list: "http://systers.anitab.org"
@@ -1542,91 +1542,6 @@
     wikipedia_urls: 
       en: "https://en.wikipedia.org/wiki/Systers"
     wikidata_url: "//www.wikidata.org/wiki/Q7663887"
-  - 
-    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Akash Bhave"
-        id: 6479705412730880
-        github_account: "AkashBhave"
-      - 
-        program_year: 2017
-        display_name: "Chirag Gupta"
-        id: 6471766769664000
-      - 
-        program_year: 2017
-        display_name: "Daniel Genkin"
-        id: 6365669266292736
-      - 
-        program_year: 2017
-        display_name: "janicek"
-        id: 5742982516965376
-      - 
-        program_year: 2017
-        display_name: "luphieanza"
-        id: 5733321055141888
-      - 
-        program_year: 2017
-        display_name: "Matthew Katz"
-        id: 4529584303243264
-      - 
-        program_year: 2017
-        display_name: "Shivam kumar Singh"
-        id: 5079096713281536
-      - 
-        program_year: 2017
-        display_name: "Vaibhav Vijay"
-        id: 6329140703657984
-      - 
-        program_year: 2017
-        display_name: "Yibin Long"
-        id: 5828654942650368
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/+MifosOrg1"
-    programming_languages: 
-      - "java"
-      - "angular"
-      - "android"
-      - "html"
-      - "mysql"
-    guide_to_working_url: "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
-    completed_task_instance_count: 187
-    id: 6239808655458304
-    winners: {}
-    mailing_list: "http://mifos.org/resources/community/communications/#mailing-lists"
-    website_url: "http://mifos.org"
-    status: 2
-    program_year: 2017
-    description: "The Mifos Initiative is a US-based 501(c)3 non-profit whose mission is to speed the elimination of poverty by leading a global community that builds, supports, and uses Mifos X, a free and open source banking platform to bring responsible financial services to the world’s 2 billion poor and unbanked. We combine fintech, the cloud, mobile apps, and open source community to create a game-changing approach to technology-enabled financial inclusion. With Mifos, you can help build cutting edge web and mobile banking apps, research trends in financial services, analyze new fintech innovations, design UX for consumer banking, enable collaboration amongst our global community, and conduct outreach for a global nonprofit.\n\nMore than 7 million clients are being reached by 300 financial institutions & fintech innovators who use Mifos software to power their operations across 40 countries. They are supported by a global community of 110 deployment partners & hundreds of volunteers who sustainably build impactful innovations in digital financial services. \n\nFor the past decade, we've been at the forefront of transformative technology for financial services to the poor. Our technology stack provides complete banking infrastructure that is cloud-ready, mobile-enabled, and scalable to the billions in need of cost-effective financial services. Our projects center around web & mobile apps using APIs from Apache Fineract, the world's only API-driven open source platform for financial inclusion."
-    tags: 
-      - "fintech"
-      - "financial services"
-      - "cloud"
-      - "mobile"
-      - "big data"
-    twitter_url: "https://twitter.com/mifos"
-    contact_email: "info@mifos.org"
-    irc_channel: "https://gitter.im/openMF/mifos"
-    slug: "the-mifos-initiative"
-    preferred_contact_method: null
-    guide_to_working: "Visit our wiki for learning more about Mifos, our community, our mentors, our projects, and the tasks you'll be working on at https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
-    name: "The Mifos Initiative"
-    precis: "End Poverty One Line of Code at a Time - FinTech non-profit using the cloud, mobile, and OSS community to bring financial services to the world's 2 billion poor & unbanked."
-    image_url: "//lh3.googleusercontent.com/Pm-PAmQYDOeLBMB08vk0HwLNzp2RynM8p6iCxl0HI750AZzjwWtZd0f-hVE-NWmQNYm_Ce5ebaJNd524F-PWWQ"
-    blog_url: "http://mifos.org/blog"
-    github: "openMF"
-    chat: 
-      url: "https://gitter.im/openMF/mifos"
-      platform: "GITTER"
-      image: "images/logos/gitter.png"
-    wikipedia_urls: 
-      bn: "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BF%E0%A6%AB%E0%A6%B8"
-      en: "https://en.wikipedia.org/wiki/Mifos_Initiative"
-      es: "https://es.wikipedia.org/wiki/Mifos"
-      pl: "https://pl.wikipedia.org/wiki/Mifos"
-    wikidata_url: "//www.wikidata.org/wiki/Q3347450"
   - 
     primary_open_source_license: "GNU Affero General Public License v3 (AGPL-3.0)"
     leaders: 
@@ -1676,7 +1591,7 @@
     programming_languages: 
       - "visual programming language (catrobat)"
     guide_to_working_url: "http://catrob.at/cgcicti"
-    completed_task_instance_count: 187
+    completed_task_instance_count: 197
     id: 5135243763777536
     winners: {}
     mailing_list: "http://catrob.at/PocketCodeUserForum"
@@ -1751,7 +1666,7 @@
       - "abstract syntax tree"
       - "errbot"
     guide_to_working_url: "https://projects.coala.io/"
-    completed_task_instance_count: 186
+    completed_task_instance_count: 195
     id: 4884530416582656
     winners: {}
     mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
@@ -1784,92 +1699,90 @@
       en: "https://en.wikipedia.org/wiki/Coala_%28software%29"
     wikidata_url: "//www.wikidata.org/wiki/Q25215462"
   - 
-    primary_open_source_license: "Mozilla Public License 2.0 (MPL-2.0)"
+    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
     leaders: 
       - 
         program_year: 2017
-        display_name: "Bartłomiej Rasztabiga"
-        id: 4851396136402944
+        display_name: "Akash Bhave"
+        id: 6479705412730880
+        github_account: "AkashBhave"
       - 
         program_year: 2017
-        display_name: "Fawwaz Yusran"
-        id: 4893093289525248
+        display_name: "Chirag Gupta"
+        id: 6471766769664000
       - 
         program_year: 2017
-        display_name: "Jyothsna Ashok"
-        id: 4671819661443072
-        github_account: "JyothsnaAshok"
+        display_name: "Daniel Genkin"
+        id: 6365669266292736
       - 
         program_year: 2017
-        display_name: "Matthew Whitaker"
-        id: 6052785999052800
+        display_name: "janicek"
+        id: 5742982516965376
       - 
         program_year: 2017
-        display_name: "Nayansh Gupta"
-        id: 6094997608726528
+        display_name: "luphieanza"
+        id: 5733321055141888
       - 
         program_year: 2017
-        display_name: "Said Yaka"
-        id: 5971293960667136
+        display_name: "Matthew Katz"
+        id: 4529584303243264
       - 
         program_year: 2017
-        display_name: "Sanskar Jindal"
-        id: 5064391886110720
+        display_name: "Shivam kumar Singh"
+        id: 5079096713281536
       - 
         program_year: 2017
-        display_name: "SR"
-        id: 5255833879314432
-        github_account: "maurya"
+        display_name: "Vaibhav Vijay"
+        id: 6329140703657984
       - 
         program_year: 2017
-        display_name: "Tomasz Domagała"
-        id: 6531598482669568
-      - 
-        program_year: 2017
-        display_name: "Ziyao Zhang"
-        id: 4602477213122560
+        display_name: "Yibin Long"
+        id: 5828654942650368
     accepted_org_tos: true
     dev_mailing_list: null
-    gplus_url: "https://plus.google.com/+OpenMRSorg"
+    gplus_url: "https://plus.google.com/+MifosOrg1"
     programming_languages: 
       - "java"
-      - "groovy"
-      - "javascript"
-      - "html5"
-      - "css"
-    guide_to_working_url: ""
-    completed_task_instance_count: 175
-    id: 5753409548320768
+      - "angular"
+      - "android"
+      - "html"
+      - "mysql"
+    guide_to_working_url: "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
+    completed_task_instance_count: 193
+    id: 6239808655458304
     winners: {}
-    mailing_list: "http://om.rs/gcitalk"
-    website_url: "http://om.rs/gci"
+    mailing_list: "http://mifos.org/resources/community/communications/#mailing-lists"
+    website_url: "http://mifos.org"
     status: 2
     program_year: 2017
-    description: "[OpenMRS](http://openmrs.org) is a collaborative open source project to develop software to support the delivery of health care in developing countries. We are a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. [Our mission](http://openmrs.org/about/mission/) is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software.\r\n\r\nThe [OpenMRS software platform](http://openmrs.org/about/) and a reference application enables design of a customized medical records system with no programming knowledge. It is a common platform upon which medical informatics efforts in developing countries can be built.\r\n\r\nWorking on Google Code-in tasks for OpenMRS is a great way to join the free and open source software movement, and at the same time use your talents to help people in developing countries and around the world on the front lines of the battle against HIV/AIDS, TB, Malaria, and other public health challenges. For more detailed about OpenMRS and GCI, visit http://openmrs.org/ and watch [this short video](https://www.youtube.com/watch?v=HPxx1_svu_A) created by a previous OpenMRS GCI participant."
+    description: "The Mifos Initiative is a US-based 501(c)3 non-profit whose mission is to speed the elimination of poverty by leading a global community that builds, supports, and uses Mifos X, a free and open source banking platform to bring responsible financial services to the world’s 2 billion poor and unbanked. We combine fintech, the cloud, mobile apps, and open source community to create a game-changing approach to technology-enabled financial inclusion. With Mifos, you can help build cutting edge web and mobile banking apps, research trends in financial services, analyze new fintech innovations, design UX for consumer banking, enable collaboration amongst our global community, and conduct outreach for a global nonprofit.\n\nMore than 7 million clients are being reached by 300 financial institutions & fintech innovators who use Mifos software to power their operations across 40 countries. They are supported by a global community of 110 deployment partners & hundreds of volunteers who sustainably build impactful innovations in digital financial services. \n\nFor the past decade, we've been at the forefront of transformative technology for financial services to the poor. Our technology stack provides complete banking infrastructure that is cloud-ready, mobile-enabled, and scalable to the billions in need of cost-effective financial services. Our projects center around web & mobile apps using APIs from Apache Fineract, the world's only API-driven open source platform for financial inclusion."
     tags: 
-      - "hospitals"
-      - "healthcare"
-      - "emr"
-      - "medical"
-      - "webapp"
-    twitter_url: "https://twitter.com/OpenMRS"
-    contact_email: "community@openmrs.org"
-    irc_channel: "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q"
-    slug: "openmrs"
+      - "fintech"
+      - "financial services"
+      - "cloud"
+      - "mobile"
+      - "big data"
+    twitter_url: "https://twitter.com/mifos"
+    contact_email: "info@mifos.org"
+    irc_channel: "https://gitter.im/openMF/mifos"
+    slug: "the-mifos-initiative"
     preferred_contact_method: null
-    guide_to_working: ""
-    name: "OpenMRS"
-    precis: "Write Code, Save Lives"
-    image_url: "//lh3.googleusercontent.com/DtRzzebTaA7bRBx4t0hAWTcyoiFP84r64T0uG8eNRoBnfyG9sUaVf5xkXuq-ffTzuT4voJY2JE3YXUh3Amvg4cmD"
-    blog_url: "http://openmrs.org/blog/"
-    github: "openmrs"
+    guide_to_working: "Visit our wiki for learning more about Mifos, our community, our mentors, our projects, and the tasks you'll be working on at https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
+    name: "The Mifos Initiative"
+    precis: "End Poverty One Line of Code at a Time - FinTech non-profit using the cloud, mobile, and OSS community to bring financial services to the world's 2 billion poor & unbanked."
+    image_url: "//lh3.googleusercontent.com/Pm-PAmQYDOeLBMB08vk0HwLNzp2RynM8p6iCxl0HI750AZzjwWtZd0f-hVE-NWmQNYm_Ce5ebaJNd524F-PWWQ"
+    blog_url: "http://mifos.org/blog"
+    github: "openMF"
     chat: 
-      url: "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q"
-      platform: "TELEGRAM"
-      image: "images/logos/telegram.png"
+      url: "https://gitter.im/openMF/mifos"
+      platform: "GITTER"
+      image: "images/logos/gitter.png"
     wikipedia_urls: 
-      en: "https://en.wikipedia.org/wiki/OpenMRS"
-    wikidata_url: "//www.wikidata.org/wiki/Q7095826"
+      bn: "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BF%E0%A6%AB%E0%A6%B8"
+      en: "https://en.wikipedia.org/wiki/Mifos_Initiative"
+      es: "https://es.wikipedia.org/wiki/Mifos"
+      pl: "https://pl.wikipedia.org/wiki/Mifos"
+    wikidata_url: "//www.wikidata.org/wiki/Q3347450"
   - 
     primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
     leaders: 
@@ -1925,7 +1838,7 @@
       - "gradle"
       - "blender"
     guide_to_working_url: "https://github.com/MovingBlocks/Terasology/wiki/GCI"
-    completed_task_instance_count: 175
+    completed_task_instance_count: 179
     id: 5693523175145472
     winners: {}
     mailing_list: null
@@ -1958,6 +1871,93 @@
       commons: "https://commons.wikipedia.org/wiki/Category%3AMovingBlocks"
     wikidata_url: "//www.wikidata.org/wiki/Q40881750"
   - 
+    primary_open_source_license: "Mozilla Public License 2.0 (MPL-2.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Bartłomiej Rasztabiga"
+        id: 4851396136402944
+      - 
+        program_year: 2017
+        display_name: "Fawwaz Yusran"
+        id: 4893093289525248
+      - 
+        program_year: 2017
+        display_name: "Jyothsna Ashok"
+        id: 4671819661443072
+        github_account: "JyothsnaAshok"
+      - 
+        program_year: 2017
+        display_name: "Matthew Whitaker"
+        id: 6052785999052800
+      - 
+        program_year: 2017
+        display_name: "Nayansh Gupta"
+        id: 6094997608726528
+      - 
+        program_year: 2017
+        display_name: "Said Yaka"
+        id: 5971293960667136
+      - 
+        program_year: 2017
+        display_name: "Sanskar Jindal"
+        id: 5064391886110720
+      - 
+        program_year: 2017
+        display_name: "SR"
+        id: 5255833879314432
+        github_account: "maurya"
+      - 
+        program_year: 2017
+        display_name: "Tomasz Domagała"
+        id: 6531598482669568
+      - 
+        program_year: 2017
+        display_name: "Ziyao Zhang"
+        id: 4602477213122560
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/+OpenMRSorg"
+    programming_languages: 
+      - "java"
+      - "groovy"
+      - "javascript"
+      - "html5"
+      - "css"
+    guide_to_working_url: ""
+    completed_task_instance_count: 178
+    id: 5753409548320768
+    winners: {}
+    mailing_list: "http://om.rs/gcitalk"
+    website_url: "http://om.rs/gci"
+    status: 2
+    program_year: 2017
+    description: "[OpenMRS](http://openmrs.org) is a collaborative open source project to develop software to support the delivery of health care in developing countries. We are a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. [Our mission](http://openmrs.org/about/mission/) is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software.\r\n\r\nThe [OpenMRS software platform](http://openmrs.org/about/) and a reference application enables design of a customized medical records system with no programming knowledge. It is a common platform upon which medical informatics efforts in developing countries can be built.\r\n\r\nWorking on Google Code-in tasks for OpenMRS is a great way to join the free and open source software movement, and at the same time use your talents to help people in developing countries and around the world on the front lines of the battle against HIV/AIDS, TB, Malaria, and other public health challenges. For more detailed about OpenMRS and GCI, visit http://openmrs.org/ and watch [this short video](https://www.youtube.com/watch?v=HPxx1_svu_A) created by a previous OpenMRS GCI participant."
+    tags: 
+      - "hospitals"
+      - "healthcare"
+      - "emr"
+      - "medical"
+      - "webapp"
+    twitter_url: "https://twitter.com/OpenMRS"
+    contact_email: "community@openmrs.org"
+    irc_channel: "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q"
+    slug: "openmrs"
+    preferred_contact_method: null
+    guide_to_working: ""
+    name: "OpenMRS"
+    precis: "Write Code, Save Lives"
+    image_url: "//lh3.googleusercontent.com/DtRzzebTaA7bRBx4t0hAWTcyoiFP84r64T0uG8eNRoBnfyG9sUaVf5xkXuq-ffTzuT4voJY2JE3YXUh3Amvg4cmD"
+    blog_url: "http://openmrs.org/blog/"
+    github: "openmrs"
+    chat: 
+      url: "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q"
+      platform: "TELEGRAM"
+      image: "images/logos/telegram.png"
+    wikipedia_urls: 
+      en: "https://en.wikipedia.org/wiki/OpenMRS"
+    wikidata_url: "//www.wikidata.org/wiki/Q7095826"
+  - 
     primary_open_source_license: "GNU Library or \"Lesser\" General Public License version 2.1 (LGPL-2.1)"
     leaders: 
       - 
@@ -1979,7 +1979,7 @@
       - "css"
       - "android"
     guide_to_working_url: "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn"
-    completed_task_instance_count: 144
+    completed_task_instance_count: 148
     id: 6299430183501824
     winners: {}
     mailing_list: "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss"
@@ -2020,6 +2020,63 @@
       zh: "https://zh.wikipedia.org/wiki/XWiki"
     wikidata_url: "//www.wikidata.org/wiki/Q526699"
   - 
+    primary_open_source_license: "Mozilla Public License 2.0 (MPL-2.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Mateusz Grzonka"
+        id: 4662563470049280
+      - 
+        program_year: 2017
+        display_name: "MigDinny"
+        id: 5815887145730048
+        github_account: "MigDinny"
+      - 
+        program_year: 2017
+        display_name: "nulxis"
+        id: 6241077499527168
+      - 
+        program_year: 2017
+        display_name: "Shaurya Nathan"
+        id: 4988221043769344
+    accepted_org_tos: true
+    dev_mailing_list: ""
+    gplus_url: ""
+    programming_languages: 
+      - "java"
+      - "php"
+      - "javascript"
+    guide_to_working_url: "https://gitlab.com/librehealth/gci/wikis/"
+    completed_task_instance_count: 140
+    id: 5165875202097152
+    winners: {}
+    mailing_list: "https://forums.librehealth.io/gci"
+    website_url: "https://librehealth.io"
+    status: 2
+    program_year: 2017
+    description: "LibreHealth is a collaborative community for free & open source software projects in Health IT. We are a member project of the Software Freedom Conservatory, and an all-volunteer public charity. Come join us!"
+    tags: 
+      - "hfoss"
+      - "health"
+      - "humanitarian"
+    twitter_url: "https://twitter.com/LibreHealthIO"
+    contact_email: "lsc@librehealth.io"
+    irc_channel: "https://chat.librehealth.io/channel/gci"
+    slug: "librehealth"
+    preferred_contact_method: null
+    guide_to_working: "# You **must** have completed the [Become a part of the community](https://codein.withgoogle.com/tasks/5974232355831808/) task prior to completing any others! \n\nWe require that all work you complete be your own work. It must be wholly original. [See our wiki](https://gitlab.com/librehealth/gci/wikis/) for other information."
+    name: "LibreHealth"
+    precis: "Healthcare for Humanity — a collaborative community for free & open source software projects in Health IT. All-volunteer public charity."
+    image_url: "//lh3.googleusercontent.com/nFlpi1OHSnJpP95J0D1GocKcaURz9x0XOvO-x9E_p5iJfUHY_w6IQhsntrIY542No96DPjAd8XLLVDWOLyLoTqo"
+    blog_url: ""
+    github: "LibreHealthIO"
+    chat: 
+      url: "https://chat.librehealth.io/channel/gci"
+      platform: "ROCKET"
+      image: "images/logos/rocket.png"
+    wikipedia_urls: null
+    wikidata_url: "//www.wikidata.org/wiki/Q45341906"
+  - 
     primary_open_source_license: "MIT license (MIT)"
     leaders: 
       - 
@@ -2048,7 +2105,7 @@
       - "c++"
       - "javascript"
     guide_to_working_url: "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students"
-    completed_task_instance_count: 136
+    completed_task_instance_count: 140
     id: 5139786496999424
     winners: {}
     mailing_list: "http://www.osgeo.org/content/faq/mailing_lists.html"
@@ -2096,63 +2153,6 @@
       zh: "https://zh.wikipedia.org/wiki/%E5%BC%80%E6%BA%90%E5%9C%B0%E7%90%86%E7%A9%BA%E9%97%B4%E5%9F%BA%E9%87%91%E4%BC%9A"
     wikidata_url: "//www.wikidata.org/wiki/Q1197305"
   - 
-    primary_open_source_license: "Mozilla Public License 2.0 (MPL-2.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Mateusz Grzonka"
-        id: 4662563470049280
-      - 
-        program_year: 2017
-        display_name: "MigDinny"
-        id: 5815887145730048
-        github_account: "MigDinny"
-      - 
-        program_year: 2017
-        display_name: "nulxis"
-        id: 6241077499527168
-      - 
-        program_year: 2017
-        display_name: "Shaurya Nathan"
-        id: 4988221043769344
-    accepted_org_tos: true
-    dev_mailing_list: ""
-    gplus_url: ""
-    programming_languages: 
-      - "java"
-      - "php"
-      - "javascript"
-    guide_to_working_url: "https://gitlab.com/librehealth/gci/wikis/"
-    completed_task_instance_count: 132
-    id: 5165875202097152
-    winners: {}
-    mailing_list: "https://forums.librehealth.io/gci"
-    website_url: "https://librehealth.io"
-    status: 2
-    program_year: 2017
-    description: "LibreHealth is a collaborative community for free & open source software projects in Health IT. We are a member project of the Software Freedom Conservatory, and an all-volunteer public charity. Come join us!"
-    tags: 
-      - "hfoss"
-      - "health"
-      - "humanitarian"
-    twitter_url: "https://twitter.com/LibreHealthIO"
-    contact_email: "lsc@librehealth.io"
-    irc_channel: "https://chat.librehealth.io/channel/gci"
-    slug: "librehealth"
-    preferred_contact_method: null
-    guide_to_working: "# You **must** have completed the [Become a part of the community](https://codein.withgoogle.com/tasks/5974232355831808/) task prior to completing any others! \n\nWe require that all work you complete be your own work. It must be wholly original. [See our wiki](https://gitlab.com/librehealth/gci/wikis/) for other information."
-    name: "LibreHealth"
-    precis: "Healthcare for Humanity — a collaborative community for free & open source software projects in Health IT. All-volunteer public charity."
-    image_url: "//lh3.googleusercontent.com/nFlpi1OHSnJpP95J0D1GocKcaURz9x0XOvO-x9E_p5iJfUHY_w6IQhsntrIY542No96DPjAd8XLLVDWOLyLoTqo"
-    blog_url: ""
-    github: "LibreHealthIO"
-    chat: 
-      url: "https://chat.librehealth.io/channel/gci"
-      platform: "ROCKET"
-      image: "images/logos/rocket.png"
-    wikipedia_urls: null
-    wikidata_url: "//www.wikidata.org/wiki/Q45341906"
-  - 
     primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
     leaders: 
       - 
@@ -2185,7 +2185,7 @@
       - "css"
       - "symfony"
     guide_to_working_url: "https://www.drupal.org/node/984014"
-    completed_task_instance_count: 110
+    completed_task_instance_count: 111
     id: 5636094664114176
     winners: {}
     mailing_list: "https://drupal.org/mailing-lists"
@@ -2315,7 +2315,7 @@
       - "css"
       - "java"
     guide_to_working_url: "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html"
-    completed_task_instance_count: 102
+    completed_task_instance_count: 105
     id: 5067404587565056
     winners: {}
     mailing_list: "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html"
@@ -2370,7 +2370,7 @@
       - "css"
       - "jquery"
     guide_to_working_url: "https://gitter.im/Cloud-CV/"
-    completed_task_instance_count: 77
+    completed_task_instance_count: 78
     id: 4854733644759040
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/cloudcv"
@@ -2408,6 +2408,10 @@
         program_year: 2017
         display_name: "Alexander Mamaev"
         id: 5417131376115712
+      - 
+        program_year: 2017
+        display_name: "JJJPPP"
+        id: 5210939794128896
     accepted_org_tos: true
     dev_mailing_list: null
     gplus_url: null
@@ -2418,7 +2422,7 @@
       - "html"
       - "bash"
     guide_to_working_url: "http://wiki.apertium.org/wiki/Task_ideas_for_Google_Code-in/Getting_started"
-    completed_task_instance_count: 48
+    completed_task_instance_count: 49
     id: 6541403171586048
     winners: {}
     mailing_list: "http://wiki.apertium.org/wiki/Contact"
