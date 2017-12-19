@@ -67,7 +67,7 @@
       "html"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 870,
+    "completed_task_instance_count": 875,
     "id": 5733899491606528,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/jboss-community-gci/",
@@ -176,7 +176,7 @@
       "python"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 581,
+    "completed_task_instance_count": 592,
     "id": 4923880235859968,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/score-community",
@@ -284,7 +284,7 @@
       "python"
     ],
     "guide_to_working_url": "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/",
-    "completed_task_instance_count": 455,
+    "completed_task_instance_count": 458,
     "id": 6237166344601600,
     "winners": {},
     "mailing_list": "http://groups.google.com/group/fossasia",
@@ -389,7 +389,7 @@
       "css"
     ],
     "guide_to_working_url": "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background",
-    "completed_task_instance_count": 441,
+    "completed_task_instance_count": 446,
     "id": 4879181169033216,
     "winners": {},
     "mailing_list": "http://lists.sugarlabs.org/",
@@ -425,104 +425,6 @@
       "pl": "https://pl.wikipedia.org/wiki/Sugar_Labs"
     },
     "wikidata_url": "//www.wikidata.org/wiki/Q5935028"
-  },
-  {
-    "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Annebelle Olminkhof",
-        "id": 4916088141774848
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Ashish Kamathi-1",
-        "id": 6663981454327808
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Eshan Singh",
-        "id": 5077106331484160,
-        "github_account": "eshansingh"
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Hartama",
-        "id": 5976468456734720
-      },
-      {
-        "program_year": 2017,
-        "display_name": "hasia",
-        "id": 5953782171041792
-      },
-      {
-        "program_year": 2017,
-        "display_name": "J Young Kim",
-        "id": 6367732863860736
-      },
-      {
-        "program_year": 2017,
-        "display_name": "kartikohri1712",
-        "id": 4571726790787072
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Shameek Dutta",
-        "id": 4650477700513792
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Shreya Kannan",
-        "id": 4955683604660224
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": null,
-    "programming_languages": [
-      "python",
-      "perl",
-      "javascript",
-      "sql"
-    ],
-    "guide_to_working_url": "https://wiki.musicbrainz.org/Google_Code-in/2017",
-    "completed_task_instance_count": 370,
-    "id": 5936087526539264,
-    "winners": {},
-    "mailing_list": "https://community.metabrainz.org/",
-    "website_url": "https://metabrainz.org/",
-    "status": 2,
-    "program_year": 2017,
-    "description": "The MetaBrainz Foundation provides the backbone for a number of projects rooted in crowd sourcing open data, namely:\n\n- [MusicBrainz](https://musicbrainz.org/): open music metadata database\n- [MusicBrainz Picard](https://picard.musicbrainz.org/): music file tagger, using data from MusicBrainz\n- [ListenBrainz](https://listenbrainz.org/): repository of listen data\n- [AcousticBrainz](https://acousticbrainz.org/): crowd sourced database of acoustic information for music\n- [CritiqueBrainz](https://critiquebrainz.org/): Creative Commons-licensed reviews\n- [BookBrainz](https://bookbrainz.org/): open \"book\" database\n- [Cover Art Archive](https://coverartarchive.org/): repository of album cover art",
-    "tags": [
-      "metadata",
-      "music",
-      "open data",
-      "books"
-    ],
-    "twitter_url": "https://twitter.com/MetaBrainz",
-    "contact_email": "support@metabrainz.org",
-    "irc_channel": "https://musicbrainz.org/doc/Communication/IRC",
-    "slug": "metabrainz-foundation",
-    "preferred_contact_method": null,
-    "guide_to_working": "",
-    "name": "MetaBrainz Foundation",
-    "precis": "Crowd sourced open data projects: MusicBrainz, ListenBrainz, AcousticBrainz, CritiqueBrainz, BookBrainz, Cover Art Archive, …",
-    "image_url": "//lh3.googleusercontent.com/uva87DeMQfSnjFKNFMlRZeBg4gOKskIwQAl4ZZqCWFUbpPBPkaET5HL1a0usXkq7Z0pCqkt2AbBOeQqPJpfM2g",
-    "blog_url": "https://blog.musicbrainz.org/",
-    "github": "metabrainz",
-    "chat": {
-      "url": "irc://irc.freenode.net/musicbrainz",
-      "platform": "IRC",
-      "image": "images/logos/irc.png"
-    },
-    "wikipedia_urls": {
-      "en": "https://en.wikipedia.org/wiki/MetaBrainz_Foundation",
-      "es": "https://es.wikipedia.org/wiki/MetaBrainz_Foundation",
-      "fa": "https://fa.wikipedia.org/wiki/%D8%A8%D9%86%DB%8C%D8%A7%D8%AF_%D9%85%D8%AA%D8%A7%D8%A8%D8%B1%DB%8C%D9%86%D8%B2",
-      "fr": "https://fr.wikipedia.org/wiki/MetaBrainz"
-    },
-    "wikidata_url": "//www.wikidata.org/wiki/Q952204"
   },
   {
     "primary_open_source_license": "GNU General Public License version 3.0 (GPL-3.0)",
@@ -589,7 +491,7 @@
       "c/c++"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 360,
+    "completed_task_instance_count": 376,
     "id": 5133577048031232,
     "winners": {},
     "mailing_list": "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc",
@@ -797,17 +699,110 @@
     "wikidata_url": "//www.wikidata.org/wiki/Q381"
   },
   {
+    "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Annebelle Olminkhof",
+        "id": 4916088141774848
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Ashish Kamathi-1",
+        "id": 6663981454327808
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Eshan Singh",
+        "id": 5077106331484160,
+        "github_account": "eshansingh"
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Hartama",
+        "id": 5976468456734720
+      },
+      {
+        "program_year": 2017,
+        "display_name": "hasia",
+        "id": 5953782171041792
+      },
+      {
+        "program_year": 2017,
+        "display_name": "J Young Kim",
+        "id": 6367732863860736
+      },
+      {
+        "program_year": 2017,
+        "display_name": "kartikohri1712",
+        "id": 4571726790787072
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Shameek Dutta",
+        "id": 4650477700513792
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Shreya Kannan",
+        "id": 4955683604660224
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": null,
+    "programming_languages": [
+      "python",
+      "perl",
+      "javascript",
+      "sql"
+    ],
+    "guide_to_working_url": "https://wiki.musicbrainz.org/Google_Code-in/2017",
+    "completed_task_instance_count": 372,
+    "id": 5936087526539264,
+    "winners": {},
+    "mailing_list": "https://community.metabrainz.org/",
+    "website_url": "https://metabrainz.org/",
+    "status": 2,
+    "program_year": 2017,
+    "description": "The MetaBrainz Foundation provides the backbone for a number of projects rooted in crowd sourcing open data, namely:\n\n- [MusicBrainz](https://musicbrainz.org/): open music metadata database\n- [MusicBrainz Picard](https://picard.musicbrainz.org/): music file tagger, using data from MusicBrainz\n- [ListenBrainz](https://listenbrainz.org/): repository of listen data\n- [AcousticBrainz](https://acousticbrainz.org/): crowd sourced database of acoustic information for music\n- [CritiqueBrainz](https://critiquebrainz.org/): Creative Commons-licensed reviews\n- [BookBrainz](https://bookbrainz.org/): open \"book\" database\n- [Cover Art Archive](https://coverartarchive.org/): repository of album cover art",
+    "tags": [
+      "metadata",
+      "music",
+      "open data",
+      "books"
+    ],
+    "twitter_url": "https://twitter.com/MetaBrainz",
+    "contact_email": "support@metabrainz.org",
+    "irc_channel": "https://musicbrainz.org/doc/Communication/IRC",
+    "slug": "metabrainz-foundation",
+    "preferred_contact_method": null,
+    "guide_to_working": "",
+    "name": "MetaBrainz Foundation",
+    "precis": "Crowd sourced open data projects: MusicBrainz, ListenBrainz, AcousticBrainz, CritiqueBrainz, BookBrainz, Cover Art Archive, …",
+    "image_url": "//lh3.googleusercontent.com/uva87DeMQfSnjFKNFMlRZeBg4gOKskIwQAl4ZZqCWFUbpPBPkaET5HL1a0usXkq7Z0pCqkt2AbBOeQqPJpfM2g",
+    "blog_url": "https://blog.musicbrainz.org/",
+    "github": "metabrainz",
+    "chat": {
+      "url": "irc://irc.freenode.net/musicbrainz",
+      "platform": "IRC",
+      "image": "images/logos/irc.png"
+    },
+    "wikipedia_urls": {
+      "en": "https://en.wikipedia.org/wiki/MetaBrainz_Foundation",
+      "es": "https://es.wikipedia.org/wiki/MetaBrainz_Foundation",
+      "fa": "https://fa.wikipedia.org/wiki/%D8%A8%D9%86%DB%8C%D8%A7%D8%AF_%D9%85%D8%AA%D8%A7%D8%A8%D8%B1%DB%8C%D9%86%D8%B2",
+      "fr": "https://fr.wikipedia.org/wiki/MetaBrainz"
+    },
+    "wikidata_url": "//www.wikidata.org/wiki/Q952204"
+  },
+  {
     "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
     "leaders": [
       {
         "program_year": 2017,
         "display_name": "Abijith Warrier",
         "id": 4567072723959808
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Callum F^",
-        "id": 6612838997032960
       },
       {
         "program_year": 2017,
@@ -828,6 +823,13 @@
         "program_year": 2017,
         "display_name": "Marco Burstein",
         "id": 4597515116609536
+      },
+      {
+        "program_year": 2017,
+        "display_name": "nyan-salmon",
+        "id": 6674063084748800,
+        "github_account": "nyan-salmon",
+        "github_updated": 1513702930920
       },
       {
         "program_year": 2017,
@@ -863,7 +865,7 @@
       "visual design"
     ],
     "guide_to_working_url": "https://github.com/zulip/zulip-gci",
-    "completed_task_instance_count": 321,
+    "completed_task_instance_count": 331,
     "id": 5744567921934336,
     "winners": {},
     "mailing_list": null,
@@ -965,7 +967,7 @@
       "wiki"
     ],
     "guide_to_working_url": "https://www.mediawiki.org/wiki/Google_Code-in/2017",
-    "completed_task_instance_count": 317,
+    "completed_task_instance_count": 321,
     "id": 5740205476675584,
     "winners": {},
     "mailing_list": "https://lists.wikimedia.org/mailman/listinfo/wikitech-l",
@@ -1218,7 +1220,7 @@
       "html/css"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 301,
+    "completed_task_instance_count": 309,
     "id": 5154791065911296,
     "winners": {},
     "mailing_list": "http://brlcad.org/wiki/Mailing_lists",
@@ -1257,7 +1259,8 @@
       "fr": "https://fr.wikipedia.org/wiki/BRL-CAD",
       "it": "https://it.wikipedia.org/wiki/BRL-CAD",
       "ru": "https://ru.wikipedia.org/wiki/BRL-CAD",
-      "uk": "https://uk.wikipedia.org/wiki/BRL-CAD"
+      "uk": "https://uk.wikipedia.org/wiki/BRL-CAD",
+      "zh_min_nan": "https://zh_min_nan.wikipedia.org/wiki/BRL-CAD"
     },
     "wikidata_url": "//www.wikidata.org/wiki/Q796941"
   },
@@ -1323,7 +1326,7 @@
       "windows"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 249,
+    "completed_task_instance_count": 251,
     "id": 5731053304020992,
     "winners": {},
     "mailing_list": null,
@@ -1403,7 +1406,7 @@
       "css"
     ],
     "guide_to_working_url": "http://openwisp.io/docs/developer/contributing.html",
-    "completed_task_instance_count": 246,
+    "completed_task_instance_count": 249,
     "id": 5693741010518016,
     "winners": {},
     "mailing_list": "https://groups.google.com/d/forum/openwisp/join",
@@ -1503,7 +1506,7 @@
       "html"
     ],
     "guide_to_working_url": "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails",
-    "completed_task_instance_count": 239,
+    "completed_task_instance_count": 240,
     "id": 6281461650948096,
     "winners": {},
     "mailing_list": "https://www.haiku-os.org/community/ml",
@@ -1704,7 +1707,7 @@
       "photoshop"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 233,
+    "completed_task_instance_count": 236,
     "id": 5735606506225664,
     "winners": {},
     "mailing_list": "http://systers.anitab.org",
@@ -1724,7 +1727,7 @@
     "irc_channel": "http://systers.io/slack-systers-opensource/",
     "slug": "systers-community",
     "preferred_contact_method": null,
-    "guide_to_working": "Systers cares about the quality, thoroughness, and creativity of every task as well as community involvement. **Most tasks completed DOES NOT equal a winner.**\n\nAre you confused on where to start? Help us by [blogging about Outreach](https://codein.withgoogle.com/tasks/4862952484110336/)!\n\n[We're always here.](systers.io/slack-systers-opensource/)",
+    "guide_to_working": "Systers cares about the quality, thoroughness, and creativity of every task as well as community involvement. **Most tasks completed DOES NOT equal a winner.**\n\nLearn more about Android Studio by [using Android Profiler](https://codein.withgoogle.com/tasks/5695491494903808/)!\n\n[We're always here.](http://www.systers.io/slack-systers-opensource/)",
     "name": "Systers Community",
     "precis": "Helping women find their potential in code.",
     "image_url": "//lh3.googleusercontent.com/TGSO1vhSY7v2dmzJ1uq8_zEajDTn_ndNMtXJMxFCJFSH_BXCNOfwHF3Y8vNR1VIyafH2tOTdAQVMQHGaqYvDBqo",
@@ -1739,99 +1742,6 @@
       "en": "https://en.wikipedia.org/wiki/Systers"
     },
     "wikidata_url": "//www.wikidata.org/wiki/Q7663887"
-  },
-  {
-    "primary_open_source_license": "GNU Affero General Public License v3 (AGPL-3.0)",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Alejandro Heredia",
-        "id": 5243643889713152
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Andreas Lukita",
-        "id": 4692396648431616
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Chandra Chou",
-        "id": 6189747405848576
-      },
-      {
-        "program_year": 2017,
-        "display_name": "headhunter",
-        "id": 5126869030535168
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Mateusz Komajda",
-        "id": 4979968129892352
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Nikita Kotenev",
-        "id": 6003849812770816
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Sarthak Agrawal",
-        "id": 5394417575788544
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Siddh Jain",
-        "id": 6267827092717568
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Yudhistira G.S.",
-        "id": 4611923993690112
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Łukasz Ameljan",
-        "id": 5096542534893568
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": "https://plus.google.com/communities/116816272940643231129",
-    "programming_languages": [
-      "visual programming language (catrobat)"
-    ],
-    "guide_to_working_url": "http://catrob.at/cgcicti",
-    "completed_task_instance_count": 198,
-    "id": 5135243763777536,
-    "winners": {},
-    "mailing_list": "http://catrob.at/PocketCodeUserForum",
-    "website_url": "https://www.catrobat.org/",
-    "status": 2,
-    "program_year": 2017,
-    "description": "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!",
-    "tags": [
-      "mobile",
-      "games",
-      "visual programming",
-      "apps",
-      "animations"
-    ],
-    "twitter_url": "http://twitter.com/Pocket_Code",
-    "contact_email": "user_forum@catrobat.org",
-    "irc_channel": null,
-    "slug": "catrobat",
-    "preferred_contact_method": null,
-    "guide_to_working": "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions.",
-    "name": "Catrobat",
-    "precis": "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!",
-    "image_url": "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE",
-    "blog_url": null,
-    "github": "Catrobat",
-    "chat": {
-      "url": null
-    },
-    "wikipedia_urls": null,
-    "wikidata_url": "//www.wikidata.org/wiki/Q45341807"
   },
   {
     "primary_open_source_license": "Affero GNU Public License",
@@ -1889,7 +1799,7 @@
       "errbot"
     ],
     "guide_to_working_url": "https://projects.coala.io/",
-    "completed_task_instance_count": 195,
+    "completed_task_instance_count": 202,
     "id": 4884530416582656,
     "winners": {},
     "mailing_list": "https://github.com/coala/coala/wiki/Mailing-Lists",
@@ -1986,7 +1896,7 @@
       "mysql"
     ],
     "guide_to_working_url": "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki",
-    "completed_task_instance_count": 193,
+    "completed_task_instance_count": 201,
     "id": 6239808655458304,
     "winners": {},
     "mailing_list": "http://mifos.org/resources/community/communications/#mailing-lists",
@@ -2024,6 +1934,99 @@
       "pl": "https://pl.wikipedia.org/wiki/Mifos"
     },
     "wikidata_url": "//www.wikidata.org/wiki/Q3347450"
+  },
+  {
+    "primary_open_source_license": "GNU Affero General Public License v3 (AGPL-3.0)",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Alejandro Heredia",
+        "id": 5243643889713152
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Andreas Lukita",
+        "id": 4692396648431616
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Chandra Chou",
+        "id": 6189747405848576
+      },
+      {
+        "program_year": 2017,
+        "display_name": "headhunter",
+        "id": 5126869030535168
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Mateusz Komajda",
+        "id": 4979968129892352
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Nikita Kotenev",
+        "id": 6003849812770816
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Sarthak Agrawal",
+        "id": 5394417575788544
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Siddh Jain",
+        "id": 6267827092717568
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Yudhistira G.S.",
+        "id": 4611923993690112
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Łukasz Ameljan",
+        "id": 5096542534893568
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": "https://plus.google.com/communities/116816272940643231129",
+    "programming_languages": [
+      "visual programming language (catrobat)"
+    ],
+    "guide_to_working_url": "http://catrob.at/cgcicti",
+    "completed_task_instance_count": 200,
+    "id": 5135243763777536,
+    "winners": {},
+    "mailing_list": "http://catrob.at/PocketCodeUserForum",
+    "website_url": "https://www.catrobat.org/",
+    "status": 2,
+    "program_year": 2017,
+    "description": "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!",
+    "tags": [
+      "mobile",
+      "games",
+      "visual programming",
+      "apps",
+      "animations"
+    ],
+    "twitter_url": "http://twitter.com/Pocket_Code",
+    "contact_email": "user_forum@catrobat.org",
+    "irc_channel": null,
+    "slug": "catrobat",
+    "preferred_contact_method": null,
+    "guide_to_working": "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions.",
+    "name": "Catrobat",
+    "precis": "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!",
+    "image_url": "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE",
+    "blog_url": null,
+    "github": "Catrobat",
+    "chat": {
+      "url": null
+    },
+    "wikipedia_urls": null,
+    "wikidata_url": "//www.wikidata.org/wiki/Q45341807"
   },
   {
     "primary_open_source_license": "Mozilla Public License 2.0 (MPL-2.0)",
@@ -2257,7 +2260,7 @@
       "android"
     ],
     "guide_to_working_url": "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn",
-    "completed_task_instance_count": 150,
+    "completed_task_instance_count": 153,
     "id": 6299430183501824,
     "winners": {},
     "mailing_list": "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss",
@@ -2335,7 +2338,7 @@
       "javascript"
     ],
     "guide_to_working_url": "https://gitlab.com/librehealth/gci/wikis/",
-    "completed_task_instance_count": 147,
+    "completed_task_instance_count": 152,
     "id": 5165875202097152,
     "winners": {},
     "mailing_list": "https://forums.librehealth.io/gci",
@@ -2402,7 +2405,7 @@
       "javascript"
     ],
     "guide_to_working_url": "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students",
-    "completed_task_instance_count": 140,
+    "completed_task_instance_count": 142,
     "id": 5139786496999424,
     "winners": {},
     "mailing_list": "http://www.osgeo.org/content/faq/mailing_lists.html",
@@ -2493,7 +2496,7 @@
       "symfony"
     ],
     "guide_to_working_url": "https://www.drupal.org/node/984014",
-    "completed_task_instance_count": 113,
+    "completed_task_instance_count": 115,
     "id": 5636094664114176,
     "winners": {},
     "mailing_list": "https://drupal.org/mailing-lists",
@@ -2635,7 +2638,7 @@
       "java"
     ],
     "guide_to_working_url": "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html",
-    "completed_task_instance_count": 107,
+    "completed_task_instance_count": 110,
     "id": 5067404587565056,
     "winners": {},
     "mailing_list": "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html",
@@ -2743,8 +2746,20 @@
       },
       {
         "program_year": 2017,
+        "display_name": "Grzegorz Stark",
+        "id": 4640744230879232,
+        "github_updated": 1513702930342
+      },
+      {
+        "program_year": 2017,
         "display_name": "JJJPPP",
         "id": 5210939794128896
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Ryan A. Chi",
+        "id": 6673079872782336,
+        "github_updated": 1513702930863
       }
     ],
     "accepted_org_tos": true,
@@ -2758,7 +2773,7 @@
       "bash"
     ],
     "guide_to_working_url": "http://wiki.apertium.org/wiki/Task_ideas_for_Google_Code-in/Getting_started",
-    "completed_task_instance_count": 49,
+    "completed_task_instance_count": 51,
     "id": 6541403171586048,
     "winners": {},
     "mailing_list": "http://wiki.apertium.org/wiki/Contact",
