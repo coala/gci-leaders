@@ -48,3 +48,10 @@ export function timeDifferenceFuture(current, previous) {
     return $.i18n('years', Math.round(elapsed / msPerYear))
   }
 }
+
+export const getNodesDeep = (obj, depth) => {
+  let result = obj
+
+  for (let i = 0; i < depth; i++) result = result.parentNode
+  return result
+}
