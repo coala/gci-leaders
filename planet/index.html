@@ -11,17 +11,664 @@
       <hr />
     </div>
     <div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;TheExtractor?language&#x3D;en><h1>Profile of Himanshu Kumar</h1></a>
+      <h5>2017-12-20T16:31:23.000Z</h5>
+      <i class="author">Himanshu Kumar</i>
+      <div class="content">
+        Version 5.1 edited by Himanshu Kumar on Wed Dec 20 17:31:23 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;oslandia.com&#x2F;en&#x2F;2017&#x2F;12&#x2F;20&#x2F;qgis-3-compiling-on-windows&#x2F;><h1>QGIS 3 compiling on Windows</h1></a>
+      <h5>2017-12-20T16:09:34.000Z</h5>
+      <i class="author">Paul Blottière</i>
+      <div class="content">
+        [object Object]
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2017&#x2F;12&#x2F;20&#x2F;early-experiences-with-pxe-net-boot-of-kvm-vms-on-ubuntu-for-s390x&#x2F;><h1>Early experiences with PXE (net-)boot of KVM VMs on Ubuntu for s390x</h1></a>
+      <h5>2017-12-20T15:32:50.000Z</h5>
+      <i class="author">Canonical</i>
+      <div class="content">
+        <p><em>This article originally appeared on the <a href="http://ubuntu-on-big-iron.blogspot.com/2017/12/pxe-netboot-kvm-s390x.html">Ubuntu On Big Iron blog</a></em></p>
+<p>This article mainly assumes that an Ubuntu Server 17.10 (artful) is installed in LPAR.</p>
+<p>Ubuntu 17.10 comes with a qemu-kvm version that is new enough to act as a KVM host that also allows to PXE netboot KVM virtual machines.</p>
+<p>Any potentially different or additional steps for Ubuntu Server 16.04(.x) are marked in <em>italics</em>.</p>
+<p>PXE boot will only work on Ubuntu 16.04 if the qemu-kvm package from the Pike Ubuntu Cloud Archive (UCA) is used.</p>
+<h2>Prepare virtualization packages</h2>
+<p><em>Note:<br />
+On Ubuntu 16.04.x qemu-kvm from the Pike Ubuntu Cloud Archive (UCA) need to be installed.<br />
+The Pike Cloud Archive can be enabled like this:</p>
+<pre>
+$ sudo add-apt-repository cloud-archive:pike
+$ sudo apt update
+</pre>
+<p></em></p>
+<p>On Ubuntu 17.10 (or higher) just install the default qemu-kvm and related packages with:</p>
+<p><code>$ sudo apt install -qq -y libvirt-daemon-system qemu-kvm</code></p>
+<p>The just installed packages modify the underlying environment, hence it&#8217;s recommended to quickly logout and login again to make the changes take effect.</p>
+<h2>Prepare s390 netboot ROM</h2>
+<pre>
+$ sudo apt -y -qq install ubuntu-dev-tools
+
+$ pull-lp-source qemu artful
+pull-lp-source: Downloading qemu version 1:2.10+dfsg-0ubuntu3.1
+...
+
+$ sudo cp qemu-2.10+dfsg/pc-bios/s390-netboot.img /usr/share/qemu/
+</pre>
+<h2>Prepare a tftp server</h2>
+<p>Now a tftp server is needed for PXE netboot, so let&#8217;s install and configure tftp:</p>
+<pre>
+$ sudo apt -y -qq install tftpd xinetd tftp
+...
+$ cat << EOF | sudo tee /etc/xinetd.d/tftp
+service tftp
+{
+ protocol        = udp
+ port            = 69
+ socket_type     = dgram
+ wait            = yes
+ user            = nobody
+ server          = /usr/sbin/in.tftpd
+ server_args     = /srv/tftp
+ disable         = no
+}
+EOF
+</pre>
+<p>Create the tftp folder, copy over the pxelinux.0 file, adjust the folder options and (re-)start the service:</p>
+<pre>
+$ sudo mkdir -p /srv/tftp
+$ sudo chmod -R 777 /srv/tftp
+$ sudo chown -R nobody: /srv/tftp
+$ sudo systemctl restart xinetd
+</pre>
+<p>By now you should be able to check if tftp is listening to your local port 69 on the default libvirt networks IP of your host:</p>
+<pre>
+$ nc -uvz 192.168.122.1 69
+Connection to 10.245.236.13 69 port [udp/tftp] succeeded!
+</pre>
+<h2>Prepare libvirt network to provide PXE</h2>
+<p>
+Since we have slightly different network needs, we will modify the default network a bit,<br />
+which was created for you on install. In this step we add the lines in <strong>bold</strong>:</p>
+<p>It's not too bad to do a quick backup of the virtual network configuration at the beginning:</p>
+<p><code>$ virsh net-dumpxml default > net-default.xml</code></p>
+<p>Now do the needed tftp and bootp modifications: </p>
+<pre>
+$ virsh net-edit default
+&lt;network&gt;
+ &lt;name&gt;default&lt;/name&gt;
+ &lt;uuid&gt;cfa3d2de-4c67-4f8f-91eb-69502e59e64d&lt;/uuid&gt;
+ &lt;forward mode='nat'/&gt;
+ &lt;bridge name='virbr0' stp='on' delay='0'/&gt;
+ &lt;mac address='52:54:00:08:6f:33'/&gt;
+ &lt;ip address='192.168.122.1' netmask='255.255.255.0'&gt;
+ &lt;strong&gt;&lt;tftp root='/srv/tftp'/&gt;&lt;/strong&gt;
+  &lt;dhcp&gt;
+   &lt;range start='192.168.122.2' end='192.168.122.254'/&gt;
+   &lt;strong&gt;&lt;bootp file='pxelinux.0' server='192.168.122.1'/&gt;&lt;/strong&gt;
+  &lt;/dhcp&gt;
+ &lt;/ip&gt;
+&lt;/network&gt;
+&lt;/pre&gt;
+</pre>
+<p>And restart the virtual network again:</p>
+<pre>
+$ virsh net-destroy default
+Network default destroyed
+
+$ virsh net-start default
+Network default started
+</pre>
+<h2>Prepare netboot image</h2>
+<p>Before we can perform a PXE netboot, a 'pxelinux.0' netboot image is needed.<br />
+We will now create a pxelinux.0 file that is based on the Ubuntu 16.04.3 (xenial) installer.</p>
+<p>Now, download the latest xenial installer files (kernel and initrd):</p>
+<pre>
+$ wget --quiet http://ports.ubuntu.com/ubuntu-ports/dists/xenial-updates/main/installer-s390x/current/images/generic/kernel.ubuntu http://ports.ubuntu.com/ubuntu-ports/dists/xenial-updates/main/installer-s390x/current/images/generic/initrd.ubuntu
+</pre>
+<p>And create a pxelinux.0 file out of these kernel and initrd installer files:For the PXE image creation a separate tool is needed from the s390-tools collection:</p>
+<pre>
+$ git clone --quiet https://github.com/ibm-s390-tools/s390-tools.git
+...
+$ ./s390-tools/netboot/mk-s390image kernel.ubuntu -r initrd.ubuntu pxelinux.0
+$ ll pxelinux.0
+-rw-rw-r-- 1 ubuntu ubuntu 15346314 Dec  5 05:12 pxelinux.0
+$ sudo cp pxelinux.0 /srv/tftp
+$ sudo chmod -R 777 /srv/tftp
+$ sudo chown -R nobody: /srv/tftp
+</pre>
+<p>It's now time for a little download test:</p>
+<pre>
+$ cd /tmp/
+
+$ echo 'get pxelinux.0' | tftp 192.168.122.1
+
+tftp> Received 15453177 bytes in 0.3 seconds
+ $ cd -
+</pre>
+<h2>Prepare guest definition</h2>
+<p>Now proceed with the creation of a KVM virtual machine definition for the PXE netboot VM:</p>
+<pre>
+$ cat &lt;&lt; EOF &gt; netboot.xml
+&lt;domain type='kvm'&gt;
+ &lt;name&gt;netboot&lt;/name&gt;
+ &lt;memory unit='KiB'&gt;2097152&lt;/memory&gt;
+ &lt;vcpu placement='static'&gt;1&lt;/vcpu&gt;
+ &lt;os&gt;
+  &lt;type arch='s390x' machine='s390-ccw-virtio-xenial'&gt;hvm&lt;/type&gt;
+  &lt;boot dev='network'/&gt;
+ &lt;/os&gt;
+&lt;devices&gt;
+ &lt;emulator&gt;/usr/bin/kvm&lt;/emulator&gt;
+ &lt;disk type='file' device='disk'&gt;
+  &lt;driver name='qemu' type='qcow2'/&gt;
+  &lt;source file='/var/lib/libvirt/images/netboot.qcow2'/&gt;
+  &lt;target dev='vda' bus='virtio'/&gt;
+ &lt;/disk&gt;
+ &lt;interface type='network'&gt;
+  &lt;source network='default'/&gt;
+  &lt;model type='virtio'/&gt;
+ &lt;/interface&gt;
+ &lt;console type='pty'&gt;
+ &lt;target type='sclp' port='0'/&gt;
+  &lt;/console&gt;
+ &lt;/devices&gt;
+&lt;/domain&gt;
+EOF
+</pre>
+<p>Let's also quickly create a virtual disk that is already part of the VM definition above:</p>
+<pre>
+$ sudo qemu-img create -f qcow2 /var/lib/libvirt/images/netboot.qcow2 5G
+Formatting '/var/lib/libvirt/images/netboot.qcow2', fmt=qcow2 size=5368709120 cluster_size=65536 lazy_refcounts=off refcount_bits=16
+</pre>
+<p>And now define the virtual machine named 'netboot':</p>
+<pre>
+$ virsh define netboot.xml 
+Domain netboot defined from netboot.xml
+</pre>
+<p>Finally start the netboot guest to prove that PXE netboot is generally working:</p>
+<pre>
+$ virsh start netboot --console
+Domain netboot started
+Connected to domain netboot
+Escape character is ^]
+  Using MAC address: 52:54:00:fa:01:01
+                                        Requesting information via DHCP: done
+                                                                               Using IPv4 address: 192.168.122.217
+                                    Requesting file "pxelinux.0" via TFTP from 192.168.122.1
+              Receiving data:  14986 KBytes
+                                             TFTP: Received pxelinux.0 (14986 KBytes)
+     Network loading done, starting kernel...
+                                             [    0.395926] Initializing cgroup subsys cpuset
+[    0.395929] Initializing cgroup subsys cpu
+[    0.395930] Initializing cgroup subsys cpuacct
+[    0.395933] Linux version 4.4.0-96-generic (buildd@z13-009) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) #119-Ubuntu SMP Tue Sep 12 14:59:56 UTC 2017 (Ubuntu 4.4.0-96.119-generic 4.4.83)
+[    0.395937] setup: Linux is running under KVM in 64-bit mode
+...
+[    0.659971] AppArmor: AppArmor sha1 policy hashing enabled
+[    0.659975] ima: No TPM chip found, activating TPM-bypass!
+
+  ┌──────────────────┤ [!!] Configure the network device ├──────────────────┐
+  │                                                                         │
+  │ Please choose the type of your primary network interface that you       │
+  │ will need for installing the Debian system (via NFS or HTTP). Only      │
+  │ the listed devices are supported.                                       │
+  │                                                                         │
+  │ Network device type:                                                    │
+  │                                                                         │
+  │  ctc: Channel to Channel (CTC) or ESCON connection                      │
+  │  qeth: OSA-Express in QDIO mode / HiperSockets                          │
+  │  iucv: Inter-User Communication Vehicle - available for VM guests       │
+  │  virtio: KVM VirtIO                                                     │
+  │                                                                         │
+  │     <Go Back>                                                           │
+  │                                                                         │
+  └─────────────────────────────────────────────────────────────────────────┘
+
+</pre>
+<p>For now let's leave the VM's console via Ctrl+]</p>
+<p><code>$</code></p>
+<h2>The same again but with Preseeds</h2>
+<h3>Prepare preseed</h3>
+<p>Okay, this first virtual machine was able to netboot into the default installer - but that's just the first step.<br />
+The second step is to combine this with a non-interactive preseed installation.</p>
+<p>To do so download an example pressed file (like <a href="https://wiki.ubuntu.com/S390X/InstallationGuide/AutomatedInstallsWithPreseed?action=AttachFile&#038;do=get&#038;target=preseed_kvm.cfg">this</a> - rename it to 'preseed.cfg') and store it locally in the tftp directory:</p>
+<pre>$ wget --quiet "https://wiki.ubuntu.com/S390X/InstallationGuide/AutomatedInstallsWithPreseed?action=AttachFile&do=get&target=preseed_kvm.cfg" -O /srv/tftp/preseed.cfg</pre>
+<p>Do another quick check if preseed.cfg is reachable via tftp:</p>
+<pre>
+$ cd /tmp
+/tmp$ echo 'get preseed.cfg' | tftp 192.168.122.1
+tftp> Received 699 bytes in 0.0 seconds
+$ cd -
+</pre>
+<h2>Prepare pxe config to map to preseed config</h2>
+<p>A pxelinux.cfg/default configuration file need to be created as well - just to be able to pass over the kernel parameters for preseed installation.</p>
+<pre>
+$ sudo mkdir -p /srv/tftp/pxelinux.cfg
+$ cat << EOF | sudo tee /srv/tftp/pxelinux.cfg/default
+kernel kernel.ubuntu 
+initrd initrd.ubuntu
+append auto=true priority=critical url=tftp://192.168.122.1/preseed.cfg s390-netdevice/choose_networktype=virtio netcfg/disable_dhcp=false netcfg/get_hostname=netboot-preseed netcfg/get_domain=mydomain.com network-console/password=pass4inst network-console/start=true
+EOF
+</pre>
+<p>Now some additional tools/packages are needed to generate a general pxelinux.0 file: </p>
+<pre>
+$ sudo apt install -y -qq kexec-tools gcc make
+$ cd s390-tools/netboot
+$ make -f Makefile.pxelinux.0
+$ mv /srv/tftp/pxelinux.0 /srv/tftp/pxelinux.0.installer
+$ ./s390-tools/netboot/mk-s390image ./kernel.ubuntu pxelinux.0
+</pre>
+<p>Now we make all this available to PXE boot:</p>
+<p>- the new pxelinux.0 that will read the initial config</p>
+<p>- the kernel and initrd to be loaded from there and to kexec into</p>
+<pre>
+$ cp pxelinux.0 /srv/tftp/pxelinux.0
+ $ cd -
+$ cp initrd.ubuntu /srv/tftp/
+$ cp kernel.ubuntu /srv/tftp/
+$ sudo chmod -R 777 /srv/tftp
+$ sudo chown -R nobody: /srv/tftp
+</pre>
+<h2>Create second VM</h2>
+<p>Now define a second guest named 'netboot-preseed' for the PXE netboot initiated non-interactive preseed installation on KVM s390x.<br />
+It will be done based on the previous example, hence we only need to adjust some names:</p>
+<p><code>$ sed -e 's/netboot/netboot-preseed/g' netboot.xml > netboot-preseed.xml</code></p>
+<p>Again create the virtual disk - in this case really needed, because the installation should complete:</p>
+<pre>$ sudo qemu-img create -f qcow2 /var/lib/libvirt/images/netboot-preseed.qcow2 5G</pre>
+<p>Now define that second VM:</p>
+<pre>
+$ virsh define netboot-preseed.xml
+Domain netboot-preseed defined from netboot-preseed.xml
+</pre>
+<p>Now start this second VM:</p>
+<pre>
+$ virsh start netboot-preseed --console
+Domain netboot-preseed started
+Connected to domain netboot-preseed
+Escape character is ^]
+  Using MAC address: 52:54:00:fa:4d:4d
+                              Requesting information via DHCP:  010
+...
+                              Requesting information via DHCP: done
+                                                                               Using IPv4 address: 192.168.122.213
+                                    Requesting file "pxelinux.0" via TFTP from 192.168.122.1
+              Receiving data:  14986 KBytes
+                                             TFTP: Received pxelinux.0 (14986 KBytes)
+     Network loading done, starting kernel...
+                                             [    0.394899] Initializing cgroup subsys cpuset
+[    0.394902] Initializing cgroup subsys cpu
+[    0.394903] Initializing cgroup subsys cpuacct
+[    0.394907] Linux version 4.4.0-96-generic (buildd@z13-009) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) #119-Ubuntu SMP Tue Sep 12 14:59:56 UTC 2017 (Ubuntu 4.4.0-96.119-generic 4.4.83)
+[    0.394912] setup: Linux is running under KVM in 64-bit mode
+
+...
+can't open /dev/tty3: No such device or address
+can't open /dev/tty2: No such device or address
+can't open /dev/tty4: No such device or address  <strong>⇐ just ignore these lines !</strong>
+...
+ Finishing the installation 
+  │                                   95%                                   │
+The system is going down NOW!
+Sent SIGTERM to all processes device or address
+Sent SIGKILL to all processes device or 
+$
+</pre>
+<p>The above was the post install shutdown, last task is to adjust the boot order (to not install again):</p>
+<pre>$ virsh edit netboot</pre>
+<p>and change:</p>
+<pre>    &lt;boot dev='network'/&gt;</pre>
+<p>to:</p>
+<pre>    &lt;boot dev='hd'/&gt;</pre>
+<p>and to restart - this time from disk:</p>
+<p>No do a final restart of the VM and have fun:</p>
+<pre>
+$ virsh start netboot-preseed --console
+[...]
+netboot-preseed login: _ 
+</pre>
+<p>At this stage two KVM virtual machine are in use. The first one ('netboot') was netboot-ed and landed in a regular interactive d-i installation; the second ('netboot-preseed') was again net-booted, but then performed a non-interactive d-i preseed installation.</p>
+<h3>References:</h3>
+<ul>
+<li><a href="https://github.com/ibm-s390-tools/s390-tools/tree/master/netboot">https://github.com/ibm-s390-tools/s390-tools/tree/master/netboot</a> </li>
+<li><a href="http://www.syslinux.org/wiki/index.php?title=PXELINUX">http://www.syslinux.org/wiki/index.php?title=PXELINUX</a> </li>
+<li><a href="https://help.ubuntu.com/community/Installation/QuickNetboot">https://help.ubuntu.com/community/Installation/QuickNetboot</a> </li>
+<li><a href="https://wiki.qemu.org/Features/S390xNetworkBoot">https://wiki.qemu.org/Features/S390xNetworkBoot</a></li>
+</ul>
+
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;ShivanshSharma?language&#x3D;en><h1>Profile of shivansh sharma</h1></a>
+      <h5>2017-12-20T15:09:40.000Z</h5>
+      <i class="author">shivansh sharma</i>
+      <div class="content">
+        Version 3.1 edited by shivansh sharma on Wed Dec 20 16:09:40 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;Dhanush_Muralidharan?language&#x3D;en><h1>Profile of Dhanush Muralidharan</h1></a>
+      <h5>2017-12-20T15:03:04.000Z</h5>
+      <i class="author">Dhanush Muralidharan</i>
+      <div class="content">
+        Version 5.1 edited by Dhanush Muralidharan on Wed Dec 20 16:03:04 CET 2017
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2017&#x2F;12&#x2F;20&#x2F;canonical-welcome-spotify-as-a-snap-for-linux-users&#x2F;><h1>Canonical welcome Spotify as a snap for Linux users</h1></a>
+      <h5>2017-12-20T14:58:45.000Z</h5>
+      <i class="author">Canonical</i>
+      <div class="content">
+        <p style="text-align: center;"><img class="aligncenter size-full wp-image-82417" src="https://insights.ubuntu.com/wp-content/uploads/660e/Screenshot_from_2017-12-18_12-18-27.png" alt="" width="1399" height="787" /><br />
+<i><span style="font-weight: 300;">Universal Linux app packaging format enables Linux users to install the popular music streaming service with a simple click and install</span></i></p>
+<p><b>London, UK – December 20th</b><b>, 2017 – </b><a href="https://www.canonical.com/">Canonical</a><span style="font-weight: 300;">, the company behind <a href="https://www.ubuntu.com/">Ubuntu</a>,</span><span style="font-weight: 300;"> is happy to announce that <a href="https://www.spotify.com/uk/">Spotify</a>, </span><span style="font-weight: 300;">the world’s leading music streaming service, is now available as a snap, the universal Linux app packaging format. </span></p>
+<p><span style="font-weight: 300;">By launching as a snap, it enables users to enjoy Spotify natively on all Linux distributions that support snaps including Linux Mint, Manjaro, Debian, OpenSUSE, Solus as well as Ubuntu. </span></p>
+<p><span style="font-weight: 300;">“In launching their own snap, Spotify has ensured that their users in the Linux ecosystem are now able to enjoy the latest version of their leading music streaming application as soon as it’s released regardless of which distribution they are using,” said Jamie Bennett, VP of Engineering, Devices &amp; IoT at Canonical. “We’re glad to welcome Spotify to the snaps ecosystem and look forward to unveiling more leading snaps in 2018.”</span></p>
+<p><span style="font-weight: 300;"><a href="https://snapcraft.io/">Snaps</a> are containerised software packages designed to work perfectly and securely in any Linux environment. As well as supporting all major Linux systems from a single build, snaps can be also updated or rolled back automatically to ensure that users are always benefiting from the latest version of the application. Since their launch last year, close to 2,500 snaps have been released by developers as they adopt the format for its reliability and security. </span></p>
+<p><span style="font-weight: 300;">Spotify is available to download as a snap by clicking <a href="https://snapcraft.io/spotify/">here</a>. </span></p>
+<p><b>About Canonical</b><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 300;">Canonical is the company behind Ubuntu, the leading OS for cloud operations. Most public cloud workloads use Ubuntu, as do most new smart gateways, switches, self-driving cars and advanced robots. Canonical provides enterprise support and services for commercial users of Ubuntu. Established in 2004, Canonical is a privately held company.</span></p>
+
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;DhanushMuralidharan?language&#x3D;en><h1>Profile of Dhanush Muralidharan</h1></a>
+      <h5>2017-12-20T14:55:27.000Z</h5>
+      <i class="author">Dhanush Muralidharan</i>
+      <div class="content">
+        Version 1.3 edited by Dhanush Muralidharan on Wed Dec 20 15:55:27 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;dhanushmuralidharan?language&#x3D;><h1>dhanushmuralidharan</h1></a>
+      <h5>2017-12-20T14:52:09.000Z</h5>
+      <i class="author">XWikiGuest</i>
+      <div class="content">
+        Version 2.1 edited by XWikiGuest on Wed Dec 20 15:52:09 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;battech1706?language&#x3D;en><h1>Profile of Vedant Vaghela</h1></a>
+      <h5>2017-12-20T14:25:17.000Z</h5>
+      <i class="author">Vedant Vaghela</i>
+      <div class="content">
+        Version 4.1 edited by Vedant Vaghela on Wed Dec 20 15:25:17 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;VinhTran?language&#x3D;en><h1>Profile of Vinh Tran</h1></a>
+      <h5>2017-12-20T14:14:18.000Z</h5>
+      <i class="author">Vinh Tran</i>
+      <div class="content">
+        Version 4.1 edited by Vinh Tran on Wed Dec 20 15:14:18 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;FAQ&#x2F;DumpXDOM?language&#x3D;en><h1>How to dump an XDOM structure to text?</h1></a>
+      <h5>2017-12-20T14:10:32.000Z</h5>
+      <i class="author">Vincent Massol</i>
+      <div class="content">
+        Version 6.1 edited by Vincent Massol on Wed Dec 20 15:10:32 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;Documentation&#x2F;AdminGuide&#x2F;Installation&#x2F;InstallationViaAPT&#x2F;?language&#x3D;en><h1>Installation using Debian (.DEB) packages</h1></a>
+      <h5>2017-12-20T13:55:19.000Z</h5>
+      <i class="author">Vincent Massol</i>
+      <div class="content">
+        Version 122.1 edited by Thomas Mortagne on Wed Dec 20 14:55:19 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;seizedeagle3108?language&#x3D;en><h1>Profile of SaiSamarth &amp;nbsp;Taluri</h1></a>
+      <h5>2017-12-20T13:50:28.000Z</h5>
+      <i class="author">SaiSamarth Taluri</i>
+      <div class="content">
+        Version 4.2 edited by SaiSamarth Taluri on Wed Dec 20 14:50:28 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;RohanHarolikar?language&#x3D;en><h1>Profile of Rohan Harolikar</h1></a>
+      <h5>2017-12-20T13:49:48.000Z</h5>
+      <i class="author">Rohan Harolikar</i>
+      <div class="content">
+        Version 4.1 edited by Rohan Harolikar on Wed Dec 20 14:49:48 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;saisamarth3108?language&#x3D;en><h1>Profile of SaiSamarth &amp;nbsp;Taluri</h1></a>
+      <h5>2017-12-20T13:46:22.000Z</h5>
+      <i class="author">SaiSamarth Taluri</i>
+      <div class="content">
+        Version 1.3 edited by SaiSamarth Taluri on Wed Dec 20 14:46:22 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;saisamarth?language&#x3D;en><h1>Profile of SaiSamarth &amp;nbsp;Taluri</h1></a>
+      <h5>2017-12-20T13:45:54.000Z</h5>
+      <i class="author">SaiSamarth Taluri</i>
+      <div class="content">
+        Version 1.3 edited by SaiSamarth Taluri on Wed Dec 20 14:45:54 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;VineethRaghavan?language&#x3D;en><h1>Profile of Vineeth Raghavan</h1></a>
+      <h5>2017-12-20T13:42:18.000Z</h5>
+      <i class="author">Vineeth Raghavan</i>
+      <div class="content">
+        Version 4.1 edited by Vineeth Raghavan on Wed Dec 20 14:42:18 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;rsihieee?language&#x3D;en><h1>Profile of rsihieee</h1></a>
+      <h5>2017-12-20T12:22:28.000Z</h5>
+      <i class="author">rsihieee</i>
+      <div class="content">
+        Version 3.1 edited by rsihieee on Wed Dec 20 13:22:28 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;TestReports&#x2F;ManualTestReportXWiki9110&#x2F;?language&#x3D;en><h1>Manual Test Report for XWiki 9.11</h1></a>
+      <h5>2017-12-20T12:12:41.000Z</h5>
+      <i class="author">Ilie Andriuta</i>
+      <div class="content">
+        Version 105.1 edited by Ilie Andriuta on Wed Dec 20 13:12:41 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;TestReports&#x2F;ManualTestReportSummaryXWiki9110&#x2F;?language&#x3D;en><h1>Manual Test Report Summary XWiki 9.11</h1></a>
+      <h5>2017-12-20T12:11:55.000Z</h5>
+      <i class="author">Ilie Andriuta</i>
+      <div class="content">
+        Version 77.1 edited by Ilie Andriuta on Wed Dec 20 13:11:55 CET 2017
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2017&#x2F;12&#x2F;20&#x2F;top-snaps-in-november&#x2F;><h1>Top snaps in November: blockchain, IDEs and games</h1></a>
+      <h5>2017-12-20T11:57:51.000Z</h5>
+      <i class="author">David Callé</i>
+      <div class="content">
+        <p><img class="alignnone size-full wp-image-82411" src="https://insights.ubuntu.com/wp-content/uploads/e219/top-snaps-december-2017-copy-2-1.png" alt="" width="1920" height="1080" /></p>
+<p>The past month has been exciting in the snap world, between getting ready to welcome our Google Code-in students, improving the developer dashboard and starting to land, piece by piece, <a href="https://snapcraft.io/discover/">the new store frontend</a>, it&#8217;s time we take a small break to appreciate some new releases.</p>
+<p>Featuring IDEs for Go and PHP, production grade film and animation software, fast-paced games, blockchain management and tracking utilities, here is our monthly curated list of snaps:</p>
+<div style="padding-bottom: 10px;">
+<table style="margin-bottom: 0px; overflow: auto;">
+<tbody>
+<tr>
+<td style="background: transparent; border: 0; padding-left: 0px;" width="100px"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2017/12/xd.png" /></td>
+<td style="align: left; text-align: left; background: transparent; border: 0px;">
+<h3 style="margin-bottom: 0px;">1. <a class="external" href="https://snapcraft.io/cryptowatch/">Cryptowatch</a></h3>
+<p>Marcin Mikołajczak</td>
+</tr>
+</tbody>
+</table>
+<p>Monitor cryptocurrency prices and account balances for Bitcoin, Ethereum, and Litecoin. Using either the terminal or a Raspberry Pi LCD.</p>
+<ul>
+<li>Install Cryptowatch <a href="snap://cryptowatch">from the Software Center</a>.</li>
+<li>or from the command-line:
+<pre><code>sudo snap install cryptowatch</code></pre>
+</li>
+</ul>
+</div>
+<div style="padding-bottom: 10px;">
+<table style="margin-bottom: 0px; overflow: auto;">
+<tbody>
+<tr>
+<td style="background: transparent; border: 0; padding-left: 0px;" width="100px"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2017/12/boa.png" /></td>
+<td style="align: left; text-align: left; background: transparent; border: 0px;">
+<h3 style="margin-bottom: 0px;">2. <a class="external" href="https://snapcraft.io/boa/">WolfenDoom: Blade of Agony</a></h3>
+<p>Neil McPhail</td>
+</tr>
+</tbody>
+</table>
+<p>WolfenDoom: Blade of Agony Blade of Agony is a story-driven FPS. The project is inspired by WWII shooters from the 90&#8217;s and early 2000&#8217;s, like Wolfenstein 3D, Medal of Honor, and Call of Duty, but with faster-paced gameplay in the spirit of Doom!</p>
+<ul>
+<li>Install WolfenDoom: Blade of Agony <a href="snap://boa">from the Software Center</a>.</li>
+<li>or from the command-line:
+<pre><code>sudo snap install boa</code></pre>
+</li>
+</ul>
+</div>
+<div style="padding-bottom: 10px;">
+<table style="margin-bottom: 0px; overflow: auto;">
+<tbody>
+<tr>
+<td style="background: transparent; border: 0; padding-left: 0px;" width="100px"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2017/11/webide.ico_HA9tBL0.png" /></td>
+<td style="align: left; text-align: left; background: transparent; border: 0px;">
+<h3 style="margin-bottom: 0px;">3. <a class="external" href="https://snapcraft.io/phpstorm/">PhpStorm</a></h3>
+<p>JetBrains</td>
+</tr>
+</tbody>
+</table>
+<p>PhpStorm is a PHP IDE that actually &#8220;gets&#8221; your code. It supports PHP 5.3- 7.2, provides on-the-fly error prevention, powerful auto-completion &amp; code refactoring, zero configuration debugging, and an extended HTML, CSS, and JavaScript editor.</p>
+<ul>
+<li>Install PhpStorm <a href="snap://phpstorm">from the Software Center</a>.</li>
+<li>or from the command-line:
+<pre><code>sudo snap install phpstorm --classic</code></pre>
+</li>
+</ul>
+</div>
+<div style="padding-bottom: 10px;">
+<table style="margin-bottom: 0px; overflow: auto;">
+<tbody>
+<tr>
+<td style="background: transparent; border: 0; padding-left: 0px;" width="100px"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2017/11/WebStorm_1282x.png" /></td>
+<td style="align: left; text-align: left; background: transparent; border: 0px;">
+<h3 style="margin-bottom: 0px;">4. <a class="external" href="https://snapcraft.io/webstorm/">WebStorm</a></h3>
+<p>JetBrains</td>
+</tr>
+</tbody>
+</table>
+<p>WebStorm is a powerful commercial IDE for modern JavaScript development. Whether you are using JavaScript or TypeScript, Angular, React or Vue.js, WebStorm provides you with the best code completion, navigation, refactoring tools and on-the-fly code analysis. You can run, debug and test your web, Node.js, React Native and Electron apps right in the IDE. Tools such as linters, task runner and version control are seamlessly integrated and available out of the box.</p>
+<ul>
+<li>Install WebStorm <a href="snap://webstorm">from the Software Center</a>.</li>
+<li>or from the command-line:
+<pre><code>sudo snap install webstorm --classic</code></pre>
+</li>
+</ul>
+</div>
+<div style="padding-bottom: 10px;">
+<table style="margin-bottom: 0px; overflow: auto;">
+<tbody>
+<tr>
+<td style="background: transparent; border: 0; padding-left: 0px;" width="100px"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2017/11/go_1282x.png" /></td>
+<td style="align: left; text-align: left; background: transparent; border: 0px;">
+<h3 style="margin-bottom: 0px;">5. <a class="external" href="https://snapcraft.io/goland/">GoLand</a></h3>
+<p>JetBrains</td>
+</tr>
+</tbody>
+</table>
+<p>GoLand is a commercial IDE by JetBrains aimed at providing an ergonomic environment for Go development. GoLand extends the IntelliJ platform with the coding assistance and tool integrations specific for the Go language.</p>
+<ul>
+<li>Install GoLand <a href="snap://goland">from the Software Center</a>.</li>
+<li>or from the command-line:
+<pre><code>sudo snap install goland --classic</code></pre>
+</li>
+</ul>
+</div>
+<div style="padding-bottom: 10px;">
+<table style="margin-bottom: 0px; overflow: auto;">
+<tbody>
+<tr>
+<td style="background: transparent; border: 0; padding-left: 0px;" width="100px"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2017/11/mars-256_etORXwv.png" /></td>
+<td style="align: left; text-align: left; background: transparent; border: 0px;">
+<h3 style="margin-bottom: 0px;">6. <a class="external" href="https://snapcraft.io/marsshooter/">M.A.R.S. &#8211; a ridiculous shooter</a></h3>
+<p>Bowl Hat</td>
+</tr>
+</tbody>
+</table>
+<p>M.A.R.S. &#8211; a ridiculous shooter is a 2D space shooter with awesome visual effects and attractive physics. Players can battle each other or computer controlled enemies in exciting game modes. The Story: In year 3547, civilizations all over the galaxy have settled their own planets, living in peace and harmony with its environment. But outside the contemplative habitats, the GREAT WAR is raging. As a famous fighter on your way to never ending honour and prosperity, you have to protect your planet from the oncoming doom of your jealous neighbours!</p>
+<ul>
+<li>Install M.A.R.S. &#8211; a ridiculous shooter <a href="snap://marsshooter">from the Software Center</a>.</li>
+<li>or from the command-line:
+<pre><code>sudo snap install marsshooter</code></pre>
+</li>
+</ul>
+</div>
+<div style="padding-bottom: 10px;">
+<table style="margin-bottom: 0px; overflow: auto;">
+<tbody>
+<tr>
+<td style="background: transparent; border: 0; padding-left: 0px;" width="100px"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2017/11/auryo.png" /></td>
+<td style="align: left; text-align: left; background: transparent; border: 0px;">
+<h3 style="margin-bottom: 0px;">7. <a class="external" href="https://snapcraft.io/auryo/">Auryo</a></h3>
+<p>Snapcrafters</td>
+</tr>
+</tbody>
+</table>
+<p>Listen to SoundCloud from the comfort of your desktop and use keyboard shortcuts to navigate through your music within a beautiful user interface.</p>
+<ul>
+<li>Install Auryo <a href="snap://auryo">from the Software Center</a>.</li>
+<li>or from the command-line:
+<pre><code>sudo snap install auryo</code></pre>
+</li>
+</ul>
+</div>
+<div style="padding-bottom: 10px;">
+<table style="margin-bottom: 0px; overflow: auto;">
+<tbody>
+<tr>
+<td style="background: transparent; border: 0; padding-left: 0px;" width="100px"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2017/11/product_256.png" /></td>
+<td style="align: left; text-align: left; background: transparent; border: 0px;">
+<h3 style="margin-bottom: 0px;">8. <a class="external" href="https://snapcraft.io/datagrip/">DataGrip</a></h3>
+<p>JetBrains</td>
+</tr>
+</tbody>
+</table>
+<p>DataGrip is a multi-engine database environment. Supporting MySQL, PostgreSQL, Microsoft SQL Server, Microsoft Azure, Oracle, Amazon Redshift, Sybase, DB2, SQLite, HyperSQL, Apache Derby and H2. If a DBMS has a JDBC driver you can connect to it via DataGrip. For any of the supported engines it provides database introspection and various instruments for creating and modifying objects.</p>
+<ul>
+<li>Install DataGrip <a href="snap://datagrip">from the Software Center</a>.</li>
+<li>or from the command-line:
+<pre><code>sudo snap install datagrip --classic</code></pre>
+</li>
+</ul>
+</div>
+<div style="padding-bottom: 10px;">
+<table style="margin-bottom: 0px; overflow: auto;">
+<tbody>
+<tr>
+<td style="background: transparent; border: 0; padding-left: 0px;" width="100px"><img src="https://assets.ubuntu.com/v1/6fbb3483-snapcraft-default-snap-icon.svg" /></td>
+<td style="align: left; text-align: left; background: transparent; border: 0px;">
+<h3 style="margin-bottom: 0px;">9. <a class="external" href="https://snapcraft.io/vessel/">Vessel</a></h3>
+<p>Aaron Cox</td>
+</tr>
+</tbody>
+</table>
+<p>Vessel is a simple wallet for managing your Steem accounts. Steem is a blockchain-based rewards platform for publishers to monetize content and grow community.</p>
+<ul>
+<li>Install vessel <a href="snap://vessel">from the Software Center</a>.</li>
+<li>or from the command-line:
+<pre><code>sudo snap install vessel</code></pre>
+</li>
+</ul>
+</div>
+<div style="padding-bottom: 10px;">
+<table style="margin-bottom: 0px; overflow: auto;">
+<tbody>
+<tr>
+<td style="background: transparent; border: 0; padding-left: 0px;" width="100px"><img src="https://dashboard.snapcraft.io/site_media/appmedia/2017/11/djv_view.svg.png" /></td>
+<td style="align: left; text-align: left; background: transparent; border: 0px;">
+<h3 style="margin-bottom: 0px;">10. <a class="external" href="https://snapcraft.io/djv/">DJV</a></h3>
+<p>Mattias Wernér</td>
+</tr>
+</tbody>
+</table>
+<p>DJV Imaging provides open source movie playback software for use in film, VFX and computer animation. Key features include: real-time playback of image sequences and movies, support for industry standard file formats including Cineon, DPX, OpenEXR, and QuickTime, command line utilities for batch processing, cross-platform support for Linux, OS X, and Windows.</p>
+<ul>
+<li>Install DJV <a href="snap://djv">from the Software Center</a>.</li>
+<li>or from the command-line:
+<pre><code>sudo snap install djv</code></pre>
+</li>
+</ul>
+</div>
+
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;www.amazeelabs.com&#x2F;en&#x2F;blog&#x2F;zurich-drupal-meetup-january-2018><h1>Amazee Labs: Zurich Drupal Meetup January 2018</h1></a>
+      <h5>2017-12-20T11:49:39.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        <span>Zurich Drupal Meetup January 2018</span> <div class="field field-node--field-lead field-name-field-lead field-type-text-long field-label-hidden"> <div class="field-items"> <div class="field-item"><p><a href="https://www.meetup.com/Zurich-Drupal-Meetup/events/246013443/" target="_blank">Join us</a> on January 18th for the first edition of the Zurich Drupal Meetup, where we will discuss the possible future of React, GraphQL and Drupal at the Amazee Labs Zürich office.</p> </div> </div> </div> <span><a href="/en/vijay-dubb" title="View user profile." lang="" about="/en/vijay-dubb" typeof="schema:Person" property="schema:name" datatype="" class="username">Vijay Dubb</a></span> <span>Wed, 12/20/2017 - 12:49</span> <div class="field field-node--body field-name-body field-type-text-with-summary field-label-hidden"> <div class="field-items"> <div class="field-item"><p><img alt="Michael Schmid " data-entity-type="file" data-entity-uuid="0f647265-0b39-4e56-8542-66f6497bb03e" src="https://www.amazeelabs.com/sites/default/files/inline-images/37327754232_107cce1ce0_h.jpg" /></p> <p>In the Meetup, Amazee Group CTO and Partner, <a href="https://www.amazeelabs.com/en/michael-schmid" target="_blank">Michael Schmid</a>, will lead our discussion and address the following issue:</p> <blockquote> <p>The idea of a decoupled Frontend and Backend has been around for a couple of years. Some teams tried them out, but nobody was entirely satisfied with it. Too many problems arose during development; bad or non-existing accessibility, no support for crawlers and bots, changing APIs and expensive refactorings. Even the simple task of displaying a menu on the frontend was problematic.</p> <p>All these concerns retained us at Amazee Labs from actually trying it. We avoided the use of decoupled systems. That is until a couple of months ago. In summer 2016, we were able to connect React with Drupal via GraphQL for the first time, and felt comfortable using it in a project. To increase the stakes we applied it in a multiple hundred-thousand dollar projects. We wouldn't be Amazee if we didn't! </p> <p>What came out is a completely decoupled system built on React that powers 12 individual websites with a single Drupal Backend connected through GraphQL. All of it is completely tested as part of a continuous deployment workflow, is hosted on Docker, has server-side rendering, and not a single line of content or menu on the frontend.</p> </blockquote> <p>As one of the leading Drupal and React agencies, we always look towards the future. We would like to take the opportunity to plan community activities for 2018 and beyond. Here is a list of topics we are looking to address:</p> <p>- Define overall goals for Drupal in Switzerland 2018<br /> - Fix dates &amp; contents for meetups for the Zurich Drupal Community<br /> - Pre-discuss planning for the next Drupal Mountain Camp</p> <p>Come for great talks, people and networking. Sign up here at <a href="https://www.meetup.com/Zurich-Drupal-Meetup/events/246013443/" target="_blank">meetup.com</a>. </p> <div class="grammarly-disable-indicator"> </div> </div> </div> </div>
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;iandriuta?language&#x3D;en><h1>Profile of Ilie Andriuta</h1></a>
+      <h5>2017-12-20T11:49:18.000Z</h5>
+      <i class="author">Ilie Andriuta</i>
+      <div class="content">
+        Version 9.415 edited by Ilie Andriuta on Wed Dec 20 12:49:18 CET 2017
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;TestReports&#x2F;ManualTestReportXWiki910&#x2F;?language&#x3D;en><h1>Manual Test Report for XWiki 9.10</h1></a>
+      <h5>2017-12-20T11:21:56.000Z</h5>
+      <i class="author">Ilie Andriuta</i>
+      <div class="content">
+        Version 103.1 edited by Ilie Andriuta on Wed Dec 20 12:21:56 CET 2017
+      </div>
       <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;Ayushi_Goel?language&#x3D;en><h1>Profile of Ayushi Goel</h1></a>
       <h5>2017-12-20T10:40:54.000Z</h5>
       <i class="author">Ayushi Goel</i>
       <div class="content">
         Version 3.1 edited by Ayushi Goel on Wed Dec 20 11:40:54 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;AyushiGoel?language&#x3D;en><h1>Profile of Ayushi Goel</h1></a>
-      <h5>2017-12-20T10:33:14.000Z</h5>
-      <i class="author">Ayushi Goel</i>
-      <div class="content">
-        Version 1.3 edited by Ayushi Goel on Wed Dec 20 11:33:14 CET 2017
       </div>
       <a class="title" href=http:&#x2F;&#x2F;openmrs.org&#x2F;2017&#x2F;12&#x2F;openmrs-reference-application-2-7-0-released&#x2F;><h1>OpenMRS Reference Application 2.7.0 released!</h1></a>
       <h5>2017-12-20T09:15:43.000Z</h5>
@@ -37,41 +684,11 @@
 </div>
 
       </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;rahulrv2004?language&#x3D;en><h1>Profile of Rahul Ramesh Babu Vanitha</h1></a>
-      <h5>2017-12-20T08:46:16.000Z</h5>
-      <i class="author">Rahul Ramesh Babu Vanitha</i>
-      <div class="content">
-        Version 5.1 edited by Rahul Ramesh Babu Vanitha on Wed Dec 20 09:46:16 CET 2017
-      </div>
       <a class="title" href=http:&#x2F;&#x2F;blog.gisinternals.com&#x2F;2017&#x2F;12&#x2F;gdal-is-about-to-drop-support-for.html><h1>GDAL is about to drop support for VS2013 and earlier, please vote</h1></a>
       <h5>2017-12-20T07:03:00.000Z</h5>
       <i class="author">Tamas Szekeres</i>
       <div class="content">
         
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;NataliaSRanjit4?language&#x3D;en><h1>Profile of Natalia.S Ranjit</h1></a>
-      <h5>2017-12-20T04:05:48.000Z</h5>
-      <i class="author">Natalia.S Ranjit</i>
-      <div class="content">
-        Version 3.1 edited by Natalia.S Ranjit on Wed Dec 20 05:05:48 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;NataliaSRanjit?language&#x3D;en><h1>Profile of Natalia.S Ranjit</h1></a>
-      <h5>2017-12-20T04:00:41.000Z</h5>
-      <i class="author">Natalia.S Ranjit</i>
-      <div class="content">
-        Version 1.3 edited by Natalia.S Ranjit on Wed Dec 20 05:00:41 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;viveka?language&#x3D;en><h1>Profile of Agung Vivekananda</h1></a>
-      <h5>2017-12-20T02:55:33.000Z</h5>
-      <i class="author">Agung Vivekananda</i>
-      <div class="content">
-        Version 4.1 edited by Agung Vivekananda on Wed Dec 20 03:55:33 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;AnshulDayavaan?language&#x3D;en><h1>Profile of anshul dayavaan</h1></a>
-      <h5>2017-12-20T01:37:34.000Z</h5>
-      <i class="author">anshul dayavaan</i>
-      <div class="content">
-        Version 4.1 edited by anshul dayavaan on Wed Dec 20 02:37:34 CET 2017
       </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.wikimedia.org&#x2F;2017&#x2F;12&#x2F;19&#x2F;wikimedia-translation-tools&#x2F;><h1>Seven translation tools you can use to work in multiple languages across Wikimedia projects</h1></a>
       <h5>2017-12-20T00:52:24.000Z</h5>
@@ -116,6 +733,24 @@
 <p>Have we missed your favourite translation tool? Please leave a comment, with a link and a brief description, and we may add them to a future list.</p>
 <p><em>Nick Wilson (<a href="https://meta.wikimedia.org/wiki/User:Quiddity_(WMF)">User:Quiddity (WMF)</a>), <i>Community Liaison, </i>Technical Collaboration<br />
 <i>Wikimedia Foundation</i></em></p><img alt="" border="0" src="https://pixel.wp.com/b.gif?host=blog.wikimedia.org&#038;blog=67752302&#038;post=54504&#038;subd=wikimediablog&#038;ref=&#038;feed=1" width="1" height="1" />
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.ianturton.com&#x2F;geotools&#x2F;fun&#x2F;anagram&#x2F;2017&#x2F;12&#x2F;20&#x2F;anagrams-world.html><h1>Finding anagrams of place names (in the World)</h1></a>
+      <h5>2017-12-20T00:00:00.000Z</h5>
+      <i class="author">OSGeo Website Committee</i>
+      <div class="content">
+        
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.ianturton.com&#x2F;geotools,&#x2F;fun,&#x2F;anagram&#x2F;2017&#x2F;12&#x2F;20&#x2F;anagrams.html><h1>Finding anagrams of place names (in GB)</h1></a>
+      <h5>2017-12-20T00:00:00.000Z</h5>
+      <i class="author">OSGeo Website Committee</i>
+      <div class="content">
+        
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;www.prometsource.com&#x2F;blog&#x2F;drupalcamp-cebu-2017-review><h1>Promet Source: Drupalcamp Cebu 2017 Up Close</h1></a>
+      <h5>2017-12-19T22:54:00.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        Another Drupalcamp event had just successfully ended in Cebu! Wait... Where is Cebu?
       </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.acromedia.com&#x2F;video-how-drupal-delivers-a-true-omnichannel-experience><h1>Acro Media: Video: How Drupal Delivers a True Omnichannel Experience</h1></a>
       <h5>2017-12-19T21:43:21.000Z</h5>
@@ -205,35 +840,11 @@ Total: 13
 </code></pre>
 
       </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;VinhTran?language&#x3D;en><h1>Profile of Vinh Tran</h1></a>
-      <h5>2017-12-19T19:52:16.000Z</h5>
-      <i class="author">Vinh Tran</i>
-      <div class="content">
-        Version 3.1 edited by Vinh Tran on Tue Dec 19 20:52:16 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;Documentation&#x2F;AdminGuide&#x2F;Installation&#x2F;InstallationViaAPT&#x2F;?language&#x3D;en><h1>Installation using Debian (.DEB) packages</h1></a>
-      <h5>2017-12-19T19:02:50.000Z</h5>
-      <i class="author">Vincent Massol</i>
-      <div class="content">
-        Version 119.3 edited by Vincent Massol on Tue Dec 19 20:02:50 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;AkshatJain?language&#x3D;en><h1>Profile of Akshat &amp;nbsp;Jain</h1></a>
-      <h5>2017-12-19T18:18:04.000Z</h5>
-      <i class="author">Akshat Jain</i>
-      <div class="content">
-        Version 4.1 edited by Akshat Jain on Tue Dec 19 19:18:04 CET 2017
-      </div>
       <a class="title" href=https:&#x2F;&#x2F;www.drupal.org&#x2F;association&#x2F;blog&#x2F;call-for-proposals-drupalcon-europe-license><h1>Drupal Association blog: Call for Proposals: DrupalCon Europe License</h1></a>
       <h5>2017-12-19T18:09:07.000Z</h5>
       <i class="author"></i>
       <div class="content">
         <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>The Drupal Association’s mission is to unite the global open source community to help them build and promote Drupal. One of the most important ways that we advance our mission is through DrupalCon, Drupal’s flagship event.</p> <p>At DrupalCon, community members with a technical, business, and marketing background come together to unite as a community, level up their Drupal skills, and contribute to the project. As a global event, DrupalCon breaks down walls between countries and the various personas who build, use and support Drupal, making it an accelerator of knowledge sharing, relationship building and contribution.</p> <p>DrupalCon is ready to grow. We need a model that allows the community to deliver DrupalCon globally. Our vision is to empower all regions to host DrupalCon, providing this experience to communities around the world. <strong>As a first step, we are licensing DrupalCon to the European region.</strong></p> <p>We are excited to empower a new entity grounded in the European Drupal community to take this special event to the next level. The DrupalCon license initiative is an opportunity to re-imagine DrupalCon Europe to uniquely serve the Drupal community. The license is designed to allow for a new creative direction while enhancing Drupal’s mission, vision and values while maintaining the integrity of DrupalCon.</p> <p>With the help of the DrupalCon Europe License Committee, we created a process for entities to apply for a DrupalCon Europe license by 30 March, 2018. We reviewed approaches used by other conference organizers, with particular attention to the key attributes that allow TED to scale its TEDx events. Then, we applied those learnings to our licensing process.</p> <p>In short, we learned that TEDx scales because of clear “rules and tools” for the licensee (aka event organizer) and we aimed to provide the same level of guidance and support for the DrupalCon licensee. There are clear guidelines in the license agreement and the event rules and we will provide support in the form of knowledge transfer, tools, and advisory services. We also recognize that this is our first time creating such a program, so we encourage entities who are applying to contact us to discuss any areas of concern or question.</p> <p>Below details how to submit a proposal for the DrupalCon license and the criteria that the Drupal Association will use to select the licensee.</p> <p>We are grateful for the help of Bert Boerland, Baddy Breidert, Alex Burrows, Gabor Hojtsy, Janne Kalliola, Zsofi Major, and Stella Powers, who participated in the DrupalCon Europe License committee and contributed many hours and great insight into this process.</p> <h3>Table of Contents</h3> <ul><li>Key Points</li> <li>Who Can Apply For a DrupalCon License</li> <li>Important Dates</li> <li>What To Submit To Apply for a DrupalCon License</li> <li>DrupalCon License Rules</li> <li>Drupal Association Support</li> <li>Decision Making Criteria</li> </ul><h3>Key Points</h3> <ul><li> <p>All proposals must adhere to the <a href="https://www.drupal.org/files/DrupalCon%20License%20Rules%20Final.pdf" rel="nofollow">DrupalCon Rules</a> and <a href="https://www.drupal.org/files/DrupalCon%20License%20Agreement%20%28FORM%29%20%281%29.pdf" rel="nofollow">license agreement</a></p> </li> <li> <p>Apply by 30 March, 2018 by submitting your application to <a href="mailto:DrupalConEurope@association.drupal.org" rel="nofollow">DrupalConEurope@association.drupal.org</a></p> </li> <li> <p>Send questions to: <a href="mailto:DrupalConEurope@association.drupal.org" rel="nofollow">DrupalConEurope@association.drupal.org</a></p> </li> </ul><h3>Who Can Apply For a DrupalCon License</h3> <p>To be eligible to apply for a DrupalCon license, you must meet the following criteria:</p> <ul><li> <p>An entity grounded in the voice and needs of the Drupal community. This can include, but is not limited to:</p> <ul><li> <p>A professional event company</p> </li> <li> <p>A Drupal community group</p> </li> <li> <p>A collective of Drupal businesses</p> </li> <li> <p>A Drupal business</p> </li> <li> <p>An event organizing company that demonstrates how they will work with the Drupal community</p> </li> <li> <p>An entity where someone on the team has event experience</p> </li> </ul></li> <li> <p>Able to accept funds as a business or nonprofit</p> </li> <li> <p>Must have successfully produced an event that broke even or was profitable. Or, the team member with event experience has worked on an event that broke even or was profitable.</p> </li> <li> <p>Must agree to abide by and enforce DrupalCon’s <a href="https://www.drupal.org/files/DrupalCon%20License%20Rules%20Final.pdf" rel="nofollow">policies and rules.</a></p> </li> </ul><h3><strong>Important Dates</strong></h3> <h3></h3> <h3><img alt="" height="219" src="/files/How%20to%20Apply%20for%20a%20DrupalCon%20License_0.jpg" width="718" /></h3> <p>Above is a timeline of important dates to know. The call for a DrupalCon license proposal is now open and it closes on 30 March, 2018. In mid to late April, applicants will be interviewed and a licensee will be selected by the Drupal Association in May 2018.</p> <p>As early as July 2018, The Drupal Association will provide an onboarding workshop to the licensee, to begin knowledge sharing, and map out how best to support the event organizer leading up to and during DrupalCon.</p> <h3>What To Submit To Apply for a DrupalCon License</h3> <p>To apply for the DrupalCon license, please submit the following items by 30 March, 2018 to <a href="mailto:DrupalConEurope@association.drupal.org" rel="nofollow">DrupalConEurope@association.drupal.org</a>. Your application must include the items listed below in the following formats (presentation, spreadsheet, document).</p> <ol><li> <p>DrupalCon Business Plan. Submit a business plan with the following information:</p> <ul><li> <p>Event location and dates.</p> </li> <li> <p>Detailed event budget, structured as similarly as possible to the current <a href="https://www.drupal.org/files/DC%20DUB%20%26%20BAL%20Ticket%20Sale%20Breakdown%20-%20P%26L%20comparison.pdf" rel="nofollow">DrupalCon budget format</a>.</p> </li> <li> <p>Budget assumptions. Clearly define the budget assumptions for expenses. Also, include forecasted ticket and sponsor revenue. Define your ticket pricing plan and your sponsor strategy (who you will sell to and how you will create value for sponsors). Additionally, explain how you will secure the cash flow for initial event investments like securing the venue.</p> </li> <li> <p>Details about your event team. Who are the key people on your team, what roles will they play, and what is their event experience?</p> </li> <li> <p>An overview of how you will ensure the event reflects the Drupal community's needs and culture and moves the project forward.</p> </li> <li> <p>The event’s mission and vision, which should align with the Drupal Association’s <a href="https://www.drupal.org/association/mission" rel="nofollow">mission and vision</a>.</p> </li> <li> <p>Target audience and target size. Which personas will your event attract and generally in what ratio? Please define your personas.</p> </li> <li> <p>Event goals, strategies and objectives</p> </li> <li> <p>What value will you bring to each persona and how?</p> </li> <li> <p>Programming concept overview (which we know can change as you get further into planning). Please be sure to adhere to the programming rules.</p> <ul><li> <p>Event duration</p> </li> <li> <p>Provide a sample program and suggested tracks</p> </li> <li> <p>Share your general concept for session selection</p> </li> <li> <p>What is your plan to ensure conference diversity (attendees and speakers)</p> </li> <li> <p>Tell us about some aspirational keynotes you would like to invite</p> </li> </ul></li> </ul></li> <li> <p>Drupal culture. Tell us how you define Drupal’s community spirit and culture and what it means to you.</p> </li> <li> <p>What’s your “why”. Tell us why you want to organize DrupalCon. Why should you be selected, and how will you maintain the Drupal community spirit.</p> </li> <li> <p>Your needs. As seen on page 4, the Drupal Association will support you with knowledge sharing, tools, and advisory services. What additional needs do you have?</p> </li> <li> <p>About your past events. Submit an overview of your past event that you, your event partner, or your team member worked on. Describe the event audience, audience size, goals, and how you achieved those goals along with the event’s financial statements.</p> </li> </ol><p>The Drupal Association will select the organizer who can demonstrate the best approach for creating value to a technical and non technical audience by uniting the community, leveling up Drupal skill, and accelerating the project through a sustainable model.</p> <h3>DrupalCon License Rules</h3> <p>The DrupalCon license is designed to encourage creativity, to re-imagine the event. That means you can decide what is the best programming to meet the attendee’s needs. Or you can decide that sustainability is best achieved by starting with a smaller event that grows over time. However, all proposals and the actual event must conform to the DrupalCon licensing rules and agreement to maintain the Drupal Association’s community and governance expectations, as well as DrupalCon’s brand experience.</p> <p><strong><em>You can find <a href="https://www.drupal.org/files/DrupalCon%20License%20Rules%20Final.pdf" rel="nofollow">DrupalCon Rules here.</a> </em></strong></p> <p><strong><em>You can find the <a href="https://www.drupal.org/files/DrupalCon%20License%20Agreement%20%28FORM%29%20%281%29.pdf" rel="nofollow">DrupalCon license agreement here</a>.</em></strong></p> <p>Since this is the first time the Drupal Association has crafted DrupalCon license rules, we are open to discussion. Please contact us if you feel a rule is a blocker to you submitting a proposal. If discussions result in a rule change, we will update the rules document to reflect that change.</p> <h3>Drupal Association Support</h3> <p>The Drupal Association wants to make sure the chosen event organizer is set up for success. We recognize this means that we will play a role leading up to and perhaps during the event. Here are some ways the Drupal Association will help. We are open to hearing about additional ways in which we might help.</p> <ul><li> <p>In-person workshop: The Drupal Association staff will fly to the organizer’s location to run a workshop where we will do a knowledge transfer, training, and determine how the Drupal Association will play a support role during the event production phase.</p> </li> <li> <p>Playbooks, Guidelines, and Templates. The Drupal Association has several production playbooks that we will share so the organizer can see how the event was produced in the past. We recognize that the event organizer may want to alter our approach or create a brand new one.</p> </li> <li> <p>Advisory Services. You may have questions along the way and we are here to help. No question will be too big or too small. We can set up periodic check in meetings to provide guidance as you develop your event.</p> </li> <li> <p>Access to tools. DrupalCon promotion and management relies on several tools that we will share with the event organizer including the DrupalCon event site, social media handles, access to DrupalCon email lists, etc.</p> </li> <li> <p>Promotion Support</p> <ul><li> <p>The Drupal Association can amplify your call for ticket sales, sponsorship, and content through our channels including social media, email, newsletters.</p> </li> </ul></li> </ul><h3>Decision Making Criteria</h3> <p>When reviewing and comparing proposals, The Drupal Association will select the event organizer by using the following criteria:</p> <table><tbody><tr><td> <p>Category</p> </td> <td> <p>Topic</p> </td> <td> <p>Weight</p> </td> </tr><tr><td> <p>Sustainability</p> </td> <td> <p>Conservative, realistic, complete budget plan with clear revenue and expense budget assumptions</p> </td> <td> <p>10</p> </td> </tr><tr><td> <p>Staffing plan</p> </td> <td> <p>Clearly defined leadership team description and a staffing plan for producing the event that is designed to avoid burnout</p> </td> <td> <p>8</p> </td> </tr><tr><td> <p>Goals, strategies, objectives</p> </td> <td> <p>Clearly articulated goals, strategies, and objectives that move the project forward, serve multiple personas, and has achievable metrics.</p> </td> <td> <p>9</p> </td> </tr><tr><td> <p>Location</p> </td> <td> <p>Easy to reach by European community</p> </td> <td> <p>8</p> </td> </tr><tr><td> <p>Event Dates</p> </td> <td> <p>Avoids major holidays (national, religious, etc) and aligns with Dries Buytaert’s availability</p> </td> <td> <p>10</p> </td> </tr><tr><td> <p>Target Audience</p> </td> <td> <p>Program serves multiple personas</p> </td> <td> <p>8</p> </td> </tr><tr><td> <p>Programming</p> </td> <td> <p>Creative approach for serving all persona while meeting the licensing rules.</p> </td> <td> <p>9</p> </td> </tr><tr><td> <p>Session Selection</p> </td> <td> <p>Well thought out approach that adheres to the DrupalCon licensing rules.</p> </td> <td> <p>7</p> </td> </tr><tr><td> <p>Diversity &amp; Inclusion</p> </td> <td> <p>Well thought out approach for growing speaker and attendee diversity to exceed the <a href="https://docs.google.com/presentation/d/17iNHnKrazEYLlHJBV-Gnra1XQhGfUvW_ukkIUc1ZjBA/edit?disco=AAAABiDL8r4&amp;ts=5a260a81" rel="nofollow">DrupalCon Vienna benchmark</a></p> </td> <td> <p>8</p> </td> </tr><tr><td> <p>Definition of spirit/ culture</p> </td> <td> <p>Strong understanding of the Drupal culture</p> </td> <td> <p>7</p> </td> </tr><tr><td> <p>Keynote examples</p> </td> <td> <p>Creative, inspiring keynote ideas that speak to all personas</p> </td> <td> <p>6</p> </td> </tr><tr><td> <p>Event Planning Experience</p> </td> <td> <p>Clear demonstration of event experience on the team</p> </td> <td> <p>7</p> </td> </tr></tbody></table></div></div></div>
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;RogertGjini?language&#x3D;en><h1>Profile of Rogert Gjini</h1></a>
-      <h5>2017-12-19T17:34:59.000Z</h5>
-      <i class="author">Rogert Gjini</i>
-      <div class="content">
-        Version 3.1 edited by Rogert Gjini on Tue Dec 19 18:34:59 CET 2017
       </div>
       <a class="title" href=https:&#x2F;&#x2F;dev.acquia.com&#x2F;blog&#x2F;a-look-inside-decoupled-architecture--the-engage-digital-application&#x2F;19&#x2F;12&#x2F;2017&#x2F;18916><h1>Acquia Developer Center Blog: A Look Inside Decoupled Architecture: The Engage Digital Application</h1></a>
       <h5>2017-12-19T17:07:14.000Z</h5>
@@ -246,60 +857,6 @@ Total: 13
       <i class="author"></i>
       <div class="content">
         <p>My family and I got to see <a href="http://harlemworldmag.com/mayor-de-blasio-signs-legislation-creating-online-voter-registration-system/">Mayor Bill de Blasio sign the online voter registration bill</a> into law which <a href="http://benkallos.com/">Ben Kallos</a>, a New York City councilman and true fan of Open Source, sponsored. Kallos used the Webform module to demonstrate how easy it easy it is to capture a digital signature. The most ironic thing about watching the mayor sign the online voter registration bill, which is driven by the concept of digital signatures, into law, was the fact that he used used multiple pens to sign the bill. My daughter Lili and I both received pens that the mayor used to sign the bill. Everyone, myself included, has Kallos to thank for making this bill and experience happen. I guess - and this is a good thing - we’ll have to find other uses for our pens.</p><p>Last month, Kallos did a presentation at the <a href="https://www.meetup.com/drupalnyc/">NYC Drupal Meetup</a> about how he used the Webform module to help get legislation passed to <a href="http://www.brooklyneagle.com/articles/2017/11/15/city-council-looks-easing-online-voter-registration">allow online voter registration</a> for New Yorkers.</p><p> </p><p>We all know that we can’t vote online yet, but I was surprised to realize that people can’t even register to vote online! Sure governments and municipalities move slowly, but how hard should it be to set up an online voter registration application? There is even an <a href="https://www.elections.ny.gov/NYSVoterRegistrationFormEnglish.html">online HTML form</a> that generates a filled-out PDF form that you have to print out, sign, and mail in. Next, someone manually re-enters your information, with no typos…duh. Kallos gets technology, which is why he sponsored this legislation and tackled the real challenge of showing his fellow council members how to capture a digital signature, which is essential for registering...<a href=http://www.jrockowitz.com/blog/voter-registration>Read More</a>
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;jsd?language&#x3D;en><h1>Profile of Jean-Sébastien Dennebouy</h1></a>
-      <h5>2017-12-19T17:01:44.000Z</h5>
-      <i class="author">Jean-Sébastien Dennebouy</i>
-      <div class="content">
-        Version 2.2 edited by Jean-Sébastien Dennebouy on Tue Dec 19 18:01:44 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;FAQ&#x2F;DumpXDOM?language&#x3D;en><h1>How to dump an XDOM structure to text?</h1></a>
-      <h5>2017-12-19T16:41:33.000Z</h5>
-      <i class="author">Vincent Massol</i>
-      <div class="content">
-        Version 5.1 edited by Vincent Massol on Tue Dec 19 17:41:33 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;ReleaseNotes&#x2F;Data&#x2F;XWiki&#x2F;9.11.1&#x2F;?language&#x3D;><h1>Release Notes for XWiki 9.11.1</h1></a>
-      <h5>2017-12-19T16:38:32.000Z</h5>
-      <i class="author">Guillaume Delhumeau</i>
-      <div class="content">
-        Version 1.1 edited by Guillaume Delhumeau on Tue Dec 19 17:38:32 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;NishantDhankhar?language&#x3D;en><h1>Profile of Nishant Dhankhar</h1></a>
-      <h5>2017-12-19T15:41:34.000Z</h5>
-      <i class="author">Nishant Dhankhar</i>
-      <div class="content">
-        Version 2.1 edited by Nishant Dhankhar on Tue Dec 19 16:41:34 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;TestReports&#x2F;?language&#x3D;en><h1>Test Reports</h1></a>
-      <h5>2017-12-19T15:25:12.000Z</h5>
-      <i class="author">Sorin Burjan</i>
-      <div class="content">
-        Version 148.1 edited by Ilie Andriuta on Tue Dec 19 16:25:12 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;iandriuta?language&#x3D;en><h1>Profile of Ilie Andriuta</h1></a>
-      <h5>2017-12-19T15:23:35.000Z</h5>
-      <i class="author">Ilie Andriuta</i>
-      <div class="content">
-        Version 9.413 edited by Ilie Andriuta on Tue Dec 19 16:23:35 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;ReleaseNotes&#x2F;Data&#x2F;XWiki&#x2F;9.11RC1&#x2F;?language&#x3D;><h1>Release Notes for XWiki 9.11-rc-1</h1></a>
-      <h5>2017-12-19T15:23:34.000Z</h5>
-      <i class="author">Guillaume Delhumeau</i>
-      <div class="content">
-        Version 14.1 edited by Ilie Andriuta on Tue Dec 19 16:23:34 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;RajatAgarwal?language&#x3D;en><h1>Profile of Rajat Agarwal</h1></a>
-      <h5>2017-12-19T14:33:52.000Z</h5>
-      <i class="author">Rajat Agarwal</i>
-      <div class="content">
-        Version 4.1 edited by Rajat Agarwal on Tue Dec 19 15:33:52 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;TestReports&#x2F;ManualTestReportSummaryXWiki911RC1&#x2F;?language&#x3D;en><h1>Manual Test Report Summary XWiki 9.11 RC1</h1></a>
-      <h5>2017-12-19T14:33:07.000Z</h5>
-      <i class="author">Ilie Andriuta</i>
-      <div class="content">
-        Version 77.1 edited by Ilie Andriuta on Tue Dec 19 15:33:07 CET 2017
       </div>
       <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2017&#x2F;12&#x2F;19&#x2F;your-first-robot-a-beginners-guide-to-ros-and-ubuntu-core-1-5&#x2F;><h1>Your first robot: A beginner’s guide to ROS and Ubuntu Core [1&#x2F;5]</h1></a>
       <h5>2017-12-19T14:04:50.000Z</h5>
@@ -769,22 +1326,6 @@ The &#8220;Les sans pages&#8221; groups will expand both its online and offline 
       <div class="content">
         [object Object]
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2017&#x2F;12&#x2F;14&#x2F;canonical-shows-edgex-on-arm&#x2F;><h1>Canonical shows EdgeX on ARM</h1></a>
-      <h5>2017-12-14T15:59:32.000Z</h5>
-      <i class="author">kzapalowicz</i>
-      <div class="content">
-        <p>Beginning in March, I have been assigned to the Linaro organisation to carry on the work with the LITE (Linaro IoT and Embedded) group by researching design and development of software for ARM-based gateway devices. One of my main focus points has been to investigate how complex it would be to run EdgeX on ARM.</p>
-<p>EdgeX (<a href="https://www.edgexfoundry.org/">https://www.edgexfoundry.org/</a>) is an IoT framework developed and recently open sourced by Dell. The goal of this Linux Foundation backed project is to provide a common open framework for IoT edge computing. It is designed to be agnostic from the hardware and the underlying OS, yet provide flexibility and standardization resulting in lower development costs and faster time to market. Canonical has been involved in the EdgeX development from the very beginning. Currently Tony Espy of Canonical holds a committee chair position of the EdgeX Device and Device SDK working group.</p>
-<p>I was video interviewed during the Linaro Connect San Francisco event in September 2017. In it, I talk about the results of my R&amp;D work around the EdgeX on ARM topic showcasing a cross-host setup where the EdgeX core is running on an Ubuntu Core based Dell Edge gateway next to the EdgeX Device service that is running on ARM (Ubuntu based Raspberry Pi). At the time of this conference, to the best of my knowledge, it was the first time such a solution has been presented. It proves that EdgeX, together with Ubuntu, can be successfully used to couple one high-end master gateway with multiple satellite gateways that, for cost reduction, could use lower end hardware.</p>
-<p>The work presented here will continue with work on EdgeX now under active development with ongoing efforts to provide a Go-based SDK. At the same time, Canonical is putting its time into integrating EdgeX with snaps (<a href="https://www.ubuntu.com/desktop/snappy">https://www.ubuntu.com/desktop/snappy</a>) so that it can be easily managed on edge devices.</p>
-<p>References:</p>
-<ol>
-<li>EdgeX Foundry <a href="https://www.edgexfoundry.org">https://www.edgexfoundry.org</a></li>
-<li>Linaro <a href="https://www.linaro.org/">https://www.linaro.org/</a></li>
-<li>Ubuntu Core <a href="https://www.ubuntu.com/core">https://www.ubuntu.com/core</a></li>
-</ol>
-
-      </div>
       <a class="title" href=https:&#x2F;&#x2F;www.orfeo-toolbox.org&#x2F;contrast-enhancement-for-fun-and-profit&#x2F;><h1>Contrast Enhancement for fun and profit</h1></a>
       <h5>2017-12-14T15:41:47.000Z</h5>
       <i class="author">Antoine Regimbeau</i>
@@ -884,148 +1425,6 @@ Wikimedia Foundation</em></p>
       <div class="content">
         My name is Katherine Shaw and I am a front end web developer at Promet Source. I'd like to start by sharing a little bit of my background, as it has helped me to understand why accessibility, on the web and in the world around us, is such an important issue. I am an advocate for web accessibility and in today's blog, I'll be share how I became so passionate about implementing ADA Section 508 best practices into my work as a developer, which all began when I was working for local government.
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2017&#x2F;12&#x2F;14&#x2F;security-team-weekly-summary-december-14-2017&#x2F;><h1>Security Team Weekly Summary: December 14, 2017</h1></a>
-      <h5>2017-12-14T14:14:03.000Z</h5>
-      <i class="author">Canonical</i>
-      <div class="content">
-        <p><img src="https://insights.ubuntu.com/wp-content/uploads/948f/Security-Team-Summary-copy.png" alt="" width="1920" height="1080" class="alignleft size-full wp-image-78975" /></p>
-<p class="line862">The <a href="https://wiki.ubuntu.com/SecurityTeam">Security Team</a> weekly reports are intended to be very short summaries of the Security Team&#8217;s weekly activities.<span id="line-6" class="anchor"></span><span id="line-7" class="anchor"></span></p>
-<p class="line862">If you would like to reach the Security Team, you can find us at the #ubuntu-hardened channel on <a href="https://wiki.ubuntu.com/FreeNode">FreeNode</a>. Alternatively, you can mail the Ubuntu Hardened mailing list at: <a class="mailto" href="mailto:ubuntu-hardened@lists.ubuntu.com">ubuntu-hardened@lists.ubuntu.com</a><span id="line-8" class="anchor"></span><span id="line-9" class="anchor"></span></p>
-<p class="line874">During the last week, the Ubuntu Security team:<span id="line-10" class="anchor"></span></p>
-<ul>
-<li>Triaged 213 public security vulnerability reports, retaining the 65 that applied to Ubuntu.<span id="line-11" class="anchor"></span></li>
-<li>Published 15 Ubuntu Security Notices which fixed 16 security issues (CVEs) across 15 supported packages.<span id="line-12" class="anchor"></span><span id="line-13" class="anchor"></span></li>
-</ul>
-<h3 id="Ubuntu_Security_Notices">Ubuntu Security Notices</h3>
-<p><span id="line-14" class="anchor"></span></p>
-<ul>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3507-2">[USN-3507-2] Linux kernel (GCP) vulnerabilities</a><span id="line-15" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3511-1">[USN-3511-1] Linux kernel (Azure) vulnerabilities</a><span id="line-16" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3510-2">[USN-3510-2] Linux kernel (Trusty HWE) vulnerabilities</a><span id="line-17" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3510-1">[USN-3510-1] Linux kernel vulnerabilities</a><span id="line-18" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3509-2">[USN-3509-2] Linux kernel (Xenial HWE) vulnerabilities</a><span id="line-19" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3509-1">[USN-3509-1] Linux kernel vulnerabilities</a><span id="line-20" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3508-2">[USN-3508-2] Linux kernel (HWE) vulnerabilities</a><span id="line-21" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3508-1">[USN-3508-1] Linux kernel vulnerabilities</a><span id="line-22" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3507-1">[USN-3507-1] Linux kernel vulnerabilities</a><span id="line-23" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3506-2">[USN-3506-2] rsync vulnerabilities</a><span id="line-24" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3506-1">[USN-3506-1] rsync vulnerabilities</a><span id="line-25" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3505-1">[USN-3505-1] Linux firmware vulnerabilities</a><span id="line-26" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3504-1">[USN-3504-1] libxml2 vulnerability</a><span id="line-27" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3498-2">[USN-3498-2] curl vulnerability</a><span id="line-28" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/usn-3503-1">[USN-3503-1] Evince vulnerability</a><span id="line-29" class="anchor"></span><span id="line-30" class="anchor"></span></p>
-</li>
-</ul>
-<h3 id="Bug_Triage">Bug Triage</h3>
-<p><span id="line-31" class="anchor"></span></p>
-<ul>
-<li>
-<p class="line862">Backlog: <a class="https" href="https://bugs.launchpad.net/~ubuntu-security/+subscribedbugs">https://bugs.launchpad.net/~ubuntu-security/+subscribedbugs</a><span id="line-32" class="anchor"></span><span id="line-33" class="anchor"></span></p>
-</li>
-</ul>
-<h3 id="Mainline_Inclusion_Requests">Mainline Inclusion Requests</h3>
-<p><span id="line-34" class="anchor"></span></p>
-<ul>
-<li>
-<p class="line862">libteam underway (LP: #<a class="interwiki" title="Bug" href="https://bugs.launchpad.net/bugs/1392012">1392012</a>)<span id="line-35" class="anchor"></span></p>
-</li>
-<li>
-<p class="line862">MIR backlog: <a class="https" href="https://bugs.launchpad.net/~ubuntu-security/+assignedbugs?field.searchtext=%5BMIR%5D">https://bugs.launchpad.net/~ubuntu-security/+assignedbugs?field.searchtext=%5BMIR%5D</a><span id="line-36" class="anchor"></span><span id="line-37" class="anchor"></span></p>
-</li>
-</ul>
-<h3 id="Development">Development</h3>
-<p><span id="line-38" class="anchor"></span></p>
-<ul>
-<li>review tools testsuite updates for resquashfs<span id="line-39" class="anchor"></span></li>
-<li>write-up processes for reviewing base snaps<span id="line-40" class="anchor"></span></li>
-<li>send up PR 4375 and PR 4375 (2.30) to add an app/hook-specific udev rule for hotplugging (fixes mir hotplug issue)<span id="line-41" class="anchor"></span></li>
-<li>debug chromium mknod issue with nvidia GPUs<span id="line-42" class="anchor"></span></li>
-<li>send up PR 4359 and PR 4360 (2.30) policy updates PRs<span id="line-43" class="anchor"></span></li>
-<li>
-<p class="line862">add missing rule to upstream AppArmor fonts abstraction<span id="line-44" class="anchor"></span></p>
-</li>
-<li>pickup PR 4100 and send up PR 4383 (2.30) for new ssh/gpg keys interfaces<span id="line-45" class="anchor"></span></li>
-<li>send up PR 4366 and PR 4367 (2.30) for small removable-media fix<span id="line-46" class="anchor"></span></li>
-<li>update review-tools for 2.30 interfaces<span id="line-47" class="anchor"></span></li>
-<li>discuss options for possible biometrics interface<span id="line-48" class="anchor"></span></li>
-<li>snapd reviews<span id="line-49" class="anchor"></span>
-<ul>
-<li>PR 4365 &#8211; allow wayland socket and non-root sockets/wayland slot policy<span id="line-50" class="anchor"></span></li>
-<li>PR 4140 &#8211; add an interface for gnome-online-accounts D-Bus service<span id="line-51" class="anchor"></span></li>
-<li>PR 4369 &#8211; add write permission to optical-drive interface<span id="line-52" class="anchor"></span></li>
-</ul>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://forum.snapcraft.io/t/proposal-to-disable-squashfs-fragments-in-snaps/3103">https://forum.snapcraft.io/t/proposal-to-disable-squashfs-fragments-in-snaps/3103</a><span id="line-53" class="anchor"></span><span id="line-54" class="anchor"></span><span id="line-55" class="anchor"></span></p>
-</li>
-</ul>
-<h3 id="What_the_Security_Team_is_Reading_This_Week">What the Security Team is Reading This Week</h3>
-<p><span id="line-56" class="anchor"></span></p>
-<ul>
-<li>
-<p class="line891"><a class="https" href="https://www.twosixlabs.com/bluesteal-popping-gatt-safes/">BlueSteal: Popping GATT Safes</a><span id="line-57" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://marcan.st/2017/12/debugging-an-evil-go-runtime-bug/">Debugging an evil Go runtime bug</a><span id="line-58" class="anchor"></span><span id="line-59" class="anchor"></span></p>
-</li>
-</ul>
-<h3 id="Weekly_Meeting">Weekly Meeting</h3>
-<p><span id="line-60" class="anchor"></span></p>
-<ul>
-<li>
-<p class="line862">Log: <a class="https" href="https://wiki.ubuntu.com/MeetingLogs/Security/20171204">https://wiki.ubuntu.com/MeetingLogs/Security/20171204</a><span id="line-61" class="anchor"></span></p>
-</li>
-<li>
-<p class="line862">Info: <a class="https" href="https://wiki.ubuntu.com/SecurityTeam/Meeting">https://wiki.ubuntu.com/SecurityTeam/Meeting</a><span id="line-62" class="anchor"></span><span id="line-63" class="anchor"></span></p>
-</li>
-</ul>
-<h3 id="More_Info">More Info</h3>
-<p><span id="line-64" class="anchor"></span></p>
-<ul>
-<li>
-<p class="line891"><a class="http" href="http://people.canonical.com/~ubuntu-security/cve/">Ubuntu CVE Tracker</a><span id="line-65" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.ubuntu.com/usn/">Ubuntu security notices</a><span id="line-66" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://www.twitter.com/ubuntu_sec">Follow Ubuntu Security on Twitter</a><span id="line-67" class="anchor"></span></p>
-</li>
-<li>
-<p class="line891"><a class="https" href="https://wiki.ubuntu.com/SecurityTeam/GettingInvolved">How to help improve Ubuntu security</a><span id="line-68" class="anchor"></span></p>
-</li>
-</ul>
-
-      </div>
       <a class="title" href=https:&#x2F;&#x2F;www.electriccitizen.com&#x2F;blog&#x2F;twig-drupal-8-development-twig-templating-part-2><h1>Electric Citizen: Twig for Drupal 8 Development: Twig Templating Part 2 of 2</h1></a>
       <h5>2017-12-14T13:12:46.000Z</h5>
       <i class="author"></i>
@@ -1061,18 +1460,6 @@ Wikimedia Foundation</em></p>
       <i class="author"></i>
       <div class="content">
         <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p><em>We're Drupalers who only recently started digging deep into CiviCRM and we're finding some really cool things! This series of videos is meant to share those secrets with other Drupalers, in case they come across a project that could use them. :-)</em></p><p>Most Drupalers at one time have had to deal with either sending e-mail newsletters directly from Drupal, or integrating with a 3rd party tool like Mailchimp or Constant Contact.</p><p><strong>CiviCRM has built in e-mail newsletter functionality, and if you add to it the WYSIWYG e-mail builder Mosaico you can build really rich, responsive e-mail campaigns!</strong></p><p>Watch the video here:</p><p></p><div class="media-youtube-video panopoly-image-video media-element file-default media-youtube-1"> <iframe class="media-youtube-player" width="640" height="390" title="CiviCRM secrets for Drupalers #1: E-mail Campaigns" src="//www.youtube.com/embed/zaE_liindOA?wmode=opaque&amp;modestbranding=1" frameborder="0" allowfullscreen="">Video of CiviCRM secrets for Drupalers #1: E-mail Campaigns</iframe> </div> <p><strong>Some highlights from the video:</strong></p><ul><li>A sneak peek at Round Earth: our project that bundles Drupal 8 + CiviCRM</li><li>Drupal 8 + CiviCRM vs. "only" Drupal</li><li>A quick walk-through on how to quickly and easily create an email campaign</li><li>Plus, we mention a couple of current "gotchas" that could save you frustration!</li></ul><p><strong>Please leave a comment below!</strong></p><p></div></div></div>
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;ffwagency.com&#x2F;digital-strategies-blog&#x2F;abcs-drupal-region-revision-role><h1>FFW Agency: The ABC&#39;s of Drupal: Region, Revision, Role</h1></a>
-      <h5>2017-12-14T00:03:21.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <span property="schema:name" class="field field--name-title field--type-string field--label-hidden">The ABC's of Drupal: Region, Revision, Role</span> <span class="field field--name-uid field--type-entity-reference field--label-hidden"><span lang="" about="https://ffwagency.com/user/ray-saltini" typeof="schema:Person" property="schema:name" datatype="" xml:lang="">Ray Saltini</span></span> <span class="field field--name-created field--type-created field--label-hidden">Thu, 12/14/2017 - 00:03</span> <div property="schema:articleBody" class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>For anyone who's ever looked up a definition of a Drupal term and still wondered what it means, here are some practical explanations you can use to navigate the Drupal-verse. This is the latest in a series on Drupal-specific terminology.</p> <h2>Region</h2> <p>Regions divide Drupal pages into different sections. Each section contains information that determines the positions of various elements. These elements can include menus, headers, footers, and sidebars. The elements in each Region are called Blocks. (For more information on Blocks, see <a href="https://ffwagency.com/digital-strategies-blog/abcs-drupal-aliases-blocks-and-content-types">Aliases, Blocks, and Content Types</a>.)</p> <p>A Drupal site's active theme keeps information on the number, name, and location of each Region. Different themes can have different Regions. Typically, administrative themes have fewer regions spaced in wide columns across a page. The themes that face a site's end-users often have more complex layouts, which means more Regions. (To learn more about Themes, see <a href="https://ffwagency.com/digital-strategies-blog/abcs-drupal-article-base-theme-content">Article, Base Theme, Content</a>.</p> <p> </p> <p>Together, Blocks and Regions make up Drupal's core's primary layout functionality. This combination is a simple yet powerful solution that has been steadily expanded with each major version of Drupal. </p> <p>As a note: Drupal Regions can be overridden by contributed modules such as Panels. Regions can also be overridden by custom page templates that apply to specific URLs or URL alias patterns. While the use of Panels can increase overhead and complexity, it makes additional layouts and landing page capabilities available to site builders. Layouts made with Panels are saved in the site's database, which mitigates the risk of rolling custom code by editing a site's theme files.</p> <h2>Revision</h2> <p>A Drupal Revision is a saved version of a set of changes to a piece of Drupal content created with a Content Entity. Revisions apply to any piece of content on a site, including Articles, Basic Pages, and custom content types.</p> <p>After a piece of content is created, any changes or updates made to the content are saved in new versions, or Revisions. Drupal does this rather than editing an existing published version. These versions are stored indefinitely each time a set of changes is saved, and can be found on a content item's administrative interface. Users can save revisions in unpublished draft form, to be published at a later date. Previous versions can also be republished, which allows content authors to revert content to an earlier state.</p> <p>Drupal's core revision feature supports a powerful workflow functionality that can be custom-configured to align with an organization's processes for content approval. Revision functionality can also be extended with the contributed Diff module to highlight changes between various drafts.</p> <h2>Role</h2> <p>Roles assign various permissions to a Drupal site's users. This includes the ability to edit and manage content and configure settings. Roles are typically grouped into sets of permissions that are determined by a user's expertise in the organization. A Role is a user-defined set of permissions that can be granted to groups of individuals. Typical Drupal user roles include Administrator (preconfigured), Content Creator, and Content Manager.</p> <p>Anonymous and Authenticated are two special preconfigured user states that are accessed through the user administrative pages. Anonymous users are typically granted only the most basic permissions. By definition, Authenticated users are those that are known to the system. Authenticated users have an account and unique email address that associated with a cookie that resides locally in their browser.</p> <p>When new functionality is added to Drupal, additional permissions are typically added to the system. These permissions can then be assigned to new or existing roles.</p> <h2>What Next?</h2> <p>If you've got questions about specific Drupal terms, let us know. Drop a request for a definition in the comments and we'll add it to our next ABCs of Drupal post. </p> </div> <div class="field field--name-field-image field--type-image field--label-hidden field__item"> <picture><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="//d21e8thgsgi8s5.cloudfront.net/sites/default/files/styles/blog_single_desktop/public/Drupal-ABC-Banner-retina%20%281%29_0.png?itok=qDVyIIHD 1x, //d21e8thgsgi8s5.cloudfront.net/sites/default/files/styles/blog_single_desktopx/public/Drupal-ABC-Banner-retina%20%281%29_0.png?itok=EqOjAHdF 2x" media="screen and (min-width: 1601px)" type="image/png"></source><source srcset="//d21e8thgsgi8s5.cloudfront.net/sites/default/files/styles/blog_single_desktop/public/Drupal-ABC-Banner-retina%20%281%29_0.png?itok=qDVyIIHD 1x, //d21e8thgsgi8s5.cloudfront.net/sites/default/files/styles/blog_single_desktopx/public/Drupal-ABC-Banner-retina%20%281%29_0.png?itok=EqOjAHdF 2x" media="screen and (min-width: 1201px)" type="image/png"></source><source srcset="//d21e8thgsgi8s5.cloudfront.net/sites/default/files/styles/blog_single_tablet/public/Drupal-ABC-Banner-retina%20%281%29_0.png?itok=MBV0Cn1c 1x, //d21e8thgsgi8s5.cloudfront.net/sites/default/files/styles/blog_single_tabletx2/public/Drupal-ABC-Banner-retina%20%281%29_0.png?itok=L41iJl4D 2x" media="screen and (min-width: 769px)" type="image/png"></source><source srcset="//d21e8thgsgi8s5.cloudfront.net/sites/default/files/styles/blog_single_mobile/public/Drupal-ABC-Banner-retina%20%281%29_0.png?itok=C5JRGwlm 1x, //d21e8thgsgi8s5.cloudfront.net/sites/default/files/styles/blog_single_mobile2x/public/Drupal-ABC-Banner-retina%20%281%29_0.png?itok=WsVzOslq 2x" media="(min-width: 0px)" type="image/png"></source><!--[if IE 9]></video><![endif]--><img property="schema:image" src="//d21e8thgsgi8s5.cloudfront.net/sites/default/files/styles/blog_single_desktop/public/Drupal-ABC-Banner-retina%20%281%29_0.png?itok=qDVyIIHD" alt="Druplicon over a background of blue scientific icons" typeof="foaf:Image" /></picture></div> <section property="schema:comment"><h2>Comments</h2> <drupal-render-placeholder callback="comment.lazy_builders:renderForm" arguments="0=node&1=8241&2=field_comment&3=ffw_comments" token="KBMdlkABtcrSEb9yIJOZc6OqcsFbO_V5sKrv9Mm7Zqk"></drupal-render-placeholder></section>
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;www.elevatedthird.com&#x2F;news-insights&#x2F;drupal-8-great-ambitious-digital-experiences-infographic><h1>Elevated Third: Drupal 8 Is Great: Ambitious Digital Experiences Infographic</h1></a>
-      <h5>2017-12-13T18:04:11.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <span class="field field--name-title field--type-string field--label-hidden">Drupal 8 Is Great: Ambitious Digital Experiences Infographic </span> Drupal 8 Is Great: Ambitious <em>Digital Experiences Infographic </em> <span class="field field--name-uid field--type-entity-reference field--label-hidden"> <a title="View user profile." href="https://www.elevatedthird.com/about/team/judd-mercer" lang="" about="https://www.elevatedthird.com/about/team/judd-mercer" typeof="schema:Person" property="schema:name" datatype="" class="username" xml:lang="">Judd Mercer</a></span> <span class="field field--name-created field--type-created field--label-hidden">Wed, 12/13/2017 - 11:04</span> <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__item"><article class="media media-image view-mode-banner media--type- media--unpublished"><div class="field field--name-field-image field--type-image field--label-hidden field__item"> <img src="https://www.elevatedthird.com/sites/default/files/styles/hero_banner/public/image/2017-11/image%20%288%29.jpg?itok=vVadB3_q" width="1340" height="540" alt="Drupal 8 wallpaper" typeof="foaf:Image" class="image-style-hero-banner" /></div> </article></div> <div class="field field--name-body field--type-text-with-summary field--label-hidden"> <div class="body-content"> <p><em>Customer experience. Data-driven marketing. Unified customer data. Digital transformation.</em> You’ve heard the buzzwords and have a laundry list of things you’re not doing—or struggling to do—with an older version of Drupal. Enter Drupal 8. </p> <h3>Digital Transformation is tough—and only getting tougher. </h3> <p>Across the board, enterprise companies (and their digital marketing teams) struggle with technology platforms and integration in an effort to stay nimble.</p> <p><a href="https://www.elevatedthird.com/services/user-experience" rel="" target="_blank">Customer experience</a> is at the top of every marketer’s list, and demand for ROI is growing. And it’s only going to continue.</p> <h3>Sound familiar? </h3> <p>Technology should support <a href="https://www.elevatedthird.com/services/digital-strategy" rel="" target="_blank">digital transformation</a>. But older versions of Drupal can be the biggest hindrance. Think back to your brainstorms and team meetings.</p> <h3>Do any of these statements sound familiar? </h3> <ul><li>We spend too much time managing content and not enough time producing it.</li> <li>We spend too much money on developers to make simple site updates.</li> <li>We have so much inefficiency with our disconnected systems.</li> <li>We can’t seem to optimize or evolve out of our current situation.</li> <li>We seem a long way off from personalization or targeting.</li> </ul><p> </p> <p>Drupal 8 is here. And it is the answer to <em>all </em>of the issues listed above. The improvements to the platform help users leverage personalization, integrate better and update seamlessly. Check out this infographic for more. </p> <p> </p> <img alt="Drupal 8 infographic " data-entity-type="file" data-entity-uuid="c94aa6e6-6730-43bf-9614-e3334581a913" src="https://www.elevatedthird.com/sites/default/files/inline-images/D8_Infographic_R6.jpg" class="align-center" /><p> </p> </div> </div>
       </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.wikimedia.org&#x2F;2017&#x2F;12&#x2F;13&#x2F;monika-sengul-jones-interview&#x2F;><h1>What can we glean from OCLC’s experience with library staff learning Wikipedia?</h1></a>
       <h5>2017-12-13T16:01:53.000Z</h5>
@@ -1152,41 +1539,6 @@ Wikimedia Foundation</em></p>
 </ul>
 <p><em>Interview by Alex Stinson, Strategist, Community Engagement</em><br />
 <em>Wikimedia Foundation</em></p><img alt="" border="0" src="https://pixel.wp.com/b.gif?host=blog.wikimedia.org&#038;blog=67752302&#038;post=54408&#038;subd=wikimediablog&#038;ref=&#038;feed=1" width="1" height="1" />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2017&#x2F;12&#x2F;13&#x2F;fips-140-2-certified-modules-for-ubuntu-16-04-lts&#x2F;><h1>FIPS 140-2 Certified Modules for Ubuntu 16.04 LTS</h1></a>
-      <h5>2017-12-13T14:00:00.000Z</h5>
-      <i class="author">Chris Johnston</i>
-      <div class="content">
-        <p>We are pleased to announce that officially certified FIPS 140-2 level 1 cryptographic packages are now available for Ubuntu 16.04 LTS for Ubuntu Advantage Advanced customers and as a separate, stand-alone product. </p>
-<p>In 2016 Canonical began the process of completing the <a href="https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program">Cryptographic Module Validation Program</a> to obtain FIPS 140-2 validation for Ubuntu 16.04 LTS. This has been successfully completed and Canonical now offers key components of Ubuntu 16.04 LTS compliant with the FIPS 140-2 level 1 standard. The FIPS compliant modules are available to <a href="https://www.ubuntu.com/pricing">Ubuntu Advantage Advanced</a> subscribers in the Ubuntu Advantage private archive.</p>
-<blockquote><p>We currently use Ubuntu Linux because of its superior development environment and frequent LTS releases. As a business that develops software, one of our customer&#8217;s requirements is to utilize FIPS 140-2 validated software. We have been able to start rolling out the Ubuntu FIPS modules without needing to reinstall the operating system. This keeps our developers happy and productive as Ubuntu is their preferred environment and minimizes transition cost. The FIPS modules also include a VPN solution which we look forward to implementing to allow our developers to work remotely but still meet our customer&#8217;s requirements.</p></blockquote>
-<p><strong>-Alex Stuart, North Point Defense</strong></p>
-<p>&nbsp; </p>
-<p>Users interested in FIPS 140-2 compliant modules on Ubuntu 16.04 can purchase Ubuntu Advantage at <a href="https://buy.ubuntu.com/">https://buy.ubuntu.com/</a> or by contacting the <a href="https://www.ubuntu.com/support/contact-us">Canonical Sales Team</a>.</p>
-<p>For further information please visit <a href="https://www.ubuntu.com/security">https://www.ubuntu.com/security</a>.</p>
-<p>&nbsp; </p>
-<h1>FAQ</h1>
-<h3>What is FIPS?</h3>
-<p>FIPS stands for Federal Information Processing Standards which is a set of publications developed and maintained by the National Institute of Standards and Technology (NIST), a United States federal agency. These publications define the security criteria required for government computers and telecommunication systems.</p>
-<h3>What is the FIPS 140-2 standard?</h3>
-<p><a href="https://www.google.com/url?q=http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf&#038;sa=D&#038;ust=1509546492466000&#038;usg=AFQjCNGJd1nIoNCG-4UYV7VxBGE3Z0pnRA">According to NIST</a>, FIPS 140-2 “specifies the security requirements that will be satisfied by a cryptographic module used within a security system protecting sensitive but unclassified information.”</p>
-<h3>Why should I use the FIPS 140-2 modules?</h3>
-<p>Government, defence, healthcare, and finance organizations worldwide operate in highly regulated industries and are required to meet the security requirements defined in the FIPS 140-2 standard. This includes the United States, Canadian, and United Kingdom governments as well as government contractors.</p>
-<h3>Where can I find out more about FIPS?</h3>
-<p>General information about the Federal Information Processing Standards can be found on the <a href="https://www.nist.gov/information-technology-laboratory/fips-general-information">NIST website</a>. More detailed information about FIPS 140-2 itself can be found in the <a href="https://csrc.nist.gov/csrc/media/publications/fips/140/2/final/documents/fips1402.pdf">Federal Information Processing Standards Publication 140-2 document</a>.</p>
-<h3>Which modules are included?</h3>
-<ul>
-<li><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2962.pdf">Kernel Crypto API</a></li>
-<li><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2888.pdf">OpenSSL</a></li>
-<li><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2907.pdf">OpenSSH Client</a></li>
-<li><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2906.pdf">OpenSSH Server</a></li>
-<li><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2978.pdf">Strongswan</a></li>
-</ul>
-<h3>What versions of Ubuntu have FIPS certified modules?</h3>
-<p>Currently only Ubuntu 16.04 LTS has FIPS certified modules.</p>
-<h3>How Can I Find Out More?</h3>
-<p><a href="https://www.ubuntu.com/support/contact-us?utm_source=insights&#038;utm_medium=blog&#038;utm_campaign=fips">Click here</a> to make an inquiry, and somebody from our team will get back to you!</p>
-
       </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.wikimedia.org&#x2F;2017&#x2F;12&#x2F;12&#x2F;failed-queries-fear-of-missing-out&#x2F;><h1>Gnomes and trolls and hobgoblins (oh my!)—Failed queries and the vicarious fear of missing out</h1></a>
       <h5>2017-12-12T16:49:32.000Z</h5>

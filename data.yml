@@ -55,7 +55,7 @@
       - "javascript"
       - "html"
     guide_to_working_url: ""
-    completed_task_instance_count: 881
+    completed_task_instance_count: 887
     id: 5733899491606528
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/jboss-community-gci/"
@@ -148,7 +148,7 @@
       - "node"
       - "python"
     guide_to_working_url: ""
-    completed_task_instance_count: 612
+    completed_task_instance_count: 640
     id: 4923880235859968
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/score-community"
@@ -241,7 +241,7 @@
       - "web technologies"
       - "python"
     guide_to_working_url: "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/"
-    completed_task_instance_count: 474
+    completed_task_instance_count: 485
     id: 6237166344601600
     winners: {}
     mailing_list: "http://groups.google.com/group/fossasia"
@@ -330,7 +330,7 @@
       - "javascript"
       - "css"
     guide_to_working_url: "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background"
-    completed_task_instance_count: 452
+    completed_task_instance_count: 455
     id: 4879181169033216
     winners: {}
     mailing_list: "http://lists.sugarlabs.org/"
@@ -416,7 +416,7 @@
       - "gnome"
       - "c/c++"
     guide_to_working_url: ""
-    completed_task_instance_count: 384
+    completed_task_instance_count: 392
     id: 5133577048031232
     winners: {}
     mailing_list: "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc"
@@ -673,7 +673,7 @@
       - "javascript"
       - "sql"
     guide_to_working_url: "https://wiki.musicbrainz.org/Google_Code-in/2017"
-    completed_task_instance_count: 383
+    completed_task_instance_count: 385
     id: 5936087526539264
     winners: {}
     mailing_list: "https://community.metabrainz.org/"
@@ -732,12 +732,6 @@
         id: 4597515116609536
       - 
         program_year: 2017
-        display_name: "nyan-salmon"
-        id: 6674063084748800
-        github_account: "nyan-salmon"
-        github_updated: 1513702930920
-      - 
-        program_year: 2017
         display_name: "Priyank Patel"
         id: 5679157667168256
       - 
@@ -745,6 +739,11 @@
         display_name: "synicalsyntax"
         id: 4625321003319296
         github_account: "synicalsyntax"
+      - 
+        program_year: 2017
+        display_name: "Viraat Chandra"
+        id: 5432437968470016
+        github_updated: 1513789338354
       - 
         program_year: 2017
         display_name: "Xavier Cooney"
@@ -764,7 +763,7 @@
       - "html"
       - "visual design"
     guide_to_working_url: "https://github.com/zulip/zulip-gci"
-    completed_task_instance_count: 345
+    completed_task_instance_count: 353
     id: 5744567921934336
     winners: {}
     mailing_list: null
@@ -818,8 +817,9 @@
         id: 5394768580313088
       - 
         program_year: 2017
-        display_name: "Linda Thelen"
-        id: 5289130839769088
+        display_name: "OHM OMAR"
+        id: 5842596901421056
+        github_updated: 1513789338777
       - 
         program_year: 2017
         display_name: "Phantom42"
@@ -851,7 +851,7 @@
       - "lua"
       - "wiki"
     guide_to_working_url: "https://www.mediawiki.org/wiki/Google_Code-in/2017"
-    completed_task_instance_count: 331
+    completed_task_instance_count: 338
     id: 5740205476675584
     winners: {}
     mailing_list: "https://lists.wikimedia.org/mailman/listinfo/wikitech-l"
@@ -1180,7 +1180,7 @@
       - "linux"
       - "windows"
     guide_to_working_url: ""
-    completed_task_instance_count: 254
+    completed_task_instance_count: 264
     id: 5731053304020992
     winners: {}
     mailing_list: null
@@ -1249,7 +1249,7 @@
       - "html"
       - "css"
     guide_to_working_url: "http://openwisp.io/docs/developer/contributing.html"
-    completed_task_instance_count: 253
+    completed_task_instance_count: 254
     id: 5693741010518016
     winners: {}
     mailing_list: "https://groups.google.com/d/forum/openwisp/join"
@@ -1298,10 +1298,6 @@
         github_account: "Damillora"
       - 
         program_year: 2017
-        display_name: "Han Haoxuan"
-        id: 6025453900922880
-      - 
-        program_year: 2017
         display_name: "Leorize"
         id: 6702015805652992
       - 
@@ -1324,6 +1320,11 @@
         program_year: 2017
         display_name: "Trần Thái Sơn"
         id: 5951955736199168
+      - 
+        program_year: 2017
+        display_name: "Yashwant Jodha"
+        id: 4615995622686720
+        github_updated: 1513789338464
     accepted_org_tos: true
     dev_mailing_list: null
     gplus_url: null
@@ -1334,7 +1335,7 @@
       - "bash"
       - "html"
     guide_to_working_url: "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails"
-    completed_task_instance_count: 246
+    completed_task_instance_count: 252
     id: 6281461650948096
     winners: {}
     mailing_list: "https://www.haiku-os.org/community/ml"
@@ -1519,7 +1520,7 @@
       - "illustrator"
       - "photoshop"
     guide_to_working_url: ""
-    completed_task_instance_count: 240
+    completed_task_instance_count: 248
     id: 5735606506225664
     winners: {}
     mailing_list: "http://systers.anitab.org"
@@ -1538,7 +1539,7 @@
     irc_channel: "http://systers.io/slack-systers-opensource/"
     slug: "systers-community"
     preferred_contact_method: null
-    guide_to_working: "Systers cares about the quality, thoroughness, and creativity of every task as well as community involvement. **Most tasks completed DOES NOT equal a winner.**\n\nLearn more about Android Studio by [using Android Profiler](https://codein.withgoogle.com/tasks/5695491494903808/)!\n\n[We're always here.](http://www.systers.io/slack-systers-opensource/)"
+    guide_to_working: "Systers cares about the quality, thoroughness, and creativity of every task as well as community involvement. **Most tasks completed DOES NOT equal a winner.**\n\nLearn more about Android tests [through research and writing a blog](https://codein.withgoogle.com/tasks/5762089928884224/)!\n\n[We're always here.](http://www.systers.io/slack-systers-opensource/)"
     name: "Systers Community"
     precis: "Helping women find their potential in code."
     image_url: "//lh3.googleusercontent.com/TGSO1vhSY7v2dmzJ1uq8_zEajDTn_ndNMtXJMxFCJFSH_BXCNOfwHF3Y8vNR1VIyafH2tOTdAQVMQHGaqYvDBqo"
@@ -1597,7 +1598,7 @@
       - "abstract syntax tree"
       - "errbot"
     guide_to_working_url: "https://projects.coala.io/"
-    completed_task_instance_count: 208
+    completed_task_instance_count: 216
     id: 4884530416582656
     winners: {}
     mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
@@ -1678,7 +1679,7 @@
     programming_languages: 
       - "visual programming language (catrobat)"
     guide_to_working_url: "http://catrob.at/cgcicti"
-    completed_task_instance_count: 204
+    completed_task_instance_count: 209
     id: 5135243763777536
     winners: {}
     mailing_list: "http://catrob.at/PocketCodeUserForum"
@@ -1847,7 +1848,7 @@
       - "html5"
       - "css"
     guide_to_working_url: ""
-    completed_task_instance_count: 188
+    completed_task_instance_count: 191
     id: 5753409548320768
     winners: {}
     mailing_list: "http://om.rs/gcitalk"
@@ -1934,7 +1935,7 @@
       - "gradle"
       - "blender"
     guide_to_working_url: "https://github.com/MovingBlocks/Terasology/wiki/GCI"
-    completed_task_instance_count: 180
+    completed_task_instance_count: 183
     id: 5693523175145472
     winners: {}
     mailing_list: null
@@ -1994,7 +1995,7 @@
       - "php"
       - "javascript"
     guide_to_working_url: "https://gitlab.com/librehealth/gci/wikis/"
-    completed_task_instance_count: 165
+    completed_task_instance_count: 169
     id: 5165875202097152
     winners: {}
     mailing_list: "https://forums.librehealth.io/gci"
@@ -2045,7 +2046,7 @@
       - "css"
       - "android"
     guide_to_working_url: "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn"
-    completed_task_instance_count: 157
+    completed_task_instance_count: 164
     id: 6299430183501824
     winners: {}
     mailing_list: "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss"
@@ -2114,7 +2115,7 @@
       - "c++"
       - "javascript"
     guide_to_working_url: "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students"
-    completed_task_instance_count: 149
+    completed_task_instance_count: 155
     id: 5139786496999424
     winners: {}
     mailing_list: "http://www.osgeo.org/content/faq/mailing_lists.html"
@@ -2162,6 +2163,73 @@
       zh: "https://zh.wikipedia.org/wiki/%E5%BC%80%E6%BA%90%E5%9C%B0%E7%90%86%E7%A9%BA%E9%97%B4%E5%9F%BA%E9%87%91%E4%BC%9A"
     wikidata_url: "//www.wikidata.org/wiki/Q1197305"
   - 
+    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Omshi Samal"
+        id: 5248610683846656
+      - 
+        program_year: 2017
+        display_name: "Shivansh Yadav"
+        id: 4670031679979520
+      - 
+        program_year: 2017
+        display_name: "Shruti Singh"
+        id: 5809459819446272
+      - 
+        program_year: 2017
+        display_name: "Surya"
+        id: 6607311776776192
+      - 
+        program_year: 2017
+        display_name: "Syed"
+        id: 6685363949010944
+      - 
+        program_year: 2017
+        display_name: "Terence Chan Zun Mun"
+        id: 6011586793701376
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: null
+    programming_languages: 
+      - "python"
+      - "html"
+      - "xml"
+      - "css"
+      - "java"
+    guide_to_working_url: "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html"
+    completed_task_instance_count: 122
+    id: 5067404587565056
+    winners: {}
+    mailing_list: "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html"
+    website_url: "https://github.com/LiquidGalaxy/liquid-galaxy/wiki/IdeasPage"
+    status: 2
+    program_year: 2017
+    description: "The Liquid Galaxy is a cluster of computers, from 3 to dozens, that allow the user to navigate in a interactive, panoramic and immersive \nway over the contents of Google Earth and Google Maps, including the possibility of adding layers of information."
+    tags: 
+      - "geo"
+      - "maps"
+      - "earth"
+      - "visualization"
+      - "interactive"
+    twitter_url: null
+    contact_email: "lgcodein@gmail.com"
+    irc_channel: null
+    slug: "liquid-galaxy-project"
+    preferred_contact_method: null
+    guide_to_working: "Main page about GCI for Liquid Galaxy project: \nhttp://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html"
+    name: "Liquid Galaxy project"
+    precis: "Liquid Galaxy: a interactive, panoramic and immersive visualization tool based on Google GEO"
+    image_url: "//lh3.googleusercontent.com/YLx3Gcrlwm7VLA3mVJ5AtC9kCzMekVSQDzjjcvH63bJZPPNasr0wVWGiXIe2E9lW0OC0SOG-PFAkBdIf8d2omm8"
+    blog_url: "http://www.liquidgalaxylab.com/"
+    github: "LiquidGalaxy"
+    chat: 
+      url: null
+    wikipedia_urls: 
+      en: "https://en.wikipedia.org/wiki/Liquid_Galaxy"
+    wikidata_url: "//www.wikidata.org/wiki/Q21463290"
+  - 
     primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
     leaders: 
       - 
@@ -2176,6 +2244,11 @@
         program_year: 2017
         display_name: "Neel Gopaul"
         id: 4576133293015040
+      - 
+        program_year: 2017
+        display_name: "Sagar Khatri-1"
+        id: 6008675401465856
+        github_updated: 1513789338427
       - 
         program_year: 2017
         display_name: "Tanish Kapur"
@@ -2194,7 +2267,7 @@
       - "css"
       - "symfony"
     guide_to_working_url: "https://www.drupal.org/node/984014"
-    completed_task_instance_count: 120
+    completed_task_instance_count: 122
     id: 5636094664114176
     winners: {}
     mailing_list: "https://drupal.org/mailing-lists"
@@ -2288,73 +2361,6 @@
       zh: "https://zh.wikipedia.org/wiki/Drupal"
     wikidata_url: "//www.wikidata.org/wiki/Q170855"
   - 
-    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Omshi Samal"
-        id: 5248610683846656
-      - 
-        program_year: 2017
-        display_name: "Shivansh Yadav"
-        id: 4670031679979520
-      - 
-        program_year: 2017
-        display_name: "Shruti Singh"
-        id: 5809459819446272
-      - 
-        program_year: 2017
-        display_name: "Surya"
-        id: 6607311776776192
-      - 
-        program_year: 2017
-        display_name: "Syed"
-        id: 6685363949010944
-      - 
-        program_year: 2017
-        display_name: "Terence Chan Zun Mun"
-        id: 6011586793701376
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: null
-    programming_languages: 
-      - "python"
-      - "html"
-      - "xml"
-      - "css"
-      - "java"
-    guide_to_working_url: "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html"
-    completed_task_instance_count: 117
-    id: 5067404587565056
-    winners: {}
-    mailing_list: "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html"
-    website_url: "https://github.com/LiquidGalaxy/liquid-galaxy/wiki/IdeasPage"
-    status: 2
-    program_year: 2017
-    description: "The Liquid Galaxy is a cluster of computers, from 3 to dozens, that allow the user to navigate in a interactive, panoramic and immersive \nway over the contents of Google Earth and Google Maps, including the possibility of adding layers of information."
-    tags: 
-      - "geo"
-      - "maps"
-      - "earth"
-      - "visualization"
-      - "interactive"
-    twitter_url: null
-    contact_email: "lgcodein@gmail.com"
-    irc_channel: null
-    slug: "liquid-galaxy-project"
-    preferred_contact_method: null
-    guide_to_working: "Main page about GCI for Liquid Galaxy project: \nhttp://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html"
-    name: "Liquid Galaxy project"
-    precis: "Liquid Galaxy: a interactive, panoramic and immersive visualization tool based on Google GEO"
-    image_url: "//lh3.googleusercontent.com/YLx3Gcrlwm7VLA3mVJ5AtC9kCzMekVSQDzjjcvH63bJZPPNasr0wVWGiXIe2E9lW0OC0SOG-PFAkBdIf8d2omm8"
-    blog_url: "http://www.liquidgalaxylab.com/"
-    github: "LiquidGalaxy"
-    chat: 
-      url: null
-    wikipedia_urls: 
-      en: "https://en.wikipedia.org/wiki/Liquid_Galaxy"
-    wikidata_url: "//www.wikidata.org/wiki/Q21463290"
-  - 
     primary_open_source_license: "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
     leaders: 
       - 
@@ -2379,7 +2385,7 @@
       - "css"
       - "jquery"
     guide_to_working_url: "https://gitter.im/Cloud-CV/"
-    completed_task_instance_count: 80
+    completed_task_instance_count: 82
     id: 4854733644759040
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/cloudcv"
@@ -2441,7 +2447,7 @@
       - "html"
       - "bash"
     guide_to_working_url: "http://wiki.apertium.org/wiki/Task_ideas_for_Google_Code-in/Getting_started"
-    completed_task_instance_count: 55
+    completed_task_instance_count: 57
     id: 6541403171586048
     winners: {}
     mailing_list: "http://wiki.apertium.org/wiki/Contact"
