@@ -27,6 +27,7 @@ $(window).on('load', function() {
   var localeOptions = {
     English: 'en',
     Español: 'es',
+    Polski: 'pl',
   }
 
   var locList = $('#lang-select')
