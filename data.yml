@@ -55,7 +55,7 @@
       - "javascript"
       - "html"
     guide_to_working_url: ""
-    completed_task_instance_count: 875
+    completed_task_instance_count: 881
     id: 5733899491606528
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/jboss-community-gci/"
@@ -148,7 +148,7 @@
       - "node"
       - "python"
     guide_to_working_url: ""
-    completed_task_instance_count: 592
+    completed_task_instance_count: 612
     id: 4923880235859968
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/score-community"
@@ -241,7 +241,7 @@
       - "web technologies"
       - "python"
     guide_to_working_url: "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/"
-    completed_task_instance_count: 458
+    completed_task_instance_count: 474
     id: 6237166344601600
     winners: {}
     mailing_list: "http://groups.google.com/group/fossasia"
@@ -330,7 +330,7 @@
       - "javascript"
       - "css"
     guide_to_working_url: "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background"
-    completed_task_instance_count: 446
+    completed_task_instance_count: 452
     id: 4879181169033216
     winners: {}
     mailing_list: "http://lists.sugarlabs.org/"
@@ -416,7 +416,7 @@
       - "gnome"
       - "c/c++"
     guide_to_working_url: ""
-    completed_task_instance_count: 376
+    completed_task_instance_count: 384
     id: 5133577048031232
     winners: {}
     mailing_list: "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc"
@@ -632,6 +632,11 @@
         id: 6663981454327808
       - 
         program_year: 2017
+        display_name: "Enjeck Cleopatra"
+        id: 5982403564666880
+        github_updated: 1513767491831
+      - 
+        program_year: 2017
         display_name: "Eshan Singh"
         id: 5077106331484160
         github_account: "eshansingh"
@@ -668,7 +673,7 @@
       - "javascript"
       - "sql"
     guide_to_working_url: "https://wiki.musicbrainz.org/Google_Code-in/2017"
-    completed_task_instance_count: 372
+    completed_task_instance_count: 383
     id: 5936087526539264
     winners: {}
     mailing_list: "https://community.metabrainz.org/"
@@ -759,7 +764,7 @@
       - "html"
       - "visual design"
     guide_to_working_url: "https://github.com/zulip/zulip-gci"
-    completed_task_instance_count: 331
+    completed_task_instance_count: 345
     id: 5744567921934336
     winners: {}
     mailing_list: null
@@ -813,10 +818,6 @@
         id: 5394768580313088
       - 
         program_year: 2017
-        display_name: "Jan Nowosielski"
-        id: 4862270347673600
-      - 
-        program_year: 2017
         display_name: "Linda Thelen"
         id: 5289130839769088
       - 
@@ -833,6 +834,11 @@
         id: 4789845765390336
       - 
         program_year: 2017
+        display_name: "Ryan Chang"
+        id: 4891685077123072
+        github_updated: 1513767492241
+      - 
+        program_year: 2017
         display_name: "Yifei He"
         id: 5910548224933888
     accepted_org_tos: true
@@ -845,7 +851,7 @@
       - "lua"
       - "wiki"
     guide_to_working_url: "https://www.mediawiki.org/wiki/Google_Code-in/2017"
-    completed_task_instance_count: 321
+    completed_task_instance_count: 331
     id: 5740205476675584
     winners: {}
     mailing_list: "https://lists.wikimedia.org/mailman/listinfo/wikitech-l"
@@ -1083,7 +1089,7 @@
       - "three.js"
       - "html/css"
     guide_to_working_url: ""
-    completed_task_instance_count: 309
+    completed_task_instance_count: 325
     id: 5154791065911296
     winners: {}
     mailing_list: "http://brlcad.org/wiki/Mailing_lists"
@@ -1174,7 +1180,7 @@
       - "linux"
       - "windows"
     guide_to_working_url: ""
-    completed_task_instance_count: 251
+    completed_task_instance_count: 254
     id: 5731053304020992
     winners: {}
     mailing_list: null
@@ -1243,7 +1249,7 @@
       - "html"
       - "css"
     guide_to_working_url: "http://openwisp.io/docs/developer/contributing.html"
-    completed_task_instance_count: 249
+    completed_task_instance_count: 253
     id: 5693741010518016
     winners: {}
     mailing_list: "https://groups.google.com/d/forum/openwisp/join"
@@ -1328,7 +1334,7 @@
       - "bash"
       - "html"
     guide_to_working_url: "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails"
-    completed_task_instance_count: 240
+    completed_task_instance_count: 246
     id: 6281461650948096
     winners: {}
     mailing_list: "https://www.haiku-os.org/community/ml"
@@ -1513,14 +1519,14 @@
       - "illustrator"
       - "photoshop"
     guide_to_working_url: ""
-    completed_task_instance_count: 236
+    completed_task_instance_count: 240
     id: 5735606506225664
     winners: {}
     mailing_list: "http://systers.anitab.org"
     website_url: "https://anitab.org/systers/"
     status: 2
     program_year: 2017
-    description: "# We welcome everyone! We need lots of help that involves no coding experience.\n\nSysters is a community for all women involved in the technical aspects of computing. We have over 6,000 members from more than 62 countries around the world. **We welcome the participation of women technologists of all ages at any stage of their studies or careers.** Systers was founded by Anita Borg in 1987 together with 12 other women as a small electronic mailing list for women in “systems”. Systers continues to serve this purpose by providing women a private space to seek advice from their peers, and discuss the challenges they share as women technologists. \n\nSysters Open Source has many projects, but we are focusing on PowerUp ([Android](https://github.com/systers/powerup-android) & [iOS](https://github.com/systers/powerup-ios)) for Google Code-in this year. This choose-your-own-adventure game is aimed at adolescents to take charge of their reproductive health, work on self-esteem, and empower them to have choices."
+    description: "# About\nSysters is a community for all women involved in the technical aspects of computing. We have over 7,000 members from more than 65 countries around the world. **We welcome the participation of women technologists of all ages at any stage of their studies or careers.** Systers provides women a private space to seek advice from their peers, and discuss the challenges they share as women technologists. \n\n# Mobile Application\nSysters Open Source has *many* projects, but we are focusing on PowerUp ([Android](https://github.com/systers/powerup-android) & [iOS](https://github.com/systers/powerup-ios)) for Google Code-in this year. In 2016, we had many students express that our internal acronyms for all projects were very confusing. PowerUp is a choose-your-own-adventure game is aimed at adolescents to take charge of their reproductive health, work on self-esteem, and empower them to have choices.\n\n# Mentors\nAll Systers mentors are volunteers. We have mentors from many different time zones which means our organization does not currently have 24-hour availability on Slack or the GCI Website. \n* If a task takes longer than 24 hours for review, politely ping the task's mentor in #powerup or #systers channel (i.e. @prachi1210, please review my task here: [url](url)).\n* If a task takes longer than 36 hours for review, politely ping the admins in #powerup or #systers channel (i.e. @may, I haven't received a review or response to my task here: [url](url)).\n\n# **We welcome everyone! We need lots of help that involves no coding experience.**"
     tags: 
       - "gaming"
       - "mobile"
@@ -1591,7 +1597,7 @@
       - "abstract syntax tree"
       - "errbot"
     guide_to_working_url: "https://projects.coala.io/"
-    completed_task_instance_count: 202
+    completed_task_instance_count: 208
     id: 4884530416582656
     winners: {}
     mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
@@ -1623,6 +1629,84 @@
     wikipedia_urls: 
       en: "https://en.wikipedia.org/wiki/Coala_%28software%29"
     wikidata_url: "//www.wikidata.org/wiki/Q25215462"
+  - 
+    primary_open_source_license: "GNU Affero General Public License v3 (AGPL-3.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Alejandro Heredia"
+        id: 5243643889713152
+      - 
+        program_year: 2017
+        display_name: "Andreas Lukita"
+        id: 4692396648431616
+      - 
+        program_year: 2017
+        display_name: "Chandra Chou"
+        id: 6189747405848576
+      - 
+        program_year: 2017
+        display_name: "headhunter"
+        id: 5126869030535168
+      - 
+        program_year: 2017
+        display_name: "Mateusz Komajda"
+        id: 4979968129892352
+      - 
+        program_year: 2017
+        display_name: "Nikita Kotenev"
+        id: 6003849812770816
+      - 
+        program_year: 2017
+        display_name: "Sarthak Agrawal"
+        id: 5394417575788544
+      - 
+        program_year: 2017
+        display_name: "Siddh Jain"
+        id: 6267827092717568
+      - 
+        program_year: 2017
+        display_name: "Yudhistira G.S."
+        id: 4611923993690112
+      - 
+        program_year: 2017
+        display_name: "Łukasz Ameljan"
+        id: 5096542534893568
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/communities/116816272940643231129"
+    programming_languages: 
+      - "visual programming language (catrobat)"
+    guide_to_working_url: "http://catrob.at/cgcicti"
+    completed_task_instance_count: 204
+    id: 5135243763777536
+    winners: {}
+    mailing_list: "http://catrob.at/PocketCodeUserForum"
+    website_url: "https://www.catrobat.org/"
+    status: 2
+    program_year: 2017
+    description: "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!"
+    tags: 
+      - "mobile"
+      - "games"
+      - "visual programming"
+      - "apps"
+      - "animations"
+    twitter_url: "http://twitter.com/Pocket_Code"
+    contact_email: "user_forum@catrobat.org"
+    irc_channel: null
+    slug: "catrobat"
+    preferred_contact_method: null
+    guide_to_working: "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions."
+    name: "Catrobat"
+    precis: "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!"
+    image_url: "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE"
+    blog_url: null
+    github: "Catrobat"
+    chat: 
+      url: null
+    wikipedia_urls: null
+    wikidata_url: "//www.wikidata.org/wiki/Q45341807"
   - 
     primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
     leaders: 
@@ -1673,7 +1757,7 @@
       - "html"
       - "mysql"
     guide_to_working_url: "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
-    completed_task_instance_count: 201
+    completed_task_instance_count: 204
     id: 6239808655458304
     winners: {}
     mailing_list: "http://mifos.org/resources/community/communications/#mailing-lists"
@@ -1708,84 +1792,6 @@
       es: "https://es.wikipedia.org/wiki/Mifos"
       pl: "https://pl.wikipedia.org/wiki/Mifos"
     wikidata_url: "//www.wikidata.org/wiki/Q3347450"
-  - 
-    primary_open_source_license: "GNU Affero General Public License v3 (AGPL-3.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Alejandro Heredia"
-        id: 5243643889713152
-      - 
-        program_year: 2017
-        display_name: "Andreas Lukita"
-        id: 4692396648431616
-      - 
-        program_year: 2017
-        display_name: "Chandra Chou"
-        id: 6189747405848576
-      - 
-        program_year: 2017
-        display_name: "headhunter"
-        id: 5126869030535168
-      - 
-        program_year: 2017
-        display_name: "Mateusz Komajda"
-        id: 4979968129892352
-      - 
-        program_year: 2017
-        display_name: "Nikita Kotenev"
-        id: 6003849812770816
-      - 
-        program_year: 2017
-        display_name: "Sarthak Agrawal"
-        id: 5394417575788544
-      - 
-        program_year: 2017
-        display_name: "Siddh Jain"
-        id: 6267827092717568
-      - 
-        program_year: 2017
-        display_name: "Yudhistira G.S."
-        id: 4611923993690112
-      - 
-        program_year: 2017
-        display_name: "Łukasz Ameljan"
-        id: 5096542534893568
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/communities/116816272940643231129"
-    programming_languages: 
-      - "visual programming language (catrobat)"
-    guide_to_working_url: "http://catrob.at/cgcicti"
-    completed_task_instance_count: 200
-    id: 5135243763777536
-    winners: {}
-    mailing_list: "http://catrob.at/PocketCodeUserForum"
-    website_url: "https://www.catrobat.org/"
-    status: 2
-    program_year: 2017
-    description: "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!"
-    tags: 
-      - "mobile"
-      - "games"
-      - "visual programming"
-      - "apps"
-      - "animations"
-    twitter_url: "http://twitter.com/Pocket_Code"
-    contact_email: "user_forum@catrobat.org"
-    irc_channel: null
-    slug: "catrobat"
-    preferred_contact_method: null
-    guide_to_working: "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions."
-    name: "Catrobat"
-    precis: "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!"
-    image_url: "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE"
-    blog_url: null
-    github: "Catrobat"
-    chat: 
-      url: null
-    wikipedia_urls: null
-    wikidata_url: "//www.wikidata.org/wiki/Q45341807"
   - 
     primary_open_source_license: "Mozilla Public License 2.0 (MPL-2.0)"
     leaders: 
@@ -1841,7 +1847,7 @@
       - "html5"
       - "css"
     guide_to_working_url: ""
-    completed_task_instance_count: 179
+    completed_task_instance_count: 188
     id: 5753409548320768
     winners: {}
     mailing_list: "http://om.rs/gcitalk"
@@ -1928,7 +1934,7 @@
       - "gradle"
       - "blender"
     guide_to_working_url: "https://github.com/MovingBlocks/Terasology/wiki/GCI"
-    completed_task_instance_count: 179
+    completed_task_instance_count: 180
     id: 5693523175145472
     winners: {}
     mailing_list: null
@@ -1961,6 +1967,63 @@
       commons: "https://commons.wikipedia.org/wiki/Category%3AMovingBlocks"
     wikidata_url: "//www.wikidata.org/wiki/Q40881750"
   - 
+    primary_open_source_license: "Mozilla Public License 2.0 (MPL-2.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Mateusz Grzonka"
+        id: 4662563470049280
+      - 
+        program_year: 2017
+        display_name: "MigDinny"
+        id: 5815887145730048
+        github_account: "MigDinny"
+      - 
+        program_year: 2017
+        display_name: "nulxis"
+        id: 6241077499527168
+      - 
+        program_year: 2017
+        display_name: "Shaurya Nathan"
+        id: 4988221043769344
+    accepted_org_tos: true
+    dev_mailing_list: ""
+    gplus_url: ""
+    programming_languages: 
+      - "java"
+      - "php"
+      - "javascript"
+    guide_to_working_url: "https://gitlab.com/librehealth/gci/wikis/"
+    completed_task_instance_count: 165
+    id: 5165875202097152
+    winners: {}
+    mailing_list: "https://forums.librehealth.io/gci"
+    website_url: "https://librehealth.io"
+    status: 2
+    program_year: 2017
+    description: "LibreHealth is a collaborative community for free & open source software projects in Health IT. We are a member project of the Software Freedom Conservatory, and an all-volunteer public charity. Come join us!"
+    tags: 
+      - "hfoss"
+      - "health"
+      - "humanitarian"
+    twitter_url: "https://twitter.com/LibreHealthIO"
+    contact_email: "lsc@librehealth.io"
+    irc_channel: "https://chat.librehealth.io/channel/gci"
+    slug: "librehealth"
+    preferred_contact_method: null
+    guide_to_working: "# You **must** have completed the [Become a part of the community](https://codein.withgoogle.com/tasks/5974232355831808/) task prior to completing any others! \n\nWe require that all work you complete be your own work. It must be wholly original. [See our wiki](https://gitlab.com/librehealth/gci/wikis/) for other information."
+    name: "LibreHealth"
+    precis: "Healthcare for Humanity — a collaborative community for free & open source software projects in Health IT. All-volunteer public charity."
+    image_url: "//lh3.googleusercontent.com/nFlpi1OHSnJpP95J0D1GocKcaURz9x0XOvO-x9E_p5iJfUHY_w6IQhsntrIY542No96DPjAd8XLLVDWOLyLoTqo"
+    blog_url: ""
+    github: "LibreHealthIO"
+    chat: 
+      url: "https://chat.librehealth.io/channel/gci"
+      platform: "ROCKET"
+      image: "images/logos/rocket.png"
+    wikipedia_urls: null
+    wikidata_url: "//www.wikidata.org/wiki/Q45341906"
+  - 
     primary_open_source_license: "GNU Library or \"Lesser\" General Public License version 2.1 (LGPL-2.1)"
     leaders: 
       - 
@@ -1982,7 +2045,7 @@
       - "css"
       - "android"
     guide_to_working_url: "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn"
-    completed_task_instance_count: 153
+    completed_task_instance_count: 157
     id: 6299430183501824
     winners: {}
     mailing_list: "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss"
@@ -2023,63 +2086,6 @@
       zh: "https://zh.wikipedia.org/wiki/XWiki"
     wikidata_url: "//www.wikidata.org/wiki/Q526699"
   - 
-    primary_open_source_license: "Mozilla Public License 2.0 (MPL-2.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Mateusz Grzonka"
-        id: 4662563470049280
-      - 
-        program_year: 2017
-        display_name: "MigDinny"
-        id: 5815887145730048
-        github_account: "MigDinny"
-      - 
-        program_year: 2017
-        display_name: "nulxis"
-        id: 6241077499527168
-      - 
-        program_year: 2017
-        display_name: "Shaurya Nathan"
-        id: 4988221043769344
-    accepted_org_tos: true
-    dev_mailing_list: ""
-    gplus_url: ""
-    programming_languages: 
-      - "java"
-      - "php"
-      - "javascript"
-    guide_to_working_url: "https://gitlab.com/librehealth/gci/wikis/"
-    completed_task_instance_count: 152
-    id: 5165875202097152
-    winners: {}
-    mailing_list: "https://forums.librehealth.io/gci"
-    website_url: "https://librehealth.io"
-    status: 2
-    program_year: 2017
-    description: "LibreHealth is a collaborative community for free & open source software projects in Health IT. We are a member project of the Software Freedom Conservatory, and an all-volunteer public charity. Come join us!"
-    tags: 
-      - "hfoss"
-      - "health"
-      - "humanitarian"
-    twitter_url: "https://twitter.com/LibreHealthIO"
-    contact_email: "lsc@librehealth.io"
-    irc_channel: "https://chat.librehealth.io/channel/gci"
-    slug: "librehealth"
-    preferred_contact_method: null
-    guide_to_working: "# You **must** have completed the [Become a part of the community](https://codein.withgoogle.com/tasks/5974232355831808/) task prior to completing any others! \n\nWe require that all work you complete be your own work. It must be wholly original. [See our wiki](https://gitlab.com/librehealth/gci/wikis/) for other information."
-    name: "LibreHealth"
-    precis: "Healthcare for Humanity — a collaborative community for free & open source software projects in Health IT. All-volunteer public charity."
-    image_url: "//lh3.googleusercontent.com/nFlpi1OHSnJpP95J0D1GocKcaURz9x0XOvO-x9E_p5iJfUHY_w6IQhsntrIY542No96DPjAd8XLLVDWOLyLoTqo"
-    blog_url: ""
-    github: "LibreHealthIO"
-    chat: 
-      url: "https://chat.librehealth.io/channel/gci"
-      platform: "ROCKET"
-      image: "images/logos/rocket.png"
-    wikipedia_urls: null
-    wikidata_url: "//www.wikidata.org/wiki/Q45341906"
-  - 
     primary_open_source_license: "MIT license (MIT)"
     leaders: 
       - 
@@ -2108,7 +2114,7 @@
       - "c++"
       - "javascript"
     guide_to_working_url: "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students"
-    completed_task_instance_count: 142
+    completed_task_instance_count: 149
     id: 5139786496999424
     winners: {}
     mailing_list: "http://www.osgeo.org/content/faq/mailing_lists.html"
@@ -2188,7 +2194,7 @@
       - "css"
       - "symfony"
     guide_to_working_url: "https://www.drupal.org/node/984014"
-    completed_task_instance_count: 115
+    completed_task_instance_count: 120
     id: 5636094664114176
     winners: {}
     mailing_list: "https://drupal.org/mailing-lists"
@@ -2318,7 +2324,7 @@
       - "css"
       - "java"
     guide_to_working_url: "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html"
-    completed_task_instance_count: 110
+    completed_task_instance_count: 117
     id: 5067404587565056
     winners: {}
     mailing_list: "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html"
@@ -2373,7 +2379,7 @@
       - "css"
       - "jquery"
     guide_to_working_url: "https://gitter.im/Cloud-CV/"
-    completed_task_instance_count: 79
+    completed_task_instance_count: 80
     id: 4854733644759040
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/cloudcv"
@@ -2435,7 +2441,7 @@
       - "html"
       - "bash"
     guide_to_working_url: "http://wiki.apertium.org/wiki/Task_ideas_for_Google_Code-in/Getting_started"
-    completed_task_instance_count: 51
+    completed_task_instance_count: 55
     id: 6541403171586048
     winners: {}
     mailing_list: "http://wiki.apertium.org/wiki/Contact"
