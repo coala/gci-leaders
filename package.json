@@ -10,7 +10,8 @@
     "gather": "node ./lib/gather.js",
     "clean": "rm -rf out/*",
     "build": "npm run gather && npm run scrape && npm run planet && npm run generate",
-    "build:clean": "npm run clean && npm run build"
+    "build:clean": "npm run clean && npm run build",
+    "test": "jest"
   },
   "keywords": [],
   "author": "blazeu <neversleepman@tfwno.gf>",
@@ -31,7 +32,13 @@
     "eslint": "^4.12.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.3.1",
+    "jest": "^22.0.3",
     "prettier": "^1.9.1",
     "stylelint": "^7.13.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/tests/**/?(*.)(spec|test).js?(x)"
+    ]
   }
 }
