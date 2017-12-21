@@ -9,7 +9,9 @@
     "generate": "node ./lib/generate.js",
     "gather": "node ./lib/gather.js",
     "clean": "rm -rf out/*",
-    "build": "npm run gather && npm run scrape && npm run planet && npm run generate",
+    "dev": "webpack-dev-server --progress",
+    "bundle": "NODE_ENV=production webpack --progress",
+    "build": "npm run bundle && npm run gather && npm run scrape && npm run planet && npm run generate",
     "build:clean": "npm run clean && npm run build",
     "test": "jest"
   },
@@ -20,25 +22,46 @@
     "chattie": "0.0.4",
     "feed-read-parser": "^0.0.6",
     "find-rss": "^1.6.4",
+    "jquery": "^3.2.1",
+    "jquery.i18n": "git+https://github.com/wikimedia/jquery.i18n.git",
     "json2yaml": "^1.1.0",
+    "lodash.mapkeys": "^4.6.0",
     "mustache": "^2.3.0",
-    "ncp": "^2.0.0",
     "node-fetch": "^1.7.3",
     "valid-github-username": "0.0.1",
     "wikidata-sdk": "^5.5.0"
   },
   "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.3.0",
+    "css-loader": "^0.28.7",
     "csslint": "^1.0.5",
     "eslint": "^4.12.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.3.1",
+    "expose-loader": "^0.7.4",
+    "extract-text-webpack-plugin": "^3.0.2",
     "jest": "^22.0.3",
+    "postcss-loader": "^2.0.9",
     "prettier": "^1.9.1",
-    "stylelint": "^7.13.0"
+    "style-loader": "^0.19.1",
+    "stylelint": "^7.13.0",
+    "uglifyjs-webpack-plugin": "^1.1.4",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7",
+    "webpack-manifest-plugin": "^1.3.2"
   },
   "jest": {
     "testMatch": [
       "**/tests/**/?(*.)(spec|test).js?(x)"
     ]
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }

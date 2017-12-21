@@ -1,9 +1,4 @@
-document.getElementById('ago').textContent = `(${timeDifference(
-  new Date().getTime(),
-  new Date(document.getElementById('time').dataset.time).getTime()
-)})`
-
-function timeDifference(current, previous) {
+export function timeDifference(current, previous) {
   const msPerMinute = 60 * 1000
   const msPerHour = msPerMinute * 60
   const msPerDay = msPerHour * 24
@@ -30,7 +25,7 @@ function timeDifference(current, previous) {
 // this is needed for time expression translation.
 // will be removed when we find a way
 // to correctly strip the "ago" segment of a translation
-function timeDifferenceFuture(current, previous) {
+export function timeDifferenceFuture(current, previous) {
   const msPerMinute = 60 * 1000
   const msPerHour = msPerMinute * 60
   const msPerDay = msPerHour * 24
@@ -52,35 +47,4 @@ function timeDifferenceFuture(current, previous) {
   } else {
     return $.i18n('years', Math.round(elapsed / msPerYear))
   }
-}
-
-// select all leaderboards
-var allLeaders = document.querySelectorAll('div.org ul')
-allLeaders.forEach(function(orgList) {
-  // shuffle each leaderboard
-  for (var i = orgList.children.length; i >= 0; i--) {
-    orgList.appendChild(orgList.children[(Math.random() * i) | 0])
-  }
-})
-
-document.getElementById('progress').textContent = gciProgress()
-
-function gciProgress() {
-  const progress = document.getElementById('progress').dataset
-  const competitionOpen = new Date(progress.competitionopen)
-  const noClaims = new Date(progress.noclaims)
-  const current = new Date()
-  const percentagePassed =
-    100 - (noClaims - current) / (noClaims - competitionOpen) * 100
-  document
-    .getElementsByClassName('progress-bar')[0]
-    .setAttribute(
-      'style',
-      'width:' + percentagePassed + '%;height: 8px;border-radius: 100px;'
-    )
-  return $.i18n(
-    'passed',
-    Math.round(percentagePassed),
-    timeDifferenceFuture(noClaims, current)
-  )
 }
