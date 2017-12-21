@@ -69,6 +69,11 @@ a {
   vertical-align: top;
 }
 
+.feed {
+  height: 1.5em;
+  vertical-align: top;
+}
+
 ul {
   list-style: disc inside;
   margin: 0;

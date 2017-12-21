@@ -1,6 +1,6 @@
 [all]
 files = **.js, **.json, **.css, **.yml, **.html, .eslintrc
-ignore = node_modules/**, out/**, package-lock.json
+ignore = node_modules/**, out/**, tests/__data__/**, package-lock.json
 max_line_length = 80
 use_spaces = True
 
@@ -33,7 +33,7 @@ htmllint_ignore = optional
 
 [json]
 files = *.json
-ignore = package-lock.json
+ignore = tests/__data__/**, package-lock.json
 bears = JSONFormatBear
 indent_size = 2
 default_actions = *: ApplyPatchAction
