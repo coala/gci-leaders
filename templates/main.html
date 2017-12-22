@@ -91,6 +91,11 @@
                 <img src="images/logos/wikidata.png" class="chat" alt="See them on Wikidata" />
               </a>
             {{/wikidata_url}}
+            {{#stack_exchange}}
+              <a href="{{stack_exchange.url}}">
+                <img src="{{stack_exchange.image}}" class="chat" alt="Do Q&amp;A on Stack Exchange" />
+              </a>
+            {{/stack_exchange}}
             <div class="org-leaderboard">
               <ul>
                 {{#leaders}}
@@ -172,6 +177,11 @@
                 <img src="images/logos/wikidata.png" class="chat" alt="See them on Wikidata" />
               </a>
             {{/wikidata_url}}
+            {{#stack_exchange}}
+              <a href="{{stack_exchange.url}}">
+                <img src="{{stack_exchange.image}}" class="chat" alt="Do Q&amp;A on Stack Exchange" />
+              </a>
+            {{/stack_exchange}}
           </div>
         </div>
         {{/noLeader}}

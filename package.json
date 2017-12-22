@@ -20,6 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "chattie": "0.0.4",
+    "cheerio": "^1.0.0-rc.2",
     "feed-read-parser": "^0.0.6",
     "find-rss": "^1.6.4",
     "jquery": "^3.2.1",
