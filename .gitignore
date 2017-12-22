@@ -1,6 +1,5 @@
 node_modules
-out/*
-!out/.keep
+out
 yarn.lock
 .DS_Store
 **.orig

@@ -9,7 +9,7 @@ bears = SpaceConsistencyBear
 default_actions = *: ApplyPatchAction
 
 [all.linelength]
-ignore += **.html, static/js/i18n/**.json, package.json
+ignore += **.html, static/i18n/**.json, package.json
 bears = LineLengthBear
 
 [all.links]
@@ -17,13 +17,13 @@ bears = InvalidLinkBear
 link_ignore_regex = (github\.com|\{|\$)
 
 [js]
-files = lib/**/*.js, static/js/**/*.js
+files = lib/**/*.js, src/js/**/*.js
 bears = ESLintBear
 eslint_config = .eslintrc
 default_actions = *: ApplyPatchAction
 
 [css]
-files = static/css/*.css
+files = src/styles/*.css
 bears = StyleLintBear
 
 [html]
