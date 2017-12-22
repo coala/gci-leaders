@@ -65,7 +65,7 @@
       - "javascript"
       - "html"
     guide_to_working_url: ""
-    completed_task_instance_count: 900
+    completed_task_instance_count: 909
     id: 5733899491606528
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/jboss-community-gci/"
@@ -168,7 +168,7 @@
       - "node"
       - "python"
     guide_to_working_url: ""
-    completed_task_instance_count: 711
+    completed_task_instance_count: 732
     id: 4923880235859968
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/score-community"
@@ -216,6 +216,12 @@
         github_updated: 1513852198777
       - 
         program_year: 2017
+        display_name: "Kartikeya Singh"
+        id: 5689414720159744
+        github_account: "kartikeya23"
+        github_updated: 1513962170304
+      - 
+        program_year: 2017
         display_name: "Kuba Michalski"
         id: 5361327000256512
         github_account: "kubami9"
@@ -251,12 +257,6 @@
         github_updated: 1513852198475
       - 
         program_year: 2017
-        display_name: "Tushar Kumar"
-        id: 4633252734173184
-        github_account: "awesometushar000"
-        github_updated: 1513875818670
-      - 
-        program_year: 2017
         display_name: "Yash Kumar Verma"
         id: 4707728943480832
         github_account: "YashKumarVerma"
@@ -271,7 +271,7 @@
       - "web technologies"
       - "python"
     guide_to_working_url: "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/"
-    completed_task_instance_count: 509
+    completed_task_instance_count: 524
     id: 6237166344601600
     winners: {}
     mailing_list: "http://groups.google.com/group/fossasia"
@@ -370,7 +370,7 @@
       - "javascript"
       - "css"
     guide_to_working_url: "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background"
-    completed_task_instance_count: 470
+    completed_task_instance_count: 481
     id: 4879181169033216
     winners: {}
     mailing_list: "http://lists.sugarlabs.org/"
@@ -466,7 +466,7 @@
       - "gnome"
       - "c/c++"
     guide_to_working_url: ""
-    completed_task_instance_count: 420
+    completed_task_instance_count: 434
     id: 5133577048031232
     winners: {}
     mailing_list: "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc"
@@ -686,7 +686,7 @@
         program_year: 2017
         display_name: "Enjeck Cleopatra"
         id: 5982403564666880
-        github_updated: 1513767491831
+        github_updated: 1513962170535
       - 
         program_year: 2017
         display_name: "Eshan Singh"
@@ -731,7 +731,7 @@
       - "javascript"
       - "sql"
     guide_to_working_url: "https://wiki.musicbrainz.org/Google_Code-in/2017"
-    completed_task_instance_count: 401
+    completed_task_instance_count: 412
     id: 5936087526539264
     winners: {}
     mailing_list: "https://community.metabrainz.org/"
@@ -808,7 +808,7 @@
         program_year: 2017
         display_name: "Viraat Chandra"
         id: 5432437968470016
-        github_updated: 1513789338354
+        github_updated: 1513962170536
       - 
         program_year: 2017
         display_name: "Xavier Cooney"
@@ -830,7 +830,7 @@
       - "html"
       - "visual design"
     guide_to_working_url: "https://github.com/zulip/zulip-gci"
-    completed_task_instance_count: 373
+    completed_task_instance_count: 384
     id: 5744567921934336
     winners: {}
     mailing_list: null
@@ -863,6 +863,104 @@
       en: "https://en.wikipedia.org/wiki/Zulip"
       ru: "https://ru.wikipedia.org/wiki/Zulip"
     wikidata_url: "//www.wikidata.org/wiki/Q23680052"
+  - 
+    primary_open_source_license: "MIT license (MIT)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Agape Gonzales"
+        id: 5125138225823744
+        github_updated: 1513852199106
+      - 
+        program_year: 2017
+        display_name: "Jeff Sieu"
+        id: 6542100483014656
+        github_updated: 1513852199106
+      - 
+        program_year: 2017
+        display_name: "Lucas Prieels"
+        id: 6244362344202240
+        github_updated: 1513852199325
+      - 
+        program_year: 2017
+        display_name: "Mahdi Dolatabadi"
+        id: 4776983546298368
+        github_updated: 1513852199324
+      - 
+        program_year: 2017
+        display_name: "Michal Hanus"
+        id: 6596174926577664
+        github_updated: 1513852199324
+      - 
+        program_year: 2017
+        display_name: "Mitesh Gulecha"
+        id: 5131978431004672
+        github_updated: 1513852199323
+      - 
+        program_year: 2017
+        display_name: "Naseef"
+        id: 4654514969772032
+        github_updated: 1513852200040
+      - 
+        program_year: 2017
+        display_name: "Siddharth Nayak"
+        id: 5451995370487808
+        github_updated: 1513852199692
+      - 
+        program_year: 2017
+        display_name: "Wasim Afser"
+        id: 5934537118842880
+        github_updated: 1513852199361
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: null
+    programming_languages: 
+      - "c"
+      - "c++"
+      - "javascript"
+      - "three.js"
+      - "html/css"
+    guide_to_working_url: ""
+    completed_task_instance_count: 384
+    id: 5154791065911296
+    winners: {}
+    mailing_list: "http://brlcad.org/wiki/Mailing_lists"
+    website_url: "https://brlcad.org"
+    status: 2
+    program_year: 2017
+    description: "BRL-CAD is a feature-filled computer graphics modeling system that is notoriously complex and challenging to learn.  Help us make it easier so people can quickly use it for things like 3D printing or rendering cool pictures!\n\nOur team is excited to help you get started no matter what experience you have.  There are hundreds of things you can work on, from web development to programming to 3D modeling and design tasks.  If you're new to Open Source, computer graphics, or 3D modeling, we will guide you through your first steps.  If you're not new, you will be helping us revolutionize an industry!\n\nA third of our tasks are C/C++, a third are Javascript/HTML/CSS, and a third require no coding experience whatsoever."
+    tags: 
+      - "computer graphics"
+      - "geometry kernel"
+      - "raytrace visualization and rendering"
+      - "3d modeling and 3d printing"
+      - "cad web infrastructure"
+    twitter_url: "https://twitter.com/BRL_CAD"
+    contact_email: "devs@brlcad.org"
+    irc_channel: "http://brlcad.org/wiki/IRC"
+    slug: "brl-cad"
+    preferred_contact_method: null
+    guide_to_working: "**Hey! IF YOU HAVE A QUESTION, submit your task for review.**\n\nWANT A STICKER? Subscribe https://sf.net/projects/brlcad/lists/brlcad-news & ask parents to send postal address to devs@brlcad.org\nWant to talk?  Install Zulip, connect to brlcad.zulipchat.com"
+    name: "BRL-CAD"
+    precis: "We work on computer graphics, geometry, visualization computer-aided design (CAD), and 3D modeling!"
+    image_url: "//lh3.googleusercontent.com/PrOnR0Su_lb-6IhLAPuPLfb7hRmSTZoRfSDi11CAt4dFK-hvIh_D252TYtl3Li9PHcF6HNTWfR9lP8TwZS6UK6mK"
+    blog_url: "https://fb.me/brlcad"
+    github: "BRL-CAD"
+    chat: 
+      url: "http://brlcad.org/wiki/IRC"
+      platform: "IRC"
+      image: "images/logos/irc.png"
+    wikipedia_urls: 
+      commons: "https://commons.wikipedia.org/wiki/Category%3ABRL-CAD"
+      cs: "https://cs.wikipedia.org/wiki/BRL-CAD"
+      de: "https://de.wikipedia.org/wiki/BRL-CAD"
+      en: "https://en.wikipedia.org/wiki/BRL-CAD"
+      fr: "https://fr.wikipedia.org/wiki/BRL-CAD"
+      it: "https://it.wikipedia.org/wiki/BRL-CAD"
+      ru: "https://ru.wikipedia.org/wiki/BRL-CAD"
+      uk: "https://uk.wikipedia.org/wiki/BRL-CAD"
+      zh_min_nan: "https://zh_min_nan.wikipedia.org/wiki/BRL-CAD"
+    wikidata_url: "//www.wikidata.org/wiki/Q796941"
   - 
     primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
     leaders: 
@@ -910,7 +1008,7 @@
         program_year: 2017
         display_name: "Ryan Chang"
         id: 4891685077123072
-        github_updated: 1513767492241
+        github_updated: 1513962170740
       - 
         program_year: 2017
         display_name: "Yifei He"
@@ -926,7 +1024,7 @@
       - "lua"
       - "wiki"
     guide_to_working_url: "https://www.mediawiki.org/wiki/Google_Code-in/2017"
-    completed_task_instance_count: 357
+    completed_task_instance_count: 364
     id: 5740205476675584
     winners: {}
     mailing_list: "https://lists.wikimedia.org/mailman/listinfo/wikitech-l"
@@ -1120,200 +1218,6 @@
     leaders: 
       - 
         program_year: 2017
-        display_name: "Agape Gonzales"
-        id: 5125138225823744
-        github_updated: 1513852199106
-      - 
-        program_year: 2017
-        display_name: "Jeff Sieu"
-        id: 6542100483014656
-        github_updated: 1513852199106
-      - 
-        program_year: 2017
-        display_name: "Lucas Prieels"
-        id: 6244362344202240
-        github_updated: 1513852199325
-      - 
-        program_year: 2017
-        display_name: "Mahdi Dolatabadi"
-        id: 4776983546298368
-        github_updated: 1513852199324
-      - 
-        program_year: 2017
-        display_name: "Michal Hanus"
-        id: 6596174926577664
-        github_updated: 1513852199324
-      - 
-        program_year: 2017
-        display_name: "Mitesh Gulecha"
-        id: 5131978431004672
-        github_updated: 1513852199323
-      - 
-        program_year: 2017
-        display_name: "Naseef"
-        id: 4654514969772032
-        github_updated: 1513852200040
-      - 
-        program_year: 2017
-        display_name: "Siddharth Nayak"
-        id: 5451995370487808
-        github_updated: 1513852199692
-      - 
-        program_year: 2017
-        display_name: "Wasim Afser"
-        id: 5934537118842880
-        github_updated: 1513852199361
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: null
-    programming_languages: 
-      - "c"
-      - "c++"
-      - "javascript"
-      - "three.js"
-      - "html/css"
-    guide_to_working_url: ""
-    completed_task_instance_count: 352
-    id: 5154791065911296
-    winners: {}
-    mailing_list: "http://brlcad.org/wiki/Mailing_lists"
-    website_url: "https://brlcad.org"
-    status: 2
-    program_year: 2017
-    description: "BRL-CAD is a feature-filled computer graphics modeling system that is notoriously complex and challenging to learn.  Help us make it easier so people can quickly use it for things like 3D printing or rendering cool pictures!\n\nOur team is excited to help you get started no matter what experience you have.  There are hundreds of things you can work on, from web development to programming to 3D modeling and design tasks.  If you're new to Open Source, computer graphics, or 3D modeling, we will guide you through your first steps.  If you're not new, you will be helping us revolutionize an industry!\n\nA third of our tasks are C/C++, a third are Javascript/HTML/CSS, and a third require no coding experience whatsoever."
-    tags: 
-      - "computer graphics"
-      - "geometry kernel"
-      - "raytrace visualization and rendering"
-      - "3d modeling and 3d printing"
-      - "cad web infrastructure"
-    twitter_url: "https://twitter.com/BRL_CAD"
-    contact_email: "devs@brlcad.org"
-    irc_channel: "http://brlcad.org/wiki/IRC"
-    slug: "brl-cad"
-    preferred_contact_method: null
-    guide_to_working: "**Hey! IF YOU HAVE A QUESTION, submit your task for review.**\n\nWANT A STICKER? Subscribe https://sf.net/projects/brlcad/lists/brlcad-news & ask parents to send postal address to devs@brlcad.org\nWant to talk?  Install Zulip, connect to brlcad.zulipchat.com"
-    name: "BRL-CAD"
-    precis: "We work on computer graphics, geometry, visualization computer-aided design (CAD), and 3D modeling!"
-    image_url: "//lh3.googleusercontent.com/PrOnR0Su_lb-6IhLAPuPLfb7hRmSTZoRfSDi11CAt4dFK-hvIh_D252TYtl3Li9PHcF6HNTWfR9lP8TwZS6UK6mK"
-    blog_url: "https://fb.me/brlcad"
-    github: "BRL-CAD"
-    chat: 
-      url: "http://brlcad.org/wiki/IRC"
-      platform: "IRC"
-      image: "images/logos/irc.png"
-    wikipedia_urls: 
-      commons: "https://commons.wikipedia.org/wiki/Category%3ABRL-CAD"
-      cs: "https://cs.wikipedia.org/wiki/BRL-CAD"
-      de: "https://de.wikipedia.org/wiki/BRL-CAD"
-      en: "https://en.wikipedia.org/wiki/BRL-CAD"
-      fr: "https://fr.wikipedia.org/wiki/BRL-CAD"
-      it: "https://it.wikipedia.org/wiki/BRL-CAD"
-      ru: "https://ru.wikipedia.org/wiki/BRL-CAD"
-      uk: "https://uk.wikipedia.org/wiki/BRL-CAD"
-      zh_min_nan: "https://zh_min_nan.wikipedia.org/wiki/BRL-CAD"
-    wikidata_url: "//www.wikidata.org/wiki/Q796941"
-  - 
-    primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Aadi Bajpai"
-        id: 4695623712374784
-        github_updated: 1513852199324
-      - 
-        program_year: 2017
-        display_name: "Harry Yu"
-        id: 5995126599974912
-        github_updated: 1513852199804
-      - 
-        program_year: 2017
-        display_name: "Hemang Rajvanshy"
-        id: 4772500808400896
-        github_account: "HemangRajvanshy"
-        github_updated: 1513852200491
-      - 
-        program_year: 2017
-        display_name: "John Chew"
-        id: 5383323004174336
-        github_updated: 1513852199686
-      - 
-        program_year: 2017
-        display_name: "KESHAV GOYAL"
-        id: 5195272021868544
-        github_updated: 1513852199731
-      - 
-        program_year: 2017
-        display_name: "Matej Plavevski"
-        id: 6680984424546304
-        github_updated: 1513852199323
-      - 
-        program_year: 2017
-        display_name: "Nikunj Taneja"
-        id: 5199453306748928
-        github_updated: 1513852199323
-      - 
-        program_year: 2017
-        display_name: "Satvik Shrivastava"
-        id: 5910592114130944
-        github_updated: 1513852199323
-      - 
-        program_year: 2017
-        display_name: "tcehcrhistie"
-        id: 5302792770027520
-        github_updated: 1513852200056
-      - 
-        program_year: 2017
-        display_name: "TheFaR8"
-        id: 5878255708012544
-        github_account: "TheFaR8"
-        github_updated: 1513852200885
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: null
-    programming_languages: 
-      - "c"
-      - "python"
-      - "c++"
-      - "linux"
-      - "windows"
-    guide_to_working_url: ""
-    completed_task_instance_count: 278
-    id: 5731053304020992
-    winners: {}
-    mailing_list: null
-    website_url: "https://www.ccextractor.org"
-    status: 2
-    program_year: 2017
-    description: "If you've ever downloaded subtitles for a TV show so you could understand the audio (maybe you are learning a second language, or are hard of hearing, or just want to watch when everyone in the house sleeps) most likely what you downloaded was produced by CCExtractor. It is a tool that is able to take a TV recording from almost everyone in the world and produce a subtitle file. \nIt started as a pet project (like most cool open source programs, right?) but is now widely used by universities, large media companies and hobbyists alike.\nWe take pride of supporting as much input content as possible regardless of how \"popular\" it is. We want perfect support for all languages and countries.\nOn top of the core functionality (which is written in C, like many low level tools such as the linux kernel, FFmpeg, or VLC), we are also building a small ecosystem of related tools in other languages such as Python."
-    tags: 
-      - "accesibility"
-      - "subtitles"
-      - "video"
-      - "tv"
-      - "movies"
-    twitter_url: null
-    contact_email: "gsoc@ccextractor.org"
-    irc_channel: "https://ccextractor.org/public:general:support"
-    slug: "ccextractor-development"
-    preferred_contact_method: null
-    guide_to_working: "Slack is the best way to get quick help. (see https://ccextractor.org/public:general:support for instructions).\nVideo samples here: https://ccextractor.org/public:general:tvsamples"
-    name: "CCExtractor Development"
-    precis: "We make the software that generates the subtitles everyone uses to watch TV and movies when they need them either because they are learning a second language or have a hearing disability."
-    image_url: "//lh3.googleusercontent.com/VjwFkSuq7AQSJvQzZHBAtNIEwe_vGEhzrLtYWtbc42NWMXfl9P2nyiykAqqZkQGU0YzwNJaFKolUKfTKWxJWKJk"
-    blog_url: null
-    github: "CCExtractor"
-    chat: 
-      url: "https://ccextractor.org/public:general:support"
-      platform: "OTHER"
-      image: "images/chat.png"
-    wikipedia_urls: null
-    wikidata_url: "//www.wikidata.org/wiki/Q45341716"
-  - 
-    primary_open_source_license: "MIT license (MIT)"
-    leaders: 
-      - 
-        program_year: 2017
         display_name: "Bach Nguyen"
         id: 5407628760973312
         github_updated: 1513852200024
@@ -1362,7 +1266,7 @@
         program_year: 2017
         display_name: "Yashwant Jodha"
         id: 4615995622686720
-        github_updated: 1513789338464
+        github_updated: 1513962170581
     accepted_org_tos: true
     dev_mailing_list: null
     gplus_url: null
@@ -1373,7 +1277,7 @@
       - "bash"
       - "html"
     guide_to_working_url: "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails"
-    completed_task_instance_count: 272
+    completed_task_instance_count: 279
     id: 6281461650948096
     winners: {}
     mailing_list: "https://www.haiku-os.org/community/ml"
@@ -1508,6 +1412,102 @@
     leaders: 
       - 
         program_year: 2017
+        display_name: "Aadi Bajpai"
+        id: 4695623712374784
+        github_updated: 1513852199324
+      - 
+        program_year: 2017
+        display_name: "Harry Yu"
+        id: 5995126599974912
+        github_updated: 1513852199804
+      - 
+        program_year: 2017
+        display_name: "Hemang Rajvanshy"
+        id: 4772500808400896
+        github_account: "HemangRajvanshy"
+        github_updated: 1513852200491
+      - 
+        program_year: 2017
+        display_name: "John Chew"
+        id: 5383323004174336
+        github_updated: 1513852199686
+      - 
+        program_year: 2017
+        display_name: "KESHAV GOYAL"
+        id: 5195272021868544
+        github_updated: 1513852199731
+      - 
+        program_year: 2017
+        display_name: "Matej Plavevski"
+        id: 6680984424546304
+        github_updated: 1513852199323
+      - 
+        program_year: 2017
+        display_name: "Nikunj Taneja"
+        id: 5199453306748928
+        github_updated: 1513852199323
+      - 
+        program_year: 2017
+        display_name: "Satvik Shrivastava"
+        id: 5910592114130944
+        github_updated: 1513852199323
+      - 
+        program_year: 2017
+        display_name: "tcehcrhistie"
+        id: 5302792770027520
+        github_updated: 1513852200056
+      - 
+        program_year: 2017
+        display_name: "TheFaR8"
+        id: 5878255708012544
+        github_account: "TheFaR8"
+        github_updated: 1513852200885
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: null
+    programming_languages: 
+      - "c"
+      - "python"
+      - "c++"
+      - "linux"
+      - "windows"
+    guide_to_working_url: ""
+    completed_task_instance_count: 279
+    id: 5731053304020992
+    winners: {}
+    mailing_list: null
+    website_url: "https://www.ccextractor.org"
+    status: 2
+    program_year: 2017
+    description: "If you've ever downloaded subtitles for a TV show so you could understand the audio (maybe you are learning a second language, or are hard of hearing, or just want to watch when everyone in the house sleeps) most likely what you downloaded was produced by CCExtractor. It is a tool that is able to take a TV recording from almost everyone in the world and produce a subtitle file. \nIt started as a pet project (like most cool open source programs, right?) but is now widely used by universities, large media companies and hobbyists alike.\nWe take pride of supporting as much input content as possible regardless of how \"popular\" it is. We want perfect support for all languages and countries.\nOn top of the core functionality (which is written in C, like many low level tools such as the linux kernel, FFmpeg, or VLC), we are also building a small ecosystem of related tools in other languages such as Python."
+    tags: 
+      - "accesibility"
+      - "subtitles"
+      - "video"
+      - "tv"
+      - "movies"
+    twitter_url: null
+    contact_email: "gsoc@ccextractor.org"
+    irc_channel: "https://ccextractor.org/public:general:support"
+    slug: "ccextractor-development"
+    preferred_contact_method: null
+    guide_to_working: "Slack is the best way to get quick help. (see https://ccextractor.org/public:general:support for instructions).\nVideo samples here: https://ccextractor.org/public:general:tvsamples"
+    name: "CCExtractor Development"
+    precis: "We make the software that generates the subtitles everyone uses to watch TV and movies when they need them either because they are learning a second language or have a hearing disability."
+    image_url: "//lh3.googleusercontent.com/VjwFkSuq7AQSJvQzZHBAtNIEwe_vGEhzrLtYWtbc42NWMXfl9P2nyiykAqqZkQGU0YzwNJaFKolUKfTKWxJWKJk"
+    blog_url: null
+    github: "CCExtractor"
+    chat: 
+      url: "https://ccextractor.org/public:general:support"
+      platform: "OTHER"
+      image: "images/chat.png"
+    wikipedia_urls: null
+    wikidata_url: "//www.wikidata.org/wiki/Q45341716"
+  - 
+    primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
+    leaders: 
+      - 
+        program_year: 2017
         display_name: "Abhijeet Manohar"
         id: 6081213045407744
         github_account: "abhijeetmanohar"
@@ -1529,11 +1529,6 @@
         github_updated: 1513852199697
       - 
         program_year: 2017
-        display_name: "Isabel Sieh"
-        id: 5797532871426048
-        github_updated: 1513852199360
-      - 
-        program_year: 2017
         display_name: "Mu'aaz Kasker"
         id: 5851158759342080
         github_updated: 1513852199360
@@ -1542,6 +1537,11 @@
         display_name: "Sameer"
         id: 4555590061785088
         github_updated: 1513852200866
+      - 
+        program_year: 2017
+        display_name: "Valentun"
+        id: 6017587265667072
+        github_updated: 1513962170392
       - 
         program_year: 2017
         display_name: "Vatsal Kulshreshtha"
@@ -1568,7 +1568,7 @@
       - "illustrator"
       - "photoshop"
     guide_to_working_url: ""
-    completed_task_instance_count: 266
+    completed_task_instance_count: 275
     id: 5735606506225664
     winners: {}
     mailing_list: "http://systers.anitab.org"
@@ -1644,7 +1644,7 @@
       - "html"
       - "css"
     guide_to_working_url: "http://openwisp.io/docs/developer/contributing.html"
-    completed_task_instance_count: 260
+    completed_task_instance_count: 263
     id: 5693741010518016
     winners: {}
     mailing_list: "https://groups.google.com/d/forum/openwisp/join"
@@ -1675,6 +1675,94 @@
       image: "images/chat.png"
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q45341562"
+  - 
+    primary_open_source_license: "GNU Affero General Public License v3 (AGPL-3.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Alejandro Heredia"
+        id: 5243643889713152
+        github_updated: 1513852200067
+      - 
+        program_year: 2017
+        display_name: "Andreas Lukita"
+        id: 4692396648431616
+        github_updated: 1513852199323
+      - 
+        program_year: 2017
+        display_name: "Chandra Chou"
+        id: 6189747405848576
+        github_updated: 1513852199324
+      - 
+        program_year: 2017
+        display_name: "Jude Birch"
+        id: 6472246329606144
+        github_updated: 1513962170619
+      - 
+        program_year: 2017
+        display_name: "Mateusz Komajda"
+        id: 4979968129892352
+        github_updated: 1513852199324
+      - 
+        program_year: 2017
+        display_name: "Nikita Kotenev"
+        id: 6003849812770816
+        github_updated: 1513852199106
+      - 
+        program_year: 2017
+        display_name: "Sarthak Agrawal"
+        id: 5394417575788544
+        github_updated: 1513852199775
+      - 
+        program_year: 2017
+        display_name: "Siddh Jain"
+        id: 6267827092717568
+        github_updated: 1513852199541
+      - 
+        program_year: 2017
+        display_name: "Yudhistira G.S."
+        id: 4611923993690112
+        github_updated: 1513852199106
+      - 
+        program_year: 2017
+        display_name: "Łukasz Ameljan"
+        id: 5096542534893568
+        github_updated: 1513852199106
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/communities/116816272940643231129"
+    programming_languages: 
+      - "visual programming language (catrobat)"
+    guide_to_working_url: "http://catrob.at/cgcicti"
+    completed_task_instance_count: 242
+    id: 5135243763777536
+    winners: {}
+    mailing_list: "http://catrob.at/PocketCodeUserForum"
+    website_url: "https://www.catrobat.org/"
+    status: 2
+    program_year: 2017
+    description: "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!"
+    tags: 
+      - "mobile"
+      - "games"
+      - "visual programming"
+      - "apps"
+      - "animations"
+    twitter_url: "http://twitter.com/Pocket_Code"
+    contact_email: "user_forum@catrobat.org"
+    irc_channel: null
+    slug: "catrobat"
+    preferred_contact_method: null
+    guide_to_working: "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions."
+    name: "Catrobat"
+    precis: "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!"
+    image_url: "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE"
+    blog_url: null
+    github: "Catrobat"
+    chat: 
+      url: null
+    wikipedia_urls: null
+    wikidata_url: "//www.wikidata.org/wiki/Q45341807"
   - 
     primary_open_source_license: "Affero GNU Public License"
     leaders: 
@@ -1734,8 +1822,9 @@
       - "python 3"
       - "abstract syntax tree"
       - "errbot"
-    guide_to_working_url: "https://projects.coala.io/"
-    completed_task_instance_count: 230
+      - "nodejs"
+    guide_to_working_url: "https://github.com/coala/coala/wiki/Google-Code-In"
+    completed_task_instance_count: 239
     id: 4884530416582656
     winners: {}
     mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
@@ -1745,16 +1834,16 @@
     description: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below."
     tags: 
       - "linting"
-      - "static code analysis"
       - "code quality"
       - "automation"
       - "devops"
+      - "chatops"
     twitter_url: "http://twitter.com/coala_io"
     contact_email: null
     irc_channel: "https://coala.zulipchat.com/"
     slug: "coala"
     preferred_contact_method: null
-    guide_to_working: "Join [Zulip](https://coala.zulipchat.com/) or [Gitter](https://gitter.im/coala/gci) to ask mentors questions .\r\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\r\nFollow the [Newcomer Guide](http://coala.io/newcomer)."
+    guide_to_working: "Join [our chat](https://coala.zulipchat.com/) to ask mentors questions .\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\nFollow the [Newcomer Guide](http://coala.io/newcomer)."
     name: "coala"
     precis: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used.Plugins may by native Python or wrap external linters."
     image_url: "//lh3.googleusercontent.com/4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG"
@@ -1767,94 +1856,6 @@
     wikipedia_urls: 
       en: "https://en.wikipedia.org/wiki/Coala_%28software%29"
     wikidata_url: "//www.wikidata.org/wiki/Q25215462"
-  - 
-    primary_open_source_license: "GNU Affero General Public License v3 (AGPL-3.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Alejandro Heredia"
-        id: 5243643889713152
-        github_updated: 1513852200067
-      - 
-        program_year: 2017
-        display_name: "Andreas Lukita"
-        id: 4692396648431616
-        github_updated: 1513852199323
-      - 
-        program_year: 2017
-        display_name: "Chandra Chou"
-        id: 6189747405848576
-        github_updated: 1513852199324
-      - 
-        program_year: 2017
-        display_name: "headhunter"
-        id: 5126869030535168
-        github_updated: 1513852199917
-      - 
-        program_year: 2017
-        display_name: "Mateusz Komajda"
-        id: 4979968129892352
-        github_updated: 1513852199324
-      - 
-        program_year: 2017
-        display_name: "Nikita Kotenev"
-        id: 6003849812770816
-        github_updated: 1513852199106
-      - 
-        program_year: 2017
-        display_name: "Sarthak Agrawal"
-        id: 5394417575788544
-        github_updated: 1513852199775
-      - 
-        program_year: 2017
-        display_name: "Siddh Jain"
-        id: 6267827092717568
-        github_updated: 1513852199541
-      - 
-        program_year: 2017
-        display_name: "Yudhistira G.S."
-        id: 4611923993690112
-        github_updated: 1513852199106
-      - 
-        program_year: 2017
-        display_name: "Łukasz Ameljan"
-        id: 5096542534893568
-        github_updated: 1513852199106
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/communities/116816272940643231129"
-    programming_languages: 
-      - "visual programming language (catrobat)"
-    guide_to_working_url: "http://catrob.at/cgcicti"
-    completed_task_instance_count: 227
-    id: 5135243763777536
-    winners: {}
-    mailing_list: "http://catrob.at/PocketCodeUserForum"
-    website_url: "https://www.catrobat.org/"
-    status: 2
-    program_year: 2017
-    description: "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!"
-    tags: 
-      - "mobile"
-      - "games"
-      - "visual programming"
-      - "apps"
-      - "animations"
-    twitter_url: "http://twitter.com/Pocket_Code"
-    contact_email: "user_forum@catrobat.org"
-    irc_channel: null
-    slug: "catrobat"
-    preferred_contact_method: null
-    guide_to_working: "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions."
-    name: "Catrobat"
-    precis: "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!"
-    image_url: "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE"
-    blog_url: null
-    github: "Catrobat"
-    chat: 
-      url: null
-    wikipedia_urls: null
-    wikidata_url: "//www.wikidata.org/wiki/Q45341807"
   - 
     primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
     leaders: 
@@ -1914,7 +1915,7 @@
       - "html"
       - "mysql"
     guide_to_working_url: "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
-    completed_task_instance_count: 213
+    completed_task_instance_count: 217
     id: 6239808655458304
     winners: {}
     mailing_list: "http://mifos.org/resources/community/communications/#mailing-lists"
@@ -2014,7 +2015,7 @@
       - "html5"
       - "css"
     guide_to_working_url: ""
-    completed_task_instance_count: 199
+    completed_task_instance_count: 207
     id: 5753409548320768
     winners: {}
     mailing_list: "http://om.rs/gcitalk"
@@ -2051,6 +2052,11 @@
     leaders: 
       - 
         program_year: 2017
+        display_name: "Alberto"
+        id: 6264983153278976
+        github_updated: 1513962170628
+      - 
+        program_year: 2017
         display_name: "Arpit Kamboj"
         id: 6432260989386752
         github_updated: 1513852199360
@@ -2075,11 +2081,6 @@
         display_name: "Rajat Patel"
         id: 6323289079152640
         github_updated: 1513852199913
-      - 
-        program_year: 2017
-        display_name: "Sagar Gupta"
-        id: 5593677617430528
-        github_updated: 1513852199766
       - 
         program_year: 2017
         display_name: "Soundwave"
@@ -2111,7 +2112,7 @@
       - "gradle"
       - "blender"
     guide_to_working_url: "https://github.com/MovingBlocks/Terasology/wiki/GCI"
-    completed_task_instance_count: 197
+    completed_task_instance_count: 204
     id: 5693523175145472
     winners: {}
     mailing_list: null
@@ -2175,7 +2176,7 @@
       - "php"
       - "javascript"
     guide_to_working_url: "https://gitlab.com/librehealth/gci/wikis/"
-    completed_task_instance_count: 187
+    completed_task_instance_count: 201
     id: 5165875202097152
     winners: {}
     mailing_list: "https://forums.librehealth.io/gci"
@@ -2228,7 +2229,7 @@
       - "css"
       - "android"
     guide_to_working_url: "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn"
-    completed_task_instance_count: 185
+    completed_task_instance_count: 188
     id: 6299430183501824
     winners: {}
     mailing_list: "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss"
@@ -2291,6 +2292,11 @@
         display_name: "Sunveer Singh"
         id: 5325877816590336
         github_updated: 1513852200650
+      - 
+        program_year: 2017
+        display_name: "Vinay Jagan"
+        id: 4962896129818624
+        github_updated: 1513962170446
     accepted_org_tos: true
     dev_mailing_list: null
     gplus_url: "https://plus.google.com/communities/105969056638310510633"
@@ -2301,7 +2307,7 @@
       - "c++"
       - "javascript"
     guide_to_working_url: "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students"
-    completed_task_instance_count: 167
+    completed_task_instance_count: 179
     id: 5139786496999424
     winners: {}
     mailing_list: "http://www.osgeo.org/content/faq/mailing_lists.html"
@@ -2378,6 +2384,11 @@
         github_updated: 1513852200491
       - 
         program_year: 2017
+        display_name: "Tarun Ravi"
+        id: 4873196811583488
+        github_updated: 1513962170258
+      - 
+        program_year: 2017
         display_name: "Terence Chan Zun Mun"
         id: 6011586793701376
         github_updated: 1513852199323
@@ -2391,7 +2402,7 @@
       - "css"
       - "java"
     guide_to_working_url: "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html"
-    completed_task_instance_count: 132
+    completed_task_instance_count: 146
     id: 5067404587565056
     winners: {}
     mailing_list: "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html"
@@ -2426,6 +2437,11 @@
     leaders: 
       - 
         program_year: 2017
+        display_name: "Ashreen Kaur"
+        id: 4700635737882624
+        github_updated: 1513962170234
+      - 
+        program_year: 2017
         display_name: "Kartik Goel"
         id: 6733252700143616
         github_updated: 1513852199988
@@ -2443,7 +2459,7 @@
         program_year: 2017
         display_name: "Sagar Khatri-1"
         id: 6008675401465856
-        github_updated: 1513789338427
+        github_updated: 1513962170564
       - 
         program_year: 2017
         display_name: "Tanish Kapur"
@@ -2464,7 +2480,7 @@
       - "css"
       - "symfony"
     guide_to_working_url: "https://www.drupal.org/node/984014"
-    completed_task_instance_count: 127
+    completed_task_instance_count: 131
     id: 5636094664114176
     winners: {}
     mailing_list: "https://drupal.org/mailing-lists"
@@ -2591,7 +2607,7 @@
       - "css"
       - "jquery"
     guide_to_working_url: "https://gitter.im/Cloud-CV/"
-    completed_task_instance_count: 83
+    completed_task_instance_count: 86
     id: 4854733644759040
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/cloudcv"
@@ -2655,7 +2671,7 @@
       - "html"
       - "bash"
     guide_to_working_url: "http://wiki.apertium.org/wiki/Task_ideas_for_Google_Code-in/Getting_started"
-    completed_task_instance_count: 59
+    completed_task_instance_count: 64
     id: 6541403171586048
     winners: {}
     mailing_list: "http://wiki.apertium.org/wiki/Contact"
