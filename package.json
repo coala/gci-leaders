@@ -26,6 +26,7 @@
     "feed-read-parser": "^0.0.6",
     "find-rss": "^1.6.4",
     "glob": "^7.1.2",
+    "graphql-client": "^2.0.0",
     "jquery": "^3.2.1",
     "jquery.i18n": "git+https://github.com/wikimedia/jquery.i18n.git",
     "json2yaml": "^1.1.0",

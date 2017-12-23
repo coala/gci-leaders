@@ -1,0 +1,28 @@
+query($org: String!) {
+  organization(login: $org) {
+    repositories(first: 100) {
+      nodes {
+        watchers(first: 100) {
+          nodes {
+            login
+            name
+          }
+        }
+        stargazers(last: 100) {
+          nodes {
+            login
+            name
+          }
+        }
+        forks(last: 100) {
+          nodes {
+            owner {
+              login
+            }
+            createdAt
+          }
+        }
+      }
+    }
+  }
+}
