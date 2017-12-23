@@ -6,64 +6,64 @@
         "program_year": 2017,
         "display_name": "Anhai Wang",
         "id": 6387345966235648,
-        "github_updated": 1513852199361
+        "github_updated": 1514048612148
       },
       {
         "program_year": 2017,
         "display_name": "Aniol Vicens Lloret",
         "id": 5258573665796096,
-        "github_updated": 1513852199324
+        "github_updated": 1514048611614
       },
       {
         "program_year": 2017,
         "display_name": "Divyansh Kulshreshtha",
         "id": 4752725168357376,
-        "github_updated": 1513852199361
+        "github_updated": 1514048612147
       },
       {
         "program_year": 2017,
         "display_name": "Jatin Luthra",
         "id": 4598388202930176,
-        "github_updated": 1513852200067
+        "github_updated": 1514048611620
       },
       {
         "program_year": 2017,
         "display_name": "Saba Khukhunashvili",
         "id": 5901508325408768,
         "github_account": "SabaKhukhunashvili",
-        "github_updated": 1513852200771
+        "github_updated": 1514048613069
       },
       {
         "program_year": 2017,
         "display_name": "Sachin Rammoorthy",
         "id": 5772338727485440,
         "github_account": "SachinRammoorthy",
-        "github_updated": 1513852200781
+        "github_updated": 1514048611626
       },
       {
         "program_year": 2017,
         "display_name": "Sidhya Tikku",
         "id": 5078331336687616,
         "github_account": "sidhyatikku",
-        "github_updated": 1513852200453
+        "github_updated": 1514048613253
       },
       {
         "program_year": 2017,
         "display_name": "Thomas",
         "id": 5043034557251584,
-        "github_updated": 1513852199828
+        "github_updated": 1514048612713
       },
       {
         "program_year": 2017,
         "display_name": "Vishwas Adiga",
         "id": 6049660470820864,
-        "github_updated": 1513852199757
+        "github_updated": 1514048612571
       },
       {
         "program_year": 2017,
         "display_name": "Zhao Wei Liew",
         "id": 6020884257046528,
-        "github_updated": 1513852199764
+        "github_updated": 1514048612797
       }
     ],
     "accepted_org_tos": true,
@@ -77,7 +77,7 @@
       "html"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 909,
+    "completed_task_instance_count": 922,
     "id": 5733899491606528,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/jboss-community-gci/",
@@ -108,81 +108,75 @@
       "platform": "GITTER",
       "image": "images/logos/gitter.png"
     },
-    "wikipedia_urls": {
-      "ca": "https://ca.wikipedia.org/wiki/JBoss_Inc",
-      "de": "https://de.wikipedia.org/wiki/JBoss",
-      "en": "https://en.wikipedia.org/wiki/JBoss_%28company%29",
-      "fr": "https://fr.wikipedia.org/wiki/JBoss_%28entreprise%29",
-      "no": "https://no.wikipedia.org/wiki/JBoss"
-    },
-    "wikidata_url": "//www.wikidata.org/wiki/Q354438"
+    "wikipedia_urls": null,
+    "wikidata_url": "//www.wikidata.org/wiki/Q46507419"
   },
   {
     "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
     "leaders": [
       {
         "program_year": 2017,
+        "display_name": "Adhyan Dhull",
+        "id": 4815870809341952,
+        "github_account": "AdhyanDhull",
+        "github_updated": 1514048612348
+      },
+      {
+        "program_year": 2017,
         "display_name": "Alexius Adhitya K.",
         "id": 6455949881507840,
-        "github_updated": 1513852199429
+        "github_updated": 1514048612168
       },
       {
         "program_year": 2017,
         "display_name": "Azis Naufal",
         "id": 5001283918364672,
         "github_account": "azisnaufal",
-        "github_updated": 1513852200529
+        "github_updated": 1514048612862
       },
       {
         "program_year": 2017,
         "display_name": "Gaurav",
         "id": 6188768153305088,
-        "github_updated": 1513852200613
+        "github_updated": 1514048612758
       },
       {
         "program_year": 2017,
         "display_name": "Kalyan C",
         "id": 5351898834010112,
-        "github_updated": 1513852199805
+        "github_updated": 1514048612672
       },
       {
         "program_year": 2017,
         "display_name": "Madhawa Dissanayake",
         "id": 6081149426204672,
-        "github_updated": 1513852199429
+        "github_updated": 1514048612148
       },
       {
         "program_year": 2017,
         "display_name": "Mehant Kammakomati",
         "id": 4883574836690944,
-        "github_updated": 1513852199429
+        "github_updated": 1514048612148
       },
       {
         "program_year": 2017,
         "display_name": "Padam Chopra",
         "id": 4598257072209920,
         "github_account": "padamchopra",
-        "github_updated": 1513852201218
+        "github_updated": 1514048613458
       },
       {
         "program_year": 2017,
         "display_name": "Raghav Puri",
         "id": 6694406465781760,
         "github_account": "raghavpuri",
-        "github_updated": 1513852200942
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Shravya Nandyala",
-        "id": 6116509246029824,
-        "github_account": "shravyanandyala",
-        "github_updated": 1513852200825
+        "github_updated": 1514048613440
       },
       {
         "program_year": 2017,
         "display_name": "Tanmay Anand",
         "id": 5139924388937728,
-        "github_updated": 1513852200473
+        "github_updated": 1514048612436
       }
     ],
     "accepted_org_tos": true,
@@ -196,7 +190,7 @@
       "python"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 732,
+    "completed_task_instance_count": 755,
     "id": 4923880235859968,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/score-community",
@@ -238,14 +232,14 @@
         "display_name": "Abishek V Ashok",
         "id": 6198775896866816,
         "github_account": "abishekvashok",
-        "github_updated": 1513852198462
+        "github_updated": 1514048611903
       },
       {
         "program_year": 2017,
         "display_name": "Aditya Dutt",
         "id": 4556923112259584,
         "github_account": "duttaditya18",
-        "github_updated": 1513852198777
+        "github_updated": 1514048611622
       },
       {
         "program_year": 2017,
@@ -259,48 +253,48 @@
         "display_name": "Kuba Michalski",
         "id": 5361327000256512,
         "github_account": "kubami9",
-        "github_updated": 1513852198813
+        "github_updated": 1514048611964
       },
       {
         "program_year": 2017,
         "display_name": "Naveen Rajan",
         "id": 5635654950060032,
         "github_account": "naveentherocker",
-        "github_updated": 1513852198473
+        "github_updated": 1514048611616
       },
       {
         "program_year": 2017,
         "display_name": "Piyush Raj",
         "id": 4907356204826624,
         "github_account": "0x48piraj",
-        "github_updated": 1513852198815
+        "github_updated": 1514048611896
       },
       {
         "program_year": 2017,
         "display_name": "Saarthak Chaturvedi",
         "id": 4572716310986752,
         "github_account": "saarthakchats",
-        "github_updated": 1513852198474
+        "github_updated": 1514048611974
       },
       {
         "program_year": 2017,
         "display_name": "Samyak Jain",
         "id": 5596372331921408,
-        "github_updated": 1513852199703
+        "github_updated": 1514048619379
       },
       {
         "program_year": 2017,
         "display_name": "Supun_TE",
         "id": 6598335160909824,
         "github_account": "STEdirisuriya",
-        "github_updated": 1513852198475
+        "github_updated": 1514048611971
       },
       {
         "program_year": 2017,
         "display_name": "Yash Kumar Verma",
         "id": 4707728943480832,
         "github_account": "YashKumarVerma",
-        "github_updated": 1513852198821
+        "github_updated": 1514048611970
       }
     ],
     "accepted_org_tos": true,
@@ -314,7 +308,7 @@
       "python"
     ],
     "guide_to_working_url": "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/",
-    "completed_task_instance_count": 524,
+    "completed_task_instance_count": 535,
     "id": 6237166344601600,
     "winners": {},
     "mailing_list": "http://groups.google.com/group/fossasia",
@@ -362,13 +356,13 @@
         "program_year": 2017,
         "display_name": "Emily Ong Hui Qi",
         "id": 6232468103364608,
-        "github_updated": 1513852199430
+        "github_updated": 1514048612168
       },
       {
         "program_year": 2017,
         "display_name": "Euan Ong",
         "id": 6144107338530816,
-        "github_updated": 1513852199362
+        "github_updated": 1514048612171
       },
       {
         "program_year": 2017,
@@ -381,43 +375,43 @@
         "display_name": "kipply",
         "id": 4521787192770560,
         "github_account": "kipply",
-        "github_updated": 1513852200791
+        "github_updated": 1514048613337
       },
       {
         "program_year": 2017,
         "display_name": "namansingh",
         "id": 5695562965843968,
-        "github_updated": 1513852200069
+        "github_updated": 1514048612621
       },
       {
         "program_year": 2017,
         "display_name": "Nikola Porumbachanov",
         "id": 6657561174474752,
-        "github_updated": 1513837298763
+        "github_updated": 1514048612168
       },
       {
         "program_year": 2017,
         "display_name": "pipix",
         "id": 5501564124921856,
-        "github_updated": 1513852200239
+        "github_updated": 1514048612543
       },
       {
         "program_year": 2017,
         "display_name": "Rohith",
         "id": 5297829935316992,
-        "github_updated": 1513852200816
+        "github_updated": 1514048613253
       },
       {
         "program_year": 2017,
         "display_name": "Sanatan Chaudhary",
         "id": 4710024200847360,
-        "github_updated": 1513852199721
+        "github_updated": 1514048612812
       },
       {
         "program_year": 2017,
         "display_name": "Satyam Kumar",
         "id": 5188049791090688,
-        "github_updated": 1513852200346
+        "github_updated": 1514048612486
       }
     ],
     "accepted_org_tos": true,
@@ -429,7 +423,7 @@
       "css"
     ],
     "guide_to_working_url": "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background",
-    "completed_task_instance_count": 481,
+    "completed_task_instance_count": 496,
     "id": 4879181169033216,
     "winners": {},
     "mailing_list": "http://lists.sugarlabs.org/",
@@ -473,61 +467,61 @@
         "program_year": 2017,
         "display_name": "Accelerator",
         "id": 5456412610134016,
-        "github_updated": 1513852199922
+        "github_updated": 1514048612727
       },
       {
         "program_year": 2017,
         "display_name": "Aden",
         "id": 4563995715436544,
-        "github_updated": 1513852200516
+        "github_updated": 1514048612825
       },
       {
         "program_year": 2017,
         "display_name": "Daniel Lim",
         "id": 5270417574985728,
-        "github_updated": 1513852200679
+        "github_updated": 1514048612637
       },
       {
         "program_year": 2017,
         "display_name": "Heesen Ponnusawmy",
         "id": 5164862177017856,
-        "github_updated": 1513852199429
+        "github_updated": 1514048612148
       },
       {
         "program_year": 2017,
         "display_name": "Ivan Fonseca",
         "id": 6742578886082560,
-        "github_updated": 1513852199732
+        "github_updated": 1514048612519
       },
       {
         "program_year": 2017,
         "display_name": "KARTHIK RAMAKRISHNAN",
         "id": 6164884645478400,
-        "github_updated": 1513852200842
+        "github_updated": 1514048613006
       },
       {
         "program_year": 2017,
         "display_name": "Konrad Krawiec",
         "id": 5887809686601728,
-        "github_updated": 1513852199439
+        "github_updated": 1514048612168
       },
       {
         "program_year": 2017,
         "display_name": "Marcin Mikołajczak",
         "id": 5470339310026752,
-        "github_updated": 1513852199430
+        "github_updated": 1514048612170
       },
       {
         "program_year": 2017,
         "display_name": "Simran Singh",
         "id": 5455531898568704,
-        "github_updated": 1513852200437
+        "github_updated": 1514048612764
       },
       {
         "program_year": 2017,
         "display_name": "WinningIt",
         "id": 5420514023571456,
-        "github_updated": 1513852199430
+        "github_updated": 1514048612170
       }
     ],
     "accepted_org_tos": true,
@@ -541,7 +535,7 @@
       "c/c++"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 434,
+    "completed_task_instance_count": 449,
     "id": 5133577048031232,
     "winners": {},
     "mailing_list": "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc",
@@ -755,13 +749,13 @@
         "program_year": 2017,
         "display_name": "Annebelle Olminkhof",
         "id": 4916088141774848,
-        "github_updated": 1513852199361
+        "github_updated": 1514048612096
       },
       {
         "program_year": 2017,
         "display_name": "Ashish Kamathi-1",
         "id": 6663981454327808,
-        "github_updated": 1513852199360
+        "github_updated": 1514048612039
       },
       {
         "program_year": 2017,
@@ -773,43 +767,43 @@
         "program_year": 2017,
         "display_name": "Eshan Singh",
         "id": 5077106331484160,
-        "github_updated": 1513852199360
+        "github_updated": 1514048612148
       },
       {
         "program_year": 2017,
         "display_name": "Hartama",
         "id": 5976468456734720,
-        "github_updated": 1513852200237
+        "github_updated": 1514048613017
       },
       {
         "program_year": 2017,
         "display_name": "hasia",
         "id": 5953782171041792,
-        "github_updated": 1513852199761
+        "github_updated": 1514048612571
       },
       {
         "program_year": 2017,
         "display_name": "J Young Kim",
         "id": 6367732863860736,
-        "github_updated": 1513852199916
+        "github_updated": 1514048612649
       },
       {
         "program_year": 2017,
         "display_name": "kartikohri1712",
         "id": 4571726790787072,
-        "github_updated": 1513852200690
+        "github_updated": 1514048613253
       },
       {
         "program_year": 2017,
         "display_name": "Mridul Sharma",
         "id": 5569449841131520,
-        "github_updated": 1513837298957
+        "github_updated": 1514048612770
       },
       {
         "program_year": 2017,
         "display_name": "Shameek Dutta",
         "id": 4650477700513792,
-        "github_updated": 1513852200509
+        "github_updated": 1514048613428
       }
     ],
     "accepted_org_tos": true,
@@ -822,7 +816,7 @@
       "sql"
     ],
     "guide_to_working_url": "https://wiki.musicbrainz.org/Google_Code-in/2017",
-    "completed_task_instance_count": 412,
+    "completed_task_instance_count": 437,
     "id": 5936087526539264,
     "winners": {},
     "mailing_list": "https://community.metabrainz.org/",
@@ -861,175 +855,61 @@
     "wikidata_url": "//www.wikidata.org/wiki/Q952204"
   },
   {
-    "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Freddie Miller",
-        "id": 5962704562946048,
-        "github_updated": 1513852199429
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Ivan Trajkov",
-        "id": 6494687667945472,
-        "github_updated": 1513852199430
-      },
-      {
-        "program_year": 2017,
-        "display_name": "jwzhang",
-        "id": 6577413972557824,
-        "github_updated": 1513852200436
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Marco Burstein",
-        "id": 4597515116609536,
-        "github_updated": 1513852199430
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Priyank Patel",
-        "id": 5679157667168256,
-        "github_updated": 1513852199702
-      },
-      {
-        "program_year": 2017,
-        "display_name": "steve",
-        "id": 5056135214137344,
-        "github_updated": 1513875818724
-      },
-      {
-        "program_year": 2017,
-        "display_name": "synicalsyntax",
-        "id": 4625321003319296,
-        "github_account": "synicalsyntax",
-        "github_updated": 1513852198834
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Viraat Chandra",
-        "id": 5432437968470016,
-        "github_updated": 1513962170536
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Xavier Cooney",
-        "id": 4711113914580992,
-        "github_account": "XavierCooney",
-        "github_updated": 1513852200491
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Zakiyah Hasanah",
-        "id": 6482278056198144,
-        "github_updated": 1513852199430
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": null,
-    "programming_languages": [
-      "python",
-      "javascript",
-      "django",
-      "html",
-      "visual design"
-    ],
-    "guide_to_working_url": "https://github.com/zulip/zulip-gci",
-    "completed_task_instance_count": 384,
-    "id": 5744567921934336,
-    "winners": {},
-    "mailing_list": null,
-    "website_url": "https://zulipchat.com",
-    "status": 2,
-    "program_year": 2017,
-    "description": "Zulip is a powerful, open source group chat application. It competes with Slack, IRC, Jabber, and dozens of other group chat tools designed to help teams (whether open source projects or at companies) collaborate effectively. Zulip supports fast search, drag-and-drop file uploads, image previews, group private messages, audible notifications, missed-message emails, desktop apps, markdown message rendering, and [much more](https://zulipchat.com/features) -- essentially everything you might want.\r\n\r\nUnlike Slack, it’s open source and has a welcoming community of over 350 volunteer contributors. Unlike IRC/Jabber/etc., Zulip is a complete, modern application, with a web version, mobile apps for iOS and Android, and desktop apps for Mac/Linux/Windows. And unlike all other popular group chat tools, Zulip is designed to make conversations more efficient through its unique threading system that helps teams manage large numbers of messages. In particular, Zulip makes it easy to have multiple conversations at the same time with the same groups of people, and easy to catch up on hundreds or thousands of messages quickly without missing anything important.\r\n\r\nZulip is known for its extensive developer documentation (100,000 words and growing!), code quality, and tooling, and thus is a great project to work on to learn how to build a high-quality web application.\r\n\r\nWe have tons of tasks across all parts of the Zulip project, and we're especially excited about expanding Zulip's library of bots and integrations!",
-    "tags": [
-      "chat",
-      "bots",
-      "integrations",
-      "fun",
-      "great tooling"
-    ],
-    "twitter_url": "https://twitter.com/zulip",
-    "contact_email": null,
-    "irc_channel": "http://zulip.readthedocs.io/en/latest/contributing/chat-zulip-org.html",
-    "slug": "zulip",
-    "preferred_contact_method": null,
-    "guide_to_working": "",
-    "name": "Zulip",
-    "precis": "Powerful, modern, open source group chat, complete with apps for every major platform.",
-    "image_url": "//lh3.googleusercontent.com/YbMgqT311MJWm_QWTkJC8yN9xCICqOPjoD_Sf0ACjSkk42HjzRaHu4O9GYa5nuQiU_yRPHLCiK9XypW2xsHY",
-    "blog_url": "https://blog.zulip.org",
-    "github": "zulip",
-    "chat": {
-      "url": "https://chat.zulip.org",
-      "platform": "ZULIP",
-      "image": "images/logos/zulip.png"
-    },
-    "wikipedia_urls": {
-      "en": "https://en.wikipedia.org/wiki/Zulip",
-      "ru": "https://ru.wikipedia.org/wiki/Zulip"
-    },
-    "wikidata_url": "//www.wikidata.org/wiki/Q23680052"
-  },
-  {
     "primary_open_source_license": "MIT license (MIT)",
     "leaders": [
       {
         "program_year": 2017,
         "display_name": "Agape Gonzales",
         "id": 5125138225823744,
-        "github_updated": 1513852199106
+        "github_updated": 1514048611590
       },
       {
         "program_year": 2017,
         "display_name": "Jeff Sieu",
         "id": 6542100483014656,
-        "github_updated": 1513852199106
+        "github_updated": 1514048611577
       },
       {
         "program_year": 2017,
         "display_name": "Lucas Prieels",
         "id": 6244362344202240,
-        "github_updated": 1513852199325
+        "github_updated": 1514048611586
       },
       {
         "program_year": 2017,
         "display_name": "Mahdi Dolatabadi",
         "id": 4776983546298368,
-        "github_updated": 1513852199324
+        "github_updated": 1514048611579
       },
       {
         "program_year": 2017,
         "display_name": "Michal Hanus",
         "id": 6596174926577664,
-        "github_updated": 1513852199324
+        "github_updated": 1514048611582
       },
       {
         "program_year": 2017,
         "display_name": "Mitesh Gulecha",
         "id": 5131978431004672,
-        "github_updated": 1513852199323
+        "github_updated": 1514048611587
       },
       {
         "program_year": 2017,
         "display_name": "Naseef",
         "id": 4654514969772032,
-        "github_updated": 1513852200040
+        "github_updated": 1514048611578
       },
       {
         "program_year": 2017,
         "display_name": "Siddharth Nayak",
         "id": 5451995370487808,
-        "github_updated": 1513852199692
+        "github_updated": 1514048611583
       },
       {
         "program_year": 2017,
         "display_name": "Wasim Afser",
         "id": 5934537118842880,
-        "github_updated": 1513852199361
+        "github_updated": 1514048611584
       }
     ],
     "accepted_org_tos": true,
@@ -1043,7 +923,7 @@
       "html/css"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 384,
+    "completed_task_instance_count": 405,
     "id": 5154791065911296,
     "winners": {},
     "mailing_list": "http://brlcad.org/wiki/Mailing_lists",
@@ -1088,55 +968,169 @@
     "wikidata_url": "//www.wikidata.org/wiki/Q796941"
   },
   {
+    "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Freddie Miller",
+        "id": 5962704562946048,
+        "github_updated": 1514048612148
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Ivan Trajkov",
+        "id": 6494687667945472,
+        "github_updated": 1514048612168
+      },
+      {
+        "program_year": 2017,
+        "display_name": "jwzhang",
+        "id": 6577413972557824,
+        "github_updated": 1514048612617
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Marco Burstein",
+        "id": 4597515116609536,
+        "github_updated": 1514048612168
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Priyank Patel",
+        "id": 5679157667168256,
+        "github_updated": 1514048612728
+      },
+      {
+        "program_year": 2017,
+        "display_name": "steve",
+        "id": 5056135214137344,
+        "github_updated": 1513875818724
+      },
+      {
+        "program_year": 2017,
+        "display_name": "synicalsyntax",
+        "id": 4625321003319296,
+        "github_account": "synicalsyntax",
+        "github_updated": 1514048611918
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Viraat Chandra",
+        "id": 5432437968470016,
+        "github_updated": 1513962170536
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Xavier Cooney",
+        "id": 4711113914580992,
+        "github_account": "XavierCooney",
+        "github_updated": 1514048613340
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Zakiyah Hasanah",
+        "id": 6482278056198144,
+        "github_updated": 1514048612168
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": null,
+    "programming_languages": [
+      "python",
+      "javascript",
+      "django",
+      "html",
+      "visual design"
+    ],
+    "guide_to_working_url": "https://github.com/zulip/zulip-gci",
+    "completed_task_instance_count": 397,
+    "id": 5744567921934336,
+    "winners": {},
+    "mailing_list": null,
+    "website_url": "https://zulipchat.com",
+    "status": 2,
+    "program_year": 2017,
+    "description": "Zulip is a powerful, open source group chat application. It competes with Slack, IRC, Jabber, and dozens of other group chat tools designed to help teams (whether open source projects or at companies) collaborate effectively. Zulip supports fast search, drag-and-drop file uploads, image previews, group private messages, audible notifications, missed-message emails, desktop apps, markdown message rendering, and [much more](https://zulipchat.com/features) -- essentially everything you might want.\r\n\r\nUnlike Slack, it’s open source and has a welcoming community of over 350 volunteer contributors. Unlike IRC/Jabber/etc., Zulip is a complete, modern application, with a web version, mobile apps for iOS and Android, and desktop apps for Mac/Linux/Windows. And unlike all other popular group chat tools, Zulip is designed to make conversations more efficient through its unique threading system that helps teams manage large numbers of messages. In particular, Zulip makes it easy to have multiple conversations at the same time with the same groups of people, and easy to catch up on hundreds or thousands of messages quickly without missing anything important.\r\n\r\nZulip is known for its extensive developer documentation (100,000 words and growing!), code quality, and tooling, and thus is a great project to work on to learn how to build a high-quality web application.\r\n\r\nWe have tons of tasks across all parts of the Zulip project, and we're especially excited about expanding Zulip's library of bots and integrations!",
+    "tags": [
+      "chat",
+      "bots",
+      "integrations",
+      "fun",
+      "great tooling"
+    ],
+    "twitter_url": "https://twitter.com/zulip",
+    "contact_email": null,
+    "irc_channel": "http://zulip.readthedocs.io/en/latest/contributing/chat-zulip-org.html",
+    "slug": "zulip",
+    "preferred_contact_method": null,
+    "guide_to_working": "",
+    "name": "Zulip",
+    "precis": "Powerful, modern, open source group chat, complete with apps for every major platform.",
+    "image_url": "//lh3.googleusercontent.com/YbMgqT311MJWm_QWTkJC8yN9xCICqOPjoD_Sf0ACjSkk42HjzRaHu4O9GYa5nuQiU_yRPHLCiK9XypW2xsHY",
+    "blog_url": "https://blog.zulip.org",
+    "github": "zulip",
+    "chat": {
+      "url": "https://chat.zulip.org",
+      "platform": "ZULIP",
+      "image": "images/logos/zulip.png"
+    },
+    "wikipedia_urls": {
+      "en": "https://en.wikipedia.org/wiki/Zulip",
+      "ru": "https://ru.wikipedia.org/wiki/Zulip"
+    },
+    "wikidata_url": "//www.wikidata.org/wiki/Q23680052"
+  },
+  {
     "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
     "leaders": [
       {
         "program_year": 2017,
         "display_name": "Albert Wolszon",
         "id": 4879989344305152,
-        "github_updated": 1513852199360
+        "github_updated": 1514048612168
       },
       {
         "program_year": 2017,
         "display_name": "C. F. Fairfeld",
         "id": 4759011792519168,
-        "github_updated": 1513852199429
+        "github_updated": 1514048612148
       },
       {
         "program_year": 2017,
         "display_name": "David Sn",
         "id": 6744722544525312,
-        "github_updated": 1513852199828
+        "github_updated": 1514048613022
       },
       {
         "program_year": 2017,
         "display_name": "Gabe Mitnick",
         "id": 5394768580313088,
-        "github_updated": 1513852199430
+        "github_updated": 1514048612169
       },
       {
         "program_year": 2017,
         "display_name": "Jan Nowosielski",
         "id": 4862270347673600,
-        "github_updated": 1513837298759
+        "github_updated": 1514048612170
       },
       {
         "program_year": 2017,
         "display_name": "Phantom42",
         "id": 5855143146815488,
-        "github_updated": 1513852199804
+        "github_updated": 1514048612703
       },
       {
         "program_year": 2017,
         "display_name": "pppery",
         "id": 5884375231102976,
-        "github_updated": 1513852200326
+        "github_updated": 1514048612570
       },
       {
         "program_year": 2017,
         "display_name": "Rafid Aslam",
         "id": 4789845765390336,
-        "github_updated": 1513852199430
+        "github_updated": 1514048612169
       },
       {
         "program_year": 2017,
@@ -1148,7 +1142,7 @@
         "program_year": 2017,
         "display_name": "Yifei He",
         "id": 5910548224933888,
-        "github_updated": 1513852200675
+        "github_updated": 1514048612544
       }
     ],
     "accepted_org_tos": true,
@@ -1162,7 +1156,7 @@
       "wiki"
     ],
     "guide_to_working_url": "https://www.mediawiki.org/wiki/Google_Code-in/2017",
-    "completed_task_instance_count": 364,
+    "completed_task_instance_count": 373,
     "id": 5740205476675584,
     "winners": {},
     "mailing_list": "https://lists.wikimedia.org/mailman/listinfo/wikitech-l",
@@ -1362,56 +1356,56 @@
         "program_year": 2017,
         "display_name": "Bach Nguyen",
         "id": 5407628760973312,
-        "github_updated": 1513852200024
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Benz Le",
-        "id": 4850503454294016,
-        "github_updated": 1513852199736
+        "github_updated": 1514048611628
       },
       {
         "program_year": 2017,
         "display_name": "Damillora",
         "id": 5679153909071872,
         "github_account": "Damillora",
-        "github_updated": 1513852200553
+        "github_updated": 1514048611622
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Han Haoxuan",
+        "id": 6025453900922880,
+        "github_updated": 1514048612105
       },
       {
         "program_year": 2017,
         "display_name": "Leorize",
         "id": 6702015805652992,
-        "github_updated": 1513852199323
+        "github_updated": 1514048612168
       },
       {
         "program_year": 2017,
         "display_name": "Max Levchuk",
         "id": 6240118648078336,
-        "github_updated": 1513852199324
+        "github_updated": 1514048611612
       },
       {
         "program_year": 2017,
         "display_name": "Mochammad Nur Afandi",
         "id": 5177112698814464,
-        "github_updated": 1513852199325
+        "github_updated": 1514048612039
       },
       {
         "program_year": 2017,
         "display_name": "Ng Young Shung",
         "id": 5162635370692608,
-        "github_updated": 1513852199324
+        "github_updated": 1514048611621
       },
       {
         "program_year": 2017,
         "display_name": "Owen",
         "id": 6035804772106240,
-        "github_updated": 1513852200671
+        "github_updated": 1514048613317
       },
       {
         "program_year": 2017,
         "display_name": "Trần Thái Sơn",
         "id": 5951955736199168,
-        "github_updated": 1513852199324
+        "github_updated": 1514048611624
       },
       {
         "program_year": 2017,
@@ -1431,7 +1425,7 @@
       "html"
     ],
     "guide_to_working_url": "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails",
-    "completed_task_instance_count": 279,
+    "completed_task_instance_count": 291,
     "id": 6281461650948096,
     "winners": {},
     "mailing_list": "https://www.haiku-os.org/community/ml",
@@ -1570,151 +1564,40 @@
     "leaders": [
       {
         "program_year": 2017,
-        "display_name": "Aadi Bajpai",
-        "id": 4695623712374784,
-        "github_updated": 1513852199324
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Harry Yu",
-        "id": 5995126599974912,
-        "github_updated": 1513852199804
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Hemang Rajvanshy",
-        "id": 4772500808400896,
-        "github_account": "HemangRajvanshy",
-        "github_updated": 1513852200491
-      },
-      {
-        "program_year": 2017,
-        "display_name": "John Chew",
-        "id": 5383323004174336,
-        "github_updated": 1513852199686
-      },
-      {
-        "program_year": 2017,
-        "display_name": "KESHAV GOYAL",
-        "id": 5195272021868544,
-        "github_updated": 1513852199731
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Matej Plavevski",
-        "id": 6680984424546304,
-        "github_updated": 1513852199323
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Nikunj Taneja",
-        "id": 5199453306748928,
-        "github_updated": 1513852199323
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Satvik Shrivastava",
-        "id": 5910592114130944,
-        "github_updated": 1513852199323
-      },
-      {
-        "program_year": 2017,
-        "display_name": "tcehcrhistie",
-        "id": 5302792770027520,
-        "github_updated": 1513852200056
-      },
-      {
-        "program_year": 2017,
-        "display_name": "TheFaR8",
-        "id": 5878255708012544,
-        "github_account": "TheFaR8",
-        "github_updated": 1513852200885
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": null,
-    "programming_languages": [
-      "c",
-      "python",
-      "c++",
-      "linux",
-      "windows"
-    ],
-    "guide_to_working_url": "",
-    "completed_task_instance_count": 279,
-    "id": 5731053304020992,
-    "winners": {},
-    "mailing_list": null,
-    "website_url": "https://www.ccextractor.org",
-    "status": 2,
-    "program_year": 2017,
-    "description": "If you've ever downloaded subtitles for a TV show so you could understand the audio (maybe you are learning a second language, or are hard of hearing, or just want to watch when everyone in the house sleeps) most likely what you downloaded was produced by CCExtractor. It is a tool that is able to take a TV recording from almost everyone in the world and produce a subtitle file. \nIt started as a pet project (like most cool open source programs, right?) but is now widely used by universities, large media companies and hobbyists alike.\nWe take pride of supporting as much input content as possible regardless of how \"popular\" it is. We want perfect support for all languages and countries.\nOn top of the core functionality (which is written in C, like many low level tools such as the linux kernel, FFmpeg, or VLC), we are also building a small ecosystem of related tools in other languages such as Python.",
-    "tags": [
-      "accesibility",
-      "subtitles",
-      "video",
-      "tv",
-      "movies"
-    ],
-    "twitter_url": null,
-    "contact_email": "gsoc@ccextractor.org",
-    "irc_channel": "https://ccextractor.org/public:general:support",
-    "slug": "ccextractor-development",
-    "preferred_contact_method": null,
-    "guide_to_working": "Slack is the best way to get quick help. (see https://ccextractor.org/public:general:support for instructions).\nVideo samples here: https://ccextractor.org/public:general:tvsamples",
-    "name": "CCExtractor Development",
-    "precis": "We make the software that generates the subtitles everyone uses to watch TV and movies when they need them either because they are learning a second language or have a hearing disability.",
-    "image_url": "//lh3.googleusercontent.com/VjwFkSuq7AQSJvQzZHBAtNIEwe_vGEhzrLtYWtbc42NWMXfl9P2nyiykAqqZkQGU0YzwNJaFKolUKfTKWxJWKJk",
-    "blog_url": null,
-    "github": "CCExtractor",
-    "chat": {
-      "url": "https://ccextractor.org/public:general:support",
-      "platform": "OTHER",
-      "image": "images/chat.png"
-    },
-    "wikipedia_urls": null,
-    "wikidata_url": "//www.wikidata.org/wiki/Q45341716"
-  },
-  {
-    "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
-    "leaders": [
-      {
-        "program_year": 2017,
         "display_name": "Abhijeet Manohar",
         "id": 6081213045407744,
         "github_account": "abhijeetmanohar",
-        "github_updated": 1513852200625
+        "github_updated": 1514048613356
       },
       {
         "program_year": 2017,
         "display_name": "Aryaman Agrawal",
         "id": 4770355203801088,
-        "github_updated": 1513852199361
+        "github_updated": 1514048612148
       },
       {
         "program_year": 2017,
         "display_name": "Erika Tan",
         "id": 4717477579718656,
-        "github_updated": 1513852200314
+        "github_updated": 1514048612792
       },
       {
         "program_year": 2017,
         "display_name": "Fidella",
         "id": 5681230525759488,
-        "github_updated": 1513852199697
+        "github_updated": 1514048612664
       },
       {
         "program_year": 2017,
         "display_name": "Mu'aaz Kasker",
         "id": 5851158759342080,
-        "github_updated": 1513852199360
+        "github_updated": 1514048612168
       },
       {
         "program_year": 2017,
         "display_name": "Sameer",
         "id": 4555590061785088,
-        "github_updated": 1513852200866
+        "github_updated": 1514048613253
       },
       {
         "program_year": 2017,
@@ -1727,19 +1610,19 @@
         "display_name": "Vatsal Kulshreshtha",
         "id": 5536043853938688,
         "github_account": "vatsalkulshreshtha",
-        "github_updated": 1513852200529
+        "github_updated": 1514048613333
       },
       {
         "program_year": 2017,
         "display_name": "Yuyuan Luo",
         "id": 5105422807597056,
-        "github_updated": 1513852200342
+        "github_updated": 1514048612806
       },
       {
         "program_year": 2017,
         "display_name": "Ziyaad Banderker",
         "id": 5174010994229248,
-        "github_updated": 1513852199361
+        "github_updated": 1514048612168
       }
     ],
     "accepted_org_tos": true,
@@ -1753,7 +1636,7 @@
       "photoshop"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 275,
+    "completed_task_instance_count": 290,
     "id": 5735606506225664,
     "winners": {},
     "mailing_list": "http://systers.anitab.org",
@@ -1790,44 +1673,161 @@
     "wikidata_url": "//www.wikidata.org/wiki/Q7663887"
   },
   {
+    "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Aadi Bajpai",
+        "id": 4695623712374784,
+        "github_updated": 1514048612147
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Harry Yu",
+        "id": 5995126599974912,
+        "github_updated": 1514048612573
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Hemang Rajvanshy",
+        "id": 4772500808400896,
+        "github_account": "HemangRajvanshy",
+        "github_updated": 1514048613313
+      },
+      {
+        "program_year": 2017,
+        "display_name": "John Chew",
+        "id": 5383323004174336,
+        "github_updated": 1514048612635
+      },
+      {
+        "program_year": 2017,
+        "display_name": "KESHAV GOYAL",
+        "id": 5195272021868544,
+        "github_updated": 1514048612507
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Matej Plavevski",
+        "id": 6680984424546304,
+        "github_updated": 1514048612147
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Nikunj Taneja",
+        "id": 5199453306748928,
+        "github_updated": 1514048612147
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Satvik Shrivastava",
+        "id": 5910592114130944,
+        "github_updated": 1514048612147
+      },
+      {
+        "program_year": 2017,
+        "display_name": "tcehcrhistie",
+        "id": 5302792770027520,
+        "github_updated": 1514048611614
+      },
+      {
+        "program_year": 2017,
+        "display_name": "TheFaR8",
+        "id": 5878255708012544,
+        "github_account": "TheFaR8",
+        "github_updated": 1514048611613
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": null,
+    "programming_languages": [
+      "c",
+      "python",
+      "c++",
+      "linux",
+      "windows"
+    ],
+    "guide_to_working_url": "",
+    "completed_task_instance_count": 283,
+    "id": 5731053304020992,
+    "winners": {},
+    "mailing_list": null,
+    "website_url": "https://www.ccextractor.org",
+    "status": 2,
+    "program_year": 2017,
+    "description": "If you've ever downloaded subtitles for a TV show so you could understand the audio (maybe you are learning a second language, or are hard of hearing, or just want to watch when everyone in the house sleeps) most likely what you downloaded was produced by CCExtractor. It is a tool that is able to take a TV recording from almost everyone in the world and produce a subtitle file. \nIt started as a pet project (like most cool open source programs, right?) but is now widely used by universities, large media companies and hobbyists alike.\nWe take pride of supporting as much input content as possible regardless of how \"popular\" it is. We want perfect support for all languages and countries.\nOn top of the core functionality (which is written in C, like many low level tools such as the linux kernel, FFmpeg, or VLC), we are also building a small ecosystem of related tools in other languages such as Python.",
+    "tags": [
+      "accesibility",
+      "subtitles",
+      "video",
+      "tv",
+      "movies"
+    ],
+    "twitter_url": null,
+    "contact_email": "gsoc@ccextractor.org",
+    "irc_channel": "https://ccextractor.org/public:general:support",
+    "slug": "ccextractor-development",
+    "preferred_contact_method": null,
+    "guide_to_working": "Slack is the best way to get quick help. (see https://ccextractor.org/public:general:support for instructions).\nVideo samples here: https://ccextractor.org/public:general:tvsamples",
+    "name": "CCExtractor Development",
+    "precis": "We make the software that generates the subtitles everyone uses to watch TV and movies when they need them either because they are learning a second language or have a hearing disability.",
+    "image_url": "//lh3.googleusercontent.com/VjwFkSuq7AQSJvQzZHBAtNIEwe_vGEhzrLtYWtbc42NWMXfl9P2nyiykAqqZkQGU0YzwNJaFKolUKfTKWxJWKJk",
+    "blog_url": null,
+    "github": "CCExtractor",
+    "chat": {
+      "url": "https://ccextractor.org/public:general:support",
+      "platform": "OTHER",
+      "image": "images/chat.png"
+    },
+    "wikipedia_urls": null,
+    "wikidata_url": "//www.wikidata.org/wiki/Q45341716"
+  },
+  {
     "primary_open_source_license": "GNU General Public License version 3.0 (GPL-3.0)",
     "leaders": [
       {
         "program_year": 2017,
         "display_name": "Aarnav Bos",
         "id": 5288208805920768,
-        "github_updated": 1513852199360
+        "github_updated": 1514048612170
       },
       {
         "program_year": 2017,
         "display_name": "Aditya",
         "id": 6573208931139584,
-        "github_updated": 1513852200491
+        "github_updated": 1514048613283
       },
       {
         "program_year": 2017,
         "display_name": "Alan Zhu",
         "id": 6075101978034176,
-        "github_updated": 1513852199934
+        "github_updated": 1514048612434
       },
       {
         "program_year": 2017,
         "display_name": "Hizkia Felix",
         "id": 5631601239130112,
-        "github_updated": 1513852199361
+        "github_updated": 1514048612147
       },
       {
         "program_year": 2017,
         "display_name": "ItsMyFirstGame",
         "id": 4674876470198272,
-        "github_updated": 1513852199323
+        "github_updated": 1514048612096
       },
       {
         "program_year": 2017,
         "display_name": "phyxkal",
         "id": 5246606410514432,
         "github_account": "phyxkal",
-        "github_updated": 1513852200509
+        "github_updated": 1514048613292
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Utkarsh Verma",
+        "id": 4852468695433216,
+        "github_updated": 1514048612364
       }
     ],
     "accepted_org_tos": true,
@@ -1841,7 +1841,7 @@
       "css"
     ],
     "guide_to_working_url": "http://openwisp.io/docs/developer/contributing.html",
-    "completed_task_instance_count": 263,
+    "completed_task_instance_count": 278,
     "id": 5693741010518016,
     "winners": {},
     "mailing_list": "https://groups.google.com/d/forum/openwisp/join",
@@ -1876,123 +1876,20 @@
     "wikidata_url": "//www.wikidata.org/wiki/Q45341562"
   },
   {
-    "primary_open_source_license": "GNU Affero General Public License v3 (AGPL-3.0)",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Alejandro Heredia",
-        "id": 5243643889713152,
-        "github_updated": 1513852200067
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Andreas Lukita",
-        "id": 4692396648431616,
-        "github_updated": 1513852199323
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Chandra Chou",
-        "id": 6189747405848576,
-        "github_updated": 1513852199324
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Jude Birch",
-        "id": 6472246329606144,
-        "github_updated": 1513962170619
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Mateusz Komajda",
-        "id": 4979968129892352,
-        "github_updated": 1513852199324
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Nikita Kotenev",
-        "id": 6003849812770816,
-        "github_updated": 1513852199106
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Sarthak Agrawal",
-        "id": 5394417575788544,
-        "github_updated": 1513852199775
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Siddh Jain",
-        "id": 6267827092717568,
-        "github_updated": 1513852199541
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Yudhistira G.S.",
-        "id": 4611923993690112,
-        "github_updated": 1513852199106
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Łukasz Ameljan",
-        "id": 5096542534893568,
-        "github_updated": 1513852199106
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": null,
-    "gplus_url": "https://plus.google.com/communities/116816272940643231129",
-    "programming_languages": [
-      "visual programming language (catrobat)"
-    ],
-    "guide_to_working_url": "http://catrob.at/cgcicti",
-    "completed_task_instance_count": 242,
-    "id": 5135243763777536,
-    "winners": {},
-    "mailing_list": "http://catrob.at/PocketCodeUserForum",
-    "website_url": "https://www.catrobat.org/",
-    "status": 2,
-    "program_year": 2017,
-    "description": "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!",
-    "tags": [
-      "mobile",
-      "games",
-      "visual programming",
-      "apps",
-      "animations"
-    ],
-    "twitter_url": "http://twitter.com/Pocket_Code",
-    "contact_email": "user_forum@catrobat.org",
-    "irc_channel": null,
-    "slug": "catrobat",
-    "preferred_contact_method": null,
-    "guide_to_working": "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions.",
-    "name": "Catrobat",
-    "precis": "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!",
-    "image_url": "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE",
-    "blog_url": null,
-    "github": "Catrobat",
-    "chat": {
-      "url": null
-    },
-    "wikipedia_urls": null,
-    "wikidata_url": "//www.wikidata.org/wiki/Q45341807"
-  },
-  {
     "primary_open_source_license": "Affero GNU Public License",
     "leaders": [
       {
         "program_year": 2017,
         "display_name": "Alexander Voronkov",
         "id": 5057457392975872,
-        "github_updated": 1513852199361
+        "github_updated": 1514048611625
       },
       {
         "program_year": 2017,
         "display_name": "Andrew Dassonville",
         "id": 5302037795307520,
         "github_account": "andrewda",
-        "github_updated": 1513852198442
+        "github_updated": 1514048611619
       },
       {
         "program_year": 2017,
@@ -2005,38 +1902,38 @@
         "program_year": 2017,
         "display_name": "Daniel O'Brien",
         "id": 4973831292715008,
-        "github_updated": 1513852200613
+        "github_updated": 1514048611671
       },
       {
         "program_year": 2017,
         "display_name": "Joshua Chung",
         "id": 6479102439587840,
-        "github_updated": 1513852200428
+        "github_updated": 1514048611611
       },
       {
         "program_year": 2017,
         "display_name": "Marcos Gómez",
         "id": 5557452655296512,
-        "github_updated": 1513852199324
+        "github_updated": 1514048611617
       },
       {
         "program_year": 2017,
         "display_name": "Nalin Bhardwaj",
         "id": 4552227639263232,
         "github_account": "nalinbhardwaj",
-        "github_updated": 1513852198448
+        "github_updated": 1514048611930
       },
       {
         "program_year": 2017,
         "display_name": "Shukai Ni",
         "id": 5178132149567488,
-        "github_updated": 1513852199323
+        "github_updated": 1514048612147
       },
       {
         "program_year": 2017,
         "display_name": "Tio Irawan",
         "id": 6214590973083648,
-        "github_updated": 1513852199323
+        "github_updated": 1514048612148
       }
     ],
     "accepted_org_tos": true,
@@ -2050,7 +1947,7 @@
       "nodejs"
     ],
     "guide_to_working_url": "https://github.com/coala/coala/wiki/Google-Code-In",
-    "completed_task_instance_count": 239,
+    "completed_task_instance_count": 254,
     "id": 4884530416582656,
     "winners": {},
     "mailing_list": "https://github.com/coala/coala/wiki/Mailing-Lists",
@@ -2087,6 +1984,109 @@
     "wikidata_url": "//www.wikidata.org/wiki/Q25215462"
   },
   {
+    "primary_open_source_license": "GNU Affero General Public License v3 (AGPL-3.0)",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "Alejandro Heredia",
+        "id": 5243643889713152,
+        "github_updated": 1514048611581
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Andreas Lukita",
+        "id": 4692396648431616,
+        "github_updated": 1514048611577
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Chandra Chou",
+        "id": 6189747405848576,
+        "github_updated": 1514048611589
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Jude Birch",
+        "id": 6472246329606144,
+        "github_updated": 1513962170619
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Mateusz Komajda",
+        "id": 4979968129892352,
+        "github_updated": 1514048611585
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Nikita Kotenev",
+        "id": 6003849812770816,
+        "github_updated": 1514048611575
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Sarthak Agrawal",
+        "id": 5394417575788544,
+        "github_updated": 1514048611584
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Siddh Jain",
+        "id": 6267827092717568,
+        "github_updated": 1514048611580
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Yudhistira G.S.",
+        "id": 4611923993690112,
+        "github_updated": 1514048611576
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Łukasz Ameljan",
+        "id": 5096542534893568,
+        "github_updated": 1514048611589
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": null,
+    "gplus_url": "https://plus.google.com/communities/116816272940643231129",
+    "programming_languages": [
+      "visual programming language (catrobat)"
+    ],
+    "guide_to_working_url": "http://catrob.at/cgcicti",
+    "completed_task_instance_count": 253,
+    "id": 5135243763777536,
+    "winners": {},
+    "mailing_list": "http://catrob.at/PocketCodeUserForum",
+    "website_url": "https://www.catrobat.org/",
+    "status": 2,
+    "program_year": 2017,
+    "description": "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!",
+    "tags": [
+      "mobile",
+      "games",
+      "visual programming",
+      "apps",
+      "animations"
+    ],
+    "twitter_url": "http://twitter.com/Pocket_Code",
+    "contact_email": "user_forum@catrobat.org",
+    "irc_channel": null,
+    "slug": "catrobat",
+    "preferred_contact_method": null,
+    "guide_to_working": "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions.",
+    "name": "Catrobat",
+    "precis": "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!",
+    "image_url": "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE",
+    "blog_url": null,
+    "github": "Catrobat",
+    "chat": {
+      "url": null
+    },
+    "wikipedia_urls": null,
+    "wikidata_url": "//www.wikidata.org/wiki/Q45341807"
+  },
+  {
     "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
     "leaders": [
       {
@@ -2094,55 +2094,55 @@
         "display_name": "Akash Bhave",
         "id": 6479705412730880,
         "github_account": "AkashBhave",
-        "github_updated": 1513852200457
+        "github_updated": 1514048613146
       },
       {
         "program_year": 2017,
         "display_name": "Chirag Gupta",
         "id": 6471766769664000,
-        "github_updated": 1513852201058
+        "github_updated": 1514048613069
       },
       {
         "program_year": 2017,
         "display_name": "Daniel Genkin",
         "id": 6365669266292736,
-        "github_updated": 1513852199429
+        "github_updated": 1514048612169
       },
       {
         "program_year": 2017,
         "display_name": "janicek",
         "id": 5742982516965376,
-        "github_updated": 1513852200680
+        "github_updated": 1514048612708
       },
       {
         "program_year": 2017,
         "display_name": "luphieanza",
         "id": 5733321055141888,
-        "github_updated": 1513852200690
+        "github_updated": 1514048613267
       },
       {
         "program_year": 2017,
         "display_name": "Matthew Katz",
         "id": 4529584303243264,
-        "github_updated": 1513852200851
+        "github_updated": 1514048613278
       },
       {
         "program_year": 2017,
         "display_name": "Shivam kumar Singh",
         "id": 5079096713281536,
-        "github_updated": 1513852200861
+        "github_updated": 1514048613284
       },
       {
         "program_year": 2017,
         "display_name": "Vaibhav Vijay",
         "id": 6329140703657984,
-        "github_updated": 1513852200168
+        "github_updated": 1514048612518
       },
       {
         "program_year": 2017,
         "display_name": "Yibin Long",
         "id": 5828654942650368,
-        "github_updated": 1513852201176
+        "github_updated": 1514048613339
       }
     ],
     "accepted_org_tos": true,
@@ -2156,7 +2156,7 @@
       "mysql"
     ],
     "guide_to_working_url": "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki",
-    "completed_task_instance_count": 217,
+    "completed_task_instance_count": 228,
     "id": 6239808655458304,
     "winners": {},
     "mailing_list": "http://mifos.org/resources/community/communications/#mailing-lists",
@@ -2202,63 +2202,63 @@
         "program_year": 2017,
         "display_name": "Bartłomiej Rasztabiga",
         "id": 4851396136402944,
-        "github_updated": 1513852199361
+        "github_updated": 1514048612148
       },
       {
         "program_year": 2017,
         "display_name": "Fawwaz Yusran",
         "id": 4893093289525248,
-        "github_updated": 1513852199361
+        "github_updated": 1514048612147
       },
       {
         "program_year": 2017,
         "display_name": "Jyothsna Ashok",
         "id": 4671819661443072,
         "github_account": "JyothsnaAshok",
-        "github_updated": 1513852200049
+        "github_updated": 1514048613311
       },
       {
         "program_year": 2017,
         "display_name": "Matthew Whitaker",
         "id": 6052785999052800,
-        "github_updated": 1513852199630
+        "github_updated": 1514048612545
       },
       {
         "program_year": 2017,
         "display_name": "Nayansh Gupta",
         "id": 6094997608726528,
-        "github_updated": 1513852199362
+        "github_updated": 1514048612147
       },
       {
         "program_year": 2017,
         "display_name": "RAGHAV DHINGRA",
         "id": 5329794826764288,
-        "github_updated": 1513837298999
+        "github_updated": 1514048613350
       },
       {
         "program_year": 2017,
         "display_name": "Said Yaka",
         "id": 5971293960667136,
-        "github_updated": 1513852199360
+        "github_updated": 1514048612168
       },
       {
         "program_year": 2017,
         "display_name": "Sanskar Jindal",
         "id": 5064391886110720,
-        "github_updated": 1513852202004
+        "github_updated": 1514048613183
       },
       {
         "program_year": 2017,
         "display_name": "SR",
         "id": 5255833879314432,
         "github_account": "maurya",
-        "github_updated": 1513852198693
+        "github_updated": 1514048611789
       },
       {
         "program_year": 2017,
         "display_name": "Tomasz Domagała",
         "id": 6531598482669568,
-        "github_updated": 1513852199361
+        "github_updated": 1514048612148
       }
     ],
     "accepted_org_tos": true,
@@ -2272,7 +2272,7 @@
       "css"
     ],
     "guide_to_working_url": "",
-    "completed_task_instance_count": 207,
+    "completed_task_instance_count": 223,
     "id": 5753409548320768,
     "winners": {},
     "mailing_list": "http://om.rs/gcitalk",
@@ -2309,6 +2309,82 @@
     "wikidata_url": "//www.wikidata.org/wiki/Q7095826"
   },
   {
+    "primary_open_source_license": "Mozilla Public License 2.0 (MPL-2.0)",
+    "leaders": [
+      {
+        "program_year": 2017,
+        "display_name": "KachachanC",
+        "id": 5890556360130560,
+        "github_updated": 1514048611703
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Mateusz Grzonka",
+        "id": 4662563470049280,
+        "github_updated": 1514048612008
+      },
+      {
+        "program_year": 2017,
+        "display_name": "MigDinny",
+        "id": 5815887145730048,
+        "github_account": "MigDinny",
+        "github_updated": 1514048612606
+      },
+      {
+        "program_year": 2017,
+        "display_name": "nulxis",
+        "id": 6241077499527168,
+        "github_updated": 1514048612097
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Shaurya Nathan",
+        "id": 4988221043769344,
+        "github_updated": 1514048613270
+      }
+    ],
+    "accepted_org_tos": true,
+    "dev_mailing_list": "",
+    "gplus_url": "",
+    "programming_languages": [
+      "java",
+      "php",
+      "javascript"
+    ],
+    "guide_to_working_url": "https://gitlab.com/librehealth/gci/wikis/",
+    "completed_task_instance_count": 214,
+    "id": 5165875202097152,
+    "winners": {},
+    "mailing_list": "https://forums.librehealth.io/gci",
+    "website_url": "https://librehealth.io",
+    "status": 2,
+    "program_year": 2017,
+    "description": "LibreHealth is a collaborative community for free & open source software projects in Health IT. We are a member project of the Software Freedom Conservatory, and an all-volunteer public charity. Come join us!",
+    "tags": [
+      "hfoss",
+      "health",
+      "humanitarian"
+    ],
+    "twitter_url": "https://twitter.com/LibreHealthIO",
+    "contact_email": "lsc@librehealth.io",
+    "irc_channel": "https://chat.librehealth.io/channel/gci",
+    "slug": "librehealth",
+    "preferred_contact_method": null,
+    "guide_to_working": "# You **must** have completed the [Become a part of the community](https://codein.withgoogle.com/tasks/5974232355831808/) task prior to completing any others! \n\nWe require that all work you complete be your own work. It must be wholly original. [See our wiki](https://gitlab.com/librehealth/gci/wikis/) for other information.",
+    "name": "LibreHealth",
+    "precis": "Healthcare for Humanity — a collaborative community for free & open source software projects in Health IT. All-volunteer public charity.",
+    "image_url": "//lh3.googleusercontent.com/nFlpi1OHSnJpP95J0D1GocKcaURz9x0XOvO-x9E_p5iJfUHY_w6IQhsntrIY542No96DPjAd8XLLVDWOLyLoTqo",
+    "blog_url": "",
+    "github": "LibreHealthIO",
+    "chat": {
+      "url": "https://chat.librehealth.io/channel/gci",
+      "platform": "ROCKET",
+      "image": "images/logos/rocket.png"
+    },
+    "wikipedia_urls": null,
+    "wikidata_url": "//www.wikidata.org/wiki/Q45341906"
+  },
+  {
     "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
     "leaders": [
       {
@@ -2321,57 +2397,57 @@
         "program_year": 2017,
         "display_name": "Arpit Kamboj",
         "id": 6432260989386752,
-        "github_updated": 1513852199360
+        "github_updated": 1514048612170
       },
       {
         "program_year": 2017,
         "display_name": "eviltak",
         "id": 5751156015890432,
         "github_account": "eviltak",
-        "github_updated": 1513852200574
+        "github_updated": 1514048612658
       },
       {
         "program_year": 2017,
         "display_name": "Jason Huang",
         "id": 6563090390843392,
-        "github_updated": 1513852200024
+        "github_updated": 1514048612769
       },
       {
         "program_year": 2017,
         "display_name": "Nicholas Bates",
         "id": 5288288933904384,
-        "github_updated": 1513852199429
+        "github_updated": 1514048612097
       },
       {
         "program_year": 2017,
         "display_name": "Rajat Patel",
         "id": 6323289079152640,
-        "github_updated": 1513852199913
+        "github_updated": 1514048612577
       },
       {
         "program_year": 2017,
         "display_name": "Soundwave",
         "id": 4896844943458304,
-        "github_updated": 1513852200313
+        "github_updated": 1514048612580
       },
       {
         "program_year": 2017,
         "display_name": "Steven Rachman",
         "id": 6739799975133184,
-        "github_updated": 1513852199360
+        "github_updated": 1514048612147
       },
       {
         "program_year": 2017,
         "display_name": "Suraj Datta",
         "id": 6656321111719936,
         "github_account": "SurajDatta",
-        "github_updated": 1513852200678
+        "github_updated": 1514048613069
       },
       {
         "program_year": 2017,
         "display_name": "Thomas O'Keeffe",
         "id": 6106213647384576,
-        "github_updated": 1513852199362
+        "github_updated": 1514048612170
       }
     ],
     "accepted_org_tos": true,
@@ -2385,7 +2461,7 @@
       "blender"
     ],
     "guide_to_working_url": "https://github.com/MovingBlocks/Terasology/wiki/GCI",
-    "completed_task_instance_count": 204,
+    "completed_task_instance_count": 210,
     "id": 5693523175145472,
     "winners": {},
     "mailing_list": null,
@@ -2422,76 +2498,6 @@
     "wikidata_url": "//www.wikidata.org/wiki/Q40881750"
   },
   {
-    "primary_open_source_license": "Mozilla Public License 2.0 (MPL-2.0)",
-    "leaders": [
-      {
-        "program_year": 2017,
-        "display_name": "Mateusz Grzonka",
-        "id": 4662563470049280,
-        "github_updated": 1513852199323
-      },
-      {
-        "program_year": 2017,
-        "display_name": "MigDinny",
-        "id": 5815887145730048,
-        "github_account": "MigDinny",
-        "github_updated": 1513852200771
-      },
-      {
-        "program_year": 2017,
-        "display_name": "nulxis",
-        "id": 6241077499527168,
-        "github_updated": 1513852199323
-      },
-      {
-        "program_year": 2017,
-        "display_name": "Shaurya Nathan",
-        "id": 4988221043769344,
-        "github_updated": 1513852200700
-      }
-    ],
-    "accepted_org_tos": true,
-    "dev_mailing_list": "",
-    "gplus_url": "",
-    "programming_languages": [
-      "java",
-      "php",
-      "javascript"
-    ],
-    "guide_to_working_url": "https://gitlab.com/librehealth/gci/wikis/",
-    "completed_task_instance_count": 201,
-    "id": 5165875202097152,
-    "winners": {},
-    "mailing_list": "https://forums.librehealth.io/gci",
-    "website_url": "https://librehealth.io",
-    "status": 2,
-    "program_year": 2017,
-    "description": "LibreHealth is a collaborative community for free & open source software projects in Health IT. We are a member project of the Software Freedom Conservatory, and an all-volunteer public charity. Come join us!",
-    "tags": [
-      "hfoss",
-      "health",
-      "humanitarian"
-    ],
-    "twitter_url": "https://twitter.com/LibreHealthIO",
-    "contact_email": "lsc@librehealth.io",
-    "irc_channel": "https://chat.librehealth.io/channel/gci",
-    "slug": "librehealth",
-    "preferred_contact_method": null,
-    "guide_to_working": "# You **must** have completed the [Become a part of the community](https://codein.withgoogle.com/tasks/5974232355831808/) task prior to completing any others! \n\nWe require that all work you complete be your own work. It must be wholly original. [See our wiki](https://gitlab.com/librehealth/gci/wikis/) for other information.",
-    "name": "LibreHealth",
-    "precis": "Healthcare for Humanity — a collaborative community for free & open source software projects in Health IT. All-volunteer public charity.",
-    "image_url": "//lh3.googleusercontent.com/nFlpi1OHSnJpP95J0D1GocKcaURz9x0XOvO-x9E_p5iJfUHY_w6IQhsntrIY542No96DPjAd8XLLVDWOLyLoTqo",
-    "blog_url": "",
-    "github": "LibreHealthIO",
-    "chat": {
-      "url": "https://chat.librehealth.io/channel/gci",
-      "platform": "ROCKET",
-      "image": "images/logos/rocket.png"
-    },
-    "wikipedia_urls": null,
-    "wikidata_url": "//www.wikidata.org/wiki/Q45341906"
-  },
-  {
     "primary_open_source_license": "GNU Library or \"Lesser\" General Public License version 2.1 (LGPL-2.1)",
     "leaders": [
       {
@@ -2499,13 +2505,13 @@
         "display_name": "Akshit Dewan",
         "id": 6268439662428160,
         "github_account": "akshitdewan",
-        "github_updated": 1513852200976
+        "github_updated": 1514048613360
       },
       {
         "program_year": 2017,
         "display_name": "Srijan Jha",
         "id": 5823647748980736,
-        "github_updated": 1513852199430
+        "github_updated": 1514048612148
       }
     ],
     "accepted_org_tos": true,
@@ -2519,7 +2525,7 @@
       "android"
     ],
     "guide_to_working_url": "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn",
-    "completed_task_instance_count": 188,
+    "completed_task_instance_count": 201,
     "id": 6299430183501824,
     "winners": {},
     "mailing_list": "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss",
@@ -2570,25 +2576,25 @@
         "program_year": 2017,
         "display_name": "Ethan Zhao",
         "id": 6556823228252160,
-        "github_updated": 1513852199797
+        "github_updated": 1514048612663
       },
       {
         "program_year": 2017,
         "display_name": "Jason Wong-1",
         "id": 6503206198706176,
-        "github_updated": 1513852199362
+        "github_updated": 1514048612147
       },
       {
         "program_year": 2017,
         "display_name": "Jerry Huang",
         "id": 5364363542134784,
-        "github_updated": 1513852199684
+        "github_updated": 1514048612665
       },
       {
         "program_year": 2017,
         "display_name": "Sunveer Singh",
         "id": 5325877816590336,
-        "github_updated": 1513852200650
+        "github_updated": 1514048613337
       },
       {
         "program_year": 2017,
@@ -2608,7 +2614,7 @@
       "javascript"
     ],
     "guide_to_working_url": "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students",
-    "completed_task_instance_count": 179,
+    "completed_task_instance_count": 187,
     "id": 5139786496999424,
     "winners": {},
     "mailing_list": "http://www.osgeo.org/content/faq/mailing_lists.html",
@@ -2666,31 +2672,31 @@
         "program_year": 2017,
         "display_name": "Omshi Samal",
         "id": 5248610683846656,
-        "github_updated": 1513852199360
+        "github_updated": 1514048612096
       },
       {
         "program_year": 2017,
         "display_name": "Shivansh Yadav",
         "id": 4670031679979520,
-        "github_updated": 1513852199323
+        "github_updated": 1514048612096
       },
       {
         "program_year": 2017,
         "display_name": "Shruti Singh",
         "id": 5809459819446272,
-        "github_updated": 1513852200013
+        "github_updated": 1514048612508
       },
       {
         "program_year": 2017,
         "display_name": "Surya",
         "id": 6607311776776192,
-        "github_updated": 1513852205782
+        "github_updated": 1514048613114
       },
       {
         "program_year": 2017,
         "display_name": "Syed",
         "id": 6685363949010944,
-        "github_updated": 1513852200491
+        "github_updated": 1514048613333
       },
       {
         "program_year": 2017,
@@ -2702,7 +2708,7 @@
         "program_year": 2017,
         "display_name": "Terence Chan Zun Mun",
         "id": 6011586793701376,
-        "github_updated": 1513852199323
+        "github_updated": 1514048612169
       }
     ],
     "accepted_org_tos": true,
@@ -2716,7 +2722,7 @@
       "java"
     ],
     "guide_to_working_url": "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html",
-    "completed_task_instance_count": 146,
+    "completed_task_instance_count": 153,
     "id": 5067404587565056,
     "winners": {},
     "mailing_list": "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html",
@@ -2763,19 +2769,19 @@
         "program_year": 2017,
         "display_name": "Kartik Goel",
         "id": 6733252700143616,
-        "github_updated": 1513852199988
+        "github_updated": 1514048611626
       },
       {
         "program_year": 2017,
         "display_name": "MaskyS",
         "id": 6719751873101824,
-        "github_updated": 1513852199836
+        "github_updated": 1514048612769
       },
       {
         "program_year": 2017,
         "display_name": "Neel Gopaul",
         "id": 4576133293015040,
-        "github_updated": 1513852200457
+        "github_updated": 1514048613270
       },
       {
         "program_year": 2017,
@@ -2787,13 +2793,13 @@
         "program_year": 2017,
         "display_name": "Tanish Kapur",
         "id": 6374141223501824,
-        "github_updated": 1513852199323
+        "github_updated": 1514048612147
       },
       {
         "program_year": 2017,
         "display_name": "Tanvish Jha",
         "id": 4585256541749248,
-        "github_updated": 1513852199695
+        "github_updated": 1514048611618
       }
     ],
     "accepted_org_tos": true,
@@ -2807,7 +2813,7 @@
       "symfony"
     ],
     "guide_to_working_url": "https://www.drupal.org/node/984014",
-    "completed_task_instance_count": 131,
+    "completed_task_instance_count": 136,
     "id": 5636094664114176,
     "winners": {},
     "mailing_list": "https://drupal.org/mailing-lists",
@@ -2911,7 +2917,7 @@
         "program_year": 2017,
         "display_name": "Adarsh Kumar",
         "id": 4563919077113856,
-        "github_updated": 1513852199918
+        "github_updated": 1514048611618
       },
       {
         "program_year": 2017,
@@ -2924,13 +2930,25 @@
         "program_year": 2017,
         "display_name": "Naman Sood",
         "id": 4504161854947328,
-        "github_updated": 1513852199323
+        "github_updated": 1514048611615
       },
       {
         "program_year": 2017,
         "display_name": "Owen Leong",
         "id": 6207559977402368,
-        "github_updated": 1513852199106
+        "github_updated": 1514048611623
+      },
+      {
+        "program_year": 2017,
+        "display_name": "palashtaneja",
+        "id": 6310531952541696,
+        "github_updated": 1514048611998
+      },
+      {
+        "program_year": 2017,
+        "display_name": "Will Eggleston",
+        "id": 6625447007748096,
+        "github_updated": 1514048611709
       }
     ],
     "accepted_org_tos": true,
@@ -2944,7 +2962,7 @@
       "jquery"
     ],
     "guide_to_working_url": "https://gitter.im/Cloud-CV/",
-    "completed_task_instance_count": 86,
+    "completed_task_instance_count": 88,
     "id": 4854733644759040,
     "winners": {},
     "mailing_list": "https://groups.google.com/forum/#!forum/cloudcv",
@@ -2985,7 +3003,7 @@
         "program_year": 2017,
         "display_name": "Alexander Mamaev",
         "id": 5417131376115712,
-        "github_updated": 1513852199105
+        "github_updated": 1514048611588
       },
       {
         "program_year": 2017,
@@ -2997,7 +3015,7 @@
         "program_year": 2017,
         "display_name": "JJJPPP",
         "id": 5210939794128896,
-        "github_updated": 1513852199606
+        "github_updated": 1514048611580
       },
       {
         "program_year": 2017,
@@ -3017,7 +3035,7 @@
       "bash"
     ],
     "guide_to_working_url": "http://wiki.apertium.org/wiki/Task_ideas_for_Google_Code-in/Getting_started",
-    "completed_task_instance_count": 64,
+    "completed_task_instance_count": 70,
     "id": 6541403171586048,
     "winners": {},
     "mailing_list": "http://wiki.apertium.org/wiki/Contact",
