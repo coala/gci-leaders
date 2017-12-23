@@ -7,18 +7,7 @@
     <meta property="og:title" content="GCI Current Leaders">
     <meta property="og:description" content="Google Code-in 2017 Current Leaders">
     <meta property="og:image" content="{{{rootURL}}}/images/GCI-logo.jpg">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- i18n libraries -->
-    <script src="https://cdn.rawgit.com/santhoshtr/CLDRPluralRuleParser/8baf9aedc4/src/CLDRPluralRuleParser.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.4/jquery.i18n.min.js"></script>
-    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.messagestore.js"></script>
-    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.fallbacks.js"></script>
-    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.language.js"></script>
-    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.parser.js"></script>
-    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/c932076e/src/jquery.i18n.emitter.js"></script>
-    <!-- global translation engine -->
-    <script src="js/global.js"></script>
+    <link rel="stylesheet" href="{{assets.main-css}}">
   </head>
   <body>
     <div>
@@ -196,6 +185,6 @@
     <footer>
       <small data-i18n="footer-text">Google Code-in and the Google Code-in logo are trademarks of Google Inc.</small>
     </footer>
-    <script src="js/twitter.js"></script>
+    <script src="{{assets.main-js}}"></script>
   </body>
 </html>

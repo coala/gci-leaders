@@ -1,3 +1,5 @@
+import init from './app'
+
 var browserLocale
 
 if (!localStorage.getItem('lang')) {
@@ -14,12 +16,12 @@ function updateTranslation(localex) {
   })
 
   $.i18n()
-    .load('./js/i18n', localex)
+    .load('./i18n', localex)
     .done(function() {
       console.log('i18n:' + localex + ' locale loaded')
       $('body').i18n()
       $('html').attr('lang', localex)
-      $.getScript('js/app.js')
+      init()
     })
 }
 
