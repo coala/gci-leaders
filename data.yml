@@ -65,7 +65,7 @@
       - "javascript"
       - "html"
     guide_to_working_url: ""
-    completed_task_instance_count: 922
+    completed_task_instance_count: 927
     id: 5733899491606528
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/jboss-community-gci/"
@@ -96,6 +96,9 @@
       image: "images/logos/gitter.png"
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q46507419"
+    stack_exchange: 
+      url: "https://stackoverflow.com/tags/jboss"
+      image: "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a"
   - 
     primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
     leaders: 
@@ -163,7 +166,7 @@
       - "node"
       - "python"
     guide_to_working_url: ""
-    completed_task_instance_count: 755
+    completed_task_instance_count: 781
     id: 4923880235859968
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/score-community"
@@ -194,6 +197,7 @@
       image: "images/logos/gitter.png"
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q45341439"
+    stack_exchange: null
   - 
     primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
     leaders: 
@@ -266,7 +270,7 @@
       - "web technologies"
       - "python"
     guide_to_working_url: "https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/"
-    completed_task_instance_count: 535
+    completed_task_instance_count: 562
     id: 6237166344601600
     winners: {}
     mailing_list: "http://groups.google.com/group/fossasia"
@@ -303,6 +307,7 @@
       vi: "https://vi.wikipedia.org/wiki/FOSSASIA"
       zh: "https://zh.wikipedia.org/wiki/FOSSASIA"
     wikidata_url: "//www.wikidata.org/wiki/Q16957617"
+    stack_exchange: null
   - 
     primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
     leaders: 
@@ -320,7 +325,7 @@
         program_year: 2017
         display_name: "Kanassanun Namwong"
         id: 4566876657025024
-        github_updated: 1513875818664
+        github_updated: 1514130476110
       - 
         program_year: 2017
         display_name: "kipply"
@@ -365,7 +370,7 @@
       - "javascript"
       - "css"
     guide_to_working_url: "https://wiki.sugarlabs.org/go/Google_Code_In_2017/background"
-    completed_task_instance_count: 496
+    completed_task_instance_count: 509
     id: 4879181169033216
     winners: {}
     mailing_list: "http://lists.sugarlabs.org/"
@@ -398,6 +403,7 @@
       ja: "https://ja.wikipedia.org/wiki/Sugar_Labs"
       pl: "https://pl.wikipedia.org/wiki/Sugar_Labs"
     wikidata_url: "//www.wikidata.org/wiki/Q5935028"
+    stack_exchange: null
   - 
     primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
     leaders: 
@@ -406,11 +412,6 @@
         display_name: "Accelerator"
         id: 5456412610134016
         github_updated: 1514048612727
-      - 
-        program_year: 2017
-        display_name: "Aden"
-        id: 4563995715436544
-        github_updated: 1514048612825
       - 
         program_year: 2017
         display_name: "Daniel Lim"
@@ -443,6 +444,11 @@
         github_updated: 1514048612170
       - 
         program_year: 2017
+        display_name: "Nissaar Gopee"
+        id: 5859320807817216
+        github_updated: 1514130475864
+      - 
+        program_year: 2017
         display_name: "Simran Singh"
         id: 5455531898568704
         github_updated: 1514048612764
@@ -461,7 +467,7 @@
       - "gnome"
       - "c/c++"
     guide_to_working_url: ""
-    completed_task_instance_count: 449
+    completed_task_instance_count: 460
     id: 5133577048031232
     winners: {}
     mailing_list: "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc"
@@ -664,6 +670,9 @@
       zhwikib: "https://zh.wikibooks.org/wiki/Ubuntu"
       zu: "https://zu.wikipedia.org/wiki/Ubuntu_%28uhlelo%29"
     wikidata_url: "//www.wikidata.org/wiki/Q381"
+    stack_exchange: 
+      url: "https://stackoverflow.com/tags/ubuntu"
+      image: "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a"
   - 
     primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
     leaders: 
@@ -726,7 +735,7 @@
       - "javascript"
       - "sql"
     guide_to_working_url: "https://wiki.musicbrainz.org/Google_Code-in/2017"
-    completed_task_instance_count: 437
+    completed_task_instance_count: 451
     id: 5936087526539264
     winners: {}
     mailing_list: "https://community.metabrainz.org/"
@@ -760,6 +769,7 @@
       fa: "https://fa.wikipedia.org/wiki/%D8%A8%D9%86%DB%8C%D8%A7%D8%AF_%D9%85%D8%AA%D8%A7%D8%A8%D8%B1%DB%8C%D9%86%D8%B2"
       fr: "https://fr.wikipedia.org/wiki/MetaBrainz"
     wikidata_url: "//www.wikidata.org/wiki/Q952204"
+    stack_exchange: null
   - 
     primary_open_source_license: "MIT license (MIT)"
     leaders: 
@@ -768,6 +778,11 @@
         display_name: "Agape Gonzales"
         id: 5125138225823744
         github_updated: 1514048611590
+      - 
+        program_year: 2017
+        display_name: "caleb Parks"
+        id: 4982403334406144
+        github_updated: 1514130475875
       - 
         program_year: 2017
         display_name: "Jeff Sieu"
@@ -818,7 +833,7 @@
       - "three.js"
       - "html/css"
     guide_to_working_url: ""
-    completed_task_instance_count: 405
+    completed_task_instance_count: 437
     id: 5154791065911296
     winners: {}
     mailing_list: "http://brlcad.org/wiki/Mailing_lists"
@@ -858,6 +873,7 @@
       uk: "https://uk.wikipedia.org/wiki/BRL-CAD"
       zh_min_nan: "https://zh_min_nan.wikipedia.org/wiki/BRL-CAD"
     wikidata_url: "//www.wikidata.org/wiki/Q796941"
+    stack_exchange: null
   - 
     primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
     leaders: 
@@ -890,7 +906,7 @@
         program_year: 2017
         display_name: "steve"
         id: 5056135214137344
-        github_updated: 1513875818724
+        github_updated: 1514130476122
       - 
         program_year: 2017
         display_name: "synicalsyntax"
@@ -923,7 +939,7 @@
       - "html"
       - "visual design"
     guide_to_working_url: "https://github.com/zulip/zulip-gci"
-    completed_task_instance_count: 397
+    completed_task_instance_count: 414
     id: 5744567921934336
     winners: {}
     mailing_list: null
@@ -956,6 +972,7 @@
       en: "https://en.wikipedia.org/wiki/Zulip"
       ru: "https://ru.wikipedia.org/wiki/Zulip"
     wikidata_url: "//www.wikidata.org/wiki/Q23680052"
+    stack_exchange: null
   - 
     primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
     leaders: 
@@ -1019,7 +1036,7 @@
       - "lua"
       - "wiki"
     guide_to_working_url: "https://www.mediawiki.org/wiki/Google_Code-in/2017"
-    completed_task_instance_count: 373
+    completed_task_instance_count: 395
     id: 5740205476675584
     winners: {}
     mailing_list: "https://lists.wikimedia.org/mailman/listinfo/wikitech-l"
@@ -1208,6 +1225,186 @@
       zh: "https://zh.wikipedia.org/wiki/%E7%BB%B4%E5%9F%BA%E5%AA%92%E4%BD%93%E5%9F%BA%E9%87%91%E4%BC%9A"
       zhwiki: "https://zh.wikinews.org/wiki/Category%3A%E7%BB%B4%E5%9F%BA%E5%AA%92%E4%BD%93"
     wikidata_url: "//www.wikidata.org/wiki/Q180"
+    stack_exchange: null
+  - 
+    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Aarnav Bos"
+        id: 5288208805920768
+        github_updated: 1514048612170
+      - 
+        program_year: 2017
+        display_name: "Aditya"
+        id: 6573208931139584
+        github_updated: 1514048613283
+      - 
+        program_year: 2017
+        display_name: "Alan Zhu"
+        id: 6075101978034176
+        github_updated: 1514048612434
+      - 
+        program_year: 2017
+        display_name: "Hizkia Felix"
+        id: 5631601239130112
+        github_updated: 1514048612147
+      - 
+        program_year: 2017
+        display_name: "ItsMyFirstGame"
+        id: 4674876470198272
+        github_updated: 1514048612096
+      - 
+        program_year: 2017
+        display_name: "phyxkal"
+        id: 5246606410514432
+        github_account: "phyxkal"
+        github_updated: 1514048613292
+      - 
+        program_year: 2017
+        display_name: "Utkarsh Verma"
+        id: 4852468695433216
+        github_updated: 1514048612364
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: null
+    programming_languages: 
+      - "python"
+      - "django"
+      - "javascript"
+      - "html"
+      - "css"
+    guide_to_working_url: "http://openwisp.io/docs/developer/contributing.html"
+    completed_task_instance_count: 322
+    id: 5693741010518016
+    winners: {}
+    mailing_list: "https://groups.google.com/d/forum/openwisp/join"
+    website_url: "http://openwisp.org"
+    status: 2
+    program_year: 2017
+    description: "In the summer of 2008 the [Metropolitan City of Rome](http://www.cittametropolitanaroma.gov.it/) decided to start a **free of charge and public Wi-Fi network** to be spread over its 5352 SQ KM territory including Rome and 120 other cities for a total of about 4.5 million inhabitants. The main objective of the project, called **ProvinciaWiFi** (later renamed [WiFi Metropolitano](http://www.cittametropolitanaroma.gov.it/index.php/wifimetropolitano-english-version)), was to take a decisive step to reduce the existing **digital divide** by fostering and facilitating the use of ICT by citizens.\nFrom the outset it was decided to commit the project to a completely open philosophy. For this reason a clear choice towards open software and operating systems and the availability of every modification, update and improvement to the community was made. The same approach was adopted for the knowledge and the experience acquired within the project. In order to pursue this goals the Province of Rome called the university consortium *CASPUR* (later merged in the [CINECA](https://www.cineca.it/en) consortium) to develop the technical solution. In this context, a research project conducted by the *CINECA* consortium found its perfect application. This project proposed an innovative methodology for the distribution of networks (more precisely Virtual LANs used for Wi-Fi connectivity) between geographically distant sites. \n\n The software tools, including the OpenWISP 2 [wifi controller](http://openwisp.org/whatis.html#wifi-controller) and the various [NetJSON](http://netjson.org/) implementations used are released to the public free of charge under open-source licenses, hoping this will allow a broader audience to benefit from our work."
+    tags: 
+      - "networking"
+      - "web"
+      - "wifi"
+      - "mesh"
+      - "iot"
+    twitter_url: "https://twitter.com/openwisp"
+    contact_email: null
+    irc_channel: "http://openwisp.org/support.html"
+    slug: "openwisp"
+    preferred_contact_method: null
+    guide_to_working: "Must read pages:\n\n- [How to run a successful GCI and become an OpenWISP star](http://openwisp.io/docs/developer/google-code-in.html)\n- [Guidelines for contributing to OpenWISP](http://openwisp.io/docs/developer/contributing.html)\n\nDon't forget to [join the our live chat and mailing list](http://openwisp.org/support.html) to ask questions."
+    name: "OpenWISP"
+    precis: "OpenWISP is an open source solution designed to build and manage low cost networks: from public wifi, to university wifi, mesh networks and IoT and much more."
+    image_url: "//lh3.googleusercontent.com/Df4vqOzYseDWiInoUvC-4jjXTjJVUBAGib9FqQdyHJGb00mHFWOqeZt8NmiM-hyouN2LCz14Q7XDtn3U9ylClBI"
+    blog_url: null
+    github: "openwisp"
+    chat: 
+      url: "http://openwisp.org/support.html"
+      platform: "OTHER"
+      image: "images/chat.png"
+    wikipedia_urls: null
+    wikidata_url: "//www.wikidata.org/wiki/Q45341562"
+    stack_exchange: null
+  - 
+    primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Abhijeet Manohar"
+        id: 6081213045407744
+        github_account: "abhijeetmanohar"
+        github_updated: 1514048613356
+      - 
+        program_year: 2017
+        display_name: "Aryaman Agrawal"
+        id: 4770355203801088
+        github_updated: 1514048612148
+      - 
+        program_year: 2017
+        display_name: "Erika Tan"
+        id: 4717477579718656
+        github_updated: 1514048612792
+      - 
+        program_year: 2017
+        display_name: "Fidella"
+        id: 5681230525759488
+        github_updated: 1514048612664
+      - 
+        program_year: 2017
+        display_name: "Mu'aaz Kasker"
+        id: 5851158759342080
+        github_updated: 1514048612168
+      - 
+        program_year: 2017
+        display_name: "Sameer"
+        id: 4555590061785088
+        github_updated: 1514048613253
+      - 
+        program_year: 2017
+        display_name: "Valentun"
+        id: 6017587265667072
+        github_updated: 1513962170392
+      - 
+        program_year: 2017
+        display_name: "Vatsal Kulshreshtha"
+        id: 5536043853938688
+        github_account: "vatsalkulshreshtha"
+        github_updated: 1514048613333
+      - 
+        program_year: 2017
+        display_name: "Yuyuan Luo"
+        id: 5105422807597056
+        github_updated: 1514048612806
+      - 
+        program_year: 2017
+        display_name: "Ziyaad Banderker"
+        id: 5174010994229248
+        github_updated: 1514048612168
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/u/2/+InSysterhood-GlobalSysters"
+    programming_languages: 
+      - "android"
+      - "ios"
+      - "swift"
+      - "illustrator"
+      - "photoshop"
+    guide_to_working_url: ""
+    completed_task_instance_count: 306
+    id: 5735606506225664
+    winners: {}
+    mailing_list: "http://systers.anitab.org"
+    website_url: "https://anitab.org/systers/"
+    status: 2
+    program_year: 2017
+    description: "# About\nSysters is a community for all women involved in the technical aspects of computing. We have over 7,000 members from more than 65 countries around the world. **We welcome the participation of women technologists of all ages at any stage of their studies or careers.** Systers provides women a private space to seek advice from their peers, and discuss the challenges they share as women technologists. \n\n# Mobile Application\nSysters Open Source has *many* projects, but we are focusing on PowerUp ([Android](https://github.com/systers/powerup-android) & [iOS](https://github.com/systers/powerup-ios)) for Google Code-in this year. In 2016, we had many students express that our internal acronyms for all projects were very confusing. PowerUp is a choose-your-own-adventure game is aimed at adolescents to take charge of their reproductive health, work on self-esteem, and empower them to have choices.\n\n# Mentors\nAll Systers mentors are volunteers. We have mentors from many different time zones which means our organization does not currently have 24-hour availability on Slack or the GCI Website. \n* If a task takes longer than 24 hours for review, politely ping the task's mentor in #powerup or #systers channel (i.e. @prachi1210, please review my task here: [url](url)).\n* If a task takes longer than 36 hours for review, politely ping the admins in #powerup or #systers channel (i.e. @may, I haven't received a review or response to my task here: [url](url)).\n\n# **We welcome everyone! We need lots of help that involves no coding experience.**"
+    tags: 
+      - "gaming"
+      - "mobile"
+      - "women in tech"
+      - "female empowerment"
+      - "2d games"
+    twitter_url: "https://twitter.com/systers_org"
+    contact_email: "systers.keeper@gmail.com"
+    irc_channel: "http://systers.io/slack-systers-opensource/"
+    slug: "systers-community"
+    preferred_contact_method: null
+    guide_to_working: "Systers cares about the quality, thoroughness, and creativity of every task as well as community involvement. **Most tasks completed DOES NOT equal a winner.**\n\nLearn more about Android tests [through research and writing a blog](https://codein.withgoogle.com/tasks/5762089928884224/)!\n\n[We're always here.](http://www.systers.io/slack-systers-opensource/)"
+    name: "Systers Community"
+    precis: "Helping women find their potential in code."
+    image_url: "//lh3.googleusercontent.com/TGSO1vhSY7v2dmzJ1uq8_zEajDTn_ndNMtXJMxFCJFSH_BXCNOfwHF3Y8vNR1VIyafH2tOTdAQVMQHGaqYvDBqo"
+    blog_url: "http://systers-opensource.blogspot.com/"
+    github: "systers"
+    chat: 
+      url: "http://systers.io/slack-systers-opensource/"
+      platform: "SLACK"
+      image: "images/logos/slack.png"
+    wikipedia_urls: 
+      en: "https://en.wikipedia.org/wiki/Systers"
+    wikidata_url: "//www.wikidata.org/wiki/Q7663887"
+    stack_exchange: null
   - 
     primary_open_source_license: "MIT license (MIT)"
     leaders: 
@@ -1272,7 +1469,7 @@
       - "bash"
       - "html"
     guide_to_working_url: "https://dev.haiku-os.org/wiki/GoogleCodeInTaskDetails"
-    completed_task_instance_count: 291
+    completed_task_instance_count: 306
     id: 6281461650948096
     winners: {}
     mailing_list: "https://www.haiku-os.org/community/ml"
@@ -1402,103 +1599,7 @@
       zh_yue: "https://zh_yue.wikipedia.org/wiki/%E4%BF%B3%E5%8F%A5"
       zh: "https://zh.wikipedia.org/wiki/%E4%BF%B3%E5%8F%A5"
     wikidata_url: "//www.wikidata.org/wiki/Q37707"
-  - 
-    primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Abhijeet Manohar"
-        id: 6081213045407744
-        github_account: "abhijeetmanohar"
-        github_updated: 1514048613356
-      - 
-        program_year: 2017
-        display_name: "Aryaman Agrawal"
-        id: 4770355203801088
-        github_updated: 1514048612148
-      - 
-        program_year: 2017
-        display_name: "Erika Tan"
-        id: 4717477579718656
-        github_updated: 1514048612792
-      - 
-        program_year: 2017
-        display_name: "Fidella"
-        id: 5681230525759488
-        github_updated: 1514048612664
-      - 
-        program_year: 2017
-        display_name: "Mu'aaz Kasker"
-        id: 5851158759342080
-        github_updated: 1514048612168
-      - 
-        program_year: 2017
-        display_name: "Sameer"
-        id: 4555590061785088
-        github_updated: 1514048613253
-      - 
-        program_year: 2017
-        display_name: "Valentun"
-        id: 6017587265667072
-        github_updated: 1513962170392
-      - 
-        program_year: 2017
-        display_name: "Vatsal Kulshreshtha"
-        id: 5536043853938688
-        github_account: "vatsalkulshreshtha"
-        github_updated: 1514048613333
-      - 
-        program_year: 2017
-        display_name: "Yuyuan Luo"
-        id: 5105422807597056
-        github_updated: 1514048612806
-      - 
-        program_year: 2017
-        display_name: "Ziyaad Banderker"
-        id: 5174010994229248
-        github_updated: 1514048612168
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/u/2/+InSysterhood-GlobalSysters"
-    programming_languages: 
-      - "android"
-      - "ios"
-      - "swift"
-      - "illustrator"
-      - "photoshop"
-    guide_to_working_url: ""
-    completed_task_instance_count: 290
-    id: 5735606506225664
-    winners: {}
-    mailing_list: "http://systers.anitab.org"
-    website_url: "https://anitab.org/systers/"
-    status: 2
-    program_year: 2017
-    description: "# About\nSysters is a community for all women involved in the technical aspects of computing. We have over 7,000 members from more than 65 countries around the world. **We welcome the participation of women technologists of all ages at any stage of their studies or careers.** Systers provides women a private space to seek advice from their peers, and discuss the challenges they share as women technologists. \n\n# Mobile Application\nSysters Open Source has *many* projects, but we are focusing on PowerUp ([Android](https://github.com/systers/powerup-android) & [iOS](https://github.com/systers/powerup-ios)) for Google Code-in this year. In 2016, we had many students express that our internal acronyms for all projects were very confusing. PowerUp is a choose-your-own-adventure game is aimed at adolescents to take charge of their reproductive health, work on self-esteem, and empower them to have choices.\n\n# Mentors\nAll Systers mentors are volunteers. We have mentors from many different time zones which means our organization does not currently have 24-hour availability on Slack or the GCI Website. \n* If a task takes longer than 24 hours for review, politely ping the task's mentor in #powerup or #systers channel (i.e. @prachi1210, please review my task here: [url](url)).\n* If a task takes longer than 36 hours for review, politely ping the admins in #powerup or #systers channel (i.e. @may, I haven't received a review or response to my task here: [url](url)).\n\n# **We welcome everyone! We need lots of help that involves no coding experience.**"
-    tags: 
-      - "gaming"
-      - "mobile"
-      - "women in tech"
-      - "female empowerment"
-      - "2d games"
-    twitter_url: "https://twitter.com/systers_org"
-    contact_email: "systers.keeper@gmail.com"
-    irc_channel: "http://systers.io/slack-systers-opensource/"
-    slug: "systers-community"
-    preferred_contact_method: null
-    guide_to_working: "Systers cares about the quality, thoroughness, and creativity of every task as well as community involvement. **Most tasks completed DOES NOT equal a winner.**\n\nLearn more about Android tests [through research and writing a blog](https://codein.withgoogle.com/tasks/5762089928884224/)!\n\n[We're always here.](http://www.systers.io/slack-systers-opensource/)"
-    name: "Systers Community"
-    precis: "Helping women find their potential in code."
-    image_url: "//lh3.googleusercontent.com/TGSO1vhSY7v2dmzJ1uq8_zEajDTn_ndNMtXJMxFCJFSH_BXCNOfwHF3Y8vNR1VIyafH2tOTdAQVMQHGaqYvDBqo"
-    blog_url: "http://systers-opensource.blogspot.com/"
-    github: "systers"
-    chat: 
-      url: "http://systers.io/slack-systers-opensource/"
-      platform: "SLACK"
-      image: "images/logos/slack.png"
-    wikipedia_urls: 
-      en: "https://en.wikipedia.org/wiki/Systers"
-    wikidata_url: "//www.wikidata.org/wiki/Q7663887"
+    stack_exchange: null
   - 
     primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
     leaders: 
@@ -1518,6 +1619,11 @@
         id: 4772500808400896
         github_account: "HemangRajvanshy"
         github_updated: 1514048613313
+      - 
+        program_year: 2017
+        display_name: "Hori75"
+        id: 4700102289522688
+        github_updated: 1514130476159
       - 
         program_year: 2017
         display_name: "John Chew"
@@ -1545,11 +1651,6 @@
         github_updated: 1514048612147
       - 
         program_year: 2017
-        display_name: "tcehcrhistie"
-        id: 5302792770027520
-        github_updated: 1514048611614
-      - 
-        program_year: 2017
         display_name: "TheFaR8"
         id: 5878255708012544
         github_account: "TheFaR8"
@@ -1564,7 +1665,7 @@
       - "linux"
       - "windows"
     guide_to_working_url: ""
-    completed_task_instance_count: 283
+    completed_task_instance_count: 294
     id: 5731053304020992
     winners: {}
     mailing_list: null
@@ -1595,179 +1696,7 @@
       image: "images/chat.png"
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q45341716"
-  - 
-    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Aarnav Bos"
-        id: 5288208805920768
-        github_updated: 1514048612170
-      - 
-        program_year: 2017
-        display_name: "Aditya"
-        id: 6573208931139584
-        github_updated: 1514048613283
-      - 
-        program_year: 2017
-        display_name: "Alan Zhu"
-        id: 6075101978034176
-        github_updated: 1514048612434
-      - 
-        program_year: 2017
-        display_name: "Hizkia Felix"
-        id: 5631601239130112
-        github_updated: 1514048612147
-      - 
-        program_year: 2017
-        display_name: "ItsMyFirstGame"
-        id: 4674876470198272
-        github_updated: 1514048612096
-      - 
-        program_year: 2017
-        display_name: "phyxkal"
-        id: 5246606410514432
-        github_account: "phyxkal"
-        github_updated: 1514048613292
-      - 
-        program_year: 2017
-        display_name: "Utkarsh Verma"
-        id: 4852468695433216
-        github_updated: 1514048612364
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: null
-    programming_languages: 
-      - "python"
-      - "django"
-      - "javascript"
-      - "html"
-      - "css"
-    guide_to_working_url: "http://openwisp.io/docs/developer/contributing.html"
-    completed_task_instance_count: 278
-    id: 5693741010518016
-    winners: {}
-    mailing_list: "https://groups.google.com/d/forum/openwisp/join"
-    website_url: "http://openwisp.org"
-    status: 2
-    program_year: 2017
-    description: "In the summer of 2008 the [Metropolitan City of Rome](http://www.cittametropolitanaroma.gov.it/) decided to start a **free of charge and public Wi-Fi network** to be spread over its 5352 SQ KM territory including Rome and 120 other cities for a total of about 4.5 million inhabitants. The main objective of the project, called **ProvinciaWiFi** (later renamed [WiFi Metropolitano](http://www.cittametropolitanaroma.gov.it/index.php/wifimetropolitano-english-version)), was to take a decisive step to reduce the existing **digital divide** by fostering and facilitating the use of ICT by citizens.\nFrom the outset it was decided to commit the project to a completely open philosophy. For this reason a clear choice towards open software and operating systems and the availability of every modification, update and improvement to the community was made. The same approach was adopted for the knowledge and the experience acquired within the project. In order to pursue this goals the Province of Rome called the university consortium *CASPUR* (later merged in the [CINECA](https://www.cineca.it/en) consortium) to develop the technical solution. In this context, a research project conducted by the *CINECA* consortium found its perfect application. This project proposed an innovative methodology for the distribution of networks (more precisely Virtual LANs used for Wi-Fi connectivity) between geographically distant sites. \n\n The software tools, including the OpenWISP 2 [wifi controller](http://openwisp.org/whatis.html#wifi-controller) and the various [NetJSON](http://netjson.org/) implementations used are released to the public free of charge under open-source licenses, hoping this will allow a broader audience to benefit from our work."
-    tags: 
-      - "networking"
-      - "web"
-      - "wifi"
-      - "mesh"
-      - "iot"
-    twitter_url: "https://twitter.com/openwisp"
-    contact_email: null
-    irc_channel: "http://openwisp.org/support.html"
-    slug: "openwisp"
-    preferred_contact_method: null
-    guide_to_working: "Must read pages:\n\n- [How to run a successful GCI and become an OpenWISP star](http://openwisp.io/docs/developer/google-code-in.html)\n- [Guidelines for contributing to OpenWISP](http://openwisp.io/docs/developer/contributing.html)\n\nDon't forget to [join the our live chat and mailing list](http://openwisp.org/support.html) to ask questions."
-    name: "OpenWISP"
-    precis: "OpenWISP is an open source solution designed to build and manage low cost networks: from public wifi, to university wifi, mesh networks and IoT and much more."
-    image_url: "//lh3.googleusercontent.com/Df4vqOzYseDWiInoUvC-4jjXTjJVUBAGib9FqQdyHJGb00mHFWOqeZt8NmiM-hyouN2LCz14Q7XDtn3U9ylClBI"
-    blog_url: null
-    github: "openwisp"
-    chat: 
-      url: "http://openwisp.org/support.html"
-      platform: "OTHER"
-      image: "images/chat.png"
-    wikipedia_urls: null
-    wikidata_url: "//www.wikidata.org/wiki/Q45341562"
-  - 
-    primary_open_source_license: "Affero GNU Public License"
-    leaders: 
-      - 
-        program_year: 2017
-        display_name: "Alexander Voronkov"
-        id: 5057457392975872
-        github_updated: 1514048611625
-      - 
-        program_year: 2017
-        display_name: "Andrew Dassonville"
-        id: 5302037795307520
-        github_account: "andrewda"
-        github_updated: 1514048611619
-      - 
-        program_year: 2017
-        display_name: "biscuitsnake"
-        id: 6502237683580928
-        github_account: "biscuitsnake"
-        github_updated: 1513875819241
-      - 
-        program_year: 2017
-        display_name: "Daniel O'Brien"
-        id: 4973831292715008
-        github_updated: 1514048611671
-      - 
-        program_year: 2017
-        display_name: "Joshua Chung"
-        id: 6479102439587840
-        github_updated: 1514048611611
-      - 
-        program_year: 2017
-        display_name: "Marcos Gómez"
-        id: 5557452655296512
-        github_updated: 1514048611617
-      - 
-        program_year: 2017
-        display_name: "Nalin Bhardwaj"
-        id: 4552227639263232
-        github_account: "nalinbhardwaj"
-        github_updated: 1514048611930
-      - 
-        program_year: 2017
-        display_name: "Shukai Ni"
-        id: 5178132149567488
-        github_updated: 1514048612147
-      - 
-        program_year: 2017
-        display_name: "Tio Irawan"
-        id: 6214590973083648
-        github_updated: 1514048612148
-    accepted_org_tos: true
-    dev_mailing_list: null
-    gplus_url: "https://plus.google.com/communities/110223386465813667851"
-    programming_languages: 
-      - "python"
-      - "python 3"
-      - "abstract syntax tree"
-      - "errbot"
-      - "nodejs"
-    guide_to_working_url: "https://github.com/coala/coala/wiki/Google-Code-In"
-    completed_task_instance_count: 254
-    id: 4884530416582656
-    winners: {}
-    mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
-    website_url: "https://coala.io/"
-    status: 2
-    program_year: 2017
-    description: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below."
-    tags: 
-      - "linting"
-      - "code quality"
-      - "automation"
-      - "devops"
-      - "chatops"
-    twitter_url: "http://twitter.com/coala_io"
-    contact_email: null
-    irc_channel: "https://coala.zulipchat.com/"
-    slug: "coala"
-    preferred_contact_method: null
-    guide_to_working: "Join [our chat](https://coala.zulipchat.com/) to ask mentors questions .\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\nFollow the [Newcomer Guide](http://coala.io/newcomer)."
-    name: "coala"
-    precis: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used.Plugins may by native Python or wrap external linters."
-    image_url: "//lh3.googleusercontent.com/4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG"
-    blog_url: "https://blog.coala.io/"
-    github: "coala"
-    chat: 
-      url: "https://coala.zulipchat.com/"
-      platform: "ZULIP"
-      image: "images/logos/zulip.png"
-    wikipedia_urls: 
-      en: "https://en.wikipedia.org/wiki/Coala_%28software%29"
-    wikidata_url: "//www.wikidata.org/wiki/Q25215462"
+    stack_exchange: null
   - 
     primary_open_source_license: "GNU Affero General Public License v3 (AGPL-3.0)"
     leaders: 
@@ -1827,7 +1756,7 @@
     programming_languages: 
       - "visual programming language (catrobat)"
     guide_to_working_url: "http://catrob.at/cgcicti"
-    completed_task_instance_count: 253
+    completed_task_instance_count: 266
     id: 5135243763777536
     winners: {}
     mailing_list: "http://catrob.at/PocketCodeUserForum"
@@ -1856,6 +1785,103 @@
       url: null
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q45341807"
+    stack_exchange: null
+  - 
+    primary_open_source_license: "Affero GNU Public License"
+    leaders: 
+      - 
+        program_year: 2017
+        display_name: "Alexander Voronkov"
+        id: 5057457392975872
+        github_updated: 1514048611625
+      - 
+        program_year: 2017
+        display_name: "Andrew Dassonville"
+        id: 5302037795307520
+        github_account: "andrewda"
+        github_updated: 1514048611619
+      - 
+        program_year: 2017
+        display_name: "biscuitsnake"
+        id: 6502237683580928
+        github_account: "biscuitsnake"
+        github_updated: 1514130476065
+      - 
+        program_year: 2017
+        display_name: "Daniel O'Brien"
+        id: 4973831292715008
+        github_updated: 1514048611671
+      - 
+        program_year: 2017
+        display_name: "Joshua Chung"
+        id: 6479102439587840
+        github_updated: 1514048611611
+      - 
+        program_year: 2017
+        display_name: "Marcos Gómez"
+        id: 5557452655296512
+        github_updated: 1514048611617
+      - 
+        program_year: 2017
+        display_name: "Nalin Bhardwaj"
+        id: 4552227639263232
+        github_account: "nalinbhardwaj"
+        github_updated: 1514048611930
+      - 
+        program_year: 2017
+        display_name: "Shukai Ni"
+        id: 5178132149567488
+        github_updated: 1514048612147
+      - 
+        program_year: 2017
+        display_name: "Tio Irawan"
+        id: 6214590973083648
+        github_updated: 1514048612148
+    accepted_org_tos: true
+    dev_mailing_list: null
+    gplus_url: "https://plus.google.com/communities/110223386465813667851"
+    programming_languages: 
+      - "python"
+      - "python 3"
+      - "abstract syntax tree"
+      - "errbot"
+      - "nodejs"
+    guide_to_working_url: "https://github.com/coala/coala/wiki/Google-Code-In"
+    completed_task_instance_count: 265
+    id: 4884530416582656
+    winners: {}
+    mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
+    website_url: "https://coala.io/"
+    status: 2
+    program_year: 2017
+    description: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below."
+    tags: 
+      - "linting"
+      - "code quality"
+      - "automation"
+      - "devops"
+      - "chatops"
+    twitter_url: "http://twitter.com/coala_io"
+    contact_email: null
+    irc_channel: "https://coala.zulipchat.com/"
+    slug: "coala"
+    preferred_contact_method: null
+    guide_to_working: "Join [our chat](https://coala.zulipchat.com/) to ask mentors questions .\nSee https://github.com/coala/coala/wiki/Google-Code-In for more information.\nFollow the [Newcomer Guide](http://coala.io/newcomer)."
+    name: "coala"
+    precis: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used.Plugins may by native Python or wrap external linters."
+    image_url: "//lh3.googleusercontent.com/4Njyd8GXM0ZofcxJnHS0ICMkRyyud5kl7IUMhlGPvZfN_8McUa4BNM7l70Tu-kwXdUBlYDYD6FeW1u2xgrI69OkG"
+    blog_url: "https://blog.coala.io/"
+    github: "coala"
+    chat: 
+      url: "https://coala.zulipchat.com/"
+      platform: "ZULIP"
+      image: "images/logos/zulip.png"
+    wikipedia_urls: 
+      en: "https://en.wikipedia.org/wiki/Coala_%28software%29"
+    wikidata_url: "//www.wikidata.org/wiki/Q25215462"
+    stack_exchange: 
+      url: "https://stackoverflow.com/tags/coala"
+      image: "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a"
   - 
     primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
     leaders: 
@@ -1915,7 +1941,7 @@
       - "html"
       - "mysql"
     guide_to_working_url: "https://mifosforge.jira.com/wiki/spaces/RES/pages/198017025/Mifos+Google+Code-In+2017+Wiki"
-    completed_task_instance_count: 228
+    completed_task_instance_count: 236
     id: 6239808655458304
     winners: {}
     mailing_list: "http://mifos.org/resources/community/communications/#mailing-lists"
@@ -1950,6 +1976,7 @@
       es: "https://es.wikipedia.org/wiki/Mifos"
       pl: "https://pl.wikipedia.org/wiki/Mifos"
     wikidata_url: "//www.wikidata.org/wiki/Q3347450"
+    stack_exchange: null
   - 
     primary_open_source_license: "Mozilla Public License 2.0 (MPL-2.0)"
     leaders: 
@@ -2015,7 +2042,7 @@
       - "html5"
       - "css"
     guide_to_working_url: ""
-    completed_task_instance_count: 223
+    completed_task_instance_count: 229
     id: 5753409548320768
     winners: {}
     mailing_list: "http://om.rs/gcitalk"
@@ -2047,6 +2074,7 @@
     wikipedia_urls: 
       en: "https://en.wikipedia.org/wiki/OpenMRS"
     wikidata_url: "//www.wikidata.org/wiki/Q7095826"
+    stack_exchange: null
   - 
     primary_open_source_license: "Mozilla Public License 2.0 (MPL-2.0)"
     leaders: 
@@ -2084,7 +2112,7 @@
       - "php"
       - "javascript"
     guide_to_working_url: "https://gitlab.com/librehealth/gci/wikis/"
-    completed_task_instance_count: 214
+    completed_task_instance_count: 228
     id: 5165875202097152
     winners: {}
     mailing_list: "https://forums.librehealth.io/gci"
@@ -2113,6 +2141,7 @@
       image: "images/logos/rocket.png"
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q45341906"
+    stack_exchange: null
   - 
     primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
     leaders: 
@@ -2149,9 +2178,9 @@
         github_updated: 1514048612577
       - 
         program_year: 2017
-        display_name: "Soundwave"
-        id: 4896844943458304
-        github_updated: 1514048612580
+        display_name: "Sagar Gupta"
+        id: 5593677617430528
+        github_updated: 1514130476006
       - 
         program_year: 2017
         display_name: "Steven Rachman"
@@ -2178,7 +2207,7 @@
       - "gradle"
       - "blender"
     guide_to_working_url: "https://github.com/MovingBlocks/Terasology/wiki/GCI"
-    completed_task_instance_count: 210
+    completed_task_instance_count: 216
     id: 5693523175145472
     winners: {}
     mailing_list: null
@@ -2210,6 +2239,7 @@
     wikipedia_urls: 
       commons: "https://commons.wikipedia.org/wiki/Category%3AMovingBlocks"
     wikidata_url: "//www.wikidata.org/wiki/Q40881750"
+    stack_exchange: null
   - 
     primary_open_source_license: "GNU Library or \"Lesser\" General Public License version 2.1 (LGPL-2.1)"
     leaders: 
@@ -2234,7 +2264,7 @@
       - "css"
       - "android"
     guide_to_working_url: "http://dev.xwiki.org/xwiki/bin/view/GoogleCodeIn"
-    completed_task_instance_count: 201
+    completed_task_instance_count: 205
     id: 6299430183501824
     winners: {}
     mailing_list: "http://dev.xwiki.org/xwiki/bin/view/Community/Discuss"
@@ -2274,6 +2304,9 @@
       pt: "https://pt.wikipedia.org/wiki/XWiki"
       zh: "https://zh.wikipedia.org/wiki/XWiki"
     wikidata_url: "//www.wikidata.org/wiki/Q526699"
+    stack_exchange: 
+      url: "https://stackoverflow.com/tags/xwiki"
+      image: "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a"
   - 
     primary_open_source_license: "MIT license (MIT)"
     leaders: 
@@ -2294,6 +2327,11 @@
         github_updated: 1514048612665
       - 
         program_year: 2017
+        display_name: "Shailesh Kadam"
+        id: 6663565572308992
+        github_updated: 1514130476112
+      - 
+        program_year: 2017
         display_name: "Sunveer Singh"
         id: 5325877816590336
         github_updated: 1514048613337
@@ -2312,7 +2350,7 @@
       - "c++"
       - "javascript"
     guide_to_working_url: "https://wiki.osgeo.org/wiki/Google_Code_In_2017_Recommendations_for_Students"
-    completed_task_instance_count: 187
+    completed_task_instance_count: 198
     id: 5139786496999424
     winners: {}
     mailing_list: "http://www.osgeo.org/content/faq/mailing_lists.html"
@@ -2359,6 +2397,9 @@
       sr: "https://sr.wikipedia.org/wiki/%D0%9E%D0%A1%D0%93%D0%B5%D0%BE"
       zh: "https://zh.wikipedia.org/wiki/%E5%BC%80%E6%BA%90%E5%9C%B0%E7%90%86%E7%A9%BA%E9%97%B4%E5%9F%BA%E9%87%91%E4%BC%9A"
     wikidata_url: "//www.wikidata.org/wiki/Q1197305"
+    stack_exchange: 
+      url: "https://gis.stackexchange.com/tags/osgeo"
+      image: "https://cdn.sstatic.net/Sites/gis/img/apple-touch-icon.png?v=5bbd8af2ce1b"
   - 
     primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
     leaders: 
@@ -2407,7 +2448,7 @@
       - "css"
       - "java"
     guide_to_working_url: "http://www.liquidgalaxylab.com/2017/10/GCI2017-LiquidGalaxyorg.html"
-    completed_task_instance_count: 153
+    completed_task_instance_count: 165
     id: 5067404587565056
     winners: {}
     mailing_list: "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html"
@@ -2437,6 +2478,7 @@
     wikipedia_urls: 
       en: "https://en.wikipedia.org/wiki/Liquid_Galaxy"
     wikidata_url: "//www.wikidata.org/wiki/Q21463290"
+    stack_exchange: null
   - 
     primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
     leaders: 
@@ -2485,7 +2527,7 @@
       - "css"
       - "symfony"
     guide_to_working_url: "https://www.drupal.org/node/984014"
-    completed_task_instance_count: 136
+    completed_task_instance_count: 145
     id: 5636094664114176
     winners: {}
     mailing_list: "https://drupal.org/mailing-lists"
@@ -2578,6 +2620,9 @@
       zh_yue: "https://zh_yue.wikipedia.org/wiki/Drupal"
       zh: "https://zh.wikipedia.org/wiki/Drupal"
     wikidata_url: "//www.wikidata.org/wiki/Q170855"
+    stack_exchange: 
+      url: "https://stackoverflow.com/tags/drupal"
+      image: "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a"
   - 
     primary_open_source_license: "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
     leaders: 
@@ -2591,7 +2636,7 @@
         display_name: "Gautam Jajoo"
         id: 6631960325652480
         github_account: "gautamjajoo"
-        github_updated: 1513875818998
+        github_updated: 1514130476129
       - 
         program_year: 2017
         display_name: "Naman Sood"
@@ -2622,7 +2667,7 @@
       - "css"
       - "jquery"
     guide_to_working_url: "https://gitter.im/Cloud-CV/"
-    completed_task_instance_count: 88
+    completed_task_instance_count: 90
     id: 4854733644759040
     winners: {}
     mailing_list: "https://groups.google.com/forum/#!forum/cloudcv"
@@ -2653,6 +2698,7 @@
       image: "images/logos/gitter.png"
     wikipedia_urls: null
     wikidata_url: "//www.wikidata.org/wiki/Q45341943"
+    stack_exchange: null
   - 
     primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
     leaders: 
@@ -2665,7 +2711,7 @@
         program_year: 2017
         display_name: "Grzegorz Stark"
         id: 4640744230879232
-        github_updated: 1513875818883
+        github_updated: 1514130476141
       - 
         program_year: 2017
         display_name: "JJJPPP"
@@ -2675,7 +2721,7 @@
         program_year: 2017
         display_name: "Ryan A. Chi"
         id: 6673079872782336
-        github_updated: 1513875818880
+        github_updated: 1514130476173
     accepted_org_tos: true
     dev_mailing_list: null
     gplus_url: null
@@ -2686,7 +2732,7 @@
       - "html"
       - "bash"
     guide_to_working_url: "http://wiki.apertium.org/wiki/Task_ideas_for_Google_Code-in/Getting_started"
-    completed_task_instance_count: 70
+    completed_task_instance_count: 72
     id: 6541403171586048
     winners: {}
     mailing_list: "http://wiki.apertium.org/wiki/Contact"
@@ -2768,3 +2814,4 @@
       ur: "https://ur.wikipedia.org/wiki/%D8%A7%D9%BE%D8%B1%D9%B9%DB%8C%D9%85_%28%D8%A2%D9%84%D8%A7%D8%AA%DB%8C_%D8%AA%D8%B1%D8%AC%D9%85%DB%81_%D9%85%D8%B5%D9%86%D8%B9_%D9%84%D8%B7%DB%8C%D9%81%29"
       zh: "https://zh.wikipedia.org/wiki/Apertium"
     wikidata_url: "//www.wikidata.org/wiki/Q184835"
+    stack_exchange: null
