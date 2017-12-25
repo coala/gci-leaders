@@ -57,6 +57,15 @@
                 />
               </a>
             {{/github}}
+            {{#gitlab}}
+              <a href="https://gitlab.com/{{gitlab}}">
+                <img
+                  src="images/logos/gitlab.png"
+                  class="gitlab"
+                  alt="Find them on GitLab"
+                />
+              </a>
+            {{/gitlab}}
             {{#mailing_list}}
               <a href="{{mailing_list}}">
                 <img src="images/mail.png" class="chat" alt="Join their mailing list" />
@@ -194,7 +203,8 @@
       </a>
     </div>
     <footer>
-      <small data-i18n="footer-text">Google Code-in and the Google Code-in logo are trademarks of Google Inc.</small>
+      <small data-i18n="gci-copyright">Google Code-in and the Google Code-in logo are trademarks of Google Inc.</small><br />
+      <small><span data-i18n="gitlab-copyright-1">The GitLab logo is licensed under</span> <a href="https://gitlab.com/gitlab-com/gitlab-artwork/blob/master/LICENSE">CC BY-NC-SA 4.0</a> <span data-i18n="gitlab-copyright-2">by GitLab Inc.</span></small>
     </footer>
     <script src="{{assets.main-js}}"></script>
   </body>

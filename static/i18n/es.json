@@ -3,7 +3,7 @@
   "last-updated": "Última actualización",
   "order-info": "Los participantes líderes de cada organización (y sus respectivas cuentas de GitHub) están listados de forma aleatoria.",
   "tasks-completed": "Tareas completadas",
-  "footer-text": "Google Code-in y su logotipo son marcas registradas de Google Inc.",
+  "gci-copyright": "Google Code-in y su logotipo son marcas registradas de Google Inc.",
   "orgs-no-listed": "Organizacion(es) sin listado de líderes",
   "passed": "$1% completado, aproximadamente $2 hasta que termine el periodo de tareas",
   "seconds-ago": "hace $1 {{PLURAL:$1|segundo|segundos}}",

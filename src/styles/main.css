@@ -64,6 +64,11 @@ a {
   vertical-align: top;
 }
 
+.gitlab {
+  height: 1.5em;
+  vertical-align: top;
+}
+
 .chat {
   height: 1.5em;
   vertical-align: top;
