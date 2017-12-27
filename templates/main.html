@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="{{assets.main-css}}">
   </head>
   <body>
+    {{#DEPLOY_PREVIEW}}
+      <div class="preview">
+        This is a Deploy Preview of <a href="{{DEPLOY_PREVIEW_PR_URL}}">PR #{{DEPLOY_PREVIEW_PR_NUMBER}}</a>. See the production website <a href="{{URL}}">here</a>.
+      </div>
+    {{/DEPLOY_PREVIEW}}
     <div>
       <a href="http://codein.withgoogle.com">
         <img class="gci-logo" src="images/logos/gci.png" alt="Code-In logo">

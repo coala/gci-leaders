@@ -31,6 +31,7 @@
     "json2yaml": "^1.1.0",
     "lodash.mapkeys": "^4.6.0",
     "mustache": "^2.3.0",
+    "netlify-env": "^0.0.4",
     "node-fetch": "^1.7.3",
     "rss": "^1.2.2",
     "sort-keys": "^2.0.0",
