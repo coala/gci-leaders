@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Code In pre-2017 Finalists and winners</title>
+  </head>
+  <body>
+    <h1>Google Code In pre-2017 Finalists and winners</h1>
+    {{#pre2017}}
+      <div>
+        <h2>{{year}}</h2>
+        {{#statistics}}
+          <span>number of organizations: {{number_of_organizations}}</span><br>
+          <span>number of participants: {{number_of_participants}}</span><br>
+          <span>total tasks completed: {{total_tasks_completed}}</span><br>
+        {{/statistics}}
+        {{#orgs}}
+          {{#name}}
+            <h3>{{name}}</h3>
+          {{/name}}
+          {{#winners.length}}
+          <h4>Winners</h4>
+            <ul>
+              {{#winners}}
+                <li>{{.}}</li>
+              {{/winners}}
+            </ul>
+          {{/winners.length}}
+          {{#finalists.length}}
+            <h4>Finalists</h4>
+            <ul>
+              {{#finalists}}
+                <li>{{.}}</li>
+             {{/finalists}}
+            </ul>
+          {{/finalists.length}}
+          {{#organizations.length}}
+            <h4>Organizations</h4>
+            <ul>
+              {{#organizations}}
+                <li>{{.}}</li>
+              {{/organizations}}
+            </ul>
+          {{/organizations.length}}
+        {{/orgs}}
+      </div>
+    {{/pre2017}}
+  </body>
+</html>

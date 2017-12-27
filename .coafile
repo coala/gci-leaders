@@ -15,6 +15,7 @@ bears = LineLengthBear
 [all.links]
 bears = InvalidLinkBear
 link_ignore_regex = (github\.com|\{|\$)
+link_ignore_list = https://www.google-melange.com/**
 
 [js]
 files = lib/**/*.js, src/js/**/*.js
