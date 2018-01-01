@@ -11,6 +11,288 @@
       <hr />
     </div>
     <div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;adding-a-last-modified-at-column-in-open-event-server&#x2F;><h1>Adding a Last Modified At column in Open Event Server</h1></a>
+      <h5>2018-01-01T14:25:35.000Z</h5>
+      <i class="author">CosmicCoder96</i>
+      <div class="content">
+        <img width="660" height="431" src="https://blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-7.53.41-PM-768x501.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" srcset="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-7.53.41-PM.png?resize=768%2C501&amp;ssl=1 768w, https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-7.53.41-PM.png?resize=300%2C196&amp;ssl=1 300w, https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-7.53.41-PM.png?resize=750%2C489&amp;ssl=1 750w, https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-7.53.41-PM.png?resize=1024%2C668&amp;ssl=1 1024w, https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-7.53.41-PM.png?w=1320&amp;ssl=1 1320w, https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-7.53.41-PM.png?w=1980&amp;ssl=1 1980w" sizes="(max-width: 660px) 100vw, 660px" data-attachment-id="13246" data-permalink="https://blog.fossasia.org/adding-a-last-modified-at-column-in-open-event-server/screen-shot-2018-01-01-at-7-53-41-pm/" data-orig-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-7.53.41-PM.png?fit=2770%2C1806&amp;ssl=1" data-orig-size="2770,1806" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screen Shot 2018-01-01 at 7.53.41 PM" data-image-description="" data-medium-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-7.53.41-PM.png?fit=750%2C489&amp;ssl=1" data-large-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-7.53.41-PM.png?fit=660%2C431&amp;ssl=1" /><p><span style="font-weight: 400">This blog article will illustrate how, with the help of SQLAlchemy, a </span><i><span style="font-weight: 400">last modified at</span></i><span style="font-weight: 400"> column, with complete functionality can be added to the </span><a href="https://github.com/fossasia/open-event-server"><span style="font-weight: 400">Open Event Server</span></a><span style="font-weight: 400"> database. To illustrate the process, the blog article will discuss adding the column to the </span><i><span style="font-weight: 400">sessions</span></i><span style="font-weight: 400"> api. Since </span><i><span style="font-weight: 400">last modified at</span></i><span style="font-weight: 400"> is a time field, and will need to be updated each time user successfully updates the session, the logic to implement will be a slightly more complex than a mere addition of a column to the table.</span></p>
+<p><span style="font-weight: 400">The first obvious step will comprise of adding the column to the database table. To achieve the same, the column will have to be added to the model for the sessions table, as well as the schema. </span></p>
+<p><span style="font-weight: 400">In </span><b>app/api/schema/sessions.py:</b><br />
+<!-- HTML generated using hilite.me --></p>
+<div style="background: #272822;overflow: auto;width: auto">
+<pre style="margin: 0;line-height: 125%"><span style="color: #f92672">...</span>
+<span style="color: #66d9ef">class</span> <span style="color: #a6e22e">SessionSchema</span><span style="color: #f8f8f2">(Schema):</span>
+<span style="color: #960050;background-color: #272822">   </span><span style="color: #e6db74">"""</span>
+<span style="color: #e6db74">   Api schema for Session Model</span>
+<span style="color: #e6db74">   """</span>
+<span style="color: #960050;background-color: #272822">   </span><span style="color: #f92672">...</span>
+<span style="color: #960050;background-color: #272822">   </span><span style="color: #f8f8f2">last_modified_at</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">fields</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">DateTime(dump_only</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">True)</span>
+<span style="color: #960050;background-color: #272822">   </span><span style="color: #f92672">...</span>
+</pre>
+</div>
+<p><span style="font-weight: 400">And in </span><b>app/models/sessions.py:</b><br />
+<!-- HTML generated using hilite.me --></p>
+<div style="background: #272822;overflow: auto;width: auto">
+<pre style="margin: 0;line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">pytz</span>
+<span style="color: #f92672">...</span>
+
+<span style="color: #66d9ef">class</span> <span style="color: #a6e22e">Session</span><span style="color: #f8f8f2">(db</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Model):</span>
+<span style="color: #960050;background-color: #272822">   </span><span style="color: #e6db74">"""Session model class"""</span>
+<span style="color: #960050;background-color: #272822">   </span><span style="color: #f8f8f2">__tablename__</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">'sessions'</span>
+<span style="color: #960050;background-color: #272822">   </span><span style="color: #f8f8f2">__versioned__</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
+<span style="color: #960050;background-color: #272822">       </span><span style="color: #e6db74">'exclude'</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">[]</span>
+<span style="color: #960050;background-color: #272822">   </span><span style="color: #f8f8f2">}</span>
+<span style="color: #960050;background-color: #272822">   </span><span style="color: #f92672">...</span>
+<span style="color: #960050;background-color: #272822">   </span><span style="color: #f8f8f2">last_modified_at</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">db</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Column(db</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">DateTime(timezone</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">True),</span> <span style="color: #960050;background-color: #272822">  </span>
+<span style="color: #960050;background-color: #272822">   </span><span style="color: #f8f8f2">default</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">datetime</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">datetime</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">utcnow)</span>
+<span style="color: #960050;background-color: #272822">   </span><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">init</span><span style="color: #f8f8f2">(self,</span> <span style="color: #f92672">...</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">last_modified_at</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">None))</span>
+<span style="color: #960050;background-color: #272822">     </span><span style="color: #75715e">#inside init method</span>
+<span style="color: #960050;background-color: #272822">     </span><span style="color: #f92672">...</span>
+<span style="color: #960050;background-color: #272822">     </span><span style="color: #f8f8f2">self</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">last_modified_at</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">datetime</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">datetime</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">now(pytz</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">utc)</span>
+<span style="color: #960050;background-color: #272822">     </span><span style="color: #f92672">...</span>
+</pre>
+</div>
+<p><b>NOTE: </b><span style="font-weight: 400">The users for the open event organiser server will be operating in multiple time zones and hence it is important for all the times to be in sync, hence the open event database maintains all the time in UTC timezone (python’s </span><i><span style="font-weight: 400">pytz</span></i><span style="font-weight: 400"> module takes care of converting user’s local time into UTC time while storing, thus unifying the timezones.) From this, it directly follows that the time needs to be timezone aware hence </span><i><span style="font-weight: 400">timezone=true</span></i><span style="font-weight: 400"> is passed, while defining the column.</span></p>
+<p><span style="font-weight: 400">Next, while initialising an object of this class, the last modified time is the time of creation, and hence </span></p>
+<p><i><span style="font-weight: 400">datetime.now(pytz.utc) </span></i><span style="font-weight: 400">is set as the initial value which basically stores the current time in UTC timezone format.</span></p>
+<p><span style="font-weight: 400">Finally, the logic for updating the </span><i><span style="font-weight: 400">last modified at </span></i><span style="font-weight: 400">column every time any other value changes for a session record needs to be implemented. </span><i><span style="font-weight: 400">SQLAlchemy </span></i><span style="font-weight: 400">provides an inbuilt support for detecting update and insert events which have been used to achieve the goal. To quote the </span><a href="http://docs.sqlalchemy.org/en/latest/core/event.html"><span style="font-weight: 400">official SQLAlchemy Docs</span></a><span style="font-weight: 400">,  “</span><i><span style="font-weight: 400">SQLAlchemy includes an event API which publishes a wide variety of hooks into the internals of both SQLAlchemy Core and ORM.</span></i><span style="font-weight: 400">”</span><br />
+<!-- HTML generated using hilite.me --></p>
+<div style="background: #272822;overflow: auto;width: auto">
+<pre style="margin: 0;line-height: 125%"><span style="color: #a6e22e">@event.listens_for</span><span style="color: #f8f8f2">(Session,</span> <span style="color: #e6db74">'after_update'</span><span style="color: #f8f8f2">)</span>
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">receive_after_update</span><span style="color: #f8f8f2">(mapper,</span> <span style="color: #f8f8f2">connection,</span> <span style="color: #f8f8f2">target):</span>
+<span style="color: #960050;background-color: #272822">  </span><span style="color: #f8f8f2">target</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">last_modified_at</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">datetime</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">datetime</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">now(pytz</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">utc)</span>
+</pre>
+</div>
+<p><span style="font-weight: 400">The </span><i><span style="font-weight: 400">listens_for() </span></i><span style="font-weight: 400">decorator is used to register the event according to the arguments passed to it. In our case, it will register any event on the Session API (sessions table), whenever it updates.</span></p>
+<p><span style="font-weight: 400">The corresponding function defined below the decorator, </span><i><span style="font-weight: 400">receive_after_update(mapper, connection, target) </span></i><span style="font-weight: 400">is then called, and session model (table) is the the registered target with the event. It sets the value of the </span><i><span style="font-weight: 400">last_modified_at </span></i><span style="font-weight: 400">to the current time in the UTC timezone as expected. </span></p>
+<p><span style="font-weight: 400">Lastly, since the changes have been made to the database schema, the migration file needs to be generated, and the database will be upgraded to alter the structure.</span></p>
+<p><span style="font-weight: 400">The sequence of steps to be followed on the CLI will be </span></p>
+<p><!-- HTML generated using hilite.me --></p>
+<div style="background: #272822;overflow: auto;width: auto">
+<pre style="margin: 0;line-height: 125%"><span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">python</span> <span style="color: #f8f8f2">manage</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">py</span> <span style="color: #f8f8f2">db</span> <span style="color: #f8f8f2">migrate</span>
+<span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">python</span> <span style="color: #f8f8f2">manage</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">py</span> <span style="color: #f8f8f2">db</span> <span style="color: #f8f8f2">upgrade</span>
+</pre>
+</div>
+<h3><b>Resources</b></h3>
+<ul>
+<li style="font-weight: 400"><a href="http://docs.sqlalchemy.org/en/latest/core/event.html"><span style="font-weight: 400">SQLAlchemy Events</span></a><span style="font-weight: 400"> &#8211; Official SQLAlchemy documentation</span></li>
+<li style="font-weight: 400"><a href="https://github.com/ritikamotwani/open-event-server/blob/64a09060211f3b6158e6f2613d54959b43fe6a7a/app/models/session.py"><span style="font-weight: 400">Session Model</span></a><span style="font-weight: 400"> &#8211; Complete source code of file which defines session Model</span></li>
+<li style="font-weight: 400"><a href="https://github.com/ritikamotwani/open-event-server/blob/64a09060211f3b6158e6f2613d54959b43fe6a7a/app/api/schema/sessions.py"><span style="font-weight: 400">Session Schema</span></a><span style="font-weight: 400"> &#8211; Final schema for sessions API</span></li>
+</ul>
+
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;deployment-terms-in-open-event-frontend&#x2F;><h1>Deployment terms in Open Event Frontend</h1></a>
+      <h5>2018-01-01T12:48:11.000Z</h5>
+      <i class="author">sumedh123</i>
+      <div class="content">
+        <img width="660" height="245" src="https://blog.fossasia.org/wp-content/uploads/2018/01/open-768x285.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" srcset="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/open.png?resize=768%2C285&amp;ssl=1 768w, https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/open.png?resize=300%2C111&amp;ssl=1 300w, https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/open.png?resize=750%2C278&amp;ssl=1 750w, https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/open.png?resize=1024%2C380&amp;ssl=1 1024w, https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/open.png?w=1350&amp;ssl=1 1350w" sizes="(max-width: 660px) 100vw, 660px" data-attachment-id="13236" data-permalink="https://blog.fossasia.org/deployment-terms-in-open-event-frontend/open/" data-orig-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/open.png?fit=1350%2C501&amp;ssl=1" data-orig-size="1350,501" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="open" data-image-description="" data-medium-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/open.png?fit=750%2C278&amp;ssl=1" data-large-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/open.png?fit=660%2C245&amp;ssl=1" /><p><span style="font-weight: 400">In </span><a href="https://github.com/fossasia/open-event-frontend"><span style="font-weight: 400">Open Event Frontend,</span></a><span style="font-weight: 400"> once a pull request is opened, we see some tests running on for the specific pull request like ‘Codacy’, ‘Codecov’, ‘Travis’, etc. New contributors eventually get confused what the tests are about. So this blog would be a walkthrough to these terms that we use and what they mean about the PR.</span></p>
+<p><b>Travis: </b><span style="font-weight: 400">Everytime you make a pull request, you will see this test running and in some time giving the output whether the test passed or failed. Travis is the continuous integration test that we are using to test that the changes that the pull request you proposed does not break any other things. Sometimes you will see the following message which indicates that your changes is breaking something else which is not intended.</span></p>
+<p><img data-attachment-id="13233" data-permalink="https://blog.fossasia.org/deployment-terms-in-open-event-frontend/travis-5/" data-orig-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/travis-1.png?fit=701%2C117&amp;ssl=1" data-orig-size="701,117" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="travis" data-image-description="" data-medium-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/travis-1.png?fit=701%2C117&amp;ssl=1" data-large-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/travis-1.png?fit=660%2C110&amp;ssl=1" class="alignnone size-full wp-image-13233" src="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/travis-1.png?resize=660%2C110&#038;ssl=1" alt="" width="660" height="110" srcset="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/travis-1.png?w=701&amp;ssl=1 701w, https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/travis-1.png?resize=300%2C50&amp;ssl=1 300w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></p>
+<p><span style="font-weight: 400">Thus, by looking at the Travis logs, you can see where the changes proposed in the pull request are breaking things. Thus, you can go ahead and correct the code and push again to run the Travis build until it passes.</span></p>
+<p><b>Codacy:</b><span style="font-weight: 400"> Codacy is being used to check the code style, duplication, complexity and coverage, etc. When you create a pull request or update the pull request, this test runs which checks whether the code followed certain style guide or if there is duplication in code, etc. For instance let’s say if your code has a html page in which a tag has an attribute which is left undefined. Then codacy will be throwing error failing the tests. Thus you need to see the logs and go correct the bug in code. The following message shows that the codacy test has passed.</span></p>
+<p><img data-attachment-id="13234" data-permalink="https://blog.fossasia.org/deployment-terms-in-open-event-frontend/codacy-2/" data-orig-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codacy.png?fit=701%2C42&amp;ssl=1" data-orig-size="701,42" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="codacy" data-image-description="" data-medium-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codacy.png?fit=701%2C42&amp;ssl=1" data-large-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codacy.png?fit=660%2C40&amp;ssl=1" class="alignnone size-full wp-image-13234" src="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codacy.png?resize=660%2C40&#038;ssl=1" alt="" width="660" height="40" srcset="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codacy.png?w=701&amp;ssl=1 701w, https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codacy.png?resize=300%2C18&amp;ssl=1 300w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></p>
+<p><b>Codecov:</b></p>
+<p><span style="font-weight: 400">Codecov is a code coverage test which indicates how much of the code change that is proposed in the pull request is actually executed. Consider out of the 100 lines of code that you wrote, only 80 lines is being actually executed and rest is not, then the code coverage decreases. The following indicates the codecov report.</span></p>
+<p><img data-attachment-id="13237" data-permalink="https://blog.fossasia.org/deployment-terms-in-open-event-frontend/codecov-2/" data-orig-file="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codecov-1.png?fit=847%2C925&amp;ssl=1" data-orig-size="847,925" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="codecov" data-image-description="" data-medium-file="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codecov-1.png?fit=750%2C819&amp;ssl=1" data-large-file="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codecov-1.png?fit=660%2C721&amp;ssl=1" class="alignnone size-medium wp-image-13237" src="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codecov-1.png?resize=660%2C721&#038;ssl=1" alt="" width="660" height="721" srcset="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codecov-1.png?resize=750%2C819&amp;ssl=1 750w, https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codecov-1.png?resize=183%2C200&amp;ssl=1 183w, https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codecov-1.png?resize=768%2C839&amp;ssl=1 768w, https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/codecov-1.png?w=847&amp;ssl=1 847w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></p>
+<p><span style="font-weight: 400">Thus, it can be seen that which files are affected by what percent.</span></p>
+<p><b>Surge:</b></p>
+<p><span style="font-weight: 400">The surge link is nothing but the deployment link of the changes in your pull request.</span></p>
+<p><span style="font-weight: 400">Thus, checking the link manually, we can test the behavior of the app in terms of UI/UX or the other features that the pull request adds.</span></p>
+<p><span style="font-weight: 400">References: </span></p>
+<ul>
+<li style="font-weight: 400"><span style="font-weight: 400">Travis CI: </span><a href="https://travis-ci.org/"><span style="font-weight: 400">https://travis-ci.org/</span></a></li>
+<li style="font-weight: 400"><span style="font-weight: 400">Codacy: </span><a href="https://www.codacy.com/"><span style="font-weight: 400">https://www.codacy.com/</span></a></li>
+<li style="font-weight: 400"><span style="font-weight: 400">Codecov: </span><a href="https://travis-ci.org/"><span style="font-weight: 400">https://codecov.io/</span></a></li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;KashishJain?language&#x3D;en><h1>Profile of Kashish Jain</h1></a>
+      <h5>2018-01-01T12:41:56.000Z</h5>
+      <i class="author">Kashish Jain</i>
+      <div class="content">
+        Version 1.3 edited by Kashish Jain on Mon Jan 01 13:41:56 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;Documentation&#x2F;UserGuide&#x2F;Features&#x2F;Exports?language&#x3D;en><h1>Exports</h1></a>
+      <h5>2018-01-01T12:39:06.000Z</h5>
+      <i class="author">Vincent Massol</i>
+      <div class="content">
+        Version 82.1 edited by Thomas Mortagne on Mon Jan 01 13:39:06 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;Rithesh_Kannan?language&#x3D;en><h1>Profile of Rithesh Kannan</h1></a>
+      <h5>2018-01-01T11:38:25.000Z</h5>
+      <i class="author">Rithesh Kannan</i>
+      <div class="content">
+        Version 5.1 edited by Rithesh Kannan on Mon Jan 01 12:38:25 CET 2018
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;how-the-form-mixin-enhances-validations-in-open-event-frontend&#x2F;><h1>How the Form Mixin Enhances Validations in Open Event Frontend</h1></a>
+      <h5>2018-01-01T10:42:20.000Z</h5>
+      <i class="author">CosmicCoder96</i>
+      <div class="content">
+        <img width="660" height="458" src="https://blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-4.11.11-PM-768x533.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" srcset="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-4.11.11-PM.png?resize=768%2C533&amp;ssl=1 768w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-4.11.11-PM.png?resize=288%2C200&amp;ssl=1 288w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-4.11.11-PM.png?resize=750%2C520&amp;ssl=1 750w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-4.11.11-PM.png?resize=1024%2C710&amp;ssl=1 1024w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-4.11.11-PM.png?w=1320&amp;ssl=1 1320w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-4.11.11-PM.png?w=1980&amp;ssl=1 1980w" sizes="(max-width: 660px) 100vw, 660px" data-attachment-id="13229" data-permalink="https://blog.fossasia.org/how-the-form-mixin-enhances-validations-in-open-event-frontend/screen-shot-2018-01-01-at-4-11-11-pm/" data-orig-file="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-4.11.11-PM.png?fit=2358%2C1636&amp;ssl=1" data-orig-size="2358,1636" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screen Shot 2018-01-01 at 4.11.11 PM" data-image-description="" data-medium-file="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-4.11.11-PM.png?fit=750%2C520&amp;ssl=1" data-large-file="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Screen-Shot-2018-01-01-at-4.11.11-PM.png?fit=660%2C458&amp;ssl=1" /><p><span style="font-weight: 400">This blog article will illustrate how the various validations come together in  </span><a href="https://github.com/fossasia/open-event-frontend"><span style="font-weight: 400">Open Event Frontend</span></a><span style="font-weight: 400">, in a standard format, strongly reducing the code redundancy in declaring validations. Open Event Frontend, offers high flexibility in terms of validation options, and all are stored in a convenient object notation format as follows:</span><br />
+<!-- HTML generated using hilite.me --></p>
+<div style="background: #272822;overflow: auto;width: auto">
+<pre style="margin: 0;line-height: 125%"><span style="color: #a6e22e">getValidationRules</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
+<span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #a6e22e">inline</span> <span style="color: #f92672">:</span> <span style="color: #66d9ef">true</span><span style="color: #f8f8f2">,</span>
+  <span style="color: #a6e22e">delay</span>  <span style="color: #f92672">:</span> <span style="color: #66d9ef">false</span><span style="color: #f8f8f2">,</span>
+  <span style="color: #a6e22e">on</span>     <span style="color: #f92672">:</span> <span style="color: #e6db74">'blur'</span><span style="color: #f8f8f2">,</span>
+  <span style="color: #a6e22e">fields</span> <span style="color: #f92672">:</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #a6e22e">identification</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">{</span>
+      <span style="color: #a6e22e">identifier</span> <span style="color: #f92672">:</span> <span style="color: #e6db74">'email'</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #a6e22e">rules</span>      <span style="color: #f92672">:</span> <span style="color: #f8f8f2">[</span>
+        <span style="color: #f8f8f2">{</span>
+          <span style="color: #a6e22e">type</span>   <span style="color: #f92672">:</span> <span style="color: #e6db74">'empty'</span><span style="color: #f8f8f2">,</span>
+          <span style="color: #a6e22e">prompt</span> <span style="color: #f92672">:</span> <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">l10n</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">t</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">'Please enter your email ID'</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #f8f8f2">},</span>
+        <span style="color: #f8f8f2">{</span>
+          <span style="color: #a6e22e">type</span>   <span style="color: #f92672">:</span> <span style="color: #e6db74">'email'</span><span style="color: #f8f8f2">,</span>
+          <span style="color: #a6e22e">prompt</span> <span style="color: #f92672">:</span> <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">l10n</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">t</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">'Please enter a valid email ID'</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #f8f8f2">}</span>
+      <span style="color: #f8f8f2">]</span>
+    <span style="color: #f8f8f2">},</span>
+    <span style="color: #a6e22e">password</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">{</span>
+      <span style="color: #a6e22e">identifier</span> <span style="color: #f92672">:</span> <span style="color: #e6db74">'password'</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #a6e22e">rules</span>      <span style="color: #f92672">:</span> <span style="color: #f8f8f2">[</span>
+        <span style="color: #f8f8f2">{</span>
+          <span style="color: #a6e22e">type</span>   <span style="color: #f92672">:</span> <span style="color: #e6db74">'empty'</span><span style="color: #f8f8f2">,</span>
+          <span style="color: #a6e22e">prompt</span> <span style="color: #f92672">:</span> <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">l10n</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">t</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">'Please enter your password'</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #f8f8f2">}</span>
+      <span style="color: #f8f8f2">]</span>
+    <span style="color: #f8f8f2">}</span>
+  <span style="color: #f8f8f2">}</span>
+<span style="color: #f8f8f2">};</span>
+<span style="color: #f8f8f2">}</span>
+</pre>
+</div>
+<p><span style="font-weight: 400">Thus the validations of a form are stored as objects, where the  </span><i><span style="font-weight: 400">identifier </span></i><span style="font-weight: 400">attribute determines which field to apply the validation conditions to. The rules array contains all the rules to be applied to the determined object. Within rules, the </span><i><span style="font-weight: 400">type</span></i><span style="font-weight: 400"> represents the kind of validation, whereas the </span><i><span style="font-weight: 400">prompt </span></i><span style="font-weight: 400">attribute determines what message shall be displayed in case there is a violation of the validation rule.</span></p>
+<p>&nbsp;</p>
+<p><b>NOTE: </b><span style="font-weight: 400">In case an identifier is not specified, then the name of the rule object is itself considered as the identifier.</span></p>
+<p><span style="font-weight: 400">These validations are in turn implemented by the </span><i><span style="font-weight: 400">FormMixin. </span></i><span style="font-weight: 400">The various relevant sections of the mixin will be discussed in detail. Please check references for complete source code of the mixin.</span><br />
+<!-- HTML generated using hilite.me --></p>
+<div style="background: #272822;overflow: auto;width: auto">
+<pre style="margin: 0;line-height: 125%"><span style="color: #a6e22e">getForm</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
+<span style="color: #66d9ef">return</span> <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">get</span><span style="color: #f8f8f2">(</span><span style="color: #960050;background-color: #1e0010">‘</span><span style="color: #a6e22e">$form</span><span style="color: #960050;background-color: #1e0010">’</span><span style="color: #f8f8f2">);</span>
+<span style="color: #f8f8f2">}</span>
+</pre>
+</div>
+<p><span style="font-weight: 400">The </span><i><span style="font-weight: 400">getForm</span></i><span style="font-weight: 400"> function returns the calling component’s entire form object on which the validations are to be applied.</span></p>
+<p><!-- HTML generated using hilite.me --></p>
+<div style="background: #272822;overflow: auto;width: auto">
+<pre style="margin: 0;line-height: 125%"><span style="color: #a6e22e">onValid</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">callback</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+<span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">getForm</span><span style="color: #f8f8f2">().</span><span style="color: #a6e22e">form</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">'validate form'</span><span style="color: #f8f8f2">);</span>
+<span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(</span><span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">getForm</span><span style="color: #f8f8f2">().</span><span style="color: #a6e22e">form</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">'is valid'</span><span style="color: #f8f8f2">))</span> <span style="color: #f8f8f2">{</span>
+<span style="color: #960050;background-color: #1e0010">  </span><span style="color: #a6e22e">callback</span><span style="color: #f8f8f2">();</span>
+<span style="color: #f8f8f2">}</span>
+<span style="color: #f8f8f2">}</span>
+</pre>
+</div>
+<p><span style="font-weight: 400">The </span><i><span style="font-weight: 400">onValid </span></i><span style="font-weight: 400">function serves as the boundary level function, and is used to specify what should happen when the validation is successful. It expects a function object as i’s argument. It makes use of the </span><i><span style="font-weight: 400">getForm()</span></i><span style="font-weight: 400"> function to retrieve the form and using semantic UI, determines if all the validations have been successful. In case they have, it calls the callback method passed down to it as the argument.</span></p>
+<p><span style="font-weight: 400">Next transitioning into the actual implementation, certain behavioral traits of the validations are controlled by the two global variables </span><i><span style="font-weight: 400">autoScrollToErrors </span></i><span style="font-weight: 400">and </span><i><span style="font-weight: 400">autoScrollSpeed. </span></i><span style="font-weight: 400">The former is a boolean, which is set to true if the application is designed in such a way that once the user presses the submit button and a validation fails, the browser scrolls to the first field whose validation failed with a speed specified by the latter. </span></p>
+<p><span style="font-weight: 400">Next, comes the heart of the mixin. Since it needs to be continuously determined if a field’s validation has failed, the entire logic of checking is placed inside a </span><i><span style="font-weight: 400">debounce</span></i><span style="font-weight: 400"> call which is supported by ember to continuously execute a function with a gap of a certain specified time (400 ms in this case). Since the validity can be checked only after all the fields have rendered, the </span><i><span style="font-weight: 400">debounce</span></i><span style="font-weight: 400"> call is placed inside a </span><i><span style="font-weight: 400">didRender</span></i><span style="font-weight: 400"> call. The </span><i><span style="font-weight: 400">didRender</span></i><span style="font-weight: 400"> call ensures that any logic inside it is executed only after all the elements of the relevant component have been rendered and are a part of the DOM.</span><br />
+<!-- HTML generated using hilite.me --></p>
+<p><!-- HTML generated using hilite.me --></p>
+<div style="background: #272822;overflow: auto;width: auto">
+<pre style="margin: 0;line-height: 125%"><span style="color: #a6e22e">didRender</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
+<span style="color: #f8f8f2">.</span> <span style="color: #f8f8f2">.</span> <span style="color: #f8f8f2">.</span>
+<span style="color: #a6e22e">debounce</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">this</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">()</span> <span style="color: #f92672">=&gt;</span> <span style="color: #f8f8f2">{</span>
+<span style="color: #960050;background-color: #272822">  </span><span style="color: #66d9ef">const</span> <span style="color: #a6e22e">defaultFormRules</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
+<span style="color: #960050;background-color: #272822">    </span><span style="color: #a6e22e">onFailure</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">formErrors</span> <span style="color: #f92672">=&gt;</span> <span style="color: #f8f8f2">{</span>
+<span style="color: #960050;background-color: #272822">      </span><span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(</span><span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">autoScrollToErrors</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+<span style="color: #960050;background-color: #272822">        </span><span style="color: #75715e">// Scroll to the first error message</span>
+<span style="color: #960050;background-color: #272822">        </span><span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(</span><span style="color: #a6e22e">formErrors</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">length</span> <span style="color: #f92672">&gt;</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+<span style="color: #960050;background-color: #272822">          </span><span style="color: #a6e22e">$</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">'html,body'</span><span style="color: #f8f8f2">).</span><span style="color: #a6e22e">animate</span><span style="color: #f8f8f2">({</span>
+<span style="color: #960050;background-color: #272822">            </span><span style="color: #a6e22e">scrollTop</span><span style="color: #f92672">:</span> <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">$</span><span style="color: #f8f8f2">(</span><span style="color: #960050;background-color: #272822">`</span><span style="color: #a6e22e">div</span><span style="color: #f92672">:</span><span style="color: #a6e22e">contains</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">'${formErrors[0]}'</span><span style="color: #f8f8f2">)</span><span style="color: #960050;background-color: #272822">`</span><span style="color: #f8f8f2">).</span><span style="color: #a6e22e">offset</span><span style="color: #f8f8f2">().</span><span style="color: #a6e22e">top</span>
+<span style="color: #960050;background-color: #272822">          </span><span style="color: #f8f8f2">},</span> <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">autoScrollSpeed</span><span style="color: #f8f8f2">);</span>
+<span style="color: #960050;background-color: #272822">        </span><span style="color: #f8f8f2">}</span>
+<span style="color: #960050;background-color: #272822">      </span><span style="color: #f8f8f2">}</span>
+<span style="color: #960050;background-color: #272822">    </span><span style="color: #f8f8f2">}</span>
+<span style="color: #960050;background-color: #272822">  </span><span style="color: #f8f8f2">};</span>
+<span style="color: #f8f8f2">},</span> <span style="color: #ae81ff">400</span><span style="color: #f8f8f2">);</span> <span style="color: #f8f8f2">.</span> <span style="color: #f8f8f2">.</span> <span style="color: #f8f8f2">.}</span>
+</pre>
+</div>
+<p>&nbsp;</p>
+<p><i><span style="font-weight: 400">onFailure</span></i><span style="font-weight: 400"> is an ES6 syntax function, which takes all the form errors as its arguments. And in case the </span><i><span style="font-weight: 400">autoScrollToErrors </span></i><span style="font-weight: 400">global variable is set to true, it checks if there are any errors or the length of the </span><i><span style="font-weight: 400">formErrors</span></i><span style="font-weight: 400"> array is more than 0. In case there are errors, it makes a call to animate callback, and scrolls to the very first field which has an error with the speed defined by the previously discussed global </span><i><span style="font-weight: 400">autoScrollSpeed </span></i><span style="font-weight: 400">. The fact that the very first field is selected for scrolling off to, is ensured by the index </span><i><span style="font-weight: 400">0 </span></i><span style="font-weight: 400">specified (</span><i><span style="font-weight: 400">formErrors[0]).</span></i><span style="font-weight: 400"> Thus role of the mixin is to continuously check for any validations and in case there are, scroll to them.</span></p>
+<h3><b>Resources</b></h3>
+<ul>
+<li style="font-weight: 400"><a href="https://guides.emberjs.com/v2.2.0/models/"><span style="font-weight: 400">Ember JS-Mixins</span></a><span style="font-weight: 400"> &#8211; Official ember documentation</span></li>
+<li style="font-weight: 400"><a href="https://github.com/fossasia/open-event-frontend/blob/development/app/mixins/form.js"><span style="font-weight: 400">Open Event Front End mixin</span></a><span style="font-weight: 400"> &#8211; Complete source code of the mixin file</span></li>
+</ul>
+
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;parth8agg?language&#x3D;en><h1>Profile of parth aggarwal</h1></a>
+      <h5>2018-01-01T10:32:08.000Z</h5>
+      <i class="author">parth aggarwal</i>
+      <div class="content">
+        Version 3.1 edited by parth aggarwal on Mon Jan 01 11:32:08 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;BrihadeeshRadhakrishnan?language&#x3D;en><h1>Profile of Brihadeesh Radhakrishnan</h1></a>
+      <h5>2018-01-01T10:14:41.000Z</h5>
+      <i class="author">Brihadeesh Radhakrishnan</i>
+      <div class="content">
+        Version 4.1 edited by Brihadeesh Radhakrishnan on Mon Jan 01 11:14:41 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;SaiAquaZamBat77?language&#x3D;en><h1>Profile of Sai &amp;nbsp;Harsha</h1></a>
+      <h5>2018-01-01T10:04:58.000Z</h5>
+      <i class="author">Sai Harsha</i>
+      <div class="content">
+        Version 4.1 edited by Sai Harsha on Mon Jan 01 11:04:58 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;erendod?language&#x3D;en><h1>Profile of Eren Dodanlı</h1></a>
+      <h5>2018-01-01T09:49:48.000Z</h5>
+      <i class="author">Eren Dodanlı</i>
+      <div class="content">
+        Version 3.1 edited by Eren Dodanlı on Mon Jan 01 10:49:48 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;ArchitGAvadhani?language&#x3D;en><h1>Profile of Archit G Avadhani</h1></a>
+      <h5>2018-01-01T07:33:55.000Z</h5>
+      <i class="author">Archit G Avadhani</i>
+      <div class="content">
+        Version 4.1 edited by Archit G Avadhani on Mon Jan 01 08:33:55 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;kotlin_lover?language&#x3D;en><h1>Profile of Rahul Chhabra</h1></a>
+      <h5>2018-01-01T07:04:24.000Z</h5>
+      <i class="author">Rahul Chhabra</i>
+      <div class="content">
+        Version 4.1 edited by Rahul Chhabra on Mon Jan 01 08:04:24 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;RhythmPatel?language&#x3D;en><h1>Profile of Rhythm Patel</h1></a>
+      <h5>2018-01-01T06:23:58.000Z</h5>
+      <i class="author">Rhythm Patel</i>
+      <div class="content">
+        Version 2.1 edited by Rhythm Patel on Mon Jan 01 07:23:58 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;jubelkurian?language&#x3D;en><h1>Profile of Jubel &amp;nbsp;Kurian</h1></a>
+      <h5>2018-01-01T06:21:10.000Z</h5>
+      <i class="author">Jubel Kurian</i>
+      <div class="content">
+        Version 4.1 edited by Jubel Kurian on Mon Jan 01 07:21:10 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;Vicky?language&#x3D;en><h1>Profile of Arun Vignesh</h1></a>
+      <h5>2018-01-01T05:59:30.000Z</h5>
+      <i class="author">Arun Vignesh</i>
+      <div class="content">
+        Version 2.1 edited by Arun Vignesh on Mon Jan 01 06:59:30 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;HarshDave?language&#x3D;en><h1>Profile of Harsh Dave</h1></a>
+      <h5>2018-01-01T05:24:34.000Z</h5>
+      <i class="author">Harsh Dave</i>
+      <div class="content">
+        Version 3.1 edited by Harsh Dave on Mon Jan 01 06:24:34 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.kralidis.ca&#x2F;blog&#x2F;2017&#x2F;12&#x2F;31&#x2F;cheers-to-2017&#x2F;><h1>Cheers to 2017</h1></a>
+      <h5>2017-12-31T17:52:56.000Z</h5>
+      <i class="author">tomkralidis</i>
+      <div class="content">
+        
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;www.haiku-os.org&#x2F;blog&#x2F;pulkomandy&#x2F;2017-12-31_haiku_monthly_activity_report_december_2017&#x2F;><h1>Haiku monthly activity report - 12&#x2F;2017</h1></a>
+      <h5>2017-12-31T17:26:14.000Z</h5>
+      <i class="author">pulkomandy</i>
+      <div class="content">
+        <p>Welcome to the last report for the year 2017!</p> <h3>Stats</h3> <p>Who doesn't like them? I updated the Haiku stats to keep track of the <a href="http://pulkomandy.tk/stats">activity in our git repository</a>. The overall number of commits is very similar to 2016 (which was our quietest year so far) with more than 1300 commits (far from the 5555 commits in 2009). Our author of the year is waddlesplash with 213 commitsi, followed by PulkoMandy, Korli, Humdinger, Kallisti5, and Skipp_OSX. 65 different commiters made changes to Haiku this year, a net increase from 48 in 2016, but not reaching as high as 2012 (83 different committers). In the week-by-week graph you can also clearly see the effect of the coding sprint, which is of course the week with most commits.</p> <p>Anyway, let's dig into this month changes to see what's cooking for 2018. This report covers hrev51623-hrev51722 (exactly 100 hrevs!)</p> <h3>User interface</h3> <p>Lots of activity in this area, as polishing the UI is what makes the system look smooth and finished. A subtle but important change was implemented by Skipp_OSX, so that maximized windows will now avoid the deskbar. While maximizing windows is not recommended (they should pick a size appropriate for their contents instead), sometimes it does make sense to use as much screen space as possible.</p> <p>Jua continued his work on improving HaikuDepot, with a better look for the screenshot window (work he had started during the coding sprint).</p> <p>Andrew Lindesay also worked on the network side of HaikuDepot, improving the loading of data from the haiku depot server.</p> <p>The work on HaikuDepot spawned debate on the "barber pole" control, to use as a progress bar when the total progress is unknown. Jua started designing a new control for that, and Janus reworked the look and integrated it in places where a barber pole was already used, such as Zip-O-Matic.</p> <p>Janus also reworked the "key store" window (which you can see when saving a wifi password to the keystore, for example). It now looks nicer with an icon and other minor details.</p> <p>Janus fixed a crash of StyledEdit when the search/replace window was open and the main window was closed.</p> <p>Owen (one of our GCI students) made MediaPlayer accept URLs from the command line (not just from the GUI). He also worked on improving scripting support in MediaPlayer and Magnify, making it possible to control them using the "hey" command line tool, for example.</p> <p>Hrishi Hiraskar (another new contributor) made it possible to move the notification window to different places. It does not need to be near the deskbar anymore.</p> <h3>Legal</h3> <p>Kallisti5 started a survey of licences used in Haiku. While most of our code is MIT, some parts have a different history and for various reasons ended up in our sources with different licences.</p> <p>In the case of BFS recovery tools, they were integrated without a clear licence mention. Axel confirmed that using MIT was fine, so this is now clearly indicated in the files.</p> <p>In the case of MediaPlayer, there was actually a different licence used. However Kallisti5 contacted all authors who had edited the files since integration in our source tree and they all agreed to relicence it as MIT.</p> <h3>Package repositories and build infrastructure</h3> <p>As mentioned in a separate news item, the package repositories are now generated automatically. This means as soon as a recipe is added to the haikuports repository, buildbots will make a package from it and upload it there, making it available for everyone. This considerably reduces the workload in maintaining the repositories, so Haiku developers can focus on more important tasks.</p> <p>This led to a cleanup of the repositories as well as 3rd-party sources included in the Haiku tree, making our codebase easier to manage as well.</p> <p>Waddlesplash also cleaned up support for building Haiku with clang. While the resulting images are currently unbootable, this allowed him to streamline support for scanning our code at Coverity, and a new scan was finally made available, in time for Google Code-In students to have a look at it.</p> <p>mmlr did wome work on restoring support for "bootstrap" builds. These make it possible to build Haiku witohut any binary downloads (normal builds rely on pre-built packages for all 3rd party sources).</p> <p>Waddlesplash cleaned up our configure script, made it autodetect some settings (like host support for extended attributes), and made building on Haiku more similar to cross-compiling, allowing simplification on the most ugly parts of our build system.</p> <h3>Servers</h3> <p>Axel added a test_launch_daemon, to help debugging launch_daemon problems. Like the test_app_server, it allows to run the launch_daemon code in a somewhat sandboxed environment, without interferring too much with the running system.</p> <p>DeadYak worked on Debugger, with the ability to debug the runtime_loader, and review of the code to track various memory leaks.</p> <h3>Standard library</h3> <p>As GCI is running and students are attempting to port all kind of software to Haiku, some problems in our API were discovered.</p> <p>Leorize added support for some secure BSD functions (explicit_bzero, readpassphrase, etc) as a first step to porting LibreSSL. This is now pending a proper implementation of arc4random (which needs a syscall and kernel-side entropy sources).</p> <p>ohnx fixed a crash in calloc when called with strange parameters (such as negative sizes and item counts)</p> <h3>Drivers and kernel</h3> <p>Greg Cain continued his work on the USB3 stack, fixing some more problems with it. While still not perfect, USB3 support is good enough for me to use my mouse on an USB3 port (I ran into problems with usb to serial adapters last time I tried, however).</p> <p>Ayush contributed some more fixes to the TCP stack after his work done during GSoC.</p> <p>PulkoMandy fixed a corner case problem with stack alignments. The stack was aligned only when entering the main() function, so use of sse2 functions in early init code (static initializers) or late deinit code (static destructors) could fail. This had already been fixed for 64bit architectures, but x86 32bit had never been updated.</p> <p>Hy Che's patches to btrfs (done this summer during GSoC) were merged. The btrfs write support is still incomplete and disabled, but someone else can pick up the work from there, with a lot of the basic support already in place.</p> <p>waddlesplash fixed some locking problems in the management of teams and their attached resources.</p> <p>tqh fixed the UEFI build (still not included in anyboot images), fixed some configuration issues in our ACPI port (some changes were overwritten last time we updated from upstream) and he is now investigating some lockup on shutdown problems.</p>
+      </div>
       <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;MungandaEesha?language&#x3D;en><h1>Profile of munganda Eesha</h1></a>
       <h5>2017-12-31T14:35:40.000Z</h5>
       <i class="author">munganda Eesha</i>
@@ -53,89 +335,17 @@
       <div class="content">
         Version 4.1 edited by SHYAM SUNDAR S on Sun Dec 31 08:43:05 CET 2017
       </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;Documentation&#x2F;UserGuide&#x2F;Features&#x2F;DocumentLifecycle&#x2F;?language&#x3D;en><h1>Page Lifecycle</h1></a>
-      <h5>2017-12-31T07:23:20.000Z</h5>
-      <i class="author">Vincent Massol</i>
-      <div class="content">
-        Version 225.1 edited by Sakthivel Muthu on Sun Dec 31 08:23:20 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;Documentation&#x2F;UserGuide&#x2F;Features&#x2F;Exports?language&#x3D;en><h1>Exports</h1></a>
-      <h5>2017-12-31T07:14:21.000Z</h5>
-      <i class="author">Vincent Massol</i>
-      <div class="content">
-        Version 81.1 edited by Sakthivel Muthu on Sun Dec 31 08:14:21 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;Documentation&#x2F;UserGuide&#x2F;Features&#x2F;VersionControl?language&#x3D;en><h1>History</h1></a>
-      <h5>2017-12-31T07:09:40.000Z</h5>
-      <i class="author">Vincent Massol</i>
-      <div class="content">
-        Version 61.1 edited by Sakthivel Muthu on Sun Dec 31 08:09:40 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;Documentation&#x2F;UserGuide&#x2F;Features&#x2F;PageEditing?language&#x3D;en><h1>Page Editing</h1></a>
-      <h5>2017-12-31T06:55:14.000Z</h5>
-      <i class="author">Vincent Massol</i>
-      <div class="content">
-        Version 219.1 edited by Sakthivel Muthu on Sun Dec 31 07:55:14 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;titan?language&#x3D;en><h1>Profile of SHRIOM KUMAR &amp;nbsp;SINGH</h1></a>
-      <h5>2017-12-31T06:39:08.000Z</h5>
-      <i class="author">SHRIOM KUMAR SINGH</i>
-      <div class="content">
-        Version 3.1 edited by SHRIOM KUMAR SINGH on Sun Dec 31 07:39:08 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;Documentation&#x2F;UserGuide&#x2F;Features&#x2F;Attachments?language&#x3D;en><h1>Attachments</h1></a>
-      <h5>2017-12-31T06:24:59.000Z</h5>
-      <i class="author">Vincent Massol</i>
-      <div class="content">
-        Version 57.1 edited by Sakthivel Muthu on Sun Dec 31 07:24:59 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;RajeevSharma?language&#x3D;en><h1>Profile of Rajeev Sharma</h1></a>
-      <h5>2017-12-31T06:18:54.000Z</h5>
-      <i class="author">Rajeev Sharma</i>
-      <div class="content">
-        Version 4.1 edited by Rajeev Sharma on Sun Dec 31 07:18:54 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;ArunVignesh?language&#x3D;en><h1>Profile of Arun Vignesh</h1></a>
-      <h5>2017-12-31T06:00:32.000Z</h5>
-      <i class="author">Arun Vignesh</i>
-      <div class="content">
-        Version 4.1 edited by Arun Vignesh on Sun Dec 31 07:00:32 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;ShivamRai?language&#x3D;en><h1>Profile of Shivam Rai</h1></a>
-      <h5>2017-12-31T04:58:23.000Z</h5>
-      <i class="author">Shivam Rai</i>
-      <div class="content">
-        Version 4.2 edited by Shivam Rai on Sun Dec 31 05:58:23 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;AdeeshPe?language&#x3D;en><h1>Profile of B.A.C.ADEESH PERERA</h1></a>
-      <h5>2017-12-31T04:47:10.000Z</h5>
-      <i class="author">B.A.C.ADEESH PERERA</i>
-      <div class="content">
-        Version 8.1 edited by B.A.C.ADEESH PERERA on Sun Dec 31 05:47:10 CET 2017
-      </div>
       <a class="title" href=http:&#x2F;&#x2F;enzolutions.com&#x2F;articles&#x2F;2017&#x2F;12&#x2F;31&#x2F;my-2017-recap><h1>Enzolutions: My 2017 Recap</h1></a>
       <h5>2017-12-31T00:00:00.000Z</h5>
       <i class="author"></i>
       <div class="content">
         <p>It’s been awhile since I wrote a blog post. Actually, this is only the third one in 2017; a bit of a change from 2016 when I wrote almost 200 posts. If you are wondering why, let me explain with a quick recap of my milestones for this year.</p> <h2>Is there anybody else who has never seen snow before?</h2> <p>This is something difficult to understand or believe for some people, but after 40 years I had never seen snow before. This is the price that comes with living in tropical countries like Colombia and Costa Rica, but hey, even paradise has a downside!</p> <p>I decided that I needed to check off this item from my bucket list, and in a big way. Fortunately, the Drupal community always helps me in my crazy travel adventures, and in this case the community of Iceland stepped up to the challenge.</p> <p>To accomplish this goal and at the same time contribute to the local Drupal community, I attended the first <a href="https://dcnlights.drupal.is/">Drupal Northern Lights</a> at Reykjavik, Iceland, which by the way is a remarkable event organized by <a href="https://twitter.com/baddysonja">Baddy Breidert</a>, <a href="https://twitter.com/drupalviking">Hilmar Hallbjörnsson</a>, and the rest of the amazing open source community in Iceland.</p> <p>Back to the snow, I tried to prepare as much as possible for this visit, but it seems you can never be ready enough for snow in Iceland. In the second day of my visit, <a href="http://icelandmonitor.mbl.is/news/news/2017/02/26/record_amount_of_snowfall_for_february_in_reykjavik/">we got the biggest snowfall since 1952</a>, 51 cm in just a few hours.</p> <p><img style="margin-right: 20px;" src="http://enzolutions.com/assets/img/enzo-snow-fall.jpg"/> <br /><br/> <img style="margin-right: 20px;" src="http://enzolutions.com/assets/img/Reykjavik.jpg"/></p> <p>After having experienced that, anything less than 51 cm of snow doesn’t feel like a proper snowfall to me :P. I guess that’s the problem when you set high standards!</p> <p>In 2017 I also visited these places:</p> <ul> <li>Metz, France</li> <li>Ghent, Belgium</li> <li>Brussels, Belgium</li> <li>Berlin, Germany</li> <li>Copenhagen, Denmark</li> <li>Malmo, Sweden</li> <li>Rome, Italy</li> <li>Camberra, Australia</li> <li>Sunshine Coast, Australia</li> </ul> <h2>Down Under</h2> <p>During my tour in Europe, I was notified that my family and I qualified to emigrate to Australia. So from Italy, I flew to Australia to arrange all the details for the arrival of my family, typical things like finding a place, buying some furniture, setting up the school for the kids, and a long etcetera.</p> <p>But why move so far away? This is a recurrent question, since the common impression for most people is that Australia lays at the end of the world (well maybe not for people in New Zealand, Indonesia, and Papua New Guinea, our closest neighbors).</p> <p>The answer is simple. My wife and I wanted our kids to pick up a close-to-native command of the English language, while at the same time have access to a better education system. Australia offers both, and although the immigration process is tough, it is also clearly stated, and if you read the fine print carefully it can actually be a straightforward process.</p> <h2>Is the *AMP stack dead?</h2> <p>I have been a Drupal Developer for many years, but before that, I was a straight-up PHP developer, Sysadmin, and even an Oracle Developer, among others in a long list of technologies that I’ve used in my professional career.</p> <p>In addition, as CTO of <a href="http://anexusit.com">Anexus</a> (now <a href="https://weknowinc.com">weKnow</a>), my role includes to constantly evaluate new technologies in order to improve the approach and solutions we offer to our partners. As a result, this year I decided to push myself to learn something new and far away from Drupal.</p> <p>For years in our company we’ve had a gap between what the market offers and our requirements related to time tracking, HR, accounting, and capabilities. We tried many tools and SaaS platforms, but none of them truly fulfilled our needs.</p> <p>After playing around with NodeJs and ReactJs, I decided to build a professional application, something that could fill this gap and finally resolve our problems.</p> <p>After some analysis I decided to build this platform leveraging the following technologies:</p> <ul> <li><a href="http://meteor.com">Meteor JS</a> - A <a href="http://nodejs.org">NodeJs</a> framework</li> <li><a href="http://mongodb.com">Mongo DB</a></li> <li><a href="https://reactjs.org">React JS</a></li> </ul> <p>Although the learning curve was a bit steep, we were able to release our first version after two and a half months of development.</p> <p>We are still in the process of improving the tool, but so far we have exceed our initial needs. Right now we are at the stage of innovating and adding new functionality to extend the platform’s abilities.</p> <p>A by-product of this project - at least 15% of our developers have become proficient in the technologies we used to build this tool, and are prepared to tackle any project that uses this stack. Our goal for 2018 is to increase that number to at least 50% of our company.</p> <h2>A sabbatical year? Maybe...</h2> <p>A sabbatical year is generally understood as a period for relaxing, pursuing academical or spiritual interests, and often traveling. In my case it is a bit of the opposite, as I’ve decided to avoid traveling outside Australia for a year to stay with my family a much as possible, starting in August 2017.</p> <p>Why this harsh move? Well, for the last nine years I’ve been traveling almost non-stop, especially in the last couple of years. It definitely feels like I could use some “detox” from traveling, which while always interesting, is also extremely energy-consuming. That said, after two months without any traveling I started to feel a little anxious about not having a next trip to prepare. Talk about first-world problems!</p> <p>At this point I’m completing four and a half months of staying put in Australia, and I don’t have plans to travel abroad in the first quarter of 2018, so I may be able to complete my goal after all... Or not. We’ll see!</p> <p><img style="margin-right: 20px;" src="http://enzolutions.com/assets/img/enzotour17.png"/></p> <h2>This Time Next Year</h2> <p>This might sound geeky, but I think it would be interesting to use a <a href="https://en.wikipedia.org/wiki/Radar_chart">Radar chart</a> to graph the main aspects of our lives, where each variable could be an element such as love, professional life, family, financial wellbeing, health, and so on.</p> <p>Maybe all is related with each one personality factors, below my personality factors described using a <strong>Radar Chart</strong> created using <a href="https://personalityfactors.com">https://personalityfactors.com</a></p> <p><img style="margin-right: 20px;" src="http://enzolutions.com/assets/img/personalityfactors.png"/></p> <p>The reality is that maintaining a balance with all these elements is really difficult, and each one constantly pulls from the other to gain more relevance. In my personal analysis, Health has been the aspect that has been neglected the most in the last decade. Fortunately I do not suffer from any condition, but I can definitely feel how my health has started to slowly decline. Nothing major, but it’s time to take precautions.</p> <p>In order to incorporate some healthy changes, I made a challenge with <a href="https://weknowinc.com/user/jmolivas">Jesús</a> and <a href="https://twitter.com/omers">Omar</a>, to see who can lose more weight in approximately a year, starting in August 2017. The end date is not set in stone because we live in different cities and countries, so the winner will be confirmed when we see each other again…. and in front of a neutral scale.</p> <p>Let me share a baseline for reference. At the start of the challenge my weight was 102.8 kg (226 lbs), which equals to Grade II Obesity, definitely not very healthy. Back home I set up a diet plan and enrolled in a gym with the goal to attend at least six days/week.</p> <p>After four months and two weeks I’ve lost 17.2 (37.91 lbs) kg and my new weight is 85.6 Kg (188.7 lbs), and I’ve finally started to feel more healthy. Though I’m still about 6 kg from my personal goal, I’m happy with the results so far and am confident I’ll be cashing that prize, so watch out Omar &amp; Jesús!</p> <p><img style="margin-right: 20px;" src="http://enzolutions.com/assets/img/before-after.jpeg"/></p> <p>Have a happy 2018!</p>
       </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;AbdurRahmanMohammed?language&#x3D;en><h1>Profile of AbdurRahman Mohammed</h1></a>
-      <h5>2017-12-30T18:56:19.000Z</h5>
-      <i class="author">AbdurRahman Mohammed</i>
+      <a class="title" href=https:&#x2F;&#x2F;entitypilot.com&#x2F;content&#x2F;new-year-brings-free-tier><h1>Entity Pilot: A new year brings a free tier!</h1></a>
+      <h5>2017-12-30T22:48:12.000Z</h5>
+      <i class="author"></i>
       <div class="content">
-        Version 4.1 edited by AbdurRahman Mohammed on Sat Dec 30 19:56:19 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;MatthewPak?language&#x3D;en><h1>Profile of Matthew Pak</h1></a>
-      <h5>2017-12-30T18:53:45.000Z</h5>
-      <i class="author">Matthew Pak</i>
-      <div class="content">
-        Version 4.1 edited by Matthew Pak on Sat Dec 30 19:53:45 CET 2017
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;AsfiaWahab?language&#x3D;en><h1>Profile of Asfia Wahab</h1></a>
-      <h5>2017-12-30T17:49:02.000Z</h5>
-      <i class="author">Asfia Wahab</i>
-      <div class="content">
-        Version 2.1 edited by Asfia Wahab on Sat Dec 30 18:49:02 CET 2017
+        <div class="field field-name-field-teaser field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>In response to regular requests for trial accounts, we've added a free trial tier.</p> </div></div></div>
       </div>
       <a class="title" href=https:&#x2F;&#x2F;mark.ie&#x2F;blog&#x2F;web-development&#x2F;integrating-drupal-text-image-paragraph-bundle-patternlab><h1>mark.ie: Integrating a Drupal Text with Image Paragraph Bundle with Patternlab</h1></a>
       <h5>2017-12-30T14:25:52.000Z</h5>
@@ -267,6 +477,12 @@ Utils: This folder contains some functions exported as modules which are reusabl
 Blog posts: https://spin.atomicobject.com/2015/09/17/ember-js-clean/<br />
 http://www.programwitherik.com/ember-pods/</p>
 
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;www.agiledrop.com&#x2F;blog&#x2F;bostjan-our-development-director><h1>Agiledrop.com Blog: AGILEDROP: This is Boštjan, our Development director</h1></a>
+      <h5>2017-12-29T01:17:22.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        <a href="http://www.agiledrop.comhttps://www.agiledrop.com/blog/bostjan-our-development-director"><img src="https://www.agiledrop.com/sites/default/files/2017-12/23495884308_5522be9cdc_o_2.jpg" /></a> Today we will present Boštjan, Development director of AGILEDROP. Let's see what he said in the interview. When did you start working at AGILEDROP and what were your initial responsibilities? I’m at AGILEDROP almost from the beginning when Iztok and Marko invited me to join the newly established company. At the beginning, there was just a couple of us, so we were all working on the projects. I was doing development, mainly back-end but some front-end work was also needed. What are your responsibilities as Development director? My responsibilities can mainly be described as being a… <a href="http://www.agiledrop.comhttps://www.agiledrop.com/blog/bostjan-our-development-director">READ MORE</a>
       </div>
       <a class="title" href=https:&#x2F;&#x2F;www.agiledrop.com&#x2F;blog&#x2F;why-you-should-exceed-your-users-expectations><h1>Agiledrop.com Blog: AGILEDROP: Why you should exceed your users expectations</h1></a>
       <h5>2017-12-28T11:27:57.000Z</h5>
@@ -1481,18 +1697,6 @@ netboot-preseed login: _
 </div>
 
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;www.amazeelabs.com&#x2F;en&#x2F;blog&#x2F;zurich-drupal-meetup-january-2018><h1>Amazee Labs: Zurich Drupal Meetup January 2018</h1></a>
-      <h5>2017-12-20T11:49:39.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <span>Zurich Drupal Meetup January 2018</span> <div class="field field-node--field-lead field-name-field-lead field-type-text-long field-label-hidden"> <div class="field-items"> <div class="field-item"><p><a href="https://www.meetup.com/Zurich-Drupal-Meetup/events/246013443/" target="_blank">Join us</a> on January 18th for the first edition of the Zurich Drupal Meetup, where we will discuss the possible future of React, GraphQL and Drupal at the Amazee Labs Zürich office.</p> </div> </div> </div> <span><a href="/en/vijay-dubb" title="View user profile." lang="" about="/en/vijay-dubb" typeof="schema:Person" property="schema:name" datatype="" class="username">Vijay Dubb</a></span> <span>Wed, 12/20/2017 - 12:49</span> <div class="field field-node--body field-name-body field-type-text-with-summary field-label-hidden"> <div class="field-items"> <div class="field-item"><p><img alt="Michael Schmid " data-entity-type="file" data-entity-uuid="0f647265-0b39-4e56-8542-66f6497bb03e" src="https://www.amazeelabs.com/sites/default/files/inline-images/37327754232_107cce1ce0_h.jpg" /></p> <p>In the Meetup, Amazee Group CTO and Partner, <a href="https://www.amazeelabs.com/en/michael-schmid" target="_blank">Michael Schmid</a>, will lead our discussion and address the following issue:</p> <blockquote> <p>The idea of a decoupled Frontend and Backend has been around for a couple of years. Some teams tried them out, but nobody was entirely satisfied with it. Too many problems arose during development; bad or non-existing accessibility, no support for crawlers and bots, changing APIs and expensive refactorings. Even the simple task of displaying a menu on the frontend was problematic.</p> <p>All these concerns retained us at Amazee Labs from actually trying it. We avoided the use of decoupled systems. That is until a couple of months ago. In summer 2016, we were able to connect React with Drupal via GraphQL for the first time, and felt comfortable using it in a project. To increase the stakes we applied it in a multiple hundred-thousand dollar projects. We wouldn't be Amazee if we didn't! </p> <p>What came out is a completely decoupled system built on React that powers 12 individual websites with a single Drupal Backend connected through GraphQL. All of it is completely tested as part of a continuous deployment workflow, is hosted on Docker, has server-side rendering, and not a single line of content or menu on the frontend.</p> </blockquote> <p>As one of the leading Drupal and React agencies, we always look towards the future. We would like to take the opportunity to plan community activities for 2018 and beyond. Here is a list of topics we are looking to address:</p> <p>- Define overall goals for Drupal in Switzerland 2018<br /> - Fix dates &amp; contents for meetups for the Zurich Drupal Community<br /> - Pre-discuss planning for the next Drupal Mountain Camp</p> <p>Come for great talks, people and networking. Sign up here at <a href="https://www.meetup.com/Zurich-Drupal-Meetup/events/246013443/" target="_blank">meetup.com</a>. </p> <div class="grammarly-disable-indicator"> </div> </div> </div> </div>
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;www.agiledrop.com&#x2F;blog&#x2F;drive-greater-business-value-deeper-integrations><h1>Agiledrop.com Blog: AGILEDROP: Drive greater business value with deeper integrations</h1></a>
-      <h5>2017-12-20T11:18:08.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <a href="http://www.agiledrop.comhttps://www.agiledrop.com/blog/drive-greater-business-value-deeper-integrations"><img src="https://www.agiledrop.com/sites/default/files/2017-12/Untitled%20design%20%2832%29.jpg" /></a> While the first blog post of the series covered the meaning of words ambitious and digital experiences both as singular and combined entities, and the second blog post was dedicated to channels of communication and interaction, I will now turn the attention over to the possibilities of integrations with Drupal. How small is too small There is quite a substantial gap between what is characterized as for the enterprise and as for an ambitious digital experience. The latter is far broader. In more than one way. The most obvious being, as it is not just for the enterprise, you can also… <a href="http://www.agiledrop.comhttps://www.agiledrop.com/blog/drive-greater-business-value-deeper-integrations">READ MORE</a>
-      </div>
       <a class="title" href=http:&#x2F;&#x2F;openmrs.org&#x2F;2017&#x2F;12&#x2F;openmrs-reference-application-2-7-0-released&#x2F;><h1>OpenMRS Reference Application 2.7.0 released!</h1></a>
       <h5>2017-12-20T09:15:43.000Z</h5>
       <i class="author">Martyn Tendo Kiiza</i>
@@ -1563,13 +1767,13 @@ netboot-preseed login: _
 <p><em>Nick Wilson (<a href="https://meta.wikimedia.org/wiki/User:Quiddity_(WMF)">User:Quiddity (WMF)</a>), <i>Community Liaison, </i>Technical Collaboration<br />
 <i>Wikimedia Foundation</i></em></p><img alt="" border="0" src="https://pixel.wp.com/b.gif?host=blog.wikimedia.org&#038;blog=67752302&#038;post=54504&#038;subd=wikimediablog&#038;ref=&#038;feed=1" width="1" height="1" />
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;blog.ianturton.com&#x2F;geotools&#x2F;fun&#x2F;anagram&#x2F;2017&#x2F;12&#x2F;20&#x2F;anagrams-world.html><h1>Finding anagrams of place names (in the World)</h1></a>
+      <a class="title" href=https:&#x2F;&#x2F;blog.ianturton.com&#x2F;geotools,&#x2F;fun,&#x2F;anagram&#x2F;2017&#x2F;12&#x2F;20&#x2F;anagrams.html><h1>Finding anagrams of place names (in GB)</h1></a>
       <h5>2017-12-20T00:00:00.000Z</h5>
       <i class="author">OSGeo Website Committee</i>
       <div class="content">
         
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;blog.ianturton.com&#x2F;geotools,&#x2F;fun,&#x2F;anagram&#x2F;2017&#x2F;12&#x2F;20&#x2F;anagrams.html><h1>Finding anagrams of place names (in GB)</h1></a>
+      <a class="title" href=https:&#x2F;&#x2F;blog.ianturton.com&#x2F;geotools&#x2F;fun&#x2F;anagram&#x2F;2017&#x2F;12&#x2F;20&#x2F;anagrams-world.html><h1>Finding anagrams of place names (in the World)</h1></a>
       <h5>2017-12-20T00:00:00.000Z</h5>
       <i class="author">OSGeo Website Committee</i>
       <div class="content">
@@ -2670,12 +2874,6 @@ On behalf of the OpenMRS Community</p>
       <a class="title" href=http:&#x2F;&#x2F;feedproxy.google.com&#x2F;~r&#x2F;ComputingGisAndArchaeologyInTheUk&#x2F;~3&#x2F;hJMEa0-UvS8&#x2F;><h1>Portable GIS accepted as OSGeo Community Project</h1></a>
       <h5>2017-11-29T09:22:52.000Z</h5>
       <i class="author">OSGeo Website Committee</i>
-      <div class="content">
-        [object Object]
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;blog.gvsig.org&#x2F;2017&#x2F;11&#x2F;28&#x2F;a-tenor-de-las-ciudades-sostenibles-una-reflexion-desde-conamalocalvlc&#x2F;><h1>A tenor de las ciudades sostenibles, una reflexión desde #ConamaLocalVLC</h1></a>
-      <h5>2017-11-28T14:48:58.000Z</h5>
-      <i class="author">Alvaro</i>
       <div class="content">
         [object Object]
       </div>
