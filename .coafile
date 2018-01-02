@@ -31,9 +31,16 @@ files = templates/*.html
 bears = HTMLLintBear
 htmllint_ignore = optional
 
-[json]
+[all.json-i18n]
+files = static/i18n/**
+bears = JSONFormatBear
+indent_size = 4
+escape_unicode = False
+default_actions = *: ApplyPatchAction
+
+[all.json]
 files = *.json
-ignore = tests/__data__/**, package-lock.json
+ignore += static/i18n/**
 bears = JSONFormatBear
 indent_size = 2
 default_actions = *: ApplyPatchAction
