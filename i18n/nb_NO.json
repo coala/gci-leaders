@@ -1,0 +1,21 @@
+{
+    "page-title": "Nåværende",
+    "last-updated": "Sist oppdatert",
+    "order-info": "Ledende deltagere for hver organisasjon (og deres GitHub-kontoer, hvis anvendt) opplistet tilfeldig.",
+    "tasks-completed": "Oppgaver fullført",
+    "footer-text": "Google Code-in og Google Code-in -logoen er varemerker tilhørende Google Inc.",
+    "orgs-no-listed": "Organisasjon(er) uten noen utnevnte ledere",
+    "passed": "$1% fullført, omtrent $2 før oppgavetildelning slutter",
+    "seconds-ago": "for $1 {{PLURAL:$1|sekund|sekunder}} siden",
+    "minutes-ago": "for $1 {{PLURAL:$1|minutt|minutter}} siden",
+    "hours-ago": "for $1 {{PLURAL:$1|time|timer}} siden",
+    "days-ago": "for$1 {{PLURAL:$1|dag|dager}} siden",
+    "months-ago": "for $1 {{PLURAL:$1|måned|måneder}} siden",
+    "years-ago": "for $1 {{PLURAL:$1|år|år}} siden",
+    "seconds": "$1 {{PLURAL:$1|sekund|sekunder}}",
+    "minutes": "$1 {{PLURAL:$1|minutt|minutter}}",
+    "hours": "$1 {{PLURAL:$1|time|timer}}",
+    "days": "$1 {{PLURAL:$1|dag|dager}}",
+    "months": "$1 {{PLURAL:$1|måned|måneder}}",
+    "years": "$1 {{PLURAL:$1|år|år}}"
+}
