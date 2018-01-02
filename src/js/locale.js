@@ -30,6 +30,7 @@ $(window).on('load', function() {
     English: 'en',
     Español: 'es',
     Polski: 'pl',
+    'Norwegian Bokmål': 'nb_NO',
   }
 
   var locList = $('#lang-select')
