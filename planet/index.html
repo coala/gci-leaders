@@ -11,11 +11,207 @@
       <hr />
     </div>
     <div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;dhruvk?language&#x3D;en><h1>Profile of DHRUV KUMAR VERMA</h1></a>
+      <h5>2018-01-02T17:44:57.000Z</h5>
+      <i class="author">DHRUV KUMAR VERMA</i>
+      <div class="content">
+        Version 3.1 edited by DHRUV KUMAR VERMA on Tue Jan 02 18:44:57 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;SurajYadav?language&#x3D;en><h1>Profile of Suraj Yadav</h1></a>
+      <h5>2018-01-02T17:09:03.000Z</h5>
+      <i class="author">Suraj Yadav</i>
+      <div class="content">
+        Version 4.1 edited by Suraj Yadav on Tue Jan 02 18:09:03 CET 2018
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;camera-controls-using-volume-buttons-in-the-phimpme-application&#x2F;><h1>Camera Controls Using Volume Buttons In The Phimpme Application</h1></a>
+      <h5>2018-01-02T15:20:20.000Z</h5>
+      <i class="author">anantprsd5</i>
+      <div class="content">
+        <img width="660" height="367" src="https://blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design25-768x427.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" srcset="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design25.png?resize=768%2C427&amp;ssl=1 768w, https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design25.png?resize=300%2C167&amp;ssl=1 300w, https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design25.png?resize=750%2C417&amp;ssl=1 750w, https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design25.png?w=810&amp;ssl=1 810w" sizes="(max-width: 660px) 100vw, 660px" data-attachment-id="13292" data-permalink="https://blog.fossasia.org/camera-controls-using-volume-buttons-in-the-phimpme-application/untitled-design25/" data-orig-file="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design25.png?fit=810%2C450&amp;ssl=1" data-orig-size="810,450" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Untitled design(25)" data-image-description="" data-medium-file="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design25.png?fit=750%2C417&amp;ssl=1" data-large-file="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design25.png?fit=660%2C367&amp;ssl=1" /><p>The <a href="http://phimp.me/">Phimpme Android</a> application has a camera, Gallery section, edit image section and also the inbuilt sharing option. In spite of having all of the above features, the Phimpme application doesn’t compromise on the quality and functions of each of the sections. For instance, we can control the camera fully with the help of just the volume buttons. For this, we have provided an option in the settings of the application to change and select the behaviour of the volume buttons according to the users choice. In this post, I will be discussing how we have achieved this functionality.</p>
+<p><b>Step 1</b></p>
+<p>First, we have to display an ArrayList of options using the ListPreference in the settings. The user can perform the following functions using the volume keys.</p>
+<ol>
+<li>Take Photo</li>
+<li>Focus</li>
+<li>Zoom in/out</li>
+<li>Change Exposure Level</li>
+<li>Switch Auto Level on/off</li>
+</ol>
+<p>There are also two other option to change device volume and to do nothing in case the user wants the default behaviour.</p>
+<p>The above options in the settings can be provided using the following lines of code.</p>
+<pre>&lt;ListPreference
+   android:defaultValue="volume_take_photo"
+   android:entries="@array/preference_volume_keys_entries"
+   android:entryValues="@array/preference_volume_keys_values"
+   android:key="preference_volume_keys"
+   android:summary="@string/preference_volume_keys_summary"
+   android:title="@string/preference_volume_keys" /&gt;</pre>
+<p><b>Step 2</b></p>
+<p>Now as the user selects a particular option from the ListPreference, the value in the SharedPreference associated with a particular key value gets updated. After this, we have to perform the particular activity as soon as the volume button is pressed. For this, we have to Override the onKeyDown() function of the KeyEvent.Callback class in Android. This function takes in the Integer keycode and the KeyEvent as the parameters.</p>
+<pre>@Override
+public boolean onKeyDown(int keyCode, KeyEvent event) {
+   if (MyDebug.LOG)
+       Log.d(TAG, "onKeyDown: " + keyCode);
+   boolean handled = mainUI.onKeyDown(keyCode, event);
+   if (handled)
+       return true;
+   return super.onKeyDown(keyCode, event);
+}</pre>
+<p><b>Step 3</b></p>
+<p>We have defined another onKeyDown() method in the MainUI class to keep the code modularized. In this, we have made use of the Switch cases to perform the different actions. This can be done by using the following line of code snippet.</p>
+<pre>Switch (volume_keys) {
+  case "volume_take_photo":
+     main_activity.takePicture();
+     return true;
+
+  case "volume_zoom":
+     if (keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
+        main_activity.getPreview().zoomTo(main_activity.getPreview().getCameraController().getZoom() + 1);
+     }
+     else {
+        main_activity.getPreview().zoomTo(main_activity.getPreview().getCameraController().getZoom() - 1);
+     }
+     return true;</pre>
+<p>In the above code snippet, we have defined the function to perform the zoom operation and to click picture using the volume keys. Similarly, we can add the functions to perform all the above mentioned activities. To get the full source code, please refer to the Phimpme Android GitHub repository mentioned in the resources section below.</p>
+<h3>Resources</h3>
+<ol>
+<li>Android Developer Guide &#8211; KeyEvent.Callback class &#8211; <a href="https://developer.android.com/reference/android/view/KeyEvent.Callback.html">https://developer.android.com/reference/android/view/KeyEvent.Callback.html</a></li>
+<li>GitHub &#8211; Phimpme Android Repository &#8211; <a href="https://github.com/fossasia/phimpme-android/">https://github.com/fossasia/phimpme-android/</a></li>
+<li>StackOverflow &#8211; Handling key events in Android &#8211; <a href="https://stackoverflow.com/questions/5631977/keyevent-handling-in-android">https://stackoverflow.com/questions/5631977/keyevent-handling-in-android</a></li>
+<li>Blog post &#8211; Handleling Key Events &#8211; <a href="https://android-developers.googleblog.com/2009/12/back-and-other-hard-keys-three-stories.html">https://android-developers.googleblog.com/2009/12/back-and-other-hard-keys-three-stories.html</a></li>
+</ol>
+<p>&nbsp;</p>
+
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;slideshow-option-in-the-phimpme-android-application&#x2F;><h1>Slideshow option in the Phimpme Android Application</h1></a>
+      <h5>2018-01-02T15:02:54.000Z</h5>
+      <i class="author">anantprsd5</i>
+      <div class="content">
+        <img width="660" height="367" src="https://blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design24-768x427.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" srcset="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design24.png?resize=768%2C427&amp;ssl=1 768w, https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design24.png?resize=300%2C167&amp;ssl=1 300w, https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design24.png?resize=750%2C417&amp;ssl=1 750w, https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design24.png?w=810&amp;ssl=1 810w" sizes="(max-width: 660px) 100vw, 660px" data-attachment-id="13289" data-permalink="https://blog.fossasia.org/slideshow-option-in-the-phimpme-android-application/untitled-design24/" data-orig-file="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design24.png?fit=810%2C450&amp;ssl=1" data-orig-size="810,450" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Untitled design(24)" data-image-description="" data-medium-file="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design24.png?fit=750%2C417&amp;ssl=1" data-large-file="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design24.png?fit=660%2C367&amp;ssl=1" /><p>The <a href="http://phimp.me/">Phimpme Android</a> application along with all the basic features for viewing and sharing images also has some interesting functions, for example, the ability to view all the images at once using the slideshow option. The users can also manage the time duration for which a particular photo will be displayed before switching on to the next image. In this post, we will be discussing how we have achieved this functionality in the Phimpme Android application.</p>
+<p><img data-attachment-id="13288" data-permalink="https://blog.fossasia.org/slideshow-option-in-the-phimpme-android-application/852715314_16741/" data-orig-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/852715314_16741.jpg?fit=720%2C1280&amp;ssl=1" data-orig-size="720,1280" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="852715314_16741" data-image-description="" data-medium-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/852715314_16741.jpg?fit=720%2C1280&amp;ssl=1" data-large-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/852715314_16741.jpg?fit=660%2C1173&amp;ssl=1" class="wp-image-13288 aligncenter" src="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/852715314_16741.jpg?resize=243%2C432&#038;ssl=1" alt="" width="243" height="432" srcset="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/852715314_16741.jpg?w=720&amp;ssl=1 720w, https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/852715314_16741.jpg?resize=113%2C200&amp;ssl=1 113w" sizes="(max-width: 243px) 100vw, 243px" data-recalc-dims="1" /></p>
+<p><b>Step 1</b></p>
+<p>First, we have to provide the user with an option to enter the time duration for which they want to view a particular photo. For this, we have made use of the themed dialog box which will take the input from the user and then we will be converting the time entered by them into milliseconds. This can be done by using the following code snippet.</p>
+<pre>dialog.setButton(DialogInterface.BUTTON_POSITIVE, getString(R.string.ok).toUpperCase(), new DialogInterface.OnClickListener() {
+   @Override
+   public void onClick(DialogInterface dialog, int which) {
+       String value= editTextTimeInterval.getText().toString();
+       if(!"".equals(value))
+       {
+           slideshow=true;
+           int intValue = Integer.parseInt(value);
+           SLIDE_SHOW_INTERVAL = intValue * 1000;</pre>
+<p><b>Step 2</b></p>
+<p>For changing the photo at a particular duration of time, we need to make use of the Runnable interface in Java, which uses a method <i>run()</i> to execute the tasks. To use it, we have to create a Handler object and initialize it. This can be done using the following lines of the code.</p>
+<pre>private Handler handler;
+handler = new Handler();</pre>
+<p>After this, we have to define and initialize our Runnable object which will be used later to change the picture. The code snippet for initializing the runnable object is given below.</p>
+<pre>Runnable slideShowRunnable = new Runnable() {
+   @Override
+   public void run() {
+       try{
+           mViewPager.scrollToPosition((getAlbum().getCurrentMediaIndex() + 1) % getAlbum().getMedia().size());
+       }
+       catch (Exception e) {
+           e.printStackTrace();
+       }
+       finally{
+           handler.postDelayed(this, SLIDE_SHOW_INTERVAL);
+       }</pre>
+<p>As the <i>run()</i> method gets executed, the <i>scrollToPosition</i> function of the ViewPager class gets called which changes the position of the image displayed to the next image available.</p>
+<p><b>Step 3</b></p>
+<p>To call the runnable object we created in the second step, we have to use the <i>postDelayed</i> function of the Handler class which takes in a Runnable object and the time in milliseconds as the parameter. The code snippet for this is provided below.</p>
+<pre>handler.postDelayed(this, SLIDE_SHOW_INTERVAL);</pre>
+<p>Please note that we have also included the above line of code in the <i>finally</i> block after each successful run of the method because as the slideshow starts, we will have to call this function to scroll to the new position after every finite provided duration.</p>
+<p>This is how we have achieved the Slideshow functionality in the Phimpme Android application. To get the full source code for this implementation, please check out the Phimpme Android GitHub repository listed in the resources section below.</p>
+<h3>Resources</h3>
+<ol>
+<li>GitHub &#8211; Phimpme Android Repository &#8211; <a href="https://github.com/fossasia/phimpme-android/">https://github.com/fossasia/phimpme-android/</a></li>
+<li>Android Developer Guide &#8211; Handler class &#8211; <a href="https://developer.android.com/reference/android/os/Handler.html">https://developer.android.com/reference/android/os/Handler.html</a></li>
+<li>StackOverflow &#8211; Runnable in Java &#8211; <a href="https://stackoverflow.com/questions/13327571/in-a-simple-to-understand-explanation-what-is-runnable-in-java">https://stackoverflow.com/questions/13327571/in-a-simple-to-understand-explanation-what-is-runnable-in-java</a></li>
+<li>StackOverflow &#8211; Image Slideshow in Android &#8211; <a href="https://stackoverflow.com/questions/2995145/image-slideshow-example-in-android">https://stackoverflow.com/questions/2995145/image-slideshow-example-in-android</a></li>
+</ol>
+<p>&nbsp;</p>
+
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;compressing-albums-in-the-phimpme-android-application&#x2F;><h1>Compressing Albums in the Phimpme Android Application</h1></a>
+      <h5>2018-01-02T14:33:46.000Z</h5>
+      <i class="author">anantprsd5</i>
+      <div class="content">
+        <img width="660" height="371" src="https://blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design23-768x432.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" srcset="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design23.png?resize=768%2C432&amp;ssl=1 768w, https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design23.png?resize=300%2C169&amp;ssl=1 300w, https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design23.png?resize=750%2C422&amp;ssl=1 750w, https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design23.png?resize=1024%2C576&amp;ssl=1 1024w, https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design23.png?w=1280&amp;ssl=1 1280w" sizes="(max-width: 660px) 100vw, 660px" data-attachment-id="13285" data-permalink="https://blog.fossasia.org/compressing-albums-in-the-phimpme-android-application/untitled-design23/" data-orig-file="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design23.png?fit=1280%2C720&amp;ssl=1" data-orig-size="1280,720" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Untitled design(23)" data-image-description="" data-medium-file="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design23.png?fit=750%2C422&amp;ssl=1" data-large-file="https://i2.wp.com/blog.fossasia.org/wp-content/uploads/2018/01/Untitled-design23.png?fit=660%2C371&amp;ssl=1" /><p>The <a href="https://phimp.me/">Phimpme Android</a> application comes in with all the functionalities ranging from viewing images to taking photos, editing pictures  and sharing them with the world from within a single application without having to switch to or install other social media apps on your mobile phone. Apart from these basic functionalities, the Phimpme Android app also comes with additional features to enhance user experience like the ability to compress the whole album with a large number of photos so that it becomes easier to share them. In this post, I will be explaining how we achieved this functionality to compress the Albums.</p>
+<p><b>Step 1</b></p>
+<p>The first thing we need to do before compressing an album is to get all the paths of the images in that album and store it in an <i>ArrayList&lt;String&gt;</i> so that it can be used later for the compression process. This can be done using the code snippet provided below, it stores all the paths of the file in a particular folder whose name ends with .jpg</p>
+<pre>path = new ArrayList&lt;&gt;();
+File folder = new File(getAlbums().getSelectedAlbum(0).getPath() + "/");
+File[] fpath = folder.listFiles();
+for(int i = 0; i &lt; fpath.length; i++){
+   if(fpath[i].getPath().endsWith(".jpg") ){
+       path.add(fpath[i].getPath());
+   }
+}</pre>
+<p><b>Step 2</b></p>
+<p>Since the compression is a heavy task, we can make use of an AsyncTask to run the task on the background thread so that the user experience is not at all hampered. In the <i>onPreExecute</i> method of the AsyncTask, we need to display the Notification that the compression of the particular album has started, for this we have made use of the Notification handler class that we have created in the Phimpme Android application to ease the process of displaying the notification and to avoid repetition of codes. The onPreExecute method of the AsyncTask is given below.</p>
+<pre>@Override
+protected void onPreExecute() {
+   super.onPreExecute();
+   NotificationHandler.make(R.string.folder, R.string.zip_fol, R.drawable.ic_archive_black_24dp );
+}</pre>
+<p><b>Step 3</b></p>
+<p>On the doInBackground method of the AsyncTask, we run the process to compress the files one by one. For this we will make use of the ZipEntry class which is used to represent a zip file entry in Android/Java. First we will create a File with the .zip extension.  After this, we will make use of an object of the class ZipOutputStream as depicted in the code snippet provided below.</p>
+<pre>BufferedInputStream origin = null; 
+FileOutputStream dest = new FileOutputStream(_zipFile); 
+ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(dest)); 
+byte data[] = new byte[BUFFER];</pre>
+<p>After initializing the ZipOutPutStream object, we will put the zip entries in it by using the putNextEntry function of the class. To create a Zip entry of a file, we need to make use of for loop to generate the object of type ZipEntry and after that by using the putNextEntry function of the class, we will put the entries one by one as depicted in the code snippet given below.</p>
+<pre>for (int i = 0; i &lt; path.size(); i++) {
+FileInputStream fi = new FileInputStream(path.get(i));
+origin = new BufferedInputStream(fi, BUFFER);
+ZipEntry entry = new ZipEntry(path.get(i).substring(path.get(i).lastIndexOf("/") + 1));
+out.putNextEntry(entry);</pre>
+<p>While preparing the Zip file, we will update the progress of the compression operation by making use of the Notification handler class.</p>
+<p>This is how we have implemented the feature to compress the Albums in the Phimpme Android Application. To get the full source code for the same, please check the Phimpme Android GitHub repository listed on the resources below.</p>
+<h3>Resources</h3>
+<ol>
+<li>StackOverflow &#8211; Compressing Files in Android &#8211; <a href="https://stackoverflow.com/questions/25562262/how-to-compress-files-into-zip-folder-in-android">https://stackoverflow.com/questions/25562262/how-to-compress-files-into-zip-folder-in-android</a></li>
+<li>Blog &#8211; Compressing Files in Android programmatically &#8211; <a href="http://stacktips.com/tutorials/android/how-to-programmatically-zip-and-unzip-file-in-android">http://stacktips.com/tutorials/android/how-to-programmatically-zip-and-unzip-file-in-android</a></li>
+<li>GitHub &#8211; Phimpme Android Repository &#8211; <a href="https://github.com/fossasia/phimpme-android/">https://github.com/fossasia/phimpme-android/</a></li>
+</ol>
+
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.blogger.com&#x2F;feeds&#x2F;4643387265233889970&#x2F;posts&#x2F;default&#x2F;3612789204982635201><h1>Nuevo Meetup mensual en el Parc Científic sobre tecnologías, organizado por el GDG Lleida</h1></a>
+      <h5>2018-01-02T14:24:00.002Z</h5>
+      <i class="author">Andreu Ibáñez</i>
+      <div class="content">
+        <div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-UT7WIbU_WkY/WkX-98m_GrI/AAAAAAAF1YA/_sRKxjEWSlApkKw7SalxJfukpeyTa-HBACLcBGAs/s1600/logo%2BGDG%2BLLEIDA%2B2016.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="206" data-original-width="1600" height="81" src="https://3.bp.blogspot.com/-UT7WIbU_WkY/WkX-98m_GrI/AAAAAAAF1YA/_sRKxjEWSlApkKw7SalxJfukpeyTa-HBACLcBGAs/s640/logo%2BGDG%2BLLEIDA%2B2016.png" width="640" /></a></div><br />El Google Developer Group de Lleida, GDG Lleida, organizará desde enero del 2018 un Meetup mensual en las instalaciones del Parc Científic de Lleida.<br /><br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-xZ2So0hXRAQ/WkYFEAOamWI/AAAAAAAF1Z8/lPN5EmRrt54RAtrNfsSt2Ua0Y4gy99sSgCLcBGAs/s1600/meetup_logo.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="377" data-original-width="1020" height="73" src="https://3.bp.blogspot.com/-xZ2So0hXRAQ/WkYFEAOamWI/AAAAAAAF1Z8/lPN5EmRrt54RAtrNfsSt2Ua0Y4gy99sSgCLcBGAs/s200/meetup_logo.png" width="200" /></a></div>Estos Meetups tendrán como primer&nbsp;<b>objetivo crear comunidad en Lleida de&nbsp;</b><b>desarrolladores e interesados en las nuevas tecnologías</b>, y aunque organizado por el GDG Lleida cercano a Google, las tecnologías y temáticas a tratar serán diversas y abiertas a los intereses de todos.<br /><div><br /></div>Para ello no se dispondrá de más agenda que una presentación de 15 minutos por parte de un invitado, seguida de presentaciones libres y networking hasta el máximo de 90 minutos por encuentro. Se dispondrá de un proyector con conector hdmi y Chromecast incorporado.<br /><br /><div class="separator" style="clear: both; text-align: center;"><br /></div>La primera cita será el próximo <b>jueves 18 de enero, a las 18:30 en el edificio Cedico </b>del Parc Científic, y tendrá como invitado a Andreu Ibáñez, Coordinador de los Laboratorios TIC del Parc Científic entre diversas facetas, que presentará en los 15 minutos los diferentes laboratorios e iniciativas para este 2018, entre las que se cuentan el nuevo Laboratorio TIC, el Artificial Intelligence LAB, y la convocatoria de becas Google Summer of Code, programa para estudiantes universitarios de Google. El resto de la sesión será abierta, para presentaciones de otras personas o simplemente networking.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-XPVxSX2mgZI/WkYQx3iMwiI/AAAAAAAF1bA/B3v9CKwgNfkDWE-ax3vlb3zDd2G0A8NygCLcBGAs/s1600/LOGO%2BLABORATORIS%2BTIC.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1139" data-original-width="1600" height="141" src="https://1.bp.blogspot.com/-XPVxSX2mgZI/WkYQx3iMwiI/AAAAAAAF1bA/B3v9CKwgNfkDWE-ax3vlb3zDd2G0A8NygCLcBGAs/s200/LOGO%2BLABORATORIS%2BTIC.png" width="200" /></a></div><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-UBOAqziEra8/WkYGnJqz5bI/AAAAAAAF1aU/YGkkUtABC9Y3gaQ7hLhdJhUaG66tc32rwCLcBGAs/s1600/LOGO%2BARTIFICIAL%2BINTELLIGENCE%2BLAB.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="699" data-original-width="1600" height="85" src="https://4.bp.blogspot.com/-UBOAqziEra8/WkYGnJqz5bI/AAAAAAAF1aU/YGkkUtABC9Y3gaQ7hLhdJhUaG66tc32rwCLcBGAs/s200/LOGO%2BARTIFICIAL%2BINTELLIGENCE%2BLAB.jpg" width="200" /></a></div><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-IExCcgHcOhY/WkYHG0Xh3bI/AAAAAAAF1ag/hfED2683wUUucE7OMpxPTlN9bPjN0VPcQCLcBGAs/s1600/GSoC-logo.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="147" data-original-width="920" height="51" src="https://2.bp.blogspot.com/-IExCcgHcOhY/WkYHG0Xh3bI/AAAAAAAF1ag/hfED2683wUUucE7OMpxPTlN9bPjN0VPcQCLcBGAs/s320/GSoC-logo.jpg" width="320" /></a></div><div class="separator" style="clear: both; text-align: center;"><br /></div><br /><br />La asistencia es gratuita pero os pedimos por deferencia que os <a href="https://www.meetup.com/es-ES/Google-Developer-Group-Lleida/events/zhfrdpyxcbxb/">apuntéis en el Meetup</a> para tener un cierto control de audiencia de cara a las instalaciones a preparar.<br /><br /><a href="http://www.pcital.es/localitzacio">Como llegar</a>.<br /><div><br /></div><div><br /></div><b>ATENCIÓN: </b>Como deferencia se sorteará entre los asistentes al evento <a href="http://www.ailablleida.com/2017/12/el-kit-de-aiy-projects-de-google.html">dos kits de Google Assistant SDK</a> valorados en cerca de 100 €, con la colaboración del <a href="http://www.gdglleida.com/">GDG Lleida</a> y el <a href="http://www.gdg.es/">GDG Spain</a>, agrupación de todos los GDG españoles.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-npFybTMk_gY/WkYEGd0HOSI/AAAAAAAF1Zw/P18svVaipx8IhIuqEmp23yVUmmjN38YUgCLcBGAs/s1600/images_BrandPromos_Google_google_aiy_banner_halfb.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="295" data-original-width="568" height="166" src="https://3.bp.blogspot.com/-npFybTMk_gY/WkYEGd0HOSI/AAAAAAAF1Zw/P18svVaipx8IhIuqEmp23yVUmmjN38YUgCLcBGAs/s320/images_BrandPromos_Google_google_aiy_banner_halfb.jpg" width="320" /></a></div><br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-I5ftjtcz_vU/WkYEv2GmTNI/AAAAAAAF1Z4/CZr5723bdxQ8-8OqnZ15xzm48_2fwJLtACLcBGAs/s1600/banner-gdgspain-gande.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="155" data-original-width="928" height="106" src="https://4.bp.blogspot.com/-I5ftjtcz_vU/WkYEv2GmTNI/AAAAAAAF1Z4/CZr5723bdxQ8-8OqnZ15xzm48_2fwJLtACLcBGAs/s640/banner-gdgspain-gande.png" width="640" /></a></div><br />
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;Pranav__Yadlapati?language&#x3D;en><h1>Profile of Pranav Yadlapati</h1></a>
+      <h5>2018-01-02T14:03:53.000Z</h5>
+      <i class="author">Pranav Yadlapati</i>
+      <div class="content">
+        Version 1.3 edited by Pranav Yadlapati on Tue Jan 02 15:03:53 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;PranavYadlapati?language&#x3D;en><h1>Profile of Pranav Yadlapati</h1></a>
+      <h5>2018-01-02T13:59:57.000Z</h5>
+      <i class="author">Pranav Yadlapati</i>
+      <div class="content">
+        Version 3.1 edited by Pranav Yadlapati on Tue Jan 02 14:59:57 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;C_h_i?language&#x3D;en><h1>Profile of Chiranjiv Singh Malhi</h1></a>
+      <h5>2018-01-02T13:57:08.000Z</h5>
+      <i class="author">Chiranjiv Singh Malhi</i>
+      <div class="content">
+        Version 4.1 edited by Chiranjiv Singh Malhi on Tue Jan 02 14:57:08 CET 2018
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;ChiranjivSinghMalhi?language&#x3D;en><h1>Profile of Chiranjiv Singh Malhi</h1></a>
+      <h5>2018-01-02T13:35:45.000Z</h5>
+      <i class="author">Chiranjiv Singh Malhi</i>
+      <div class="content">
+        Version 1.3 edited by Chiranjiv Singh Malhi on Tue Jan 02 14:35:45 CET 2018
+      </div>
       <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;dtpvy?language&#x3D;en><h1>Profile of Phương Vy Đỗ Thụy</h1></a>
-      <h5>2018-01-02T13:29:41.000Z</h5>
+      <h5>2018-01-02T13:34:20.000Z</h5>
       <i class="author">Phương Vy Đỗ Thụy</i>
       <div class="content">
-        Version 6.1 edited by Phương Vy Đỗ Thụy on Tue Jan 02 14:29:41 CET 2018
+        Version 8.1 edited by Phương Vy Đỗ Thụy on Tue Jan 02 14:34:20 CET 2018
       </div>
       <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;NIKHILCHAR?language&#x3D;en><h1>Profile of NIKHIL CHAR</h1></a>
       <h5>2018-01-02T13:14:08.000Z</h5>
@@ -230,12 +426,6 @@
       <div class="content">
         [object Object]
       </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;erendod?language&#x3D;en><h1>Profile of Eren Dodanlı</h1></a>
-      <h5>2018-01-01T17:58:35.000Z</h5>
-      <i class="author">Eren Dodanlı</i>
-      <div class="content">
-        Version 4.1 edited by Eren Dodanlı on Mon Jan 01 18:58:35 CET 2018
-      </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;how-to-organise-a-successful-google-code-in-meetup&#x2F;><h1>How to organise a successful Google Code-In meetup</h1></a>
       <h5>2018-01-01T17:55:18.000Z</h5>
       <i class="author">isuruAb</i>
@@ -299,12 +489,6 @@
 <li style="font-weight: 400"><span style="font-weight: 400">What is Google Code-In &#8211;</span><a href="https://codein.withgoogle.com/"><span style="font-weight: 400">https://codein.withgoogle.com/</span></a></li>
 </ul>
 
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;ArjunIyer?language&#x3D;en><h1>Profile of Arjun Iyer</h1></a>
-      <h5>2018-01-01T17:54:42.000Z</h5>
-      <i class="author">Arjun Iyer</i>
-      <div class="content">
-        Version 3.2 edited by Arjun Iyer on Mon Jan 01 18:54:42 CET 2018
       </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;automatically-deploy-susi-web-chat-on-surge-after-travis-passes&#x2F;><h1>Automatically deploy SUSI Web Chat on surge after Travis passes</h1></a>
       <h5>2018-01-01T17:43:49.000Z</h5>
@@ -483,24 +667,6 @@ Now make a pull request. you would find the deployment link in travis ci report 
 <p>&nbsp;</p>
 
       </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;KashishJain?language&#x3D;en><h1>Profile of Kashish Jain</h1></a>
-      <h5>2018-01-01T12:41:56.000Z</h5>
-      <i class="author">Kashish Jain</i>
-      <div class="content">
-        Version 1.3 edited by Kashish Jain on Mon Jan 01 13:41:56 CET 2018
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;Documentation&#x2F;UserGuide&#x2F;Features&#x2F;Exports?language&#x3D;en><h1>Exports</h1></a>
-      <h5>2018-01-01T12:39:06.000Z</h5>
-      <i class="author">Vincent Massol</i>
-      <div class="content">
-        Version 82.1 edited by Thomas Mortagne on Mon Jan 01 13:39:06 CET 2018
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;Rithesh_Kannan?language&#x3D;en><h1>Profile of Rithesh Kannan</h1></a>
-      <h5>2018-01-01T11:38:25.000Z</h5>
-      <i class="author">Rithesh Kannan</i>
-      <div class="content">
-        Version 5.1 edited by Rithesh Kannan on Mon Jan 01 12:38:25 CET 2018
-      </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;how-the-form-mixin-enhances-validations-in-open-event-frontend&#x2F;><h1>How the Form Mixin Enhances Validations in Open Event Frontend</h1></a>
       <h5>2018-01-01T10:42:20.000Z</h5>
       <i class="author">CosmicCoder96</i>
@@ -595,12 +761,6 @@ Now make a pull request. you would find the deployment link in travis ci report 
 <li style="font-weight: 400"><a href="https://github.com/fossasia/open-event-frontend/blob/development/app/mixins/form.js"><span style="font-weight: 400">Open Event Front End mixin</span></a><span style="font-weight: 400"> &#8211; Complete source code of the mixin file</span></li>
 </ul>
 
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;parth8agg?language&#x3D;en><h1>Profile of parth aggarwal</h1></a>
-      <h5>2018-01-01T10:32:08.000Z</h5>
-      <i class="author">parth aggarwal</i>
-      <div class="content">
-        Version 3.1 edited by parth aggarwal on Mon Jan 01 11:32:08 CET 2018
       </div>
       <a class="title" href=http:&#x2F;&#x2F;www.kralidis.ca&#x2F;blog&#x2F;2017&#x2F;12&#x2F;31&#x2F;cheers-to-2017&#x2F;><h1>Cheers to 2017</h1></a>
       <h5>2017-12-31T17:52:56.000Z</h5>
@@ -2040,13 +2200,13 @@ netboot-preseed login: _
 <p><em>Nick Wilson (<a href="https://meta.wikimedia.org/wiki/User:Quiddity_(WMF)">User:Quiddity (WMF)</a>), <i>Community Liaison, </i>Technical Collaboration<br />
 <i>Wikimedia Foundation</i></em></p><img alt="" border="0" src="https://pixel.wp.com/b.gif?host=blog.wikimedia.org&#038;blog=67752302&#038;post=54504&#038;subd=wikimediablog&#038;ref=&#038;feed=1" width="1" height="1" />
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;blog.ianturton.com&#x2F;geotools&#x2F;fun&#x2F;anagram&#x2F;2017&#x2F;12&#x2F;20&#x2F;anagrams-world.html><h1>Finding anagrams of place names (in the World)</h1></a>
+      <a class="title" href=https:&#x2F;&#x2F;blog.ianturton.com&#x2F;geotools,&#x2F;fun,&#x2F;anagram&#x2F;2017&#x2F;12&#x2F;20&#x2F;anagrams.html><h1>Finding anagrams of place names (in GB)</h1></a>
       <h5>2017-12-20T00:00:00.000Z</h5>
       <i class="author">OSGeo Website Committee</i>
       <div class="content">
         
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;blog.ianturton.com&#x2F;geotools,&#x2F;fun,&#x2F;anagram&#x2F;2017&#x2F;12&#x2F;20&#x2F;anagrams.html><h1>Finding anagrams of place names (in GB)</h1></a>
+      <a class="title" href=https:&#x2F;&#x2F;blog.ianturton.com&#x2F;geotools&#x2F;fun&#x2F;anagram&#x2F;2017&#x2F;12&#x2F;20&#x2F;anagrams-world.html><h1>Finding anagrams of place names (in the World)</h1></a>
       <h5>2017-12-20T00:00:00.000Z</h5>
       <i class="author">OSGeo Website Committee</i>
       <div class="content">
