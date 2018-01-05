@@ -26,7 +26,7 @@
         program_year: 2017
       - 
         display_name: "Alexius Adhitya K."
-        github_updated: 1515172314222
+        github_updated: 1515177165840
         id: 6455949881507840
         program_year: 2017
       - 
@@ -37,22 +37,22 @@
         program_year: 2017
       - 
         display_name: "Gaurav"
-        github_updated: 1515172314911
+        github_updated: 1515177166067
         id: 6188768153305088
         program_year: 2017
       - 
         display_name: "Kalyan C"
-        github_updated: 1515172314341
+        github_updated: 1515177165852
         id: 5351898834010112
         program_year: 2017
       - 
         display_name: "Mehant Kammakomati"
-        github_updated: 1515172314287
+        github_updated: 1515177165836
         id: 4883574836690944
         program_year: 2017
       - 
         display_name: "Moses Paul"
-        github_updated: 1515172314341
+        github_updated: 1515177165816
         id: 5656316687155200
         program_year: 2017
       - 
@@ -69,7 +69,7 @@
         program_year: 2017
       - 
         display_name: "Tanmay Anand"
-        github_updated: 1515172314341
+        github_updated: 1515177165860
         id: 5139924388937728
         program_year: 2017
     mailing_list: "https://groups.google.com/forum/#!forum/score-community"
@@ -105,7 +105,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/jboss-outreach/gci"
-    completed_task_instance_count: 1022
+    completed_task_instance_count: 1026
     contact_email: null
     description: "JBoss Community is a community of open source projects. The community hosts a large number of projects that are written in various programming languages. The primary language is Java. But there are also projects that are written in Ruby, PHP, Node and other languages.\n\nProject categories range from better testing support over IDEs, application servers, application and performance monitoring to micro-services."
     dev_mailing_list: null
@@ -119,22 +119,22 @@
     leaders: 
       - 
         display_name: "Anhai Wang"
-        github_updated: 1515172313455
+        github_updated: 1515177164922
         id: 6387345966235648
         program_year: 2017
       - 
         display_name: "Aniol Vicens Lloret"
-        github_updated: 1515172313974
+        github_updated: 1515177165107
         id: 5258573665796096
         program_year: 2017
       - 
         display_name: "Divyansh Kulshreshtha"
-        github_updated: 1515172313457
+        github_updated: 1515177164951
         id: 4752725168357376
         program_year: 2017
       - 
         display_name: "Jatin Luthra"
-        github_updated: 1515172313465
+        github_updated: 1515177165001
         id: 4598388202930176
         program_year: 2017
       - 
@@ -157,17 +157,17 @@
         program_year: 2017
       - 
         display_name: "Thomas"
-        github_updated: 1515172313525
+        github_updated: 1515177164982
         id: 5043034557251584
         program_year: 2017
       - 
         display_name: "Vishwas Adiga"
-        github_updated: 1515172313525
+        github_updated: 1515177164982
         id: 6049660470820864
         program_year: 2017
       - 
         display_name: "Zhao Wei Liew"
-        github_updated: 1515172313533
+        github_updated: 1515177164958
         id: 6020884257046528
         program_year: 2017
     mailing_list: "https://groups.google.com/forum/#!forum/jboss-community-gci/"
@@ -205,7 +205,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/fossasia/fossasia"
-    completed_task_instance_count: 961
+    completed_task_instance_count: 963
     contact_email: "fossasia@googlegroups.com"
     description: "FOSSASIA develops Open Source software and hardware for conversational AIs, science and event management with a global developer community from its base in Asia. The organization also organizes Open Technology events, runs coding programs and the Codeheat development contest. The annual FOSSASIA Summit is the premier Open Technology event in Asia for developers, contributors, start-ups, and technology companies. FOSSASIA was founded in 2009 by Mario Behling and Hong Phuc Dang."
     dev_mailing_list: null
@@ -232,7 +232,7 @@
       - 
         display_name: "Arjun Pandey"
         github_account: "arjunpandey2003"
-        github_updated: 1514999724824
+        github_updated: 1515177171260
         id: 5654974786699264
         program_year: 2017
       - 
@@ -243,7 +243,7 @@
         program_year: 2017
       - 
         display_name: "P10YP1T1"
-        github_updated: 1515172319716
+        github_updated: 1515177171251
         id: 5998925498548224
         program_year: 2017
       - 
@@ -260,12 +260,12 @@
         program_year: 2017
       - 
         display_name: "Samyak Jain"
-        github_updated: 1515172319850
+        github_updated: 1515177171474
         id: 5596372331921408
         program_year: 2017
       - 
         display_name: "Yash Kothari"
-        github_updated: 1515172319917
+        github_updated: 1515177171537
         id: 5188592139763712
         program_year: 2017
       - 
@@ -327,27 +327,27 @@
     leaders: 
       - 
         display_name: "Aarnav Bos"
-        github_updated: 1515172313579
+        github_updated: 1515177165168
         id: 5288208805920768
         program_year: 2017
       - 
         display_name: "Aditya"
-        github_updated: 1515172314128
+        github_updated: 1515177165473
         id: 6573208931139584
         program_year: 2017
       - 
         display_name: "Alan Zhu"
-        github_updated: 1515172313825
+        github_updated: 1515177165212
         id: 6075101978034176
         program_year: 2017
       - 
         display_name: "Hizkia Felix"
-        github_updated: 1515172314188
+        github_updated: 1515177165515
         id: 5631601239130112
         program_year: 2017
       - 
         display_name: "ItsMyFirstGame"
-        github_updated: 1515172313730
+        github_updated: 1515177165156
         id: 4674876470198272
         program_year: 2017
       - 
@@ -358,22 +358,22 @@
         program_year: 2017
       - 
         display_name: "Rajat Agarwal"
-        github_updated: 1515172314356
+        github_updated: 1515177165413
         id: 6196399832039424
         program_year: 2017
       - 
         display_name: "Shiguy"
-        github_updated: 1515172313638
+        github_updated: 1515177165152
         id: 4980642062270464
         program_year: 2017
       - 
         display_name: "Shreyas Vinaya"
-        github_updated: 1515172314356
+        github_updated: 1515177165455
         id: 6526589535780864
         program_year: 2017
       - 
         display_name: "Utkarsh Verma"
-        github_updated: 1515172314095
+        github_updated: 1515177165422
         id: 4852468695433216
         program_year: 2017
     mailing_list: "https://groups.google.com/d/forum/openwisp/join"
@@ -423,12 +423,12 @@
     leaders: 
       - 
         display_name: "Agape Gonzales"
-        github_updated: 1515172312904
+        github_updated: 1515177164446
         id: 5125138225823744
         program_year: 2017
       - 
         display_name: "caleb Parks"
-        github_updated: 1515172312857
+        github_updated: 1515177164453
         id: 4982403334406144
         program_year: 2017
       - 
@@ -439,37 +439,37 @@
         program_year: 2017
       - 
         display_name: "Lucas Prieels"
-        github_updated: 1515172312784
+        github_updated: 1515177164522
         id: 6244362344202240
         program_year: 2017
       - 
         display_name: "Mahdi Dolatabadi"
-        github_updated: 1515172312842
+        github_updated: 1515177164448
         id: 4776983546298368
         program_year: 2017
       - 
         display_name: "Michal Hanus"
-        github_updated: 1515172312891
+        github_updated: 1515177164463
         id: 6596174926577664
         program_year: 2017
       - 
         display_name: "Mitesh Gulecha"
-        github_updated: 1515172312859
+        github_updated: 1515177164505
         id: 5131978431004672
         program_year: 2017
       - 
         display_name: "Naseef"
-        github_updated: 1515172312908
+        github_updated: 1515177164468
         id: 4654514969772032
         program_year: 2017
       - 
         display_name: "Siddharth Nayak"
-        github_updated: 1515172312883
+        github_updated: 1515177164513
         id: 5451995370487808
         program_year: 2017
       - 
         display_name: "Wasim Afser"
-        github_updated: 1515172312818
+        github_updated: 1515177164493
         id: 5934537118842880
         program_year: 2017
     mailing_list: "http://brlcad.org/wiki/Mailing_lists"
@@ -514,7 +514,7 @@
       image: "images/chat.png"
       platform: "OTHER"
       url: "https://chat.sugarlabs.org"
-    completed_task_instance_count: 617
+    completed_task_instance_count: 618
     contact_email: "walter@sugarlabs.org"
     description: "Sugar Labs, a volunteer-driven, non-profit organization, had its origins in the One Laptop Per Child project and is now a member project of the Software Freedom Conservancy. The mission of Sugar Labs is to support the Sugar community of users and developers and establish regional, autonomous “Sugar Labs” around the world to help learners “learn how to learn” by tailoring Sugar to local languages and curricula.\n\nAt Sugar Labs, we make a collection of tools that learners use to explore, discover, create, and reflect. We distribute these tools freely and encourage our users to appropriate them, taking ownership and responsibility for their learning.\n\nSugar is both a desktop and a collection of Activities. Activities, as the name implies, are Apps that involve active engagement from the learner. Activities automatically save results to a journal, where reflections are recorded. Activity instances can be shared between learners; many support real-time collaboration. Sugar collaboration works \"peer to peer,\" in a classroom or under a tree; Sugar does not require the Internet.\n\nThe Sugar Journal records everything a learner does using Sugar. There is no need to remember to click a Save Button. The focus is on the activity, not the computer. The Journal is also a place for reflection, where learners and their teachers can monitor progress.\n\nA subset of the Sugar platform is also available as an Android app and in a web browser."
     dev_mailing_list: null
@@ -528,22 +528,22 @@
     leaders: 
       - 
         display_name: "Capucine Coudert"
-        github_updated: 1515172315183
+        github_updated: 1515177166946
         id: 5955020329582592
         program_year: 2017
       - 
         display_name: "Emily Ong Hui Qi"
-        github_updated: 1515172314875
+        github_updated: 1515177166267
         id: 6232468103364608
         program_year: 2017
       - 
         display_name: "Euan Ong"
-        github_updated: 1515172314885
+        github_updated: 1515177166272
         id: 6144107338530816
         program_year: 2017
       - 
         display_name: "Kanassanun Namwong"
-        github_updated: 1515172314846
+        github_updated: 1515177166227
         id: 4566876657025024
         program_year: 2017
       - 
@@ -554,27 +554,27 @@
         program_year: 2017
       - 
         display_name: "Matias Martinez"
-        github_updated: 1515172314902
+        github_updated: 1515177166291
         id: 5118462437359616
         program_year: 2017
       - 
         display_name: "namansingh"
-        github_updated: 1515172314902
+        github_updated: 1515177166282
         id: 5695562965843968
         program_year: 2017
       - 
         display_name: "pipix"
-        github_updated: 1515172314865
+        github_updated: 1515177166219
         id: 5501564124921856
         program_year: 2017
       - 
         display_name: "Sanatan Chaudhary"
-        github_updated: 1515172314902
+        github_updated: 1515177166215
         id: 4710024200847360
         program_year: 2017
       - 
         display_name: "Satyam Kumar"
-        github_updated: 1515172314915
+        github_updated: 1515177166265
         id: 5188049791090688
         program_year: 2017
     mailing_list: "http://lists.sugarlabs.org/"
@@ -624,52 +624,52 @@
     leaders: 
       - 
         display_name: "Accelerator"
-        github_updated: 1515172313732
+        github_updated: 1515177165165
         id: 5456412610134016
         program_year: 2017
       - 
         display_name: "Daniel Lim"
-        github_updated: 1515172313841
+        github_updated: 1515177165185
         id: 5270417574985728
         program_year: 2017
       - 
         display_name: "Heesen Ponnusawmy"
-        github_updated: 1515172313769
+        github_updated: 1515177165137
         id: 5164862177017856
         program_year: 2017
       - 
         display_name: "Ivan Fonseca"
-        github_updated: 1515172313841
+        github_updated: 1515177165315
         id: 6742578886082560
         program_year: 2017
       - 
         display_name: "Konrad Krawiec"
-        github_updated: 1515172313752
+        github_updated: 1515177165174
         id: 5887809686601728
         program_year: 2017
       - 
         display_name: "Marcin Mikołajczak"
-        github_updated: 1515172313764
+        github_updated: 1515177165100
         id: 5470339310026752
         program_year: 2017
       - 
         display_name: "Nissaar Gopee"
-        github_updated: 1515172313757
+        github_updated: 1515177165153
         id: 5859320807817216
         program_year: 2017
       - 
         display_name: "Qazi Omair Ahmed"
-        github_updated: 1515172313770
+        github_updated: 1515177165105
         id: 5047942119424000
         program_year: 2017
       - 
         display_name: "Simran Singh"
-        github_updated: 1515172313819
+        github_updated: 1515177165188
         id: 5455531898568704
         program_year: 2017
       - 
         display_name: "WinningIt"
-        github_updated: 1515172313805
+        github_updated: 1515177165107
         id: 5420514023571456
         program_year: 2017
     mailing_list: "https://lists.ubuntu.com/mailman/listinfo/ubuntu-soc"
@@ -879,7 +879,7 @@
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "https://www.mediawiki.org/wiki/MediaWiki_on_IRC"
-    completed_task_instance_count: 587
+    completed_task_instance_count: 588
     contact_email: null
     description: "Wikimedia believes that knowledge should be free for every human being. We prioritize efforts that empower disadvantaged and underrepresented communities, and that help overcome barriers to participation. We believe in mass collaboration, diversity and consensus building to achieve our goals.\r\nWikipedia has become the fifth most-visited site in the world, used by more than 400 million people every month in more than 280 languages. We have more content projects including Wikimedia Commons, Wikidata, or Wikisource. We also maintain the MediaWiki software engine and a wide collection of free and open source software projects around it.\r\nBut there is much more we can do: stabilize infrastructure, increase participation, improve quality, increase reach, encourage innovation.\r\nYou can help to these goals in many ways and become part of an international community!"
     dev_mailing_list: null
@@ -893,52 +893,52 @@
     leaders: 
       - 
         display_name: "Albert Wolszon"
-        github_updated: 1515172315296
+        github_updated: 1515177166021
         id: 4879989344305152
         program_year: 2017
       - 
         display_name: "C. F. Fairfeld"
-        github_updated: 1515172315241
+        github_updated: 1515177166128
         id: 4759011792519168
         program_year: 2017
       - 
         display_name: "David Sn"
-        github_updated: 1515172315706
+        github_updated: 1515177166460
         id: 6744722544525312
         program_year: 2017
       - 
         display_name: "Gabe Mitnick"
-        github_updated: 1515172315288
+        github_updated: 1515177166101
         id: 5394768580313088
         program_year: 2017
       - 
         display_name: "Phantom42"
-        github_updated: 1515172315243
+        github_updated: 1515177166119
         id: 5855143146815488
         program_year: 2017
       - 
         display_name: "pppery"
-        github_updated: 1515172315249
+        github_updated: 1515177166182
         id: 5884375231102976
         program_year: 2017
       - 
         display_name: "Rafid Aslam"
-        github_updated: 1515172315212
+        github_updated: 1515177166117
         id: 4789845765390336
         program_year: 2017
       - 
         display_name: "Ryan Chang"
-        github_updated: 1515172315493
+        github_updated: 1515177166358
         id: 4891685077123072
         program_year: 2017
       - 
         display_name: "Tarun Prasad"
-        github_updated: 1515172315233
+        github_updated: 1515177166031
         id: 4551707939831808
         program_year: 2017
       - 
         display_name: "Yifei He"
-        github_updated: 1515172315249
+        github_updated: 1515177166136
         id: 5910548224933888
         program_year: 2017
     mailing_list: "https://lists.wikimedia.org/mailman/listinfo/wikitech-l"
@@ -1134,7 +1134,7 @@
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "irc://irc.freenode.net/musicbrainz"
-    completed_task_instance_count: 566
+    completed_task_instance_count: 567
     contact_email: "support@metabrainz.org"
     description: "The MetaBrainz Foundation provides the backbone for a number of projects rooted in crowd sourcing open data, namely:\n\n- [MusicBrainz](https://musicbrainz.org/): open music metadata database\n- [MusicBrainz Picard](https://picard.musicbrainz.org/): music file tagger, using data from MusicBrainz\n- [ListenBrainz](https://listenbrainz.org/): repository of listen data\n- [AcousticBrainz](https://acousticbrainz.org/): crowd sourced database of acoustic information for music\n- [CritiqueBrainz](https://critiquebrainz.org/): Creative Commons-licensed reviews\n- [BookBrainz](https://bookbrainz.org/): open \"book\" database\n- [Cover Art Archive](https://coverartarchive.org/): repository of album cover art"
     dev_mailing_list: null
@@ -1148,52 +1148,52 @@
     leaders: 
       - 
         display_name: "Annebelle Olminkhof"
-        github_updated: 1515172314783
+        github_updated: 1515177166583
         id: 4916088141774848
         program_year: 2017
       - 
         display_name: "Ashish Kamathi-1"
-        github_updated: 1515172314853
+        github_updated: 1515177166607
         id: 6663981454327808
         program_year: 2017
       - 
         display_name: "Enjeck Cleopatra"
-        github_updated: 1515172314700
+        github_updated: 1515177166602
         id: 5982403564666880
         program_year: 2017
       - 
         display_name: "Eshan Singh"
-        github_updated: 1515172314840
+        github_updated: 1515177166590
         id: 5077106331484160
         program_year: 2017
       - 
         display_name: "Hartama"
-        github_updated: 1515172314675
+        github_updated: 1515177166694
         id: 5976468456734720
         program_year: 2017
       - 
         display_name: "hasia"
-        github_updated: 1515172314862
+        github_updated: 1515177166648
         id: 5953782171041792
         program_year: 2017
       - 
         display_name: "J Young Kim"
-        github_updated: 1515172314809
+        github_updated: 1515177166661
         id: 6367732863860736
         program_year: 2017
       - 
         display_name: "kartikohri1712"
-        github_updated: 1515172315103
+        github_updated: 1515177166849
         id: 4571726790787072
         program_year: 2017
       - 
         display_name: "Shameek Dutta"
-        github_updated: 1515172315301
+        github_updated: 1515177166829
         id: 4650477700513792
         program_year: 2017
       - 
         display_name: "Shreya Kannan"
-        github_updated: 1515172314843
+        github_updated: 1515177166696
         id: 4955683604660224
         program_year: 2017
     mailing_list: "https://community.metabrainz.org/"
@@ -1231,7 +1231,7 @@
       image: "images/logos/zulip.png"
       platform: "ZULIP"
       url: "https://chat.zulip.org"
-    completed_task_instance_count: 559
+    completed_task_instance_count: 560
     contact_email: null
     description: "Zulip is a powerful, open source group chat application. It competes with Slack, IRC, Jabber, and dozens of other group chat tools designed to help teams (whether open source projects or at companies) collaborate effectively. Zulip supports fast search, drag-and-drop file uploads, image previews, group private messages, audible notifications, missed-message emails, desktop apps, markdown message rendering, and [much more](https://zulipchat.com/features) -- essentially everything you might want.\r\n\r\nUnlike Slack, it’s open source and has a welcoming community of over 350 volunteer contributors. Unlike IRC/Jabber/etc., Zulip is a complete, modern application, with a web version, mobile apps for iOS and Android, and desktop apps for Mac/Linux/Windows. And unlike all other popular group chat tools, Zulip is designed to make conversations more efficient through its unique threading system that helps teams manage large numbers of messages. In particular, Zulip makes it easy to have multiple conversations at the same time with the same groups of people, and easy to catch up on hundreds or thousands of messages quickly without missing anything important.\r\n\r\nZulip is known for its extensive developer documentation (100,000 words and growing!), code quality, and tooling, and thus is a great project to work on to learn how to build a high-quality web application.\r\n\r\nWe have tons of tasks across all parts of the Zulip project, and we're especially excited about expanding Zulip's library of bots and integrations!"
     dev_mailing_list: null
@@ -1245,37 +1245,37 @@
     leaders: 
       - 
         display_name: "Freddie Miller"
-        github_updated: 1515172314949
+        github_updated: 1515177166313
         id: 5962704562946048
         program_year: 2017
       - 
         display_name: "Ivan Trajkov"
-        github_updated: 1515172314941
+        github_updated: 1515177166338
         id: 6494687667945472
         program_year: 2017
       - 
         display_name: "jwzhang"
-        github_updated: 1515172314926
+        github_updated: 1515177166348
         id: 6577413972557824
         program_year: 2017
       - 
         display_name: "Marco Burstein"
-        github_updated: 1515172314972
+        github_updated: 1515177166320
         id: 4597515116609536
         program_year: 2017
       - 
         display_name: "Pranav Kulkarni"
-        github_updated: 1515172315270
+        github_updated: 1515177166727
         id: 5648992727728128
         program_year: 2017
       - 
         display_name: "Priyank Patel"
-        github_updated: 1515172314974
+        github_updated: 1515177166357
         id: 5679157667168256
         program_year: 2017
       - 
         display_name: "steve"
-        github_updated: 1515172314915
+        github_updated: 1515177166390
         id: 5056135214137344
         program_year: 2017
       - 
@@ -1286,7 +1286,7 @@
         program_year: 2017
       - 
         display_name: "Viraat Chandra"
-        github_updated: 1515172314922
+        github_updated: 1515177166355
         id: 5432437968470016
         program_year: 2017
       - 
@@ -1345,22 +1345,22 @@
     leaders: 
       - 
         display_name: "Aaron Elson Phangestu"
-        github_updated: 1515172313045
+        github_updated: 1515177164552
         id: 5355071606882304
         program_year: 2017
       - 
         display_name: "Adithi M"
-        github_updated: 1515172313359
+        github_updated: 1515177164823
         id: 5976291549380608
         program_year: 2017
       - 
         display_name: "Adrien Zier"
-        github_updated: 1515172313256
+        github_updated: 1515177164496
         id: 6080025218514944
         program_year: 2017
       - 
         display_name: "Mateusz Grzonka"
-        github_updated: 1515172313053
+        github_updated: 1515177164543
         id: 4662563470049280
         program_year: 2017
       - 
@@ -1371,27 +1371,27 @@
         program_year: 2017
       - 
         display_name: "nulxis"
-        github_updated: 1515172313057
+        github_updated: 1515177164538
         id: 6241077499527168
         program_year: 2017
       - 
         display_name: "Rohan25"
-        github_updated: 1515172313017
+        github_updated: 1515177164673
         id: 6174516772339712
         program_year: 2017
       - 
         display_name: "Shaurya Nathan"
-        github_updated: 1515172313379
+        github_updated: 1515177164959
         id: 4988221043769344
         program_year: 2017
       - 
         display_name: "Shreya Karra"
-        github_updated: 1515172313040
+        github_updated: 1515177164583
         id: 4874016647020544
         program_year: 2017
       - 
         display_name: "Vishwas Adiga"
-        github_updated: 1515172313059
+        github_updated: 1515177164630
         id: 6049660470820864
         program_year: 2017
     mailing_list: "https://forums.librehealth.io/gci"
@@ -1444,22 +1444,22 @@
         program_year: 2017
       - 
         display_name: "Aryaman Agrawal"
-        github_updated: 1515172314075
+        github_updated: 1515177165509
         id: 4770355203801088
         program_year: 2017
       - 
         display_name: "Erika Tan"
-        github_updated: 1515172314712
+        github_updated: 1515177165685
         id: 4717477579718656
         program_year: 2017
       - 
         display_name: "Fidella"
-        github_updated: 1515172314128
+        github_updated: 1515177165555
         id: 5681230525759488
         program_year: 2017
       - 
         display_name: "Mu'aaz Kasker"
-        github_updated: 1515172314134
+        github_updated: 1515177165489
         id: 5851158759342080
         program_year: 2017
       - 
@@ -1470,12 +1470,12 @@
         program_year: 2017
       - 
         display_name: "Sameer"
-        github_updated: 1515172314712
+        github_updated: 1515177165872
         id: 4555590061785088
         program_year: 2017
       - 
         display_name: "Valentun"
-        github_updated: 1515172314208
+        github_updated: 1515177165555
         id: 6017587265667072
         program_year: 2017
       - 
@@ -1486,7 +1486,7 @@
         program_year: 2017
       - 
         display_name: "Yuyuan Luo"
-        github_updated: 1515172314201
+        github_updated: 1515177165555
         id: 5105422807597056
         program_year: 2017
     mailing_list: "http://systers.anitab.org"
@@ -1523,7 +1523,7 @@
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "irc://chat.freenode.net/haiku"
-    completed_task_instance_count: 456
+    completed_task_instance_count: 457
     contact_email: "contact@haiku-os.org"
     description: "Haiku is named after the classical three-line Japanese poetry form. Haiku poetry is known for its quiet power, elegance and simplicity - among the core qualities of BeOS which we aim to recreate in Haiku. BeOS included some haiku in its user interface, in the form of network error messages displayed by its web browser.\n\nWhile Haiku is still in Alpha stage and has no official stable release, another goal for the project is to share knowledge about operating system development, with a clean code base and a community ready to help newcomers learn how things are done."
     dev_mailing_list: null
@@ -1537,7 +1537,7 @@
     leaders: 
       - 
         display_name: "Bach Nguyen"
-        github_updated: 1515172313353
+        github_updated: 1515177164665
         id: 5407628760973312
         program_year: 2017
       - 
@@ -1548,42 +1548,42 @@
         program_year: 2017
       - 
         display_name: "Duong Dac"
-        github_updated: 1515172313357
+        github_updated: 1515177164738
         id: 6181119043043328
         program_year: 2017
       - 
         display_name: "Han Haoxuan"
-        github_updated: 1515172313304
+        github_updated: 1515177164690
         id: 6025453900922880
         program_year: 2017
       - 
         display_name: "Leorize"
-        github_updated: 1515172313335
+        github_updated: 1515177164666
         id: 6702015805652992
         program_year: 2017
       - 
         display_name: "Max Levchuk"
-        github_updated: 1515172313376
+        github_updated: 1515177164723
         id: 6240118648078336
         program_year: 2017
       - 
         display_name: "Mochammad Nur Afandi"
-        github_updated: 1515172313304
+        github_updated: 1515177164726
         id: 5177112698814464
         program_year: 2017
       - 
         display_name: "Ng Young Shung"
-        github_updated: 1515172313308
+        github_updated: 1515177164665
         id: 5162635370692608
         program_year: 2017
       - 
         display_name: "Owen"
-        github_updated: 1515172313652
+        github_updated: 1515177164898
         id: 6035804772106240
         program_year: 2017
       - 
         display_name: "Trần Thái Sơn"
-        github_updated: 1515172313190
+        github_updated: 1515177164547
         id: 5951955736199168
         program_year: 2017
     mailing_list: "https://www.haiku-os.org/community/ml"
@@ -1730,52 +1730,52 @@
     leaders: 
       - 
         display_name: "Alejandro Heredia"
-        github_updated: 1515172314862
+        github_updated: 1515177165852
         id: 5243643889713152
         program_year: 2017
       - 
         display_name: "Andreas Lukita"
-        github_updated: 1515172314793
+        github_updated: 1515177165831
         id: 4692396648431616
         program_year: 2017
       - 
         display_name: "Chandra Chou"
-        github_updated: 1515172314712
+        github_updated: 1515177165705
         id: 6189747405848576
         program_year: 2017
       - 
         display_name: "Jayanth Koduru"
-        github_updated: 1515172314650
+        github_updated: 1515177165684
         id: 6159776452968448
         program_year: 2017
       - 
         display_name: "Jude Birch"
-        github_updated: 1515172315167
+        github_updated: 1515177165995
         id: 6472246329606144
         program_year: 2017
       - 
         display_name: "Mateusz Komajda"
-        github_updated: 1515172314765
+        github_updated: 1515177165797
         id: 4979968129892352
         program_year: 2017
       - 
         display_name: "Sarthak Agrawal"
-        github_updated: 1515172314728
+        github_updated: 1515177165782
         id: 5394417575788544
         program_year: 2017
       - 
         display_name: "Siddh Jain"
-        github_updated: 1515172314728
+        github_updated: 1515177165820
         id: 6267827092717568
         program_year: 2017
       - 
         display_name: "Yudhistira G.S."
-        github_updated: 1515172314835
+        github_updated: 1515177165717
         id: 4611923993690112
         program_year: 2017
       - 
         display_name: "Łukasz Ameljan"
-        github_updated: 1515172314802
+        github_updated: 1515177165750
         id: 5096542534893568
         program_year: 2017
     mailing_list: "http://catrob.at/PocketCodeUserForum"
@@ -1822,7 +1822,7 @@
     leaders: 
       - 
         display_name: "Alexander Voronkov"
-        github_updated: 1515172314955
+        github_updated: 1515177166387
         id: 5057457392975872
         program_year: 2017
       - 
@@ -1839,7 +1839,7 @@
         program_year: 2017
       - 
         display_name: "Daniel O'Brien"
-        github_updated: 1515172315257
+        github_updated: 1515177166457
         id: 4973831292715008
         program_year: 2017
       - 
@@ -1850,7 +1850,7 @@
         program_year: 2017
       - 
         display_name: "Marcos Gómez"
-        github_updated: 1515172314881
+        github_updated: 1515177166162
         id: 5557452655296512
         program_year: 2017
       - 
@@ -1861,12 +1861,12 @@
         program_year: 2017
       - 
         display_name: "Shukai Ni"
-        github_updated: 1515172314982
+        github_updated: 1515177166261
         id: 5178132149567488
         program_year: 2017
       - 
         display_name: "Tio Irawan"
-        github_updated: 1515172314988
+        github_updated: 1515177166236
         id: 6214590973083648
         program_year: 2017
     mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
@@ -1902,7 +1902,7 @@
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "irc://irc.freenode.net/osgeo"
-    completed_task_instance_count: 383
+    completed_task_instance_count: 384
     contact_email: "gsoc-admin@osgeo.org"
     description: "OSGeo is a non-profit organization serving as an umbrella organization for the Open Source Geospatial community in general and several code projects in particular:\n\n## Content Management Systems\n\nGeoNode\n\n## Desktop Applications\n\nGRASS GIS\ngvSIG\nMarble\nQGIS\n\n## Geospatial Libraries\n\nFDO\nGDAL/OGR\nGEOS\nGeoTools\nOrfeo ToolBox (OTB)\nOSSIM\nPostGIS\n\n## Metadata Catalogs\n\nGeoNetwork\npycsw\n\n## Web Mapping\n\ndeegree\ngeomajas\nGeoMOOSE\nGeoServer\nMapbender\nMapFish\nMapGuide Open Source\nMapServer\nOpenLayers\n\n## Incubating Projects\n\nOpticks\nMetaCRS\nistSOS\nPyWPS\nTeam Engine\nZOO-Project\n\n## Outreach Projects\n\nGeoForAll - Education and Curriculum\nOSGeo-Live\n\n## OSGeo Community Projects\n\nGeoinformatica\nGeoWebCache\nMapProxy\npgRouting\nPostal Address Geo-Coder\nVirtual Terrain Project\n\nWe host regional and international FOSS4G conferences with typical attendance of 500-1000+ geospatial developers, industry and government leaders, and researchers. Our mailing lists collectively go out to ~ 29,500 unique subscribers."
     dev_mailing_list: null
@@ -1917,47 +1917,47 @@
     leaders: 
       - 
         display_name: "Dev.Mittal"
-        github_updated: 1515172314284
+        github_updated: 1515177165181
         id: 6746416229646336
         program_year: 2017
       - 
         display_name: "Eric1234"
-        github_updated: 1515172314902
+        github_updated: 1515177165502
         id: 6056683136614400
         program_year: 2017
       - 
         display_name: "Ethan Zhao"
-        github_updated: 1515172314277
+        github_updated: 1515177165188
         id: 6556823228252160
         program_year: 2017
       - 
         display_name: "Jason Wong-1"
-        github_updated: 1515172314290
+        github_updated: 1515177165204
         id: 6503206198706176
         program_year: 2017
       - 
         display_name: "Jayanth Vasanth kumar"
-        github_updated: 1515172314262
+        github_updated: 1515177165179
         id: 4924440838144000
         program_year: 2017
       - 
         display_name: "Jerry Huang"
-        github_updated: 1515172314267
+        github_updated: 1515177165202
         id: 5364363542134784
         program_year: 2017
       - 
         display_name: "Shailesh Kadam"
-        github_updated: 1515172314278
+        github_updated: 1515177165238
         id: 6663565572308992
         program_year: 2017
       - 
         display_name: "Sunveer Singh"
-        github_updated: 1515172314712
+        github_updated: 1515177165469
         id: 5325877816590336
         program_year: 2017
       - 
         display_name: "Vinay Jagan"
-        github_updated: 1515172314295
+        github_updated: 1515177165221
         id: 4962896129818624
         program_year: 2017
     mailing_list: "http://www.osgeo.org/content/faq/mailing_lists.html"
@@ -2025,12 +2025,12 @@
     leaders: 
       - 
         display_name: "Aadi Bajpai"
-        github_updated: 1515172313441
+        github_updated: 1515177164904
         id: 4695623712374784
         program_year: 2017
       - 
         display_name: "Harry Yu"
-        github_updated: 1515172313147
+        github_updated: 1515177164785
         id: 5995126599974912
         program_year: 2017
       - 
@@ -2047,27 +2047,27 @@
         program_year: 2017
       - 
         display_name: "John Chew"
-        github_updated: 1515172313157
+        github_updated: 1515177164777
         id: 5383323004174336
         program_year: 2017
       - 
         display_name: "KESHAV GOYAL"
-        github_updated: 1515172313209
+        github_updated: 1515177164749
         id: 5195272021868544
         program_year: 2017
       - 
         display_name: "Matej Plavevski"
-        github_updated: 1515172313194
+        github_updated: 1515177164737
         id: 6680984424546304
         program_year: 2017
       - 
         display_name: "Nikunj Taneja"
-        github_updated: 1515172313188
+        github_updated: 1515177164738
         id: 5199453306748928
         program_year: 2017
       - 
         display_name: "Satvik Shrivastava"
-        github_updated: 1515172313117
+        github_updated: 1515177164776
         id: 5910592114130944
         program_year: 2017
       - 
@@ -2109,7 +2109,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/openMF/mifos"
-    completed_task_instance_count: 351
+    completed_task_instance_count: 352
     contact_email: "info@mifos.org"
     description: "The Mifos Initiative is a US-based 501(c)3 non-profit whose mission is to speed the elimination of poverty by leading a global community that builds, supports, and uses Mifos X, a free and open source banking platform to bring responsible financial services to the world’s 2 billion poor and unbanked. We combine fintech, the cloud, mobile apps, and open source community to create a game-changing approach to technology-enabled financial inclusion. With Mifos, you can help build cutting edge web and mobile banking apps, research trends in financial services, analyze new fintech innovations, design UX for consumer banking, enable collaboration amongst our global community, and conduct outreach for a global nonprofit.\n\nMore than 7 million clients are being reached by 300 financial institutions & fintech innovators who use Mifos software to power their operations across 40 countries. They are supported by a global community of 110 deployment partners & hundreds of volunteers who sustainably build impactful innovations in digital financial services. \n\nFor the past decade, we've been at the forefront of transformative technology for financial services to the poor. Our technology stack provides complete banking infrastructure that is cloud-ready, mobile-enabled, and scalable to the billions in need of cost-effective financial services. Our projects center around web & mobile apps using APIs from Apache Fineract, the world's only API-driven open source platform for financial inclusion."
     dev_mailing_list: null
@@ -2129,17 +2129,17 @@
         program_year: 2017
       - 
         display_name: "Chirag Gupta"
-        github_updated: 1515172314515
+        github_updated: 1515177166136
         id: 6471766769664000
         program_year: 2017
       - 
         display_name: "Daniel Genkin"
-        github_updated: 1515172314039
+        github_updated: 1515177165838
         id: 6365669266292736
         program_year: 2017
       - 
         display_name: "janicek"
-        github_updated: 1515172313979
+        github_updated: 1515177165875
         id: 5742982516965376
         program_year: 2017
       - 
@@ -2150,22 +2150,22 @@
         program_year: 2017
       - 
         display_name: "Matthew Katz"
-        github_updated: 1515172314922
+        github_updated: 1515177166042
         id: 4529584303243264
         program_year: 2017
       - 
         display_name: "Shivam kumar Singh"
-        github_updated: 1515172314556
+        github_updated: 1515177165995
         id: 5079096713281536
         program_year: 2017
       - 
         display_name: "Vaibhav Vijay"
-        github_updated: 1515172314116
+        github_updated: 1515177165869
         id: 6329140703657984
         program_year: 2017
       - 
         display_name: "Yibin Long"
-        github_updated: 1515172314712
+        github_updated: 1515177166195
         id: 5828654942650368
         program_year: 2017
     mailing_list: "http://mifos.org/resources/community/communications/#mailing-lists"
@@ -2205,7 +2205,7 @@
       image: "images/chat.png"
       platform: "OTHER"
       url: "http://dev.xwiki.org/xwiki/bin/view/Community/Chat"
-    completed_task_instance_count: 339
+    completed_task_instance_count: 340
     contact_email: "devs@xwiki.org"
     description: "XWiki is an open source software development platform based on the wiki principles, under the LGPL license. In addition to being a full-featured wiki, it is also a second generation wiki allowing effortless development of collaborative web applications. On top of this platform a plethora of applications are developed, targeted mainly on aiding enterprise-level needs.\n\nXWiki has a vibrant community of developers and users, consisting of individual users as well as organizations around the world that are using XWiki for their own Communities or Intranets.\n\nWithin XWiki, the development involves several levels: server-side platform programming in Java with Servlet technologies, server-side application development in Velocity, Groovy, and client-side development in JavaScript, CSS and HTML."
     dev_mailing_list: null
@@ -2225,12 +2225,12 @@
         program_year: 2017
       - 
         display_name: "Arun Pattni"
-        github_updated: 1515172313354
+        github_updated: 1515177164784
         id: 6534301317332992
         program_year: 2017
       - 
         display_name: "Robert Vulpe"
-        github_updated: 1515172313359
+        github_updated: 1515177164819
         id: 4528811343347712
         program_year: 2017
       - 
@@ -2297,12 +2297,12 @@
     leaders: 
       - 
         display_name: "Bartłomiej Rasztabiga"
-        github_updated: 1515172316936
+        github_updated: 1515177168922
         id: 4851396136402944
         program_year: 2017
       - 
         display_name: "Fawwaz Yusran"
-        github_updated: 1515172316895
+        github_updated: 1515177168943
         id: 4893093289525248
         program_year: 2017
       - 
@@ -2313,22 +2313,22 @@
         program_year: 2017
       - 
         display_name: "Matthew Whitaker"
-        github_updated: 1515172316941
+        github_updated: 1515177168888
         id: 6052785999052800
         program_year: 2017
       - 
         display_name: "Nayansh Gupta"
-        github_updated: 1515172316789
+        github_updated: 1515177169020
         id: 6094997608726528
         program_year: 2017
       - 
         display_name: "RAGHAV DHINGRA"
-        github_updated: 1515172317045
+        github_updated: 1515177169444
         id: 5329794826764288
         program_year: 2017
       - 
         display_name: "Said Yaka"
-        github_updated: 1515172316872
+        github_updated: 1515177168873
         id: 5971293960667136
         program_year: 2017
       - 
@@ -2345,7 +2345,7 @@
         program_year: 2017
       - 
         display_name: "Tomasz Domagała"
-        github_updated: 1515172316914
+        github_updated: 1515177168999
         id: 6531598482669568
         program_year: 2017
     mailing_list: "http://om.rs/gcitalk"
@@ -2396,12 +2396,12 @@
     leaders: 
       - 
         display_name: "Alberto"
-        github_updated: 1515172314875
+        github_updated: 1515177165651
         id: 6264983153278976
         program_year: 2017
       - 
         display_name: "Aleksander Wójtowicz"
-        github_updated: 1515172314060
+        github_updated: 1515177165292
         id: 4507029777416192
         program_year: 2017
       - 
@@ -2412,12 +2412,12 @@
         program_year: 2017
       - 
         display_name: "Jason Huang"
-        github_updated: 1515172314230
+        github_updated: 1515177165381
         id: 6563090390843392
         program_year: 2017
       - 
         display_name: "Jindřich Dítě"
-        github_updated: 1515172314046
+        github_updated: 1515177165296
         id: 5338622058299392
         program_year: 2017
       - 
@@ -2428,12 +2428,12 @@
         program_year: 2017
       - 
         display_name: "Rajat Patel"
-        github_updated: 1515172314267
+        github_updated: 1515177165414
         id: 6323289079152640
         program_year: 2017
       - 
         display_name: "Steven Rachman"
-        github_updated: 1515172314211
+        github_updated: 1515177165425
         id: 6739799975133184
         program_year: 2017
       - 
@@ -2444,7 +2444,7 @@
         program_year: 2017
       - 
         display_name: "Thomas O'Keeffe"
-        github_updated: 1515172314225
+        github_updated: 1515177165378
         id: 6106213647384576
         program_year: 2017
     mailing_list: null
@@ -2479,7 +2479,7 @@
     blog_url: "http://www.liquidgalaxylab.com/"
     chat: 
       url: null
-    completed_task_instance_count: 294
+    completed_task_instance_count: 298
     contact_email: "lgcodein@gmail.com"
     description: "The Liquid Galaxy is a cluster of computers, from 3 to dozens, that allow the user to navigate in a interactive, panoramic and immersive \nway over the contents of Google Earth and Google Maps, including the possibility of adding layers of information."
     dev_mailing_list: null
@@ -2493,47 +2493,47 @@
     leaders: 
       - 
         display_name: "Balanchi"
-        github_updated: 1515172312908
+        github_updated: 1515177164428
         id: 4740243716571136
         program_year: 2017
       - 
         display_name: "Kshitijaa Jaglan"
-        github_updated: 1515172313147
+        github_updated: 1515177164765
         id: 5716208496148480
         program_year: 2017
       - 
         display_name: "Omshi Samal"
-        github_updated: 1515172312902
+        github_updated: 1515177164493
         id: 5248610683846656
         program_year: 2017
       - 
         display_name: "Shivansh Yadav"
-        github_updated: 1515172312891
+        github_updated: 1515177164459
         id: 4670031679979520
         program_year: 2017
       - 
         display_name: "Shruti Singh"
-        github_updated: 1515172312859
+        github_updated: 1515177164463
         id: 5809459819446272
         program_year: 2017
       - 
         display_name: "Surya"
-        github_updated: 1515172313154
+        github_updated: 1515177164693
         id: 6607311776776192
         program_year: 2017
       - 
         display_name: "Syed"
-        github_updated: 1515172313218
+        github_updated: 1515177164714
         id: 6685363949010944
         program_year: 2017
       - 
         display_name: "Tarun Ravi"
-        github_updated: 1515172312857
+        github_updated: 1515177164446
         id: 4873196811583488
         program_year: 2017
       - 
         display_name: "Terence Chan Zun Mun"
-        github_updated: 1515172312857
+        github_updated: 1515177164459
         id: 6011586793701376
         program_year: 2017
     mailing_list: "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html"
@@ -2570,7 +2570,7 @@
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "irc://irc.freenode.net/drupal"
-    completed_task_instance_count: 189
+    completed_task_instance_count: 190
     contact_email: "lechleider.matthew@gmail.com"
     description: "\"Come for the software, stay for the community\" Drupal is an open source content management platform powering millions of websites and applications. It’s built, used, and supported by an active and diverse community of people around the world. Use Drupal to build everything from personal blogs to enterprise applications. Thousands of add-on modules and designs let people build any site they can imagine. Join us today as we finalize our newest version of Drupal that might change the world! Interested in working on tasks for Drupal? Check out our new contributor documentation for GCI students @ https://www.drupal.org/node/984014"
     dev_mailing_list: null
@@ -2584,52 +2584,52 @@
     leaders: 
       - 
         display_name: "Anh Trịnh"
-        github_updated: 1515172313259
+        github_updated: 1515177164726
         id: 5061239380115456
         program_year: 2017
       - 
         display_name: "Ashreen Kaur"
-        github_updated: 1515172313456
+        github_updated: 1515177164837
         id: 4700635737882624
         program_year: 2017
       - 
         display_name: "Kartik Goel"
-        github_updated: 1515172313444
+        github_updated: 1515177164896
         id: 6733252700143616
         program_year: 2017
       - 
         display_name: "Long Dang"
-        github_updated: 1515172313851
+        github_updated: 1515177165098
         id: 4797474432614400
         program_year: 2017
       - 
         display_name: "MaskyS"
-        github_updated: 1515172313830
+        github_updated: 1515177165021
         id: 6719751873101824
         program_year: 2017
       - 
         display_name: "Neel Gopaul"
-        github_updated: 1515172313820
+        github_updated: 1515177165013
         id: 4576133293015040
         program_year: 2017
       - 
         display_name: "Sagar Khatri-1"
-        github_updated: 1515172313441
+        github_updated: 1515177164796
         id: 6008675401465856
         program_year: 2017
       - 
         display_name: "Tanish Kapur"
-        github_updated: 1515172313467
+        github_updated: 1515177164891
         id: 6374141223501824
         program_year: 2017
       - 
         display_name: "Tanvish Jha"
-        github_updated: 1515172313521
+        github_updated: 1515177164804
         id: 4585256541749248
         program_year: 2017
       - 
         display_name: "Yogesh Aggarwal"
-        github_updated: 1515172313379
+        github_updated: 1515177164810
         id: 5192680545976320
         program_year: 2017
     mailing_list: "https://drupal.org/mailing-lists"
@@ -2729,7 +2729,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/Cloud-CV/"
-    completed_task_instance_count: 128
+    completed_task_instance_count: 130
     contact_email: "team@cloudcv.org"
     description: "CloudCV is a young open source cloud platform started in 2013 by students and faculty from Machine Learning and Perception Lab at Virginia Tech (now at Georgia Tech) with the aim to make AI research more reproducible. At CloudCV, we are building tools that enable researchers to build, compare and share start-of-the-algorithms. We believe that one shouldn’t have to be an AI expert to have access to cutting-edge vision algorithms. Likewise, researchers shouldn’t have to worry about building a service around their deep learning models to showcase and share it with others.  \n\nCloudCV consists of three major platforms: \n\n**Origami** is an AI-as-a-service solution that allows researchers to easily convert their deep learning models into an online service that is widely accessible to everyone without the need to set up the infrastructure, resolve the dependencies, and build a web service around the deep learning model.\n\n**Fabrik** is an online collaborative platform to build, visualize and train deep learning models by a simple drag-and-drop approach.\n\n**EvalAI** is an evaluation server that will host AI challenges like Visual Question Answering, Image Captioning etc. By providing a central leaderboard and submission interface, we make it easier for researchers to reproduce the results mentioned in the paper and perform reliable & accurate quantitative analysis."
     dev_mailing_list: null
@@ -2743,17 +2743,17 @@
     leaders: 
       - 
         display_name: "Abdullah"
-        github_updated: 1515172314523
+        github_updated: 1515177165878
         id: 5182495165251584
         program_year: 2017
       - 
         display_name: "Adam Štafa"
-        github_updated: 1515172313755
+        github_updated: 1515177165534
         id: 5343716963254272
         program_year: 2017
       - 
         display_name: "Adarsh Kumar"
-        github_updated: 1515172313825
+        github_updated: 1515177165553
         id: 4563919077113856
         program_year: 2017
       - 
@@ -2770,27 +2770,27 @@
         program_year: 2017
       - 
         display_name: "Naman Sood"
-        github_updated: 1515172313839
+        github_updated: 1515177165502
         id: 4504161854947328
         program_year: 2017
       - 
         display_name: "Owen Leong"
-        github_updated: 1515172313768
+        github_updated: 1515177165458
         id: 6207559977402368
         program_year: 2017
       - 
         display_name: "palashtaneja"
-        github_updated: 1515172313825
+        github_updated: 1515177165502
         id: 6310531952541696
         program_year: 2017
       - 
         display_name: "Pavan A."
-        github_updated: 1515172313841
+        github_updated: 1515177165535
         id: 6153402721501184
         program_year: 2017
       - 
         display_name: "Will Eggleston"
-        github_updated: 1515172313804
+        github_updated: 1515177165543
         id: 6625447007748096
         program_year: 2017
     mailing_list: "https://groups.google.com/forum/#!forum/cloudcv"
@@ -2840,42 +2840,42 @@
     leaders: 
       - 
         display_name: "Alexander Mamaev"
-        github_updated: 1515172312908
+        github_updated: 1515177164547
         id: 5417131376115712
         program_year: 2017
       - 
         display_name: "Andi Qu"
-        github_updated: 1515172312941
+        github_updated: 1515177164584
         id: 4806060072239104
         program_year: 2017
       - 
         display_name: "Ethan Yang"
-        github_updated: 1515172312949
+        github_updated: 1515177164566
         id: 6712383588270080
         program_year: 2017
       - 
         display_name: "Grzegorz Stark"
-        github_updated: 1515172312934
+        github_updated: 1515177164566
         id: 4640744230879232
         program_year: 2017
       - 
         display_name: "Himanshu Sekhar Nayak"
-        github_updated: 1515172312936
+        github_updated: 1515177164566
         id: 6121587080167424
         program_year: 2017
       - 
         display_name: "JJJPPP"
-        github_updated: 1515172312942
+        github_updated: 1515177164617
         id: 5210939794128896
         program_year: 2017
       - 
         display_name: "Robin Richtsfeld"
-        github_updated: 1515172312965
+        github_updated: 1515177164553
         id: 4774660237426688
         program_year: 2017
       - 
         display_name: "Ryan A. Chi"
-        github_updated: 1515172313220
+        github_updated: 1515177164870
         id: 6673079872782336
         program_year: 2017
     mailing_list: "http://wiki.apertium.org/wiki/Contact"
