@@ -7,7 +7,7 @@
       "platform": "GITTER",
       "url": "https://gitter.im/scorelab/scorelab"
     },
-    "completed_task_instance_count": 1141,
+    "completed_task_instance_count": 1162,
     "contact_email": "info@scorelab.org",
     "description": "The Sustainable Computing Research Group (SCoRe) at UCSC has conducted research covering various aspects of wireless sensor networks, embedded systems, digital forensic, information security, mobile applications and e-learning. The goal of our research is to generate computing solutions through identifying low-cost methodologies and strategies that lead to sustainability​.\n\nAt present, the SCoRe group is at a stage of its evolution in which it has been able to secure high donor confidence as evidenced by no less than 5 simultaneous foreign funded projects underway since 2005. SCoRe group has been a pioneer in cooperating with Internet Society (ISOC), Swedish Agency for International Development Cooperation (Sida)/The Department for Research Cooperation (SAREC), The Swedish Program for Information and Communication Technology in Developing Regions (Spider) and Information Society Innovation Fund (ISIF) in the area of computer science by establishing several interesting ICT research projects. These projects are considered to be the benchmarks of such projects in the World.",
     "dev_mailing_list": null,
@@ -27,6 +27,12 @@
         "program_year": 2017
       },
       {
+        "display_name": "Alexius Adhitya K.",
+        "github_updated": 1515431646235,
+        "id": 6455949881507840,
+        "program_year": 2017
+      },
+      {
         "display_name": "Azis Naufal",
         "github_account": "azisnaufal",
         "github_updated": 1515345207247,
@@ -35,25 +41,25 @@
       },
       {
         "display_name": "Gaurav",
-        "github_updated": 1515345207858,
+        "github_updated": 1515431648026,
         "id": 6188768153305088,
         "program_year": 2017
       },
       {
         "display_name": "Kalyan C",
-        "github_updated": 1515345207469,
+        "github_updated": 1515431646078,
         "id": 5351898834010112,
         "program_year": 2017
       },
       {
         "display_name": "Mehant Kammakomati",
-        "github_updated": 1515345207302,
+        "github_updated": 1515431646108,
         "id": 4883574836690944,
         "program_year": 2017
       },
       {
         "display_name": "Moses Paul",
-        "github_updated": 1515345207470,
+        "github_updated": 1515431646006,
         "id": 5656316687155200,
         "program_year": 2017
       },
@@ -72,15 +78,8 @@
         "program_year": 2017
       },
       {
-        "display_name": "Shlok J",
-        "github_account": "shlokj",
-        "github_updated": 1515254318258,
-        "id": 4723663230205952,
-        "program_year": 2017
-      },
-      {
         "display_name": "Tanmay Anand",
-        "github_updated": 1515345207470,
+        "github_updated": 1515431646246,
         "id": 5139924388937728,
         "program_year": 2017
       }
@@ -122,7 +121,7 @@
       "platform": "GITTER",
       "url": "https://gitter.im/fossasia/fossasia"
     },
-    "completed_task_instance_count": 1073,
+    "completed_task_instance_count": 1104,
     "contact_email": "fossasia@googlegroups.com",
     "description": "FOSSASIA develops Open Source software and hardware for conversational AIs, science and event management with a global developer community from its base in Asia. The organization also organizes Open Technology events, runs coding programs and the Codeheat development contest. The annual FOSSASIA Summit is the premier Open Technology event in Asia for developers, contributors, start-ups, and technology companies. FOSSASIA was founded in 2009 by Mario Behling and Hong Phuc Dang.",
     "dev_mailing_list": null,
@@ -151,7 +150,7 @@
       {
         "display_name": "Arjun Pandey",
         "github_account": "arjunpandey2003",
-        "github_updated": 1515177171260,
+        "github_updated": 1515431651322,
         "id": 5654974786699264,
         "program_year": 2017
       },
@@ -178,7 +177,7 @@
       },
       {
         "display_name": "Samyak Jain",
-        "github_updated": 1515345212622,
+        "github_updated": 1515431651985,
         "id": 5596372331921408,
         "program_year": 2017
       },
@@ -191,7 +190,7 @@
       },
       {
         "display_name": "Yash Kothari",
-        "github_updated": 1515345212637,
+        "github_updated": 1515431651731,
         "id": 5188592139763712,
         "program_year": 2017
       },
@@ -247,7 +246,7 @@
       "platform": "GITTER",
       "url": "https://gitter.im/jboss-outreach/gci"
     },
-    "completed_task_instance_count": 1042,
+    "completed_task_instance_count": 1053,
     "contact_email": null,
     "description": "JBoss Community is a community of open source projects. The community hosts a large number of projects that are written in various programming languages. The primary language is Java. But there are also projects that are written in Ruby, PHP, Node and other languages.\n\nProject categories range from better testing support over IDEs, application servers, application and performance monitoring to micro-services.",
     "dev_mailing_list": null,
@@ -261,25 +260,25 @@
     "leaders": [
       {
         "display_name": "Anhai Wang",
-        "github_updated": 1515345206425,
+        "github_updated": 1515431644919,
         "id": 6387345966235648,
         "program_year": 2017
       },
       {
         "display_name": "Aniol Vicens Lloret",
-        "github_updated": 1515345206634,
+        "github_updated": 1515431645619,
         "id": 5258573665796096,
         "program_year": 2017
       },
       {
         "display_name": "Divyansh Kulshreshtha",
-        "github_updated": 1515345206453,
+        "github_updated": 1515431646362,
         "id": 4752725168357376,
         "program_year": 2017
       },
       {
         "display_name": "Jatin Luthra",
-        "github_updated": 1515345206464,
+        "github_updated": 1515431644979,
         "id": 4598388202930176,
         "program_year": 2017
       },
@@ -306,19 +305,19 @@
       },
       {
         "display_name": "Thomas",
-        "github_updated": 1515345206472,
+        "github_updated": 1515431644898,
         "id": 5043034557251584,
         "program_year": 2017
       },
       {
         "display_name": "Vishwas Adiga",
-        "github_updated": 1515345206476,
+        "github_updated": 1515431644958,
         "id": 6049660470820864,
         "program_year": 2017
       },
       {
         "display_name": "Zhao Wei Liew",
-        "github_updated": 1515345206457,
+        "github_updated": 1515431644939,
         "id": 6020884257046528,
         "program_year": 2017
       }
@@ -363,7 +362,7 @@
       "platform": "OTHER",
       "url": "http://openwisp.org/support.html"
     },
-    "completed_task_instance_count": 820,
+    "completed_task_instance_count": 830,
     "contact_email": null,
     "description": "In the summer of 2008 the [Metropolitan City of Rome](http://www.cittametropolitanaroma.gov.it/) decided to start a **free of charge and public Wi-Fi network** to be spread over its 5352 SQ KM territory including Rome and 120 other cities for a total of about 4.5 million inhabitants. The main objective of the project, called **ProvinciaWiFi** (later renamed [WiFi Metropolitano](http://www.cittametropolitanaroma.gov.it/index.php/wifimetropolitano-english-version)), was to take a decisive step to reduce the existing **digital divide** by fostering and facilitating the use of ICT by citizens.\nFrom the outset it was decided to commit the project to a completely open philosophy. For this reason a clear choice towards open software and operating systems and the availability of every modification, update and improvement to the community was made. The same approach was adopted for the knowledge and the experience acquired within the project. In order to pursue this goals the Province of Rome called the university consortium *CASPUR* (later merged in the [CINECA](https://www.cineca.it/en) consortium) to develop the technical solution. In this context, a research project conducted by the *CINECA* consortium found its perfect application. This project proposed an innovative methodology for the distribution of networks (more precisely Virtual LANs used for Wi-Fi connectivity) between geographically distant sites. \n\n The software tools, including the OpenWISP 2 [wifi controller](http://openwisp.org/whatis.html#wifi-controller) and the various [NetJSON](http://netjson.org/) implementations used are released to the public free of charge under open-source licenses, hoping this will allow a broader audience to benefit from our work.",
     "dev_mailing_list": null,
@@ -377,37 +376,37 @@
     "leaders": [
       {
         "display_name": "Aarnav Bos",
-        "github_updated": 1515345206708,
+        "github_updated": 1515431645417,
         "id": 5288208805920768,
         "program_year": 2017
       },
       {
         "display_name": "Aditya",
-        "github_updated": 1515345207049,
+        "github_updated": 1515431646721,
         "id": 6573208931139584,
         "program_year": 2017
       },
       {
         "display_name": "Alan Zhu",
-        "github_updated": 1515345206756,
+        "github_updated": 1515431645453,
         "id": 6075101978034176,
         "program_year": 2017
       },
       {
         "display_name": "Hizkia Felix",
-        "github_updated": 1515345206998,
+        "github_updated": 1515431647604,
         "id": 5631601239130112,
         "program_year": 2017
       },
       {
         "display_name": "ItsMyFirstGame",
-        "github_updated": 1515345206782,
+        "github_updated": 1515431645431,
         "id": 4674876470198272,
         "program_year": 2017
       },
       {
         "display_name": "Mihir Bhave",
-        "github_updated": 1515345206746,
+        "github_updated": 1515431645512,
         "id": 6737770527588352,
         "program_year": 2017
       },
@@ -420,13 +419,13 @@
       },
       {
         "display_name": "Rajat Agarwal",
-        "github_updated": 1515345207018,
+        "github_updated": 1515431648271,
         "id": 6196399832039424,
         "program_year": 2017
       },
       {
         "display_name": "Shiguy",
-        "github_updated": 1515345206727,
+        "github_updated": 1515431645411,
         "id": 4980642062270464,
         "program_year": 2017
       },
@@ -475,7 +474,7 @@
       "platform": "IRC",
       "url": "http://brlcad.org/wiki/IRC"
     },
-    "completed_task_instance_count": 696,
+    "completed_task_instance_count": 709,
     "contact_email": "devs@brlcad.org",
     "description": "BRL-CAD is a feature-filled computer graphics modeling system that is notoriously complex and challenging to learn.  Help us make it easier so people can quickly use it for things like 3D printing or rendering cool pictures!\n\nOur team is excited to help you get started no matter what experience you have.  There are hundreds of things you can work on, from web development to programming to 3D modeling and design tasks.  If you're new to Open Source, computer graphics, or 3D modeling, we will guide you through your first steps.  If you're not new, you will be helping us revolutionize an industry!\n\nA third of our tasks are C/C++, a third are Javascript/HTML/CSS, and a third require no coding experience whatsoever.",
     "dev_mailing_list": null,
@@ -489,13 +488,13 @@
     "leaders": [
       {
         "display_name": "Agape Gonzales",
-        "github_updated": 1515345205935,
+        "github_updated": 1515431644976,
         "id": 5125138225823744,
         "program_year": 2017
       },
       {
         "display_name": "caleb Parks",
-        "github_updated": 1515345205912,
+        "github_updated": 1515431644293,
         "id": 4982403334406144,
         "program_year": 2017
       },
@@ -508,43 +507,43 @@
       },
       {
         "display_name": "Lucas Prieels",
-        "github_updated": 1515345205913,
+        "github_updated": 1515431644276,
         "id": 6244362344202240,
         "program_year": 2017
       },
       {
         "display_name": "Mahdi Dolatabadi",
-        "github_updated": 1515345205949,
+        "github_updated": 1515431644233,
         "id": 4776983546298368,
         "program_year": 2017
       },
       {
         "display_name": "Michal Hanus",
-        "github_updated": 1515345205935,
+        "github_updated": 1515431644265,
         "id": 6596174926577664,
         "program_year": 2017
       },
       {
         "display_name": "Mitesh Gulecha",
-        "github_updated": 1515345205935,
+        "github_updated": 1515431644286,
         "id": 5131978431004672,
         "program_year": 2017
       },
       {
         "display_name": "Naseef",
-        "github_updated": 1515345205943,
+        "github_updated": 1515431644341,
         "id": 4654514969772032,
         "program_year": 2017
       },
       {
         "display_name": "Siddharth Nayak",
-        "github_updated": 1515345205945,
+        "github_updated": 1515431644459,
         "id": 5451995370487808,
         "program_year": 2017
       },
       {
         "display_name": "Wasim Afser",
-        "github_updated": 1515345205936,
+        "github_updated": 1515431644256,
         "id": 5934537118842880,
         "program_year": 2017
       }
@@ -596,7 +595,7 @@
       "platform": "OTHER",
       "url": "https://chat.sugarlabs.org"
     },
-    "completed_task_instance_count": 644,
+    "completed_task_instance_count": 651,
     "contact_email": "walter@sugarlabs.org",
     "description": "Sugar Labs, a volunteer-driven, non-profit organization, had its origins in the One Laptop Per Child project and is now a member project of the Software Freedom Conservancy. The mission of Sugar Labs is to support the Sugar community of users and developers and establish regional, autonomous “Sugar Labs” around the world to help learners “learn how to learn” by tailoring Sugar to local languages and curricula.\n\nAt Sugar Labs, we make a collection of tools that learners use to explore, discover, create, and reflect. We distribute these tools freely and encourage our users to appropriate them, taking ownership and responsibility for their learning.\n\nSugar is both a desktop and a collection of Activities. Activities, as the name implies, are Apps that involve active engagement from the learner. Activities automatically save results to a journal, where reflections are recorded. Activity instances can be shared between learners; many support real-time collaboration. Sugar collaboration works \"peer to peer,\" in a classroom or under a tree; Sugar does not require the Internet.\n\nThe Sugar Journal records everything a learner does using Sugar. There is no need to remember to click a Save Button. The focus is on the activity, not the computer. The Journal is also a place for reflection, where learners and their teachers can monitor progress.\n\nA subset of the Sugar platform is also available as an Android app and in a web browser.",
     "dev_mailing_list": null,
@@ -610,25 +609,25 @@
     "leaders": [
       {
         "display_name": "Capucine Coudert",
-        "github_updated": 1515345207858,
+        "github_updated": 1515431648029,
         "id": 5955020329582592,
         "program_year": 2017
       },
       {
         "display_name": "Emily Ong Hui Qi",
-        "github_updated": 1515345207501,
+        "github_updated": 1515431647033,
         "id": 6232468103364608,
         "program_year": 2017
       },
       {
         "display_name": "Euan Ong",
-        "github_updated": 1515345207509,
+        "github_updated": 1515431646889,
         "id": 6144107338530816,
         "program_year": 2017
       },
       {
         "display_name": "Kanassanun Namwong",
-        "github_updated": 1515345207498,
+        "github_updated": 1515431647930,
         "id": 4566876657025024,
         "program_year": 2017
       },
@@ -641,31 +640,31 @@
       },
       {
         "display_name": "namansingh",
-        "github_updated": 1515345207509,
+        "github_updated": 1515431646887,
         "id": 5695562965843968,
         "program_year": 2017
       },
       {
         "display_name": "Nikola Porumbachanov",
-        "github_updated": 1515345207507,
+        "github_updated": 1515431647144,
         "id": 6657561174474752,
         "program_year": 2017
       },
       {
         "display_name": "pipix",
-        "github_updated": 1515345207490,
+        "github_updated": 1515431646905,
         "id": 5501564124921856,
         "program_year": 2017
       },
       {
         "display_name": "Sanatan Chaudhary",
-        "github_updated": 1515345207550,
+        "github_updated": 1515431646916,
         "id": 4710024200847360,
         "program_year": 2017
       },
       {
         "display_name": "Satyam Kumar",
-        "github_updated": 1515345207572,
+        "github_updated": 1515431646896,
         "id": 5188049791090688,
         "program_year": 2017
       }
@@ -702,13 +701,284 @@
   },
   {
     "accepted_org_tos": true,
+    "blog_url": "https://blog.wikimedia.org/",
+    "chat": {
+      "image": "images/logos/irc.png",
+      "platform": "IRC",
+      "url": "https://www.mediawiki.org/wiki/MediaWiki_on_IRC"
+    },
+    "completed_task_instance_count": 630,
+    "contact_email": null,
+    "description": "Wikimedia believes that knowledge should be free for every human being. We prioritize efforts that empower disadvantaged and underrepresented communities, and that help overcome barriers to participation. We believe in mass collaboration, diversity and consensus building to achieve our goals.\r\nWikipedia has become the fifth most-visited site in the world, used by more than 400 million people every month in more than 280 languages. We have more content projects including Wikimedia Commons, Wikidata, or Wikisource. We also maintain the MediaWiki software engine and a wide collection of free and open source software projects around it.\r\nBut there is much more we can do: stabilize infrastructure, increase participation, improve quality, increase reach, encourage innovation.\r\nYou can help to these goals in many ways and become part of an international community!",
+    "dev_mailing_list": null,
+    "github": "wikimedia",
+    "gplus_url": null,
+    "guide_to_working": "Students must first read and understand Wikimedia's general instructions before claiming this task: https://www.mediawiki.org/wiki/Google_Code-in/Participants",
+    "guide_to_working_url": "https://www.mediawiki.org/wiki/Google_Code-in/2017",
+    "id": 5740205476675584,
+    "image_url": "//lh3.googleusercontent.com/AJUnYAo8iSTd8C4eW13wxutICNLSmKiX9fzrs-ljmD7da41im5N6o-1XalNCWt8BvqQ6jPSTe8OZ4XB_L_GUDg",
+    "irc_channel": "https://www.mediawiki.org/wiki/MediaWiki_on_IRC",
+    "leaders": [
+      {
+        "display_name": "Albert Wolszon",
+        "github_updated": 1515431647027,
+        "id": 4879989344305152,
+        "program_year": 2017
+      },
+      {
+        "display_name": "C. F. Fairfeld",
+        "github_updated": 1515431647188,
+        "id": 4759011792519168,
+        "program_year": 2017
+      },
+      {
+        "display_name": "David Sn",
+        "github_updated": 1515431648177,
+        "id": 6744722544525312,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Gabe Mitnick",
+        "github_updated": 1515431647110,
+        "id": 5394768580313088,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Phantom42",
+        "github_updated": 1515431647147,
+        "id": 5855143146815488,
+        "program_year": 2017
+      },
+      {
+        "display_name": "pppery",
+        "github_updated": 1515431647147,
+        "id": 5884375231102976,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Rafid Aslam",
+        "github_updated": 1515431647657,
+        "id": 4789845765390336,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Ryan Chang",
+        "github_updated": 1515431648551,
+        "id": 4891685077123072,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Tarun Prasad",
+        "github_updated": 1515431647095,
+        "id": 4551707939831808,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Yifei He",
+        "github_updated": 1515431647096,
+        "id": 5910548224933888,
+        "program_year": 2017
+      }
+    ],
+    "mailing_list": "https://lists.wikimedia.org/mailman/listinfo/wikitech-l",
+    "name": "Wikimedia",
+    "precis": "The non-profit foundation dedicated to bringing free content to the world, operating Wikipedia and other websites.",
+    "preferred_contact_method": null,
+    "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
+    "program_year": 2017,
+    "programming_languages": [
+      "php",
+      "javascript",
+      "css",
+      "lua",
+      "wiki"
+    ],
+    "slug": "wikimedia",
+    "stack_exchange": null,
+    "status": 2,
+    "tags": [
+      "wikimedia",
+      "wikipedia",
+      "mediawiki",
+      "wiki"
+    ],
+    "twitter_url": "https://twitter.com/Wikimedia",
+    "website_url": "https://wikimediafoundation.org/",
+    "wikidata_url": "//www.wikidata.org/wiki/Q180",
+    "wikipedia_urls": {
+      "af": "https://af.wikipedia.org/wiki/Wikimedia-stigting",
+      "als": "https://als.wikipedia.org/wiki/Wikimedia_Foundation",
+      "an": "https://an.wikipedia.org/wiki/Fundaci%C3%B3n_Wikimedia",
+      "ar": "https://ar.wikipedia.org/wiki/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9_%D9%88%D9%8A%D9%83%D9%8A%D9%85%D9%8A%D8%AF%D9%8A%D8%A7",
+      "arwiki": "https://ar.wikinews.org/wiki/%D8%AA%D8%B5%D9%86%D9%8A%D9%81%3A%D9%88%D9%8A%D9%83%D9%8A%D9%85%D9%8A%D8%AF%D9%8A%D8%A7",
+      "arz": "https://arz.wikipedia.org/wiki/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9_%D9%88%D9%8A%D9%83%D9%8A%D9%85%D9%8A%D8%AF%D9%8A%D8%A7",
+      "as": "https://as.wikipedia.org/wiki/%E0%A7%B1%E0%A6%BF%E0%A6%95%E0%A6%BF%E0%A6%AE%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AB%E0%A6%BE%E0%A6%89%E0%A6%A3%E0%A7%8D%E0%A6%A1%E0%A7%87%E0%A6%B6%E0%A7%8D%E0%A6%AF%E0%A6%A8",
+      "ast": "https://ast.wikipedia.org/wiki/Fundaci%C3%B3n_Wikimedia",
+      "av": "https://av.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0",
+      "az": "https://az.wikipedia.org/wiki/Vikimedia_Fondu",
+      "ba": "https://ba.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D1%84%D0%BE%D0%BD%D0%B4%D1%8B",
+      "bat_smg": "https://bat_smg.wikipedia.org/wiki/Vikimed%C4%97j%C4%97",
+      "be": "https://be.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D1%96%D0%BA%D1%96%D0%BC%D0%B5%D0%B4%D1%8B%D1%8F",
+      "be_x_old": "https://be_x_old.wikipedia.org/wiki/%D0%A4%D1%83%D0%BD%D0%B4%D0%B0%D1%86%D1%8B%D1%8F_%C2%AB%D0%92%D1%96%D0%BA%D1%96%D0%BC%D1%8D%D0%B4%D1%8B%D1%8F%C2%BB",
+      "bg": "https://bg.wikipedia.org/wiki/%D0%A3%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%8F",
+      "bh": "https://bh.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%82%E0%A4%A1%E0%A5%87%E0%A4%B6%E0%A4%A8",
+      "bjn": "https://bjn.wikipedia.org/wiki/Wikimedia_Foundation",
+      "bn": "https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AE%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AB%E0%A6%BE%E0%A6%89%E0%A6%A8%E0%A7%8D%E0%A6%A1%E0%A7%87%E0%A6%B6%E0%A6%A8",
+      "bpy": "https://bpy.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%3A%E0%A6%AC%E0%A6%A8%E0%A6%95_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%95%E0%A6%B2%E0%A7%8D%E0%A6%AA%E0%A6%B9%E0%A6%BE%E0%A6%A8%E0%A6%BF",
+      "br": "https://br.wikipedia.org/wiki/Wikimedia_Foundation",
+      "ca": "https://ca.wikipedia.org/wiki/Fundaci%C3%B3_Wikimedia",
+      "cdo": "https://cdo.wikipedia.org/wiki/Wikimedia",
+      "ce": "https://ce.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%BD_%D1%84%D0%BE%D0%BD%D0%B4",
+      "ceb": "https://ceb.wikipedia.org/wiki/Wikimedia_Foundation",
+      "ch": "https://ch.wikipedia.org/wiki/Wikimedia_Foundation",
+      "ckb": "https://ckb.wikipedia.org/wiki/%D8%AF%D8%A7%D9%85%DB%95%D8%B2%D8%B1%D8%A7%D9%88%DB%95%DB%8C_%D9%88%DB%8C%DA%A9%DB%8C%D9%85%DB%8C%D8%AF%DB%8C%D8%A7",
+      "commons": "https://commons.wikipedia.org/wiki/Wikimedia_Foundation",
+      "cs": "https://cs.wikipedia.org/wiki/Nadace_Wikimedia",
+      "cswiki": "https://cs.wikinews.org/wiki/Kategorie%3AWikimedia_Foundation",
+      "cv": "https://cv.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D1%84%D0%BE%D0%BD%D1%87%C4%95",
+      "cy": "https://cy.wikipedia.org/wiki/Sefydliad_Wicimedia",
+      "da": "https://da.wikipedia.org/wiki/Wikimedia",
+      "de": "https://de.wikipedia.org/wiki/Wikimedia_Foundation",
+      "el": "https://el.wikipedia.org/wiki/%CE%8A%CE%B4%CF%81%CF%85%CE%BC%CE%B1_Wikimedia",
+      "elwikiq": "https://el.wikiquote.org/wiki/%CE%8A%CE%B4%CF%81%CF%85%CE%BC%CE%B1_Wikimedia",
+      "eml": "https://eml.wikipedia.org/wiki/Wikimedia_Foundation",
+      "en": "https://en.wikipedia.org/wiki/Wikimedia_Foundation",
+      "enwiki": "https://en.wikinews.org/wiki/Category%3AWikimedia_Foundation",
+      "enwikiver": "https://en.wikiversity.org/wiki/Wikimedia_Foundation",
+      "eo": "https://eo.wikipedia.org/wiki/Fonda%C4%B5o_Vikimedio",
+      "es": "https://es.wikipedia.org/wiki/Fundaci%C3%B3n_Wikimedia",
+      "eswikiq": "https://es.wikiquote.org/wiki/Fundaci%C3%B3n_Wikimedia",
+      "et": "https://et.wikipedia.org/wiki/Wikimedia_Foundation",
+      "eu": "https://eu.wikipedia.org/wiki/Wikimedia_Fundazioa",
+      "ext": "https://ext.wikipedia.org/wiki/Hundaci%C3%B3n_Wikimedia",
+      "fa": "https://fa.wikipedia.org/wiki/%D8%A8%D9%86%DB%8C%D8%A7%D8%AF_%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D9%85%D8%AF%DB%8C%D8%A7",
+      "fi": "https://fi.wikipedia.org/wiki/Wikimedia_Foundation",
+      "fiu_vro": "https://fiu_vro.wikipedia.org/wiki/Vikimeedi%C3%A4_Tsihts%C3%A4%C3%A4d%C3%BCng",
+      "fiwiki": "https://fi.wikinews.org/wiki/Luokka%3AWikimedia",
+      "fo": "https://fo.wikipedia.org/wiki/Wikimedia",
+      "fr": "https://fr.wikipedia.org/wiki/Wikimedia_Foundation",
+      "frwikiq": "https://fr.wikiquote.org/wiki/Wikimedia_Foundation",
+      "ga": "https://ga.wikipedia.org/wiki/Wikimedia_Foundation",
+      "gd": "https://gd.wikipedia.org/wiki/Wikimedia",
+      "gl": "https://gl.wikipedia.org/wiki/Fundaci%C3%B3n_Wikimedia",
+      "gu": "https://gu.wikipedia.org/wiki/%E0%AA%B5%E0%AA%BF%E0%AA%95%E0%AA%BF%E0%AA%AE%E0%AB%80%E0%AA%A1%E0%AA%BF%E0%AA%AF%E0%AA%BE_%E0%AA%AB%E0%AA%BE%E0%AA%89%E0%AA%A8%E0%AB%8D%E0%AA%A1%E0%AB%87%E0%AA%B6%E0%AA%A8",
+      "gv": "https://gv.wikipedia.org/wiki/Wikimedia",
+      "hak": "https://hak.wikipedia.org/wiki/Wikimedia",
+      "he": "https://he.wikipedia.org/wiki/%D7%A7%D7%A8%D7%9F_%D7%95%D7%99%D7%A7%D7%99%D7%9E%D7%93%D7%99%D7%94",
+      "hi": "https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%B8%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%A8",
+      "hr": "https://hr.wikipedia.org/wiki/Zaklada_Wikimedija",
+      "hu": "https://hu.wikipedia.org/wiki/Wikim%C3%A9dia_Alap%C3%ADtv%C3%A1ny",
+      "hy": "https://hy.wikipedia.org/wiki/%D5%8E%D5%AB%D6%84%D5%AB%D5%B4%D5%A5%D5%A4%D5%AB%D5%A1_%D5%80%D5%AB%D5%B4%D5%B6%D5%A1%D5%A4%D6%80%D5%A1%D5%B4",
+      "ia": "https://ia.wikipedia.org/wiki/Wikimedia",
+      "id": "https://id.wikipedia.org/wiki/Wikimedia_Foundation",
+      "ilo": "https://ilo.wikipedia.org/wiki/Pundasion_ti_Wikimedia",
+      "is": "https://is.wikipedia.org/wiki/Wikimedia",
+      "it": "https://it.wikipedia.org/wiki/Wikimedia_Foundation",
+      "ja": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E8%B2%A1%E5%9B%A3",
+      "jam": "https://jam.wikipedia.org/wiki/Wikimedia_Foundation",
+      "jv": "https://jv.wikipedia.org/wiki/Wikimedia_Foundation",
+      "ka": "https://ka.wikipedia.org/wiki/%E1%83%A4%E1%83%9D%E1%83%9C%E1%83%93%E1%83%98_%E1%83%95%E1%83%98%E1%83%99%E1%83%98%E1%83%9B%E1%83%94%E1%83%93%E1%83%98%E1%83%90",
+      "kk": "https://kk.wikipedia.org/wiki/%D0%A3%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D2%9B%D0%BE%D1%80%D1%8B",
+      "kl": "https://kl.wikipedia.org/wiki/Wikimedia",
+      "kn": "https://kn.wikipedia.org/wiki/%E0%B2%B5%E0%B2%BF%E0%B2%95%E0%B2%BF%E0%B2%AA%E0%B3%80%E0%B2%A1%E0%B2%BF%E0%B2%AF%3A%E0%B2%AF%E0%B3%8B%E0%B2%9C%E0%B2%A8%E0%B3%86",
+      "ko": "https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%AF%B8%EB%94%94%EC%96%B4_%EC%9E%AC%EB%8B%A8",
+      "kowikiso": "https://ko.wikisource.org/wiki/%EC%9C%84%ED%82%A4%EB%AC%B8%ED%97%8C%3A%EC%9C%84%ED%82%A4%EB%AF%B8%EB%94%94%EC%96%B4_%EC%9E%AC%EB%8B%A8",
+      "krc": "https://krc.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D1%84%D0%BE%D0%BD%D0%B4",
+      "ku": "https://ku.wikipedia.org/wiki/Weqfa_W%C3%AEk%C3%AEmedya",
+      "la": "https://la.wikipedia.org/wiki/Vicimedia",
+      "lad": "https://lad.wikipedia.org/wiki/Fondasion_Wikimedia",
+      "lb": "https://lb.wikipedia.org/wiki/Wikimedia",
+      "li": "https://li.wikipedia.org/wiki/Wikimedia_Foundation",
+      "lt": "https://lt.wikipedia.org/wiki/Vikimedijos_fondas",
+      "lv": "https://lv.wikipedia.org/wiki/Wikimedia_Foundation",
+      "mai": "https://mai.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A4%BF%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%A8%E0%A5%8D%E0%A4%A1%E0%A5%87%E0%A4%B8%E0%A4%A8",
+      "map_bms": "https://map_bms.wikipedia.org/wiki/Wikimedia_Foundation",
+      "meta": "https://meta.wikipedia.org/wiki/Wikimedia_Foundation",
+      "mg": "https://mg.wikipedia.org/wiki/Wikimedia_Foundation",
+      "mk": "https://mk.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D1%98%D0%B0_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%98%D0%B0",
+      "ml": "https://ml.wikipedia.org/wiki/%E0%B4%B5%E0%B4%BF%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%BF%E0%B4%AE%E0%B5%80%E0%B4%A1%E0%B4%BF%E0%B4%AF_%E0%B4%AB%E0%B5%97%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B5%87%E0%B4%B7%E0%B5%BB",
+      "mo": "https://mo.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%8F",
+      "mr": "https://mr.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%82%E0%A4%A1%E0%A5%87%E0%A4%B6%E0%A4%A8",
+      "ms": "https://ms.wikipedia.org/wiki/Wikimedia_Foundation",
+      "mt": "https://mt.wikipedia.org/wiki/Fondazzjoni_Wikimedia",
+      "my": "https://my.wikipedia.org/wiki/%E1%80%9D%E1%80%AE%E1%80%80%E1%80%AE%E1%80%99%E1%80%AE%E1%80%92%E1%80%AE%E1%80%9A%E1%80%AC_%E1%80%96%E1%80%B1%E1%80%AC%E1%80%84%E1%80%BA%E1%80%92%E1%80%B1%E1%80%B8%E1%80%9B%E1%80%BE%E1%80%84%E1%80%BA%E1%80%B8",
+      "nap": "https://nap.wikipedia.org/wiki/Funnazzione_Wikimedia",
+      "nds_nl": "https://nds_nl.wikipedia.org/wiki/Wikimedia_Foundation",
+      "ne": "https://ne.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A4%BF%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%A8%E0%A5%8D%E0%A4%A1%E0%A5%87%E0%A4%B8%E0%A4%A8",
+      "nl": "https://nl.wikipedia.org/wiki/Wikimedia_Foundation",
+      "nn": "https://nn.wikipedia.org/wiki/Wikimedia",
+      "no": "https://no.wikipedia.org/wiki/Wikimedia_Foundation",
+      "oc": "https://oc.wikipedia.org/wiki/Wikimedia_Foundation",
+      "or": "https://or.wikipedia.org/wiki/%E0%AC%89%E0%AC%87%E0%AC%95%E0%AC%BF%E0%AC%AE%E0%AC%BF%E0%AC%A1%E0%AC%BC%E0%AC%BF%E0%AC%86_%E0%AC%AB%E0%AC%BE%E0%AC%89%E0%AC%A3%E0%AD%8D%E0%AC%A1%E0%AD%87%E0%AC%B8%E0%AC%A8",
+      "pa": "https://pa.wikipedia.org/wiki/%E0%A8%B5%E0%A8%BF%E0%A8%95%E0%A9%80%E0%A8%AE%E0%A9%80%E0%A8%A1%E0%A9%80%E0%A8%86_%E0%A8%AB%E0%A8%BC%E0%A8%BE%E0%A8%8A%E0%A8%82%E0%A8%A1%E0%A9%87%E0%A8%B8%E0%A8%BC%E0%A8%A8",
+      "pam": "https://pam.wikipedia.org/wiki/Katatagan_Wikimedia",
+      "pap": "https://pap.wikipedia.org/wiki/Fundashon_Wikipedia",
+      "pl": "https://pl.wikipedia.org/wiki/Wikimedia_Foundation",
+      "plwikiq": "https://pl.wikiquote.org/wiki/Wikimedia_Foundation",
+      "ps": "https://ps.wikipedia.org/wiki/%D9%88%D9%8A%DA%A9%D9%8A%D9%85%DB%90%DA%89%D9%8A%D8%A7_%D8%A8%D9%86%D8%B3%D9%BC",
+      "pt": "https://pt.wikipedia.org/wiki/Wikimedia",
+      "ptwiki": "https://pt.wikinews.org/wiki/Categoria%3AWikimedia_Foundation",
+      "qu": "https://qu.wikipedia.org/wiki/Wikimedia",
+      "ro": "https://ro.wikipedia.org/wiki/Wikimedia_Foundation",
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0",
+      "rue": "https://rue.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D1%96%D0%BA%D1%96%D0%BC%D0%B5%D0%B4%D1%96%D1%8F",
+      "ruwiki": "https://ru.wikinews.org/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%3A%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0",
+      "sa": "https://sa.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+      "sah": "https://sah.wikipedia.org/wiki/Wikimedia",
+      "scn": "https://scn.wikipedia.org/wiki/Funnaziuni_Wikimedia",
+      "sco": "https://sco.wikipedia.org/wiki/Wikimedia_Foundation",
+      "sd": "https://sd.wikipedia.org/wiki/%D9%88%DA%AA%D9%8A%D9%85%D9%8A%DA%8A%D9%8A%D8%A7_%D9%81%D8%A7%D8%A6%D9%88%D9%86%DA%8A%D9%8A%D8%B4%D9%86",
+      "sh": "https://sh.wikipedia.org/wiki/Wikimedia_Foundation",
+      "si": "https://si.wikipedia.org/wiki/%E0%B7%80%E0%B7%92%E0%B6%9A%E0%B7%92%E0%B6%B8%E0%B7%93%E0%B6%A9%E0%B7%92%E0%B6%BA%E0%B7%8F_%E0%B6%B4%E0%B6%AF%E0%B6%B1%E0%B6%B8",
+      "simple": "https://simple.wikipedia.org/wiki/Wikimedia_Foundation",
+      "sk": "https://sk.wikipedia.org/wiki/Wikimedia_Foundation",
+      "sl": "https://sl.wikipedia.org/wiki/Fundacija_Wikimedia",
+      "so": "https://so.wikipedia.org/wiki/Wikimedia",
+      "species": "https://species.wikipedia.org/wiki/Wikimedia_Foundation",
+      "sq": "https://sq.wikipedia.org/wiki/Fondacioni_Wikimedia",
+      "sr": "https://sr.wikipedia.org/wiki/%D0%97%D0%B0%D0%B4%D1%83%D0%B6%D0%B1%D0%B8%D0%BD%D0%B0_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%98%D0%B0",
+      "sv": "https://sv.wikipedia.org/wiki/Wikimedia_Foundation",
+      "sw": "https://sw.wikipedia.org/wiki/Wikimedia_Foundation",
+      "ta": "https://ta.wikipedia.org/wiki/%E0%AE%B5%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%BF%E0%AE%AE%E0%AF%80%E0%AE%9F%E0%AE%BF%E0%AE%AF%E0%AE%BE_%E0%AE%A8%E0%AE%BF%E0%AE%B1%E0%AF%81%E0%AE%B5%E0%AE%A9%E0%AE%AE%E0%AF%8D",
+      "te": "https://te.wikipedia.org/wiki/%E0%B0%B5%E0%B0%BF%E0%B0%95%E0%B1%80%E0%B0%AE%E0%B1%80%E0%B0%A1%E0%B0%BF%E0%B0%AF%E0%B0%BE_%E0%B0%AB%E0%B1%8C%E0%B0%82%E0%B0%A1%E0%B1%87%E0%B0%B7%E0%B0%A8%E0%B1%8D",
+      "tg": "https://tg.wikipedia.org/wiki/%D0%91%D1%83%D0%BD%D1%91%D0%B4%D0%B8_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0",
+      "th": "https://th.wikipedia.org/wiki/%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%99%E0%B8%B4%E0%B8%98%E0%B8%B4%E0%B8%A7%E0%B8%B4%E0%B8%81%E0%B8%B4%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2",
+      "tl": "https://tl.wikipedia.org/wiki/Pundasyong_Wikimedia",
+      "tr": "https://tr.wikipedia.org/wiki/Wikimedia_Vakf%C4%B1",
+      "trwiki": "https://tr.wikinews.org/wiki/Kategori%3AVikimedya_Vakf%C4%B1",
+      "ts": "https://ts.wikipedia.org/wiki/Wikimedia",
+      "tt": "https://tt.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D0%A4%D0%BE%D0%BD%D0%B4%D1%8B",
+      "ug": "https://ug.wikipedia.org/wiki/%DB%8B%D9%89%D9%83%D9%89%D9%BE%DB%90%D8%AF%D9%89%D9%8A%DB%95_%DB%8B%DB%95%D8%AE%D9%BE%D9%89",
+      "uk": "https://uk.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D1%96%D0%BA%D1%96%D0%BC%D0%B5%D0%B4%D1%96%D0%B0",
+      "ur": "https://ur.wikipedia.org/wiki/%D9%88%DB%8C%DA%A9%DB%8C%D9%85%DB%8C%DA%88%DB%8C%D8%A7_%D9%81%D8%A7%D8%A4%D9%86%DA%88%DB%8C%D8%B4%D9%86",
+      "uz": "https://uz.wikipedia.org/wiki/Vikimedia_Jamg%CA%BBarmasi",
+      "vec": "https://vec.wikipedia.org/wiki/Wikimedia_Foundation",
+      "vep": "https://vep.wikipedia.org/wiki/Vikimedii",
+      "vi": "https://vi.wikipedia.org/wiki/Wikimedia_Foundation",
+      "war": "https://war.wikipedia.org/wiki/Wikimedia_Foundation",
+      "wuu": "https://wuu.wikipedia.org/wiki/%E7%BB%B4%E5%9F%BA%E5%AA%92%E4%BD%93%E5%9F%BA%E9%87%91%E4%BC%9A",
+      "xal": "https://xal.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D0%BA%D3%A9%D1%80%D2%A3",
+      "xmf": "https://xmf.wikipedia.org/wiki/%E1%83%A4%E1%83%9D%E1%83%9C%E1%83%93%E1%83%98_%E1%83%95%E1%83%98%E1%83%99%E1%83%98%E1%83%9B%E1%83%94%E1%83%93%E1%83%98%E1%83%90",
+      "yi": "https://yi.wikipedia.org/wiki/%D7%95%D7%95%D7%99%D7%A7%D7%99%D7%9E%D7%A2%D7%93%D7%99%D7%A2_%D7%A4%D7%95%D7%A0%D7%93%D7%90%D7%A6%D7%99%D7%A2",
+      "yo": "https://yo.wikipedia.org/wiki/Wikimedia",
+      "za": "https://za.wikipedia.org/wiki/Veizgiek_Meizdij_Gihginhvei",
+      "zh": "https://zh.wikipedia.org/wiki/%E7%BB%B4%E5%9F%BA%E5%AA%92%E4%BD%93%E5%9F%BA%E9%87%91%E4%BC%9A",
+      "zh_classical": "https://zh_classical.wikipedia.org/wiki/%E7%B6%AD%E5%9F%BA%E5%AA%92%E9%AB%94%E5%9F%BA%E9%87%91%E6%9C%83",
+      "zh_min_nan": "https://zh_min_nan.wikipedia.org/wiki/Wikimedia",
+      "zh_yue": "https://zh_yue.wikipedia.org/wiki/%E7%B6%AD%E5%9F%BA%E5%AA%92%E9%AB%94%E5%9F%BA%E9%87%91%E6%9C%83",
+      "zhwiki": "https://zh.wikinews.org/wiki/Category%3A%E7%BB%B4%E5%9F%BA%E5%AA%92%E4%BD%93"
+    },
+    "winners": {}
+  },
+  {
+    "accepted_org_tos": true,
     "blog_url": "https://insights.ubuntu.com/",
     "chat": {
       "image": "images/logos/irc.png",
       "platform": "IRC",
       "url": "irc://irc.freenode.net/ubuntu-google"
     },
-    "completed_task_instance_count": 618,
+    "completed_task_instance_count": 626,
     "contact_email": "popey@ubuntu.com",
     "description": "We believe in fast, effective computing for everyone. Created by the open-source community and Canonical, Ubuntu is free to use and share, at home and in business. \n\n## The Ubuntu Promise\n\nUbuntu is free. Always has been and always will be. From the operating system to security updates, storage to software. Ubuntu is fast to load, easy to use, available in most languages and accessible to all. Ubuntu applications are all free and open source — so you can share them with anyone you like, as often as you like. Ubuntu comes with full support and all kinds of services available worldwide.\n\n## Open-source software\n\nUbuntu is created by open-source developers because we believe that everybody should have access to the best possible technologies. This passionate global community works together to continually evolve the best systems in the world and then make them available to everybody, absolutely free.",
     "dev_mailing_list": null,
@@ -722,61 +992,61 @@
     "leaders": [
       {
         "display_name": "Accelerator",
-        "github_updated": 1515345206456,
+        "github_updated": 1515431644946,
         "id": 5456412610134016,
         "program_year": 2017
       },
       {
         "display_name": "Daniel Lim",
-        "github_updated": 1515345206467,
+        "github_updated": 1515431645116,
         "id": 5270417574985728,
         "program_year": 2017
       },
       {
         "display_name": "Dhruv Sharma",
-        "github_updated": 1515345206399,
+        "github_updated": 1515431645188,
         "id": 5276007298760704,
         "program_year": 2017
       },
       {
         "display_name": "Heesen Ponnusawmy",
-        "github_updated": 1515345206390,
+        "github_updated": 1515431644931,
         "id": 5164862177017856,
         "program_year": 2017
       },
       {
         "display_name": "Konrad Krawiec",
-        "github_updated": 1515345206385,
+        "github_updated": 1515431644929,
         "id": 5887809686601728,
         "program_year": 2017
       },
       {
         "display_name": "Marcin Mikołajczak",
-        "github_updated": 1515345206384,
+        "github_updated": 1515431645095,
         "id": 5470339310026752,
         "program_year": 2017
       },
       {
         "display_name": "Nissaar Gopee",
-        "github_updated": 1515345206401,
+        "github_updated": 1515431645009,
         "id": 5859320807817216,
         "program_year": 2017
       },
       {
         "display_name": "Qazi Omair Ahmed",
-        "github_updated": 1515345206373,
+        "github_updated": 1515431644945,
         "id": 5047942119424000,
         "program_year": 2017
       },
       {
         "display_name": "Simran Singh",
-        "github_updated": 1515345206467,
+        "github_updated": 1515431645313,
         "id": 5455531898568704,
         "program_year": 2017
       },
       {
         "display_name": "WinningIt",
-        "github_updated": 1515345206407,
+        "github_updated": 1515431645048,
         "id": 5420514023571456,
         "program_year": 2017
       }
@@ -988,284 +1258,13 @@
   },
   {
     "accepted_org_tos": true,
-    "blog_url": "https://blog.wikimedia.org/",
-    "chat": {
-      "image": "images/logos/irc.png",
-      "platform": "IRC",
-      "url": "https://www.mediawiki.org/wiki/MediaWiki_on_IRC"
-    },
-    "completed_task_instance_count": 615,
-    "contact_email": null,
-    "description": "Wikimedia believes that knowledge should be free for every human being. We prioritize efforts that empower disadvantaged and underrepresented communities, and that help overcome barriers to participation. We believe in mass collaboration, diversity and consensus building to achieve our goals.\r\nWikipedia has become the fifth most-visited site in the world, used by more than 400 million people every month in more than 280 languages. We have more content projects including Wikimedia Commons, Wikidata, or Wikisource. We also maintain the MediaWiki software engine and a wide collection of free and open source software projects around it.\r\nBut there is much more we can do: stabilize infrastructure, increase participation, improve quality, increase reach, encourage innovation.\r\nYou can help to these goals in many ways and become part of an international community!",
-    "dev_mailing_list": null,
-    "github": "wikimedia",
-    "gplus_url": null,
-    "guide_to_working": "Students must first read and understand Wikimedia's general instructions before claiming this task: https://www.mediawiki.org/wiki/Google_Code-in/Participants",
-    "guide_to_working_url": "https://www.mediawiki.org/wiki/Google_Code-in/2017",
-    "id": 5740205476675584,
-    "image_url": "//lh3.googleusercontent.com/AJUnYAo8iSTd8C4eW13wxutICNLSmKiX9fzrs-ljmD7da41im5N6o-1XalNCWt8BvqQ6jPSTe8OZ4XB_L_GUDg",
-    "irc_channel": "https://www.mediawiki.org/wiki/MediaWiki_on_IRC",
-    "leaders": [
-      {
-        "display_name": "Albert Wolszon",
-        "github_updated": 1515345207519,
-        "id": 4879989344305152,
-        "program_year": 2017
-      },
-      {
-        "display_name": "C. F. Fairfeld",
-        "github_updated": 1515345207533,
-        "id": 4759011792519168,
-        "program_year": 2017
-      },
-      {
-        "display_name": "David Sn",
-        "github_updated": 1515345207925,
-        "id": 6744722544525312,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Gabe Mitnick",
-        "github_updated": 1515345207541,
-        "id": 5394768580313088,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Phantom42",
-        "github_updated": 1515345207604,
-        "id": 5855143146815488,
-        "program_year": 2017
-      },
-      {
-        "display_name": "pppery",
-        "github_updated": 1515345207630,
-        "id": 5884375231102976,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Rafid Aslam",
-        "github_updated": 1515345207666,
-        "id": 4789845765390336,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Ryan Chang",
-        "github_updated": 1515345207928,
-        "id": 4891685077123072,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Tarun Prasad",
-        "github_updated": 1515345207549,
-        "id": 4551707939831808,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Yifei He",
-        "github_updated": 1515345207719,
-        "id": 5910548224933888,
-        "program_year": 2017
-      }
-    ],
-    "mailing_list": "https://lists.wikimedia.org/mailman/listinfo/wikitech-l",
-    "name": "Wikimedia",
-    "precis": "The non-profit foundation dedicated to bringing free content to the world, operating Wikipedia and other websites.",
-    "preferred_contact_method": null,
-    "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
-    "program_year": 2017,
-    "programming_languages": [
-      "php",
-      "javascript",
-      "css",
-      "lua",
-      "wiki"
-    ],
-    "slug": "wikimedia",
-    "stack_exchange": null,
-    "status": 2,
-    "tags": [
-      "wikimedia",
-      "wikipedia",
-      "mediawiki",
-      "wiki"
-    ],
-    "twitter_url": "https://twitter.com/Wikimedia",
-    "website_url": "https://wikimediafoundation.org/",
-    "wikidata_url": "//www.wikidata.org/wiki/Q180",
-    "wikipedia_urls": {
-      "af": "https://af.wikipedia.org/wiki/Wikimedia-stigting",
-      "als": "https://als.wikipedia.org/wiki/Wikimedia_Foundation",
-      "an": "https://an.wikipedia.org/wiki/Fundaci%C3%B3n_Wikimedia",
-      "ar": "https://ar.wikipedia.org/wiki/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9_%D9%88%D9%8A%D9%83%D9%8A%D9%85%D9%8A%D8%AF%D9%8A%D8%A7",
-      "arwiki": "https://ar.wikinews.org/wiki/%D8%AA%D8%B5%D9%86%D9%8A%D9%81%3A%D9%88%D9%8A%D9%83%D9%8A%D9%85%D9%8A%D8%AF%D9%8A%D8%A7",
-      "arz": "https://arz.wikipedia.org/wiki/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9_%D9%88%D9%8A%D9%83%D9%8A%D9%85%D9%8A%D8%AF%D9%8A%D8%A7",
-      "as": "https://as.wikipedia.org/wiki/%E0%A7%B1%E0%A6%BF%E0%A6%95%E0%A6%BF%E0%A6%AE%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AB%E0%A6%BE%E0%A6%89%E0%A6%A3%E0%A7%8D%E0%A6%A1%E0%A7%87%E0%A6%B6%E0%A7%8D%E0%A6%AF%E0%A6%A8",
-      "ast": "https://ast.wikipedia.org/wiki/Fundaci%C3%B3n_Wikimedia",
-      "av": "https://av.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0",
-      "az": "https://az.wikipedia.org/wiki/Vikimedia_Fondu",
-      "ba": "https://ba.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D1%84%D0%BE%D0%BD%D0%B4%D1%8B",
-      "bat_smg": "https://bat_smg.wikipedia.org/wiki/Vikimed%C4%97j%C4%97",
-      "be": "https://be.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D1%96%D0%BA%D1%96%D0%BC%D0%B5%D0%B4%D1%8B%D1%8F",
-      "be_x_old": "https://be_x_old.wikipedia.org/wiki/%D0%A4%D1%83%D0%BD%D0%B4%D0%B0%D1%86%D1%8B%D1%8F_%C2%AB%D0%92%D1%96%D0%BA%D1%96%D0%BC%D1%8D%D0%B4%D1%8B%D1%8F%C2%BB",
-      "bg": "https://bg.wikipedia.org/wiki/%D0%A3%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%8F",
-      "bh": "https://bh.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%82%E0%A4%A1%E0%A5%87%E0%A4%B6%E0%A4%A8",
-      "bjn": "https://bjn.wikipedia.org/wiki/Wikimedia_Foundation",
-      "bn": "https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AE%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AB%E0%A6%BE%E0%A6%89%E0%A6%A8%E0%A7%8D%E0%A6%A1%E0%A7%87%E0%A6%B6%E0%A6%A8",
-      "bpy": "https://bpy.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%3A%E0%A6%AC%E0%A6%A8%E0%A6%95_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%95%E0%A6%B2%E0%A7%8D%E0%A6%AA%E0%A6%B9%E0%A6%BE%E0%A6%A8%E0%A6%BF",
-      "br": "https://br.wikipedia.org/wiki/Wikimedia_Foundation",
-      "ca": "https://ca.wikipedia.org/wiki/Fundaci%C3%B3_Wikimedia",
-      "cdo": "https://cdo.wikipedia.org/wiki/Wikimedia",
-      "ce": "https://ce.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%BD_%D1%84%D0%BE%D0%BD%D0%B4",
-      "ceb": "https://ceb.wikipedia.org/wiki/Wikimedia_Foundation",
-      "ch": "https://ch.wikipedia.org/wiki/Wikimedia_Foundation",
-      "ckb": "https://ckb.wikipedia.org/wiki/%D8%AF%D8%A7%D9%85%DB%95%D8%B2%D8%B1%D8%A7%D9%88%DB%95%DB%8C_%D9%88%DB%8C%DA%A9%DB%8C%D9%85%DB%8C%D8%AF%DB%8C%D8%A7",
-      "commons": "https://commons.wikipedia.org/wiki/Wikimedia_Foundation",
-      "cs": "https://cs.wikipedia.org/wiki/Nadace_Wikimedia",
-      "cswiki": "https://cs.wikinews.org/wiki/Kategorie%3AWikimedia_Foundation",
-      "cv": "https://cv.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D1%84%D0%BE%D0%BD%D1%87%C4%95",
-      "cy": "https://cy.wikipedia.org/wiki/Sefydliad_Wicimedia",
-      "da": "https://da.wikipedia.org/wiki/Wikimedia",
-      "de": "https://de.wikipedia.org/wiki/Wikimedia_Foundation",
-      "el": "https://el.wikipedia.org/wiki/%CE%8A%CE%B4%CF%81%CF%85%CE%BC%CE%B1_Wikimedia",
-      "elwikiq": "https://el.wikiquote.org/wiki/%CE%8A%CE%B4%CF%81%CF%85%CE%BC%CE%B1_Wikimedia",
-      "eml": "https://eml.wikipedia.org/wiki/Wikimedia_Foundation",
-      "en": "https://en.wikipedia.org/wiki/Wikimedia_Foundation",
-      "enwiki": "https://en.wikinews.org/wiki/Category%3AWikimedia_Foundation",
-      "enwikiver": "https://en.wikiversity.org/wiki/Wikimedia_Foundation",
-      "eo": "https://eo.wikipedia.org/wiki/Fonda%C4%B5o_Vikimedio",
-      "es": "https://es.wikipedia.org/wiki/Fundaci%C3%B3n_Wikimedia",
-      "eswikiq": "https://es.wikiquote.org/wiki/Fundaci%C3%B3n_Wikimedia",
-      "et": "https://et.wikipedia.org/wiki/Wikimedia_Foundation",
-      "eu": "https://eu.wikipedia.org/wiki/Wikimedia_Fundazioa",
-      "ext": "https://ext.wikipedia.org/wiki/Hundaci%C3%B3n_Wikimedia",
-      "fa": "https://fa.wikipedia.org/wiki/%D8%A8%D9%86%DB%8C%D8%A7%D8%AF_%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D9%85%D8%AF%DB%8C%D8%A7",
-      "fi": "https://fi.wikipedia.org/wiki/Wikimedia_Foundation",
-      "fiu_vro": "https://fiu_vro.wikipedia.org/wiki/Vikimeedi%C3%A4_Tsihts%C3%A4%C3%A4d%C3%BCng",
-      "fiwiki": "https://fi.wikinews.org/wiki/Luokka%3AWikimedia",
-      "fo": "https://fo.wikipedia.org/wiki/Wikimedia",
-      "fr": "https://fr.wikipedia.org/wiki/Wikimedia_Foundation",
-      "frwikiq": "https://fr.wikiquote.org/wiki/Wikimedia_Foundation",
-      "ga": "https://ga.wikipedia.org/wiki/Wikimedia_Foundation",
-      "gd": "https://gd.wikipedia.org/wiki/Wikimedia",
-      "gl": "https://gl.wikipedia.org/wiki/Fundaci%C3%B3n_Wikimedia",
-      "gu": "https://gu.wikipedia.org/wiki/%E0%AA%B5%E0%AA%BF%E0%AA%95%E0%AA%BF%E0%AA%AE%E0%AB%80%E0%AA%A1%E0%AA%BF%E0%AA%AF%E0%AA%BE_%E0%AA%AB%E0%AA%BE%E0%AA%89%E0%AA%A8%E0%AB%8D%E0%AA%A1%E0%AB%87%E0%AA%B6%E0%AA%A8",
-      "gv": "https://gv.wikipedia.org/wiki/Wikimedia",
-      "hak": "https://hak.wikipedia.org/wiki/Wikimedia",
-      "he": "https://he.wikipedia.org/wiki/%D7%A7%D7%A8%D7%9F_%D7%95%D7%99%D7%A7%D7%99%D7%9E%D7%93%D7%99%D7%94",
-      "hi": "https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%B8%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%A8",
-      "hr": "https://hr.wikipedia.org/wiki/Zaklada_Wikimedija",
-      "hu": "https://hu.wikipedia.org/wiki/Wikim%C3%A9dia_Alap%C3%ADtv%C3%A1ny",
-      "hy": "https://hy.wikipedia.org/wiki/%D5%8E%D5%AB%D6%84%D5%AB%D5%B4%D5%A5%D5%A4%D5%AB%D5%A1_%D5%80%D5%AB%D5%B4%D5%B6%D5%A1%D5%A4%D6%80%D5%A1%D5%B4",
-      "ia": "https://ia.wikipedia.org/wiki/Wikimedia",
-      "id": "https://id.wikipedia.org/wiki/Wikimedia_Foundation",
-      "ilo": "https://ilo.wikipedia.org/wiki/Pundasion_ti_Wikimedia",
-      "is": "https://is.wikipedia.org/wiki/Wikimedia",
-      "it": "https://it.wikipedia.org/wiki/Wikimedia_Foundation",
-      "ja": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E8%B2%A1%E5%9B%A3",
-      "jam": "https://jam.wikipedia.org/wiki/Wikimedia_Foundation",
-      "jv": "https://jv.wikipedia.org/wiki/Wikimedia_Foundation",
-      "ka": "https://ka.wikipedia.org/wiki/%E1%83%A4%E1%83%9D%E1%83%9C%E1%83%93%E1%83%98_%E1%83%95%E1%83%98%E1%83%99%E1%83%98%E1%83%9B%E1%83%94%E1%83%93%E1%83%98%E1%83%90",
-      "kk": "https://kk.wikipedia.org/wiki/%D0%A3%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D2%9B%D0%BE%D1%80%D1%8B",
-      "kl": "https://kl.wikipedia.org/wiki/Wikimedia",
-      "kn": "https://kn.wikipedia.org/wiki/%E0%B2%B5%E0%B2%BF%E0%B2%95%E0%B2%BF%E0%B2%AA%E0%B3%80%E0%B2%A1%E0%B2%BF%E0%B2%AF%3A%E0%B2%AF%E0%B3%8B%E0%B2%9C%E0%B2%A8%E0%B3%86",
-      "ko": "https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%AF%B8%EB%94%94%EC%96%B4_%EC%9E%AC%EB%8B%A8",
-      "kowikiso": "https://ko.wikisource.org/wiki/%EC%9C%84%ED%82%A4%EB%AC%B8%ED%97%8C%3A%EC%9C%84%ED%82%A4%EB%AF%B8%EB%94%94%EC%96%B4_%EC%9E%AC%EB%8B%A8",
-      "krc": "https://krc.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D1%84%D0%BE%D0%BD%D0%B4",
-      "ku": "https://ku.wikipedia.org/wiki/Weqfa_W%C3%AEk%C3%AEmedya",
-      "la": "https://la.wikipedia.org/wiki/Vicimedia",
-      "lad": "https://lad.wikipedia.org/wiki/Fondasion_Wikimedia",
-      "lb": "https://lb.wikipedia.org/wiki/Wikimedia",
-      "li": "https://li.wikipedia.org/wiki/Wikimedia_Foundation",
-      "lt": "https://lt.wikipedia.org/wiki/Vikimedijos_fondas",
-      "lv": "https://lv.wikipedia.org/wiki/Wikimedia_Foundation",
-      "mai": "https://mai.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A4%BF%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%A8%E0%A5%8D%E0%A4%A1%E0%A5%87%E0%A4%B8%E0%A4%A8",
-      "map_bms": "https://map_bms.wikipedia.org/wiki/Wikimedia_Foundation",
-      "meta": "https://meta.wikipedia.org/wiki/Wikimedia_Foundation",
-      "mg": "https://mg.wikipedia.org/wiki/Wikimedia_Foundation",
-      "mk": "https://mk.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D1%98%D0%B0_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%98%D0%B0",
-      "ml": "https://ml.wikipedia.org/wiki/%E0%B4%B5%E0%B4%BF%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%BF%E0%B4%AE%E0%B5%80%E0%B4%A1%E0%B4%BF%E0%B4%AF_%E0%B4%AB%E0%B5%97%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B5%87%E0%B4%B7%E0%B5%BB",
-      "mo": "https://mo.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%8F",
-      "mr": "https://mr.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%82%E0%A4%A1%E0%A5%87%E0%A4%B6%E0%A4%A8",
-      "ms": "https://ms.wikipedia.org/wiki/Wikimedia_Foundation",
-      "mt": "https://mt.wikipedia.org/wiki/Fondazzjoni_Wikimedia",
-      "my": "https://my.wikipedia.org/wiki/%E1%80%9D%E1%80%AE%E1%80%80%E1%80%AE%E1%80%99%E1%80%AE%E1%80%92%E1%80%AE%E1%80%9A%E1%80%AC_%E1%80%96%E1%80%B1%E1%80%AC%E1%80%84%E1%80%BA%E1%80%92%E1%80%B1%E1%80%B8%E1%80%9B%E1%80%BE%E1%80%84%E1%80%BA%E1%80%B8",
-      "nap": "https://nap.wikipedia.org/wiki/Funnazzione_Wikimedia",
-      "nds_nl": "https://nds_nl.wikipedia.org/wiki/Wikimedia_Foundation",
-      "ne": "https://ne.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A4%BF%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%A8%E0%A5%8D%E0%A4%A1%E0%A5%87%E0%A4%B8%E0%A4%A8",
-      "nl": "https://nl.wikipedia.org/wiki/Wikimedia_Foundation",
-      "nn": "https://nn.wikipedia.org/wiki/Wikimedia",
-      "no": "https://no.wikipedia.org/wiki/Wikimedia_Foundation",
-      "oc": "https://oc.wikipedia.org/wiki/Wikimedia_Foundation",
-      "or": "https://or.wikipedia.org/wiki/%E0%AC%89%E0%AC%87%E0%AC%95%E0%AC%BF%E0%AC%AE%E0%AC%BF%E0%AC%A1%E0%AC%BC%E0%AC%BF%E0%AC%86_%E0%AC%AB%E0%AC%BE%E0%AC%89%E0%AC%A3%E0%AD%8D%E0%AC%A1%E0%AD%87%E0%AC%B8%E0%AC%A8",
-      "pa": "https://pa.wikipedia.org/wiki/%E0%A8%B5%E0%A8%BF%E0%A8%95%E0%A9%80%E0%A8%AE%E0%A9%80%E0%A8%A1%E0%A9%80%E0%A8%86_%E0%A8%AB%E0%A8%BC%E0%A8%BE%E0%A8%8A%E0%A8%82%E0%A8%A1%E0%A9%87%E0%A8%B8%E0%A8%BC%E0%A8%A8",
-      "pam": "https://pam.wikipedia.org/wiki/Katatagan_Wikimedia",
-      "pap": "https://pap.wikipedia.org/wiki/Fundashon_Wikipedia",
-      "pl": "https://pl.wikipedia.org/wiki/Wikimedia_Foundation",
-      "plwikiq": "https://pl.wikiquote.org/wiki/Wikimedia_Foundation",
-      "ps": "https://ps.wikipedia.org/wiki/%D9%88%D9%8A%DA%A9%D9%8A%D9%85%DB%90%DA%89%D9%8A%D8%A7_%D8%A8%D9%86%D8%B3%D9%BC",
-      "pt": "https://pt.wikipedia.org/wiki/Wikimedia",
-      "ptwiki": "https://pt.wikinews.org/wiki/Categoria%3AWikimedia_Foundation",
-      "qu": "https://qu.wikipedia.org/wiki/Wikimedia",
-      "ro": "https://ro.wikipedia.org/wiki/Wikimedia_Foundation",
-      "ru": "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0",
-      "rue": "https://rue.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D1%96%D0%BA%D1%96%D0%BC%D0%B5%D0%B4%D1%96%D1%8F",
-      "ruwiki": "https://ru.wikinews.org/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%3A%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0",
-      "sa": "https://sa.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AE%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-      "sah": "https://sah.wikipedia.org/wiki/Wikimedia",
-      "scn": "https://scn.wikipedia.org/wiki/Funnaziuni_Wikimedia",
-      "sco": "https://sco.wikipedia.org/wiki/Wikimedia_Foundation",
-      "sd": "https://sd.wikipedia.org/wiki/%D9%88%DA%AA%D9%8A%D9%85%D9%8A%DA%8A%D9%8A%D8%A7_%D9%81%D8%A7%D8%A6%D9%88%D9%86%DA%8A%D9%8A%D8%B4%D9%86",
-      "sh": "https://sh.wikipedia.org/wiki/Wikimedia_Foundation",
-      "si": "https://si.wikipedia.org/wiki/%E0%B7%80%E0%B7%92%E0%B6%9A%E0%B7%92%E0%B6%B8%E0%B7%93%E0%B6%A9%E0%B7%92%E0%B6%BA%E0%B7%8F_%E0%B6%B4%E0%B6%AF%E0%B6%B1%E0%B6%B8",
-      "simple": "https://simple.wikipedia.org/wiki/Wikimedia_Foundation",
-      "sk": "https://sk.wikipedia.org/wiki/Wikimedia_Foundation",
-      "sl": "https://sl.wikipedia.org/wiki/Fundacija_Wikimedia",
-      "so": "https://so.wikipedia.org/wiki/Wikimedia",
-      "species": "https://species.wikipedia.org/wiki/Wikimedia_Foundation",
-      "sq": "https://sq.wikipedia.org/wiki/Fondacioni_Wikimedia",
-      "sr": "https://sr.wikipedia.org/wiki/%D0%97%D0%B0%D0%B4%D1%83%D0%B6%D0%B1%D0%B8%D0%BD%D0%B0_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%98%D0%B0",
-      "sv": "https://sv.wikipedia.org/wiki/Wikimedia_Foundation",
-      "sw": "https://sw.wikipedia.org/wiki/Wikimedia_Foundation",
-      "ta": "https://ta.wikipedia.org/wiki/%E0%AE%B5%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%BF%E0%AE%AE%E0%AF%80%E0%AE%9F%E0%AE%BF%E0%AE%AF%E0%AE%BE_%E0%AE%A8%E0%AE%BF%E0%AE%B1%E0%AF%81%E0%AE%B5%E0%AE%A9%E0%AE%AE%E0%AF%8D",
-      "te": "https://te.wikipedia.org/wiki/%E0%B0%B5%E0%B0%BF%E0%B0%95%E0%B1%80%E0%B0%AE%E0%B1%80%E0%B0%A1%E0%B0%BF%E0%B0%AF%E0%B0%BE_%E0%B0%AB%E0%B1%8C%E0%B0%82%E0%B0%A1%E0%B1%87%E0%B0%B7%E0%B0%A8%E0%B1%8D",
-      "tg": "https://tg.wikipedia.org/wiki/%D0%91%D1%83%D0%BD%D1%91%D0%B4%D0%B8_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0",
-      "th": "https://th.wikipedia.org/wiki/%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%99%E0%B8%B4%E0%B8%98%E0%B8%B4%E0%B8%A7%E0%B8%B4%E0%B8%81%E0%B8%B4%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2",
-      "tl": "https://tl.wikipedia.org/wiki/Pundasyong_Wikimedia",
-      "tr": "https://tr.wikipedia.org/wiki/Wikimedia_Vakf%C4%B1",
-      "trwiki": "https://tr.wikinews.org/wiki/Kategori%3AVikimedya_Vakf%C4%B1",
-      "ts": "https://ts.wikipedia.org/wiki/Wikimedia",
-      "tt": "https://tt.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D0%A4%D0%BE%D0%BD%D0%B4%D1%8B",
-      "ug": "https://ug.wikipedia.org/wiki/%DB%8B%D9%89%D9%83%D9%89%D9%BE%DB%90%D8%AF%D9%89%D9%8A%DB%95_%DB%8B%DB%95%D8%AE%D9%BE%D9%89",
-      "uk": "https://uk.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D1%96%D0%BA%D1%96%D0%BC%D0%B5%D0%B4%D1%96%D0%B0",
-      "ur": "https://ur.wikipedia.org/wiki/%D9%88%DB%8C%DA%A9%DB%8C%D9%85%DB%8C%DA%88%DB%8C%D8%A7_%D9%81%D8%A7%D8%A4%D9%86%DA%88%DB%8C%D8%B4%D9%86",
-      "uz": "https://uz.wikipedia.org/wiki/Vikimedia_Jamg%CA%BBarmasi",
-      "vec": "https://vec.wikipedia.org/wiki/Wikimedia_Foundation",
-      "vep": "https://vep.wikipedia.org/wiki/Vikimedii",
-      "vi": "https://vi.wikipedia.org/wiki/Wikimedia_Foundation",
-      "war": "https://war.wikipedia.org/wiki/Wikimedia_Foundation",
-      "wuu": "https://wuu.wikipedia.org/wiki/%E7%BB%B4%E5%9F%BA%E5%AA%92%E4%BD%93%E5%9F%BA%E9%87%91%E4%BC%9A",
-      "xal": "https://xal.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_%D0%BA%D3%A9%D1%80%D2%A3",
-      "xmf": "https://xmf.wikipedia.org/wiki/%E1%83%A4%E1%83%9D%E1%83%9C%E1%83%93%E1%83%98_%E1%83%95%E1%83%98%E1%83%99%E1%83%98%E1%83%9B%E1%83%94%E1%83%93%E1%83%98%E1%83%90",
-      "yi": "https://yi.wikipedia.org/wiki/%D7%95%D7%95%D7%99%D7%A7%D7%99%D7%9E%D7%A2%D7%93%D7%99%D7%A2_%D7%A4%D7%95%D7%A0%D7%93%D7%90%D7%A6%D7%99%D7%A2",
-      "yo": "https://yo.wikipedia.org/wiki/Wikimedia",
-      "za": "https://za.wikipedia.org/wiki/Veizgiek_Meizdij_Gihginhvei",
-      "zh": "https://zh.wikipedia.org/wiki/%E7%BB%B4%E5%9F%BA%E5%AA%92%E4%BD%93%E5%9F%BA%E9%87%91%E4%BC%9A",
-      "zh_classical": "https://zh_classical.wikipedia.org/wiki/%E7%B6%AD%E5%9F%BA%E5%AA%92%E9%AB%94%E5%9F%BA%E9%87%91%E6%9C%83",
-      "zh_min_nan": "https://zh_min_nan.wikipedia.org/wiki/Wikimedia",
-      "zh_yue": "https://zh_yue.wikipedia.org/wiki/%E7%B6%AD%E5%9F%BA%E5%AA%92%E9%AB%94%E5%9F%BA%E9%87%91%E6%9C%83",
-      "zhwiki": "https://zh.wikinews.org/wiki/Category%3A%E7%BB%B4%E5%9F%BA%E5%AA%92%E4%BD%93"
-    },
-    "winners": {}
-  },
-  {
-    "accepted_org_tos": true,
     "blog_url": "https://blog.zulip.org",
     "chat": {
       "image": "images/logos/zulip.png",
       "platform": "ZULIP",
       "url": "https://chat.zulip.org"
     },
-    "completed_task_instance_count": 592,
+    "completed_task_instance_count": 604,
     "contact_email": null,
     "description": "Zulip is a powerful, open source group chat application. It competes with Slack, IRC, Jabber, and dozens of other group chat tools designed to help teams (whether open source projects or at companies) collaborate effectively. Zulip supports fast search, drag-and-drop file uploads, image previews, group private messages, audible notifications, missed-message emails, desktop apps, markdown message rendering, and [much more](https://zulipchat.com/features) -- essentially everything you might want.\r\n\r\nUnlike Slack, it’s open source and has a welcoming community of over 350 volunteer contributors. Unlike IRC/Jabber/etc., Zulip is a complete, modern application, with a web version, mobile apps for iOS and Android, and desktop apps for Mac/Linux/Windows. And unlike all other popular group chat tools, Zulip is designed to make conversations more efficient through its unique threading system that helps teams manage large numbers of messages. In particular, Zulip makes it easy to have multiple conversations at the same time with the same groups of people, and easy to catch up on hundreds or thousands of messages quickly without missing anything important.\r\n\r\nZulip is known for its extensive developer documentation (100,000 words and growing!), code quality, and tooling, and thus is a great project to work on to learn how to build a high-quality web application.\r\n\r\nWe have tons of tasks across all parts of the Zulip project, and we're especially excited about expanding Zulip's library of bots and integrations!",
     "dev_mailing_list": null,
@@ -1279,43 +1278,43 @@
     "leaders": [
       {
         "display_name": "Freddie Miller",
-        "github_updated": 1515345207708,
+        "github_updated": 1515431646654,
         "id": 5962704562946048,
         "program_year": 2017
       },
       {
         "display_name": "Ivan Trajkov",
-        "github_updated": 1515345207701,
+        "github_updated": 1515431646744,
         "id": 6494687667945472,
         "program_year": 2017
       },
       {
         "display_name": "jwzhang",
-        "github_updated": 1515345207755,
+        "github_updated": 1515431646668,
         "id": 6577413972557824,
         "program_year": 2017
       },
       {
         "display_name": "Marco Burstein",
-        "github_updated": 1515345207715,
+        "github_updated": 1515431646694,
         "id": 4597515116609536,
         "program_year": 2017
       },
       {
         "display_name": "Pranav Kulkarni",
-        "github_updated": 1515345207989,
+        "github_updated": 1515431647661,
         "id": 5648992727728128,
         "program_year": 2017
       },
       {
         "display_name": "Priyank Patel",
-        "github_updated": 1515345207737,
+        "github_updated": 1515431646745,
         "id": 5679157667168256,
         "program_year": 2017
       },
       {
         "display_name": "steve",
-        "github_updated": 1515345207752,
+        "github_updated": 1515431646990,
         "id": 5056135214137344,
         "program_year": 2017
       },
@@ -1328,7 +1327,7 @@
       },
       {
         "display_name": "Viraat Chandra",
-        "github_updated": 1515345207673,
+        "github_updated": 1515431647759,
         "id": 5432437968470016,
         "program_year": 2017
       },
@@ -1380,7 +1379,7 @@
       "platform": "IRC",
       "url": "irc://irc.freenode.net/musicbrainz"
     },
-    "completed_task_instance_count": 586,
+    "completed_task_instance_count": 592,
     "contact_email": "support@metabrainz.org",
     "description": "The MetaBrainz Foundation provides the backbone for a number of projects rooted in crowd sourcing open data, namely:\n\n- [MusicBrainz](https://musicbrainz.org/): open music metadata database\n- [MusicBrainz Picard](https://picard.musicbrainz.org/): music file tagger, using data from MusicBrainz\n- [ListenBrainz](https://listenbrainz.org/): repository of listen data\n- [AcousticBrainz](https://acousticbrainz.org/): crowd sourced database of acoustic information for music\n- [CritiqueBrainz](https://critiquebrainz.org/): Creative Commons-licensed reviews\n- [BookBrainz](https://bookbrainz.org/): open \"book\" database\n- [Cover Art Archive](https://coverartarchive.org/): repository of album cover art",
     "dev_mailing_list": null,
@@ -1394,61 +1393,61 @@
     "leaders": [
       {
         "display_name": "Annebelle Olminkhof",
-        "github_updated": 1515345207825,
+        "github_updated": 1515431646958,
         "id": 4916088141774848,
         "program_year": 2017
       },
       {
         "display_name": "Ashish Kamathi-1",
-        "github_updated": 1515345207818,
+        "github_updated": 1515431646965,
         "id": 6663981454327808,
         "program_year": 2017
       },
       {
         "display_name": "Enjeck Cleopatra",
-        "github_updated": 1515345207834,
+        "github_updated": 1515431649303,
         "id": 5982403564666880,
         "program_year": 2017
       },
       {
         "display_name": "Eshan Singh",
-        "github_updated": 1515345207796,
+        "github_updated": 1515431646945,
         "id": 5077106331484160,
         "program_year": 2017
       },
       {
         "display_name": "Hartama",
-        "github_updated": 1515345207790,
+        "github_updated": 1515431649108,
         "id": 5976468456734720,
         "program_year": 2017
       },
       {
         "display_name": "J Young Kim",
-        "github_updated": 1515345207871,
+        "github_updated": 1515431647016,
         "id": 6367732863860736,
         "program_year": 2017
       },
       {
         "display_name": "kartikohri1712",
-        "github_updated": 1515345208024,
+        "github_updated": 1515431648855,
         "id": 4571726790787072,
         "program_year": 2017
       },
       {
         "display_name": "Rahul Madaan",
-        "github_updated": 1515345207871,
+        "github_updated": 1515431647031,
         "id": 5198064748855296,
         "program_year": 2017
       },
       {
         "display_name": "Shameek Dutta",
-        "github_updated": 1515345208035,
+        "github_updated": 1515431649847,
         "id": 4650477700513792,
         "program_year": 2017
       },
       {
         "display_name": "Shreya Kannan",
-        "github_updated": 1515345207862,
+        "github_updated": 1515431647492,
         "id": 4955683604660224,
         "program_year": 2017
       }
@@ -1493,7 +1492,7 @@
       "platform": "ROCKET",
       "url": "https://chat.librehealth.io/channel/gci"
     },
-    "completed_task_instance_count": 522,
+    "completed_task_instance_count": 535,
     "contact_email": "lsc@librehealth.io",
     "description": "LibreHealth is a collaborative community for free & open source software projects in Health IT. We are a member project of the Software Freedom Conservatory, and an all-volunteer public charity. Come join us!",
     "dev_mailing_list": "",
@@ -1508,25 +1507,25 @@
     "leaders": [
       {
         "display_name": "Aaron Elson Phangestu",
-        "github_updated": 1515345205978,
+        "github_updated": 1515431644417,
         "id": 5355071606882304,
         "program_year": 2017
       },
       {
         "display_name": "Adithi M",
-        "github_updated": 1515345206266,
+        "github_updated": 1515431645508,
         "id": 5976291549380608,
         "program_year": 2017
       },
       {
         "display_name": "Adrien Zier",
-        "github_updated": 1515345205984,
+        "github_updated": 1515431644420,
         "id": 6080025218514944,
         "program_year": 2017
       },
       {
         "display_name": "Mateusz Grzonka",
-        "github_updated": 1515345205978,
+        "github_updated": 1515431644491,
         "id": 4662563470049280,
         "program_year": 2017
       },
@@ -1539,31 +1538,31 @@
       },
       {
         "display_name": "nulxis",
-        "github_updated": 1515345206005,
+        "github_updated": 1515431644432,
         "id": 6241077499527168,
         "program_year": 2017
       },
       {
         "display_name": "Rohan25",
-        "github_updated": 1515345205993,
+        "github_updated": 1515431644539,
         "id": 6174516772339712,
         "program_year": 2017
       },
       {
         "display_name": "Shaurya Nathan",
-        "github_updated": 1515345206269,
+        "github_updated": 1515431644827,
         "id": 4988221043769344,
         "program_year": 2017
       },
       {
         "display_name": "Shreya Karra",
-        "github_updated": 1515345205986,
+        "github_updated": 1515431644459,
         "id": 4874016647020544,
         "program_year": 2017
       },
       {
         "display_name": "Vishwas Adiga",
-        "github_updated": 1515345206005,
+        "github_updated": 1515431644560,
         "id": 6049660470820864,
         "program_year": 2017
       }
@@ -1601,7 +1600,7 @@
       "platform": "SLACK",
       "url": "http://systers.io/slack-systers-opensource/"
     },
-    "completed_task_instance_count": 498,
+    "completed_task_instance_count": 507,
     "contact_email": "systers.keeper@gmail.com",
     "description": "# About\nSysters is a community for all women involved in the technical aspects of computing. We have over 7,000 members from more than 65 countries around the world. **We welcome the participation of women technologists of all ages at any stage of their studies or careers.** Systers provides women a private space to seek advice from their peers, and discuss the challenges they share as women technologists. \n\n# Mobile Application\nSysters Open Source has *many* projects, but we are focusing on PowerUp ([Android](https://github.com/systers/powerup-android) & [iOS](https://github.com/systers/powerup-ios)) for Google Code-in this year. In 2016, we had many students express that our internal acronyms for all projects were very confusing. PowerUp is a choose-your-own-adventure game is aimed at adolescents to take charge of their reproductive health, work on self-esteem, and empower them to have choices.\n\n# Mentors\nAll Systers mentors are volunteers. We have mentors from many different time zones which means our organization does not currently have 24-hour availability on Slack or the GCI Website. \n* If a task takes longer than 24 hours for review, politely ping the task's mentor in #powerup or #systers channel (i.e. @prachi1210, please review my task here: [url](url)).\n* If a task takes longer than 36 hours for review, politely ping the admins in #powerup or #systers channel (i.e. @may, I haven't received a review or response to my task here: [url](url)).\n\n# **We welcome everyone! We need lots of help that involves no coding experience.**",
     "dev_mailing_list": null,
@@ -1623,25 +1622,25 @@
       },
       {
         "display_name": "Aryaman Agrawal",
-        "github_updated": 1515345207049,
+        "github_updated": 1515431646182,
         "id": 4770355203801088,
         "program_year": 2017
       },
       {
         "display_name": "Erika Tan",
-        "github_updated": 1515345207579,
+        "github_updated": 1515431646618,
         "id": 4717477579718656,
         "program_year": 2017
       },
       {
         "display_name": "Fidella",
-        "github_updated": 1515345207083,
+        "github_updated": 1515431646121,
         "id": 5681230525759488,
         "program_year": 2017
       },
       {
         "display_name": "Mu'aaz Kasker",
-        "github_updated": 1515345207065,
+        "github_updated": 1515431646435,
         "id": 5851158759342080,
         "program_year": 2017
       },
@@ -1654,13 +1653,13 @@
       },
       {
         "display_name": "Sameer",
-        "github_updated": 1515345207740,
+        "github_updated": 1515431646925,
         "id": 4555590061785088,
         "program_year": 2017
       },
       {
         "display_name": "Valentun",
-        "github_updated": 1515345207093,
+        "github_updated": 1515431646216,
         "id": 6017587265667072,
         "program_year": 2017
       },
@@ -1673,7 +1672,7 @@
       },
       {
         "display_name": "Yuyuan Luo",
-        "github_updated": 1515345207111,
+        "github_updated": 1515431646077,
         "id": 5105422807597056,
         "program_year": 2017
       }
@@ -1717,7 +1716,7 @@
       "platform": "IRC",
       "url": "irc://chat.freenode.net/haiku"
     },
-    "completed_task_instance_count": 482,
+    "completed_task_instance_count": 496,
     "contact_email": "contact@haiku-os.org",
     "description": "Haiku is named after the classical three-line Japanese poetry form. Haiku poetry is known for its quiet power, elegance and simplicity - among the core qualities of BeOS which we aim to recreate in Haiku. BeOS included some haiku in its user interface, in the form of network error messages displayed by its web browser.\n\nWhile Haiku is still in Alpha stage and has no official stable release, another goal for the project is to share knowledge about operating system development, with a clean code base and a community ready to help newcomers learn how things are done.",
     "dev_mailing_list": null,
@@ -1731,7 +1730,7 @@
     "leaders": [
       {
         "display_name": "Bach Nguyen",
-        "github_updated": 1515345206186,
+        "github_updated": 1515431644502,
         "id": 5407628760973312,
         "program_year": 2017
       },
@@ -1744,49 +1743,49 @@
       },
       {
         "display_name": "Duong Dac",
-        "github_updated": 1515345206143,
+        "github_updated": 1515431644513,
         "id": 6181119043043328,
         "program_year": 2017
       },
       {
         "display_name": "Han Haoxuan",
-        "github_updated": 1515345206170,
+        "github_updated": 1515431645293,
         "id": 6025453900922880,
         "program_year": 2017
       },
       {
         "display_name": "Leorize",
-        "github_updated": 1515345206109,
+        "github_updated": 1515431644488,
         "id": 6702015805652992,
         "program_year": 2017
       },
       {
         "display_name": "Max Levchuk",
-        "github_updated": 1515345206182,
+        "github_updated": 1515431644455,
         "id": 6240118648078336,
         "program_year": 2017
       },
       {
         "display_name": "Mochammad Nur Afandi",
-        "github_updated": 1515345206157,
+        "github_updated": 1515431644491,
         "id": 5177112698814464,
         "program_year": 2017
       },
       {
         "display_name": "Ng Young Shung",
-        "github_updated": 1515345206156,
+        "github_updated": 1515431644454,
         "id": 5162635370692608,
         "program_year": 2017
       },
       {
         "display_name": "Owen",
-        "github_updated": 1515345206427,
+        "github_updated": 1515431644786,
         "id": 6035804772106240,
         "program_year": 2017
       },
       {
         "display_name": "Trần Thái Sơn",
-        "github_updated": 1515345206012,
+        "github_updated": 1515431644294,
         "id": 5951955736199168,
         "program_year": 2017
       }
@@ -1922,117 +1921,13 @@
   },
   {
     "accepted_org_tos": true,
-    "blog_url": null,
-    "chat": {
-      "url": null
-    },
-    "completed_task_instance_count": 432,
-    "contact_email": "user_forum@catrobat.org",
-    "description": "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!",
-    "dev_mailing_list": null,
-    "github": "Catrobat",
-    "gplus_url": "https://plus.google.com/communities/116816272940643231129",
-    "guide_to_working": "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions.",
-    "guide_to_working_url": "http://catrob.at/cgcicti",
-    "id": 5135243763777536,
-    "image_url": "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE",
-    "irc_channel": null,
-    "leaders": [
-      {
-        "display_name": "Alejandro Heredia",
-        "github_updated": 1515345207470,
-        "id": 5243643889713152,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Andreas Lukita",
-        "github_updated": 1515345207366,
-        "id": 4692396648431616,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Chandra Chou",
-        "github_updated": 1515345207388,
-        "id": 6189747405848576,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Jayanth Koduru",
-        "github_updated": 1515345207400,
-        "id": 6159776452968448,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Mateusz Komajda",
-        "github_updated": 1515345207375,
-        "id": 4979968129892352,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Rifqi Eka Hardianto-1",
-        "github_updated": 1515345207344,
-        "id": 6357445603491840,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Sarthak Agrawal",
-        "github_updated": 1515345207470,
-        "id": 5394417575788544,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Siddh Jain",
-        "github_updated": 1515345207470,
-        "id": 6267827092717568,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Yudhistira G.S.",
-        "github_updated": 1515345207353,
-        "id": 4611923993690112,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Łukasz Ameljan",
-        "github_updated": 1515345207320,
-        "id": 5096542534893568,
-        "program_year": 2017
-      }
-    ],
-    "mailing_list": "http://catrob.at/PocketCodeUserForum",
-    "name": "Catrobat",
-    "precis": "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!",
-    "preferred_contact_method": null,
-    "primary_open_source_license": "GNU Affero General Public License v3 (AGPL-3.0)",
-    "program_year": 2017,
-    "programming_languages": [
-      "visual programming language (catrobat)"
-    ],
-    "slug": "catrobat",
-    "stack_exchange": null,
-    "status": 2,
-    "tags": [
-      "mobile",
-      "games",
-      "visual programming",
-      "apps",
-      "animations"
-    ],
-    "twitter_url": "http://twitter.com/Pocket_Code",
-    "website_url": "https://www.catrobat.org/",
-    "wikidata_url": "//www.wikidata.org/wiki/Q45341807",
-    "wikipedia_urls": null,
-    "winners": {}
-  },
-  {
-    "accepted_org_tos": true,
     "blog_url": "http://planet.osgeo.org/",
     "chat": {
       "image": "images/logos/irc.png",
       "platform": "IRC",
       "url": "irc://irc.freenode.net/osgeo"
     },
-    "completed_task_instance_count": 424,
+    "completed_task_instance_count": 445,
     "contact_email": "gsoc-admin@osgeo.org",
     "description": "OSGeo is a non-profit organization serving as an umbrella organization for the Open Source Geospatial community in general and several code projects in particular:\n\n## Content Management Systems\n\nGeoNode\n\n## Desktop Applications\n\nGRASS GIS\ngvSIG\nMarble\nQGIS\n\n## Geospatial Libraries\n\nFDO\nGDAL/OGR\nGEOS\nGeoTools\nOrfeo ToolBox (OTB)\nOSSIM\nPostGIS\n\n## Metadata Catalogs\n\nGeoNetwork\npycsw\n\n## Web Mapping\n\ndeegree\ngeomajas\nGeoMOOSE\nGeoServer\nMapbender\nMapFish\nMapGuide Open Source\nMapServer\nOpenLayers\n\n## Incubating Projects\n\nOpticks\nMetaCRS\nistSOS\nPyWPS\nTeam Engine\nZOO-Project\n\n## Outreach Projects\n\nGeoForAll - Education and Curriculum\nOSGeo-Live\n\n## OSGeo Community Projects\n\nGeoinformatica\nGeoWebCache\nMapProxy\npgRouting\nPostal Address Geo-Coder\nVirtual Terrain Project\n\nWe host regional and international FOSS4G conferences with typical attendance of 500-1000+ geospatial developers, industry and government leaders, and researchers. Our mailing lists collectively go out to ~ 29,500 unique subscribers.",
     "dev_mailing_list": null,
@@ -2047,61 +1942,61 @@
     "leaders": [
       {
         "display_name": "Dev.Mittal",
-        "github_updated": 1515345206718,
+        "github_updated": 1515431645581,
         "id": 6746416229646336,
         "program_year": 2017
       },
       {
         "display_name": "Eric1234",
-        "github_updated": 1515345207207,
+        "github_updated": 1515431646090,
         "id": 6056683136614400,
         "program_year": 2017
       },
       {
         "display_name": "Ethan Zhao",
-        "github_updated": 1515345206722,
+        "github_updated": 1515431645540,
         "id": 6556823228252160,
         "program_year": 2017
       },
       {
         "display_name": "Jason Wong-1",
-        "github_updated": 1515345206674,
+        "github_updated": 1515431645494,
         "id": 6503206198706176,
         "program_year": 2017
       },
       {
         "display_name": "Jayanth Vasanth kumar",
-        "github_updated": 1515345206703,
+        "github_updated": 1515431645456,
         "id": 4924440838144000,
         "program_year": 2017
       },
       {
         "display_name": "Jerry Huang",
-        "github_updated": 1515345206747,
+        "github_updated": 1515431645477,
         "id": 5364363542134784,
         "program_year": 2017
       },
       {
         "display_name": "Nayana Vallamkondu",
-        "github_updated": 1515345206697,
+        "github_updated": 1515431645490,
         "id": 4575005520166912,
         "program_year": 2017
       },
       {
         "display_name": "Shailesh Kadam",
-        "github_updated": 1515345206722,
+        "github_updated": 1515431645505,
         "id": 6663565572308992,
         "program_year": 2017
       },
       {
         "display_name": "Sunveer Singh",
-        "github_updated": 1515345207089,
+        "github_updated": 1515431646196,
         "id": 5325877816590336,
         "program_year": 2017
       },
       {
         "display_name": "Vinay Jagan",
-        "github_updated": 1515345206703,
+        "github_updated": 1515431645529,
         "id": 4962896129818624,
         "program_year": 2017
       }
@@ -2157,13 +2052,117 @@
   },
   {
     "accepted_org_tos": true,
+    "blog_url": null,
+    "chat": {
+      "url": null
+    },
+    "completed_task_instance_count": 443,
+    "contact_email": "user_forum@catrobat.org",
+    "description": "If you know how to code with Scratch, including its straightforward visual coding blocks and seamless multi-threading features allowing to program in your mother tongue, then its little sister project Catrobat will feel immediately familiar. The main differences are that our Pocket Code app runs on Android phones, can take advantage of all your phone’s sensors, high-resolution multi-touch screen, and supports advanced computer vision, speech recognition, and augmented reality. Catrobat also has a powerful physics game engine, making the programming of Angry Birds like games unbelievably easy. Wireless extensions to Arduino, Raspberry Pi, Lego Mindstorms robots, and Chromecast devices make Pocket Code an immediate success both among total beginners as well as seasoned developers who want to leisurely create awesome 2D and 2.5D games and other apps while on the go, anywhere, and at any time. We are also actively developing an iOS version of Pocket Code, which currently however is still a closed beta on iTunes. \n\nAll programs created with our apps can be shared with an international community of users, in particular with your friends and family. You can publish your apps under a free open source license, thereby helping others to learn coding apps, fostering the spirit of openness, and giving you the chance to tap into the creativity of all our users.\n\nCatrobat is a free open source “meta” project, enabling you and hundred thousands of other users to create free open source apps!",
+    "dev_mailing_list": null,
+    "github": "Catrobat",
+    "gplus_url": "https://plus.google.com/communities/116816272940643231129",
+    "guide_to_working": "Install Pocket Code and Pocket Paint from Google Play <http://catrob.at/gp>, work through <http://catrob.at/help>, then join <http://catrob.at/PocketCodeUserForum> to ask mentors questions.",
+    "guide_to_working_url": "http://catrob.at/cgcicti",
+    "id": 5135243763777536,
+    "image_url": "//lh3.googleusercontent.com/jjggF8aNfoCMItESh2khG7Ig_alBNTC83It_58LgwNL_b_Y5nrDhvavJMYIiuM7ErJ4eH7BOUDluJjrar3QMpSE",
+    "irc_channel": null,
+    "leaders": [
+      {
+        "display_name": "Alejandro Heredia",
+        "github_updated": 1515431646586,
+        "id": 5243643889713152,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Andreas Lukita",
+        "github_updated": 1515431646431,
+        "id": 4692396648431616,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Chandra Chou",
+        "github_updated": 1515431647784,
+        "id": 6189747405848576,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Jayanth Koduru",
+        "github_updated": 1515431646380,
+        "id": 6159776452968448,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Mateusz Komajda",
+        "github_updated": 1515431646421,
+        "id": 4979968129892352,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Rifqi Eka Hardianto-1",
+        "github_updated": 1515431646468,
+        "id": 6357445603491840,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Sarthak Agrawal",
+        "github_updated": 1515431646387,
+        "id": 5394417575788544,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Siddh Jain",
+        "github_updated": 1515431646658,
+        "id": 6267827092717568,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Yudhistira G.S.",
+        "github_updated": 1515431646444,
+        "id": 4611923993690112,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Łukasz Ameljan",
+        "github_updated": 1515431647170,
+        "id": 5096542534893568,
+        "program_year": 2017
+      }
+    ],
+    "mailing_list": "http://catrob.at/PocketCodeUserForum",
+    "name": "Catrobat",
+    "precis": "Visual programming of mobile games, animations and more, directly on your smartphone - create and share open source apps anywhere, at any time, in a fun way!",
+    "preferred_contact_method": null,
+    "primary_open_source_license": "GNU Affero General Public License v3 (AGPL-3.0)",
+    "program_year": 2017,
+    "programming_languages": [
+      "visual programming language (catrobat)"
+    ],
+    "slug": "catrobat",
+    "stack_exchange": null,
+    "status": 2,
+    "tags": [
+      "mobile",
+      "games",
+      "visual programming",
+      "apps",
+      "animations"
+    ],
+    "twitter_url": "http://twitter.com/Pocket_Code",
+    "website_url": "https://www.catrobat.org/",
+    "wikidata_url": "//www.wikidata.org/wiki/Q45341807",
+    "wikipedia_urls": null,
+    "winners": {}
+  },
+  {
+    "accepted_org_tos": true,
     "blog_url": "https://blog.coala.io/",
     "chat": {
       "image": "images/logos/zulip.png",
       "platform": "ZULIP",
       "url": "https://coala.zulipchat.com/"
     },
-    "completed_task_instance_count": 395,
+    "completed_task_instance_count": 399,
     "contact_email": null,
     "description": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\r\n\r\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below.",
     "dev_mailing_list": null,
@@ -2178,7 +2177,7 @@
     "leaders": [
       {
         "display_name": "Alexander Voronkov",
-        "github_updated": 1515345207888,
+        "github_updated": 1515431646861,
         "id": 5057457392975872,
         "program_year": 2017
       },
@@ -2198,7 +2197,7 @@
       },
       {
         "display_name": "Daniel O'Brien",
-        "github_updated": 1515345208035,
+        "github_updated": 1515431648618,
         "id": 4973831292715008,
         "program_year": 2017
       },
@@ -2211,7 +2210,7 @@
       },
       {
         "display_name": "Marcos Gómez",
-        "github_updated": 1515345207776,
+        "github_updated": 1515431647016,
         "id": 5557452655296512,
         "program_year": 2017
       },
@@ -2224,13 +2223,13 @@
       },
       {
         "display_name": "Shukai Ni",
-        "github_updated": 1515345207839,
+        "github_updated": 1515431646886,
         "id": 5178132149567488,
         "program_year": 2017
       },
       {
         "display_name": "Tio Irawan",
-        "github_updated": 1515345207844,
+        "github_updated": 1515431647196,
         "id": 6214590973083648,
         "program_year": 2017
       }
@@ -2272,7 +2271,7 @@
       "platform": "GITTER",
       "url": "https://gitter.im/openMF/mifos"
     },
-    "completed_task_instance_count": 368,
+    "completed_task_instance_count": 375,
     "contact_email": "info@mifos.org",
     "description": "The Mifos Initiative is a US-based 501(c)3 non-profit whose mission is to speed the elimination of poverty by leading a global community that builds, supports, and uses Mifos X, a free and open source banking platform to bring responsible financial services to the world’s 2 billion poor and unbanked. We combine fintech, the cloud, mobile apps, and open source community to create a game-changing approach to technology-enabled financial inclusion. With Mifos, you can help build cutting edge web and mobile banking apps, research trends in financial services, analyze new fintech innovations, design UX for consumer banking, enable collaboration amongst our global community, and conduct outreach for a global nonprofit.\n\nMore than 7 million clients are being reached by 300 financial institutions & fintech innovators who use Mifos software to power their operations across 40 countries. They are supported by a global community of 110 deployment partners & hundreds of volunteers who sustainably build impactful innovations in digital financial services. \n\nFor the past decade, we've been at the forefront of transformative technology for financial services to the poor. Our technology stack provides complete banking infrastructure that is cloud-ready, mobile-enabled, and scalable to the billions in need of cost-effective financial services. Our projects center around web & mobile apps using APIs from Apache Fineract, the world's only API-driven open source platform for financial inclusion.",
     "dev_mailing_list": null,
@@ -2293,25 +2292,25 @@
       },
       {
         "display_name": "Chirag Gupta",
-        "github_updated": 1515345207686,
+        "github_updated": 1515431646778,
         "id": 6471766769664000,
         "program_year": 2017
       },
       {
         "display_name": "Daniel Genkin",
-        "github_updated": 1515345207169,
+        "github_updated": 1515431645212,
         "id": 6365669266292736,
         "program_year": 2017
       },
       {
         "display_name": "janicek",
-        "github_updated": 1515345207193,
+        "github_updated": 1515431645250,
         "id": 5742982516965376,
         "program_year": 2017
       },
       {
         "display_name": "Jose Carlos Montemayor",
-        "github_updated": 1515345207172,
+        "github_updated": 1515431645206,
         "id": 6690143031263232,
         "program_year": 2017
       },
@@ -2324,25 +2323,25 @@
       },
       {
         "display_name": "Matthew Katz",
-        "github_updated": 1515345207727,
+        "github_updated": 1515431646006,
         "id": 4529584303243264,
         "program_year": 2017
       },
       {
         "display_name": "Shivam kumar Singh",
-        "github_updated": 1515345207730,
+        "github_updated": 1515431645690,
         "id": 5079096713281536,
         "program_year": 2017
       },
       {
         "display_name": "Vaibhav Vijay",
-        "github_updated": 1515345207212,
+        "github_updated": 1515431645209,
         "id": 6329140703657984,
         "program_year": 2017
       },
       {
         "display_name": "Yibin Long",
-        "github_updated": 1515345207740,
+        "github_updated": 1515431646589,
         "id": 5828654942650368,
         "program_year": 2017
       }
@@ -2383,126 +2382,13 @@
   },
   {
     "accepted_org_tos": true,
-    "blog_url": null,
-    "chat": {
-      "image": "images/chat.png",
-      "platform": "OTHER",
-      "url": "https://ccextractor.org/public:general:support"
-    },
-    "completed_task_instance_count": 360,
-    "contact_email": "gsoc@ccextractor.org",
-    "description": "If you've ever downloaded subtitles for a TV show so you could understand the audio (maybe you are learning a second language, or are hard of hearing, or just want to watch when everyone in the house sleeps) most likely what you downloaded was produced by CCExtractor. It is a tool that is able to take a TV recording from almost everyone in the world and produce a subtitle file. \nIt started as a pet project (like most cool open source programs, right?) but is now widely used by universities, large media companies and hobbyists alike.\nWe take pride of supporting as much input content as possible regardless of how \"popular\" it is. We want perfect support for all languages and countries.\nOn top of the core functionality (which is written in C, like many low level tools such as the linux kernel, FFmpeg, or VLC), we are also building a small ecosystem of related tools in other languages such as Python.",
-    "dev_mailing_list": null,
-    "github": "CCExtractor",
-    "gplus_url": null,
-    "guide_to_working": "Slack is the best way to get quick help. (see https://ccextractor.org/public:general:support for instructions).\nVideo samples here: https://ccextractor.org/public:general:tvsamples",
-    "guide_to_working_url": "",
-    "id": 5731053304020992,
-    "image_url": "//lh3.googleusercontent.com/VjwFkSuq7AQSJvQzZHBAtNIEwe_vGEhzrLtYWtbc42NWMXfl9P2nyiykAqqZkQGU0YzwNJaFKolUKfTKWxJWKJk",
-    "irc_channel": "https://ccextractor.org/public:general:support",
-    "leaders": [
-      {
-        "display_name": "Aadi Bajpai",
-        "github_updated": 1515345206407,
-        "id": 4695623712374784,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Harry Yu",
-        "github_updated": 1515345206206,
-        "id": 5995126599974912,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Hemang Rajvanshy",
-        "github_account": "HemangRajvanshy",
-        "github_updated": 1515345206167,
-        "id": 4772500808400896,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Hori75",
-        "github_account": "Hori75",
-        "github_updated": 1515345206171,
-        "id": 4700102289522688,
-        "program_year": 2017
-      },
-      {
-        "display_name": "John Chew",
-        "github_updated": 1515345206197,
-        "id": 5383323004174336,
-        "program_year": 2017
-      },
-      {
-        "display_name": "KESHAV GOYAL",
-        "github_updated": 1515345206202,
-        "id": 5195272021868544,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Matej Plavevski",
-        "github_updated": 1515345206190,
-        "id": 6680984424546304,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Nikunj Taneja",
-        "github_updated": 1515345206191,
-        "id": 5199453306748928,
-        "program_year": 2017
-      },
-      {
-        "display_name": "Satvik Shrivastava",
-        "github_updated": 1515345206194,
-        "id": 5910592114130944,
-        "program_year": 2017
-      },
-      {
-        "display_name": "TheFaR8",
-        "github_account": "TheFaR8",
-        "github_updated": 1515345206174,
-        "id": 5878255708012544,
-        "program_year": 2017
-      }
-    ],
-    "mailing_list": null,
-    "name": "CCExtractor Development",
-    "precis": "We make the software that generates the subtitles everyone uses to watch TV and movies when they need them either because they are learning a second language or have a hearing disability.",
-    "preferred_contact_method": null,
-    "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
-    "program_year": 2017,
-    "programming_languages": [
-      "c",
-      "python",
-      "c++",
-      "linux",
-      "windows"
-    ],
-    "slug": "ccextractor-development",
-    "stack_exchange": null,
-    "status": 2,
-    "tags": [
-      "accesibility",
-      "subtitles",
-      "video",
-      "tv",
-      "movies"
-    ],
-    "twitter_url": null,
-    "website_url": "https://www.ccextractor.org",
-    "wikidata_url": "//www.wikidata.org/wiki/Q45341716",
-    "wikipedia_urls": null,
-    "winners": {}
-  },
-  {
-    "accepted_org_tos": true,
     "blog_url": "http://www.xwiki.org/xwiki/bin/view/Blog/",
     "chat": {
       "image": "images/chat.png",
       "platform": "OTHER",
       "url": "http://dev.xwiki.org/xwiki/bin/view/Community/Chat"
     },
-    "completed_task_instance_count": 357,
+    "completed_task_instance_count": 366,
     "contact_email": "devs@xwiki.org",
     "description": "XWiki is an open source software development platform based on the wiki principles, under the LGPL license. In addition to being a full-featured wiki, it is also a second generation wiki allowing effortless development of collaborative web applications. On top of this platform a plethora of applications are developed, targeted mainly on aiding enterprise-level needs.\n\nXWiki has a vibrant community of developers and users, consisting of individual users as well as organizations around the world that are using XWiki for their own Communities or Intranets.\n\nWithin XWiki, the development involves several levels: server-side platform programming in Java with Servlet technologies, server-side application development in Velocity, Groovy, and client-side development in JavaScript, CSS and HTML.",
     "dev_mailing_list": null,
@@ -2516,7 +2402,7 @@
     "leaders": [
       {
         "display_name": "1337_siddh",
-        "github_updated": 1515345206466,
+        "github_updated": 1515431644892,
         "id": 4981904681992192,
         "program_year": 2017
       },
@@ -2529,14 +2415,20 @@
       },
       {
         "display_name": "Arun Pattni",
-        "github_updated": 1515345206458,
+        "github_updated": 1515431644926,
         "id": 6534301317332992,
         "program_year": 2017
       },
       {
         "display_name": "Robert Vulpe",
-        "github_updated": 1515345206434,
+        "github_updated": 1515431644888,
         "id": 4528811343347712,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Somya Agrawal",
+        "github_updated": 1515431644827,
+        "id": 6530965243428864,
         "program_year": 2017
       },
       {
@@ -2544,6 +2436,12 @@
         "github_account": "Srijanjha",
         "github_updated": 1515345206488,
         "id": 5823647748980736,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Stefan Vulpe",
+        "github_updated": 1515431644811,
+        "id": 4644387973758976,
         "program_year": 2017
       }
     ],
@@ -2591,117 +2489,115 @@
   },
   {
     "accepted_org_tos": true,
-    "blog_url": "http://openmrs.org/blog/",
+    "blog_url": null,
     "chat": {
-      "image": "images/logos/telegram.png",
-      "platform": "TELEGRAM",
-      "url": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q"
+      "image": "images/chat.png",
+      "platform": "OTHER",
+      "url": "https://ccextractor.org/public:general:support"
     },
-    "completed_task_instance_count": 344,
-    "contact_email": "community@openmrs.org",
-    "description": "[OpenMRS](http://openmrs.org) is a collaborative open source project to develop software to support the delivery of health care in developing countries. We are a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. [Our mission](http://openmrs.org/about/mission/) is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software.\r\n\r\nThe [OpenMRS software platform](http://openmrs.org/about/) and a reference application enables design of a customized medical records system with no programming knowledge. It is a common platform upon which medical informatics efforts in developing countries can be built.\r\n\r\nWorking on Google Code-in tasks for OpenMRS is a great way to join the free and open source software movement, and at the same time use your talents to help people in developing countries and around the world on the front lines of the battle against HIV/AIDS, TB, Malaria, and other public health challenges. For more detailed about OpenMRS and GCI, visit http://openmrs.org/ and watch [this short video](https://www.youtube.com/watch?v=HPxx1_svu_A) created by a previous OpenMRS GCI participant.",
+    "completed_task_instance_count": 362,
+    "contact_email": "gsoc@ccextractor.org",
+    "description": "If you've ever downloaded subtitles for a TV show so you could understand the audio (maybe you are learning a second language, or are hard of hearing, or just want to watch when everyone in the house sleeps) most likely what you downloaded was produced by CCExtractor. It is a tool that is able to take a TV recording from almost everyone in the world and produce a subtitle file. \nIt started as a pet project (like most cool open source programs, right?) but is now widely used by universities, large media companies and hobbyists alike.\nWe take pride of supporting as much input content as possible regardless of how \"popular\" it is. We want perfect support for all languages and countries.\nOn top of the core functionality (which is written in C, like many low level tools such as the linux kernel, FFmpeg, or VLC), we are also building a small ecosystem of related tools in other languages such as Python.",
     "dev_mailing_list": null,
-    "github": "openmrs",
-    "gplus_url": "https://plus.google.com/+OpenMRSorg",
-    "guide_to_working": "",
+    "github": "CCExtractor",
+    "gplus_url": null,
+    "guide_to_working": "Slack is the best way to get quick help. (see https://ccextractor.org/public:general:support for instructions).\nVideo samples here: https://ccextractor.org/public:general:tvsamples",
     "guide_to_working_url": "",
-    "id": 5753409548320768,
-    "image_url": "//lh3.googleusercontent.com/DtRzzebTaA7bRBx4t0hAWTcyoiFP84r64T0uG8eNRoBnfyG9sUaVf5xkXuq-ffTzuT4voJY2JE3YXUh3Amvg4cmD",
-    "irc_channel": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q",
+    "id": 5731053304020992,
+    "image_url": "//lh3.googleusercontent.com/VjwFkSuq7AQSJvQzZHBAtNIEwe_vGEhzrLtYWtbc42NWMXfl9P2nyiykAqqZkQGU0YzwNJaFKolUKfTKWxJWKJk",
+    "irc_channel": "https://ccextractor.org/public:general:support",
     "leaders": [
       {
-        "display_name": "Bartłomiej Rasztabiga",
-        "github_updated": 1515345209609,
-        "id": 4851396136402944,
+        "display_name": "Aadi Bajpai",
+        "github_updated": 1515431645577,
+        "id": 4695623712374784,
         "program_year": 2017
       },
       {
-        "display_name": "Fawwaz Yusran",
-        "github_updated": 1515345209628,
-        "id": 4893093289525248,
+        "display_name": "Harry Yu",
+        "github_updated": 1515431644567,
+        "id": 5995126599974912,
         "program_year": 2017
       },
       {
-        "display_name": "Jyothsna Ashok",
-        "github_account": "JyothsnaAshok",
-        "github_updated": 1515345209548,
-        "id": 4671819661443072,
+        "display_name": "Hemang Rajvanshy",
+        "github_account": "HemangRajvanshy",
+        "github_updated": 1515345206167,
+        "id": 4772500808400896,
         "program_year": 2017
       },
       {
-        "display_name": "Matthew Whitaker",
-        "github_updated": 1515345209628,
-        "id": 6052785999052800,
+        "display_name": "Hori75",
+        "github_account": "Hori75",
+        "github_updated": 1515345206171,
+        "id": 4700102289522688,
         "program_year": 2017
       },
       {
-        "display_name": "Nayansh Gupta",
-        "github_updated": 1515345209572,
-        "id": 6094997608726528,
+        "display_name": "John Chew",
+        "github_updated": 1515431644568,
+        "id": 5383323004174336,
         "program_year": 2017
       },
       {
-        "display_name": "RAGHAV DHINGRA",
-        "github_updated": 1515345209768,
-        "id": 5329794826764288,
+        "display_name": "KESHAV GOYAL",
+        "github_updated": 1515431644560,
+        "id": 5195272021868544,
         "program_year": 2017
       },
       {
-        "display_name": "Said Yaka",
-        "github_updated": 1515345209544,
-        "id": 5971293960667136,
+        "display_name": "Matej Plavevski",
+        "github_updated": 1515431645398,
+        "id": 6680984424546304,
         "program_year": 2017
       },
       {
-        "display_name": "Sanskar Jindal",
-        "github_account": "SanskarJindal",
-        "github_updated": 1515345209547,
-        "id": 5064391886110720,
+        "display_name": "Nikunj Taneja",
+        "github_updated": 1515431644758,
+        "id": 5199453306748928,
         "program_year": 2017
       },
       {
-        "display_name": "SR",
-        "github_account": "maurya",
-        "github_updated": 1515345209546,
-        "id": 5255833879314432,
+        "display_name": "Satvik Shrivastava",
+        "github_updated": 1515431644454,
+        "id": 5910592114130944,
         "program_year": 2017
       },
       {
-        "display_name": "Tomasz Domagała",
-        "github_updated": 1515345209591,
-        "id": 6531598482669568,
+        "display_name": "TheFaR8",
+        "github_account": "TheFaR8",
+        "github_updated": 1515345206174,
+        "id": 5878255708012544,
         "program_year": 2017
       }
     ],
-    "mailing_list": "http://om.rs/gcitalk",
-    "name": "OpenMRS",
-    "precis": "Write Code, Save Lives",
+    "mailing_list": null,
+    "name": "CCExtractor Development",
+    "precis": "We make the software that generates the subtitles everyone uses to watch TV and movies when they need them either because they are learning a second language or have a hearing disability.",
     "preferred_contact_method": null,
-    "primary_open_source_license": "Mozilla Public License 2.0 (MPL-2.0)",
+    "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
     "program_year": 2017,
     "programming_languages": [
-      "java",
-      "groovy",
-      "javascript",
-      "html5",
-      "css"
+      "c",
+      "python",
+      "c++",
+      "linux",
+      "windows"
     ],
-    "slug": "openmrs",
+    "slug": "ccextractor-development",
     "stack_exchange": null,
     "status": 2,
     "tags": [
-      "hospitals",
-      "healthcare",
-      "emr",
-      "medical",
-      "webapp"
+      "accesibility",
+      "subtitles",
+      "video",
+      "tv",
+      "movies"
     ],
-    "twitter_url": "https://twitter.com/OpenMRS",
-    "website_url": "http://om.rs/gci",
-    "wikidata_url": "//www.wikidata.org/wiki/Q7095826",
-    "wikipedia_urls": {
-      "en": "https://en.wikipedia.org/wiki/OpenMRS"
-    },
+    "twitter_url": null,
+    "website_url": "https://www.ccextractor.org",
+    "wikidata_url": "//www.wikidata.org/wiki/Q45341716",
+    "wikipedia_urls": null,
     "winners": {}
   },
   {
@@ -2712,7 +2608,7 @@
       "platform": "IRC",
       "url": "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
     },
-    "completed_task_instance_count": 343,
+    "completed_task_instance_count": 357,
     "contact_email": "terasology@gmail.com",
     "description": "# Why Terasology\n\nWe set out to see how an open source and super extensible voxel game inspired by Minecraft could go beyond it, aiming for gameplay like seen in Dwarf Fortress or Dungeon Keeper. What would modders come up with if you could create and ship a mod with a few simple commands, making it available immediately for download in-game by others, in a secure sandboxed environment?\n\n# Minimal Engine\n\nOur engine is intended to be as bare-bone as possible. It even excludes such basics as inventory, health, creatures, or combat. A series of minimal modules are bundled with the game's standard distribution to offer a sort of vanilla game experience. All such modules are community owned and maintained, guaranteed to work with every release, and fully replaceable.\n\n# Extensibility\n\nAny content is wrapped in modules ranging from tiny frameworks supporting commonly needed utility to large gameplay templates commonly referred to as mod packs in the Minecraft world, that in turn can depend on dozens of the smaller pieces, maximizing reusability. Other JVM languages can be added too.\n\nCreating a new module is as easy as running a single console command, having a community repository created on GitHub is another single request away, and fetching source for any such community module is yet another single command. Dependency resolution is supported within the engine framework both for development and for runtime usage, including auto-downloading from a running game server to connecting clients.",
     "dev_mailing_list": null,
@@ -2726,13 +2622,13 @@
     "leaders": [
       {
         "display_name": "Alberto",
-        "github_updated": 1515345207589,
+        "github_updated": 1515431645864,
         "id": 6264983153278976,
         "program_year": 2017
       },
       {
         "display_name": "Aleksander Wójtowicz",
-        "github_updated": 1515345206880,
+        "github_updated": 1515431646089,
         "id": 4507029777416192,
         "program_year": 2017
       },
@@ -2745,31 +2641,32 @@
       },
       {
         "display_name": "Jason Huang",
-        "github_updated": 1515345206969,
+        "github_updated": 1515431645210,
         "id": 6563090390843392,
         "program_year": 2017
       },
       {
         "display_name": "Jindřich Dítě",
-        "github_updated": 1515345206885,
+        "github_updated": 1515431645026,
         "id": 5338622058299392,
         "program_year": 2017
       },
       {
-        "display_name": "Nicholas Bates",
-        "github_updated": 1515345206972,
-        "id": 5288288933904384,
+        "display_name": "Max Borsch",
+        "github_account": "MaxBorsch",
+        "github_updated": 1515431645728,
+        "id": 5841005054001152,
         "program_year": 2017
       },
       {
         "display_name": "Rajat Patel",
-        "github_updated": 1515345207062,
+        "github_updated": 1515431645219,
         "id": 6323289079152640,
         "program_year": 2017
       },
       {
         "display_name": "Steven Rachman",
-        "github_updated": 1515345206997,
+        "github_updated": 1515431645115,
         "id": 6739799975133184,
         "program_year": 2017
       },
@@ -2782,7 +2679,7 @@
       },
       {
         "display_name": "Thomas O'Keeffe",
-        "github_updated": 1515345207016,
+        "github_updated": 1515431645243,
         "id": 6106213647384576,
         "program_year": 2017
       }
@@ -2820,11 +2717,126 @@
   },
   {
     "accepted_org_tos": true,
+    "blog_url": "http://openmrs.org/blog/",
+    "chat": {
+      "image": "images/logos/telegram.png",
+      "platform": "TELEGRAM",
+      "url": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q"
+    },
+    "completed_task_instance_count": 349,
+    "contact_email": "community@openmrs.org",
+    "description": "[OpenMRS](http://openmrs.org) is a collaborative open source project to develop software to support the delivery of health care in developing countries. We are a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. [Our mission](http://openmrs.org/about/mission/) is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software.\r\n\r\nThe [OpenMRS software platform](http://openmrs.org/about/) and a reference application enables design of a customized medical records system with no programming knowledge. It is a common platform upon which medical informatics efforts in developing countries can be built.\r\n\r\nWorking on Google Code-in tasks for OpenMRS is a great way to join the free and open source software movement, and at the same time use your talents to help people in developing countries and around the world on the front lines of the battle against HIV/AIDS, TB, Malaria, and other public health challenges. For more detailed about OpenMRS and GCI, visit http://openmrs.org/ and watch [this short video](https://www.youtube.com/watch?v=HPxx1_svu_A) created by a previous OpenMRS GCI participant.",
+    "dev_mailing_list": null,
+    "github": "openmrs",
+    "gplus_url": "https://plus.google.com/+OpenMRSorg",
+    "guide_to_working": "",
+    "guide_to_working_url": "",
+    "id": 5753409548320768,
+    "image_url": "//lh3.googleusercontent.com/DtRzzebTaA7bRBx4t0hAWTcyoiFP84r64T0uG8eNRoBnfyG9sUaVf5xkXuq-ffTzuT4voJY2JE3YXUh3Amvg4cmD",
+    "irc_channel": "https://telegram.me/joinchat/B_5YjwruTSMgEgCKa5px2Q",
+    "leaders": [
+      {
+        "display_name": "Bartłomiej Rasztabiga",
+        "github_updated": 1515431649839,
+        "id": 4851396136402944,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Fawwaz Yusran",
+        "github_updated": 1515431649890,
+        "id": 4893093289525248,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Jyothsna Ashok",
+        "github_account": "JyothsnaAshok",
+        "github_updated": 1515345209548,
+        "id": 4671819661443072,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Matthew Whitaker",
+        "github_updated": 1515431649844,
+        "id": 6052785999052800,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Nayansh Gupta",
+        "github_updated": 1515431649816,
+        "id": 6094997608726528,
+        "program_year": 2017
+      },
+      {
+        "display_name": "RAGHAV DHINGRA",
+        "github_updated": 1515431650346,
+        "id": 5329794826764288,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Said Yaka",
+        "github_updated": 1515431649756,
+        "id": 5971293960667136,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Sanskar Jindal",
+        "github_account": "SanskarJindal",
+        "github_updated": 1515345209547,
+        "id": 5064391886110720,
+        "program_year": 2017
+      },
+      {
+        "display_name": "SR",
+        "github_account": "maurya",
+        "github_updated": 1515345209546,
+        "id": 5255833879314432,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Tomasz Domagała",
+        "github_updated": 1515431649736,
+        "id": 6531598482669568,
+        "program_year": 2017
+      }
+    ],
+    "mailing_list": "http://om.rs/gcitalk",
+    "name": "OpenMRS",
+    "precis": "Write Code, Save Lives",
+    "preferred_contact_method": null,
+    "primary_open_source_license": "Mozilla Public License 2.0 (MPL-2.0)",
+    "program_year": 2017,
+    "programming_languages": [
+      "java",
+      "groovy",
+      "javascript",
+      "html5",
+      "css"
+    ],
+    "slug": "openmrs",
+    "stack_exchange": null,
+    "status": 2,
+    "tags": [
+      "hospitals",
+      "healthcare",
+      "emr",
+      "medical",
+      "webapp"
+    ],
+    "twitter_url": "https://twitter.com/OpenMRS",
+    "website_url": "http://om.rs/gci",
+    "wikidata_url": "//www.wikidata.org/wiki/Q7095826",
+    "wikipedia_urls": {
+      "en": "https://en.wikipedia.org/wiki/OpenMRS"
+    },
+    "winners": {}
+  },
+  {
+    "accepted_org_tos": true,
     "blog_url": "http://www.liquidgalaxylab.com/",
     "chat": {
       "url": null
     },
-    "completed_task_instance_count": 331,
+    "completed_task_instance_count": 341,
     "contact_email": "lgcodein@gmail.com",
     "description": "The Liquid Galaxy is a cluster of computers, from 3 to dozens, that allow the user to navigate in a interactive, panoramic and immersive \nway over the contents of Google Earth and Google Maps, including the possibility of adding layers of information.",
     "dev_mailing_list": null,
@@ -2838,61 +2850,61 @@
     "leaders": [
       {
         "display_name": "Balanchi",
-        "github_updated": 1515345205935,
+        "github_updated": 1515431644369,
         "id": 4740243716571136,
         "program_year": 2017
       },
       {
         "display_name": "Kshitijaa Jaglan",
-        "github_updated": 1515345206194,
+        "github_updated": 1515431645363,
         "id": 5716208496148480,
         "program_year": 2017
       },
       {
         "display_name": "Omshi Samal",
-        "github_updated": 1515345205935,
+        "github_updated": 1515431644388,
         "id": 5248610683846656,
         "program_year": 2017
       },
       {
         "display_name": "Shivansh Yadav",
-        "github_updated": 1515345205867,
+        "github_updated": 1515431644685,
         "id": 4670031679979520,
         "program_year": 2017
       },
       {
         "display_name": "Shruti Singh",
-        "github_updated": 1515345205880,
+        "github_updated": 1515431644493,
         "id": 5809459819446272,
         "program_year": 2017
       },
       {
         "display_name": "Silvia Nadal Faus",
-        "github_updated": 1515345205867,
+        "github_updated": 1515431644666,
         "id": 6383510048735232,
         "program_year": 2017
       },
       {
         "display_name": "Surya",
-        "github_updated": 1515345206163,
+        "github_updated": 1515431644898,
         "id": 6607311776776192,
         "program_year": 2017
       },
       {
         "display_name": "Syed",
-        "github_updated": 1515345206263,
+        "github_updated": 1515431644887,
         "id": 6685363949010944,
         "program_year": 2017
       },
       {
         "display_name": "Tarun Ravi",
-        "github_updated": 1515345205866,
+        "github_updated": 1515431644491,
         "id": 4873196811583488,
         "program_year": 2017
       },
       {
         "display_name": "Terence Chan Zun Mun",
-        "github_updated": 1515345205867,
+        "github_updated": 1515431644549,
         "id": 6011586793701376,
         "program_year": 2017
       }
@@ -2936,7 +2948,7 @@
       "platform": "IRC",
       "url": "irc://irc.freenode.net/drupal"
     },
-    "completed_task_instance_count": 197,
+    "completed_task_instance_count": 202,
     "contact_email": "lechleider.matthew@gmail.com",
     "description": "\"Come for the software, stay for the community\" Drupal is an open source content management platform powering millions of websites and applications. It’s built, used, and supported by an active and diverse community of people around the world. Use Drupal to build everything from personal blogs to enterprise applications. Thousands of add-on modules and designs let people build any site they can imagine. Join us today as we finalize our newest version of Drupal that might change the world! Interested in working on tasks for Drupal? Check out our new contributor documentation for GCI students @ https://www.drupal.org/node/984014",
     "dev_mailing_list": null,
@@ -2950,61 +2962,61 @@
     "leaders": [
       {
         "display_name": "Anh Trịnh",
-        "github_updated": 1515345206223,
+        "github_updated": 1515431644973,
         "id": 5061239380115456,
         "program_year": 2017
       },
       {
         "display_name": "Hui Chen",
-        "github_updated": 1515345206578,
+        "github_updated": 1515431645790,
         "id": 6064176545923072,
         "program_year": 2017
       },
       {
         "display_name": "Kartik Goel",
-        "github_updated": 1515345206341,
+        "github_updated": 1515431645275,
         "id": 6733252700143616,
         "program_year": 2017
       },
       {
         "display_name": "Long Dang",
-        "github_updated": 1515345206572,
+        "github_updated": 1515431646355,
         "id": 4797474432614400,
         "program_year": 2017
       },
       {
         "display_name": "MaskyS",
-        "github_updated": 1515345206593,
+        "github_updated": 1515431647733,
         "id": 6719751873101824,
         "program_year": 2017
       },
       {
         "display_name": "Neel Gopaul",
-        "github_updated": 1515345206572,
+        "github_updated": 1515431645509,
         "id": 4576133293015040,
         "program_year": 2017
       },
       {
         "display_name": "Sagar Khatri-1",
-        "github_updated": 1515345206308,
+        "github_updated": 1515431645026,
         "id": 6008675401465856,
         "program_year": 2017
       },
       {
         "display_name": "Tanish Kapur",
-        "github_updated": 1515345206326,
+        "github_updated": 1515431645249,
         "id": 6374141223501824,
         "program_year": 2017
       },
       {
         "display_name": "Tanvish Jha",
-        "github_updated": 1515345206318,
+        "github_updated": 1515431645029,
         "id": 4585256541749248,
         "program_year": 2017
       },
       {
         "display_name": "Yogesh Aggarwal",
-        "github_updated": 1515345206307,
+        "github_updated": 1515431645127,
         "id": 5192680545976320,
         "program_year": 2017
       }
@@ -3112,7 +3124,7 @@
       "platform": "GITTER",
       "url": "https://gitter.im/Cloud-CV/"
     },
-    "completed_task_instance_count": 131,
+    "completed_task_instance_count": 134,
     "contact_email": "team@cloudcv.org",
     "description": "CloudCV is a young open source cloud platform started in 2013 by students and faculty from Machine Learning and Perception Lab at Virginia Tech (now at Georgia Tech) with the aim to make AI research more reproducible. At CloudCV, we are building tools that enable researchers to build, compare and share start-of-the-algorithms. We believe that one shouldn’t have to be an AI expert to have access to cutting-edge vision algorithms. Likewise, researchers shouldn’t have to worry about building a service around their deep learning models to showcase and share it with others.  \n\nCloudCV consists of three major platforms: \n\n**Origami** is an AI-as-a-service solution that allows researchers to easily convert their deep learning models into an online service that is widely accessible to everyone without the need to set up the infrastructure, resolve the dependencies, and build a web service around the deep learning model.\n\n**Fabrik** is an online collaborative platform to build, visualize and train deep learning models by a simple drag-and-drop approach.\n\n**EvalAI** is an evaluation server that will host AI challenges like Visual Question Answering, Image Captioning etc. By providing a central leaderboard and submission interface, we make it easier for researchers to reproduce the results mentioned in the paper and perform reliable & accurate quantitative analysis.",
     "dev_mailing_list": null,
@@ -3126,19 +3138,19 @@
     "leaders": [
       {
         "display_name": "Abdullah",
-        "github_updated": 1515345207592,
+        "github_updated": 1515431646104,
         "id": 5182495165251584,
         "program_year": 2017
       },
       {
         "display_name": "Adam Štafa",
-        "github_updated": 1515345207025,
+        "github_updated": 1515431645245,
         "id": 5343716963254272,
         "program_year": 2017
       },
       {
         "display_name": "Adarsh Kumar",
-        "github_updated": 1515345207089,
+        "github_updated": 1515431645309,
         "id": 4563919077113856,
         "program_year": 2017
       },
@@ -3158,31 +3170,31 @@
       },
       {
         "display_name": "Naman Sood",
-        "github_updated": 1515345207028,
+        "github_updated": 1515431645292,
         "id": 4504161854947328,
         "program_year": 2017
       },
       {
         "display_name": "Owen Leong",
-        "github_updated": 1515345207077,
+        "github_updated": 1515431645660,
         "id": 6207559977402368,
         "program_year": 2017
       },
       {
         "display_name": "palashtaneja",
-        "github_updated": 1515345207074,
+        "github_updated": 1515431645275,
         "id": 6310531952541696,
         "program_year": 2017
       },
       {
         "display_name": "Pavan A.",
-        "github_updated": 1515345207093,
+        "github_updated": 1515431647189,
         "id": 6153402721501184,
         "program_year": 2017
       },
       {
         "display_name": "Will Eggleston",
-        "github_updated": 1515345207033,
+        "github_updated": 1515431645303,
         "id": 6625447007748096,
         "program_year": 2017
       }
@@ -3238,55 +3250,55 @@
     "leaders": [
       {
         "display_name": "Alexander Mamaev",
-        "github_updated": 1515345206008,
+        "github_updated": 1515431644710,
         "id": 5417131376115712,
         "program_year": 2017
       },
       {
         "display_name": "Andi Qu",
-        "github_updated": 1515345206026,
+        "github_updated": 1515431644520,
         "id": 4806060072239104,
         "program_year": 2017
       },
       {
         "display_name": "Diogo S.C.F.",
-        "github_updated": 1515345206354,
+        "github_updated": 1515431644924,
         "id": 6436502269591552,
         "program_year": 2017
       },
       {
         "display_name": "Ethan Yang",
-        "github_updated": 1515345206084,
+        "github_updated": 1515431644711,
         "id": 6712383588270080,
         "program_year": 2017
       },
       {
         "display_name": "Grzegorz Stark",
-        "github_updated": 1515345206037,
+        "github_updated": 1515431644484,
         "id": 4640744230879232,
         "program_year": 2017
       },
       {
         "display_name": "Himanshu Sekhar Nayak",
-        "github_updated": 1515345206034,
+        "github_updated": 1515431644518,
         "id": 6121587080167424,
         "program_year": 2017
       },
       {
         "display_name": "JJJPPP",
-        "github_updated": 1515345206084,
+        "github_updated": 1515431644459,
         "id": 5210939794128896,
         "program_year": 2017
       },
       {
         "display_name": "Robin Richtsfeld",
-        "github_updated": 1515345206008,
+        "github_updated": 1515431644494,
         "id": 4774660237426688,
         "program_year": 2017
       },
       {
         "display_name": "Ryan A. Chi",
-        "github_updated": 1515345206356,
+        "github_updated": 1515431646069,
         "id": 6673079872782336,
         "program_year": 2017
       }
