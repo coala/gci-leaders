@@ -6,6 +6,7 @@
     "gci-copyright": "Google Code-in and the Google Code-in logo are trademarks of Google Inc.",
     "gitlab-copyright-1": "The GitLab logo is licensed under",
     "gitlab-copyright-2": "by GitLab Inc.",
+    "built-by": "Built by",
     "orgs-no-listed": "Organization(s) with no listed leaders",
     "passed": "$1% passed, approximately $2 before task claiming ends",
     "seconds-ago": "$1 {{PLURAL:$1|second|seconds}} ago",
