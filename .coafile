@@ -5,6 +5,7 @@ max_line_length = 80
 use_spaces = True
 
 [all.whitespace]
+ignore += src/js/languages.json
 bears = SpaceConsistencyBear
 default_actions = *: ApplyPatchAction
 

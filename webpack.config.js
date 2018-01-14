@@ -4,7 +4,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const GenerateJsonPlugin = require('generate-json-webpack-plugin')
 const path = require('path')
+const generatedLangList = require('./lib/langParser')
 
 const isProduction = process.env.NODE_ENV === 'production'
 const hash = isProduction ? '.[hash]' : ''
@@ -104,6 +106,7 @@ module.exports = {
     ]),
     new ExtractTextPlugin(`[name]${hash}.css`),
     new ManifestPlugin(),
+    new GenerateJsonPlugin('../src/js/languages.json', generatedLangList),
   ].concat(
     isProduction
       ? [
