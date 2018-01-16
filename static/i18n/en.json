@@ -8,7 +8,7 @@
     "gitlab-copyright-2": "by GitLab Inc.",
     "built-by": "Built by",
     "orgs-no-listed": "Organization(s) with no listed leaders",
-    "passed": "$1% passed, approximately $2 before task claiming ends",
+    "passed": "$1% passed, approximately $2 before competition ends",
     "seconds-ago": "$1 {{PLURAL:$1|second|seconds}} ago",
     "minutes-ago": "$1 {{PLURAL:$1|minute|minutes}} ago",
     "hours-ago": "$1 {{PLURAL:$1|hour|hours}} ago",
