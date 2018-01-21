@@ -11,11 +11,296 @@
       <hr />
     </div>
     <div>
+      <a class="title" href=http:&#x2F;&#x2F;www.blogger.com&#x2F;feeds&#x2F;3241663152321399210&#x2F;posts&#x2F;default&#x2F;4901615261289161004><h1>How to install QGIS 3 using OSGeo4W in Windows OS</h1></a>
+      <h5>2018-01-21T15:06:00.000Z</h5>
+      <i class="author">Luca Congedo</i>
+      <div class="content">
+        [object Object]
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;acotiuga?language&#x3D;><h1>Profile of Alex Cotiugă</h1></a>
+      <h5>2018-01-21T10:14:58.000Z</h5>
+      <i class="author">Alex Cotiugă</i>
+      <div class="content">
+        Version 17.8 edited by Alex Cotiugă on Sun Jan 21 11:14:58 CET 2018
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;anitagraser.com&#x2F;2018&#x2F;01&#x2F;21&#x2F;creating-reports-in-qgis&#x2F;><h1>Creating reports in QGIS3</h1></a>
+      <h5>2018-01-21T09:00:11.000Z</h5>
+      <i class="author">underdark</i>
+      <div class="content">
+        [object Object]
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;21&#x2F;your-first-robot-introduction-to-the-robot-operating-system-2-5&#x2F;><h1>Your first robot: Introduction to the Robot Operating System [2&#x2F;5]</h1></a>
+      <h5>2018-01-21T03:19:25.000Z</h5>
+      <i class="author">Kyle Fazzari</i>
+      <div class="content">
+        <p><img class="alignleft size-full wp-image-82674" src="https://insights.ubuntu.com/wp-content/uploads/3bbf/edukit.jpg" alt="" width="2000" height="1335" /></p>
+<p>This is the second blog post in <a href="https://kyrofa.com/posts/your-first-robot-a-beginner-s-guide-to-ros-and-ubuntu-core-1-5">this series about creating your first robot with ROS and Ubuntu Core</a>. In the <a href="https://kyrofa.com/posts/your-first-robot-a-beginner-s-guide-to-ros-and-ubuntu-core-1-5">previous post</a> we walked through all the hardware necessary to follow this series, and introduced Ubuntu Core, the operating system for IoT devices. We installed it on our Raspberry Pi, and used it to go through the <a href="http://camjam.me/?page_id=1035">CamJam worksheets</a>. In this post, I&#8217;m going to introduce you to the <a href="http://www.ros.org/">Robot Operating System (ROS)</a>, and we&#8217;ll use it to move our robot. We&#8217;ll be using ROS throughout the rest of the series. Remember that this is also a video series, feel free to watch the video version of this post:</p>
+<p><iframe src="https://www.youtube.com/embed/Sw33EbZHris" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h3>What is the Robot Operating System?</h3>
+<p>At its simplest, ROS is a set of open-source libraries and tools meant to ease development of robots. It also provides an infrastructure for connecting various robotic components together. For example, if you happened to go through all of the CamJam worksheets (particularly #9), you&#8217;ve written a single Python script that&#8217;s responsible for a bunch of things: controlling the motors, reading from the line detector, reading from the ultrasonic sensor, etc. What if we threw a wireless controller into the mix? That script quickly gets complicated, and if you happen to want to swap one component out for another, you need to rewrite the whole thing; i.e. these logically different components are tightly coupled together since they&#8217;re in the same script.</p>
+<div id="mediumInsert-2" class="mediumInsert">
+<figure class="mediumInsert-images"><img src="https://kyrofa.com/uploads/proclaim/image/image/43/ros.png" alt="" /></figure>
+</div>
+<p>ROS provides a communication infrastructure that allows you to extract different logic into their own modules, and have them communicate with each other in a standard way, as depicted in the picture above. For example, if you wanted to switch ultrasonic sensors, and rewrite the &#8220;distance&#8221; module, you could do that without having to touch any of the other modules as long as the new distance module talked the same way as the old one.</p>
+<p>This will all make more sense once we dive in, so let&#8217;s get started, shall we?</p>
+<h3>Step 1: Install ROS on the Raspberry Pi</h3>
+<p>ROS has <a href="https://wiki.ros.org/Distributions">three currently-supported releases</a>: Indigo Igloo, Kinetic Kame, and Lunar Loggerhead. Ubuntu Core series 16 (the one we&#8217;re using) is Ubuntu Xenial, which limits our options to Kinetic and Lunar. Lunar is technically newer and shinier, but like Ubuntu, ROS has Long-Term Support (LTS) releases that are supported for an extended period of time, and Kinetic is their most recent LTS. As a result, we&#8217;ll use Kinetic here.</p>
+<p>SSH into your Pi, and get into your classic shell:</p>
+<pre>$ sudo classic</pre>
+<p>Let&#8217;s follow <a href="https://wiki.ros.org/kinetic/Installation/Ubuntu">ROS Kinetic&#8217;s install guide</a>. ROS maintains its own repository of Debian packages, which we need to add to our system:</p>
+<pre>$ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" &gt; /etc/apt/sources.list.d/ros-latest.list'</pre>
+<p>We then need to add that repository&#8217;s keys to the list of keys we&#8217;ll accept (this verifies that packages in that repository really do come from ROS):</p>
+<pre>$ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116</pre>
+<p>Now we&#8217;ll re-index all the repositories we have configured, since we just added one:</p>
+<pre>$ sudo apt update</pre>
+<p>Now let&#8217;s install ROS. As you&#8217;ll see on the install guide, there are a bunch of meta packages available (packages that exist solely to pull in other packages). Let&#8217;s install the smallest, bare-bones one, <b>ros-kinetic-ros-base</b>, which will take up around 700MB. We&#8217;ll also install g++, the C++ compiler (it&#8217;s still required, even though we&#8217;re writing Python):</p>
+<pre>$ sudo apt install g++ ros-kinetic-ros-base</pre>
+<p>At this point, ROS is successfully installed, but none of its tools are available to run. That&#8217;s because ROS installs itself into what it calls a &#8220;workspace&#8221;, and provides a shell script that activates that workspace. We can make sure we activate that workspace upon login by adding it to the <b>.bashrc</b> file in our home directory:</p>
+<pre>$ echo "source /opt/ros/kinetic/setup.bash" &gt;&gt; ~/.bashrc
+$ source ~/.bashrc</pre>
+<p>Now you should be able to run <b>roscore</b> without troubles:</p>
+<pre>$ roscore
+&lt;snip&gt;
+SUMMARY
+========
+PARAMETERS
+* /rosdistro: kinetic
+* /rosversion: 1.12.12
+NODES
+auto-starting new master
+process[master]: started with pid [4987]
+ROS_MASTER_URI=http://localhost.localdomain:11311/
+setting /run_id to 1db9f4c6-e044-11e7-9931-b827eba43643
+process[rosout-1]: started with pid [5000]
+started core service [/rosout]</pre>
+<p>Go ahead and quit that by pressing CTRL+C.</p>
+<h3>Step 2: Get to know ROS</h3>
+<p>One of the reasons I like ROS so much (and, I think, one of the reasons it&#8217;s so popular) is that their introductory documentation is fantastic. They have a <a href="https://wiki.ros.org/ROS/Tutorials">phenomenal set of tutorials</a> that take you from knowing absolutely nothing to feeling more or less comfortable with the entire system. Each one is easily digestible in a few minutes. Because they are so good, rather than try and duplicate their hard work here, you should just start at the beginning and go through them at least until you complete <i>#13, &#8220;Examining the Simple Publisher and Subscriber&#8221;</i>. Note that there are two parallel tutorial tracks, one that uses C++ and one that uses Python. We&#8217;ll be using Python through this series, so you don&#8217;t need to worry about the C++ ones unless they interest you.</p>
+<h3>Step 3: Setup Python 2</h3>
+<p>Now that we&#8217;ve gained some familiarity with ROS, it&#8217;s almost time to make our robot move using it. However, there&#8217;s something we need to do first. Back in CamJam worksheet #1, they mention the following:</p>
+<blockquote><p>&#8220;When the Raspberry Pi was first released, some of the important Python libraries were only available for Python 2.7. However, almost every library, and all the ones used in these worksheets, are available for Python 3.2. It has been decided that all code for this EduKit will be developed for Python 3.2.&#8221;</p>
+<p>~ CamJam worksheet #1</p></blockquote>
+<p>That&#8217;s all fine and dandy, and I agree with it, but unfortunately the Python bindings for ROS are only officially supported on Python 2, so we need to use Python 2 from now on instead of Python 3. Don&#8217;t worry, all the code from the worksheets should still work, but it means we need to install the Python 2 version of RPi.GPIO (we only have the Python 3 version right now):</p>
+<pre>$ sudo apt install python-dev python-pip python-setuptools
+$ pip install RPi.GPIO</pre>
+<h3>Step 4: Create ROS package for our robot</h3>
+<p>Alright, let&#8217;s have some fun! We&#8217;re going to rewrite the code we wrote for the CamJam Worksheet #7 using ROS. We&#8217;ll add some message handling to it, so, using ROS, we can command the robot to move forward, turn left, turn right, etc.</p>
+<p>The first step is to create a new workspace. You learned how to do this in the first ROS tutorial. I&#8217;m calling mine &#8220;edukit_bot_ws&#8221;, if you call yours something else remember to change the directions accordingly:</p>
+<pre>$ mkdir -p ~/edukit_bot_ws/src
+$ cd ~/edukit_bot_ws/src
+$ catkin_init_workspace</pre>
+<p>Now let&#8217;s create a new package in that workspace. I&#8217;ll call mine &#8220;edukit_bot&#8221;, and it has three dependencies: <b>rospy</b> (the Python bindings for ROS), <b>std_msgs</b> (the standard ROS messages, e.g. numbers, strings, etc.), and <b>python-rpi.gpio</b> (RPi.GPIO, which we use for GPIO access):</p>
+<pre>$ cd ~/edukit_bot_ws/src
+$ catkin_create_pkg edukit_bot rospy std_msgs -s python-rpi.gpio</pre>
+<h3>Step 5: Write the ROS node</h3>
+<p>Time to write some code. First, create a new Python script in the ROS package&#8217;s <b>src/</b> directory:</p>
+<pre>$ touch ~/edukit_bot_ws/src/edukit_bot/src/driver_node</pre>
+<p>The CamJam worksheets don&#8217;t discuss this, but if we set the script to be executable, we can run it directly instead of calling it like <b>python path/to/script.py</b>. Let&#8217;s do that:</p>
+<pre>$ chmod a+x ~/edukit_bot_ws/src/edukit_bot/src/driver_node</pre>
+<p>Open that script in a text editor, and make it look like this (note that the entire package used in this post is <a href="https://github.com/kyrofa/your-first-robot/tree/master/part_2/edukit_bot">available for reference</a>):</p>
+<pre>#!/usr/bin/env python
+
+import rospy
+from std_msgs.msg import String
+
+import RPi.GPIO as GPIO
+
+# Set the GPIO modes
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
+# Set variables for the GPIO motor pins
+pinMotorAForwards = 10
+pinMotorABackwards = 9
+pinMotorBForwards = 8
+pinMotorBBackwards = 7
+
+# How many times to turn the pin on and off each second
+Frequency = 20
+# How long the pin stays on each cycle, as a percent (here, it's 30%)
+DutyCycle = 30
+# Setting the duty cycle to 0 means the motors will not turn
+Stop = 0
+
+# Set the GPIO Pin mode to be Output
+GPIO.setup(pinMotorAForwards, GPIO.OUT)
+GPIO.setup(pinMotorABackwards, GPIO.OUT)
+GPIO.setup(pinMotorBForwards, GPIO.OUT)
+GPIO.setup(pinMotorBBackwards, GPIO.OUT)
+
+# Set the GPIO to software PWM at 'Frequency' Hertz
+pwmMotorAForwards = GPIO.PWM(pinMotorAForwards, Frequency)
+pwmMotorABackwards = GPIO.PWM(pinMotorABackwards, Frequency)
+pwmMotorBForwards = GPIO.PWM(pinMotorBForwards, Frequency)
+pwmMotorBBackwards = GPIO.PWM(pinMotorBBackwards, Frequency)
+
+# Start the software PWM with a duty cycle of 0 (i.e. not moving)
+pwmMotorAForwards.start(Stop)
+pwmMotorABackwards.start(Stop)
+pwmMotorBForwards.start(Stop)
+pwmMotorBBackwards.start(Stop)
+
+# Turn all motors off
+def StopMotors():
+    pwmMotorAForwards.ChangeDutyCycle(Stop)
+    pwmMotorABackwards.ChangeDutyCycle(Stop)
+    pwmMotorBForwards.ChangeDutyCycle(Stop)
+    pwmMotorBBackwards.ChangeDutyCycle(Stop)
+
+# Turn both motors forwards
+def Forwards():
+    pwmMotorAForwards.ChangeDutyCycle(DutyCycle)
+    pwmMotorABackwards.ChangeDutyCycle(Stop)
+    pwmMotorBForwards.ChangeDutyCycle(DutyCycle)
+    pwmMotorBBackwards.ChangeDutyCycle(Stop)
+
+# Turn both motors backwards
+def Backwards():
+    pwmMotorAForwards.ChangeDutyCycle(Stop)
+    pwmMotorABackwards.ChangeDutyCycle(DutyCycle)
+    pwmMotorBForwards.ChangeDutyCycle(Stop)
+    pwmMotorBBackwards.ChangeDutyCycle(DutyCycle)
+
+# Turn left
+def Left():
+    pwmMotorAForwards.ChangeDutyCycle(Stop)
+    pwmMotorABackwards.ChangeDutyCycle(DutyCycle)
+    pwmMotorBForwards.ChangeDutyCycle(DutyCycle)
+    pwmMotorBBackwards.ChangeDutyCycle(Stop)
+
+# Turn Right
+def Right():
+    pwmMotorAForwards.ChangeDutyCycle(DutyCycle)
+    pwmMotorABackwards.ChangeDutyCycle(Stop)
+    pwmMotorBForwards.ChangeDutyCycle(Stop)
+    pwmMotorBBackwards.ChangeDutyCycle(DutyCycle)
+
+# Message handler
+def CommandCallback(commandMessage):
+    command = commandMessage.data
+    if command == 'forwards':
+        print('Moving forwards')
+        Forwards()
+    elif command == 'backwards':
+        print('Moving backwards')
+        Backwards()
+    elif command == 'left':
+        print('Turning left')
+        Left()
+    elif command == 'right':
+        print('Turning right')
+        Right()
+    elif command == 'stop':
+        print('Stopping')
+        StopMotors()
+    else:
+        print('Unknown command, stopping instead')
+        StopMotors()
+
+rospy.init_node('driver')
+
+rospy.Subscriber('command', String, CommandCallback)
+
+rospy.spin()
+print('Shutting down: stopping motors')
+StopMotors()
+GPIO.cleanup()</pre>
+<p>Lots of that should look familiar, but let&#8217;s break it down into chunks.</p>
+<pre>#!/usr/bin/env python
+
+import rospy
+from std_msgs.msg import String</pre>
+<p>The very first line of this file is called a <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a>. Since we&#8217;ve marked this file as executable on its own, this defines the interpreter that will execute this program. In this case, we&#8217;re telling it that it needs the <b>python</b> command.</p>
+<p>We then import <b>rospy</b>, which includes the ROS Python bindings, and we import the <b>String</b> message from the ROS <b>std_msgs</b>. We&#8217;ll use both of these a little later in the program.</p>
+<pre>import RPi.GPIO as GPIO
+
+# Set the GPIO modes
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
+# &lt;snip you don't need to see all this again...&gt;
+
+# Turn Right
+def Right():
+    pwmMotorAForwards.ChangeDutyCycle(DutyCycle)
+    pwmMotorABackwards.ChangeDutyCycle(Stop)
+    pwmMotorBForwards.ChangeDutyCycle(Stop)
+    pwmMotorBBackwards.ChangeDutyCycle(DutyCycle)</pre>
+<p>This entire section was lifted virtually verbatim from the CamJam Worksheet #7. It&#8217;s explained there, so I won&#8217;t repeat the explanation here.</p>
+<pre># Message handler
+def CommandCallback(commandMessage):
+    command = commandMessage.data
+    if command == 'forwards':
+        print('Moving forwards')
+        Forwards()
+    elif command == 'backwards':
+        print('Moving backwards')
+        Backwards()
+    elif command == 'left':
+        print('Turning left')
+        Left()
+    elif command == 'right':
+        print('Turning right')
+        Right()
+    elif command == 'stop':
+        print('Stopping')
+        StopMotors()
+    else:
+        print('Unknown command, stopping instead')
+        StopMotors()</pre>
+<p>Here&#8217;s a new, ROS-specific part. The <b>CommandCallback</b> function is created to handle a <b>String</b> message. It simply takes a look at the data (i.e. the string itself) contained within the message, and takes action appropriately. For example, if the string is the word &#8220;forwards&#8221; it moves the robot forward by calling the <b>Forwards</b> function created in the worksheet. Similarly, if the word is &#8220;left&#8221; it turns the robot left by calling the <b>Left</b> function. If the command isn&#8217;t one of the recognized words, the function does the safest thing it can: stop.</p>
+<pre>rospy.init_node('driver')
+
+rospy.Subscriber('command', String, CommandCallback)
+
+rospy.spin()
+print('Shutting down: stopping motors')
+StopMotors()
+GPIO.cleanup()</pre>
+<p>Here&#8217;s the main part of the program. First of all, we initialize the node and give it a name (&#8220;driver&#8221;). This begins communication with the ROS master. We then subscribe to a topic named &#8220;command&#8221;, and we specify that we expect that topic to be a <b>String</b> message. We then provide our <b>CommandCallback</b> function to request that it be called when a new messages comes in on that topic.</p>
+<p>Then we call <b>rospy.spin()</b> which blocks and waits for messages to come in. Once the node is asked to quit (say, with a CTRL+C), that function will exit, at which time we ensure that the motors have been stopped. We don&#8217;t want the robot running away from us!</p>
+<p>We&#8217;re done with our workspace for now, so let&#8217;s build it:</p>
+<pre>$ cd ~/edukit_bot_ws
+$ catkin_make</pre>
+<h3>Step 6: Move the robot using ROS</h3>
+<p>At this point, we have a ROS node created that will drive our robot as requested in a &#8220;command&#8221; message. It uses GPIO though, which still requires <b>sudo</b>. Instead of trying to get our workspace working using <b>sudo</b>, let&#8217;s temporarily change the permissions of GPIO so that we don&#8217;t need <b>sudo</b> (this will be reset upon reboot):</p>
+<pre>$ sudo chmod a+rw /dev/gpiomem</pre>
+<p><b>/dev/gpiomem</b> is a device representing the memory dedicated to GPIO (i.e. not other, more important/dangerous memory). As a result, this operation is relatively safe, particularly compared to doing the same to e.g. <b>/dev/mem</b>.</p>
+<p>Alright, let&#8217;s test this out! You&#8217;ll need to open three terminals for this, each one using the classic shell (remember, run <b>sudo classic</b> to enter the classic shell). We first need the ROS master, as without it publishers and subscribers can&#8217;t find one another. So in one terminal, run the ROS master:</p>
+<pre>$ roscore</pre>
+<p>In another terminal, make sure you activate our newly-built workspace, and run our &#8220;driver&#8221; node:</p>
+<pre>$ cd ~/edukit_bot_ws
+$ source devel/setup.sh
+$ rosrun edukit_bot driver_node</pre>
+<p>Finally, in the third terminal, we&#8217;ll start giving our commands to make the robot move. First of all, take note of the topics that either have publishers or subscribers:</p>
+<pre>$ rostopic list
+/command
+/rosout
+/rosout_agg</pre>
+<p>Notice the <b>/command</b> topic. This is the topic on which our &#8220;driver&#8221; node is listening, because of the <b>Subscriber</b> we configured. It&#8217;s expecting a <b>String</b> message there, so let&#8217;s send it a command, say, to move forward:</p>
+<pre>$ rostopic pub -1 /command std_msgs/String "forwards"
+publishing and latching message for 3.0 seconds</pre>
+<p>You should notice the &#8220;driver&#8221; node say that it&#8217;s moving forward, and then your robot&#8217;s wheels should start rotating forward! Try sending any of the strings we handled in <b>CommandCallback</b> (&#8220;left&#8221;, &#8220;backwards&#8221;, etc.), and commands that you know are invalid to ensure that it stops safely.</p>
+<p>Congratulations, you&#8217;re quickly learning ROS! In the next post in this series, we&#8217;ll break free of the CamJam worksheets and strike out on our own. We&#8217;ll introduce the wireless controller, and begin working on making our robot remotely-controlled using ROS.</p>
+
+      </div>
       <a class="title" href=http:&#x2F;&#x2F;justobjects.nl&#x2F;emit-1&#x2F;><h1>Emit #1 – Into Spatiotemporal</h1></a>
       <h5>2018-01-20T17:02:39.000Z</h5>
       <i class="author">Just van den Broecke</i>
       <div class="content">
         [object Object]
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;glamanate.com&#x2F;blog&#x2F;drupal-coffee-burgers-small-world-afterall?utm_source&#x3D;Drupal Planet&amp;utm_medium&#x3D;feed&amp;utm_campaign&#x3D;drupal><h1>Matt Glaman: Drupal, Coffee, Burgers - A small world afterall</h1></a>
+      <h5>2018-01-20T16:00:00.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        <span property="schema:name">Drupal, Coffee, Burgers - A small world afterall</span> <div class="field field--name-field-featured-image field--type-image field--label-hidden field--item"> <a href="http://glamanate.com/blog/drupal-coffee-burgers-small-world-afterall"> <picture><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="http://glamanate.com/sites/default/files/styles/homepage_/public/IMG_6455_0.JPG?itok=8nZh5QH3 1x" media="all and (min-width: 1200px)" type="image/jpeg"></source><source srcset="http://glamanate.com/sites/default/files/styles/homepage_medium/public/IMG_6455_0.JPG?itok=sEx8lZiu 1x" media="all and (min-width: 992px)" type="image/jpeg"></source><source srcset="http://glamanate.com/sites/default/files/styles/homepage_medium/public/IMG_6455_0.JPG?itok=sEx8lZiu 1x" media="all and (min-width: 768px)" type="image/jpeg"></source><source srcset="http://glamanate.com/sites/default/files/styles/homepage_small/public/IMG_6455_0.JPG?itok=x9nKNFwc 1x" media="all and (max-width: 767px)" type="image/jpeg"></source><!--[if IE 9]></video><![endif]--><img src="http://glamanate.com/sites/default/files/styles/homepage_/public/IMG_6455_0.JPG?itok=8nZh5QH3" alt="" typeof="foaf:Image" class="img-responsive" /></picture></a> </div> <span rel="schema:author"><span lang="" about="http://glamanate.com/users/mglaman" typeof="schema:Person" property="schema:name" datatype="" xml:lang="">mglaman</span></span> <span property="schema:dateCreated" content="2018-01-20T16:00:00+00:00">Sat, 01/20/2018 - 10:00</span> <div property="schema:text" class="content--body">This year I joined a coffee exchange for some members of the Drupal community. I had known there was one floating around, but finally got signed up. Over the past two years, I have gotten more and more into coffee - being a coffee snob about roasts and learning brewing techniques. Last week we were paired up. And sent out some roasts.</div> <ul class="links inline list-inline"><li class="node-readmore"><a href="http://glamanate.com/blog/drupal-coffee-burgers-small-world-afterall" rel="tag" title="Drupal, Coffee, Burgers - A small world afterall" hreflang="en">Read more<span class="visually-hidden"> about Drupal, Coffee, Burgers - A small world afterall</span></a></li><li class="comment-forbidden"></li><li class="disqus-comments-num"><a href="http://glamanate.com/blog/drupal-coffee-burgers-small-world-afterall#disqus_thread" data-disqus-identifier="node/179" hreflang="en">Comments</a></li></ul>
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blokspeed.net&#x2F;2018&#x2F;preparing-your-drupal-83-site-media-drupal-84><h1>Eelke Blok: Preparing your Drupal 8.3 site with Media for Drupal 8.4</h1></a>
+      <h5>2018-01-20T14:36:41.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p>If you have the Media module for Drupal 8 installed, you need to remove it before you can upgrade to the latest core version (8.4). Unfortunately, there are a few gotchas involved with the process. This blog post is about getting rid of the old contrib Media module, so the site can be updated to Drupal 8.4 in a subsequent step. This is based on my personal experience. YMMV, as they say.</p> </div>
       </div>
       <a class="title" href=https:&#x2F;&#x2F;anitagraser.com&#x2F;2018&#x2F;01&#x2F;20&#x2F;freedom-of-projection-in-qgis3&#x2F;><h1>Freedom of projection in QGIS3</h1></a>
       <h5>2018-01-20T14:06:55.000Z</h5>
@@ -75,12 +360,6 @@
       <i class="author">Alex Cotiugă</i>
       <div class="content">
         Version 2.1 edited by Alex Cotiugă on Fri Jan 19 15:09:19 CET 2018
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;acotiuga?language&#x3D;><h1>Profile of Alex Cotiugă</h1></a>
-      <h5>2018-01-19T14:09:04.000Z</h5>
-      <i class="author">Alex Cotiugă</i>
-      <div class="content">
-        Version 17.7 edited by Alex Cotiugă on Fri Jan 19 15:09:04 CET 2018
       </div>
       <a class="title" href=http:&#x2F;&#x2F;feedproxy.google.com&#x2F;~r&#x2F;DrupalEasy&#x2F;~3&#x2F;BNW21xEBHwg&#x2F;drupaleasy-podcast-203-david-hernandez-new-jersey-governance-docksal-tiny-zoos><h1>DrupalEasy: DrupalEasy Podcast 203 - David Hernandez (New Jersey, Governance, Docksal, tiny zoos)</h1></a>
       <h5>2018-01-19T13:36:33.000Z</h5>
@@ -369,6 +648,12 @@ theme(<span style="color:orange;">legend.position</span> <span style="color:red;
       <i class="author">Raffaello Pelagalli</i>
       <div class="content">
         Version 8.27 edited by Paul Libbrecht on Wed Jan 17 22:49:32 CET 2018
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;grass.osgeo.org&#x2F;news&#x2F;72&#x2F;15&#x2F;GRASS-GIS-as-described-by-a-Google-Code-In-student><h1>GRASS GIS as described by a Google Code-In student</h1></a>
+      <h5>2018-01-17T17:59:27.000Z</h5>
+      <i class="author">OSGeo Website Committee</i>
+      <div class="content">
+        
       </div>
       <a class="title" href=http:&#x2F;&#x2F;www.blogger.com&#x2F;feeds&#x2F;4643387265233889970&#x2F;posts&#x2F;default&#x2F;4083753291626822437><h1>Code-in: work samples, muestras de trabajo</h1></a>
       <h5>2018-01-17T17:26:00.000Z</h5>
@@ -872,18 +1157,6 @@ juju expose grafana</pre>
       <i class="author"></i>
       <div class="content">
         <div class="image"> <div class="field-items" class="field-items"> <div class="field-item even" rel="og:image rdfs:seeAlso" resource="http://www.hook42.com/sites/default/files/styles/image_style_blog_list/public/field/image/tshirt_copy_black_grey_trans2.png?itok=hC6fBF8J" class="field-item even"><img typeof="foaf:Image" src="http://www.hook42.com/sites/default/files/styles/image_style_blog_list/public/field/image/tshirt_copy_black_grey_trans2.png?itok=hC6fBF8J" width="211" height="220" alt="Hook 42 It takes a Village" title="Hook 42 - It takes a Village" /></div> </div> </div> <div class="field field-name-body field-type-text-with-summary field-label-hidden field-wrapper body field"> <div class="field-items" class="field-items"> <div class="field-item even" property="content:encoded" class="field-item even"><p>There's no&nbsp;such thing as "just a typo."</p> <p>In Drupal,&nbsp;clients and perspective users see&nbsp;the user interface and documentation&nbsp;first. When we give them demos or when they evaluate the Drupal project, they aren’t just evaluating the code. Grammar, punctuation, readability, and spelling all matter. They give the project credibility. It is just as important to maintain the same high standards with the front facing side of Drupal as we do with the code.</p> <p>I have been working with <a href="https://www.drupal.org/">Drupal</a> for about three years, and contributing back to the project for a little less than two.</p> <p>I have learned quite a bit, but, most importantly, I have come to the conclusion that there is no such thing as “just” a typo, “just” a grammar issue, or “just” a documentation patch; not all patches have to fix code to be important.</p> </div> </div> </div>
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;lhuria94.github.io&#x2F;must-have-drush-commands-in-drupal&#x2F;><h1>Love Huria: Must have custom drush commands in every Drupal project</h1></a>
-      <h5>2018-01-16T00:00:00.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <p>I am working on a project where we use Drush commands a lot …. seriously like A LOT.. That said, while working on the project, I found few drush commands which come quite handy in our day to day operations. We use these commands mostly with deploy hooks and also while working locally.</p> <p>Everyone uses Drush commands which are kinda in daily use while working on Drupal and we just can’t imagine our life without it in terms of increasing our productivity.</p> <p>We want to be more and more productive right? Yes, we do. :)</p> <h2 id="a-little-bit-about-drush">A little bit about...
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;www.jrockowitz.com&#x2F;blog&#x2F;contribute><h1>Jacob Rockowitz: The Webform module now depends on the Contribute module</h1></a>
-      <h5>2018-01-15T23:59:07.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <p>After spending the past year experimenting with <a href="http://www.jrockowitz.com/blog/lingotek">promoting paid services</a>, <a href="http://www.jrockowitz.com/blog/agreement">talking about sponsored features</a>, and <a href="http://www.jrockowitz.com/blog/about">adding an about section</a> to the Webform module. I learned a lot, from my experiments, including not asking for <a href="http://www.jrockowitz.com/blog/forgiveness">forgiveness</a>.</p><h3><p>Importance of contributing to the Drupal community</p></h3><p>Not enough people understand and/or realize the importance of contributing to the Drupal community. My <a href="http://www.jrockowitz.com/blog/where-are-we-going">last blog post</a> discussed my hope of finding ways to help sustain my commitment and contribution to the Drupal community and ended by stating…</p><h3><p>Convincing people that they need to contribute</p></h3><p>The challenge is convincing people and organizations that they need to contribute to Open Source. Funding is an <a href="https://dri.es/accelerate-drupal-8-by-funding-a-core-committer">ongoing challenge for the Drupal community</a> The problem could be that people don't understand the importance and value of contributing back to Open Source.</p><p>Nowhere in Drupal's user interface/experience is our community and Drupal Association promoted and/or acknowledged. Core maintainers are only included in the <a href="https://api.drupal.org/api/drupal/core%21MAINTAINERS.txt/8.4.x">MAINTAINERS.txt </a>file, which only fellow developers can access. Drupal is not a product that can to be sold but we are a <a href="https://www.drupal.org/community">community</a> with an <a href="https://www.drupal.org/association">association</a> that needs recognition, support, and contributions.</p><h3> Everyone needs to be a member of the Drupal Association </h3><p>It’s surprising how many people and organizations are asking for support in the Webform module's issue queue who are not members of the...<a href=https://www.jrockowitz.com/blog/contribute>Read More</a>
       </div>
       <a class="title" href=http:&#x2F;&#x2F;systers-opensource.blogspot.com&#x2F;feeds&#x2F;8533407610103418836&#x2F;comments&#x2F;default><h1>Streamlining Repos and Creating Organizational Processes</h1></a>
       <h5>2018-01-15T18:22:00.001Z</h5>
@@ -1527,42 +1800,6 @@ Wikimedia Foundation</em></p>
       <div class="content">
         <figure class="wp-caption alignnone" id="attachment_464" style="width: 725px;"><img alt="Many people receive too many GitHub notifications." class="size-large wp-image-464" height="369" src="http://wordpress.schuirmann.eu/wp-content/uploads/2018/01/1_LWpkWB02tNcDNnTw6JSfCQ-1024x521.png" width="725" /><figcaption class="wp-caption-text">Many people receive too many GitHub notifications. (Image parts by freepik.com)</figcaption></figure> <p>(This post was crossposted with minor modifications <a href="https://medium.com/@gitmate_io/github-issue-notifications-on-open-source-projects-8104eb5c6e9b">on medium</a>.)</p> <p class="graf graf--p graf-after--figure" id="ef0e">Many Open Source Project maintainers suffer from a significant overdose of GitHub notifications. Many have turned them off completely for that.</p> <p class="graf graf--p graf-after--p" id="f5f6"><a href="https://gitmate.io/">We (GitMate.io)</a> are constantly researching about how people handle a flood of incoming issues in our aim to improve the situation by <a class="markup--anchor markup--p-anchor" href="https://gitmate.io/features" rel="nofollow noopener" target="_blank">applying modern technologies</a> to the problem. (Oh and we love free software!)</p> <p class="graf graf--p graf-after--p" id="0e78">By analyzing the biggest open source repositories on GitHub (more info on the data below) we’ve seen that the contributors to any of those projects responds to only 2.3% of all issues on average. (Let a contributor be a person that commented on at least two issues which they didn’t open.)</p> <figure class="graf graf--figure graf-after--p" id="f4c5"> <div class="aspectRatioPlaceholder is-locked"> <div class="aspectRatioPlaceholder-fill"></div> <div class="progressiveMedia js-progressiveMedia graf-image is-canvasLoaded is-imageLoaded"><canvas class="progressiveMedia-canvas js-progressiveMedia-canvas" height="50" width="75"></canvas><img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/1*R4S6yIEqW1vNJ-S3Xx4R6Q.png" /></div> </div><figcaption class="imageCaption">Contributor Interest Histogram (Summed over the biggest repositories)</figcaption></figure> <p class="graf graf--p graf-after--figure" id="69d5">This makes clear that for any bigger open source project, “Watching” the repository is resulting in a lot of spam for most of the people. If they don’t respond, notifying them was of no value for the discussion after all.</p> <p class="graf graf--p graf-after--p" id="d8d2">We can also observe that only very few project managers care for any significant portion of the issues. Only 6 of our human contributors in total care for more than every 5th issue at all. Here’s our heros:</p> <pre class="graf graf--pre graf-after--p" id="dffd">25.05%: golang/go -&gt; ianlancetaylor, Watching 47.48%: moby/moby -&gt; thaJeztah, Watching 27.31%: moby/moby -&gt; cpuguy83, Watching 36.67%: owncloud/core -&gt; PVince81, Not watching 47.12%: saltstack/salt -&gt; gtmanfred, Watching 25.54%: saltstack/salt -&gt; Ch3LL, Watching</pre> <p class="graf graf--p graf-after--pre" id="d310">However, we do see that 29.1% (117) of all contributors (402) are still subscribed to all notifications of the repository (watching it).</p> <h4 class="graf graf--h4 graf-after--p" id="8105">Switching to Polling</h4> <p class="graf graf--p graf-after--h4" id="aef0">Many contributors switch to polling instead of watching the main repository.</p> <p class="graf graf--p graf-after--p" id="2a2e">However, we still see that the main maintainers keep watching the repository: without them, it’s very easy to miss out on new issues and it’s hard to make sure that the right people take a look at the right issues in a decentralized system.</p> <h4 class="graf graf--h4 graf-after--p" id="f8d0">Introducing Automation</h4> <p class="graf graf--p graf-after--h4" id="3a99">In many communities we see home grown bots arising that apply labels and sometimes assign people based on keywords. This works especially well for automatically created issues (e.g. from <a class="markup--anchor markup--p-anchor" href="https://sentry.io/" rel="nofollow noopener" target="_blank">sentry</a>) but is not a full solution.</p> <p class="graf graf--p graf-after--p" id="e029">We’ve tried it. Contributors started mentioning keywords consciously and it didn’t really work for user reported issues.</p> <h4 class="graf graf--h4 graf-after--p" id="cb2a">Better Automation!</h4> <p class="graf graf--p graf-after--h4" id="a947">We wouldn’t be GitMate if we didn’t strive for more. Our data suggests that people are spending way too much time on their notifications. We’ve maintained <a class="markup--anchor markup--p-anchor" href="https://coala.io/" rel="nofollow noopener" target="_blank">coala.io</a> in the past and we know that reading through all of them is impossible even for core maintainers. Static keyword based automation doesn’t seem to be enough.</p> <p class="graf graf--p graf-after--p" id="35b4">Since quite a while we’re hacking on an artificial intelligence that helps you dealing with this problem by analyzing exactly what every person in your team is discussing about on GitHub or GitLab and mentioning the ones who are important for solving any new issue.</p> <p class="graf graf--p graf-after--p" id="bf53">GitMate is built as a full automated triaging solution. Right now it already mentions related developers in new issues, finds duplicates, labels issues and closes old issues. It is already used by companies like <a class="markup--anchor markup--p-anchor" href="https://owncloud.com/" rel="nofollow noopener" target="_blank">ownCloud</a> and <a class="markup--anchor markup--p-anchor" href="https://www.kiwi.com/" rel="nofollow noopener" target="_blank">Kiwi.com</a>and we’re looking for more beta testers.</p> <p class="graf graf--p graf-after--p" id="bf29">If you like this idea, visit <a class="markup--anchor markup--p-anchor" href="https://gitmate.io/" rel="nofollow noopener" target="_blank">GitMate.io</a> and shoot us an email to <a class="markup--anchor markup--p-anchor" href="mailto:lasse@gitmate.io" rel="noopener" target="_blank">lasse@gitmate.io</a> :). If you find issues, file them at <a href="https://code.gitmate.io/">code.gitmate.io</a>.</p> <h3 class="graf graf--h3 graf-after--p" id="8d80">About the Data…</h3> <p class="graf graf--p graf-after--h3" id="ec12">We’ve scraped data from a lot of GitHub repositories. We only wanted to look at the biggest ones (measured by scraped file size, i.e. roughly amount of text over all issues communicated). We’ve excluded ‘ZeroK-RTS/CrashReports’ because no humans seem to be operating that repository. The results refer to statistics drawn from those repositories:</p> <ul class="postList"> <li class="graf graf--li graf-after--p" id="9012">kubernetes/kubernetes</li> <li class="graf graf--li graf-after--li" id="0365">javaee/glassfish</li> <li class="graf graf--li graf-after--li" id="7ee1">microsoft/vscode</li> <li class="graf graf--li graf-after--li" id="93f6">dart-lang/sdk</li> <li class="graf graf--li graf-after--li" id="d89e">golang/go</li> <li class="graf graf--li graf-after--li" id="5320">moby/moby</li> <li class="graf graf--li graf-after--li" id="7130">owncloud/core</li> <li class="graf graf--li graf-after--li" id="f7b2">saltstack/salt</li> </ul> <p class="graf graf--p graf-after--li" id="5e7a">We have filtered out any account with <code class="markup--code markup--p-code">bot</code> in the username as well as the <code class="markup--code markup--p-code">ownclouders</code> account which is using <a class="markup--anchor markup--p-anchor" href="https://gitmate.io/" rel="nofollow noopener" target="_blank">GitMate</a>.</p> <p class="graf graf--p graf-after--p graf--trailing" id="c769">If you’re interested in more information, <strong class="markup--strong markup--p-strong">we can share our Jupyter Notebook</strong> and the data with you — just hit us an email to <a class="markup--anchor markup--p-anchor" href="mailto:lasse@gitmate.io" rel="noopener" target="_blank">lasse@gitmate.io</a>.</p>
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;04&#x2F;ubuntu-updates-for-the-meltdown-spectre-vulnerabilities&#x2F;><h1>Ubuntu Updates for the Meltdown &#x2F; Spectre Vulnerabilities</h1></a>
-      <h5>2018-01-04T18:49:06.000Z</h5>
-      <i class="author">Dustin Kirkland</i>
-      <div class="content">
-        <p><img class="aligncenter size-full wp-image-82491" src="https://insights.ubuntu.com/wp-content/uploads/0372/Screenshot-from-2018-01-04-12-39-25.png" alt="" width="521" height="386" /></p>
-<p>&nbsp;</p>
-<ul>
-<li>For up-to-date patch, package, and USN links, please refer to: <a href="https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SpectreAndMeltdown">https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SpectreAndMeltdown</a></li>
-</ul>
-<p>&nbsp;</p>
-<p>Unfortunately, you’ve probably already read about one of the most widespread security issues in modern computing history &#8212; colloquially known as “<a href="https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)">Meltdown</a>” (<a href="https://people.canonical.com/~ubuntu-security/cve/2017/CVE-2017-5754.html">CVE-2017-5754</a>) and “<a href="https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)">Spectre</a>” (<a href="https://people.canonical.com/~ubuntu-security/cve/2017/CVE-2017-5753.html">CVE-2017-5753</a> and <a href="https://people.canonical.com/~ubuntu-security/cve/2017/CVE-2017-5715.html">CVE-2017-5715</a>) &#8212; affecting practically every computer built in the last 10 years, running any operating system.  That includes <a href="https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SpectreAndMeltdown">Ubuntu</a>.</p>
-<p>I say “unfortunately”, in part because there was a coordinated release date of January 9, 2018, agreed upon by essentially every operating system, hardware, and cloud vendor in the world.  By design, operating system updates would be available at the same time as the public disclosure of the security vulnerability.  While it happens rarely, this an industry standard best practice, which has broken down in this case.</p>
-<p>At its heart, this vulnerability is a CPU hardware architecture design issue.  But there are billions of affected hardware devices, and replacing CPUs is simply unreasonable.  As a result, operating system kernels &#8212; Windows, MacOS, Linux, and many others &#8212; are being patched to mitigate the critical security vulnerability.</p>
-<p>Canonical engineers have been working on this since we were made aware under the embargoed disclosure (November 2017) and have worked through the Christmas and New Years holidays, testing and integrating an incredibly complex patch set into a broad set of Ubuntu kernels and CPU architectures.</p>
-<p>Ubuntu users of the 64-bit x86 architecture (aka, amd64) can expect updated kernels by the original January 9, 2018 coordinated release date, and sooner if possible.  Updates will be available for:</p>
-<ul>
-<li>Ubuntu 17.10 (Artful) &#8212; Linux 4.13 HWE</li>
-<li>Ubuntu 16.04 LTS (Xenial) &#8212; Linux 4.4 (and 4.4 HWE)</li>
-<li>Ubuntu 14.04 LTS (Trusty) &#8212; Linux 3.13</li>
-<li>Ubuntu 12.04 ESM** (Precise) &#8212; Linux 3.2
-<ul>
-<li>Note that an <a href="https://www.ubuntu.com/support/esm">Ubuntu Advantage license</a> is required for the 12.04 ESM kernel update, as Ubuntu 12.04 LTS is past its end-of-life</li>
-</ul>
-</li>
-</ul>
-<p>Ubuntu 18.04 LTS (Bionic) will release in April of 2018, and will ship a 4.15 kernel, which includes the <a href="https://lwn.net/Articles/742404/">KPTI</a> patchset as integrated upstream.</p>
-<p>Ubuntu optimized kernels for the Amazon, Google, and Microsoft public clouds are also covered by these updates, as well as the rest of Canonical&#8217;s <a href="https://partners.ubuntu.com/programmes/public-cloud">Certified Public Clouds</a> including Oracle, OVH, Rackspace, IBM Cloud, Joyent, and Dimension Data.</p>
-<p>These kernel fixes will not be <a href="https://www.ubuntu.com/server/livepatch">Livepatch-able</a>.  The source code changes required to address this problem is comprised of hundreds of independent patches, touching hundreds of files and thousands of lines of code.  The sheer complexity of this patchset is not compatible with the Linux kernel Livepatch mechanism.  An update and a reboot will be required to active this update.</p>
-<p>Furthermore, you can expect Ubuntu security updates for a number of other related packages, including CPU microcode, GCC and QEMU in the coming days.</p>
-<p>We don&#8217;t have a performance analysis to share at this time, but please do stay tuned here as we&#8217;ll followup with that as soon as possible.</p>
-<p>Thanks,<br />
-<a href="https://twitter.com/dustinkirkland">@DustinKirkland</a><br />
-VP of Product<br />
-Canonical / Ubuntu</p>
-
-      </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.gvsig.org&#x2F;2018&#x2F;01&#x2F;04&#x2F;gis-applied-to-municipality-management-module-4-2-attribute-tables-joining-tables&#x2F;><h1>GIS applied to Municipality Management: Module 4.2 ‘Attribute tables (joining tables)’</h1></a>
       <h5>2018-01-04T13:15:42.000Z</h5>
       <i class="author">Mario</i>
@@ -1626,6 +1863,12 @@ Canonical / Ubuntu</p>
 <li style="font-weight: 400"><a href="https://github.com/CosmicCoder96/open-event-frontend/blob/31f9e4241241c1990131ef4a7725705cf796f9ab/app/components/forms/forgot-password-form.js"><span style="font-weight: 400">Reset Password Form Source Code</span></a><span style="font-weight: 400"> &#8211; Complete source code of the reset password form</span></li>
 </ul>
 
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;grass.osgeo.org&#x2F;news&#x2F;70&#x2F;15&#x2F;Ongoing-Google-Code-in-contest><h1>Ongoing Google Code-in contest</h1></a>
+      <h5>2018-01-02T21:40:08.000Z</h5>
+      <i class="author">OSGeo Website Committee</i>
+      <div class="content">
+        
       </div>
       <a class="title" href=http:&#x2F;&#x2F;blog.cleverelephant.ca&#x2F;2018&#x2F;01&#x2F;govt-oss-clusters.html><h1>Open Source for&#x2F;by Government</h1></a>
       <h5>2018-01-02T16:00:00.000Z</h5>
@@ -2562,30 +2805,6 @@ On behalf of the OpenMRS Community</p>
       <a class="title" href=https:&#x2F;&#x2F;blog.gvsig.org&#x2F;2017&#x2F;12&#x2F;18&#x2F;grabacion-del-taller-de-introduccion-a-gvsig-realizado-en-la-umh-de-elche&#x2F;><h1>Grabación del taller de introducción a gvSIG realizado en la UMH de Elche</h1></a>
       <h5>2017-12-18T20:26:27.000Z</h5>
       <i class="author">Mario</i>
-      <div class="content">
-        [object Object]
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;blog.gvsig.org&#x2F;2017&#x2F;12&#x2F;18&#x2F;gis-applied-to-municipality-management-module-3-views-layers-symbology-labelling&#x2F;><h1>GIS applied to Municipality Management: Module 3 ‘Views, layers, symbology, labelling’</h1></a>
-      <h5>2017-12-18T09:29:44.000Z</h5>
-      <i class="author">Mario</i>
-      <div class="content">
-        [object Object]
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;blog.gvsig.org&#x2F;2017&#x2F;12&#x2F;18&#x2F;gvsig-2017-un-ano-de-exitos-12-meses-de-avances&#x2F;><h1>gvSIG 2017, un año de éxitos, 12 meses de avances</h1></a>
-      <h5>2017-12-18T06:17:41.000Z</h5>
-      <i class="author">Alvaro</i>
-      <div class="content">
-        [object Object]
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;blog.gvsig.org&#x2F;2017&#x2F;12&#x2F;15&#x2F;towards-gvsig-2-4-quick-info-tool&#x2F;><h1>Towards gvSIG 2.4: Quick Info Tool</h1></a>
-      <h5>2017-12-15T11:15:17.000Z</h5>
-      <i class="author">Óscar Martínez</i>
-      <div class="content">
-        [object Object]
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;courses.neteler.org&#x2F;8th-european-algae-industry-summit&#x2F;><h1>8th European Algae Industry Summit</h1></a>
-      <h5>2017-12-15T09:04:08.000Z</h5>
-      <i class="author">Prod-copernicus-admin</i>
       <div class="content">
         [object Object]
       </div>
