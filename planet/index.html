@@ -11,11 +11,240 @@
       <hr />
     </div>
     <div>
+      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;26&#x2F;a-peek-at-the-snapcraft-summit&#x2F;><h1>A peek at the Snapcraft Summit</h1></a>
+      <h5>2018-01-26T16:31:51.000Z</h5>
+      <i class="author">Sergio Schvezov</i>
+      <div class="content">
+        <p><img src="https://insights.ubuntu.com/wp-content/uploads/8fac/DKvYrfrXUAAm-bO.jpg" alt="" width="2048" height="1536" class="alignleft size-full wp-image-82809" /></p>
+<p>The Snapcraft Summit, taking place in Seattle from January 29th to February 2nd, is a forward-thinking five day software hackathon being attended by major software vendors and snap developers working to move the industry forward with software delivery.</p>
+<p>In the style introduced by the famous BarCamps of old, the agenda is totally free-form and attendee-generated. Of course, that doesn&#8217;t mean we&#8217;ll sit down and relax! There are many things planned that need tackling. Every attendee already has a long laundry list of things to work on; as a group we will move forward and check things off the list as the days go by. We are going to be covering a wide range of technologies and domains, from GUI oriented electron based applications and its development stack to robotics, with a spice and language frameworks and command line tools for the cloud would be the few to mention.</p>
+<p>For those not attending, no need to worry as we will be be present on social media (<a href="https://twitter.com/snapcraftio">twitter</a>, <a href="https://www.facebook.com/snapcraftio/">facebook</a>, and <a href="https://plus.google.com/+SnapcraftIo">Google+</a>) sharing photos and milestones so make sure to follow along! There will also be coverage of the event for those seeking a summary of what went down after the fact.</p>
+
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;26&#x2F;lxd-5-easy-pieces&#x2F;><h1>LXD: 5 Easy Pieces</h1></a>
+      <h5>2018-01-26T15:44:37.000Z</h5>
+      <i class="author">Canonical</i>
+      <div class="content">
+        <p><img src="https://insights.ubuntu.com/wp-content/uploads/c4b1/unnamed-19.png" alt="" width="1732" height="967" class="alignleft size-full wp-image-82789" /></p>
+<p><em>This is a guest blog by Michael Iatrou</em></p>
+<p>Machine containers, like LXD, proliferate in the datacenters: they provide a native control plane for OpenStack and a lightweight hypervisor for its tenants. LXD optimizes resource allocation and utilization for Kubernetes clusters, modernizes workload management in HPC infrastructure and streamlines lift and shift for legacy applications running on virtual machines or bare metal.</p>
+<p>On the other end of the spectrum, LXD provides a great experience running on developers’ laptops, for anything from maintaining traditional monolithic applications, lightweight disposable testing environments, to developing process container encapsulated microservices. If you are taking your first steps with LXD, here are 5 simple things worth knowing:</p>
+<h2>1. Install the latest LXD</h2>
+<p>Ubuntu Xenial comes with LXD installed by default and it is fully supported for production environments for at least 5 years, as part of the LTS release. In parallel, the LXD team is quickly adding new features. If you want to see the latest and greatest, make sure you use the up to date xenial backports:</p>
+<pre>
+$ sudo apt install -t xenial-backports lxd lxd-client
+$ dpkg -l | grep lxd
+ii  lxd         2.21-0ubuntu amd64   Container hypervisor based on LXC
+ii  lxd-client  2.21-0ubuntu amd64   Container hypervisor based on LXC
+</pre>
+<p>With the packages from backports you will be able to follow closely the upstream development of LXD.</p>
+<h2>2. Use ZFS</h2>
+<p>Containers see significant benefits from a copy-on-write filesystem like ZFS. If you have a separate disk or partition, use ZFS for the LXD storage pool. Make sure you install zfsutils-linux before you initialize LXD:</p>
+<pre>
+$ sudo apt install zfsutils-linux
+$ lxd init
+Do you want to configure a new storage pool (yes/no) [default=yes]?
+Name of the new storage pool [default=default]:
+Name of the storage backend to use (dir, btrfs, lvm, zfs) [default=zfs]:
+Create a new ZFS pool (yes/no) [default=yes]?
+Would you like to use an existing block device (yes/no) [default=no]? yes
+Path to the existing block device: /dev/vdb1
+</pre>
+<p>Especially for launch, snapshot, restore and delete LXD operations, ZFS as a storage pool performs much better than the alternatives.</p>
+<h2>3. Get a public cloud instance on your laptop</h2>
+<p>Whether you are using AWS, Azure or GCP, named instance types are the lingua franca for resource allocation. Do you want to get a feel of how the application you develop on your laptop would behave on a cloud instance? Quickly spin up a LXD container that matches the desired cloud instance type and try it:</p>
+<pre>
+$ lxc launch -t m3.large ubuntu:16.04 aws-m3large
+Creating aws-m3large
+Starting aws-m3large
+$ lxc exec aws-m3large -- grep ^processor /proc/cpuinfo | wc -l
+2
+$ lxc exec aws-m3large -- free -m
+      total     used     free   shared  buff/cache   available
+Mem:   7680      121     7546      209        12        7546
+</pre>
+<p>LXD applied resource limits to the container, to restrict CPU and RAM and provide an experience analogous to the requested instance type. Does it look like you application could benefit from additional CPU cores? LXD allows to modify the available resources on the fly:</p>
+<pre>
+$ lxc config set aws-m3large limits.cpu 3
+$ lxc exec aws-m3large -- grep ^processor /proc/cpuinfo | wc -l
+3
+</pre>
+<p>Testing and adjusting quickly the container resources helps with accurate capacity planning and avoiding overprovisioning.
+</p>
+<h2>4. Customize containers with profiles</h2>
+<p>LXD profiles store any configuration that is associated with a container in the form of key/value pairs, or device designation. Each container can have one or more profiles applied to it. When multiple profiles are applied to a container, existing options are overridden in the order they are specified. A default profile is created automatically and it’s used implicitly for every container, unless a different one is specified.</p>
+<p>A good example for customizing the default LXD profile is enabling public key SSH authentication. The LXD images have SSH enabled by default, but they do not have a password or a key. Let’s add one:</p>
+<p>First, export the current profile:</p>
+<pre>
+$ lxc profile show default > lxd-profile-default.yaml
+</pre>
+<p>Modify the <tt>config</tt> mapping of the profile to include <tt>user.user-data</tt> as follows:</p>
+<pre>
+config:
+ user.user-data: |
+    #cloud-config
+    ssh_authorized_keys:
+      - @@SSHPUB@@
+  environment.http_proxy: ""
+  user.network_mode: ""
+description: Default LXD profile
+devices:
+  eth0:
+    nictype: bridged
+    parent: lxdbr0
+    type: nic
+  root:
+    path: /
+    pool: default
+    type: disk
+name: default
+used_by: []
+</pre>
+<p>Make sure that you have generated an <a href="https://help.ubuntu.com/community/SSH/OpenSSH/Keys#Generating_RSA_Keys">SSH<br />
+key pair</a> for the current user, and then run:</p>
+<pre>
+$ sed -ri "s'@@SSHPUB@@'$(cat ~/.ssh/id_rsa.pub)'" lxd-profile-default.yaml
+</pre>
+<p>And finally update the default profile:</p>
+<pre>
+$ lxc profile edit default < lxd-profile-default.yaml
+</pre>
+<p>You should now be able to SSH into your LXD container, as you would do with a VM. And yes, adding SSH keys barely scratches the surface of just in time configuration possibilities using cloud-init.</p>
+<p>The LXD autostart behavior is another option to consider tuning in the default profile: out of the box, when the host machine boots, all the LXD containers are started. That is exactly the behavior that you want for your servers. For your laptop though, you might want to start containers only as needed. You can configure autostart directly for the default profile, without using an intermediate file for editing:</p>
+<pre>
+$ lxc profile set default boot.autostart 0
+</pre>
+<p>All existing and future containers with the default profile will be affected by this change. You can see the profiles applied to each existing container using:</p>
+<pre>
+$ lxc list -c ns46tSP
+</pre>
+<p>Familiarize with the functionality profiles offer, it’s a force multiplier for day to day activities and invaluable for structured repeatability.</p>
+<h2>5. Access the containers without port-forwarding</h2>
+<p>LXD creates an “internal” Linux bridge during its initialization (<tt>lxd init</tt>). The bridge enables an isolated layer 2 segment for the containers and the connectivity with external networks takes place on layer 3 using NATing and port-forwarding. Such behavior facilitates isolation and minimizes external exposure -- both of them desirable characteristics. But because LXD containers offer machine-like operational semantics, for some use cases it’s appropriate to have LXD guests share the same network segment with their host.</p>
+<p>Let’s see how this is easily configurable on a per container basis, using profiles. It’s assumed that on the host you have <a href="https://help.ubuntu.com/community/NetworkConnectionBridge">configured a bridge</a>, named <tt>br0</tt>, with a port associated to an Ethernet interface.</p>
+<p>We create a new LXD profile:</p>
+<pre>
+lxc profile create bridged
+</pre>
+<p>And then we map the eth0 NIC of the container to the host bridge <tt>br0</tt>:</p>
+<pre>
+$ cat lxd-profile-bridged.yaml
+description: Bridged networking LXD profile
+devices:
+  eth0:
+    name: eth0
+    nictype: bridged
+    parent: br0
+    type: nic
+$ lxc profile edit bridged < lxd-profile-bridged.yaml
+</pre>
+<p>Finally, we launch a new container with both the default and the bridged profile.</p>
+<pre>
+$ lxc launch ubuntu:x c1 -p default -p bridged
+</pre>
+<p>The container will be using DHCP to retrieve an IP address, on the same subnet as the host:</p>
+<pre>
+$ ip a s br0 
+3: br0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether AA:BB:CC:DD:EE:FF brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.171/24 brd 192.168.1.255 scope global br0
+       valid_lft forever preferred_lft forever
+
+$ lxc exec c1 -- ip a s eth0
+101: eth0@if102: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 00:AA:BB:CC:DD:EE brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 192.168.1.172/24 brd 192.168.1.255 scope global eth0
+       valid_lft forever preferred_lft forever
+</pre>
+<p> Bridged networking is the simplest way to develop and test applications with<br />
+LXD in more production-like network environments. Another alternative is <a href="http://lxd.readthedocs.io/en/latest/containers/#bridged-or-macvlan-for-connection-to-physical-network">macvlan</a> but be aware of its caveats, mainly host-guest communication and hardware support limitations.</p>
+<p>These 5 easy pieces are just the tip of iceberg of what one can do with LXD. Join the <a href="https://discuss.linuxcontainers.org/">Linux Containers</a> community to discuss your use cases and questions. Delve into the <a href="http://lxd.readthedocs.io/en/latest/">documentation</a> for inspiration and send us <a href="https://github.com/lxc/lxd/pulls">PRs</a> with your favorite enhancement.</p>
+<p>LXD is the kind of tool that after you get to know each other, using it on a daily basis feels inevitable. Give it a try!</p>
+<h3>Want to know more?</h3>
+<p>On February 7th, technical lead Stephane Graber will be presenting a webinar for <a href="https://pages.ubuntu.com/ubuntu_product_month.html">Ubuntu Product Month</a> that will dive into how LXD works, what it does, how it can be used in the enterprise, and even provide an opportunity for Q&A.</p>
+<p style="text-align: center;"><a class="link-cta-ubuntu" href="https://www.brighttalk.com/webcast/6793/298235">Register For Webinar</a></p>
+
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;26&#x2F;bionic-beaver-18-04-lts-to-use-xorg-by-default&#x2F;><h1>Bionic Beaver 18.04 LTS to use Xorg by default</h1></a>
+      <h5>2018-01-26T12:16:31.000Z</h5>
+      <i class="author">Will Cooke</i>
+      <div class="content">
+        <p>Bionic Beaver, the codename for the next Ubuntu LTS release, is due in April 2018 and will ship with both the traditional Xorg graphics stack as well as the newer Wayland based stack, but Xorg will be the default.</p>
+<p>17.10, released in October 2017, ships with the Wayland based graphics server as the default and the Xorg based equivalent is available as an option from the login screen. When we started out on the GNOME Shell route for 17.10 (Artful Aardvark) we knew that we needed to have Wayland as the default option otherwise we wouldn’t know if it would work well for our users in the LTS only 6 months later. The LTS is supported for five years meaning that we need to be certain that what goes out the door on release day will be maintainable and sustainable for the duration and will serve all our users and customers needs, which is no mean feat.</p>
+<p>As we are roughly half way through the Bionic development cycle, the time was right for us to review that decision and make a call on whether or not Wayland is the right default display server for Bionic. We have decided that we will ship Xorg by default, and that Wayland will be an optional session available from the login screen.</p>
+<p>Why opt for Xorg by default? There are three main reasons:</p>
+<ol>
+<li>Screen sharing in software like WebRTC services, Google Hangouts, Skype, etc works well under Xorg.</li>
+<li>Remote Desktop control for example RDP &amp; VNC works well under Xorg.</li>
+<li>Recoverability from Shell crashes is less dramatic under Xorg.</li>
+</ol>
+<p>The first two are closely linked. Wayland &amp; GNOME Shell have a good plan in PipeWire and a Wayland protocol to provide a screen sharing service. This will take some more time to develop and there will be some lag while application developers include support in their services. Until that happens, Xorg is necessary for people who need screen sharing features. If you don’t need screen sharing features and prefer a more secure environment then the Wayland session is available for you, pre-installed.</p>
+<p>The third point is about what happens when things go wrong. The architecture of GNOME Shell and Mutter is such that a GNOME Shell crash will end your whole session, killing running applications and returning you to the login screen. When using Xorg, the shell can restart independently of the display server and running applications. This means that once the shell is restarted, you can pretty much pick up your session from where you left off, with your applications still running.<br />
+There are two solutions to this problem when using Wayland: make sure the shell doesn’t crash or change the architecture. Both of these are work in progress and we continue to contribute to this work upstream. <a href="https://wiki.gnome.org/Initiatives/Wayland/GnomeShell/GnomeShell4">GNOME Shell 4</a> will bring a new architecture where there will be more flexibility in components restarting without affecting other components. But in short, we remain committed to GNOME and the GNOME stack and will continue to actively contribute to Wayland by adding features and fixing bugs.</p>
+<p>The Wayland session will still be available, pre-installed, for people to use, but for our ‘out of the box’ users the Ubuntu experience needs to be stable and provide the features they have come to expect and use in daily life and Xorg is the best choice here, at least for 18.04 LTS, but for 18.10 we will re-evaluate Wayland as the default.</p>
+<p>If you&#8217;d like to get involved in more conversations about this, check out the corresponding post on the <a href="https://community.ubuntu.com/t/xorg-will-be-the-default-in-18-04-lts/3623?u=willcooke">Ubuntu Community Hub</a>.</p>
+<p>&nbsp;</p>
+
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.gvsig.org&#x2F;2018&#x2F;01&#x2F;26&#x2F;3rd-gvsig-festival-a-new-edition-of-the-virtual-conference-about-gvsig&#x2F;><h1>3rd gvSIG Festival: A new edition of the virtual conference about gvSIG</h1></a>
+      <h5>2018-01-26T11:30:23.000Z</h5>
+      <i class="author">Mario</i>
+      <div class="content">
+        [object Object]
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.gvsig.org&#x2F;2018&#x2F;01&#x2F;26&#x2F;3er-gvsig-festival-una-nueva-edicion-de-las-jornadas-virtuales-sobre-gvsig&#x2F;><h1>3er gvSIG Festival: Una nueva edición de las jornadas virtuales sobre gvSIG</h1></a>
+      <h5>2018-01-26T11:30:15.000Z</h5>
+      <i class="author">Mario</i>
+      <div class="content">
+        [object Object]
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.gvsig.org&#x2F;2018&#x2F;01&#x2F;26&#x2F;jornada-gvsig-en-la-universidad-politecnica-de-cartagena-espana&#x2F;><h1>Jornada gvSIG en la Universidad Politécnica de Cartagena (España)</h1></a>
+      <h5>2018-01-26T10:07:03.000Z</h5>
+      <i class="author">Mario</i>
+      <div class="content">
+        [object Object]
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;lhuria94.github.io&#x2F;drupal-camp-goa-2018-call-for-sessions&#x2F;><h1>Love Huria: Emboss your footprints in the Drupal Sand - Drupal Camp Goa 2018, Call for sessions</h1></a>
+      <h5>2018-01-26T00:00:00.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        <p>We are thrilled to bring you the most exciting event of this year <strong>Drupal Camp Goa 2018!</strong> You would be ecstatic to be a part of something really big that’s happening in India’s most sought-after destination, Goa. It’s a shoutout for all of you who love developing and would like to extend their immense support to the web’s leading content management system (CMS), Drupal!</p> <p><img src="/assets/img/2018-01-26-drupal-camp-goa-2018-call-for-sessions/drupal-camp-goa-2018.jpg" alt="Drupal Camp Goa 2018" /></p> <h2 id="why-should-drupalers-have-all-the-fun">Why should Drupalers have all the fun!</h2> <p>This time it is not just Drupal, we are exploring beyond it. Join us to share your knowledge on topics like...
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;www.lullabot.com&#x2F;podcasts&#x2F;drupalizeme-podcast&#x2F;changing-drupalorg-tooling><h1>Lullabot: Rock and a Hard Place: Changing Drupal.org Tooling</h1></a>
+      <h5>2018-01-25T23:17:47.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        Matt and Mike talk with the Drupal Association's Tim Lehnen and Neil Drumm about the changes to Drupal.org's tooling.
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;www.prometsource.com&#x2F;blog&#x2F;how-set-responsive-images-drupal-8><h1>Promet Source: How to Set Up Responsive Images in Drupal 8</h1></a>
+      <h5>2018-01-25T18:56:30.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        Responsive images are great! If I wanted to quickly introduce what responsive images are to some, I would say: On mobile? Small images. Tablet? Medium images. Desktop? Large images. This article is a complete "how to" in setting up responsive images in Drupal 8. If you are using Drupal 7, check out my previous article here: Picture Module: Building Responsive Images in Drupal 7.
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;www.phase2technology.com&#x2F;blog&#x2F;decoupled-drupal-guide-marketers><h1>Phase2: Decoupled Drupal: A Guide for Marketers</h1></a>
+      <h5>2018-01-25T17:58:21.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        <p dir="ltr">If you are considering a move to Drupal 8, or upgrading your current Drupal platform, it’s likely that you’ve come across the term “decoupled Drupal”, aka “headless Drupal”. But do you know what it means and what the implications of decoupled Drupal are for marketers? In this guide we will define decoupled Drupal and share three reasons why marketers should consider a decoupled architecture as they evolve their digital experience platforms.</p>
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.acromedia.com&#x2F;drupal-commerce-2-set-up-product-attributes-using-rendered-fields><h1>Acro Media: Drupal Commerce 2: Set up Product Attributes using Rendered Fields</h1></a>
+      <h5>2018-01-25T16:53:44.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        <p> </p> <div class="hs-responsive-embed hs-responsive-embed-youtube"> <iframe class="hs-responsive-embed-iframe" style="font-family: inherit;" src="http://www.youtube.com/embed/BEToT-witkg" width="100%" height="314" allowfullscreen></iframe> </div> <span style="background-color: transparent; font-family: inherit;">In </span> <a href="/drupal-commerce-2-how-to-set-up-product-attributes" style="background-color: transparent; font-family: inherit;">part one</a> <span style="background-color: transparent; font-family: inherit;"> of this Acro Media Tech Talk video series, we covered how you set up a new product attribute in Drupal Commerce 2. A product attribute is used to define options that customers would select when buying a product. For example, a hat might have various sizes (small, medium, large) and colours available. These are attributes.</span> <p></p> <p><span style="background-color: transparent; font-family: inherit;">In part two, we'll now take a colour attribute that was set up in part one, but change it into a "rendered attribute". By default, the customer would select the option by seeing the name of the colour. A rendered attribute lets us instead show a colour swatch. So, instead of seeing the work "blue", the customer would see the actual colour. Cool!</span></p> <p><span style="background-color: transparent; font-family: inherit;"><span style="background-color: transparent; font-family: inherit;"><span style="background-color: transparent; font-family: inherit;"><span>This entire video series, when complete, will show you how to set up a new product in Drupal Commerce 2, from start to finish.<span>&nbsp;<span>The video is captured using our <a href="https://commerceplus.acromedia.com/">Urban Hipster Commerce 2 demo site</a>.</span></span></span></span></span></span></p> <p><span style="background-color: transparent; font-family: inherit;"><span><span><strong>Next week we'll post part 3:</strong> Set up a Product Variation Type with Custom Fields</span></span></span></p> <p><span style="background-color: transparent; font-family: inherit;">Its important to note that this video was recorded before the official 2.0 release of Drupal Commerce and so you may see a few small differences between this video and the official release now available.</span></p> <h5>Urban Hipster Commerce 2 Demo site</h5> <p><span>This video was created using the Urban Hipster Commerce 2 demo site. We've built this site to show the adaptability of the Drupal 8, Commerce 2 platform. Most of what you see is out-of-the-box functionality combined with expert configuration&nbsp;and theming.</span></p> <p><a class="cta_button" href="https://cta-image-cms2.hubspot.com/ctas/v2/public/cs/ci/?pg=4058e01f-d600-44be-b506-12dfe6f19507&amp;pid=1659229&amp;ecid=&amp;hseid=&amp;hsic="><img class="hs-cta-img " style="border-width: 0px; /*hs-extra-styles*/; " alt="Visit Our Drupal Commerce 2 Demo Site" src="https://no-cache.hubspot.com/cta/default/1659229/4058e01f-d600-44be-b506-12dfe6f19507.png"></a></p> <h5><span style="background-color: transparent; font-family: inherit;">More from Acro Media</span></h5> <ul> <li><span style="background-color: transparent; font-family: inherit;">High Five video: <a href="https://blog.acromedia.com/products-in-drupal-commerce-2.x">Products in Drupal Commerce 2</a></span></li> <li><span style="background-color: transparent; font-family: inherit;">Learn more about us:&nbsp;<a href="https://www.acromedia.com">www.acromedia.com</a></span></li> </ul> <h5>Drupal modules used in this video</h5> <ul> <li><a href="https://www.drupal.org/project/commerce">Drupal Commerce</a></li> <li><a href="https://docs.drupalcommerce.org/commerce2/user-guide/products">Official Products User Guide</a></li> <li><a href="https://docs.drupalcommerce.org/commerce2/developer-guide/products">Official Products Developer Guide</a></li> </ul> <p><a class="cta_button" href="https://cta-image-cms2.hubspot.com/ctas/v2/public/cs/ci/?pg=55d02964-839e-4112-b7bd-5a4d4fff180b&amp;pid=1659229&amp;ecid=&amp;hseid=&amp;hsic="><img class="hs-cta-img " style="border-width: 0px; /*hs-extra-styles*/; " alt="Contact us and learn more about our custom ecommerce solutions" src="https://no-cache.hubspot.com/cta/default/1659229/55d02964-839e-4112-b7bd-5a4d4fff180b.png"></a></p> <img src="https://track.hubspot.com/__ptq.gif?a=1659229&amp;k=14&amp;r=https%3A%2F%2Fblog.acromedia.com%2Fdrupal-commerce-2-set-up-product-attributes-using-rendered-fields&amp;bu=https%253A%252F%252Fblog.acromedia.com&amp;bvt=rss" alt="" width="1" height="1" style="min-height:1px!important;width:1px!important;border-width:0!important;margin-top:0!important;margin-bottom:0!important;margin-right:0!important;margin-left:0!important;padding-top:0!important;padding-bottom:0!important;padding-right:0!important;padding-left:0!important; ">
+      </div>
       <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;Documentation&#x2F;AdminGuide&#x2F;Installation&#x2F;InstallationConcludingSteps&#x2F;?language&#x3D;en><h1>Install the wiki UI</h1></a>
       <h5>2018-01-25T16:21:12.000Z</h5>
       <i class="author">Vincent Massol</i>
       <div class="content">
         Version 10.2 edited by Vincent Massol on Thu Jan 25 17:21:12 CET 2018
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;www.drupal.org&#x2F;association&#x2F;blog&#x2F;drupalcon-nashville-and-tennessees-discrimination-standing><h1>Drupal Association blog: DrupalCon Nashville and Tennessee’s Discrimination standing</h1></a>
+      <h5>2018-01-25T15:51:51.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>As many already know, DrupalCon North America 2018 will be held in Nashville, TN. The Drupal Association puts a lot of time and effort into choosing a site for DrupalCon North America - a two to three year process that involves request for proposals, several rounds of interviews, site visits and contract negotiations. We do not take this lightly and we include both logistically important and socially relevant questions for review.</p> <p>Unfortunately, sometimes things happen outside of our control, despite our great lengths of planning. In April 2016, after a 5-month RFP and interview process, we signed a contract with the City of Nashville to host DrupalCon North America 2018. A few weeks later, the State of Tennessee introduced and passed a new law that Drupal Association does not support, and as many community members have pointed out - prevents public employees from the State of California from attending DrupalCon if sponsored by their employer.</p> <p>For those who have asked, the timeline of events transpired as follows:</p> <ul><li>April 2016: Drupal Association contracted with Nashville, TN to host DrupalCon North America 2018</li> <li>Early May 2016: Tennessee enacted the<a href="https://oag.ca.gov/sites/all/files/agweb/pdfs/ab1887/tennessee-sa0526.pdf?" rel="nofollow"> Amendment Senate Bill No. 1556 House Bill No. 1840</a></li> <li>January 2017: California enacted restrictions banning state sponsored travel to TN in response to SB1556/HB1840.</li> </ul><p>Specifically, May 2, 2016.<a href="http://i2.cdn.turner.com/cnn/2016/images/04/27/tn.sb.1556.bill.language.pdf" rel="nofollow"> SB1556/HB1840</a> as enacted, declares that no person providing counseling or therapy services will be required to counsel or serve a client as to goals, outcomes, or behaviors that conflict with the sincerely held principles of the counselor or therapist; requires such counselor or therapist to refer the client to another counselor or therapist; creates immunity for such action; maintains liability for counselors who will not counsel a client based on the counselor's religious beliefs when the individual seeking or undergoing the counseling is in imminent danger of harming themselves or others.</p> <p>It is unfortunate that this bill became law. The Nashville Convention &amp; Visitors Corporation, who we worked with to contract DrupalCon Nashville, and the greater Nashville business community including the Nashville Mayor’s office believe discrimination has no place in their home state.</p> <p>In response to this bill and in anticipation of other potential discrimination bills in the future, Nashville Convention &amp; Visitors Corporation became a<a href="http://tennesseethrives.org/our-coalition/" rel="nofollow"> founding and leading member of Tennessee Thrives</a>, a business coalition of now more than 400 companies across Tennessee who believe that in order for Tennessee businesses and communities to thrive they must be diverse and welcoming for all people, regardless of race, sex, national origin, ethnicity, religion, age, disability, sexual orientation or gender identity. You can<a href="http://tennesseethrives.org/" rel="nofollow"> read more here</a> about Tennessee Thrives and the Nashville Metro area’s history of social advancements, as well as a statement from the Nashville Convention and Visitors Corporation.</p> <p>Here is the Tennessee Thrives pledge:</p> <blockquote><p><em>We believe that equal treatment of all Tennesseans and visitors is essential to maintaining Tennessee’s strong brand as a growing and exciting home for business innovation, economic development, a best-in-class workforce, and dynamic entertainment, travel and tourism industries.</em></p> <p><em>In order for Tennessee businesses to compete for top talent, we believe our workplaces and communities must be diverse and welcoming for all people, regardless of race, sex, national origin, ethnicity, religion, age, disability, sexual orientation or gender identity.</em></p> <p><em>As signers of the Tennessee Thrives pledge, we are committed to promoting an attractive, prosperous, and economically vibrant Tennessee. A united Tennessee is a thriving Tennessee.</em></p> </blockquote> <p>Tennessee Thrives identified 12 discriminatory bills that were filed in the General Assembly in 2017, and with their efforts only two were approved.</p> <p>As a further measure of welcome for our Drupal community, the Mayor of Nashville, has extended a<a href="https://drive.google.com/open?id=0BxP4QhE_fawVV2lFQXlMWlNFMUk" rel="nofollow"> Statement of Welcome to the DrupalCon community</a>. They are very excited that DrupalCon has chosen Nashville as their 2018 North American location, and hope we can see past the politics of the larger state to see the welcoming intent of the City of Nashville.</p> <p>In response to the Drupal community concerns with Nashville as a DrupalCon city, the Nashville Convention &amp; Visitors Corporation offered this statement:</p> <blockquote><p>Nashville is an open, welcoming city that respects and embraces the differences among us. We believe that our differences make our community stronger. A sampling of Nashville’s social advancements in contradiction to the actions of TN legislature include:</p> <ul><li>In 2016, the Metro Nashville Council unanimously voted to approve a resolution asking the state legislature to oppose bills opposing the U.S. Supreme Court’s decision on marriage equality. The resolution’s lead co-sponsor was Councilwoman Nancy Van Reese, who is openly gay.</li> <li>On March 21, 2016, Mayor Megan Barry issued an executive order requiring training of all employees of the Metropolitan Government in diversity issues and sexual harassment awareness and prevention.</li> <li>In May, 2016, Nashville hosted the International Gay Rugby Bingham Cup. Mayor Megan Barry served on the Host Committee to bring the Bingham Cup to Nashville.</li> <li>While a mayoral candidate, Mayor Megan Barry officiated the first same-sex marriage in Nashville just hours after the Supreme Court ruled that same-sex marriage is allowed in all 50 states. (During her inauguration in September, 2015, Mayor Barry invited Nashville in Harmony to perform. The group is Tennessee’s first and only musical arts organization specifically created for gay, lesbian, bisexual, and transgender people – and their straight allies. The group performed at events hosted by the previous Nashville Mayor, as well.)</li> <li>While a mayoral candidate, Mayor Megan Barry received the Ally Award from the Nashville LGBT Chamber of Commerce in 2015.</li> <li>In 2011, Nashville extended nondiscrimination protections to employees of the city and contractors. (Unfortunately, state government nullified the local decision.)</li> <li>In 2009, the Metro Nashville Council passed an ordinance that protects Metro employees from discrimination based on their sexual orientation or gender identity. (Sponsored by then Council Member-At-Large Megan Barry, who now serves as Mayor of Nashville)</li> <li>In 2008, the Metro Nashville School Board approved sexual orientation and gender identity protections for students and staff.</li> </ul></blockquote> <p>For those concerned about a Tennessee Bathroom Bill, please know that Tennessee has never passed the bathroom bill, it gets killed in process every time it comes up for a vote, including this past March. There is no “Bathroom Bill” in the state of Tennessee. There are also all-gender restrooms offered at the Nashville Music City Center for use during DrupalCon. We understand people's concern with a state that submits this kind of law for consideration. We can possibly all relate to the idea that the actions of lawmakers are not always representative of the greater population, particularly in the greater population of a metro area, and Nashville shares this same concern.</p> <p>At our core, the Drupal Association believes in community, collaboration, and openness. We work hard throughout the process of DrupalCon planning to be sure that not only the complicated logistics are addressed, but also an accessible space for everyone in our community to feel safe, welcome and comfortable.</p> <p>In addition to our core DrupalCon programming, we also include the following services at DrupalCon for those who need it.</p> <ul><li><a href="https://events.drupal.org/code-conduct" rel="nofollow">Our Code of Conduct</a></li> <li>Registration grants and scholarships</li> <li>Interpreters (for the hard of hearing)</li> <li>Special meals: Kosher, Halal, vegan, vegetarian, gluten-free, etc</li> <li>New mother’s room</li> <li>Quiet room and prayer space</li> <li>Venue accessibility and mobility assistance</li> <li>Local AA Meeting information</li> <li>Speaker inclusion fund</li> <li>No-photograph lanyards and communication preference stickers</li> <li>All-gender restrooms</li> <li>Women in Drupal events</li> <li>Inclusion BOFs</li> <li>On-site contacts for incident reporting</li> </ul><p>You can learn more about all of these services on our DrupalCon Nashville website under <a href="https://events.drupal.org/nashville2018/onsite-resources" rel="nofollow">On-site Resources</a>.</p> <p>We believe, despite the current legislative challenges that the City of Nashville is working to overcome at a state level, that we will have a safe, diverse, celebratory space for our community in Nashville this spring. We’re excited to bring DrupalCon to the city of Nashville, and we’re confident it will be an amazing event.</p> <p><em>We want to hear about your experiences at DrupalCon and in the cities we visit. Please participate in our post-Con surveys so that we can follow with both our internal teams and host cities if there are areas where the events can be improved for attendees. </em></p></div></div></div>
       </div>
       <a class="title" href=http:&#x2F;&#x2F;www.xwiki.org&#x2F;xwiki&#x2F;bin&#x2F;view&#x2F;XWiki&#x2F;aifrim?language&#x3D;en><h1>Profile of Alexandra Ifrim</h1></a>
       <h5>2018-01-25T13:46:58.000Z</h5>
@@ -189,7 +418,7 @@
       <div class="content">
         [object Object]
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;24&#x2F;kernel-team-summary-january-24-2018&#x2F;><h1>Kernel Team Summary: January 24, 2018</h1></a>
+      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;24&#x2F;kernel-team-summary-january-24-2018&#x2F;><h1>Kernel team summary – 24 January 2018</h1></a>
       <h5>2018-01-24T16:31:43.000Z</h5>
       <i class="author">Canonical</i>
       <div class="content">
@@ -202,7 +431,7 @@
 <p>If you would like to reach the kernel team, you can find us at the #ubuntu-kernel channel on FreeNode.  Alternatively, you can mail the Ubuntu Kernel Team mailing list at: kernel-team@lists.ubuntu.com.</p>
 
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;24&#x2F;lxd-weekly-status-31&#x2F;><h1>LXD Weekly Status #31</h1></a>
+      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;24&#x2F;lxd-weekly-status-31&#x2F;><h1>LXD weekly status #31</h1></a>
       <h5>2018-01-24T16:23:26.000Z</h5>
       <i class="author">Stéphane Graber</i>
       <div class="content">
@@ -334,7 +563,7 @@
       <div class="content">
         <div class="field field-name-field-mainimage field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://www.drupal.org/files/styles/case588x306/public/homepage_viewports.png?itok=yzeuAB_p" width="588" height="306" alt="Chicago Park District website shown at different viewports" /></div></div></div><div class="field field-name-field-link field-type-link-field field-label-above"><div class="field-label">Completed Drupal site or project URL:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="https://www.chicagoparkdistrict.com/">https://www.chicagoparkdistrict.com/</a></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>The Chicago Park District owns more than 8,800 acres of green space, making it the largest municipal park manager in the nation. The Chicago Park District’s more than 600 parks offer thousands of sports and physical activities as well as cultural and environmental programs for youth, adults, and seniors. The Chicago Park District is also responsible for 28 indoor pools, 50 outdoor pools, and 26 miles of lakefront including 23 swimming beaches plus one inland beach.</p> <p>Clarity redesigned, built, and hosts the official website for the Chicago Park District (CPD). Clarity designed and developed this user-friendly, mobile-responsive site, with a unified look and feel and marketing emphasis to promote CPD’s parks, programs, and events. The new website acts as a solution focused on its customers – “front end” visitors of the website and “back end” content administers – both of whom have a wide scope of needs.</p> <p>Specifically, the new site provides the following improvements and features:</p> <ul><li>New Content Management System (CMS) Platform</li> <ul><li>Drupal 8, the latest version of the popular open-source framework;</li> <li>Allows CPD to more easily integrate and connect to third-party tools, such as</li> <ul><li>ActiveNet, which provides externally-hosted ecommerce functions;</li> <li>AppliTrack, which provides job postings;</li> <li>Bonfire, which provides procurement and contracting opportunities;</li> <li>MailChimp, which provides newsletter signup capabilities.</li> </ul></ul><li>Updated design based on user focus group reactions to the old site, including</li> <ul><li> A cleaner, refreshed look built for devices of all sizes;</li> <li>Home page updates that allow CPD staff to push more information in a more organized fashion;</li> <li> Larger emphasis on maps (hugely important for such a large metropolitan area);</li> <li> The ability to highlight features and attractions, such as artworks and natural areas, that CPD has to offer both residents and visitors;</li> <li>Overall increased speed and performance.</li> </ul><li> Improved administrative functions that allow for</li> <ul><li>Distributed content responsibilities;</li> <li>Workflow approvals to ensure editorial integrity;</li> <li>More modular administrative tools allowing CPD to highlight location details such as accessibility features</li> </ul></ul><p>With its new site, Chicago Park District is now poised to better serve the long-term needs of residents and visitors for years to come.</p></div></div></div>
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;23&#x2F;ubuntu-development-summary-23-jan-2018&#x2F;><h1>Ubuntu Development Summary – 23 Jan 2018</h1></a>
+      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;23&#x2F;ubuntu-development-summary-23-jan-2018&#x2F;><h1>Ubuntu Server development summary – 23 January 2018</h1></a>
       <h5>2018-01-23T18:40:29.000Z</h5>
       <i class="author">Joshua Powers</i>
       <div class="content">
@@ -561,7 +790,7 @@ Wikimedia Foundation</em></p>
       <div class="content">
         <article><div class="text--no-summary spacing--after-xs"> <p>In November 2017 I presented at Drupal South on using Dialogflow to power conversational interfaces with Drupal.</p> <p>The video and slides are below, the demo in which I talk to Drupal starts in the first minute.</p> </div> <div class="author author--short">by <a href="https://www.previousnext.com.au/about/team/lee-rowlands">Lee Rowlands</a> / <time datetime="Tue, 01/23/2018 - 07:57Z">23 January 2018</time></div> <article class="embedded-entity"><article><div class="video-embed-field-provider-youtube video-embed-field-responsive-video"><iframe width="854" height="480" frameborder="0" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/jCN0Hr-XswU?autoplay=0&start=0&rel=0"></iframe> </div> </article></article><iframe src="https://larowlan.github.io/ds2017-convo-ui" height="600" width="800"></iframe> <div class="field field--field-tags field--type-entity-reference field--label-above"> <h3 class="field__label">Tagged</h3> <a href="https://www.previousnext.com.au/blog/tags/conversational-ui" hreflang="en">Conversational UI</a>, <a href="https://www.previousnext.com.au/blog/tags/drupal-8" hreflang="en">Drupal 8</a>, <a href="https://www.previousnext.com.au/blog/tags/chatbots" hreflang="en">Chatbots</a>, <a href="https://www.previousnext.com.au/blog/tags/drupalsouth" hreflang="en">DrupalSouth</a> </div> </article>
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;22&#x2F;ubuntu-desktop-weekly-update-january-22-2018&#x2F;><h1>Ubuntu Desktop Weekly Update: January 22, 2018</h1></a>
+      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;22&#x2F;ubuntu-desktop-weekly-update-january-22-2018&#x2F;><h1>Ubuntu Desktop weekly update – 22 January 2018</h1></a>
       <h5>2018-01-22T19:38:55.000Z</h5>
       <i class="author">Will Cooke</i>
       <div class="content">
@@ -650,12 +879,6 @@ Wikimedia Foundation</em></p>
       <i class="author"></i>
       <div class="content">
         <div dir="ltr" style="text-align: left;" trbidi="on"><div style="text-align: left;"><span style="font-weight: normal;">Using <a href="https://github.com/Seldaek/monolog" target="_blank">monolg</a> library and <a href="https://github.com/theorchard/monolog-cascade" target="_blank">monolog-cascade</a> extension you can&#39;t configure the &quot;namespaced&quot; loggers. What does it mean? Imagine you have tons of classes and you need to log information from them into a log file. There is nothing special in this. Just define loggers with the needed handler(s) and instantiate them directly in a place where you want them to use with a help of monolog-cascade. It means in your monolog-cascade config file you </span><i>have to</i><span style="font-weight: normal;"> define needed loggers </span><i>in advance</i><b> </b>and you <i>have to</i> reference needed loggers by their names. But what if you need an additional logger (with absolutely different handlers/processors) for some of the classes? Will you go through all the classes and change logger names where you instantiate them? I think it doesn&#39;t look like a good idea when a small requirement (for instance, change the log file name for records from a bunch of classes) leads to edits in an application code. It&#39;s something that must be configurable and that&#39;s why I decided to write a tiny library called <a href="https://github.com/PavelLoparev/monolog-cascade-namespaced" target="_blank">monolog-cascade-namespaced</a>.<br></div></div><a href="http://www.fluffy.pro/2018/01/monolog-namespaced-logger.html#more">Read more »</a>
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;feedproxy.google.com&#x2F;~r&#x2F;DrupalEasy&#x2F;~3&#x2F;3C53fD9Z8o8&#x2F;testing-local-drupal-site-emails-lando-and-mailhog><h1>DrupalEasy: Testing a local Drupal site emails with Lando and Mailhog</h1></a>
-      <h5>2018-01-21T17:29:14.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <p>Over the past few months, I've been evaluating three Docker-based local development environments trying to figure out which is best not only for me, but also for students of our long-form <a href="https://www.drupaleasy.com/training/workshops/mastering-professional-drupal-developer-workflows-pantheon">Managing Professional Drupal Development Workflows with Pantheon</a> (next semester starts February 17) and <a href="http://www.drupaleasy.com/academy/dco/course-information">Drupal Career Online</a> (March 26) classes.</p> <p>I've been test driving <a href="https://docksal.io/">Docksal</a> (actually, I've been using it for over a year), <a href="https://tech.drud.com/ddev-community">DDEV Community</a>, and <a href="https://github.com/lando/lando">Lando</a> (I'm a recovering <a href="https://www.kalabox.io/">Kalabox</a> user) trying to figure out where the "sweet spot" is for flexibility, ease of use, documentation, Windows-compatibility (we routinely have students on Windows machines), performance, and some other criteria.</p> <p>I recently stumbled upon a cool open source project (thanks <a href="https://www.drupal.org/u/briancoffelt">Brian</a>!) called <a href="https://github.com/mailhog/MailHog">Mailhog</a> that makes it dead easy to test outgoing emails from a local development environment. While I tested it on Lando, both Docksal and DDEV both support Mailhog and have supporting documentation <a href="https://docksal.readthedocs.io/en/master/tools/mailhog/">here</a> and <a href="https://ddev.readthedocs.io/en/latest/users/developer-tools/">here</a>. </p> <p>The general idea of Mailhog is that it acts as a local STMP server that by default, doesn't send emails to the addressed recipients. Rather, it includes a clean UI that allows the developer to view outgoing emails. </p> <p>Getting Mailhog up-and-running in an existing Lando site is quite easy. Simply add the following to your .lando.yml</p> <p> </p> <p><code>proxy:<br /> mailhog:<br /> - mail.lemp.lndo.site<br /> services:<br /> mailhog:<br /> type: mailhog<br /> hogfrom:<br /> - appserver</code></p> <p><br /> Then, run "lando rebuild". Caution should be used when using <a href="https://docs.devwithlando.io/cli/rebuild.html">this command</a>, as while most services retain their data during a rebuild, some may not. So far, I can confirm that my databases come through just fine. </p> <p>After rebuilding, you're just about done. When you run "lando start" the next time, you'll see a new set of URLs for the local Mailhog UI (you can also get this information via "lando info").</p> <p> </p> <p><img alt="Mailhog local URLs" data-entity-type="file" data-entity-uuid="a6cb8c7e-bed2-4e0d-a62e-47c5bc8db00e" src="http://www.drupaleasy.com/sites/default/files/inline-images/mailhog_local_urls.png" /></p> <p> </p> <p>On your local Drupal site, if you're using the <a href="https://www.drupal.org/project/smtp">SMTP module</a> or another SMTP-based sending solution, be sure to disable it:</p> <p> </p> <p><img alt="Turn SMTP off." data-entity-type="file" data-entity-uuid="f2f23128-c288-424b-8e8f-5ce811756115" src="http://www.drupaleasy.com/sites/default/files/inline-images/stmp_off.png" /></p> <p> </p> <p>Then, sending an email from a local contact form (screenshot shows a local copy of DrupalEasy.com):</p> <p> </p> <p><img alt="Contact us form" data-entity-type="file" data-entity-uuid="024ae5bc-323d-4263-b619-69d27bee19a0" src="http://www.drupaleasy.com/sites/default/files/inline-images/contact_us.png" /></p> <p> </p> <p>Results in this in the Mailhog UI:</p> <p> </p> <p><img alt="Mailhog interface" data-entity-type="file" data-entity-uuid="112cd6a0-5b40-4d65-b212-4bab0a823f8a" src="http://www.drupaleasy.com/sites/default/files/inline-images/MailHog_closed.png" /></p> <p> </p> <p>Then, if you want to "release" a message to its intended recipient, Mailhog provides you the option to do that as well via a button when viewing an email:</p> <p> </p> <p><img alt="Mailhog release button" data-entity-type="file" data-entity-uuid="ea2c4807-830e-42b1-a3df-98e980543023" src="http://www.drupaleasy.com/sites/default/files/inline-images/MailHog_release_button.png" /></p> <p> </p> <p>The button leads to an SMTP settings form:</p> <p> </p> <p><img alt="Mailhog STMP release settings" data-entity-type="file" data-entity-uuid="7f975ac6-7791-4b1a-8778-e39ea8308d4b" src="http://www.drupaleasy.com/sites/default/files/inline-images/MailHog_release_settings.png" /></p> <p> </p> <p>Summarizing, regardless of if you're using Lando, Docksal, DDEV, or another local development stack, Mailhog is a great tool to help you test sending emails from your local development environments. </p> <p><em>While the screenshots in the blog post demonstrate setting up Mailhog with Lando, I can confirm that the process is just as easy with Docksal using <a href="https://docksal.readthedocs.io/en/master/tools/mailhog/">the documentation</a>, as I was able to configure it for a local client site in about 5 minutes.</em></p> <p><em>For more information about using Mailhog with Lando, see <a href="https://docs.devwithlando.io/services/mailhog.html">the official documentation page</a>. </em><br /> </p><div class="feedflare"> <a href="http://feeds.feedburner.com/~ff/DrupalEasy?a=3C53fD9Z8o8:89xD7JwZo7U:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/DrupalEasy?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/DrupalEasy?a=3C53fD9Z8o8:89xD7JwZo7U:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/DrupalEasy?d=qj6IDK7rITs" border="0"></img></a> </div><img src="http://feeds.feedburner.com/~r/DrupalEasy/~4/3C53fD9Z8o8" height="1" width="1" alt=""/>
       </div>
       <a class="title" href=http:&#x2F;&#x2F;www.blogger.com&#x2F;feeds&#x2F;3241663152321399210&#x2F;posts&#x2F;default&#x2F;4901615261289161004><h1>How to install QGIS 3 using OSGeo4W in Windows OS</h1></a>
       <h5>2018-01-21T15:06:00.000Z</h5>
@@ -937,35 +1160,11 @@ publishing and latching message for 3.0 seconds</pre>
       <div class="content">
         [object Object]
       </div>
-      <a class="title" href=http:&#x2F;&#x2F;glamanate.com&#x2F;blog&#x2F;drupal-coffee-burgers-small-world-afterall?utm_source&#x3D;Drupal Planet&amp;utm_medium&#x3D;feed&amp;utm_campaign&#x3D;drupal><h1>Matt Glaman: Drupal, Coffee, Burgers - A small world afterall</h1></a>
-      <h5>2018-01-20T16:00:00.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <span property="schema:name">Drupal, Coffee, Burgers - A small world afterall</span> <div class="field field--name-field-featured-image field--type-image field--label-hidden field--item"> <a href="http://glamanate.com/blog/drupal-coffee-burgers-small-world-afterall"> <picture><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="http://glamanate.com/sites/default/files/styles/homepage_/public/IMG_6455_0.JPG?itok=8nZh5QH3 1x" media="all and (min-width: 1200px)" type="image/jpeg"></source><source srcset="http://glamanate.com/sites/default/files/styles/homepage_medium/public/IMG_6455_0.JPG?itok=sEx8lZiu 1x" media="all and (min-width: 992px)" type="image/jpeg"></source><source srcset="http://glamanate.com/sites/default/files/styles/homepage_medium/public/IMG_6455_0.JPG?itok=sEx8lZiu 1x" media="all and (min-width: 768px)" type="image/jpeg"></source><source srcset="http://glamanate.com/sites/default/files/styles/homepage_small/public/IMG_6455_0.JPG?itok=x9nKNFwc 1x" media="all and (max-width: 767px)" type="image/jpeg"></source><!--[if IE 9]></video><![endif]--><img src="http://glamanate.com/sites/default/files/styles/homepage_/public/IMG_6455_0.JPG?itok=8nZh5QH3" alt="" typeof="foaf:Image" class="img-responsive" /></picture></a> </div> <span rel="schema:author"><span lang="" about="http://glamanate.com/users/mglaman" typeof="schema:Person" property="schema:name" datatype="" xml:lang="">mglaman</span></span> <span property="schema:dateCreated" content="2018-01-20T16:00:00+00:00">Sat, 01/20/2018 - 10:00</span> <div property="schema:text" class="content--body">This year I joined a coffee exchange for some members of the Drupal community. I had known there was one floating around, but finally got signed up. Over the past two years, I have gotten more and more into coffee - being a coffee snob about roasts and learning brewing techniques. Last week we were paired up. And sent out some roasts.</div> <ul class="links inline list-inline"><li class="node-readmore"><a href="http://glamanate.com/blog/drupal-coffee-burgers-small-world-afterall" rel="tag" title="Drupal, Coffee, Burgers - A small world afterall" hreflang="en">Read more<span class="visually-hidden"> about Drupal, Coffee, Burgers - A small world afterall</span></a></li><li class="comment-forbidden"></li><li class="disqus-comments-num"><a href="http://glamanate.com/blog/drupal-coffee-burgers-small-world-afterall#disqus_thread" data-disqus-identifier="node/179" hreflang="en">Comments</a></li></ul>
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;blokspeed.net&#x2F;2018&#x2F;preparing-your-drupal-83-site-media-drupal-84><h1>Eelke Blok: Preparing your Drupal 8.3 site with Media for Drupal 8.4</h1></a>
-      <h5>2018-01-20T14:36:41.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p>If you have the Media module for Drupal 8 installed, you need to remove it before you can upgrade to the latest core version (8.4). Unfortunately, there are a few gotchas involved with the process. This blog post is about getting rid of the old contrib Media module, so the site can be updated to Drupal 8.4 in a subsequent step. This is based on my personal experience. YMMV, as they say.</p> </div>
-      </div>
       <a class="title" href=https:&#x2F;&#x2F;anitagraser.com&#x2F;2018&#x2F;01&#x2F;20&#x2F;freedom-of-projection-in-qgis3&#x2F;><h1>Freedom of projection in QGIS3</h1></a>
       <h5>2018-01-20T14:06:55.000Z</h5>
       <i class="author">underdark</i>
       <div class="content">
         [object Object]
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;drupalconsole.com&#x2F;articles&#x2F;drupal-console-1-5-0><h1>Drupal Console: Drupal Console 1.5.0</h1></a>
-      <h5>2018-01-20T02:20:59.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <p>Drupal Console 1.5.0 is out. The newest release contains bug fixes and one new command.</p>
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;dev.acquia.com&#x2F;blog&#x2F;-acquia-headless-lightning-and-content-api&#x2F;19&#x2F;01&#x2F;2018&#x2F;19066><h1>Acquia Developer Center Blog: Acquia Headless Lightning and Content API</h1></a>
-      <h5>2018-01-19T21:10:00.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <div class="field field-name-field-blog-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" class="img-responsive" src="https://dev.acquia.com/sites/default/files/styles/blog__190_x110_/public/blog/lightning_thumb_2.png?itok=JcBmRCfy" width="140" height="85" alt="lightning" title="lightning" /></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><a href="https://dev.acquia.com/acquia-headless-lightning">Acquia Headless Lightning</a> provides an API-first back-end content repository that allows for easy ingestion by front-end applications. </p> <p>Front-end developers requiring a headless or decoupled CMS have immediate access to a cloud-hosted content repository service for development, delivering, and production.</p></div></div></div><div class="field field-name-field-blog-tags field-type-taxonomy-term-reference field-label-inline clearfix"><div class="field-label">Tags:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="/tags/acquia-drupal-planet" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">acquia drupal planet</a></div></div></div>
       </div>
       <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;19&#x2F;tutorial-continuous-delivery-of-snaps-with-circle-ci&#x2F;><h1>Tutorial: Continuous delivery of snaps with Circle CI</h1></a>
       <h5>2018-01-19T19:15:36.000Z</h5>
@@ -983,12 +1182,6 @@ publishing and latching message for 3.0 seconds</pre>
 </ul>
 <p style="text-align: center;" ><a class="link-cta-ubuntu" style="margin-top:16px;" href="https://tutorials.ubuntu.com/tutorial/continuous-snap-delivery-from-circle-ci">Take The Tutorial</a></p>
 
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;blog.acromedia.com&#x2F;drupal-commerce-2-how-to-set-up-product-attributes><h1>Acro Media: Drupal Commerce 2: How to set up Product Attributes</h1></a>
-      <h5>2018-01-19T16:27:47.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <div class="hs-responsive-embed hs-responsive-embed-youtube"> <iframe class="hs-responsive-embed-iframe" src="http://www.youtube.com/embed/gtFsPpXX7vY" width="100%" height="314" allowfullscreen></iframe> </div> <p><span style="background-color: transparent; font-family: inherit;">I</span><span style="background-color: transparent; font-family: inherit;">n this five part Acro Media Tech Talk video series,&nbsp;we use our Urban Hipster Commerce 2 demo site to&nbsp;show you how to set up a new product in Drupal Commerce 2, from start to finish.</span><span style="background-color: transparent; font-family: inherit;">&nbsp;This is the first video in the series, How to set up Product Attributes.</span></p> <p><span style="background-color: transparent; font-family: inherit;"><span>If you're creating a whole new product type from scratch, the first thing you want to do is setup any product attributes that your product needs.&nbsp;<span>For example, a shirt product type may have a number of sizes (small, medium, large) and colours available to choose from. Size and colour are both product attributes.&nbsp;</span>As a site administrator, you'll use the attributes to configure your product variations.&nbsp;<span>As a customer, your'll use the attributes to pick the exact product that you want to purchase.</span></span></span></p> <p><span style="background-color: transparent; font-family: inherit;"><span><span><strong>Next week we'll post part 2:</strong> Product Attributes using Rendered Fields</span></span></span></p> <p><span style="background-color: transparent; font-family: inherit;">Its important to note that this video was recorded before the official 2.0 release of Drupal Commerce and so you may see a few small differences between this video and the official release now available.</span></p> <h5>Urban Hipster Commerce 2 Demo site</h5> <p><span>This video was created using the Urban Hipster Commerce 2 demo site. We've built this site to show the adaptability of the Drupal 8, Commerce 2 platform. Most of what you see is out-of-the-box functionality combined with expert configuration&nbsp;and theming.</span></p> <p><a class="cta_button" href="https://cta-image-cms2.hubspot.com/ctas/v2/public/cs/ci/?pg=4058e01f-d600-44be-b506-12dfe6f19507&amp;pid=1659229&amp;ecid=&amp;hseid=&amp;hsic="><img class="hs-cta-img " style="border-width: 0px; /*hs-extra-styles*/; " alt="Visit Our Drupal Commerce 2 Demo Site" src="https://no-cache.hubspot.com/cta/default/1659229/4058e01f-d600-44be-b506-12dfe6f19507.png"></a></p> <h5><span style="background-color: transparent; font-family: inherit;">More from Acro Media</span></h5> <ul> <li><span style="background-color: transparent; font-family: inherit;">High Five video: <a href="https://blog.acromedia.com/products-in-drupal-commerce-2.x">Products in Drupal Commerce 2</a></span></li> <li><span style="background-color: transparent; font-family: inherit;">Learn more about us:&nbsp;<a href="https://www.acromedia.com">www.acromedia.com</a></span></li> </ul> <h5>Drupal modules used in this video</h5> <ul> <li><a href="https://www.drupal.org/project/commerce">Drupal Commerce</a></li> <li><a href="https://docs.drupalcommerce.org/commerce2/user-guide/products">Official Products User Guide</a></li> <li><a href="https://docs.drupalcommerce.org/commerce2/developer-guide/products">Official Products Developer Guide</a></li> </ul> <p><a class="cta_button" href="https://cta-image-cms2.hubspot.com/ctas/v2/public/cs/ci/?pg=55d02964-839e-4112-b7bd-5a4d4fff180b&amp;pid=1659229&amp;ecid=&amp;hseid=&amp;hsic="><img class="hs-cta-img " style="border-width: 0px; /*hs-extra-styles*/; " alt="Contact us and learn more about our custom ecommerce solutions" src="https://no-cache.hubspot.com/cta/default/1659229/55d02964-839e-4112-b7bd-5a4d4fff180b.png"></a></p> <img src="https://track.hubspot.com/__ptq.gif?a=1659229&amp;k=14&amp;r=https%3A%2F%2Fblog.acromedia.com%2Fdrupal-commerce-2-how-to-set-up-product-attributes&amp;bu=https%253A%252F%252Fblog.acromedia.com&amp;bvt=rss" alt="" width="1" height="1" style="min-height:1px!important;width:1px!important;border-width:0!important;margin-top:0!important;margin-bottom:0!important;margin-right:0!important;margin-left:0!important;padding-top:0!important;padding-bottom:0!important;padding-right:0!important;padding-left:0!important; ">
       </div>
       <a class="title" href=http:&#x2F;&#x2F;blog.cleverelephant.ca&#x2F;2018&#x2F;01&#x2F;govt-it-future.html><h1>Changing the Direction of Government IT</h1></a>
       <h5>2018-01-19T16:00:00.000Z</h5>
@@ -1103,24 +1296,6 @@ theme(<span style="color:orange;">legend.position</span> <span style="color:red;
       <i class="author">Alvaro</i>
       <div class="content">
         [object Object]
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;18&#x2F;canonical-brings-slack-to-the-snap-ecosystem&#x2F;><h1>Canonical brings Slack to the snap ecosystem</h1></a>
-      <h5>2018-01-18T16:54:24.000Z</h5>
-      <i class="author">Canonical</i>
-      <div class="content">
-        <p><img class="aligncenter size-full wp-image-82552" src="https://insights.ubuntu.com/wp-content/uploads/bf16/Slack_linux_screenshot@2x.png" alt="" width="1586" height="1057" /></p>
-<p style="text-align: center;"><i><span style="font-weight: 300;">The digital workspace will now be available to all Linux users </span></i></p>
-<p><b>London, UK – 18th January</b><b> 2018 </b><span style="font-weight: 300;">– <a href="http://www.canonical.com">Canonical</a></span><span style="font-weight: 300;">, the company behind <a href="http://www.ubuntu.com">Ubuntu</a></span><span style="font-weight: 300;">, today announced the first iteration of <a href="https://slack.com/">Slack</a></span><span style="font-weight: 300;"> as a snap, bringing collaboration to open source users.</span></p>
-<p><span style="font-weight: 300;">Slack is an enterprise software platform that allows teams and businesses of all sizes to communicate effectively. Slack works seamlessly with other software tools within a single integrated environment, providing an accessible archive of an organisation’s communications, information and projects.</span></p>
-<p><span style="font-weight: 300;">In adopting the universal Linux app packaging format, Slack will open its digital workplace up to an-ever growing community of Linux users, including those using Linux Mint, Manjaro, Debian, ArchLinux, OpenSUSE, Solus, and Ubuntu. </span></p>
-<p><span style="font-weight: 300;">Designed to connect us to the people and tools we work with every day, the <a href="https://snapcraft.io/slack/">Slack snap</a> will help Linux users be more efficient and streamlined in their work. And an intuitive user experience remains central to the snaps’ appeal, with automatic updates and rollback features giving developers greater control in the delivery of each offering.</span></p>
-<p><span style="font-weight: 300;">“Slack is helping to transform the modern workplace, and we’re thrilled to welcome them to the snaps ecosystem”, said Jamie Bennett, VP of Engineering, Devices &amp; IoT at Canonical. “Today’s announcement is yet another example of putting the Linux user first &#8211; Slack’s developers will now be able to push out the latest features straight to the user. By prioritising usability, and with the popularity of open source continuing to grow, the number of snaps is only set to rise in 2018.”</span></p>
-<p><span style="font-weight: 300;"><a href="https://snapcraft.io/">Snaps</a> are containerised software packages, designed to work perfectly and securely within any Linux environment; across desktop, the cloud, and IoT devices. Thousands of snaps have been launched since the first in 2016, with snaps’ automated updates, added security benefits, and rollback features, with the option for applications to revert back to the previous working version in the event of a bug. </span></p>
-<p><span style="font-weight: 300;">Slack is available to download as a snap by clicking <a href="https://snapcraft.io/slack/">here</a></span><span style="font-weight: 300;">, or running snap install Slack.</span></p>
-<p style="text-align: center;">-ENDS-</p>
-<p><b>About Canonical</b><span style="font-weight: 300;"><br />
-</span><span style="font-weight: 300;">Canonical is the company behind Ubuntu, the leading OS for cloud operations. Most public cloud workloads use Ubuntu, as do most new smart gateways, switches, self-driving cars and advanced robots. Canonical provides enterprise support and services for commercial users of Ubuntu. Established in 2004, Canonical is a privately held company.</span></p>
-
       </div>
       <a class="title" href=http:&#x2F;&#x2F;www.blogger.com&#x2F;feeds&#x2F;4643387265233889970&#x2F;posts&#x2F;default&#x2F;2822428385380260562><h1>Google Code-in, experiencia y resultados edición 2017-2018 en el Liquid Galaxy LAB</h1></a>
       <h5>2018-01-18T16:36:00.001Z</h5>
@@ -1263,62 +1438,6 @@ Wikimedia Foundation</em></p>
 </ol>
 
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;17&#x2F;spectre-mitigation-updates-available-for-testing-in-ubuntu-proposed&#x2F;><h1>Spectre mitigation updates available for testing in Ubuntu Proposed</h1></a>
-      <h5>2018-01-17T12:50:21.000Z</h5>
-      <i class="author">Dustin Kirkland</i>
-      <div class="content">
-        <p><img class="aligncenter size-full wp-image-82640" src="https://insights.ubuntu.com/wp-content/uploads/bc92/Screenshot-from-2018-01-17-23-01-57.png" alt="" width="525" height="419" /><br />
-Canonical holds Ubuntu to the highest standards of security and quality.  This week we published candidate Ubuntu kernels providing mitigation for CVE-2017-5715 and CVE-2017-5753 (ie, Spectre / Variants 1 &amp; 2) to their respective -proposed pockets for Ubuntu 17.10 (Artful), 16.04 LTS (Xenial), and 14.04 LTS (Trusty).  We have also expanded mitigation to cover s390x and ppc64el.</p>
-<ul>
-<li><a href="https://people.canonical.com/~ubuntu-security/cve/2017/CVE-2017-5715.html">https://people.canonical.com/~ubuntu-security/cve/2017/CVE-2017-5715.html</a></li>
-<li><a href="https://people.canonical.com/~ubuntu-security/cve/2017/CVE-2017-5753.html">https://people.canonical.com/~ubuntu-security/cve/2017/CVE-2017-5753.html</a></li>
-</ul>
-<p>You are invited to test and provide feedback for the following updated Linux kernels.  We have also rebased all derivative kernels such as the public cloud kernels (Amazon, Google, Microsoft, etc) and the Hardware Enablement (HWE) kernels.</p>
-<ul>
-<li>17.10 (Artful): linux-4.13.0-30.33
-<ul>
-<li><a href="https://launchpad.net/ubuntu/+source/linux/4.13.0-30.33">https://launchpad.net/ubuntu/+source/linux/4.13.0-30.33</a></li>
-</ul>
-</li>
-<li>16.04 LTS (Xenial): linux-4.4.0-111.134
-<ul>
-<li><a href="https://launchpad.net/ubuntu/+source/linux/4.4.0-111.134">https://launchpad.net/ubuntu/+source/linux/4.4.0-111.134</a></li>
-</ul>
-</li>
-<li>14.04 LTS (Trusty): linux-3.13.0-140.189
-<ul>
-<li><a href="https://launchpad.net/ubuntu/+source/linux/3.13.0-140.189">https://launchpad.net/ubuntu/+source/linux/3.13.0-140.189</a></li>
-</ul>
-</li>
-<li>17.04 is end-of-life and won’t be patched for either Meltdown or Spectre
-<ul>
-<li><a href="https://lists.ubuntu.com/archives/ubuntu-announce/2018-January/000227.html">https://lists.ubuntu.com/archives/ubuntu-announce/2018-January/000227.html</a></li>
-</ul>
-</li>
-</ul>
-<p>Updates for Ubuntu 12.04 ESM are in progress, and will be available for Canonical’s Ubuntu Advantage customers.  UA customers should reach out to Canonical support for access to candidate kernels.</p>
-<ul>
-<li><a href="https://www.ubuntu.com/esm">https://www.ubuntu.com/esm</a></li>
-<li><a href="https://support.canonical.com/">https://support.canonical.com/</a></li>
-</ul>
-<p>We intend to promote the candidate kernels to the -security/-updates pocket for General Availability (GA) on Monday, January 22, 2018.</p>
-<p>There is a corresponding intel-microcode update for many Intel CPUs, as well as an eventual amd64-microcode update, that will also need to be applied in order to fully mitigate Spectre.  In the interest of full disclosure, we understand from Intel that there are currently known issues with the intel-microcode binary:</p>
-<ul>
-<li><a href="https://newsroom.intel.com/news/firmware-updates-and-initial-performance-data-for-data-center-systems/">https://newsroom.intel.com/news/firmware-updates-and-initial-performance-data-for-data-center-systems/</a></li>
-</ul>
-<p>Canonical QA and Hardware Certification teams are engaged in extensive, automated and manual testing of these kernels and the Intel microcode kernel updates on Ubuntu certified hardware, and Ubuntu certified public clouds.  The primary focus is on regression testing and security effectiveness.   We are actively investigating Google’s “Retpoline” toolchain-based approach, which requires rebuilding Ubuntu binaries but reduce performance impact of the mitigation.</p>
-<p>For your reference, the following links explain how to enable Ubuntu’s Proposed repositories, and how to file Linux kernel bugs:</p>
-<ul>
-<li><a href="https://wiki.ubuntu.com/Testing/EnableProposed">https://wiki.ubuntu.com/Testing/EnableProposed</a></li>
-<li><a href="https://wiki.ubuntu.com/Kernel/Bugs">https://wiki.ubuntu.com/Kernel/Bugs</a></li>
-</ul>
-<p>The most current information will continue to be available at:</p>
-<ul>
-<li><a href="https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SpectreAndMeltdown">https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SpectreAndMeltdown</a></li>
-</ul>
-<p>@Canonical</p>
-
-      </div>
       <a class="title" href=http:&#x2F;&#x2F;www.fernandoquadro.com.br&#x2F;html&#x2F;2018&#x2F;01&#x2F;17&#x2F;testando-softwares-para-big-data-spatial-parte-3&#x2F;><h1>Testando softwares para Big Data Spatial – Parte 3</h1></a>
       <h5>2018-01-17T12:34:44.000Z</h5>
       <i class="author">Fernando Quadro</i>
@@ -1330,61 +1449,6 @@ Canonical holds Ubuntu to the highest standards of security and quality.  This 
       <i class="author">Regina Obe</i>
       <div class="content">
         [object Object]
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;16&#x2F;lxd-weekly-status-30&#x2F;><h1>LXD Weekly Status #30</h1></a>
-      <h5>2018-01-16T22:28:42.000Z</h5>
-      <i class="author">Stéphane Graber</i>
-      <div class="content">
-        <h1> <img class="alignleft size-full wp-image-82629" src="https://insights.ubuntu.com/wp-content/uploads/a39d/1.png" alt="" width="1126" height="633" /></h1>
-<h1>Introduction</h1>
-<p>The main highlight for this week was the inclusion of the new <code>proxy</code> device in LXD, thanks to the hard work of some University of Texas students!</p>
-<p>The rest of the time was spent fixing a number of bugs, working on various bits of kernel work, getting the upcoming clustering work to go through our CI process and preparing for a number of planning meetings that are going on this week.</p>
-<h1>Upcoming conferences and events</h1>
-<ul>
-<li><a href="https://discuss.linuxcontainers.org/t/fosdem-containers-devroom-call-for-papers/622">FOSDEM 2018</a> (Brussels, February 2018)</li>
-</ul>
-<h1>Ongoing projects</h1>
-<p>The list below is feature or refactoring work which will span several weeks/months and can’t be tied directly to a single Github issue or pull request.</p>
-<ul>
-<li><a href="https://github.com/lxc/lxd/pull/4016">Distributed database for LXD clustering</a></li>
-<li>Various kernel work</li>
-<li>Stable release work for LXC, LXCFS and LXD</li>
-</ul>
-<h1>Upstream changes</h1>
-<p>The items listed below are highlights of the work which happened upstream over the past week and which will be included in the next release.</p>
-<h2>LXD</h2>
-<ul>
-<li>Added support for a <a href="https://github.com/lxc/lxd/pull/4106">new <code>proxy</code> device, allowing for tcp redirection</a>.</li>
-<li>Removed a <a href="https://github.com/lxc/lxd/pull/4149">trailing newline from the lxc-formatted idmap entries</a>.</li>
-<li>Serialized the <a href="https://github.com/lxc/lxd/pull/4151">addition of new storage pools and networks</a>.</li>
-<li>Fixed <a href="https://github.com/lxc/lxd/pull/4158">auto-completion of container names</a>.</li>
-<li>Fixed <a href="https://github.com/lxc/lxd/pull/4160"><code>lxc file edit</code> when run using the LXD snap</a>.</li>
-<li>Fixed <a href="https://github.com/lxc/lxd/pull/4164">bad wording in the <code>lxc storage</code> help</a>.</li>
-<li>Changed <a href="https://github.com/lxc/lxd/pull/4170">DefaultIdmapset to take a username as argument</a>.</li>
-<li>Made <a href="https://github.com/lxc/lxd/pull/4171"><code>lxc storage volume</code> fail properly when passed an empty pool name</a>.</li>
-<li>Fixed a bug which was causing <a href="https://github.com/lxc/lxd/pull/4175">some firewall rules to still be added when disabled</a>.</li>
-</ul>
-<h2>LXC</h2>
-<ul>
-<li>Improved <a href="https://github.com/lxc/lxc/pull/2080">idmap error handling</a>.</li>
-<li>Fixed <a href="https://github.com/lxc/lxc/pull/2085">bad console logsize</a>.</li>
-<li>Updated the Alpine template to <a href="https://github.com/lxc/lxc/pull/2086">allow keeping sys_ptrace</a>.</li>
-</ul>
-<h2>LXCFS</h2>
-<ul>
-<li>Nothing to report</li>
-</ul>
-<h1>Distribution work</h1>
-<p>This section is used to track the work done in downstream Linux distributions to ship the latest LXC, LXD and LXCFS as well as work to get various software to work properly inside containers.</p>
-<h2>Ubuntu</h2>
-<ul>
-<li>Nothing to report (build farm was offline)</li>
-</ul>
-<h2>Snap</h2>
-<ul>
-<li>Nothing to report (build farm was offline)</li>
-</ul>
-
       </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.wikimedia.org&#x2F;2018&#x2F;01&#x2F;16&#x2F;1lib1ref-2018&#x2F;><h1>Celebrate Wikipedia’s birthday by joining your local library in the #1Lib1Ref campaign</h1></a>
       <h5>2018-01-16T19:00:47.000Z</h5>
@@ -1885,18 +1949,6 @@ Canonical holds Ubuntu to the highest standards of security and quality.  This 
 </ul>
 
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;grass.osgeo.org&#x2F;news&#x2F;70&#x2F;15&#x2F;Ongoing-Google-Code-in-contest><h1>Ongoing Google Code-in contest</h1></a>
-      <h5>2018-01-02T21:40:08.000Z</h5>
-      <i class="author">OSGeo Website Committee</i>
-      <div class="content">
-        
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;blog.cleverelephant.ca&#x2F;2018&#x2F;01&#x2F;govt-oss-clusters.html><h1>Open Source for&#x2F;by Government</h1></a>
-      <h5>2018-01-02T16:00:00.000Z</h5>
-      <i class="author">OSGeo Website Committee</i>
-      <div class="content">
-        [object Object]
-      </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;camera-controls-using-volume-buttons-in-the-phimpme-application&#x2F;><h1>Camera Controls Using Volume Buttons In The Phimpme Application</h1></a>
       <h5>2018-01-02T15:20:20.000Z</h5>
       <i class="author">anantprsd5</i>
@@ -2125,12 +2177,6 @@ out.putNextEntry(entry);</pre>
 <li>KiCAD BoM Library : <a href="https://github.com/SchrodingersGat/KiBoM">https://github.com/SchrodingersGat/KiBoM</a></li>
 </ul>
 
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.spatialguru.com&#x2F;deep-learning-cartography&#x2F;><h1>Deep learning + cartography</h1></a>
-      <h5>2018-01-02T06:33:47.000Z</h5>
-      <i class="author">Tyler Mitchell</i>
-      <div class="content">
-        
       </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;auto-deployment-of-pull-requests-on-susper-using-surge-technology&#x2F;><h1>Auto Deployment of Pull Requests on Susper using Surge Technology</h1></a>
       <h5>2018-01-01T18:47:15.000Z</h5>
