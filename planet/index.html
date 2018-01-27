@@ -11,6 +11,18 @@
       <hr />
     </div>
     <div>
+      <a class="title" href=http:&#x2F;&#x2F;blog.riff.org&#x2F;2018_01_27_tip_of_the_day_how_to_debug_composer_scripts_with_xdebug_and_phpstorm><h1>Frederic Marand: Tip of the day: how to debug Composer scripts with XDebug and PhpStorm</h1></a>
+      <h5>2018-01-27T10:51:15.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        <h2>The problem: XDebug doesn't work for Composer scripts</h2> <p>PhpStorm is quite convenient to debug scripts with <a href="https://xdebug.org/">XDebug</a> (do you <a href="https://www.patreon.com/bePatron?u=7864328">support Derick</a> for giving us XDebug ?): just add a "Run/Debug configuration", choosing the "PHP Script" type, give a few parameters, and you can start debugging your PHP CLI scripts, using breakpoints, evaluations, etc.</p> <p>Wonderful. So now, let's define such a configuration to debug a Composer script, say a Behat configuration generator from site settings for some current Drupal 8 project. Apply the configuration, run it in debug mode, and ....</p> <p>...PhpStorm doesn't stop, the script runs and ends, and all breakpoints were ignored. How to actually use breakpoints in the IDE ?</p> <p><a href="http://blog.riff.org/2018_01_27_tip_of_the_day_how_to_debug_composer_scripts_with_xdebug_and_phpstorm" target="_blank">read more</a></p>
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;justobjects.nl&#x2F;emit-2&#x2F;><h1>Emit #2 – On Air Quality Sensors</h1></a>
+      <h5>2018-01-26T23:36:29.000Z</h5>
+      <i class="author">Just van den Broecke</i>
+      <div class="content">
+        [object Object]
+      </div>
       <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;26&#x2F;a-peek-at-the-snapcraft-summit&#x2F;><h1>A peek at the Snapcraft Summit</h1></a>
       <h5>2018-01-26T16:31:51.000Z</h5>
       <i class="author">Sergio Schvezov</i>
@@ -23,10 +35,9 @@
       </div>
       <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;26&#x2F;lxd-5-easy-pieces&#x2F;><h1>LXD: 5 Easy Pieces</h1></a>
       <h5>2018-01-26T15:44:37.000Z</h5>
-      <i class="author">Canonical</i>
+      <i class="author">Michael Iatrou</i>
       <div class="content">
         <p><img src="https://insights.ubuntu.com/wp-content/uploads/c4b1/unnamed-19.png" alt="" width="1732" height="967" class="alignleft size-full wp-image-82789" /></p>
-<p><em>This is a guest blog by Michael Iatrou</em></p>
 <p>Machine containers, like LXD, proliferate in the datacenters: they provide a native control plane for OpenStack and a lightweight hypervisor for its tenants. LXD optimizes resource allocation and utilization for Kubernetes clusters, modernizes workload management in HPC infrastructure and streamlines lift and shift for legacy applications running on virtual machines or bare metal.</p>
 <p>On the other end of the spectrum, LXD provides a great experience running on developers’ laptops, for anything from maintaining traditional monolithic applications, lightweight disposable testing environments, to developing process container encapsulated microservices. If you are taking your first steps with LXD, here are 5 simple things worth knowing:</p>
 <h2>1. Install the latest LXD</h2>
@@ -63,7 +74,7 @@ $ lxc exec aws-m3large -- free -m
       total     used     free   shared  buff/cache   available
 Mem:   7680      121     7546      209        12        7546
 </pre>
-<p>LXD applied resource limits to the container, to restrict CPU and RAM and provide an experience analogous to the requested instance type. Does it look like you application could benefit from additional CPU cores? LXD allows to modify the available resources on the fly:</p>
+<p>LXD applied resource limits to the container, to restrict CPU and RAM and provide an experience analogous to the requested instance type. Does it look like your application could benefit from additional CPU cores? LXD allows you to modify the available resources on the fly:</p>
 <pre>
 $ lxc config set aws-m3large limits.cpu 3
 $ lxc exec aws-m3large -- grep ^processor /proc/cpuinfo | wc -l
@@ -73,10 +84,10 @@ $ lxc exec aws-m3large -- grep ^processor /proc/cpuinfo | wc -l
 </p>
 <h2>4. Customize containers with profiles</h2>
 <p>LXD profiles store any configuration that is associated with a container in the form of key/value pairs, or device designation. Each container can have one or more profiles applied to it. When multiple profiles are applied to a container, existing options are overridden in the order they are specified. A default profile is created automatically and it’s used implicitly for every container, unless a different one is specified.</p>
-<p>A good example for customizing the default LXD profile is enabling public key SSH authentication. The LXD images have SSH enabled by default, but they do not have a password or a key. Let’s add one:</p>
+<p>A good example for customizing the default LXD profile is enabling public key SSH authentication. The Ubuntu LXD images have SSH enabled by default, but they do not have a password or a key. Let’s add one:</p>
 <p>First, export the current profile:</p>
 <pre>
-$ lxc profile show default > lxd-profile-default.yaml
+$ lxc profile show default &gt; lxd-profile-default.yaml
 </pre>
 <p>Modify the <tt>config</tt> mapping of the profile to include <tt>user.user-data</tt> as follows:</p>
 <pre>
@@ -100,17 +111,16 @@ devices:
 name: default
 used_by: []
 </pre>
-<p>Make sure that you have generated an <a href="https://help.ubuntu.com/community/SSH/OpenSSH/Keys#Generating_RSA_Keys">SSH<br />
-key pair</a> for the current user, and then run:</p>
+<p>Make sure that you have generated an <a href="https://help.ubuntu.com/community/SSH/OpenSSH/Keys#Generating_RSA_Keys">SSH key pair</a> for the current user, and then run:</p>
 <pre>
 $ sed -ri "s'@@SSHPUB@@'$(cat ~/.ssh/id_rsa.pub)'" lxd-profile-default.yaml
 </pre>
-<p>And finally update the default profile:</p>
+<p>And finally, update the <tt>default</tt> profile:</p>
 <pre>
-$ lxc profile edit default < lxd-profile-default.yaml
+$ lxc profile edit default &lt; lxd-profile-default.yaml
 </pre>
 <p>You should now be able to SSH into your LXD container, as you would do with a VM. And yes, adding SSH keys barely scratches the surface of just in time configuration possibilities using cloud-init.</p>
-<p>The LXD autostart behavior is another option to consider tuning in the default profile: out of the box, when the host machine boots, all the LXD containers are started. That is exactly the behavior that you want for your servers. For your laptop though, you might want to start containers only as needed. You can configure autostart directly for the default profile, without using an intermediate file for editing:</p>
+<p>The LXD autostart behavior is another option to consider tuning in the default profile: out of the box, when the host machine boots, all the LXD containers are started. That is exactly the behavior you want for your servers. For your laptop though, you might want to start containers only as needed. You can configure autostart directly for the default profile, without using an intermediate YAML file for editing:</p>
 <pre>
 $ lxc profile set default boot.autostart 0
 </pre>
@@ -120,13 +130,13 @@ $ lxc list -c ns46tSP
 </pre>
 <p>Familiarize with the functionality profiles offer, it’s a force multiplier for day to day activities and invaluable for structured repeatability.</p>
 <h2>5. Access the containers without port-forwarding</h2>
-<p>LXD creates an “internal” Linux bridge during its initialization (<tt>lxd init</tt>). The bridge enables an isolated layer 2 segment for the containers and the connectivity with external networks takes place on layer 3 using NATing and port-forwarding. Such behavior facilitates isolation and minimizes external exposure -- both of them desirable characteristics. But because LXD containers offer machine-like operational semantics, for some use cases it’s appropriate to have LXD guests share the same network segment with their host.</p>
-<p>Let’s see how this is easily configurable on a per container basis, using profiles. It’s assumed that on the host you have <a href="https://help.ubuntu.com/community/NetworkConnectionBridge">configured a bridge</a>, named <tt>br0</tt>, with a port associated to an Ethernet interface.</p>
+<p>LXD creates an “internal” Linux bridge during its initialization (<tt>lxd init</tt>). The bridge enables an isolated layer 2 segment for the containers and the connectivity with external networks takes place on layer 3 using NATing and port-forwarding. Such behavior facilitates isolation and minimizes external exposure &#8212; both of them desirable characteristics. But because LXD containers offer machine-like operational semantics, for some use cases it’s appropriate to have LXD guests share the same network segment with their host.</p>
+<p>Let’s see how this is easily configurable on a per container basis, using profiles. It’s assumed that on the host you have <a href="https://help.ubuntu.com/community/NetworkConnectionBridge">configured a bridge</a>, named <tt>br0</tt>, with a port associated with an Ethernet interface.</p>
 <p>We create a new LXD profile:</p>
 <pre>
 lxc profile create bridged
 </pre>
-<p>And then we map the eth0 NIC of the container to the host bridge <tt>br0</tt>:</p>
+<p>And then we map the <tt>eth0</tt> NIC of the container to the host bridge <tt>br0</tt>:</p>
 <pre>
 $ cat lxd-profile-bridged.yaml
 description: Bridged networking LXD profile
@@ -136,34 +146,40 @@ devices:
     nictype: bridged
     parent: br0
     type: nic
-$ lxc profile edit bridged < lxd-profile-bridged.yaml
+$ lxc profile edit bridged &lt; lxd-profile-bridged.yaml
 </pre>
-<p>Finally, we launch a new container with both the default and the bridged profile.</p>
+<p>Finally, we launch a new container with both the <tt>default</tt> and the <tt>bridged</tt> profile. In the command line we specify <tt>bridged</tt> last, so it supersedes the overlaping network configuration.</p>
 <pre>
 $ lxc launch ubuntu:x c1 -p default -p bridged
 </pre>
 <p>The container will be using DHCP to retrieve an IP address, on the same subnet as the host:</p>
 <pre>
 $ ip a s br0 
-3: br0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+3: br0:  mtu 1500 qdisc noqueue state UP group default qlen 1000
     link/ether AA:BB:CC:DD:EE:FF brd ff:ff:ff:ff:ff:ff
     inet 192.168.1.171/24 brd 192.168.1.255 scope global br0
        valid_lft forever preferred_lft forever
 
 $ lxc exec c1 -- ip a s eth0
-101: eth0@if102: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+101: eth0@if102:  mtu 1500 qdisc noqueue state UP group default qlen 1000
     link/ether 00:AA:BB:CC:DD:EE brd ff:ff:ff:ff:ff:ff link-netnsid 0
     inet 192.168.1.172/24 brd 192.168.1.255 scope global eth0
        valid_lft forever preferred_lft forever
 </pre>
-<p> Bridged networking is the simplest way to develop and test applications with<br />
-LXD in more production-like network environments. Another alternative is <a href="http://lxd.readthedocs.io/en/latest/containers/#bridged-or-macvlan-for-connection-to-physical-network">macvlan</a> but be aware of its caveats, mainly host-guest communication and hardware support limitations.</p>
-<p>These 5 easy pieces are just the tip of iceberg of what one can do with LXD. Join the <a href="https://discuss.linuxcontainers.org/">Linux Containers</a> community to discuss your use cases and questions. Delve into the <a href="http://lxd.readthedocs.io/en/latest/">documentation</a> for inspiration and send us <a href="https://github.com/lxc/lxd/pulls">PRs</a> with your favorite enhancement.</p>
-<p>LXD is the kind of tool that after you get to know each other, using it on a daily basis feels inevitable. Give it a try!</p>
+<p>Bridged networking is the simplest way to develop and test applications with<br />
+LXD in more production-like network environments. Another networking configuration alternative is <a href="http://lxd.readthedocs.io/en/latest/containers/#bridged-or-macvlan-for-connection-to-physical-network">macvlan</a> but be aware of its caveats, mainly host-guest communication and hardware support limitations.</p>
+<p>These 5 easy pieces are just the tip of the iceberg. LXD liberates your laptop from the tyranny of heavyweight virtualization and simplifies experimentation. Join the <a href="https://discuss.linuxcontainers.org/">Linux Containers</a> community to discuss your use cases and questions. Delve into the <a href="http://lxd.readthedocs.io/en/latest/">documentation</a> for inspiration and send us <a href="https://github.com/lxc/lxd/pulls">PRs</a> with your favorite new features.</p>
+<p>LXD is the kind of tool that, after you get to know each other, using it on a daily basis feels inevitable. Give it a try!</p>
 <h3>Want to know more?</h3>
-<p>On February 7th, technical lead Stephane Graber will be presenting a webinar for <a href="https://pages.ubuntu.com/ubuntu_product_month.html">Ubuntu Product Month</a> that will dive into how LXD works, what it does, how it can be used in the enterprise, and even provide an opportunity for Q&A.</p>
-<p style="text-align: center;"><a class="link-cta-ubuntu" href="https://www.brighttalk.com/webcast/6793/298235">Register For Webinar</a></p>
+<p>On February 7th, technical lead Stephane Graber will be presenting a webinar for <a href="https://pages.ubuntu.com/ubuntu_product_month.html">Ubuntu Product Month</a> that will dive into how LXD works, what it does, how it can be used in the enterprise, and even provide an opportunity for Q&amp;A.</p>
+<p style="text-align: center"><a class="link-cta-ubuntu" href="https://www.brighttalk.com/webcast/6793/298235">Register For Webinar</a></p>
 
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;tipsolutions.org&#x2F;blog&#x2F;adding-social-media-feed-website-or-not><h1>TIP Solutions: Adding social media feed to website - or not?</h1></a>
+      <h5>2018-01-26T13:04:02.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        <div data-history-node-id="39" class="node node--type-article node--view-mode-rss ds-1col clearfix" typeof="schema:Article"> <div property="schema:text" class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p>When adding a social media (SoMe) feed or "some wall" like <a href="https://tipsolutions.fi/" target="_blank">here on the right bottom</a><a href="https://tipsolutions.fi/"> corner</a> to your webpage <strong>the big question is: Why would you put it to your site?</strong> Why is it there?</p> <div class="video-embed-field-responsive-video form-group"> </div> <p>If the answer is something like "to get some content to your site." - consider again. The SoMe feed might benefit you or harm you depending how you manage it.</p> <p>Here are some points to consider:</p></div> <div class="field field--name-field-tags field--type-entity-reference field--label-hidden field--items"> <div class="field--item"><a href="https://tipsolutions.fi/tags/social-media" property="schema:about" hreflang="fi">Social media</a></div> <div class="field--item"><a href="https://tipsolutions.fi/tags/some" property="schema:about" hreflang="fi">SoMe</a></div> <div class="field--item"><a href="https://tipsolutions.fi/tags/drupal-8" property="schema:about" hreflang="fi">Drupal 8</a></div> <div class="field--item"><a href="https://tipsolutions.fi/tags/some-wall" property="schema:about" hreflang="fi">SoMe wall</a></div> <div class="field--item"><a href="https://tipsolutions.org/tags/planet-drupal" property="schema:about" hreflang="en">Planet Drupal</a></div> </div> </div>
       </div>
       <a class="title" href=https:&#x2F;&#x2F;insights.ubuntu.com&#x2F;2018&#x2F;01&#x2F;26&#x2F;bionic-beaver-18-04-lts-to-use-xorg-by-default&#x2F;><h1>Bionic Beaver 18.04 LTS to use Xorg by default</h1></a>
       <h5>2018-01-26T12:16:31.000Z</h5>
@@ -644,21 +660,21 @@ There are two solutions to this problem when using Wayland: make sure the shell 
       <div class="content">
         <div id="attachment_54856" class="post-image wp-caption aligncenter" style="width: 590px"><a href="https://commons.wikimedia.org/wiki/File:Agreement_between_Wikimedia_C%C3%B4te_d%27Ivoire_and_APSID-CI_03.jpg"><img data-attachment-id="54856" data-permalink="https://blog.wikimedia.org/2018/01/23/cote-divoire-library-partnerships/agreement_between_wikimedia_cote_divoire_and_apsid-ci_03/" data-orig-file="https://wikimediablog.files.wordpress.com/2018/01/agreement_between_wikimedia_cc3b4te_divoire_and_apsid-ci_03.jpg" data-orig-size="2560,1920" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.8&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;itel S31&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1510327998&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;3.5&quot;,&quot;iso&quot;:&quot;299&quot;,&quot;shutter_speed&quot;:&quot;0.059999&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Agreement_between_Wikimedia_Côte_d&#8217;Ivoire_and_APSID-CI_03" data-image-description="" data-medium-file="https://wikimediablog.files.wordpress.com/2018/01/agreement_between_wikimedia_cc3b4te_divoire_and_apsid-ci_03.jpg?w=300" data-large-file="https://wikimediablog.files.wordpress.com/2018/01/agreement_between_wikimedia_cc3b4te_divoire_and_apsid-ci_03.jpg?w=580&#038;h=435" class="size-large wp-image-54856" src="https://wikimediablog.files.wordpress.com/2018/01/agreement_between_wikimedia_cc3b4te_divoire_and_apsid-ci_03.jpg?w=580&#038;h=435" alt="" width="580" height="435" srcset="https://wikimediablog.files.wordpress.com/2018/01/agreement_between_wikimedia_cc3b4te_divoire_and_apsid-ci_03.jpg?w=580&amp;h=435 580w, https://wikimediablog.files.wordpress.com/2018/01/agreement_between_wikimedia_cc3b4te_divoire_and_apsid-ci_03.jpg?w=1160&amp;h=870 1160w, https://wikimediablog.files.wordpress.com/2018/01/agreement_between_wikimedia_cc3b4te_divoire_and_apsid-ci_03.jpg?w=150&amp;h=113 150w, https://wikimediablog.files.wordpress.com/2018/01/agreement_between_wikimedia_cc3b4te_divoire_and_apsid-ci_03.jpg?w=300&amp;h=225 300w, https://wikimediablog.files.wordpress.com/2018/01/agreement_between_wikimedia_cc3b4te_divoire_and_apsid-ci_03.jpg?w=768&amp;h=576 768w" sizes="(max-width: 580px) 100vw, 580px" /></a><p class="wp-caption-text"><a href="https://commons.wikimedia.org/wiki/File:Agreement_between_Wikimedia_C%C3%B4te_d%27Ivoire_and_APSID-CI_03.jpg">Photo</a> by User:African Hope, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>.</p></div>
 <p>There&#8217;s a global community working to strengthen the bonds between <a href="https://en.wikipedia.org/wiki/GLAM_(industry_sector)">GLAM</a>s—galleries, archives, libraries, and museums—and the volunteer population who edit Wikipedia and Wikimedia websites every day. These people are creating partnerships, experimenting with new tactics, and acting as liaisons to cultural institutions all around that world. Still, although the Wikimedia community aspires to be a diverse community which can work on and represent the world’s knowledge and culture, in practice <a href="https://outreach.wikimedia.org/wiki/GLAM">GLAM-Wiki</a> frequently reflects the <a href="https://www.theguardian.com/commentisfree/2017/oct/05/internet-white-western-google-wikipedia-skewed">larger biases of Wikimedia projects</a>.</p>
-<p>This is changing in one country in French-speaking Africa, as local volunteers from <a href="https://meta.wikimedia.org/wiki/Wikimedia_Community_User_Group_C%C3%B4te_d%27Ivoire">Wikimedia Community User Group Côte d&#8217;Ivoire</a> are partnering with librarians to create an active and vibrant community that participates in activities like the global <a href="https://meta.wikimedia.org/wiki/The_Wikipedia_Library/1Lib1Ref">#1lib1ref campaign,</a> which asks “every librarian in the world to add just one reference to Wikipedia”.</p>
+<p>This is changing in one country in French-speaking Africa, as local volunteers from <a href="https://meta.wikimedia.org/wiki/Wikimedia_Community_User_Group_C%C3%B4te_d%27Ivoire">Wikimedia Community User Group Côte d&#8217;Ivoire</a> are partnering with librarians to create an active and vibrant community that participates in activities like the global <a href="https://meta.wikimedia.org/wiki/The_Wikipedia_Library/1Lib1Ref">#1Lib1Ref campaign</a>, which asks “every librarian in the world to add just one reference to Wikipedia”.</p>
 <p>The Wikimedia Foundation&#8217;s GLAM Strategist <a href="https://twitter.com/sadads">Alex Stinson</a> interviewed <a href="https://twitter.com/samuelguebo">Samuel Guebo</a>, one of the Wikimedians working on this partnership, about the opportunities created by working with libraries.</p>
 <p><strong>Alex: Can you tell me a little bit about the user group, and who is involved? </strong></p>
-<p><a href="https://meta.wikimedia.org/wiki/Wikimedia_Community_User_Group_C%C3%B4te_d%27Ivoire">Wikimedia Community User Group Côte d’Ivoire </a>(WCUG-CI) is a group of volunteers based in <a href="https://en.wikipedia.org/wiki/Ivory_Coast">Côte d’Ivoire</a>, legally organized as an Ivorian association and acknowledged by the Wikimedia Foundation since 2014. It contains 32 registered members, with one third being active members and regular editors. Its actions focus on four main programmes: <a href="http://wikimedia.ci/programme/wikimousso/">WikiMousso</a>, a local version of the Wiki Loves Women project; <a href="https://outreach.wikimedia.org/wiki/Education">the Education program</a>; <a href="https://meta.wikimedia.org/wiki/Wiki_Loves_Africa">Wiki Loves Africa</a>; and <a href="https://outreach.wikimedia.org/wiki/GLAM">GLAM-Wiki</a>, wherewe forge links with libraries and others heritage organizations.</p>
+<p>Wikimedia Community User Group Côte d’Ivoire (WCUG-CI) is a group of volunteers based in <a href="https://en.wikipedia.org/wiki/Ivory_Coast">Côte d’Ivoire</a>, legally organized as an Ivorian association and acknowledged by the Wikimedia Foundation since 2014. It contains 32 registered members, with one third being active members and regular editors. Its actions focus on four main programmes: <a href="http://wikimedia.ci/programme/wikimousso/">WikiMousso</a>, a local version of the Wiki Loves Women project; <a href="https://outreach.wikimedia.org/wiki/Education">the Education program</a>; <a href="https://meta.wikimedia.org/wiki/Wiki_Loves_Africa">Wiki Loves Africa</a>; and <a href="https://outreach.wikimedia.org/wiki/GLAM">GLAM-Wiki</a>, wherewe forge links with libraries and others heritage organizations.</p>
 <p><strong>Alex: How did the user group get involved with local libraries? Why are these relationships important for the user group? What do you hope you can do with the libraries? </strong></p>
 <p>In 2015, our current chair Donatien Kangah was selected as part of the <a href="http://bsfcampus.org/">BSF Campus programme</a>. This initiative from <a href="https://www.librarieswithoutborders.org/">Libraries Without Borders</a> selected and trained, based on their application, 12 young leaders working in the library environment of Côte d&#8217;Ivoire. Back then, Donatien applied with the “<a href="http://www.bsfcampus.org/index.php/donatien-kangah-koffi">GLAM Côte d’Ivoire initiative</a>”, a project that aimed at documenting and promoting African heritage through Wikimedia platforms. Donatien had the chance to join a wide network of librarians. Ever since I was appointed by our board as the Coordinator for GLAM-Wiki in 2016, I have been building on this network.</p>
 <p>Collaborating with librarians means a lot to our user group. They provide valuable referencing documents for our edit-athons, logistics support such as room for training sessions, and are good advocates for Wikipedia before the academics and research community. So far, our collaboration mainly include training sessions during which librarians are introduced to Wikipedia and its sister projects, and add at least one reference to the online encyclopaedia. Also, as we are getting more librarians involved, we hope to start digitization collaborations soon and make available to the world our local heritage.</p>
 <p><strong>Alex:You </strong><a href="https://outreach.wikimedia.org/wiki/GLAM/Newsletter/November_2017/Contents/C%C3%B4te_d%27Ivoire_report"><strong>recently signed an agreement with the APSID-CI </strong></a><strong>(Association of Professionals of the Information Sciences of documentary of Cote d&#8217;Ivoire). Why did you need a formal agreement with the organization? What do you hope will come from that relationship?</strong></p>
-<p>In our West African context, skepticism <a href="https://outreach.wikimedia.org/wiki/GLAM/Newsletter/August_2017/Contents/C%C3%B4te_d%27Ivoire_report">stands out as a constraint while partnering with local heritage institutions</a>. To reduce that skepticism, it is important to show these institutions what wikimedia projects are about and also how trustworthy we, as an organization, are. The agreement serves that purpose. It tells our partner that we are working in a transparent way and encourages others like-minded institutions to join us.</p>
+<p>In our West African context, skepticism <a href="https://outreach.wikimedia.org/wiki/GLAM/Newsletter/August_2017/Contents/C%C3%B4te_d%27Ivoire_report">stands out as a constraint while partnering with local heritage institutions</a>. To reduce that skepticism, it is important to show these institutions what Wikimedia projects are about and also how trustworthy we, as an organization, are. The agreement serves that purpose. It tells our partner that we are working in a transparent way and encourages others like-minded institutions to join us.</p>
 <p>In the specific case of APSID-CI, even though we had started to collaborate before the agreement, we were still in the discussion phase. As we needed to start doing practical things, it appeared necessary to define where we wanted to go together and what we desired to achieve. This is where the agreement came into play.</p>
 <p>This is a significant agreement because APSID-CI is the main association gathering librarians in Côte d’Ivoire. Through this partnership, we will hopefully expose a much higher number of librarians to Wikipedia and its sister projects and eventually turn a portion of them into regular editors. Also, digitization is on the agenda of this collaboration. Members of the APSID-CI are professionals working within institutions that curate important documentary archives, data, heritage collections, etc. However, most of them are facing storage issues. Those documents are exposed to physical hazards such as moisture or heat, and also vandalism during conflict periods. Through the collaboration with APSID-CI, the idea behind digitization is to offer an alternative conservation for archives and heritage collections. Once digitized, archives should be free from the risks mentioned above. Also, as some of the digitized archives will be released under Creative Commons license, it will be possible to reuse them and improve them collaboratively as in the case of pre-colonial textbooks.</p>
-<p><strong>Alex: </strong><a href="https://meta.wikimedia.org/wiki/The_Wikipedia_Library/1Lib1Ref"><strong>#1lib1ref</strong></a><strong> seemed to be an important opportunity for the user group to speak with libraries. Why have you been working with the campaign? </strong></p>
-<p>Indeed, #1lib1ref was a great opportunity for us to interact differently with librarians. Actually, before the 2017 #1li1ref campaign, our outreach activities towards librarians only consisted in presentations. With this campaign and its ‘add just one more reference to Wikipedia’ rule, librarians could make their first edit to Wikipedia.</p>
-<p>Plus, articles lacking references served as a good example to show librarians how their help could make a difference. At the end of the workshops for #1lib1ref, some said that adding a reference to an article that lacked some was quite a fulfilling experience.</p>
-<p>Furthermore, as Wikimedians, we enjoyed being part of a larger set of editing activities carried out by other Wikimedians across the world. When carrying out activities locally, sometimes it feels like you are somewhat working in a silo, detached from the rest of the Wikimedians. So large scale editing activities such as Wiki Loves Africa, <a href="https://blog.wikimedia.org/2016/03/07/francophone-contribution-month/">Francophone Contribution Month</a> or #1Lib1ref create an opportunity to work alongside Wikimedians from other regions, share your approach and, more importantly, learn from others.</p>
+<p><strong>Alex: </strong><a href="https://meta.wikimedia.org/wiki/The_Wikipedia_Library/1Lib1Ref"><strong>#1Lib1Ref</strong></a><strong> seemed to be an important opportunity for the user group to speak with libraries. Why have you been working with the campaign? </strong></p>
+<p>Indeed, #1Lib1Ref was a great opportunity for us to interact differently with librarians. Actually, before the 2017 #1Lib1Ref campaign, our outreach activities towards librarians only consisted in presentations. With this campaign and its ‘add just one more reference to Wikipedia’ rule, librarians could make their first edit to Wikipedia.</p>
+<p>Plus, articles lacking references served as a good example to show librarians how their help could make a difference. At the end of the workshops for #1Lib1Ref, some said that adding a reference to an article that lacked some was quite a fulfilling experience.</p>
+<p>Furthermore, as Wikimedians, we enjoyed being part of a larger set of editing activities carried out by other Wikimedians across the world. When carrying out activities locally, sometimes it feels like you are somewhat working in a silo, detached from the rest of the Wikimedians. So large scale editing activities such as Wiki Loves Africa, <a href="https://blog.wikimedia.org/2016/03/07/francophone-contribution-month/">Francophone Contribution Month</a> or #1Lib1Ref create an opportunity to work alongside Wikimedians from other regions, share your approach and, more importantly, learn from others.</p>
 <p><strong>Alex: You have been attending a number of Wikimedia events, and talking to a lot of program leaders in other parts of the world. How do you think GLAM-Wiki and library outreach is different for you in Cote d&#8217;Ivoire, as opposed to other part of the world? </strong></p>
 <p>Many areas of collaboration between GLAMs and Wikimedians are still unexplored in Côte d’Ivoire. For example, throughout the world partnerships with GLAMs have led to thousands of heritage objects from collections being digitized and imported to Commons. Additionally, the Wikidata project <a href="https://blog.wikimedia.org/2016/08/23/wikidata-glam/">allows GLAMs to match metadata of their collection with hundreds of other data sources</a>. There are many opportunities to be explored.</p>
 <p>Yet, a stronger collaboration with heritage institutions implies necessarily a stronger and wider awareness raising among GLAM professionals. As I mentioned earlier, in our local context GLAMs do not clearly see the benefits of the Open movement in general, and Wikimedia projects in particular. This skepticism or ignorance is not a unique situation. It is faced by other communities from the Global South. Earlier in January at <a href="https://meta.wikimedia.org/wiki/WikiIndaba_conference_2017">WikiIndaba 2017</a>, Wikimedians from Ghana reported how institutions were not willing to start any collaboration without an official Memorandum of Understanding (MoU).</p>
@@ -862,23 +878,11 @@ Wikimedia Foundation</em></p>
       <div class="content">
         <article><div class="text--no-summary spacing--after-xs"> <p>All PreviousNext Drupal 8 projects are now managed using Composer. This is a powerful tool, and allows our projects to define both public and private modules or libraries, and their dependencies, and bring them all together.</p> <p> </p> <p>However, a if you require public or private modules which are hosted on GitHub you may run into the <a href="https://developer.github.com/v3/#rate-limiting">API Rate Limits</a>. In order to overcome this, it is recommended to add a GitHub personal access token to your composer configuration.</p> <p> </p> <p>In this blog post, I'll show how you can do this in a secure and manageable way.</p> </div> <div class="author author--short">by <a href="https://www.previousnext.com.au/about/team/kim-pepper">Kim Pepper</a> / <time datetime="Mon, 01/22/2018 - 14:20Z">22 January 2018</time></div> <p>It's common practice when you encounter a Drupal project to see the following snippet in a composer.json file:</p> <pre> "config": { "github-oauth": { "github.com": "XXXXXXXXXXXXXXXXXXXXXX" } },</pre><p>What this means is, everyone is sharing a single account's personal access token. While this may be convenient, it's also a major security risk should the token accidentally be made public, or a team member leaves the organisation, and still has read/write access to your repositories.</p> <p>A better approach, is to have each team member have their <em>own</em> personal access token configure locally. This ensures that individuals can only access repositories they have read permissions for, and once they leave your organisation they can no longer access any private dependencies.</p> <h3 id="step-1-create-a-personal-access-token">Step 1: Create a personal access token</h3> <p>Go to <a href="https://github.com/settings/tokens">https://github.com/settings/tokens</a> and generate a new token.</p> <article class="embedded-entity"><article><img src="https://www.previousnext.com.au/sites/default/files/styles/content_1x/public/2018-01/generate-token.png?itok=KJo3iwv4" width="688" height="106" alt="Generate GitHub Token" typeof="foaf:Image" /></article></article><p>You will need to specify all <em>repo</em> scopes.</p> <article class="embedded-entity"><article><img src="https://www.previousnext.com.au/sites/default/files/styles/content_1x/public/2018-01/scopes.png?itok=tq8rn93t" width="688" height="392" alt="Select GitHub Scopes" typeof="foaf:Image" /></article></article><p>Finally, hit <em>Generate Token</em> to create the token.</p> <article class="embedded-entity"><article><img src="https://www.previousnext.com.au/sites/default/files/styles/content_1x/public/2018-01/token.png?itok=_36AcWSE" width="688" height="204" alt="GitHub token" typeof="foaf:Image" /></article></article><p>Copy this, as well need it in the next step.</p> <h3 id="step-2-configure-composer-to-use-your-personal-access-token">Step 2: Configure Composer to use your personal access token</h3> <p>Run the following from the command line:</p> <pre> composer config -g github-oauth.github.com XXXXXXXXXXXXXXXXXXXXXXX</pre><p>You're all set! From now on, composer will use your own individual personal access token which is stored in <em>$HOME/.composer/auth.json</em></p> <h3 id="what-about-automated-testing-environments">What about Automated Testing Environments?</h3> <p>Fortunately, composer also accepts an environment variable <em>COMPOSER_AUTH</em> with a JSON-formatted string as an argument. For example:</p> <pre> COMPOSER_AUTH='{"github-oauth": {"github.com": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"}}'</pre><p>You can simply set this environment variable in your CI Environment (e.g. CircleCI, TravisCI, Jenkins) and have a personal access token specific to the CI environment.</p> <h3 id="summary">Summary</h3> <p>By using Personal Access Tokens, you can now safely remove any tokens from the project's composer.json file, removing the risk this gets exposed. You can also know that by removing access for any ex-team members, they are no longer able to access your organisations repos using a token. Finally, in the event of a token being compromised, you have reduced the attack surface, and can more easily identify which user's token was used.</p> <p> </p> <div class="field field--field-tags field--type-entity-reference field--label-above"> <h3 class="field__label">Tagged</h3> <a href="https://www.previousnext.com.au/blog/tags/composer" hreflang="en">Composer</a>, <a href="https://www.previousnext.com.au/blog/tags/security" hreflang="en">Security</a>, <a href="https://www.previousnext.com.au/blog/tags/drupal-security" hreflang="en">Drupal Security</a> </div> </article>
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;www.agiledrop.com&#x2F;blog&#x2F;drupal-events-1st-quarter-year><h1>Agiledrop.com Blog: AGILEDROP: Drupal events in 1st quarter of the year</h1></a>
-      <h5>2018-01-22T01:40:11.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <a href="http://www.agiledrop.comhttps://www.agiledrop.com/blog/drupal-events-1st-quarter-year"><img src="https://www.agiledrop.com/sites/default/files/2018-01/23318967656_bece7befbe_o_1.jpg" /></a> We've stepped into a beginning of a new year, and there will be many events organised by the Drupal community in the first couple of months. We've made a list of Drupal camps and summits that you can attend in the first quarter of the year. Drupal events are bringing together Drupal developers, site builder, themers, end users and those interested in learning more about Drupal. We are attending Drupal events because of, sessions and collaborative discussions. DrupalCamp NJ 2018 United States, Princeton, NJ The campus of Princeton University 3. February 2018 09:00-18:00 This will be the 7th… <a href="http://www.agiledrop.comhttps://www.agiledrop.com/blog/drupal-events-1st-quarter-year">READ MORE</a>
-      </div>
       <a class="title" href=http:&#x2F;&#x2F;www.blogger.com&#x2F;feeds&#x2F;3241663152321399210&#x2F;posts&#x2F;default&#x2F;1309181773895840261><h1>Semi-Automatic Classification Plugin version 6 officially released</h1></a>
       <h5>2018-01-21T23:22:00.000Z</h5>
       <i class="author">Luca Congedo</i>
       <div class="content">
         [object Object]
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;www.fluffy.pro&#x2F;2018&#x2F;01&#x2F;monolog-namespaced-logger.html><h1>fluffy.pro. Drupal Developer&#39;s blog: Monolog: namespaced logger?</h1></a>
-      <h5>2018-01-21T19:47:00.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <div dir="ltr" style="text-align: left;" trbidi="on"><div style="text-align: left;"><span style="font-weight: normal;">Using <a href="https://github.com/Seldaek/monolog" target="_blank">monolg</a> library and <a href="https://github.com/theorchard/monolog-cascade" target="_blank">monolog-cascade</a> extension you can&#39;t configure the &quot;namespaced&quot; loggers. What does it mean? Imagine you have tons of classes and you need to log information from them into a log file. There is nothing special in this. Just define loggers with the needed handler(s) and instantiate them directly in a place where you want them to use with a help of monolog-cascade. It means in your monolog-cascade config file you </span><i>have to</i><span style="font-weight: normal;"> define needed loggers </span><i>in advance</i><b> </b>and you <i>have to</i> reference needed loggers by their names. But what if you need an additional logger (with absolutely different handlers/processors) for some of the classes? Will you go through all the classes and change logger names where you instantiate them? I think it doesn&#39;t look like a good idea when a small requirement (for instance, change the log file name for records from a bunch of classes) leads to edits in an application code. It&#39;s something that must be configurable and that&#39;s why I decided to write a tiny library called <a href="https://github.com/PavelLoparev/monolog-cascade-namespaced" target="_blank">monolog-cascade-namespaced</a>.<br></div></div><a href="http://www.fluffy.pro/2018/01/monolog-namespaced-logger.html#more">Read more »</a>
       </div>
       <a class="title" href=http:&#x2F;&#x2F;www.blogger.com&#x2F;feeds&#x2F;3241663152321399210&#x2F;posts&#x2F;default&#x2F;4901615261289161004><h1>How to install QGIS 3 using OSGeo4W in Windows OS</h1></a>
       <h5>2018-01-21T15:06:00.000Z</h5>
@@ -1888,12 +1892,6 @@ Wikimedia Foundation</em></p>
       <a class="title" href=https:&#x2F;&#x2F;blog.gvsig.org&#x2F;2018&#x2F;01&#x2F;04&#x2F;gis-applied-to-municipality-management-module-4-2-attribute-tables-joining-tables&#x2F;><h1>GIS applied to Municipality Management: Module 4.2 ‘Attribute tables (joining tables)’</h1></a>
       <h5>2018-01-04T13:15:42.000Z</h5>
       <i class="author">Mario</i>
-      <div class="content">
-        [object Object]
-      </div>
-      <a class="title" href=http:&#x2F;&#x2F;steko.iosa.it&#x2F;2018&#x2F;01&#x2F;i-libri-che-ho-letto-nel-2016&#x2F;><h1>I libri che ho letto nel 2016</h1></a>
-      <h5>2018-01-03T22:26:56.000Z</h5>
-      <i class="author">Stefano Costa</i>
       <div class="content">
         [object Object]
       </div>
