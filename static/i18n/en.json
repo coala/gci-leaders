@@ -20,5 +20,6 @@
     "hours": "$1 {{PLURAL:$1|hour|hours}}",
     "days": "$1 {{PLURAL:$1|day|days}}",
     "months": "$1 {{PLURAL:$1|month|months}}",
-    "years": "$1 {{PLURAL:$1|year|years}}"
+    "years": "$1 {{PLURAL:$1|year|years}}",
+    "finished": "Google Code-in has ended. Horray!"
 }

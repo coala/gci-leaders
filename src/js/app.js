@@ -18,12 +18,19 @@ export default function init() {
   document.getElementById('progress').textContent = gciProgress()
 
   function gciProgress() {
+    const progressOuter = document.querySelector('.progress-outer')
     const progress = document.getElementById('progress').dataset
     const competitionOpen = new Date(progress.competitionopen)
     const noClaims = new Date(progress.noclaims)
     const current = new Date()
     const percentagePassed =
       100 - (noClaims - current) / (noClaims - competitionOpen) * 100
+
+    if (percentagePassed > 100) {
+      progressOuter.style.display = 'none'
+      return $.i18n('finished')
+    }
+
     document
       .getElementsByClassName('progress-bar')[0]
       .setAttribute(
