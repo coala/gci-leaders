@@ -146,3 +146,7 @@ footer {
 .preview > a {
   color: aqua;
 }
+
+img.chat[src=""] {
+  display: none;
+}
