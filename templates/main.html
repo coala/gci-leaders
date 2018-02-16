@@ -72,9 +72,11 @@
               </a>
             {{/gitlab}}
             {{#mailing_list}}
-              <a href="{{mailing_list}}">
-                <img src="images/mail.png" class="chat" alt="Join their mailing list" />
-              </a>
+                {{#url}}
+                  <a href="{{url}}">
+                    <img src="{{image}}" class="chat" alt="Join their mailing list" />
+                  </a>
+                {{/url}}
             {{/mailing_list}}
             {{#chat}}
               <a href="{{chat.url}}">
