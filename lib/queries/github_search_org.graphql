@@ -1,0 +1,9 @@
+query($query: String!) {
+  search(type: USER, query: $query, first: 1) {
+    nodes {
+      ...on Organization {
+          login
+      }
+    }
+  }
+}

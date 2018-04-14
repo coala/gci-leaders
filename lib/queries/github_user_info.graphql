@@ -1,0 +1,6 @@
+query($user: String!) {
+  user(login: $user) {
+    login
+    updatedAt
+  }
+}
