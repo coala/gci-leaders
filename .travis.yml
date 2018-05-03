@@ -13,6 +13,11 @@ script:
   - npm run build
   - ./.ci/deploy.sh
 
+notifications:
+  email: false
+  webhooks: https://www.travisbuddy.com/
+  on_success: never
+
 deploy:
   provider: pages
   skip_cleanup: true
