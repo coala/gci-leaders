@@ -21,6 +21,14 @@ describe('lib.rss', () => {
       ),
       data_updated: new Date('2017-12-24T03:04:19.533Z'),
     })
+
+    rssAltResponse = rss({
+      data: JSON.parse(
+        fs.readFileSync(`${__dirname}/../__data__/data_alt.json`)
+      ),
+      data_old: undefined,
+      data_updated: new Date('2017-12-24T03:04:19.533Z'),
+    })
   })
 
   afterEach(() => {
@@ -39,5 +47,20 @@ describe('lib.rss', () => {
     const expectedFile = fs.readFileSync(expectedPath).toString()
 
     expect(rssResponse.feed_items).toEqual(expectedFile)
+  })
+
+  it('should have the correct feed contents without old_data', () => {
+    const expectedPath = `${__dirname}/../__data__/feed_alt.xml`
+    const expectedFile = fs.readFileSync(expectedPath).toString()
+
+    expect(rssAltResponse.feed_xml).toEqual(expectedFile)
+  })
+
+  it('should have the correct feed_items contents without old_data', () => {
+    const expectedPath = `${__dirname}/../__data__/feed_items_alt.json`
+    const expectedFile = fs.readFileSync(expectedPath).toString()
+    const expectedJSON = JSON.parse(expectedFile)
+
+    expect(JSON.parse(rssAltResponse.feed_items)).toEqual(expectedJSON)
   })
 })

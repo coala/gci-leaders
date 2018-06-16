@@ -1,0 +1,114 @@
+[
+  {
+    "accepted_org_tos": true,
+    "blog_url": "https://jboss-outreach.github.io/blog",
+    "chat": {
+      "image": "images/logos/gitter.png",
+      "platform": "GITTER",
+      "url": "https://gitter.im/jboss-outreach/gci"
+    },
+    "completed_task_instance_count": 924,
+    "contact_email": null,
+    "description": "JBoss Community is a community of open source projects. The community hosts a large number of projects that are written in various programming languages. The primary language is Java. But there are also projects that are written in Ruby, PHP, Node and other languages.\n\nProject categories range from better testing support over IDEs, application servers, application and performance monitoring to micro-services.",
+    "dev_mailing_list": null,
+    "github": "jboss-outreach",
+    "gplus_url": "https://plus.google.com/b/111973087896917947877/",
+    "guide_to_working": "",
+    "guide_to_working_url": "",
+    "id": 5733899491606528,
+    "image_url": "//lh3.googleusercontent.com/B0QDIemyQxRM8it_Vos8KYU1Cj4p7sEs2TZI5WjeQfu-YN4OvWha7H_0GtvHa5ssIMEW6yQFm4tt5Osdl4T4QPA",
+    "irc_channel": "https://gitter.im/jboss-outreach/gci",
+    "leaders": [
+      {
+        "display_name": "Anhai Wang",
+        "github_updated": 1514048612148,
+        "id": 6387345966235648,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Aniol Vicens Lloret",
+        "github_updated": 1514048611614,
+        "id": 5258573665796096,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Divyansh Kulshreshtha",
+        "github_updated": 1514048612147,
+        "id": 4752725168357376,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Jatin Luthra",
+        "github_updated": 1514048611620,
+        "id": 4598388202930176,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Saba Khukhunashvili",
+        "github_account": "SabaKhukhunashvili",
+        "github_updated": 1514048613069,
+        "id": 5901508325408768,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Sachin Rammoorthy",
+        "github_account": "SachinRammoorthy",
+        "github_updated": 1514048611626,
+        "id": 5772338727485440,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Sidhya Tikku",
+        "github_account": "sidhyatikku",
+        "github_updated": 1514048613253,
+        "id": 5078331336687616,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Thomas",
+        "github_updated": 1514048612713,
+        "id": 5043034557251584,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Vishwas Adiga",
+        "github_updated": 1514048612571,
+        "id": 6049660470820864,
+        "program_year": 2017
+      },
+      {
+        "display_name": "Zhao Wei Liew",
+        "github_updated": 1514048612797,
+        "id": 6020884257046528,
+        "program_year": 2017
+      }
+    ],
+    "mailing_list": "https://groups.google.com/forum/#!forum/jboss-community-gci/",
+    "name": "JBoss Community",
+    "precis": "Community of Java projects around JBoss Middleware",
+    "preferred_contact_method": null,
+    "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
+    "program_year": 2017,
+    "programming_languages": [
+      "java",
+      "android",
+      "python",
+      "javascript",
+      "html"
+    ],
+    "slug": "jboss-community",
+    "status": 2,
+    "tags": [
+      "testing",
+      "web",
+      "vert.x",
+      "http",
+      "rest"
+    ],
+    "twitter_url": "https://twitter.com/JBoss",
+    "website_url": "https://gci.jboss-outreach.org",
+    "wikidata_url": "//www.wikidata.org/wiki/Q46507419",
+    "wikipedia_urls": null,
+    "winners": {}
+  }
+]
