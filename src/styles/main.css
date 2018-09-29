@@ -86,6 +86,11 @@ ul {
   padding: 0;
 }
 
+.gci-logo:hover {
+  transition: 200s linear;
+  transform: rotate(18000deg);
+}
+
 .gci-logo {
   float: left;
   height: 40px;
