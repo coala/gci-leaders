@@ -6,7 +6,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/scorelab/Google-Code-In"
-    completed_task_instance_count: 500
+    completed_task_instance_count: 568
     contact_email: "info@scorelab.org"
     description: "The Sustainable Computing Research Lab (SCoRe) has conducted research covering various aspects of mobile, cloud, iot, digital forensic, information security and more. The goal of our research is to generate computing solutions through identifying low-cost methodologies and strategies that lead to sustainability​.\n\nAt present, the SCoRe Lab is at a stage of its evolution in which it has been able to secure high donor confidence as evidenced by no less than 5 simultaneous foreign funded projects underway since 2005. SCoRe Lab has been a pioneer in cooperating with Internet Society (ISOC), Swedish Agency for International Development Cooperation (Sida)/The Department for Research Cooperation (SAREC), The Swedish Program for Information and Communication Technology in Developing Regions (Spider) and Information Society Innovation Fund (ISIF) in the area of computer science by establishing several interesting ICT research projects. These projects are considered to be the benchmarks of such projects in the World."
     dev_mailing_list: null
@@ -21,52 +21,52 @@
     leaders: 
       - 
         display_name: "1337_siddh"
-        github_updated: 1540699564096
+        github_updated: 1540785960361
         id: 5660669278945280
         program_year: 2018
       - 
         display_name: "Anurag Parida"
-        github_updated: 1540699564544
+        github_updated: 1540785961006
         id: 5364886423994368
         program_year: 2018
       - 
         display_name: "Ben.mue"
-        github_updated: 1540699564106
+        github_updated: 1540785960456
         id: 5558520696012800
         program_year: 2018
       - 
         display_name: "Gaurav Pandey"
-        github_updated: 1540699564111
+        github_updated: 1540785960481
         id: 6177385184493568
         program_year: 2018
       - 
+        display_name: "jmularski"
+        github_updated: 1540785960892
+        id: 5659239725924352
+        program_year: 2018
+      - 
         display_name: "kunalbhatia"
-        github_updated: 1540699564107
+        github_updated: 1540785960462
         id: 5949607902183424
         program_year: 2018
       - 
-        display_name: "KushagraVats"
-        github_updated: 1540699564621
-        id: 5765232405250048
-        program_year: 2018
-      - 
         display_name: "Palash"
-        github_updated: 1540699564088
+        github_updated: 1540785960450
         id: 5510056989687808
         program_year: 2018
       - 
         display_name: "RohanCode"
-        github_updated: 1540699564080
+        github_updated: 1540785960449
         id: 5960662023929856
         program_year: 2018
       - 
         display_name: "Sanyam"
-        github_updated: 1540699564086
+        github_updated: 1540785960438
         id: 5747736117772288
         program_year: 2018
       - 
         display_name: "Łukasz Myśliwiec"
-        github_updated: 1540699564085
+        github_updated: 1540785960398
         id: 5375144382955520
         program_year: 2018
     mailing_list: "https://groups.google.com/forum/#!forum/score-community"
@@ -102,7 +102,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/JBossOutreach/gci"
-    completed_task_instance_count: 354
+    completed_task_instance_count: 412
     contact_email: null
     description: "JBoss Community is a community of open source projects. The community hosts a large number of projects that are written in various programming languages. The primary language is Java. But there are also projects that are written in Ruby, PHP, Node and other languages.\n\nProject categories range from better testing support over IDEs, application servers, application and performance monitoring to micro-services."
     dev_mailing_list: null
@@ -116,47 +116,47 @@
     leaders: 
       - 
         display_name: "Anantha Vijay"
-        github_updated: 1540699562237
+        github_updated: 1540785957804
         id: 5388413583753216
         program_year: 2018
       - 
         display_name: "Baftek"
-        github_updated: 1540699561754
+        github_updated: 1540785957394
         id: 6563938549366784
         program_year: 2018
       - 
         display_name: "code_damn_it"
-        github_updated: 1540699561810
+        github_updated: 1540785957414
         id: 5984052734590976
         program_year: 2018
       - 
         display_name: "HarshHC"
-        github_updated: 1540699562281
+        github_updated: 1540785957807
         id: 6120306478415872
         program_year: 2018
       - 
         display_name: "Lint"
-        github_updated: 1540699561787
+        github_updated: 1540785957420
         id: 4584762321666048
         program_year: 2018
       - 
         display_name: "Michael"
-        github_updated: 1540699561815
+        github_updated: 1540785957364
         id: 6481553761763328
         program_year: 2018
       - 
         display_name: "pranav"
-        github_updated: 1540699561858
+        github_updated: 1540785957396
         id: 5008865578975232
         program_year: 2018
       - 
         display_name: "ribhavsharma"
-        github_updated: 1540699562241
+        github_updated: 1540785957794
         id: 6006000621453312
         program_year: 2018
       - 
         display_name: "Sai Vittal B"
-        github_updated: 1540699562217
+        github_updated: 1540785957807
         id: 5340282435403776
         program_year: 2018
       - 
@@ -199,7 +199,7 @@
       image: "images/chat.png"
       platform: "OTHER"
       url: "http://openwisp.org/support.html"
-    completed_task_instance_count: 264
+    completed_task_instance_count: 326
     contact_email: null
     description: "In the summer of 2008 the [Metropolitan City of Rome](http://www.cittametropolitanaroma.gov.it/) decided to start a **free of charge and public Wi-Fi network** to be spread over its 5352 SQ KM territory including Rome and 120 other cities for a total of about 4.5 million inhabitants. The main objective of the project, called **ProvinciaWiFi** (later renamed [WiFi Metropolitano](http://www.cittametropolitanaroma.gov.it/homepage/elenco-siti-tematici/wifimetropolitano/)), was to take a decisive step to reduce the existing **digital divide** by fostering and facilitating the use of ICT by citizens.\n\nFrom the outset it was decided to commit the project to a completely open philosophy. For this reason a clear choice towards open software and operating systems and the availability of every modification, update and improvement to the community was made. The same approach was adopted for the knowledge and the experience acquired within the project. In order to pursue this goals the Province of Rome called the university consortium *CASPUR* (later merged in the [CINECA](https://www.cineca.it/it/progetti/openwisp) consortium) to develop the technical solution. In this context, a research project conducted by the *CINECA* consortium found its perfect application. This project proposed an innovative methodology for the distribution of networks (more precisely Virtual LANs used for Wi-Fi connectivity) between geographically distant sites.\n\nThe software tools, including the OpenWISP 2 [network management system](http://openwisp.org) and different [NetJSON](http://netjson.org/) implementations are released to the public free of charge under open-source licenses, hoping this will allow a broader audience to benefit from our work."
     dev_mailing_list: null
@@ -213,37 +213,52 @@
     leaders: 
       - 
         display_name: "cking"
-        github_updated: 1540699562964
+        github_updated: 1540785958407
         id: 4980945204543488
         program_year: 2018
       - 
         display_name: "Daniel Wang"
-        github_updated: 1540699563603
+        github_updated: 1540785958871
         id: 5780156091203584
         program_year: 2018
       - 
         display_name: "EdgeKing810"
-        github_updated: 1540699563469
+        github_updated: 1540785958867
         id: 4706723689398272
         program_year: 2018
       - 
+        display_name: "Krow"
+        github_updated: 1540785958464
+        id: 6414964051935232
+        program_year: 2018
+      - 
         display_name: "Madhav Mehndiratta"
-        github_updated: 1540699562913
+        github_updated: 1540785958384
         id: 5580493513818112
         program_year: 2018
       - 
         display_name: "Mihir"
-        github_updated: 1540699562988
+        github_updated: 1540785958399
         id: 6490085848514560
         program_year: 2018
       - 
+        display_name: "Pritish Jain"
+        github_updated: 1540785958445
+        id: 5840994286174208
+        program_year: 2018
+      - 
         display_name: "Reza Juliandri"
-        github_updated: 1540699563038
+        github_updated: 1540785958424
         id: 5236777716547584
         program_year: 2018
       - 
+        display_name: "Rishabh"
+        github_updated: 1540785959041
+        id: 4999294110138368
+        program_year: 2018
+      - 
         display_name: "yash_ar"
-        github_updated: 1540699562984
+        github_updated: 1540785958466
         id: 6534348003082240
         program_year: 2018
     mailing_list: "https://groups.google.com/d/forum/openwisp/join"
@@ -279,7 +294,7 @@
       image: "images/chat.png"
       platform: "OTHER"
       url: "https://irc.openmrs.org"
-    completed_task_instance_count: 217
+    completed_task_instance_count: 294
     contact_email: "helpdesk@openmrs.org"
     description: "[OpenMRS](http://openmrs.org/) is a collaborative open source project to develop software to support the delivery of health care in developing countries. We are a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. [Our mission](http://openmrs.org/about/mission/) is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software.\r\n\r\nThe [OpenMRS software platform](http://openmrs.org/about/) and a reference application enable the design of a customized medical records system with no programming knowledge. It is a common platform upon which medical informatics efforts in developing countries can be built.\r\n\r\nWorking on Google Code-in tasks for OpenMRS is a great way to join the free and open source software movement, and at the same time use your talents to help people in developing countries and around the world on the front lines of the battle against HIV/AIDS, TB, Malaria, and other public health challenges. For more detailed about OpenMRS and GCI, visit our [wiki documentation](https://wiki.openmrs.org/display/RES/Google+Code-in+2018) and watch [this short video](https://www.youtube.com/watch?v=HPxx1_svu_A) created by a previous OpenMRS GCI participant."
     dev_mailing_list: null
@@ -293,22 +308,22 @@
     leaders: 
       - 
         display_name: "anuar2k"
-        github_updated: 1540699568220
+        github_updated: 1540785963028
         id: 4862722740060160
         program_year: 2018
       - 
         display_name: "iperez"
-        github_updated: 1540699568184
+        github_updated: 1540785963016
         id: 5047208379416576
         program_year: 2018
       - 
         display_name: "Leader"
-        github_updated: 1540699568156
+        github_updated: 1540785963041
         id: 5372218268712960
         program_year: 2018
       - 
         display_name: "symt"
-        github_updated: 1540699568096
+        github_updated: 1540785963548
         id: 5468306787008512
         program_year: 2018
     mailing_list: "http://go.openmrs.org/lists"
@@ -345,7 +360,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/fossasia/fossasia"
-    completed_task_instance_count: 205
+    completed_task_instance_count: 276
     contact_email: "office@fossasia.org"
     description: "FOSSASIA develops Open Source software and hardware for conversational AIs, science and event management with a global developer community from its base in Asia. The organization organizes Open Technology events, runs coding programs and the #Codeheat development contest. The annual FOSSASIA Summit is the premier Open Technology event in Asia for developers, contributors, start-ups, and technology companies."
     dev_mailing_list: null
@@ -359,18 +374,41 @@
     leaders: 
       - 
         display_name: "AppleCat"
-        github_updated: 1540699572085
+        github_updated: 1540785966505
         id: 6288373984526336
         program_year: 2018
       - 
+        display_name: "KhanhMomo"
+        github_updated: 1540785966997
+        id: 6685699496476672
+        program_year: 2018
+      - 
+        display_name: "Nitesh Kumar"
+        github_account: "niteshkumarniranjan"
+        github_updated: 1540785966386
+        id: 5194881015218176
+        program_year: 2018
+      - 
         display_name: "ryan10145"
-        github_updated: 1540699572365
+        github_updated: 1540785966957
         id: 5542836112982016
         program_year: 2018
       - 
+        display_name: "Saarthak Chaturvedi"
+        github_account: "saarthakchats"
+        github_updated: 1540785966344
+        id: 4642948055564288
+        program_year: 2018
+      - 
         display_name: "Sahil Kumar"
-        github_updated: 1540699572054
+        github_updated: 1540785966572
         id: 5975490885058560
+        program_year: 2018
+      - 
+        display_name: "Sid"
+        github_account: "CharcoalStick"
+        github_updated: 1540785966463
+        id: 6436804514283520
         program_year: 2018
       - 
         display_name: "Supun_TE"
@@ -416,7 +454,7 @@
       image: "images/chat.png"
       platform: "OTHER"
       url: "http://chat.sugarlabs.org:9090/"
-    completed_task_instance_count: 155
+    completed_task_instance_count: 176
     contact_email: "sugar-devel@lists.sugarlabs.org"
     description: "Sugar is a learning platform that reinvents how computers are used for education. Collaboration, reflection, and discovery are integrated directly into the user interface. Sugar promotes \"studio thinking\" and \"reflective practice\". Through Sugar's clarity of design, children and teachers have the opportunity to use computers on their own terms. Students can reshape, reinvent, and reapply both software and content into powerful learning activities. Sugar's focus on sharing, criticism, and exploration is grounded in the culture of free software (FLOSS)."
     dev_mailing_list: null
@@ -429,23 +467,28 @@
     irc_channel: "http://chat.sugarlabs.org"
     leaders: 
       - 
+        display_name: "Alejandro Garcia"
+        github_updated: 1540785959160
+        id: 5739878407995392
+        program_year: 2018
+      - 
         display_name: "aryanharitsh"
-        github_updated: 1540699564012
+        github_updated: 1540785959064
         id: 4936817116708864
         program_year: 2018
       - 
         display_name: "Mayank Singh"
-        github_updated: 1540699563422
+        github_updated: 1540785959119
         id: 6042728195424256
         program_year: 2018
       - 
         display_name: "nathanjacob"
-        github_updated: 1540699563416
+        github_updated: 1540785959084
         id: 5437447715422208
         program_year: 2018
       - 
         display_name: "sdziuda"
-        github_updated: 1540699563893
+        github_updated: 1540785959594
         id: 6151703092002816
         program_year: 2018
     mailing_list: "http://lists.sugarlabs.org/listinfo/sugar-devel"
@@ -474,76 +517,12 @@
     winners: {}
   - 
     accepted_org_tos: true
-    blog_url: "https://communityblog.fedoraproject.org"
-    chat: 
-      image: "images/chat.png"
-      platform: "OTHER"
-      url: "https://webchat.freenode.net/?channels=#fedora-summer-coding"
-    completed_task_instance_count: 100
-    contact_email: "summer-coding@lists.fedoraproject.org"
-    description: "The Fedora Project is a community of people working together to build a free and open source software platform and to collaborate on and share user-focused solutions built on that platform. Or, in plain English, we make an operating system and we make it easy for you do useful stuff with it.\n\nA key component of this is our **Community**. This community, which you will join as an participant in Google Code In, is creating a platform that supports the work of a diverse audience. Your contributions can affect people you've never met in situations you've never dreamed of. The Fedora community includes software engineers, artists, system administrators, web designers, writers, speakers, and translators -- all of whom will be happy to help you get started.\n\nFull project description available here: https://docs.fedoraproject.org/en-US/project/\n\nWe believe that all contributors should expect and be part of a safe and friendly environment for constructive contribution. We can more effectively and successfully compare and challenge different ideas to find the best solutions for advancement, while building the size, diversity, and strength of our community."
-    dev_mailing_list: null
-    github: "fedora-infra"
-    gplus_url: "https://plus.google.com/+Fedora"
-    guide_to_working: ""
-    guide_to_working_url: ""
-    id: 6519771538391040
-    image_url: "//lh3.googleusercontent.com/zo8mqwAmBMso71C9TG-85hPJSCtESQEtscLP6GW_WAuSwMsrEKczN63Z7wmeQFdfHhSeLCe5sAylHy7uP7NBRQ"
-    irc_channel: "https://webchat.freenode.net/?channels=#fedora-summer-coding"
-    leaders: []
-    mailing_list: "https://lists.fedoraproject.org/admin/lists/summer-coding@lists.fedoraproject.org"
-    name: "Fedora Project"
-    precis: "Advance Free/Open Source Software/Content. Fedora is more than just one technology or concept it is a larger collaborative community."
-    preferred_contact_method: null
-    primary_open_source_license: "MIT license (MIT)"
-    program_year: 2018
-    programming_languages: 
-      - "linux"
-      - "python"
-      - "git"
-      - "postgresql"
-      - "ansible"
-    slug: "fedora-project"
-    stack_exchange: 
-      image: "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a"
-      url: "https://stackoverflow.com/tags/fedora"
-    status: 2
-    tags: 
-      - "distribution"
-      - "operating system"
-    twitter_url: "https://twitter.com/fedora"
-    website_url: "https://getfedora.org/"
-    wikidata_url: "//www.wikidata.org/wiki/Q109888"
-    wikipedia_urls: 
-      bg: "https://bg.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_Fedora"
-      en: "https://en.wikipedia.org/wiki/Fedora_Project"
-      es: "https://es.wikipedia.org/wiki/Proyecto_Fedora"
-      fa: "https://fa.wikipedia.org/wiki/%D9%BE%D8%B1%D9%88%DA%98%D9%87_%D9%81%D8%AF%D9%88%D8%B1%D8%A7"
-      fr: "https://fr.wikipedia.org/wiki/Fedora_Project"
-      he: "https://he.wikipedia.org/wiki/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98_%D7%A4%D7%93%D7%95%D7%A8%D7%94"
-      id: "https://id.wikipedia.org/wiki/Fedora_Project"
-      ja: "https://ja.wikipedia.org/wiki/Fedora_Project"
-      ko: "https://ko.wikipedia.org/wiki/%ED%8E%98%EB%8F%84%EB%9D%BC_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8"
-      ms: "https://ms.wikipedia.org/wiki/Projek_Fedora"
-      ne: "https://ne.wikipedia.org/wiki/%E0%A4%AB%E0%A5%87%E0%A4%A1%E0%A5%8B%E0%A4%B0%E0%A4%BE_%E0%A4%B2%E0%A4%BF%E0%A4%A8%E0%A4%95%E0%A5%8D%E0%A4%B8"
-      no: "https://no.wikipedia.org/wiki/Fedora_Project"
-      pl: "https://pl.wikipedia.org/wiki/Fedora_Project"
-      pt: "https://pt.wikipedia.org/wiki/Projeto_Fedora"
-      ru: "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_Fedora"
-      simple: "https://simple.wikipedia.org/wiki/Fedora_Project"
-      sq: "https://sq.wikipedia.org/wiki/Fedora_Project"
-      uk: "https://uk.wikipedia.org/wiki/Fedora_Project"
-      uz: "https://uz.wikipedia.org/wiki/Fedora_Loyihasi"
-      zh: "https://zh.wikipedia.org/wiki/Fedora%E5%B0%88%E6%A1%88"
-    winners: {}
-  - 
-    accepted_org_tos: true
     blog_url: "https://wikimediafoundation.org/news/"
     chat: 
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "https://www.mediawiki.org/wiki/MediaWiki_on_IRC"
-    completed_task_instance_count: 93
+    completed_task_instance_count: 117
     contact_email: ""
     description: "Wikimedia believes that knowledge should be free for every human being. We prioritize efforts that empower disadvantaged and underrepresented communities, and that help overcome barriers to participation. We believe in mass collaboration, diversity and consensus building to achieve our goals.\nWikipedia has become the fifth most-visited site in the world, used by more than 400 million people every month in more than 280 languages. We have more content projects including Wikimedia Commons, Wikidata, or Wikisource. We also maintain the MediaWiki software engine and a wide collection of free and open source software projects around it. Those software projects use a variety of technologies and languages, such as PHP, JavaScript, node.js, CSS, Lua, Java, Objective-C, or C++, to mention a few.\nBut there is much more we can do: stabilize infrastructure, increase participation, improve quality, increase reach, encourage innovation.\nYou can help to these goals in many ways and become part of an international community!"
     dev_mailing_list: null
@@ -557,37 +536,37 @@
     leaders: 
       - 
         display_name: "arcaynia"
-        github_updated: 1540699564051
+        github_updated: 1540785959841
         id: 6509367433101312
         program_year: 2018
       - 
         display_name: "Jan Rosa"
-        github_updated: 1540699564079
+        github_updated: 1540785959842
         id: 4933284489330688
         program_year: 2018
       - 
         display_name: "MrSpecjal"
-        github_updated: 1540699564563
+        github_updated: 1540785960292
         id: 6599814142754816
         program_year: 2018
       - 
         display_name: "Nathan"
-        github_updated: 1540699564107
+        github_updated: 1540785959842
         id: 6751850784096256
         program_year: 2018
       - 
         display_name: "safan41"
-        github_updated: 1540699564560
+        github_updated: 1540785960282
         id: 5055514560954368
         program_year: 2018
       - 
         display_name: "stibba"
-        github_updated: 1540699564079
+        github_updated: 1540785959831
         id: 5590612691648512
         program_year: 2018
       - 
         display_name: "takidelfin"
-        github_updated: 1540699564609
+        github_updated: 1540785960274
         id: 5938919741849600
         program_year: 2018
     mailing_list: "https://lists.wikimedia.org/mailman/listinfo/wikitech-l"
@@ -783,12 +762,81 @@
     winners: {}
   - 
     accepted_org_tos: true
+    blog_url: "https://communityblog.fedoraproject.org"
+    chat: 
+      image: "images/chat.png"
+      platform: "OTHER"
+      url: "https://webchat.freenode.net/?channels=#fedora-summer-coding"
+    completed_task_instance_count: 105
+    contact_email: "summer-coding@lists.fedoraproject.org"
+    description: "The Fedora Project is a community of people working together to build a free and open source software platform and to collaborate on and share user-focused solutions built on that platform. Or, in plain English, we make an operating system and we make it easy for you do useful stuff with it.\n\nA key component of this is our **Community**. This community, which you will join as an participant in Google Code In, is creating a platform that supports the work of a diverse audience. Your contributions can affect people you've never met in situations you've never dreamed of. The Fedora community includes software engineers, artists, system administrators, web designers, writers, speakers, and translators -- all of whom will be happy to help you get started.\n\nFull project description available here: https://docs.fedoraproject.org/en-US/project/\n\nWe believe that all contributors should expect and be part of a safe and friendly environment for constructive contribution. We can more effectively and successfully compare and challenge different ideas to find the best solutions for advancement, while building the size, diversity, and strength of our community."
+    dev_mailing_list: null
+    github: "fedora-infra"
+    gplus_url: "https://plus.google.com/+Fedora"
+    guide_to_working: ""
+    guide_to_working_url: ""
+    id: 6519771538391040
+    image_url: "//lh3.googleusercontent.com/zo8mqwAmBMso71C9TG-85hPJSCtESQEtscLP6GW_WAuSwMsrEKczN63Z7wmeQFdfHhSeLCe5sAylHy7uP7NBRQ"
+    irc_channel: "https://webchat.freenode.net/?channels=#fedora-summer-coding"
+    leaders: 
+      - 
+        display_name: "echoduck"
+        github_updated: 1540785961604
+        id: 6522669181698048
+        program_year: 2018
+    mailing_list: "https://lists.fedoraproject.org/admin/lists/summer-coding@lists.fedoraproject.org"
+    name: "Fedora Project"
+    precis: "Advance Free/Open Source Software/Content. Fedora is more than just one technology or concept it is a larger collaborative community."
+    preferred_contact_method: null
+    primary_open_source_license: "MIT license (MIT)"
+    program_year: 2018
+    programming_languages: 
+      - "linux"
+      - "python"
+      - "git"
+      - "postgresql"
+      - "ansible"
+    slug: "fedora-project"
+    stack_exchange: 
+      image: "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a"
+      url: "https://stackoverflow.com/tags/fedora"
+    status: 2
+    tags: 
+      - "distribution"
+      - "operating system"
+    twitter_url: "https://twitter.com/fedora"
+    website_url: "https://getfedora.org/"
+    wikidata_url: "//www.wikidata.org/wiki/Q109888"
+    wikipedia_urls: 
+      bg: "https://bg.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_Fedora"
+      en: "https://en.wikipedia.org/wiki/Fedora_Project"
+      es: "https://es.wikipedia.org/wiki/Proyecto_Fedora"
+      fa: "https://fa.wikipedia.org/wiki/%D9%BE%D8%B1%D9%88%DA%98%D9%87_%D9%81%D8%AF%D9%88%D8%B1%D8%A7"
+      fr: "https://fr.wikipedia.org/wiki/Fedora_Project"
+      he: "https://he.wikipedia.org/wiki/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98_%D7%A4%D7%93%D7%95%D7%A8%D7%94"
+      id: "https://id.wikipedia.org/wiki/Fedora_Project"
+      ja: "https://ja.wikipedia.org/wiki/Fedora_Project"
+      ko: "https://ko.wikipedia.org/wiki/%ED%8E%98%EB%8F%84%EB%9D%BC_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8"
+      ms: "https://ms.wikipedia.org/wiki/Projek_Fedora"
+      ne: "https://ne.wikipedia.org/wiki/%E0%A4%AB%E0%A5%87%E0%A4%A1%E0%A5%8B%E0%A4%B0%E0%A4%BE_%E0%A4%B2%E0%A4%BF%E0%A4%A8%E0%A4%95%E0%A5%8D%E0%A4%B8"
+      no: "https://no.wikipedia.org/wiki/Fedora_Project"
+      pl: "https://pl.wikipedia.org/wiki/Fedora_Project"
+      pt: "https://pt.wikipedia.org/wiki/Projeto_Fedora"
+      ru: "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_Fedora"
+      simple: "https://simple.wikipedia.org/wiki/Fedora_Project"
+      sq: "https://sq.wikipedia.org/wiki/Fedora_Project"
+      uk: "https://uk.wikipedia.org/wiki/Fedora_Project"
+      uz: "https://uz.wikipedia.org/wiki/Fedora_Loyihasi"
+      zh: "https://zh.wikipedia.org/wiki/Fedora%E5%B0%88%E6%A1%88"
+    winners: {}
+  - 
+    accepted_org_tos: true
     blog_url: null
     chat: 
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "irc://chat.freenode.net/haiku"
-    completed_task_instance_count: 73
+    completed_task_instance_count: 91
     contact_email: "contact@haiku-os.org"
     description: "Haiku is named after the classical three-line Japanese poetry form. Haiku poetry is known for its quiet power, elegance and simplicity - among the core qualities of BeOS which we aim to recreate in Haiku. BeOS included some haiku in its user interface, in the form of network error messages displayed by its web browser.\n\nWhile Haiku is now approaching its first Beta release, another goal for the project is to share knowledge about operating system development, with a clean code base and a community ready to help newcomers learn how things are done."
     dev_mailing_list: null
@@ -799,7 +847,17 @@
     id: 5758159248424960
     image_url: "//lh3.googleusercontent.com/Jx1JnYQ2qb5eiCPv813LEvmGFfgNaYDNYVuMEH-Ij2tOCs-eKlozCUNJstkeG-MC2uvbZXU9GKtfjUPewYMJ6A"
     irc_channel: "https://www.haiku-os.org/community/irc/"
-    leaders: []
+    leaders: 
+      - 
+        display_name: "BachToTheFuture"
+        github_updated: 1540785958124
+        id: 6487090712805376
+        program_year: 2018
+      - 
+        display_name: "Ojasva"
+        github_updated: 1540785958592
+        id: 5524143878438912
+        program_year: 2018
     mailing_list: "https://www.haiku-os.org/community/ml"
     name: "Haiku"
     precis: "Haiku is an open-source operating system that specifically targets personal computing. Haiku is fast, simple to use, easy to learn and yet very powerful."
@@ -930,12 +988,73 @@
     winners: {}
   - 
     accepted_org_tos: true
+    blog_url: null
+    chat: 
+      image: "images/chat.png"
+      platform: "OTHER"
+      url: "https://ccextractor.org/public:general:support"
+    completed_task_instance_count: 75
+    contact_email: "contactus@ccextractor.org"
+    description: "The org that creates the de-facto open source tool for everything related to media (TV, movies, etc) accessibility via subtitles. So if you ever watch something subtitled to learn a second language or because you have a hearing disability, chances are we were involved. And - we're branching out with lots of new things: Google Assistant, AI, and more. We welcome all new ideas.\n\nParticipants in all categories have a real chance to win. Last year our winners were a coder and a designer. It takes talent, dedication and a willingness to learn and have fun. Mentors never give up on students that don't give up, so if even if you are starting from zero (note: no one really is, everybody knows something) you can still get far."
+    dev_mailing_list: null
+    github: "CCExtractor"
+    gitlab: null
+    gplus_url: null
+    guide_to_working: "Questions? https://ccextractor.org/public:general:support"
+    guide_to_working_url: ""
+    id: 5683807324733440
+    image_url: "//lh3.googleusercontent.com/BrDPWRvgO5Yec8vvdVM_HB_XXzbjRQFNhTINVjW2CSScBR3wxCE3w7QgzS8jXU1e6whWIi1y7QEGlv4VIM_qGps"
+    irc_channel: "https://ccextractor.org/public:general:support"
+    leaders: 
+      - 
+        display_name: "Ivan Makarov"
+        github_updated: 1540785957534
+        id: 5817552237232128
+        program_year: 2018
+      - 
+        display_name: "Matej Plavevski"
+        github_updated: 1540785957472
+        id: 5993067870945280
+        program_year: 2018
+      - 
+        display_name: "T1duS"
+        github_updated: 1540785957890
+        id: 5752859812429824
+        program_year: 2018
+    mailing_list: "https://groups.google.com/forum/#!forum/ccextractor-dev"
+    name: "CCExtractor Development"
+    precis: "We make media accessible to everybody"
+    preferred_contact_method: null
+    primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
+    program_year: 2018
+    programming_languages: 
+      - "c"
+      - "python"
+      - "mp4"
+      - "h264"
+      - "dialogflow"
+    slug: "ccextractor-development"
+    stack_exchange: null
+    status: 2
+    tags: 
+      - "assistant"
+      - "media"
+      - "video"
+      - "subtitles"
+      - "ai"
+    twitter_url: null
+    website_url: "https://ccextractor.org"
+    wikidata_url: null
+    wikipedia_urls: null
+    winners: {}
+  - 
+    accepted_org_tos: true
     blog_url: "https://terasology.org/"
     chat: 
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
-    completed_task_instance_count: 66
+    completed_task_instance_count: 73
     contact_email: "terasology@gmail.com"
     description: "MovingBlocks is the original name of the organization behind Terasology, DestinationSol, and a series of related work aimed at making game development in Java easier and more fun\n\nAfter participating in programs like GSOC and GCI for years we're becoming The Terasology Foundation, a registered non-profit, and look forward to years more of educational awareness, challenging architecture, powerful developer workspaces, fun content, and much more\n\nTerasology is a super extensible open source voxel-based game. Born from a Minecraft-inspired tech demo, it is gradually becoming a stable platform for all sorts of gameplay settings in a voxel world\n\nFrom the ground up, Terasology was built to be a super hackable and modular game. We host a large amount of game content modules under the Terasology organization on GitHub, all community maintained. We welcome new ideas, both crazy and well thought-out for modules and game extensions from anyone and everyone, so feel free to talk to us on IRC or Discord\n\nDestination Sol is a fun little space arcade shooter we adopted as open source to learn more about LibGDX, releasing on Steam and Google Play, and to have somewhere to apply our frameworks\n\nThe creators and maintainers are a diverse mix of software developers, designers, game testers, graphic artists, musicians and even a few open source loving high schoolers. We encourage and appreciate contributions from everybody, and try to be as warm and welcoming as possible to newcomers"
     dev_mailing_list: null
@@ -948,10 +1067,20 @@
     irc_channel: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
     leaders: 
       - 
+        display_name: "Graviton"
+        github_updated: 1540785958520
+        id: 5890519252074496
+        program_year: 2018
+      - 
         display_name: "MK"
         github_account: "mkalb"
         github_updated: 1540699562854
         id: 6682529508622336
+        program_year: 2018
+      - 
+        display_name: "Phoenix909"
+        github_updated: 1540785958493
+        id: 6435702167306240
         program_year: 2018
     mailing_list: "https://forum.terasology.org/forum/"
     name: "MovingBlocks"
@@ -982,63 +1111,12 @@
     winners: {}
   - 
     accepted_org_tos: true
-    blog_url: null
-    chat: 
-      image: "images/chat.png"
-      platform: "OTHER"
-      url: "https://ccextractor.org/public:general:support"
-    completed_task_instance_count: 61
-    contact_email: "contactus@ccextractor.org"
-    description: "The org that creates the de-facto open source tool for everything related to media (TV, movies, etc) accessibility via subtitles. So if you ever watch something subtitled to learn a second language or because you have a hearing disability, chances are we were involved. And - we're branching out with lots of new things: Google Assistant, AI, and more. We welcome all new ideas.\n\nParticipants in all categories have a real chance to win. Last year our winners were a coder and a designer. It takes talent, dedication and a willingness to learn and have fun. Mentors never give up on students that don't give up, so if even if you are starting from zero (note: no one really is, everybody knows something) you can still get far."
-    dev_mailing_list: null
-    github: "CCExtractor"
-    gitlab: null
-    gplus_url: null
-    guide_to_working: "Questions? https://ccextractor.org/public:general:support"
-    guide_to_working_url: ""
-    id: 5683807324733440
-    image_url: "//lh3.googleusercontent.com/BrDPWRvgO5Yec8vvdVM_HB_XXzbjRQFNhTINVjW2CSScBR3wxCE3w7QgzS8jXU1e6whWIi1y7QEGlv4VIM_qGps"
-    irc_channel: "https://ccextractor.org/public:general:support"
-    leaders: 
-      - 
-        display_name: "Ivan Makarov"
-        github_updated: 1540699561613
-        id: 5817552237232128
-        program_year: 2018
-    mailing_list: "https://groups.google.com/forum/#!forum/ccextractor-dev"
-    name: "CCExtractor Development"
-    precis: "We make media accessible to everybody"
-    preferred_contact_method: null
-    primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
-    program_year: 2018
-    programming_languages: 
-      - "c"
-      - "python"
-      - "mp4"
-      - "h264"
-      - "dialogflow"
-    slug: "ccextractor-development"
-    stack_exchange: null
-    status: 2
-    tags: 
-      - "assistant"
-      - "media"
-      - "video"
-      - "subtitles"
-      - "ai"
-    twitter_url: null
-    website_url: "https://ccextractor.org"
-    wikidata_url: null
-    wikipedia_urls: null
-    winners: {}
-  - 
-    accepted_org_tos: true
     blog_url: "https://blog.musicbrainz.org/"
     chat: 
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "irc://irc.freenode.net/musicbrainz"
-    completed_task_instance_count: 45
+    completed_task_instance_count: 63
     contact_email: "support@metabrainz.org"
     description: "The MetaBrainz Foundation provides the backbone for [a number of projects](https://metabrainz.org/projects) rooted in crowd sourcing open data, namely:\n\n* [MusicBrainz](https://musicbrainz.org/): open music metadata database\n* [MusicBrainz Picard](https://picard.musicbrainz.org/): music file tagger, using data from MusicBrainz\n* [BookBrainz](https://bookbrainz.org/): open \"book\" database\n* [ListenBrainz](https://listenbrainz.org/): repository of listen data\n* [AcousticBrainz](https://acousticbrainz.org/): crowd sourced database of acoustic information for music\n* [CritiqueBrainz](https://critiquebrainz.org/): Creative Commons-licensed reviews\n* [Cover Art Archive](https://coverartarchive.org/): repository of album cover art"
     dev_mailing_list: null
@@ -1049,7 +1127,12 @@
     id: 5353072260808704
     image_url: "//lh3.googleusercontent.com/pothvfKKMOM1e-SrPJ3vQKvw5ojTdW9mBsiWLMqRH3d92XqCQT4HajIWLsE8kfzfEKGdwE9RJPovRY8TtFcx0QI"
     irc_channel: "https://musicbrainz.org/doc/Communication/IRC"
-    leaders: []
+    leaders: 
+      - 
+        display_name: "C1e0"
+        github_updated: 1540785959279
+        id: 5033418363502592
+        program_year: 2018
     mailing_list: "https://community.metabrainz.org/"
     name: "MetaBrainz Foundation"
     precis: "Crowd sourced open data projects: MusicBrainz, BookBrainz, ListenBrainz, AcousticBrainz, CritiqueBrainz, Cover Art Archive, …"
@@ -1081,77 +1164,61 @@
     winners: {}
   - 
     accepted_org_tos: true
-    blog_url: "http://planet.osgeo.org/"
+    blog_url: null
     chat: 
-      image: "images/logos/irc.png"
-      platform: "IRC"
-      url: "irc://irc.freenode.net/#osgeo"
-    completed_task_instance_count: 44
-    contact_email: "gci-admin@osgeo.org"
-    description: "OSGeo is a non-profit organization serving as an umbrella organization for the Open Source Geospatial community in general and several code projects in particular:\n\n## Content Management Systems\n\nGeoNode\n\n## Desktop Applications\n\nGRASS GIS\ngvSIG\nMarble\nQGIS\n\n## Geospatial Libraries\n\nFDO\nGDAL/OGR\nGEOS\nGeoTools\nOrfeo ToolBox (OTB)\nOSSIM\nPostGIS\n\n## Metadata Catalogs\n\nGeoNetwork\npycsw\n\n## Web Mapping\n\ndeegree\ngeomajas\nGeoMOOSE\nGeoServer\nMapbender\nMapFish\nMapGuide Open Source\nMapServer\nOpenLayers\nPyWPS\n\n## Incubating Projects\n\nistSOS\nMetaCRS\nOpticks\nOskari\nTeam Engine\nZOO-Project\n\n## Outreach Projects\n\nGeoForAll - Education and Curriculum\nOSGeo-Live\n\n## OSGeo Community Projects\n\nGeoinformatica\nGeoWebCache\nMapProxy\npgRouting\nPortable GIS\nPostal Address Geo-Coder\nProj4php\nPronto Raster\nVirtual Terrain Project\n\nWe host regional and international FOSS4G conferences with typical attendance of 500-1200+ geospatial developers, industry and government leaders, and researchers. Our mailing lists collectively go out to ~ 31.050 unique subscribers."
+      image: "images/chat.png"
+      platform: "OTHER"
+      url: "https://discordapp.com/invite/UfR5qrF"
+    completed_task_instance_count: 61
+    contact_email: "contact@catrobat.org"
+    description: "You can easily create your own apps, games, and animations directly on your smartphone using an intuitive yet powerful visual programming app. Simply drag and drop Lego-like bricks with our free apps (Android and iOS) and design your very first interactive games or animations within minutes, without any previous knowledge. You can use your phone’s sensors, camera, high resolution multi-touch screen, a powerful and fast physics game engine, or connect your program wirelessly with Arduino, Raspberry Pi, or Lego Mindstorms robots. A built-in powerful paint app (transparency, layers, zoom to pixel) and a multi-media library with awesome images and sounds allow you to get started immediately. If you have a smart TV, you can even create Wii/Kinect style games directly on your phone. More than 600 contributors have already been part of our free open source software (FOSS) project. At the same time, Catrobat is also a meta-FOSS project, as users are encouraged to easily share and remix projects under an open source license on our community platform --- more than 30 million projects can be downloaded through our apps. Learn from others, remix, or collaborate on projects with your friends. Catrobat fosters an open mindset and helps everyone to become part of a growing international community. Share your projects, chat with others on our Discord channels, and check out how others have created their awesome app. Join us and become part of Catrobat!"
     dev_mailing_list: null
-    github: "OSGeo"
-    gitlab: "osgeo"
-    gplus_url: "https://plus.google.com/communities/105969056638310510633"
-    guide_to_working: "Don't forget to join the IRC channel to ask mentors questions) Don't forget to join the #osgeo-gci IRC channel to ask mentors questions, on freenode.net (connect directly in your browser through https://webchat.freenode.net/?channels=osgeo-gci )"
-    guide_to_working_url: "https://wiki.osgeo.org/wiki/Google_Code_In_2018#Communication"
-    id: 6554727337689088
-    image_url: "//lh3.googleusercontent.com/KAMzCpyzA-aSidNJrsUE7VS-nEJT04eFJpL99tT-N1pNLKXtUkdw2v5GHclpVewZSY-usvU2F67w5RAq_ZlU-dc"
-    irc_channel: "https://wiki.osgeo.org/wiki/IRC"
+    github: "Catrobat"
+    gplus_url: "https://plus.google.com/communities/116816272940643231129"
+    guide_to_working: "There is an opportunity for live remote video assistance by our mentors, check out https://catrob.at/MentoringRequest !\nFor more info, discussion or quick questions head over to our discord at https://catrob.at/dpc"
+    guide_to_working_url: ""
+    id: 6566285799325696
+    image_url: "//lh3.googleusercontent.com/IsUSXXZZc5fYmwZ25D17pu75BtID_Vi8zkoCASKfrQHNgpVFOWhsbIv7naf4SKUv_xQigejX2Tizmg_fb5Vjato"
+    irc_channel: "https://catrob.at/dpc"
     leaders: 
       - 
-        display_name: "ShubhamSharama"
-        github_updated: 1540699562891
-        id: 4731796802502656
+        display_name: "Martina Hanusova"
+        github_updated: 1540785959042
+        id: 6125194016980992
         program_year: 2018
       - 
-        display_name: "SunveerSingh"
-        github_updated: 1540699563298
-        id: 5573113417826304
+        display_name: "MateuszKomajda"
+        github_updated: 1540785959016
+        id: 5857541150998528
         program_year: 2018
-    mailing_list: "https://www.osgeo.org/community/communications/"
-    name: "OSGeo"
-    precis: "OSGeo is a non-profit organization serving as an umbrella organization for the Open Source Geospatial community."
+      - 
+        display_name: "Łukasz Ameljan"
+        github_updated: 1540785959040
+        id: 5403911100825600
+        program_year: 2018
+    mailing_list: "https://groups.google.com/forum/#!forum/pocketcode"
+    name: "Catrobat"
+    precis: "Create your own game apps in a visual way directly on your smartphone!"
     preferred_contact_method: null
-    primary_open_source_license: "MIT license (MIT)"
+    primary_open_source_license: "Affero GNU Public License"
     program_year: 2018
     programming_languages: 
-      - "c"
+      - "catrobat"
       - "java"
-      - "python"
-      - "javascript"
-      - "c++"
-    slug: "osgeo"
-    stack_exchange: 
-      image: "https://cdn.sstatic.net/Sites/gis/img/apple-touch-icon.png?v=5bbd8af2ce1b"
-      url: "https://gis.stackexchange.com/tags/osgeo"
+      - "swift"
+    slug: "catrobat"
+    stack_exchange: null
     status: 2
     tags: 
-      - "geospatial"
-      - "maps"
-      - "cartography"
-      - "gis"
-      - "application"
-    twitter_url: "https://twitter.com/osgeo"
-    website_url: "https://osgeo.org"
-    wikidata_url: "//www.wikidata.org/wiki/Q1197305"
-    wikipedia_urls: 
-      cs: "https://cs.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
-      de: "https://de.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
-      en: "https://en.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
-      es: "https://es.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
-      fi: "https://fi.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
-      fr: "https://fr.wikipedia.org/wiki/Fondation_Open_Source_Geospatial"
-      gl: "https://gl.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
-      hr: "https://hr.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
-      it: "https://it.wikipedia.org/wiki/OSGeo"
-      ja: "https://ja.wikipedia.org/wiki/OSGeo%E8%B2%A1%E5%9B%A3"
-      km: "https://km.wikipedia.org/wiki/OSGeo"
-      ko: "https://ko.wikipedia.org/wiki/%EC%98%A4%ED%94%88_%EC%86%8C%EC%8A%A4_%EC%A7%80%EB%A6%AC%EA%B3%B5%EA%B0%84_%EC%9E%AC%EB%8B%A8"
-      ml: "https://ml.wikipedia.org/wiki/%E0%B4%93%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%BA_%E0%B4%B8%E0%B5%8B%E0%B4%B4%E0%B5%8D%E0%B4%B8%E0%B5%8D_%E0%B4%9C%E0%B4%BF%E0%B4%AF%E0%B5%8B%E0%B4%B8%E0%B5%8D%E0%B4%AA%E0%B5%87%E0%B4%B7%E0%B5%8D%E0%B4%AF%E0%B5%BD_%E0%B4%AB%E0%B5%97%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B5%87%E0%B4%B7%E0%B5%BB"
-      pl: "https://pl.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
-      sr: "https://sr.wikipedia.org/wiki/%D0%9E%D0%A1%D0%93%D0%B5%D0%BE"
-      zh: "https://zh.wikipedia.org/wiki/%E5%BC%80%E6%BA%90%E5%9C%B0%E7%90%86%E7%A9%BA%E9%97%B4%E5%9F%BA%E9%87%91%E4%BC%9A"
+      - "apps"
+      - "games"
+      - "visual programming"
+      - "android"
+      - "ios"
+    twitter_url: "http://twitter.com/Pocket_Code"
+    website_url: "https://catrobat.org"
+    wikidata_url: "//www.wikidata.org/wiki/Q45341807"
+    wikipedia_urls: null
     winners: {}
   - 
     accepted_org_tos: true
@@ -1160,7 +1227,7 @@
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "irc://irc.freenode.net/#apertium"
-    completed_task_instance_count: 36
+    completed_task_instance_count: 53
     contact_email: "apertium-contact@lists.sourceforge.net"
     description: "Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs (such as Spanish–Catalan) but which has been expanded to deal with more divergent language pairs (such as English–Catalan and even Basque→English). The platform provides:\n\n * a language-independent machine translation engine\n * tools to manage the linguistic data necessary to build a machine translation system for a given language pair and\n * linguistic data for a growing number of languages and language pairs\n\nWe particularly aim at supporting low-resourced and marginalised languages, and in addition to machine translation work on a variety of other natural language processing and language technology applications: spellchecking, morphological analysis, treebanking, etc."
     dev_mailing_list: null
@@ -1249,46 +1316,77 @@
     winners: {}
   - 
     accepted_org_tos: true
-    blog_url: null
+    blog_url: "http://planet.osgeo.org/"
     chat: 
-      image: "images/chat.png"
-      platform: "OTHER"
-      url: "https://discordapp.com/invite/UfR5qrF"
-    completed_task_instance_count: 35
-    contact_email: "contact@catrobat.org"
-    description: "You can easily create your own apps, games, and animations directly on your smartphone using an intuitive yet powerful visual programming app. Simply drag and drop Lego-like bricks with our free apps (Android and iOS) and design your very first interactive games or animations within minutes, without any previous knowledge. You can use your phone’s sensors, camera, high resolution multi-touch screen, a powerful and fast physics game engine, or connect your program wirelessly with Arduino, Raspberry Pi, or Lego Mindstorms robots. A built-in powerful paint app (transparency, layers, zoom to pixel) and a multi-media library with awesome images and sounds allow you to get started immediately. If you have a smart TV, you can even create Wii/Kinect style games directly on your phone. More than 600 contributors have already been part of our free open source software (FOSS) project. At the same time, Catrobat is also a meta-FOSS project, as users are encouraged to easily share and remix projects under an open source license on our community platform --- more than 30 million projects can be downloaded through our apps. Learn from others, remix, or collaborate on projects with your friends. Catrobat fosters an open mindset and helps everyone to become part of a growing international community. Share your projects, chat with others on our Discord channels, and check out how others have created their awesome app. Join us and become part of Catrobat!"
+      image: "images/logos/irc.png"
+      platform: "IRC"
+      url: "irc://irc.freenode.net/#osgeo"
+    completed_task_instance_count: 53
+    contact_email: "gci-admin@osgeo.org"
+    description: "OSGeo is a non-profit organization serving as an umbrella organization for the Open Source Geospatial community in general and several code projects in particular:\n\n## Content Management Systems\n\nGeoNode\n\n## Desktop Applications\n\nGRASS GIS\ngvSIG\nMarble\nQGIS\n\n## Geospatial Libraries\n\nFDO\nGDAL/OGR\nGEOS\nGeoTools\nOrfeo ToolBox (OTB)\nOSSIM\nPostGIS\n\n## Metadata Catalogs\n\nGeoNetwork\npycsw\n\n## Web Mapping\n\ndeegree\ngeomajas\nGeoMOOSE\nGeoServer\nMapbender\nMapFish\nMapGuide Open Source\nMapServer\nOpenLayers\nPyWPS\n\n## Incubating Projects\n\nistSOS\nMetaCRS\nOpticks\nOskari\nTeam Engine\nZOO-Project\n\n## Outreach Projects\n\nGeoForAll - Education and Curriculum\nOSGeo-Live\n\n## OSGeo Community Projects\n\nGeoinformatica\nGeoWebCache\nMapProxy\npgRouting\nPortable GIS\nPostal Address Geo-Coder\nProj4php\nPronto Raster\nVirtual Terrain Project\n\nWe host regional and international FOSS4G conferences with typical attendance of 500-1200+ geospatial developers, industry and government leaders, and researchers. Our mailing lists collectively go out to ~ 31.050 unique subscribers."
     dev_mailing_list: null
-    github: "Catrobat"
-    gplus_url: "https://plus.google.com/communities/116816272940643231129"
-    guide_to_working: "There is an opportunity for live remote video assistance by our mentors, check out https://catrob.at/MentoringRequest !\nFor more info, discussion or quick questions head over to our discord at https://catrob.at/dpc"
-    guide_to_working_url: ""
-    id: 6566285799325696
-    image_url: "//lh3.googleusercontent.com/IsUSXXZZc5fYmwZ25D17pu75BtID_Vi8zkoCASKfrQHNgpVFOWhsbIv7naf4SKUv_xQigejX2Tizmg_fb5Vjato"
-    irc_channel: "https://catrob.at/dpc"
-    leaders: []
-    mailing_list: "https://groups.google.com/forum/#!forum/pocketcode"
-    name: "Catrobat"
-    precis: "Create your own game apps in a visual way directly on your smartphone!"
+    github: "OSGeo"
+    gitlab: "osgeo"
+    gplus_url: "https://plus.google.com/communities/105969056638310510633"
+    guide_to_working: "Don't forget to join the IRC channel to ask mentors questions) Don't forget to join the #osgeo-gci IRC channel to ask mentors questions, on freenode.net (connect directly in your browser through https://webchat.freenode.net/?channels=osgeo-gci )"
+    guide_to_working_url: "https://wiki.osgeo.org/wiki/Google_Code_In_2018#Communication"
+    id: 6554727337689088
+    image_url: "//lh3.googleusercontent.com/KAMzCpyzA-aSidNJrsUE7VS-nEJT04eFJpL99tT-N1pNLKXtUkdw2v5GHclpVewZSY-usvU2F67w5RAq_ZlU-dc"
+    irc_channel: "https://wiki.osgeo.org/wiki/IRC"
+    leaders: 
+      - 
+        display_name: "ShubhamSharama"
+        github_updated: 1540785958005
+        id: 4731796802502656
+        program_year: 2018
+      - 
+        display_name: "SunveerSingh"
+        github_updated: 1540785958510
+        id: 5573113417826304
+        program_year: 2018
+    mailing_list: "https://www.osgeo.org/community/communications/"
+    name: "OSGeo"
+    precis: "OSGeo is a non-profit organization serving as an umbrella organization for the Open Source Geospatial community."
     preferred_contact_method: null
-    primary_open_source_license: "Affero GNU Public License"
+    primary_open_source_license: "MIT license (MIT)"
     program_year: 2018
     programming_languages: 
-      - "catrobat"
+      - "c"
       - "java"
-      - "swift"
-    slug: "catrobat"
-    stack_exchange: null
+      - "python"
+      - "javascript"
+      - "c++"
+    slug: "osgeo"
+    stack_exchange: 
+      image: "https://cdn.sstatic.net/Sites/gis/img/apple-touch-icon.png?v=5bbd8af2ce1b"
+      url: "https://gis.stackexchange.com/tags/osgeo"
     status: 2
     tags: 
-      - "apps"
-      - "games"
-      - "visual programming"
-      - "android"
-      - "ios"
-    twitter_url: "http://twitter.com/Pocket_Code"
-    website_url: "https://catrobat.org"
-    wikidata_url: "//www.wikidata.org/wiki/Q45341807"
-    wikipedia_urls: null
+      - "geospatial"
+      - "maps"
+      - "cartography"
+      - "gis"
+      - "application"
+    twitter_url: "https://twitter.com/osgeo"
+    website_url: "https://osgeo.org"
+    wikidata_url: "//www.wikidata.org/wiki/Q1197305"
+    wikipedia_urls: 
+      cs: "https://cs.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
+      de: "https://de.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
+      en: "https://en.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
+      es: "https://es.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
+      fi: "https://fi.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
+      fr: "https://fr.wikipedia.org/wiki/Fondation_Open_Source_Geospatial"
+      gl: "https://gl.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
+      hr: "https://hr.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
+      it: "https://it.wikipedia.org/wiki/OSGeo"
+      ja: "https://ja.wikipedia.org/wiki/OSGeo%E8%B2%A1%E5%9B%A3"
+      km: "https://km.wikipedia.org/wiki/OSGeo"
+      ko: "https://ko.wikipedia.org/wiki/%EC%98%A4%ED%94%88_%EC%86%8C%EC%8A%A4_%EC%A7%80%EB%A6%AC%EA%B3%B5%EA%B0%84_%EC%9E%AC%EB%8B%A8"
+      ml: "https://ml.wikipedia.org/wiki/%E0%B4%93%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%BA_%E0%B4%B8%E0%B5%8B%E0%B4%B4%E0%B5%8D%E0%B4%B8%E0%B5%8D_%E0%B4%9C%E0%B4%BF%E0%B4%AF%E0%B5%8B%E0%B4%B8%E0%B5%8D%E0%B4%AA%E0%B5%87%E0%B4%B7%E0%B5%8D%E0%B4%AF%E0%B5%BD_%E0%B4%AB%E0%B5%97%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B5%87%E0%B4%B7%E0%B5%BB"
+      pl: "https://pl.wikipedia.org/wiki/Open_Source_Geospatial_Foundation"
+      sr: "https://sr.wikipedia.org/wiki/%D0%9E%D0%A1%D0%93%D0%B5%D0%BE"
+      zh: "https://zh.wikipedia.org/wiki/%E5%BC%80%E6%BA%90%E5%9C%B0%E7%90%86%E7%A9%BA%E9%97%B4%E5%9F%BA%E9%87%91%E4%BC%9A"
     winners: {}
   - 
     accepted_org_tos: true
@@ -1297,7 +1395,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/coala"
-    completed_task_instance_count: 34
+    completed_task_instance_count: 40
     contact_email: null
     description: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\n\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below."
     dev_mailing_list: null
@@ -1311,8 +1409,13 @@
     irc_channel: "https://coala.io/chat"
     leaders: 
       - 
+        display_name: "cliu13"
+        github_updated: 1540785959715
+        id: 6191521935130624
+        program_year: 2018
+      - 
         display_name: "kx-chen"
-        github_updated: 1540699564566
+        github_updated: 1540785959628
         id: 4765788079652864
         program_year: 2018
     mailing_list: "https://github.com/coala/coala/wiki/Mailing-Lists"
@@ -1348,7 +1451,7 @@
       image: "images/logos/zulip.png"
       platform: "ZULIP"
       url: "https://ns-3.zulipchat.com/"
-    completed_task_instance_count: 27
+    completed_task_instance_count: 40
     contact_email: "consortium@nsnam.org"
     description: "ns-3 is a discrete-event, packet-level network simulator with an emphasis on networking research and education. Users of ns-3 can construct simulations of computer networks using models of traffic generators, protocols such as TCP/IP, and devices and channels such as Wi-Fi and LTE, and analyze or visualize the results. Simulation plays a vital role in the research and education process, because of the ability for simulations to obtain reproducible results (particularly for wireless protocol design), scale to large networks, and study systems that have not yet been implemented. A particular emphasis in ns-3 is the high degree of realism in the models and integration of the tool with VM environments and testbeds. Very large scale simulations are possible; simulations of millions of nodes have been published. ns-3 has been in development since 2005 and has been making regular releases since June 2008 (our last release was ns-3.29 in September 2018). The tool is in wide use; we have a users mailing list (Google Groups forum) of over 8000 members, roughly 700 posts per month. Our developers list has over 1500 subscribers, and the code base credits 220 authors, supported by 10 active maintainers. ns-3 is operated as an open source project, originally funded with financial backing from three NSF grants and from the French government (and via help from GSoC and ESA Summer of Code in Space), but with most current contributions coming from interested researchers and students worldwide."
     dev_mailing_list: null
@@ -1362,13 +1465,18 @@
     irc_channel: "https://ns-3.zulipchat.com/"
     leaders: 
       - 
+        display_name: "Asanali"
+        github_updated: 1540785956317
+        id: 6514313490595840
+        program_year: 2018
+      - 
         display_name: "bartekche"
-        github_updated: 1540699560295
+        github_updated: 1540785956317
         id: 5155012008214528
         program_year: 2018
       - 
         display_name: "Parth Pratim"
-        github_updated: 1540699560295
+        github_updated: 1540785956317
         id: 5414601005989888
         program_year: 2018
     mailing_list: "http://mailman.isi.edu/mailman/listinfo/ns-developers"
@@ -1395,12 +1503,294 @@
     winners: {}
   - 
     accepted_org_tos: true
+    blog_url: "http://www.liquidgalaxylab.com/"
+    chat: 
+      url: null
+    completed_task_instance_count: 36
+    contact_email: "lgcodein@gmail.com"
+    description: "Liquid Galaxy is a remarkable panoramic system that is tremendously compelling. It started off as a Google 20% project to run Google Earth across a small cluster of PC's and it has grown from there.\nLiquid Galaxy hardware consists of one or more computers driving multiple displays. Liquid Galaxy applications have been developed using a master/slave architecture. The view orientation of each slave display is configured in reference to the view of the master display. Navigation on the system is done from the master instance and the location on the master is broadcast to the slaves over UDP. The slave instances, knowing their own locations in reference to the master, then change their views accordingly.\nThe Liquid Galaxy Project, while making use of Google Earth software, does not develop the Google Earth code-base itself. Google Earth is not open source software, although it is free (as in beer). Instead, the Liquid Galaxy Project works on extending the Liquid Galaxy system with open source software both improving its administration and enabling open source applications, so that content of various types can be displayed in the immersive panoramic environment."
+    dev_mailing_list: null
+    github: "LiquidGalaxyLAB"
+    gplus_url: null
+    guide_to_working: ""
+    guide_to_working_url: ""
+    id: 5976041798500352
+    image_url: "//lh3.googleusercontent.com/PEL27UxgTDDMJ-IOQFh-XYD9cqmBU7cofaiJe44PHo0n_2ey0qeCcbsFa2nDB1t65ym7VXGw1zdn3SR_fZDHcA"
+    irc_channel: ""
+    leaders: 
+      - 
+        display_name: "SachinR"
+        github_updated: 1540785957487
+        id: 6670961702076416
+        program_year: 2018
+    mailing_list: "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html"
+    name: "Liquid Galaxy project"
+    precis: "Liquid Galaxy is an open source project that powers panoramic views spanning multiple computers and displays"
+    preferred_contact_method: null
+    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
+    program_year: 2018
+    programming_languages: 
+      - "python"
+      - "node"
+      - "html"
+      - "css"
+      - "angular"
+    slug: "liquid-galaxy-project"
+    stack_exchange: null
+    status: 2
+    tags: 
+      - "geo"
+      - "mapping"
+      - "visualization"
+      - "immersive"
+      - "cluster"
+    twitter_url: null
+    website_url: "http://www.liquidgalaxylab.com"
+    wikidata_url: "//www.wikidata.org/wiki/Q21463290"
+    wikipedia_urls: 
+      en: "https://en.wikipedia.org/wiki/Liquid_Galaxy"
+    winners: {}
+  - 
+    accepted_org_tos: true
+    blog_url: "https://digitalimpactalliance.org/blog"
+    chat: 
+      image: "images/logos/zulip.png"
+      platform: "ZULIP"
+      url: "https://dial.zulipchat.com"
+    completed_task_instance_count: 33
+    contact_email: "osc@dial.community"
+    description: "**We are a GCI umbrella organization hosting multiple software projects participating in the contest this year.** We work with many of the leading projects in this area -- see below for a more detailed list. \n\nAn initiative of the [United Nations Foundation](http://www.unfoundation.org/), the [Digital Impact Alliance](http://digitalimpactalliance.org/) helps open source projects set up leadership and governance teams, assists with software project management, and helps projects develop better ways for people to contribute. We also provide technical, architectural, and software development support for projects; and help them with support, engagement, management of their communities of contributors and users. [Read more about the DIAL Open Source Center.](https://www.osc.dial.community/)\n\n**This year, our sub-organizations will include one or more of our participating member open source projects listed below. As projects confirm their participation, they will be noted in this list throughout the coming week:**\n\n- [LibreHealth](https://librehealth.io) (confirmed)\n- [Ushahidi](https://www.ushahidi.com/) (confirmed)\n- [Mifos](http://mifos.org/) (confirmed)\n- [Public Lab (participating directly)](https://codein.withgoogle.com/organizations/public-lab/)\n- [InSTEDD](http://instedd.org/open-source-tools/) (tentative)\n\n**Ready to get engaged?** Join the [DIAL Open Source Center Forum's GCI zone](https://gci.dial.community/), or sign in to the [OSC's Zulip chat server](https://dial.zulipchat.com/) to ask questions or get directed to the various sub-organization projects that will be working with us."
+    dev_mailing_list: null
+    github: "DIAL-Community"
+    gitlab: null
+    gplus_url: null
+    guide_to_working: "## Re-using someone's work?\nAnything you create for any of our tasks must be **your own original work** or used with permission. **You must read and follow the instructions below** if you plan to include or modify someone else's work for this (or any) task."
+    guide_to_working_url: "http://docs.osc.dial.community/en/master/gci-policies.html#students-about-plagiarism-and-re-use"
+    id: 4752143387983872
+    image_url: "//lh3.googleusercontent.com/wbf6URPOrBlc3tuzbu8zWMxvrtc6TLsXGsXhiaDjDdaTyycMZdzQJ565gw7Lwtn8UcbzkB6KhNWj48Au86jyOWo"
+    irc_channel: "https://dial.zulipchat.com"
+    leaders: []
+    mailing_list: "https://forum.osc.dial.community/c/projects/gci"
+    name: "Digital Impact Alliance"
+    precis: "The DIAL Open Source Center is a collaborative community for the world's leading open source software projects that make the world better through international development & humanitarian response."
+    preferred_contact_method: null
+    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
+    program_year: 2018
+    programming_languages: 
+      - "android"
+      - "java"
+      - "php"
+      - "python"
+      - "javascript"
+    slug: "digital-impact-alliance"
+    stack_exchange: null
+    status: 2
+    tags: 
+      - "humanitarian"
+      - "international"
+      - "social good"
+      - "charity"
+      - "health"
+    twitter_url: "https://twitter.com/DIAL_Community"
+    website_url: "http://digitalimpactalliance.org/"
+    wikidata_url: null
+    wikipedia_urls: null
+    winners: {}
+  - 
+    accepted_org_tos: true
+    blog_url: "https://planetkde.org/"
+    chat: 
+      image: "images/logos/irc.png"
+      platform: "IRC"
+      url: "irc://chat.freenode.net/kde"
+    completed_task_instance_count: 28
+    contact_email: "kde-community@kde.org"
+    description: "The KDE Community is a free software community dedicated to creating an open and user-friendly computing experience, offering an advanced graphical desktop, a wide variety of applications for communication, work, education and entertainment and a platform to easily build new applications upon. We have a strong focus on finding innovative solutions to old and new problems, creating a vibrant atmosphere open for experimentation."
+    dev_mailing_list: null
+    github: "KDE"
+    gitlab: null
+    gplus_url: "https://plus.google.com/communities/102942756287167879504"
+    guide_to_working: ""
+    guide_to_working_url: "https://community.kde.org/GoogleCodeIn"
+    id: 6325746558566400
+    image_url: "//lh3.googleusercontent.com/jJ9E__ItaszczThB9zGY_nOXR4lmdyWuSJZ_XBHdtJ6ZJK_DlI3YFxFZvfpeX5Vzm_nuXDZmJhjQNXy7iUrAf88"
+    irc_channel: "https://userbase.kde.org/IRC_Channels"
+    leaders: []
+    mailing_list: "https://mail.kde.org/mailman/listinfo/kde-devel"
+    name: "KDE Community"
+    precis: "The KDE community produces Free and Open Source software by artists, designers, programmers, translators, writers and other contributors from everywhere."
+    preferred_contact_method: null
+    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
+    program_year: 2018
+    programming_languages: 
+      - "c++"
+      - "qt"
+      - "qt5"
+    slug: "kde-community"
+    stack_exchange: null
+    status: 2
+    tags: 
+      - "neon"
+      - "partition manager"
+      - "gcompris"
+    twitter_url: "https://twitter.com/kdecommunity"
+    website_url: "https://kde.org"
+    wikidata_url: null
+    wikipedia_urls: null
+    winners: {}
+  - 
+    accepted_org_tos: true
+    blog_url: "https://www.postgresql.org/about/newsarchive/"
+    chat: 
+      image: "images/logos/irc.png"
+      platform: "IRC"
+      url: "irc://irc.freenode.net/postgresql"
+    completed_task_instance_count: 28
+    contact_email: "pgsql-hackers@lists.postgresql.org"
+    description: "PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. The origins of PostgreSQL date back to 1986 as part of the POSTGRES project at the University of California at Berkeley and has more than 30 years of active development on the core platform.\n\nPostgreSQL has earned a strong reputation for its proven architecture, reliability, data integrity, robust feature set, extensibility, and the dedication of the open source community behind the software to consistently deliver performant and innovative solutions. PostgreSQL runs on all major operating systems, has been ACID-compliant since 2001, and has powerful add-ons such as the popular PostGIS geospatial database extender. It is no surprise that PostgreSQL has become the open source relational database of choice for many people and organisations."
+    dev_mailing_list: null
+    github: "postgresqlfr"
+    gplus_url: null
+    guide_to_working: "For general discussions or further communication with mentors, please visit https://postgres-slack.herokuapp.com/, create an account, and search for the #googlecodein-students channel and join. We'll be happy to help."
+    guide_to_working_url: ""
+    id: 6376865762639872
+    image_url: "//lh3.googleusercontent.com/rXX1pGABOrYMgwzQck5ntqiMtVQ7TWD7bcHNw5Xvi7o8WdZmjYNWDAB8aTi9M_qY8YxeQOzkIHAcSremO412bXA"
+    irc_channel: "https://www.postgresql.org/community/irc/"
+    leaders: []
+    mailing_list: "https://www.postgresql.org/list/"
+    name: "PostgreSQL"
+    precis: "PostgreSQL is a powerful, open source relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads"
+    preferred_contact_method: null
+    primary_open_source_license: "The PostgreSQL License (PostgreSQL)"
+    program_year: 2018
+    programming_languages: 
+      - "c"
+      - "html"
+      - "css"
+      - "python"
+      - "sql"
+    slug: "postgresql"
+    stack_exchange: 
+      image: "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a"
+      url: "https://stackoverflow.com/tags/postgresql"
+    status: 2
+    tags: 
+      - "database"
+      - "sql"
+    twitter_url: "https://twitter.com/postgresql"
+    website_url: "https://postgresql.org"
+    wikidata_url: "//www.wikidata.org/wiki/Q192490"
+    wikipedia_urls: 
+      af: "https://af.wikipedia.org/wiki/PostgreSQL"
+      ar: "https://ar.wikipedia.org/wiki/%D8%A8%D9%88%D8%B3%D8%AA%D8%AC%D8%B1%D9%8A_%D8%A5%D8%B3_%D9%83%D9%8A%D9%88_%D8%A5%D9%84"
+      az: "https://az.wikipedia.org/wiki/PostgreSQL"
+      azwikib: "https://az.wikibooks.org/wiki/PostgreSQL"
+      bg: "https://bg.wikipedia.org/wiki/PostgreSQL"
+      bn: "https://bn.wikipedia.org/wiki/%E0%A6%AA%E0%A7%8B%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%9C%E0%A6%BF%E0%A6%86%E0%A6%B0%E0%A6%87-%E0%A6%8F%E0%A6%B8%E0%A6%95%E0%A6%BF%E0%A6%89%E0%A6%8F%E0%A6%B2"
+      ca: "https://ca.wikipedia.org/wiki/PostgreSQL"
+      cs: "https://cs.wikipedia.org/wiki/PostgreSQL"
+      da: "https://da.wikipedia.org/wiki/PostgreSQL"
+      de: "https://de.wikipedia.org/wiki/PostgreSQL"
+      dewikib: "https://de.wikibooks.org/wiki/PostgreSQL_und_PostGIS"
+      el: "https://el.wikipedia.org/wiki/PostgreSQL"
+      en: "https://en.wikipedia.org/wiki/PostgreSQL"
+      enwikib: "https://en.wikibooks.org/wiki/PostgreSQL"
+      eo: "https://eo.wikipedia.org/wiki/PostgreSQL"
+      es: "https://es.wikipedia.org/wiki/PostgreSQL"
+      eu: "https://eu.wikipedia.org/wiki/PostgreSQL"
+      fa: "https://fa.wikipedia.org/wiki/%D9%BE%D8%B3%D8%AA%DA%AF%D8%B1%D8%B3%E2%80%8C%DA%A9%DB%8C%D9%88%D8%A7%D9%84"
+      fi: "https://fi.wikipedia.org/wiki/PostgreSQL"
+      fr: "https://fr.wikipedia.org/wiki/PostgreSQL"
+      frwikib: "https://fr.wikibooks.org/wiki/PostgreSQL"
+      he: "https://he.wikipedia.org/wiki/PostgreSQL"
+      hu: "https://hu.wikipedia.org/wiki/PostgreSQL"
+      id: "https://id.wikipedia.org/wiki/PostgreSQL"
+      it: "https://it.wikipedia.org/wiki/PostgreSQL"
+      ja: "https://ja.wikipedia.org/wiki/PostgreSQL"
+      jawikib: "https://ja.wikibooks.org/wiki/PostgreSQL"
+      kk: "https://kk.wikipedia.org/wiki/PostgreSQL"
+      ko: "https://ko.wikipedia.org/wiki/PostgreSQL"
+      lt: "https://lt.wikipedia.org/wiki/PostgreSQL"
+      lv: "https://lv.wikipedia.org/wiki/PostgreSQL"
+      mg: "https://mg.wikipedia.org/wiki/PostgreSQL"
+      ml: "https://ml.wikipedia.org/wiki/%E0%B4%AA%E0%B5%8B%E0%B4%B8%E0%B5%8D%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B5%8D%E0%B4%97%E0%B5%8D%E0%B4%B0%E0%B5%87%E0%B4%8E%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%8D%E0%B4%AF%E0%B5%81%E0%B4%8E%E0%B5%BD"
+      nl: "https://nl.wikipedia.org/wiki/PostgreSQL"
+      no: "https://no.wikipedia.org/wiki/PostgreSQL"
+      pl: "https://pl.wikipedia.org/wiki/PostgreSQL"
+      pt: "https://pt.wikipedia.org/wiki/PostgreSQL"
+      ptwikib: "https://pt.wikibooks.org/wiki/PostgreSQL_Pr%C3%A1tico"
+      ro: "https://ro.wikipedia.org/wiki/PostgreSQL"
+      ru: "https://ru.wikipedia.org/wiki/PostgreSQL"
+      sco: "https://sco.wikipedia.org/wiki/PostgreSQL"
+      sh: "https://sh.wikipedia.org/wiki/PostgreSQL"
+      sk: "https://sk.wikipedia.org/wiki/PostgreSQL"
+      sr: "https://sr.wikipedia.org/wiki/PostgreSQL"
+      sv: "https://sv.wikipedia.org/wiki/PostgreSQL"
+      ta: "https://ta.wikipedia.org/wiki/%E0%AE%AA%E0%AF%8B%E0%AE%B8%E0%AF%8D%E0%AE%95%E0%AE%BF%E0%AE%B0%E0%AF%86%E0%AE%B8%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%AF%E0%AF%86%E0%AE%B2%E0%AF%8D"
+      th: "https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%9E%E0%B8%AA%E0%B8%95%E0%B9%8C%E0%B9%80%E0%B8%81%E0%B8%A3%E0%B8%AA%E0%B8%84%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%AD%E0%B8%A5"
+      tr: "https://tr.wikipedia.org/wiki/PostgreSQL"
+      uk: "https://uk.wikipedia.org/wiki/PostgreSQL"
+      vi: "https://vi.wikipedia.org/wiki/PostgreSQL"
+      zh: "https://zh.wikipedia.org/wiki/PostgreSQL"
+    winners: {}
+  - 
+    accepted_org_tos: true
+    blog_url: "http://publiclab.org/blog"
+    chat: 
+      image: "images/chat.png"
+      platform: "OTHER"
+      url: "https://publiclab.org/chat"
+    completed_task_instance_count: 28
+    contact_email: "web@publiclab.org"
+    description: "## Measuring pollution at low cost\n\nPublic Lab is focused on democratizing the tools and techniques of environmental science so that communities who face pollution and other environmental problems can actually use them.\n\nWe believe that low cost, open source, easy to use hardware and software can enable anyone to collect data with which to hold polluters accountable.\n\n## Sensor data and open hardware development\n\nPublic Lab software projects focus on two areas: data processing for our sensors and tools (MapKnitter.org and SpectralWorkbench.org, among others), and community collaboration and open hardware development (PublicLab.org).\n\nOur browser-based data analysis tools make use of HTML5 features such as CSS 3d transforms for image distortion and the WebRTC webcam API for capturing spectral data, to make advanced features available to users in a powerful cross-platform, user-friendly, database-backed approach to open science tools. Our collaboration and development platform PublicLab.org enables thousands of people to publish updates and share designs for emerging environmental open hardware projects."
+    dev_mailing_list: null
+    github: "publiclab"
+    gplus_url: null
+    guide_to_working: "To get started with our community, see https://publiclab.github.io/community-toolbox/\n\nFor help, ask in the chatroom at http://publiclab.org/chat (gitter/irc/other)"
+    guide_to_working_url: ""
+    id: 6519545549291520
+    image_url: "//lh3.googleusercontent.com/19eIII8VMcwqL29Rc_ya6F4Us8DUncYFIHVepZHNfuXixCRJmKEHG6OHmOPiWe0N6H3qQ-SM1HbUZHZCsLn07w"
+    irc_channel: "http://publiclab.org/chat"
+    leaders: 
+      - 
+        display_name: "Sparks"
+        github_updated: 1540785958623
+        id: 6187077247959040
+        program_year: 2018
+    mailing_list: "http://publiclab.org/lists"
+    name: "Public Lab"
+    precis: "Open hardware and software to help communities measure and analyze pollution"
+    preferred_contact_method: null
+    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
+    program_year: 2018
+    programming_languages: 
+      - "javascript"
+      - "ruby"
+      - "rubyonrails"
+      - "html"
+      - "css"
+    slug: "public-lab"
+    stack_exchange: null
+    status: 2
+    tags: 
+      - "environment"
+      - "pollution"
+      - "science"
+      - "community"
+      - "hardware"
+    twitter_url: "https://twitter.com/PublicLab"
+    website_url: "http://publiclab.org"
+    wikidata_url: "//www.wikidata.org/wiki/Q43895494"
+    wikipedia_urls: null
+    winners: {}
+  - 
+    accepted_org_tos: true
     blog_url: "https://www.drupal.org/planet"
     chat: 
       image: "images/chat.png"
       platform: "OTHER"
       url: "https://www.drupal.org/irc#drupal-google"
-    completed_task_instance_count: 25
+    completed_task_instance_count: 28
     contact_email: "lechleider.matthew@gmail.com"
     description: "Drupal is content management software. It's used to make many of the websites and applications you use every day. Drupal has great standard features, like easy content authoring, reliable performance, and excellent security. But what sets it apart is its flexibility; modularity is one of its core principles. Its tools help you build the versatile, structured content that dynamic web experiences need.\n\nIt's also a great choice for creating integrated digital frameworks. You can extend it with any one, or many, of thousands of add-ons. Modules expand Drupal's functionality. Themes let you customize your content's presentation. Distributions are packaged Drupal bundles you can use as starter-kits. Mix and match these components to enhance Drupal's core abilities. Or, integrate Drupal with external services and other applications in your infrastructure. No other content management software is this powerful and scalable.\n\nThe Drupal community is one of the largest open source communities in the world. We're more than 1,000,000 passionate developers, designers, trainers, strategists, coordinators, editors, and sponsors working together. We build Drupal, provide support, create documentation, share networking opportunities, and more. Our shared commitment to the open source spirit pushes the Drupal project forward. New members are always welcome.\n\nCheck out our new contributor documentation for GCI students @ https://www.drupal.org/node/984014"
     dev_mailing_list: null
@@ -1503,194 +1893,12 @@
     winners: {}
   - 
     accepted_org_tos: true
-    blog_url: "http://publiclab.org/blog"
-    chat: 
-      image: "images/chat.png"
-      platform: "OTHER"
-      url: "https://publiclab.org/chat"
-    completed_task_instance_count: 25
-    contact_email: "web@publiclab.org"
-    description: "## Measuring pollution at low cost\n\nPublic Lab is focused on democratizing the tools and techniques of environmental science so that communities who face pollution and other environmental problems can actually use them.\n\nWe believe that low cost, open source, easy to use hardware and software can enable anyone to collect data with which to hold polluters accountable.\n\n## Sensor data and open hardware development\n\nPublic Lab software projects focus on two areas: data processing for our sensors and tools (MapKnitter.org and SpectralWorkbench.org, among others), and community collaboration and open hardware development (PublicLab.org).\n\nOur browser-based data analysis tools make use of HTML5 features such as CSS 3d transforms for image distortion and the WebRTC webcam API for capturing spectral data, to make advanced features available to users in a powerful cross-platform, user-friendly, database-backed approach to open science tools. Our collaboration and development platform PublicLab.org enables thousands of people to publish updates and share designs for emerging environmental open hardware projects."
-    dev_mailing_list: null
-    github: "publiclab"
-    gplus_url: null
-    guide_to_working: "To get started with our community, see https://publiclab.github.io/community-toolbox/\n\nFor help, ask in the chatroom at http://publiclab.org/chat (gitter/irc/other)"
-    guide_to_working_url: ""
-    id: 6519545549291520
-    image_url: "//lh3.googleusercontent.com/19eIII8VMcwqL29Rc_ya6F4Us8DUncYFIHVepZHNfuXixCRJmKEHG6OHmOPiWe0N6H3qQ-SM1HbUZHZCsLn07w"
-    irc_channel: "http://publiclab.org/chat"
-    leaders: 
-      - 
-        display_name: "Sparks"
-        github_updated: 1540699562647
-        id: 6187077247959040
-        program_year: 2018
-    mailing_list: "http://publiclab.org/lists"
-    name: "Public Lab"
-    precis: "Open hardware and software to help communities measure and analyze pollution"
-    preferred_contact_method: null
-    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
-    program_year: 2018
-    programming_languages: 
-      - "javascript"
-      - "ruby"
-      - "rubyonrails"
-      - "html"
-      - "css"
-    slug: "public-lab"
-    stack_exchange: null
-    status: 2
-    tags: 
-      - "environment"
-      - "pollution"
-      - "science"
-      - "community"
-      - "hardware"
-    twitter_url: "https://twitter.com/PublicLab"
-    website_url: "http://publiclab.org"
-    wikidata_url: "//www.wikidata.org/wiki/Q43895494"
-    wikipedia_urls: null
-    winners: {}
-  - 
-    accepted_org_tos: true
-    blog_url: "https://planetkde.org/"
-    chat: 
-      image: "images/logos/irc.png"
-      platform: "IRC"
-      url: "irc://chat.freenode.net/kde"
-    completed_task_instance_count: 23
-    contact_email: "kde-community@kde.org"
-    description: "The KDE Community is a free software community dedicated to creating an open and user-friendly computing experience, offering an advanced graphical desktop, a wide variety of applications for communication, work, education and entertainment and a platform to easily build new applications upon. We have a strong focus on finding innovative solutions to old and new problems, creating a vibrant atmosphere open for experimentation."
-    dev_mailing_list: null
-    github: "KDE"
-    gitlab: null
-    gplus_url: "https://plus.google.com/communities/102942756287167879504"
-    guide_to_working: ""
-    guide_to_working_url: "https://community.kde.org/GoogleCodeIn"
-    id: 6325746558566400
-    image_url: "//lh3.googleusercontent.com/jJ9E__ItaszczThB9zGY_nOXR4lmdyWuSJZ_XBHdtJ6ZJK_DlI3YFxFZvfpeX5Vzm_nuXDZmJhjQNXy7iUrAf88"
-    irc_channel: "https://userbase.kde.org/IRC_Channels"
-    leaders: []
-    mailing_list: "https://mail.kde.org/mailman/listinfo/kde-devel"
-    name: "KDE Community"
-    precis: "The KDE community produces Free and Open Source software by artists, designers, programmers, translators, writers and other contributors from everywhere."
-    preferred_contact_method: null
-    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
-    program_year: 2018
-    programming_languages: 
-      - "c++"
-      - "qt"
-      - "qt5"
-    slug: "kde-community"
-    stack_exchange: null
-    status: 2
-    tags: 
-      - "neon"
-      - "partition manager"
-      - "gcompris"
-    twitter_url: "https://twitter.com/kdecommunity"
-    website_url: "https://kde.org"
-    wikidata_url: null
-    wikipedia_urls: null
-    winners: {}
-  - 
-    accepted_org_tos: true
-    blog_url: "http://www.liquidgalaxylab.com/"
-    chat: 
-      url: null
-    completed_task_instance_count: 22
-    contact_email: "lgcodein@gmail.com"
-    description: "Liquid Galaxy is a remarkable panoramic system that is tremendously compelling. It started off as a Google 20% project to run Google Earth across a small cluster of PC's and it has grown from there.\nLiquid Galaxy hardware consists of one or more computers driving multiple displays. Liquid Galaxy applications have been developed using a master/slave architecture. The view orientation of each slave display is configured in reference to the view of the master display. Navigation on the system is done from the master instance and the location on the master is broadcast to the slaves over UDP. The slave instances, knowing their own locations in reference to the master, then change their views accordingly.\nThe Liquid Galaxy Project, while making use of Google Earth software, does not develop the Google Earth code-base itself. Google Earth is not open source software, although it is free (as in beer). Instead, the Liquid Galaxy Project works on extending the Liquid Galaxy system with open source software both improving its administration and enabling open source applications, so that content of various types can be displayed in the immersive panoramic environment."
-    dev_mailing_list: null
-    github: "LiquidGalaxyLAB"
-    gplus_url: null
-    guide_to_working: ""
-    guide_to_working_url: ""
-    id: 5976041798500352
-    image_url: "//lh3.googleusercontent.com/PEL27UxgTDDMJ-IOQFh-XYD9cqmBU7cofaiJe44PHo0n_2ey0qeCcbsFa2nDB1t65ym7VXGw1zdn3SR_fZDHcA"
-    irc_channel: ""
-    leaders: []
-    mailing_list: "http://www.liquidgalaxylab.com/2017/11/student-forum-gci-2017.html"
-    name: "Liquid Galaxy project"
-    precis: "Liquid Galaxy is an open source project that powers panoramic views spanning multiple computers and displays"
-    preferred_contact_method: null
-    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
-    program_year: 2018
-    programming_languages: 
-      - "python"
-      - "node"
-      - "html"
-      - "css"
-      - "angular"
-    slug: "liquid-galaxy-project"
-    stack_exchange: null
-    status: 2
-    tags: 
-      - "geo"
-      - "mapping"
-      - "visualization"
-      - "immersive"
-      - "cluster"
-    twitter_url: null
-    website_url: "http://www.liquidgalaxylab.com"
-    wikidata_url: "//www.wikidata.org/wiki/Q21463290"
-    wikipedia_urls: 
-      en: "https://en.wikipedia.org/wiki/Liquid_Galaxy"
-    winners: {}
-  - 
-    accepted_org_tos: true
-    blog_url: "https://digitalimpactalliance.org/blog"
-    chat: 
-      image: "images/logos/zulip.png"
-      platform: "ZULIP"
-      url: "https://dial.zulipchat.com"
-    completed_task_instance_count: 22
-    contact_email: "osc@dial.community"
-    description: "**We are a GCI umbrella organization hosting multiple software projects participating in the contest this year.** We work with many of the leading projects in this area -- see below for a more detailed list. \n\nAn initiative of the [United Nations Foundation](http://www.unfoundation.org/), the [Digital Impact Alliance](http://digitalimpactalliance.org/) helps open source projects set up leadership and governance teams, assists with software project management, and helps projects develop better ways for people to contribute. We also provide technical, architectural, and software development support for projects; and help them with support, engagement, management of their communities of contributors and users. [Read more about the DIAL Open Source Center.](https://www.osc.dial.community/)\n\n**This year, our sub-organizations will include one or more of our participating member open source projects listed below. As projects confirm their participation, they will be noted in this list throughout the coming week:**\n\n- [LibreHealth](https://librehealth.io) (confirmed)\n- [Ushahidi](https://www.ushahidi.com/) (confirmed)\n- [Mifos](http://mifos.org/) (confirmed)\n- [Public Lab (participating directly)](https://codein.withgoogle.com/organizations/public-lab/)\n- [InSTEDD](http://instedd.org/open-source-tools/) (tentative)\n\n**Ready to get engaged?** Join the [DIAL Open Source Center Forum's GCI zone](https://gci.dial.community/), or sign in to the [OSC's Zulip chat server](https://dial.zulipchat.com/) to ask questions or get directed to the various sub-organization projects that will be working with us."
-    dev_mailing_list: null
-    github: "DIAL-Community"
-    gitlab: null
-    gplus_url: null
-    guide_to_working: "## Re-using someone's work?\nAnything you create for any of our tasks must be **your own original work** or used with permission. **You must read and follow the instructions below** if you plan to include or modify someone else's work for this (or any) task."
-    guide_to_working_url: "http://docs.osc.dial.community/en/master/gci-policies.html#students-about-plagiarism-and-re-use"
-    id: 4752143387983872
-    image_url: "//lh3.googleusercontent.com/wbf6URPOrBlc3tuzbu8zWMxvrtc6TLsXGsXhiaDjDdaTyycMZdzQJ565gw7Lwtn8UcbzkB6KhNWj48Au86jyOWo"
-    irc_channel: "https://dial.zulipchat.com"
-    leaders: []
-    mailing_list: "https://forum.osc.dial.community/c/projects/gci"
-    name: "Digital Impact Alliance"
-    precis: "The DIAL Open Source Center is a collaborative community for the world's leading open source software projects that make the world better through international development & humanitarian response."
-    preferred_contact_method: null
-    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
-    program_year: 2018
-    programming_languages: 
-      - "android"
-      - "java"
-      - "php"
-      - "python"
-      - "javascript"
-    slug: "digital-impact-alliance"
-    stack_exchange: null
-    status: 2
-    tags: 
-      - "humanitarian"
-      - "international"
-      - "social good"
-      - "charity"
-      - "health"
-    twitter_url: "https://twitter.com/DIAL_Community"
-    website_url: "http://digitalimpactalliance.org/"
-    wikidata_url: null
-    wikipedia_urls: null
-    winners: {}
-  - 
-    accepted_org_tos: true
     blog_url: null
     chat: 
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/GCI-AOSSIE/"
-    completed_task_instance_count: 22
+    completed_task_instance_count: 23
     contact_email: null
     description: "We are an Australian not-for-profit umbrella organization for open-source projects. We believe the open-source philosophy provides a resource-efficient channel to transfer knowledge and achieve innovation and education.\n\nIn 2018, we offer the following projects:\n\n* **Agora** (Scala, Javascript): a library of vote counting algorithms for democratic elections.\n* **Mind the Word** (Javascript, HTML, CSS): a browser extension that helps users to learn new languages.\n* **Crowd Alert**  (React-Native, Expo, Jest): a cross-platform mobile application that allows users to post and view incidents around them\n* **Carbon Footprint** (Javascript, HTML, CSS): a browser extension that raises environmental awareness regarding C02 emissions. \n* **Starcross** (iOS,C++,OpenGL,Objective-C): Starcross is a hand-held planetarium for your iOS device. Can be used to identify stars, planets, nebulae and more.\n* **Computational Philosophy** (Isabelle): formalizations of philosophical theories and arguments towards computer-assisted metaphysics, as envisaged by Leibniz.\n\nWe have a diverse group of mentors, including GSoC students from previous years who decided to become long-term contributors as well as academics with extensive experience in supervising undergraduate, M.Sc. and PhD students on theses and projects, whose results are often published and presented in the most prestigious conferences of our research fields."
     dev_mailing_list: null
@@ -1731,107 +1939,12 @@
     winners: {}
   - 
     accepted_org_tos: true
-    blog_url: "https://www.postgresql.org/about/newsarchive/"
-    chat: 
-      image: "images/logos/irc.png"
-      platform: "IRC"
-      url: "irc://irc.freenode.net/postgresql"
-    completed_task_instance_count: 20
-    contact_email: "pgsql-hackers@lists.postgresql.org"
-    description: "PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. The origins of PostgreSQL date back to 1986 as part of the POSTGRES project at the University of California at Berkeley and has more than 30 years of active development on the core platform.\n\nPostgreSQL has earned a strong reputation for its proven architecture, reliability, data integrity, robust feature set, extensibility, and the dedication of the open source community behind the software to consistently deliver performant and innovative solutions. PostgreSQL runs on all major operating systems, has been ACID-compliant since 2001, and has powerful add-ons such as the popular PostGIS geospatial database extender. It is no surprise that PostgreSQL has become the open source relational database of choice for many people and organisations."
-    dev_mailing_list: null
-    github: "postgresqlfr"
-    gplus_url: null
-    guide_to_working: "For general discussions or further communication with mentors, please visit https://postgres-slack.herokuapp.com/, create an account, and search for the #googlecodein-students channel and join. We'll be happy to help."
-    guide_to_working_url: ""
-    id: 6376865762639872
-    image_url: "//lh3.googleusercontent.com/rXX1pGABOrYMgwzQck5ntqiMtVQ7TWD7bcHNw5Xvi7o8WdZmjYNWDAB8aTi9M_qY8YxeQOzkIHAcSremO412bXA"
-    irc_channel: "https://www.postgresql.org/community/irc/"
-    leaders: []
-    mailing_list: "https://www.postgresql.org/list/"
-    name: "PostgreSQL"
-    precis: "PostgreSQL is a powerful, open source relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads"
-    preferred_contact_method: null
-    primary_open_source_license: "The PostgreSQL License (PostgreSQL)"
-    program_year: 2018
-    programming_languages: 
-      - "c"
-      - "html"
-      - "css"
-      - "python"
-      - "sql"
-    slug: "postgresql"
-    stack_exchange: 
-      image: "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a"
-      url: "https://stackoverflow.com/tags/postgresql"
-    status: 2
-    tags: 
-      - "database"
-      - "sql"
-    twitter_url: "https://twitter.com/postgresql"
-    website_url: "https://postgresql.org"
-    wikidata_url: "//www.wikidata.org/wiki/Q192490"
-    wikipedia_urls: 
-      af: "https://af.wikipedia.org/wiki/PostgreSQL"
-      ar: "https://ar.wikipedia.org/wiki/%D8%A8%D9%88%D8%B3%D8%AA%D8%AC%D8%B1%D9%8A_%D8%A5%D8%B3_%D9%83%D9%8A%D9%88_%D8%A5%D9%84"
-      az: "https://az.wikipedia.org/wiki/PostgreSQL"
-      azwikib: "https://az.wikibooks.org/wiki/PostgreSQL"
-      bg: "https://bg.wikipedia.org/wiki/PostgreSQL"
-      bn: "https://bn.wikipedia.org/wiki/%E0%A6%AA%E0%A7%8B%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%9C%E0%A6%BF%E0%A6%86%E0%A6%B0%E0%A6%87-%E0%A6%8F%E0%A6%B8%E0%A6%95%E0%A6%BF%E0%A6%89%E0%A6%8F%E0%A6%B2"
-      ca: "https://ca.wikipedia.org/wiki/PostgreSQL"
-      cs: "https://cs.wikipedia.org/wiki/PostgreSQL"
-      da: "https://da.wikipedia.org/wiki/PostgreSQL"
-      de: "https://de.wikipedia.org/wiki/PostgreSQL"
-      dewikib: "https://de.wikibooks.org/wiki/PostgreSQL_und_PostGIS"
-      el: "https://el.wikipedia.org/wiki/PostgreSQL"
-      en: "https://en.wikipedia.org/wiki/PostgreSQL"
-      enwikib: "https://en.wikibooks.org/wiki/PostgreSQL"
-      eo: "https://eo.wikipedia.org/wiki/PostgreSQL"
-      es: "https://es.wikipedia.org/wiki/PostgreSQL"
-      eu: "https://eu.wikipedia.org/wiki/PostgreSQL"
-      fa: "https://fa.wikipedia.org/wiki/%D9%BE%D8%B3%D8%AA%DA%AF%D8%B1%D8%B3%E2%80%8C%DA%A9%DB%8C%D9%88%D8%A7%D9%84"
-      fi: "https://fi.wikipedia.org/wiki/PostgreSQL"
-      fr: "https://fr.wikipedia.org/wiki/PostgreSQL"
-      frwikib: "https://fr.wikibooks.org/wiki/PostgreSQL"
-      he: "https://he.wikipedia.org/wiki/PostgreSQL"
-      hu: "https://hu.wikipedia.org/wiki/PostgreSQL"
-      id: "https://id.wikipedia.org/wiki/PostgreSQL"
-      it: "https://it.wikipedia.org/wiki/PostgreSQL"
-      ja: "https://ja.wikipedia.org/wiki/PostgreSQL"
-      jawikib: "https://ja.wikibooks.org/wiki/PostgreSQL"
-      kk: "https://kk.wikipedia.org/wiki/PostgreSQL"
-      ko: "https://ko.wikipedia.org/wiki/PostgreSQL"
-      lt: "https://lt.wikipedia.org/wiki/PostgreSQL"
-      lv: "https://lv.wikipedia.org/wiki/PostgreSQL"
-      mg: "https://mg.wikipedia.org/wiki/PostgreSQL"
-      ml: "https://ml.wikipedia.org/wiki/%E0%B4%AA%E0%B5%8B%E0%B4%B8%E0%B5%8D%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B5%8D%E0%B4%97%E0%B5%8D%E0%B4%B0%E0%B5%87%E0%B4%8E%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%8D%E0%B4%AF%E0%B5%81%E0%B4%8E%E0%B5%BD"
-      nl: "https://nl.wikipedia.org/wiki/PostgreSQL"
-      no: "https://no.wikipedia.org/wiki/PostgreSQL"
-      pl: "https://pl.wikipedia.org/wiki/PostgreSQL"
-      pt: "https://pt.wikipedia.org/wiki/PostgreSQL"
-      ptwikib: "https://pt.wikibooks.org/wiki/PostgreSQL_Pr%C3%A1tico"
-      ro: "https://ro.wikipedia.org/wiki/PostgreSQL"
-      ru: "https://ru.wikipedia.org/wiki/PostgreSQL"
-      sco: "https://sco.wikipedia.org/wiki/PostgreSQL"
-      sh: "https://sh.wikipedia.org/wiki/PostgreSQL"
-      sk: "https://sk.wikipedia.org/wiki/PostgreSQL"
-      sr: "https://sr.wikipedia.org/wiki/PostgreSQL"
-      sv: "https://sv.wikipedia.org/wiki/PostgreSQL"
-      ta: "https://ta.wikipedia.org/wiki/%E0%AE%AA%E0%AF%8B%E0%AE%B8%E0%AF%8D%E0%AE%95%E0%AE%BF%E0%AE%B0%E0%AF%86%E0%AE%B8%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%AF%E0%AF%86%E0%AE%B2%E0%AF%8D"
-      th: "https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%9E%E0%B8%AA%E0%B8%95%E0%B9%8C%E0%B9%80%E0%B8%81%E0%B8%A3%E0%B8%AA%E0%B8%84%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%AD%E0%B8%A5"
-      tr: "https://tr.wikipedia.org/wiki/PostgreSQL"
-      uk: "https://uk.wikipedia.org/wiki/PostgreSQL"
-      vi: "https://vi.wikipedia.org/wiki/PostgreSQL"
-      zh: "https://zh.wikipedia.org/wiki/PostgreSQL"
-    winners: {}
-  - 
-    accepted_org_tos: true
     blog_url: null
     chat: 
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "https://devel.rtems.org/wiki/Developer/IRC"
-    completed_task_instance_count: 15
+    completed_task_instance_count: 21
     contact_email: "gci@rtems.org"
     description: "[RTEMS (Real-Time Executive for Multiprocessor Systems)](https://www.rtems.org) is a free real-time operating system (RTOS) designed for deeply embedded systems such as automobile electronics, robotic controllers, and on-board satellite instruments. \n\nRTEMS is free open source software that supports multi-processor systems for over a dozen CPU architectures and over 150 specific system boards. In addition, RTEMS is designed to support embedded applications with the most stringent real-time requirements while being compatible with open standards such as POSIX. RTEMS includes optional functional features such as TCP/IP and file systems while still offering minimum executable sizes under 20 KB in useful configurations.\n\nThe RTEMS Project is the collection of individuals, companies, universities, and research institutions that collectively maintain and enhance the RTEMS software base. As a community, we are proud to be popular in the space application software and experimental physics communities. RTEMS has been to Venus, circles Mars, is aboard Curiosity, is in the asteroid belt, is on its way to Jupiter, and soon will circle the sun. It is in use in many high energy physics research labs around the world. There are many RTEMS users who do not belong to the space or physics communities, but our small part in contributing to basic scientific knowledge makes us proud."
     dev_mailing_list: null
@@ -1843,7 +1956,12 @@
     id: 4921764262969344
     image_url: "//lh3.googleusercontent.com/K2N2sXNNp7d3XP3hfzptxYWGX1-kHFfjyvCDYoEcgiaW-_tBfIOJ5IOXt_poKCtn9PBLEShtpONtGR3PqgqjwXem"
     irc_channel: "https://devel.rtems.org/wiki/Developer/IRC"
-    leaders: []
+    leaders: 
+      - 
+        display_name: "Sal"
+        github_updated: 1540785957591
+        id: 6016090942472192
+        program_year: 2018
     mailing_list: "https://devel.rtems.org/wiki/RTEMSMailingLists"
     name: "RTEMS Project"
     precis: "RTEMS is an operating system used in satellites, particle accelerators, robots, racing motorcycles, building controls, medical devices, and more."
@@ -1873,10 +1991,51 @@
     accepted_org_tos: true
     blog_url: null
     chat: 
+      image: "images/chat.png"
+      platform: "OTHER"
+      url: "https://gci.copyleftgames.org/"
+    completed_task_instance_count: 11
+    contact_email: null
+    description: "We believe that people learn best while having fun. Many of us learned math, physics, and program code by making and modding video games.\n\nOur software has been used at home and in classrooms around the world for over a decade by students of all ages and experience levels, from a third grade class learning Python as their first language to college students writing code for calculating realtime buoyancy and fluid dynamics.\n\nCopyleft licensing further helps people learn since the source code for the entirety of the game and its mods are always open. Every part of our stack is therefor an educational resource."
+    dev_mailing_list: null
+    github: null
+    gitlab: null
+    gplus_url: null
+    guide_to_working: "We have web chat for students needing help. We also strongly consider students willingness to help other students when selecting our winners.\n\nThere's a short verification step to ensure only GCI mentors and students have access to the webchat, see:"
+    guide_to_working_url: "https://gci.copyleftgames.org/"
+    id: 5143691262951424
+    image_url: "//lh3.googleusercontent.com/yqXvn8Ey65O0_bEFnpR5CJOFyA9QMkQfMMj-Z75urXv_ZCl-JTro_TVlD1gkQWf1RGX1RQ8YRae1zKrK3Bl5SxWG"
+    irc_channel: "https://gci.copyleftgames.org/"
+    leaders: []
+    mailing_list: null
+    name: "Copyleft Games"
+    precis: "Copyleft Games develops tools, libraries, and game engines"
+    preferred_contact_method: null
+    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
+    program_year: 2018
+    programming_languages: 
+      - "python"
+      - "c"
+      - "html"
+      - "opengl"
+    slug: "copyleft-games"
+    stack_exchange: null
+    status: 2
+    tags: 
+      - "games"
+    twitter_url: null
+    website_url: "https://gci.copyleftgames.org/"
+    wikidata_url: null
+    wikipedia_urls: null
+    winners: {}
+  - 
+    accepted_org_tos: true
+    blog_url: null
+    chat: 
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/Cloud-CV/"
-    completed_task_instance_count: 9
+    completed_task_instance_count: 11
     contact_email: "team@cloudcv.org"
     description: "**CloudCV** is a young open source cloud platform started in 2013 by students and faculty from Machine Learning and Perception Lab at Virginia Tech (now at Georgia Tech) with the aim to make AI research more reproducible. At CloudCV, we are building tools that enable researchers to build, compare and share start-of-the-algorithms.\n\nCloudCV consists of three major platforms:\n\n**Origami** is an AI-as-a-service solution that allows researchers to easily convert their deep learning models into an online service that is widely accessible to everyone without the need to set up the infrastructure, resolve the dependencies, and build a web service around the deep learning model.\n\n**Fabrik** is an online collaborative platform to build, visualize and train deep learning models with a simple drag-and-drop approach. It allows researchers to collaboratively develop and debug models using a web GUI that allows importing, editing and exporting networks from widely popular frameworks like Caffe and Keras.\n\n**EvalAI** is an evaluation server that will host AI challenges like Visual Question Answering, Image Captioning. In recent years, it has become increasingly difficult to compare an algorithm solving a given task with other existing approaches. By providing a central leaderboard and submission interface, we make it easier for researchers to reproduce the results mentioned in the paper and perform reliable & accurate quantitative analysis."
     dev_mailing_list: null
@@ -1911,46 +2070,5 @@
     twitter_url: "https://twitter.com/project_cloudcv"
     website_url: "https://cloudcv.org/"
     wikidata_url: "//www.wikidata.org/wiki/Q45341943"
-    wikipedia_urls: null
-    winners: {}
-  - 
-    accepted_org_tos: true
-    blog_url: null
-    chat: 
-      image: "images/chat.png"
-      platform: "OTHER"
-      url: "https://gci.copyleftgames.org/"
-    completed_task_instance_count: 8
-    contact_email: null
-    description: "We believe that people learn best while having fun. Many of us learned math, physics, and program code by making and modding video games.\n\nOur software has been used at home and in classrooms around the world for over a decade by students of all ages and experience levels, from a third grade class learning Python as their first language to college students writing code for calculating realtime buoyancy and fluid dynamics.\n\nCopyleft licensing further helps people learn since the source code for the entirety of the game and its mods are always open. Every part of our stack is therefor an educational resource."
-    dev_mailing_list: null
-    github: null
-    gitlab: null
-    gplus_url: null
-    guide_to_working: "We have web chat for students needing help. We also strongly consider students willingness to help other students when selecting our winners.\n\nThere's a short verification step to ensure only GCI mentors and students have access to the webchat, see:"
-    guide_to_working_url: "https://gci.copyleftgames.org/"
-    id: 5143691262951424
-    image_url: "//lh3.googleusercontent.com/yqXvn8Ey65O0_bEFnpR5CJOFyA9QMkQfMMj-Z75urXv_ZCl-JTro_TVlD1gkQWf1RGX1RQ8YRae1zKrK3Bl5SxWG"
-    irc_channel: "https://gci.copyleftgames.org/"
-    leaders: []
-    mailing_list: null
-    name: "Copyleft Games"
-    precis: "Copyleft Games develops tools, libraries, and game engines"
-    preferred_contact_method: null
-    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
-    program_year: 2018
-    programming_languages: 
-      - "python"
-      - "c"
-      - "html"
-      - "opengl"
-    slug: "copyleft-games"
-    stack_exchange: null
-    status: 2
-    tags: 
-      - "games"
-    twitter_url: null
-    website_url: "https://gci.copyleftgames.org/"
-    wikidata_url: null
     wikipedia_urls: null
     winners: {}
