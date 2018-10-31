@@ -7,7 +7,7 @@
       "platform": "GITTER",
       "url": "https://gitter.im/scorelab/Google-Code-In"
     },
-    "completed_task_instance_count": 619,
+    "completed_task_instance_count": 663,
     "contact_email": "info@scorelab.org",
     "description": "The Sustainable Computing Research Lab (SCoRe) has conducted research covering various aspects of mobile, cloud, iot, digital forensic, information security and more. The goal of our research is to generate computing solutions through identifying low-cost methodologies and strategies that lead to sustainability​.\n\nAt present, the SCoRe Lab is at a stage of its evolution in which it has been able to secure high donor confidence as evidenced by no less than 5 simultaneous foreign funded projects underway since 2005. SCoRe Lab has been a pioneer in cooperating with Internet Society (ISOC), Swedish Agency for International Development Cooperation (Sida)/The Department for Research Cooperation (SAREC), The Swedish Program for Information and Communication Technology in Developing Regions (Spider) and Information Society Innovation Fund (ISIF) in the area of computer science by establishing several interesting ICT research projects. These projects are considered to be the benchmarks of such projects in the World.",
     "dev_mailing_list": null,
@@ -22,61 +22,61 @@
     "leaders": [
       {
         "display_name": "Anurag Parida",
-        "github_updated": 1540884248584,
+        "github_updated": 1540958830615,
         "id": 5364886423994368,
         "program_year": 2018
       },
       {
         "display_name": "Ben.mue",
-        "github_updated": 1540884248191,
+        "github_updated": 1540958830254,
         "id": 5558520696012800,
         "program_year": 2018
       },
       {
-        "display_name": "Gaurav Pandey",
-        "github_updated": 1540884248579,
-        "id": 6177385184493568,
+        "display_name": "Geethmaka Dissanayake",
+        "github_updated": 1540958830211,
+        "id": 6215180443713536,
         "program_year": 2018
       },
       {
         "display_name": "jmularski",
-        "github_updated": 1540884248550,
+        "github_updated": 1540958830566,
         "id": 5659239725924352,
         "program_year": 2018
       },
       {
+        "display_name": "Kalyan",
+        "github_updated": 1540958830689,
+        "id": 4864773956042752,
+        "program_year": 2018
+      },
+      {
         "display_name": "kunalbhatia",
-        "github_updated": 1540884248802,
+        "github_updated": 1540958830618,
         "id": 5949607902183424,
         "program_year": 2018
       },
       {
         "display_name": "Manish Varrier",
-        "github_updated": 1540884248620,
+        "github_updated": 1540958830592,
         "id": 5713447179255808,
         "program_year": 2018
       },
       {
         "display_name": "Palash",
-        "github_updated": 1540884248631,
+        "github_updated": 1540958830544,
         "id": 5510056989687808,
         "program_year": 2018
       },
       {
-        "display_name": "RohanCode",
-        "github_updated": 1540884248608,
-        "id": 5960662023929856,
-        "program_year": 2018
-      },
-      {
         "display_name": "Sanyam",
-        "github_updated": 1540884248631,
+        "github_updated": 1540958830592,
         "id": 5747736117772288,
         "program_year": 2018
       },
       {
         "display_name": "Łukasz Myśliwiec",
-        "github_updated": 1540884248200,
+        "github_updated": 1540958830200,
         "id": 5375144382955520,
         "program_year": 2018
       }
@@ -118,7 +118,7 @@
       "platform": "GITTER",
       "url": "https://gitter.im/JBossOutreach/gci"
     },
-    "completed_task_instance_count": 477,
+    "completed_task_instance_count": 519,
     "contact_email": null,
     "description": "JBoss Community is a community of open source projects. The community hosts a large number of projects that are written in various programming languages. The primary language is Java. But there are also projects that are written in Ruby, PHP, Node and other languages.\n\nProject categories range from better testing support over IDEs, application servers, application and performance monitoring to micro-services.",
     "dev_mailing_list": null,
@@ -132,55 +132,55 @@
     "leaders": [
       {
         "display_name": "Baftek",
-        "github_updated": 1540884246658,
+        "github_updated": 1540958827397,
         "id": 6563938549366784,
         "program_year": 2018
       },
       {
         "display_name": "HarshHC",
-        "github_updated": 1540884246663,
+        "github_updated": 1540958827376,
         "id": 6120306478415872,
         "program_year": 2018
       },
       {
         "display_name": "Lint",
-        "github_updated": 1540884247243,
+        "github_updated": 1540958827335,
         "id": 4584762321666048,
         "program_year": 2018
       },
       {
         "display_name": "Maier Ilya",
-        "github_updated": 1540884247044,
+        "github_updated": 1540958826922,
         "id": 4688147720962048,
         "program_year": 2018
       },
       {
         "display_name": "Michael",
-        "github_updated": 1540884246659,
+        "github_updated": 1540958827388,
         "id": 6481553761763328,
         "program_year": 2018
       },
       {
         "display_name": "pranav",
-        "github_updated": 1540884246685,
+        "github_updated": 1540958827392,
         "id": 5008865578975232,
         "program_year": 2018
       },
       {
         "display_name": "ribhavsharma",
-        "github_updated": 1540884246678,
+        "github_updated": 1540958827463,
         "id": 6006000621453312,
         "program_year": 2018
       },
       {
         "display_name": "Saba Khukhunashvili",
-        "github_updated": 1540884246487,
+        "github_updated": 1540958826973,
         "id": 5984052734590976,
         "program_year": 2018
       },
       {
         "display_name": "Sai Vittal B",
-        "github_updated": 1540884246652,
+        "github_updated": 1540958827331,
         "id": 5340282435403776,
         "program_year": 2018
       },
@@ -231,7 +231,7 @@
       "platform": "OTHER",
       "url": "http://openwisp.org/support.html"
     },
-    "completed_task_instance_count": 383,
+    "completed_task_instance_count": 435,
     "contact_email": null,
     "description": "In the summer of 2008 the [Metropolitan City of Rome](http://www.cittametropolitanaroma.gov.it/) decided to start a **free of charge and public Wi-Fi network** to be spread over its 5352 SQ KM territory including Rome and 120 other cities for a total of about 4.5 million inhabitants. The main objective of the project, called **ProvinciaWiFi** (later renamed [WiFi Metropolitano](http://www.cittametropolitanaroma.gov.it/homepage/elenco-siti-tematici/wifimetropolitano/)), was to take a decisive step to reduce the existing **digital divide** by fostering and facilitating the use of ICT by citizens.\n\nFrom the outset it was decided to commit the project to a completely open philosophy. For this reason a clear choice towards open software and operating systems and the availability of every modification, update and improvement to the community was made. The same approach was adopted for the knowledge and the experience acquired within the project. In order to pursue this goals the Province of Rome called the university consortium *CASPUR* (later merged in the [CINECA](https://www.cineca.it/it/progetti/openwisp) consortium) to develop the technical solution. In this context, a research project conducted by the *CINECA* consortium found its perfect application. This project proposed an innovative methodology for the distribution of networks (more precisely Virtual LANs used for Wi-Fi connectivity) between geographically distant sites.\n\nThe software tools, including the OpenWISP 2 [network management system](http://openwisp.org) and different [NetJSON](http://netjson.org/) implementations are released to the public free of charge under open-source licenses, hoping this will allow a broader audience to benefit from our work.",
     "dev_mailing_list": null,
@@ -244,62 +244,62 @@
     "irc_channel": "http://openwisp.org/support.html",
     "leaders": [
       {
+        "display_name": "cking",
+        "github_updated": 1540958828576,
+        "id": 4980945204543488,
+        "program_year": 2018
+      },
+      {
         "display_name": "Daniel Wang",
-        "github_updated": 1540884247556,
+        "github_updated": 1540958828518,
         "id": 5780156091203584,
         "program_year": 2018
       },
       {
         "display_name": "EdgeKing810",
-        "github_updated": 1540884247863,
+        "github_updated": 1540958828539,
         "id": 4706723689398272,
         "program_year": 2018
       },
       {
         "display_name": "Krow",
-        "github_updated": 1540884247628,
+        "github_updated": 1540958828505,
         "id": 6414964051935232,
         "program_year": 2018
       },
       {
         "display_name": "Madhav Mehndiratta",
-        "github_updated": 1540884247143,
+        "github_updated": 1540958828036,
         "id": 5580493513818112,
         "program_year": 2018
       },
       {
-        "display_name": "Mihir",
-        "github_updated": 1540884247504,
-        "id": 6490085848514560,
-        "program_year": 2018
-      },
-      {
         "display_name": "ostrum",
-        "github_updated": 1540884247204,
+        "github_updated": 1540958828075,
         "id": 5664646452215808,
         "program_year": 2018
       },
       {
         "display_name": "Pritish Jain",
-        "github_updated": 1540884247831,
+        "github_updated": 1540958828527,
         "id": 5840994286174208,
         "program_year": 2018
       },
       {
         "display_name": "Reza Juliandri",
-        "github_updated": 1540884247076,
+        "github_updated": 1540958828173,
         "id": 5236777716547584,
         "program_year": 2018
       },
       {
         "display_name": "Rishabh",
-        "github_updated": 1540884247832,
+        "github_updated": 1540958828505,
         "id": 4999294110138368,
         "program_year": 2018
       },
       {
         "display_name": "yash_ar",
-        "github_updated": 1540884247819,
+        "github_updated": 1540958829273,
         "id": 6534348003082240,
         "program_year": 2018
       }
@@ -335,113 +335,13 @@
   },
   {
     "accepted_org_tos": true,
-    "blog_url": "https://wiki.openmrs.org/",
-    "chat": {
-      "image": "images/chat.png",
-      "platform": "OTHER",
-      "url": "https://irc.openmrs.org"
-    },
-    "completed_task_instance_count": 336,
-    "contact_email": "helpdesk@openmrs.org",
-    "description": "[OpenMRS](http://openmrs.org/) is a collaborative open source project to develop software to support the delivery of health care in developing countries. We are a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. [Our mission](http://openmrs.org/about/mission/) is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software.\r\n\r\nThe [OpenMRS software platform](http://openmrs.org/about/) and a reference application enable the design of a customized medical records system with no programming knowledge. It is a common platform upon which medical informatics efforts in developing countries can be built.\r\n\r\nWorking on Google Code-in tasks for OpenMRS is a great way to join the free and open source software movement, and at the same time use your talents to help people in developing countries and around the world on the front lines of the battle against HIV/AIDS, TB, Malaria, and other public health challenges. For more detailed about OpenMRS and GCI, visit our [wiki documentation](https://wiki.openmrs.org/display/RES/Google+Code-in+2018) and watch [this short video](https://www.youtube.com/watch?v=HPxx1_svu_A) created by a previous OpenMRS GCI participant.",
-    "dev_mailing_list": null,
-    "github": "openmrs",
-    "gplus_url": "https://plus.google.com/+OpenMRSorg",
-    "guide_to_working": "Ensure that submissions are original works and any assets used must be creative commons licensed and attributed appropriately. Plagiarism, copying, giving, or receiving resources for the tasks are strictly prohibited.",
-    "guide_to_working_url": "https://om.rs/gci",
-    "id": 5517435189854208,
-    "image_url": "//lh3.googleusercontent.com/_4ACChIXxCZPrXjpseWLk20TmAafnlNnszgho7PjzG0g3CYWtZy4Pp9q2OBOKx4bsvu6WjQR4vTjxPv-_hZLJw",
-    "irc_channel": "https://irc.openmrs.org",
-    "leaders": [
-      {
-        "display_name": "anuar2k",
-        "github_updated": 1540884254202,
-        "id": 4862722740060160,
-        "program_year": 2018
-      },
-      {
-        "display_name": "Devansh9",
-        "github_updated": 1540884253794,
-        "id": 5861088626212864,
-        "program_year": 2018
-      },
-      {
-        "display_name": "iperez",
-        "github_updated": 1540884253807,
-        "id": 5047208379416576,
-        "program_year": 2018
-      },
-      {
-        "display_name": "Keshav Goyal",
-        "github_updated": 1540884253794,
-        "id": 6019750254608384,
-        "program_year": 2018
-      },
-      {
-        "display_name": "Leader",
-        "github_updated": 1540884253786,
-        "id": 5372218268712960,
-        "program_year": 2018
-      },
-      {
-        "display_name": "Nikodem Bernat",
-        "github_updated": 1540884253474,
-        "id": 5758597083430912,
-        "program_year": 2018
-      },
-      {
-        "display_name": "Satvik",
-        "github_updated": 1540884253882,
-        "id": 4700913403953152,
-        "program_year": 2018
-      },
-      {
-        "display_name": "symt",
-        "github_updated": 1540884253846,
-        "id": 5468306787008512,
-        "program_year": 2018
-      }
-    ],
-    "mailing_list": "http://go.openmrs.org/lists",
-    "name": "OpenMRS",
-    "precis": "Write Code. Save Lives. — Open source medical records platform",
-    "preferred_contact_method": null,
-    "primary_open_source_license": "Mozilla Public License 2.0 (MPL-2.0)",
-    "program_year": 2018,
-    "programming_languages": [
-      "java",
-      "spring",
-      "react",
-      "javascript",
-      "android"
-    ],
-    "slug": "openmrs",
-    "stack_exchange": null,
-    "status": 2,
-    "tags": [
-      "health",
-      "ehealth",
-      "hospital",
-      "clinics",
-      "emr"
-    ],
-    "twitter_url": "https://twitter.com/OpenMRS",
-    "website_url": "https://openmrs.org/",
-    "wikidata_url": "//www.wikidata.org/wiki/Q7095826",
-    "wikipedia_urls": {
-      "en": "https://en.wikipedia.org/wiki/OpenMRS"
-    },
-    "winners": {}
-  },
-  {
-    "accepted_org_tos": true,
     "blog_url": "https://blog.fossasia.org",
     "chat": {
       "image": "images/logos/gitter.png",
       "platform": "GITTER",
       "url": "https://gitter.im/fossasia/fossasia"
     },
-    "completed_task_instance_count": 328,
+    "completed_task_instance_count": 387,
     "contact_email": "office@fossasia.org",
     "description": "FOSSASIA develops Open Source software and hardware for conversational AIs, science and event management with a global developer community from its base in Asia. The organization organizes Open Technology events, runs coding programs and the #Codeheat development contest. The annual FOSSASIA Summit is the premier Open Technology event in Asia for developers, contributors, start-ups, and technology companies.",
     "dev_mailing_list": null,
@@ -455,46 +355,52 @@
     "leaders": [
       {
         "display_name": "AppleCat",
-        "github_updated": 1540884254727,
+        "github_updated": 1540958836812,
         "id": 6288373984526336,
         "program_year": 2018
       },
       {
+        "display_name": "Ashwanth Kumar",
+        "github_updated": 1540958837154,
+        "id": 6488832087162880,
+        "program_year": 2018
+      },
+      {
         "display_name": "Jeewal Kunwar",
-        "github_updated": 1540884254435,
+        "github_updated": 1540958846833,
         "id": 5373759155339264,
         "program_year": 2018
       },
       {
         "display_name": "KhanhMomo",
-        "github_updated": 1540884255678,
+        "github_updated": 1540958836944,
         "id": 6685699496476672,
         "program_year": 2018
       },
       {
         "display_name": "Nitesh Kumar",
         "github_account": "niteshkumarniranjan",
-        "github_updated": 1540785966386,
+        "github_updated": 1540958836713,
         "id": 5194881015218176,
         "program_year": 2018
       },
       {
         "display_name": "ryan10145",
-        "github_updated": 1540884254675,
+        "github_updated": 1540958836811,
         "id": 5542836112982016,
         "program_year": 2018
       },
       {
         "display_name": "Saarthak Chaturvedi",
         "github_account": "saarthakchats",
-        "github_updated": 1540785966344,
+        "github_updated": 1540958836881,
         "id": 4642948055564288,
         "program_year": 2018
       },
       {
         "display_name": "Sid",
         "github_account": "CharcoalStick",
-        "github_updated": 1540785966463,
+        "github_updated": 1540958836726,
         "id": 6436804514283520,
         "program_year": 2018
       },
@@ -503,6 +409,12 @@
         "github_account": "STEdirisuriya",
         "github_updated": 1540872381989,
         "id": 4599767762993152,
+        "program_year": 2018
+      },
+      {
+        "display_name": "Vishnu Vardhan",
+        "github_updated": 1540958836926,
+        "id": 5710589146955776,
         "program_year": 2018
       }
     ],
@@ -543,13 +455,119 @@
   },
   {
     "accepted_org_tos": true,
+    "blog_url": "https://wiki.openmrs.org/",
+    "chat": {
+      "image": "images/chat.png",
+      "platform": "OTHER",
+      "url": "https://irc.openmrs.org"
+    },
+    "completed_task_instance_count": 371,
+    "contact_email": "helpdesk@openmrs.org",
+    "description": "[OpenMRS](http://openmrs.org/) is a collaborative open source project to develop software to support the delivery of health care in developing countries. We are a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. [Our mission](http://openmrs.org/about/mission/) is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software.\r\n\r\nThe [OpenMRS software platform](http://openmrs.org/about/) and a reference application enable the design of a customized medical records system with no programming knowledge. It is a common platform upon which medical informatics efforts in developing countries can be built.\r\n\r\nWorking on Google Code-in tasks for OpenMRS is a great way to join the free and open source software movement, and at the same time use your talents to help people in developing countries and around the world on the front lines of the battle against HIV/AIDS, TB, Malaria, and other public health challenges. For more detailed about OpenMRS and GCI, visit our [wiki documentation](https://wiki.openmrs.org/display/RES/Google+Code-in+2018) and watch [this short video](https://www.youtube.com/watch?v=HPxx1_svu_A) created by a previous OpenMRS GCI participant.",
+    "dev_mailing_list": null,
+    "github": "openmrs",
+    "gplus_url": "https://plus.google.com/+OpenMRSorg",
+    "guide_to_working": "Ensure that submissions are original works and any assets used must be creative commons licensed and attributed appropriately. Plagiarism, copying, giving, or receiving resources for the tasks are strictly prohibited.",
+    "guide_to_working_url": "https://om.rs/gci",
+    "id": 5517435189854208,
+    "image_url": "//lh3.googleusercontent.com/_4ACChIXxCZPrXjpseWLk20TmAafnlNnszgho7PjzG0g3CYWtZy4Pp9q2OBOKx4bsvu6WjQR4vTjxPv-_hZLJw",
+    "irc_channel": "https://irc.openmrs.org",
+    "leaders": [
+      {
+        "display_name": "anuar2k",
+        "github_updated": 1540958833151,
+        "id": 4862722740060160,
+        "program_year": 2018
+      },
+      {
+        "display_name": "Devansh9",
+        "github_updated": 1540958833178,
+        "id": 5861088626212864,
+        "program_year": 2018
+      },
+      {
+        "display_name": "iperez",
+        "github_updated": 1540958834046,
+        "id": 5047208379416576,
+        "program_year": 2018
+      },
+      {
+        "display_name": "Keshav Goyal",
+        "github_updated": 1540958833107,
+        "id": 6019750254608384,
+        "program_year": 2018
+      },
+      {
+        "display_name": "KevinX",
+        "github_updated": 1540958833065,
+        "id": 4881134694432768,
+        "program_year": 2018
+      },
+      {
+        "display_name": "Leader",
+        "github_updated": 1540958833084,
+        "id": 5372218268712960,
+        "program_year": 2018
+      },
+      {
+        "display_name": "Nikodem Bernat",
+        "github_updated": 1540958832839,
+        "id": 5758597083430912,
+        "program_year": 2018
+      },
+      {
+        "display_name": "Satvik",
+        "github_updated": 1540958833138,
+        "id": 4700913403953152,
+        "program_year": 2018
+      },
+      {
+        "display_name": "symt",
+        "github_updated": 1540958833083,
+        "id": 5468306787008512,
+        "program_year": 2018
+      }
+    ],
+    "mailing_list": "http://go.openmrs.org/lists",
+    "name": "OpenMRS",
+    "precis": "Write Code. Save Lives. — Open source medical records platform",
+    "preferred_contact_method": null,
+    "primary_open_source_license": "Mozilla Public License 2.0 (MPL-2.0)",
+    "program_year": 2018,
+    "programming_languages": [
+      "java",
+      "spring",
+      "react",
+      "javascript",
+      "android"
+    ],
+    "slug": "openmrs",
+    "stack_exchange": null,
+    "status": 2,
+    "tags": [
+      "health",
+      "ehealth",
+      "hospital",
+      "clinics",
+      "emr"
+    ],
+    "twitter_url": "https://twitter.com/OpenMRS",
+    "website_url": "https://openmrs.org/",
+    "wikidata_url": "//www.wikidata.org/wiki/Q7095826",
+    "wikipedia_urls": {
+      "en": "https://en.wikipedia.org/wiki/OpenMRS"
+    },
+    "winners": {}
+  },
+  {
+    "accepted_org_tos": true,
     "blog_url": null,
     "chat": {
       "image": "images/chat.png",
       "platform": "OTHER",
       "url": "http://chat.sugarlabs.org:9090/"
     },
-    "completed_task_instance_count": 191,
+    "completed_task_instance_count": 201,
     "contact_email": "sugar-devel@lists.sugarlabs.org",
     "description": "Sugar is a learning platform that reinvents how computers are used for education. Collaboration, reflection, and discovery are integrated directly into the user interface. Sugar promotes \"studio thinking\" and \"reflective practice\". Through Sugar's clarity of design, children and teachers have the opportunity to use computers on their own terms. Students can reshape, reinvent, and reapply both software and content into powerful learning activities. Sugar's focus on sharing, criticism, and exploration is grounded in the culture of free software (FLOSS).",
     "dev_mailing_list": null,
@@ -563,37 +581,43 @@
     "leaders": [
       {
         "display_name": "Alejandro Garcia",
-        "github_updated": 1540884248089,
+        "github_updated": 1540958829647,
         "id": 5739878407995392,
         "program_year": 2018
       },
       {
         "display_name": "aryanharitsh",
-        "github_updated": 1540884247847,
+        "github_updated": 1540958829577,
         "id": 4936817116708864,
         "program_year": 2018
       },
       {
+        "display_name": "FreddieN",
+        "github_updated": 1540958830346,
+        "id": 5395797437841408,
+        "program_year": 2018
+      },
+      {
         "display_name": "Mayank Singh",
-        "github_updated": 1540884248105,
+        "github_updated": 1540958829714,
         "id": 6042728195424256,
         "program_year": 2018
       },
       {
         "display_name": "nathanjacob",
-        "github_updated": 1540884247832,
+        "github_updated": 1540958830374,
         "id": 5437447715422208,
         "program_year": 2018
       },
       {
         "display_name": "Sarthak",
-        "github_updated": 1540884247817,
+        "github_updated": 1540958829700,
         "id": 5111381348057088,
         "program_year": 2018
       },
       {
         "display_name": "sdziuda",
-        "github_updated": 1540884247817,
+        "github_updated": 1540958829736,
         "id": 6151703092002816,
         "program_year": 2018
       }
@@ -634,7 +658,7 @@
       "platform": "IRC",
       "url": "https://www.mediawiki.org/wiki/MediaWiki_on_IRC"
     },
-    "completed_task_instance_count": 145,
+    "completed_task_instance_count": 166,
     "contact_email": "",
     "description": "Wikimedia believes that knowledge should be free for every human being. We prioritize efforts that empower disadvantaged and underrepresented communities, and that help overcome barriers to participation. We believe in mass collaboration, diversity and consensus building to achieve our goals.\nWikipedia has become the fifth most-visited site in the world, used by more than 400 million people every month in more than 280 languages. We have more content projects including Wikimedia Commons, Wikidata, or Wikisource. We also maintain the MediaWiki software engine and a wide collection of free and open source software projects around it. Those software projects use a variety of technologies and languages, such as PHP, JavaScript, node.js, CSS, Lua, Java, Objective-C, or C++, to mention a few.\nBut there is much more we can do: stabilize infrastructure, increase participation, improve quality, increase reach, encourage innovation.\nYou can help to these goals in many ways and become part of an international community!",
     "dev_mailing_list": null,
@@ -648,61 +672,61 @@
     "leaders": [
       {
         "display_name": "arcaynia",
-        "github_updated": 1540884248944,
+        "github_updated": 1540958830098,
         "id": 6509367433101312,
         "program_year": 2018
       },
       {
-        "display_name": "artbarte",
-        "github_updated": 1540884249339,
-        "id": 6261762836922368,
-        "program_year": 2018
-      },
-      {
         "display_name": "boboquack",
-        "github_updated": 1540884249363,
+        "github_updated": 1540958830591,
         "id": 5026583426367488,
         "program_year": 2018
       },
       {
         "display_name": "Jan Rosa",
-        "github_updated": 1540884249341,
+        "github_updated": 1540958830615,
         "id": 4933284489330688,
         "program_year": 2018
       },
       {
         "display_name": "MrSpecjal",
-        "github_updated": 1540884249346,
+        "github_updated": 1540958831169,
         "id": 6599814142754816,
         "program_year": 2018
       },
       {
         "display_name": "Nathan",
-        "github_updated": 1540884249389,
+        "github_updated": 1540958830477,
         "id": 6751850784096256,
         "program_year": 2018
       },
       {
+        "display_name": "refeed",
+        "github_updated": 1540958830552,
+        "id": 6042863721775104,
+        "program_year": 2018
+      },
+      {
         "display_name": "safan41",
-        "github_updated": 1540884249836,
+        "github_updated": 1540958830477,
         "id": 5055514560954368,
         "program_year": 2018
       },
       {
         "display_name": "Shreyas Minocha",
-        "github_updated": 1540884249217,
+        "github_updated": 1540958830556,
         "id": 6471404015845376,
         "program_year": 2018
       },
       {
         "display_name": "stibba",
-        "github_updated": 1540884248971,
+        "github_updated": 1540958830160,
         "id": 5590612691648512,
         "program_year": 2018
       },
       {
         "display_name": "takidelfin",
-        "github_updated": 1540884249353,
+        "github_updated": 1540958830476,
         "id": 5938919741849600,
         "program_year": 2018
       }
@@ -904,13 +928,88 @@
   },
   {
     "accepted_org_tos": true,
+    "blog_url": null,
+    "chat": {
+      "image": "images/chat.png",
+      "platform": "OTHER",
+      "url": "https://ccextractor.org/public:general:support"
+    },
+    "completed_task_instance_count": 165,
+    "contact_email": "contactus@ccextractor.org",
+    "description": "The org that creates the de-facto open source tool for everything related to media (TV, movies, etc) accessibility via subtitles. So if you ever watch something subtitled to learn a second language or because you have a hearing disability, chances are we were involved. And - we're branching out with lots of new things: Google Assistant, AI, and more. We welcome all new ideas.\n\nParticipants in all categories have a real chance to win. Last year our winners were a coder and a designer. It takes talent, dedication and a willingness to learn and have fun. Mentors never give up on students that don't give up, so if even if you are starting from zero (note: no one really is, everybody knows something) you can still get far.",
+    "dev_mailing_list": null,
+    "github": "CCExtractor",
+    "gitlab": null,
+    "gplus_url": null,
+    "guide_to_working": "Questions? https://ccextractor.org/public:general:support",
+    "guide_to_working_url": "",
+    "id": 5683807324733440,
+    "image_url": "//lh3.googleusercontent.com/BrDPWRvgO5Yec8vvdVM_HB_XXzbjRQFNhTINVjW2CSScBR3wxCE3w7QgzS8jXU1e6whWIi1y7QEGlv4VIM_qGps",
+    "irc_channel": "https://ccextractor.org/public:general:support",
+    "leaders": [
+      {
+        "display_name": "Brian M",
+        "github_updated": 1540958827328,
+        "id": 6688523336810496,
+        "program_year": 2018
+      },
+      {
+        "display_name": "Ivan Makarov",
+        "github_updated": 1540958827239,
+        "id": 5817552237232128,
+        "program_year": 2018
+      },
+      {
+        "display_name": "Matej Plavevski",
+        "github_updated": 1540958826862,
+        "id": 5993067870945280,
+        "program_year": 2018
+      },
+      {
+        "display_name": "T1duS",
+        "github_updated": 1540958827241,
+        "id": 5752859812429824,
+        "program_year": 2018
+      }
+    ],
+    "mailing_list": "https://groups.google.com/forum/#!forum/ccextractor-dev",
+    "name": "CCExtractor Development",
+    "precis": "We make media accessible to everybody",
+    "preferred_contact_method": null,
+    "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
+    "program_year": 2018,
+    "programming_languages": [
+      "c",
+      "python",
+      "mp4",
+      "h264",
+      "dialogflow"
+    ],
+    "slug": "ccextractor-development",
+    "stack_exchange": null,
+    "status": 2,
+    "tags": [
+      "assistant",
+      "media",
+      "video",
+      "subtitles",
+      "ai"
+    ],
+    "twitter_url": null,
+    "website_url": "https://ccextractor.org",
+    "wikidata_url": null,
+    "wikipedia_urls": null,
+    "winners": {}
+  },
+  {
+    "accepted_org_tos": true,
     "blog_url": "https://communityblog.fedoraproject.org",
     "chat": {
       "image": "images/chat.png",
       "platform": "OTHER",
       "url": "https://webchat.freenode.net/?channels=#fedora-summer-coding"
     },
-    "completed_task_instance_count": 113,
+    "completed_task_instance_count": 116,
     "contact_email": "summer-coding@lists.fedoraproject.org",
     "description": "The Fedora Project is a community of people working together to build a free and open source software platform and to collaborate on and share user-focused solutions built on that platform. Or, in plain English, we make an operating system and we make it easy for you do useful stuff with it.\n\nA key component of this is our **Community**. This community, which you will join as an participant in Google Code In, is creating a platform that supports the work of a diverse audience. Your contributions can affect people you've never met in situations you've never dreamed of. The Fedora community includes software engineers, artists, system administrators, web designers, writers, speakers, and translators -- all of whom will be happy to help you get started.\n\nFull project description available here: https://docs.fedoraproject.org/en-US/project/\n\nWe believe that all contributors should expect and be part of a safe and friendly environment for constructive contribution. We can more effectively and successfully compare and challenge different ideas to find the best solutions for advancement, while building the size, diversity, and strength of our community.",
     "dev_mailing_list": null,
@@ -924,13 +1023,19 @@
     "leaders": [
       {
         "display_name": "echoduck",
-        "github_updated": 1540884250559,
+        "github_updated": 1540958830951,
         "id": 6522669181698048,
         "program_year": 2018
       },
       {
+        "display_name": "Margi",
+        "github_updated": 1540958830987,
+        "id": 5912275308249088,
+        "program_year": 2018
+      },
+      {
         "display_name": "ShadyCake",
-        "github_updated": 1540884250578,
+        "github_updated": 1540958830970,
         "id": 6506868852654080,
         "program_year": 2018
       }
@@ -989,86 +1094,11 @@
     "accepted_org_tos": true,
     "blog_url": null,
     "chat": {
-      "image": "images/chat.png",
-      "platform": "OTHER",
-      "url": "https://ccextractor.org/public:general:support"
-    },
-    "completed_task_instance_count": 104,
-    "contact_email": "contactus@ccextractor.org",
-    "description": "The org that creates the de-facto open source tool for everything related to media (TV, movies, etc) accessibility via subtitles. So if you ever watch something subtitled to learn a second language or because you have a hearing disability, chances are we were involved. And - we're branching out with lots of new things: Google Assistant, AI, and more. We welcome all new ideas.\n\nParticipants in all categories have a real chance to win. Last year our winners were a coder and a designer. It takes talent, dedication and a willingness to learn and have fun. Mentors never give up on students that don't give up, so if even if you are starting from zero (note: no one really is, everybody knows something) you can still get far.",
-    "dev_mailing_list": null,
-    "github": "CCExtractor",
-    "gitlab": null,
-    "gplus_url": null,
-    "guide_to_working": "Questions? https://ccextractor.org/public:general:support",
-    "guide_to_working_url": "",
-    "id": 5683807324733440,
-    "image_url": "//lh3.googleusercontent.com/BrDPWRvgO5Yec8vvdVM_HB_XXzbjRQFNhTINVjW2CSScBR3wxCE3w7QgzS8jXU1e6whWIi1y7QEGlv4VIM_qGps",
-    "irc_channel": "https://ccextractor.org/public:general:support",
-    "leaders": [
-      {
-        "display_name": "Brian M",
-        "github_updated": 1540884246412,
-        "id": 6688523336810496,
-        "program_year": 2018
-      },
-      {
-        "display_name": "Ivan Makarov",
-        "github_updated": 1540884246258,
-        "id": 5817552237232128,
-        "program_year": 2018
-      },
-      {
-        "display_name": "Matej Plavevski",
-        "github_updated": 1540884245864,
-        "id": 5993067870945280,
-        "program_year": 2018
-      },
-      {
-        "display_name": "T1duS",
-        "github_updated": 1540884246160,
-        "id": 5752859812429824,
-        "program_year": 2018
-      }
-    ],
-    "mailing_list": "https://groups.google.com/forum/#!forum/ccextractor-dev",
-    "name": "CCExtractor Development",
-    "precis": "We make media accessible to everybody",
-    "preferred_contact_method": null,
-    "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
-    "program_year": 2018,
-    "programming_languages": [
-      "c",
-      "python",
-      "mp4",
-      "h264",
-      "dialogflow"
-    ],
-    "slug": "ccextractor-development",
-    "stack_exchange": null,
-    "status": 2,
-    "tags": [
-      "assistant",
-      "media",
-      "video",
-      "subtitles",
-      "ai"
-    ],
-    "twitter_url": null,
-    "website_url": "https://ccextractor.org",
-    "wikidata_url": null,
-    "wikipedia_urls": null,
-    "winners": {}
-  },
-  {
-    "accepted_org_tos": true,
-    "blog_url": null,
-    "chat": {
       "image": "images/logos/irc.png",
       "platform": "IRC",
       "url": "irc://chat.freenode.net/haiku"
     },
-    "completed_task_instance_count": 101,
+    "completed_task_instance_count": 111,
     "contact_email": "contact@haiku-os.org",
     "description": "Haiku is named after the classical three-line Japanese poetry form. Haiku poetry is known for its quiet power, elegance and simplicity - among the core qualities of BeOS which we aim to recreate in Haiku. BeOS included some haiku in its user interface, in the form of network error messages displayed by its web browser.\n\nWhile Haiku is now approaching its first Beta release, another goal for the project is to share knowledge about operating system development, with a clean code base and a community ready to help newcomers learn how things are done.",
     "dev_mailing_list": null,
@@ -1082,13 +1112,13 @@
     "leaders": [
       {
         "display_name": "BachToTheFuture",
-        "github_updated": 1540884247235,
+        "github_updated": 1540958827763,
         "id": 6487090712805376,
         "program_year": 2018
       },
       {
         "display_name": "Ojasva",
-        "github_updated": 1540884247769,
+        "github_updated": 1540958828277,
         "id": 5524143878438912,
         "program_year": 2018
       }
@@ -1227,90 +1257,13 @@
   },
   {
     "accepted_org_tos": true,
-    "blog_url": "https://terasology.org/",
-    "chat": {
-      "image": "images/logos/irc.png",
-      "platform": "IRC",
-      "url": "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
-    },
-    "completed_task_instance_count": 80,
-    "contact_email": "terasology@gmail.com",
-    "description": "MovingBlocks is the original name of the organization behind Terasology, DestinationSol, and a series of related work aimed at making game development in Java easier and more fun\n\nAfter participating in programs like GSOC and GCI for years we're becoming The Terasology Foundation, a registered non-profit, and look forward to years more of educational awareness, challenging architecture, powerful developer workspaces, fun content, and much more\n\nTerasology is a super extensible open source voxel-based game. Born from a Minecraft-inspired tech demo, it is gradually becoming a stable platform for all sorts of gameplay settings in a voxel world\n\nFrom the ground up, Terasology was built to be a super hackable and modular game. We host a large amount of game content modules under the Terasology organization on GitHub, all community maintained. We welcome new ideas, both crazy and well thought-out for modules and game extensions from anyone and everyone, so feel free to talk to us on IRC or Discord\n\nDestination Sol is a fun little space arcade shooter we adopted as open source to learn more about LibGDX, releasing on Steam and Google Play, and to have somewhere to apply our frameworks\n\nThe creators and maintainers are a diverse mix of software developers, designers, game testers, graphic artists, musicians and even a few open source loving high schoolers. We encourage and appreciate contributions from everybody, and try to be as warm and welcoming as possible to newcomers",
-    "dev_mailing_list": null,
-    "github": "MovingBlocks",
-    "gplus_url": "https://plus.google.com/+Terasology",
-    "guide_to_working": "Please see our general task information wiki page for all your task related needs :-)\n\nJoin us on IRC/Discord for live chat and help. Please hang out for a little while - contributors and students are around, but not necessarily watching every second!",
-    "guide_to_working_url": "https://github.com/MovingBlocks/Terasology/wiki/GCI",
-    "id": 5876063818219520,
-    "image_url": "//lh3.googleusercontent.com/kUbitYfCgJ9_1lRMxH9x8zgeYzz5EFwWMQuCWVyEFYmgEaBjp3SjIQcUcC6o84ntWxYHKf429TUmbej1oh10suM",
-    "irc_channel": "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC",
-    "leaders": [
-      {
-        "display_name": "Graviton",
-        "github_updated": 1540884248471,
-        "id": 5890519252074496,
-        "program_year": 2018
-      },
-      {
-        "display_name": "MK",
-        "github_account": "mkalb",
-        "github_updated": 1540872373481,
-        "id": 6682529508622336,
-        "program_year": 2018
-      },
-      {
-        "display_name": "Phoenix909",
-        "github_updated": 1540884248018,
-        "id": 6435702167306240,
-        "program_year": 2018
-      },
-      {
-        "display_name": "RatMoleRat",
-        "github_updated": 1540884248679,
-        "id": 4985440793788416,
-        "program_year": 2018
-      }
-    ],
-    "mailing_list": "https://forum.terasology.org/forum/",
-    "name": "MovingBlocks",
-    "precis": "An open source voxel world - imagine the possibilities! Makers of video games, Terasology, Destination Sol, and a small slew of libraries & frameworks for game development",
-    "preferred_contact_method": null,
-    "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
-    "program_year": 2018,
-    "programming_languages": [
-      "java",
-      "opengl",
-      "lwjgl",
-      "json",
-      "gradle"
-    ],
-    "slug": "movingblocks",
-    "stack_exchange": null,
-    "status": 2,
-    "tags": [
-      "games",
-      "extensibility",
-      "fun",
-      "ai",
-      "graphics"
-    ],
-    "twitter_url": "https://twitter.com/Terasology",
-    "website_url": "https://terasology.org",
-    "wikidata_url": "//www.wikidata.org/wiki/Q40881750",
-    "wikipedia_urls": {
-      "commons": "https://commons.wikipedia.org/wiki/Category%3AMovingBlocks"
-    },
-    "winners": {}
-  },
-  {
-    "accepted_org_tos": true,
     "blog_url": "https://blog.musicbrainz.org/",
     "chat": {
       "image": "images/logos/irc.png",
       "platform": "IRC",
       "url": "irc://irc.freenode.net/musicbrainz"
     },
-    "completed_task_instance_count": 75,
+    "completed_task_instance_count": 88,
     "contact_email": "support@metabrainz.org",
     "description": "The MetaBrainz Foundation provides the backbone for [a number of projects](https://metabrainz.org/projects) rooted in crowd sourcing open data, namely:\n\n* [MusicBrainz](https://musicbrainz.org/): open music metadata database\n* [MusicBrainz Picard](https://picard.musicbrainz.org/): music file tagger, using data from MusicBrainz\n* [BookBrainz](https://bookbrainz.org/): open \"book\" database\n* [ListenBrainz](https://listenbrainz.org/): repository of listen data\n* [AcousticBrainz](https://acousticbrainz.org/): crowd sourced database of acoustic information for music\n* [CritiqueBrainz](https://critiquebrainz.org/): Creative Commons-licensed reviews\n* [Cover Art Archive](https://coverartarchive.org/): repository of album cover art",
     "dev_mailing_list": null,
@@ -1324,20 +1277,26 @@
     "leaders": [
       {
         "display_name": "abhi_ohri",
-        "github_updated": 1540884248688,
+        "github_updated": 1540958829546,
         "id": 5638600730345472,
         "program_year": 2018
       },
       {
         "display_name": "C1e0",
-        "github_updated": 1540884249193,
+        "github_updated": 1540958829895,
         "id": 5033418363502592,
         "program_year": 2018
       },
       {
         "display_name": "G30rg3",
-        "github_updated": 1540884249074,
+        "github_updated": 1540958829790,
         "id": 4823594782687232,
+        "program_year": 2018
+      },
+      {
+        "display_name": "KVD",
+        "github_updated": 1540958829852,
+        "id": 6276003572744192,
         "program_year": 2018
       }
     ],
@@ -1376,13 +1335,96 @@
   },
   {
     "accepted_org_tos": true,
+    "blog_url": "https://terasology.org/",
+    "chat": {
+      "image": "images/logos/irc.png",
+      "platform": "IRC",
+      "url": "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
+    },
+    "completed_task_instance_count": 85,
+    "contact_email": "terasology@gmail.com",
+    "description": "MovingBlocks is the original name of the organization behind Terasology, DestinationSol, and a series of related work aimed at making game development in Java easier and more fun\n\nAfter participating in programs like GSOC and GCI for years we're becoming The Terasology Foundation, a registered non-profit, and look forward to years more of educational awareness, challenging architecture, powerful developer workspaces, fun content, and much more\n\nTerasology is a super extensible open source voxel-based game. Born from a Minecraft-inspired tech demo, it is gradually becoming a stable platform for all sorts of gameplay settings in a voxel world\n\nFrom the ground up, Terasology was built to be a super hackable and modular game. We host a large amount of game content modules under the Terasology organization on GitHub, all community maintained. We welcome new ideas, both crazy and well thought-out for modules and game extensions from anyone and everyone, so feel free to talk to us on IRC or Discord\n\nDestination Sol is a fun little space arcade shooter we adopted as open source to learn more about LibGDX, releasing on Steam and Google Play, and to have somewhere to apply our frameworks\n\nThe creators and maintainers are a diverse mix of software developers, designers, game testers, graphic artists, musicians and even a few open source loving high schoolers. We encourage and appreciate contributions from everybody, and try to be as warm and welcoming as possible to newcomers",
+    "dev_mailing_list": null,
+    "github": "MovingBlocks",
+    "gplus_url": "https://plus.google.com/+Terasology",
+    "guide_to_working": "Please see our general task information wiki page for all your task related needs :-)\n\nJoin us on IRC/Discord for live chat and help. Please hang out for a little while - contributors and students are around, but not necessarily watching every second!",
+    "guide_to_working_url": "https://github.com/MovingBlocks/Terasology/wiki/GCI",
+    "id": 5876063818219520,
+    "image_url": "//lh3.googleusercontent.com/kUbitYfCgJ9_1lRMxH9x8zgeYzz5EFwWMQuCWVyEFYmgEaBjp3SjIQcUcC6o84ntWxYHKf429TUmbej1oh10suM",
+    "irc_channel": "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC",
+    "leaders": [
+      {
+        "display_name": "DAI",
+        "github_updated": 1540958828375,
+        "id": 6508830495080448,
+        "program_year": 2018
+      },
+      {
+        "display_name": "Graviton",
+        "github_updated": 1540958828346,
+        "id": 5890519252074496,
+        "program_year": 2018
+      },
+      {
+        "display_name": "MK",
+        "github_account": "mkalb",
+        "github_updated": 1540872373481,
+        "id": 6682529508622336,
+        "program_year": 2018
+      },
+      {
+        "display_name": "Phoenix909",
+        "github_updated": 1540958827890,
+        "id": 6435702167306240,
+        "program_year": 2018
+      },
+      {
+        "display_name": "RatMoleRat",
+        "github_updated": 1540958828305,
+        "id": 4985440793788416,
+        "program_year": 2018
+      }
+    ],
+    "mailing_list": "https://forum.terasology.org/forum/",
+    "name": "MovingBlocks",
+    "precis": "An open source voxel world - imagine the possibilities! Makers of video games, Terasology, Destination Sol, and a small slew of libraries & frameworks for game development",
+    "preferred_contact_method": null,
+    "primary_open_source_license": "Apache License 2.0 (Apache-2.0)",
+    "program_year": 2018,
+    "programming_languages": [
+      "java",
+      "opengl",
+      "lwjgl",
+      "json",
+      "gradle"
+    ],
+    "slug": "movingblocks",
+    "stack_exchange": null,
+    "status": 2,
+    "tags": [
+      "games",
+      "extensibility",
+      "fun",
+      "ai",
+      "graphics"
+    ],
+    "twitter_url": "https://twitter.com/Terasology",
+    "website_url": "https://terasology.org",
+    "wikidata_url": "//www.wikidata.org/wiki/Q40881750",
+    "wikipedia_urls": {
+      "commons": "https://commons.wikipedia.org/wiki/Category%3AMovingBlocks"
+    },
+    "winners": {}
+  },
+  {
+    "accepted_org_tos": true,
     "blog_url": null,
     "chat": {
       "image": "images/chat.png",
       "platform": "OTHER",
       "url": "https://discordapp.com/invite/UfR5qrF"
     },
-    "completed_task_instance_count": 72,
+    "completed_task_instance_count": 82,
     "contact_email": "contact@catrobat.org",
     "description": "You can easily create your own apps, games, and animations directly on your smartphone using an intuitive yet powerful visual programming app. Simply drag and drop Lego-like bricks with our free apps (Android and iOS) and design your very first interactive games or animations within minutes, without any previous knowledge. You can use your phone’s sensors, camera, high resolution multi-touch screen, a powerful and fast physics game engine, or connect your program wirelessly with Arduino, Raspberry Pi, or Lego Mindstorms robots. A built-in powerful paint app (transparency, layers, zoom to pixel) and a multi-media library with awesome images and sounds allow you to get started immediately. If you have a smart TV, you can even create Wii/Kinect style games directly on your phone. More than 600 contributors have already been part of our free open source software (FOSS) project. At the same time, Catrobat is also a meta-FOSS project, as users are encouraged to easily share and remix projects under an open source license on our community platform --- more than 30 million projects can be downloaded through our apps. Learn from others, remix, or collaborate on projects with your friends. Catrobat fosters an open mindset and helps everyone to become part of a growing international community. Share your projects, chat with others on our Discord channels, and check out how others have created their awesome app. Join us and become part of Catrobat!",
     "dev_mailing_list": null,
@@ -1396,19 +1438,25 @@
     "leaders": [
       {
         "display_name": "Martina Hanusova",
-        "github_updated": 1540884248322,
+        "github_updated": 1540958828765,
         "id": 6125194016980992,
         "program_year": 2018
       },
       {
         "display_name": "MateuszKomajda",
-        "github_updated": 1540884247987,
+        "github_updated": 1540958828494,
         "id": 5857541150998528,
         "program_year": 2018
       },
       {
+        "display_name": "Thea M",
+        "github_updated": 1540958828473,
+        "id": 6451263739789312,
+        "program_year": 2018
+      },
+      {
         "display_name": "Łukasz Ameljan",
-        "github_updated": 1540884247880,
+        "github_updated": 1540958828459,
         "id": 5403911100825600,
         "program_year": 2018
       }
@@ -1448,7 +1496,7 @@
       "platform": "IRC",
       "url": "irc://irc.freenode.net/#osgeo"
     },
-    "completed_task_instance_count": 66,
+    "completed_task_instance_count": 79,
     "contact_email": "gci-admin@osgeo.org",
     "description": "OSGeo is a non-profit organization serving as an umbrella organization for the Open Source Geospatial community in general and several code projects in particular:\n\n## Content Management Systems\n\nGeoNode\n\n## Desktop Applications\n\nGRASS GIS\ngvSIG\nMarble\nQGIS\n\n## Geospatial Libraries\n\nFDO\nGDAL/OGR\nGEOS\nGeoTools\nOrfeo ToolBox (OTB)\nOSSIM\nPostGIS\n\n## Metadata Catalogs\n\nGeoNetwork\npycsw\n\n## Web Mapping\n\ndeegree\ngeomajas\nGeoMOOSE\nGeoServer\nMapbender\nMapFish\nMapGuide Open Source\nMapServer\nOpenLayers\nPyWPS\n\n## Incubating Projects\n\nistSOS\nMetaCRS\nOpticks\nOskari\nTeam Engine\nZOO-Project\n\n## Outreach Projects\n\nGeoForAll - Education and Curriculum\nOSGeo-Live\n\n## OSGeo Community Projects\n\nGeoinformatica\nGeoWebCache\nMapProxy\npgRouting\nPortable GIS\nPostal Address Geo-Coder\nProj4php\nPronto Raster\nVirtual Terrain Project\n\nWe host regional and international FOSS4G conferences with typical attendance of 500-1200+ geospatial developers, industry and government leaders, and researchers. Our mailing lists collectively go out to ~ 31.050 unique subscribers.",
     "dev_mailing_list": null,
@@ -1463,19 +1511,19 @@
     "leaders": [
       {
         "display_name": "sasha1009",
-        "github_updated": 1540884247093,
+        "github_updated": 1540958828257,
         "id": 5971398049660928,
         "program_year": 2018
       },
       {
         "display_name": "ShubhamSharama",
-        "github_updated": 1540884247097,
+        "github_updated": 1540958828310,
         "id": 4731796802502656,
         "program_year": 2018
       },
       {
         "display_name": "SunveerSingh",
-        "github_updated": 1540884247558,
+        "github_updated": 1540958828664,
         "id": 5573113417826304,
         "program_year": 2018
       }
@@ -1537,7 +1585,7 @@
       "platform": "IRC",
       "url": "irc://irc.freenode.net/#apertium"
     },
-    "completed_task_instance_count": 65,
+    "completed_task_instance_count": 66,
     "contact_email": "apertium-contact@lists.sourceforge.net",
     "description": "Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs (such as Spanish–Catalan) but which has been expanded to deal with more divergent language pairs (such as English–Catalan and even Basque→English). The platform provides:\n\n * a language-independent machine translation engine\n * tools to manage the linguistic data necessary to build a machine translation system for a given language pair and\n * linguistic data for a growing number of languages and language pairs\n\nWe particularly aim at supporting low-resourced and marginalised languages, and in addition to machine translation work on a variety of other natural language processing and language technology applications: spellchecking, morphological analysis, treebanking, etc.",
     "dev_mailing_list": null,
@@ -1630,78 +1678,13 @@
   },
   {
     "accepted_org_tos": true,
-    "blog_url": null,
-    "chat": {
-      "image": "images/logos/zulip.png",
-      "platform": "ZULIP",
-      "url": "https://ns-3.zulipchat.com/"
-    },
-    "completed_task_instance_count": 49,
-    "contact_email": "consortium@nsnam.org",
-    "description": "ns-3 is a discrete-event, packet-level network simulator with an emphasis on networking research and education. Users of ns-3 can construct simulations of computer networks using models of traffic generators, protocols such as TCP/IP, and devices and channels such as Wi-Fi and LTE, and analyze or visualize the results. Simulation plays a vital role in the research and education process, because of the ability for simulations to obtain reproducible results (particularly for wireless protocol design), scale to large networks, and study systems that have not yet been implemented. A particular emphasis in ns-3 is the high degree of realism in the models and integration of the tool with VM environments and testbeds. Very large scale simulations are possible; simulations of millions of nodes have been published. ns-3 has been in development since 2005 and has been making regular releases since June 2008 (our last release was ns-3.29 in September 2018). The tool is in wide use; we have a users mailing list (Google Groups forum) of over 8000 members, roughly 700 posts per month. Our developers list has over 1500 subscribers, and the code base credits 220 authors, supported by 10 active maintainers. ns-3 is operated as an open source project, originally funded with financial backing from three NSF grants and from the French government (and via help from GSoC and ESA Summer of Code in Space), but with most current contributions coming from interested researchers and students worldwide.",
-    "dev_mailing_list": null,
-    "github": null,
-    "gitlab": null,
-    "gplus_url": null,
-    "guide_to_working": "Join our users forum on Google groups:\nhttps://groups.google.com/forum/#!forum/ns-3-users\n\nChat with us on Zulip:\nhttps://ns-3.zulipchat.com/\n\nParticipate in our developers discussion:\nhttp://mailman.isi.edu/mailman/listinfo/ns-developers",
-    "guide_to_working_url": "https://www.nsnam.org/wiki/index.php/GCI2018Details",
-    "id": 5776919934009344,
-    "image_url": "//lh3.googleusercontent.com/vZSocJ4yyD90nLTj7IVCmfCur2u1XqOx_LvVSv1G-BNxdXrxxlDS_f4srgZyLpnh-D5SP2YBlZzOM4dM0dBObA",
-    "irc_channel": "https://ns-3.zulipchat.com/",
-    "leaders": [
-      {
-        "display_name": "Asanali",
-        "github_updated": 1540884244690,
-        "id": 6514313490595840,
-        "program_year": 2018
-      },
-      {
-        "display_name": "bartekche",
-        "github_updated": 1540884244690,
-        "id": 5155012008214528,
-        "program_year": 2018
-      },
-      {
-        "display_name": "Parth Pratim",
-        "github_updated": 1540884244690,
-        "id": 5414601005989888,
-        "program_year": 2018
-      }
-    ],
-    "mailing_list": "http://mailman.isi.edu/mailman/listinfo/ns-developers",
-    "name": "The ns-3 Network Simulator Project",
-    "precis": "ns-3 is a packet-level network simulator for research and education.",
-    "preferred_contact_method": null,
-    "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
-    "program_year": 2018,
-    "programming_languages": [
-      "c",
-      "c++",
-      "python"
-    ],
-    "slug": "the-ns-3-network-simulator-project",
-    "stack_exchange": null,
-    "status": 2,
-    "tags": [
-      "network simulations",
-      "networking",
-      "research and development"
-    ],
-    "twitter_url": null,
-    "website_url": "https://www.nsnam.org/",
-    "wikidata_url": null,
-    "wikipedia_urls": null,
-    "winners": {}
-  },
-  {
-    "accepted_org_tos": true,
     "blog_url": "https://blog.coala.io/",
     "chat": {
       "image": "images/logos/gitter.png",
       "platform": "GITTER",
       "url": "https://gitter.im/coala"
     },
-    "completed_task_instance_count": 48,
+    "completed_task_instance_count": 56,
     "contact_email": null,
     "description": "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used. You can use coala from within your favorite editor, integrate it with your CI, get the results as JSON, or customize it to your needs with its flexible configuration syntax.\n\ncoala has a set of official bears (plugins) for several languages, including popular languages such as C/C++, Python, JavaScript, CSS, Java and many more, in addition to some generic language independent algorithms. To learn more about the different languages supported and the bears themselves, click below.",
     "dev_mailing_list": null,
@@ -1716,13 +1699,19 @@
     "leaders": [
       {
         "display_name": "cliu13",
-        "github_updated": 1540884248571,
+        "github_updated": 1540958830046,
         "id": 6191521935130624,
         "program_year": 2018
       },
       {
+        "display_name": "Kacper",
+        "github_updated": 1540958829976,
+        "id": 4744518361415680,
+        "program_year": 2018
+      },
+      {
         "display_name": "kx-chen",
-        "github_updated": 1540884248693,
+        "github_updated": 1540958830039,
         "id": 4765788079652864,
         "program_year": 2018
       }
@@ -1758,68 +1747,11 @@
   },
   {
     "accepted_org_tos": true,
-    "blog_url": "https://digitalimpactalliance.org/blog",
-    "chat": {
-      "image": "images/logos/zulip.png",
-      "platform": "ZULIP",
-      "url": "https://dial.zulipchat.com"
-    },
-    "completed_task_instance_count": 43,
-    "contact_email": "osc@dial.community",
-    "description": "**We are a GCI umbrella organization hosting multiple software projects participating in the contest this year.** We work with many of the leading projects in this area -- see below for a more detailed list. \n\nAn initiative of the [United Nations Foundation](http://www.unfoundation.org/), the [Digital Impact Alliance](http://digitalimpactalliance.org/) helps open source projects set up leadership and governance teams, assists with software project management, and helps projects develop better ways for people to contribute. We also provide technical, architectural, and software development support for projects; and help them with support, engagement, management of their communities of contributors and users. [Read more about the DIAL Open Source Center.](https://www.osc.dial.community/)\n\n**This year, our sub-organizations will include one or more of our participating member open source projects listed below. As projects confirm their participation, they will be noted in this list throughout the coming week:**\n\n- [LibreHealth](https://librehealth.io) (confirmed)\n- [Ushahidi](https://www.ushahidi.com/) (confirmed)\n- [Mifos](http://mifos.org/) (confirmed)\n- [Public Lab (participating directly)](https://codein.withgoogle.com/organizations/public-lab/)\n- [InSTEDD](http://instedd.org/open-source-tools/) (tentative)\n\n**Ready to get engaged?** Join the [DIAL Open Source Center Forum's GCI zone](https://gci.dial.community/), or sign in to the [OSC's Zulip chat server](https://dial.zulipchat.com/) to ask questions or get directed to the various sub-organization projects that will be working with us.",
-    "dev_mailing_list": null,
-    "github": "DIAL-Community",
-    "gitlab": null,
-    "gplus_url": null,
-    "guide_to_working": "## Re-using someone's work?\nAnything you create for any of our tasks must be **your own original work** or used with permission. **You must read and follow the instructions below** if you plan to include or modify someone else's work for this (or any) task.",
-    "guide_to_working_url": "http://docs.osc.dial.community/en/master/gci-policies.html#students-about-plagiarism-and-re-use",
-    "id": 4752143387983872,
-    "image_url": "//lh3.googleusercontent.com/wbf6URPOrBlc3tuzbu8zWMxvrtc6TLsXGsXhiaDjDdaTyycMZdzQJ565gw7Lwtn8UcbzkB6KhNWj48Au86jyOWo",
-    "irc_channel": "https://dial.zulipchat.com",
-    "leaders": [
-      {
-        "display_name": "jz53",
-        "github_updated": 1540884245412,
-        "id": 4890377967370240,
-        "program_year": 2018
-      }
-    ],
-    "mailing_list": "https://forum.osc.dial.community/c/projects/gci",
-    "name": "Digital Impact Alliance",
-    "precis": "The DIAL Open Source Center is a collaborative community for the world's leading open source software projects that make the world better through international development & humanitarian response.",
-    "preferred_contact_method": null,
-    "primary_open_source_license": "GNU General Public License version 3.0 (GPL-3.0)",
-    "program_year": 2018,
-    "programming_languages": [
-      "android",
-      "java",
-      "php",
-      "python",
-      "javascript"
-    ],
-    "slug": "digital-impact-alliance",
-    "stack_exchange": null,
-    "status": 2,
-    "tags": [
-      "humanitarian",
-      "international",
-      "social good",
-      "charity",
-      "health"
-    ],
-    "twitter_url": "https://twitter.com/DIAL_Community",
-    "website_url": "http://digitalimpactalliance.org/",
-    "wikidata_url": null,
-    "wikipedia_urls": null,
-    "winners": {}
-  },
-  {
-    "accepted_org_tos": true,
     "blog_url": "http://www.liquidgalaxylab.com/",
     "chat": {
       "url": null
     },
-    "completed_task_instance_count": 42,
+    "completed_task_instance_count": 55,
     "contact_email": "lgcodein@gmail.com",
     "description": "Liquid Galaxy is a remarkable panoramic system that is tremendously compelling. It started off as a Google 20% project to run Google Earth across a small cluster of PC's and it has grown from there.\nLiquid Galaxy hardware consists of one or more computers driving multiple displays. Liquid Galaxy applications have been developed using a master/slave architecture. The view orientation of each slave display is configured in reference to the view of the master display. Navigation on the system is done from the master instance and the location on the master is broadcast to the slaves over UDP. The slave instances, knowing their own locations in reference to the master, then change their views accordingly.\nThe Liquid Galaxy Project, while making use of Google Earth software, does not develop the Google Earth code-base itself. Google Earth is not open source software, although it is free (as in beer). Instead, the Liquid Galaxy Project works on extending the Liquid Galaxy system with open source software both improving its administration and enabling open source applications, so that content of various types can be displayed in the immersive panoramic environment.",
     "dev_mailing_list": null,
@@ -1832,8 +1764,20 @@
     "irc_channel": "",
     "leaders": [
       {
+        "display_name": "CaptainNemo",
+        "github_updated": 1540958827366,
+        "id": 5327442060247040,
+        "program_year": 2018
+      },
+      {
+        "display_name": "Jakub Szczepaniak",
+        "github_updated": 1540958827490,
+        "id": 5913811044270080,
+        "program_year": 2018
+      },
+      {
         "display_name": "SachinR",
-        "github_updated": 1540884246415,
+        "github_updated": 1540958827395,
         "id": 6670961702076416,
         "program_year": 2018
       }
@@ -1871,13 +1815,135 @@
   },
   {
     "accepted_org_tos": true,
+    "blog_url": null,
+    "chat": {
+      "image": "images/logos/zulip.png",
+      "platform": "ZULIP",
+      "url": "https://ns-3.zulipchat.com/"
+    },
+    "completed_task_instance_count": 52,
+    "contact_email": "consortium@nsnam.org",
+    "description": "ns-3 is a discrete-event, packet-level network simulator with an emphasis on networking research and education. Users of ns-3 can construct simulations of computer networks using models of traffic generators, protocols such as TCP/IP, and devices and channels such as Wi-Fi and LTE, and analyze or visualize the results. Simulation plays a vital role in the research and education process, because of the ability for simulations to obtain reproducible results (particularly for wireless protocol design), scale to large networks, and study systems that have not yet been implemented. A particular emphasis in ns-3 is the high degree of realism in the models and integration of the tool with VM environments and testbeds. Very large scale simulations are possible; simulations of millions of nodes have been published. ns-3 has been in development since 2005 and has been making regular releases since June 2008 (our last release was ns-3.29 in September 2018). The tool is in wide use; we have a users mailing list (Google Groups forum) of over 8000 members, roughly 700 posts per month. Our developers list has over 1500 subscribers, and the code base credits 220 authors, supported by 10 active maintainers. ns-3 is operated as an open source project, originally funded with financial backing from three NSF grants and from the French government (and via help from GSoC and ESA Summer of Code in Space), but with most current contributions coming from interested researchers and students worldwide.",
+    "dev_mailing_list": null,
+    "github": null,
+    "gitlab": null,
+    "gplus_url": null,
+    "guide_to_working": "Join our users forum on Google groups:\nhttps://groups.google.com/forum/#!forum/ns-3-users\n\nChat with us on Zulip:\nhttps://ns-3.zulipchat.com/\n\nParticipate in our developers discussion:\nhttp://mailman.isi.edu/mailman/listinfo/ns-developers",
+    "guide_to_working_url": "https://www.nsnam.org/wiki/index.php/GCI2018Details",
+    "id": 5776919934009344,
+    "image_url": "//lh3.googleusercontent.com/vZSocJ4yyD90nLTj7IVCmfCur2u1XqOx_LvVSv1G-BNxdXrxxlDS_f4srgZyLpnh-D5SP2YBlZzOM4dM0dBObA",
+    "irc_channel": "https://ns-3.zulipchat.com/",
+    "leaders": [
+      {
+        "display_name": "Asanali",
+        "github_updated": 1540958825730,
+        "id": 6514313490595840,
+        "program_year": 2018
+      },
+      {
+        "display_name": "bartekche",
+        "github_updated": 1540958825730,
+        "id": 5155012008214528,
+        "program_year": 2018
+      },
+      {
+        "display_name": "Parth Pratim",
+        "github_updated": 1540958825730,
+        "id": 5414601005989888,
+        "program_year": 2018
+      }
+    ],
+    "mailing_list": "http://mailman.isi.edu/mailman/listinfo/ns-developers",
+    "name": "The ns-3 Network Simulator Project",
+    "precis": "ns-3 is a packet-level network simulator for research and education.",
+    "preferred_contact_method": null,
+    "primary_open_source_license": "GNU General Public License version 2.0 (GPL-2.0)",
+    "program_year": 2018,
+    "programming_languages": [
+      "c",
+      "c++",
+      "python"
+    ],
+    "slug": "the-ns-3-network-simulator-project",
+    "stack_exchange": null,
+    "status": 2,
+    "tags": [
+      "network simulations",
+      "networking",
+      "research and development"
+    ],
+    "twitter_url": null,
+    "website_url": "https://www.nsnam.org/",
+    "wikidata_url": null,
+    "wikipedia_urls": null,
+    "winners": {}
+  },
+  {
+    "accepted_org_tos": true,
+    "blog_url": "https://digitalimpactalliance.org/blog",
+    "chat": {
+      "image": "images/logos/zulip.png",
+      "platform": "ZULIP",
+      "url": "https://dial.zulipchat.com"
+    },
+    "completed_task_instance_count": 49,
+    "contact_email": "osc@dial.community",
+    "description": "**We are a GCI umbrella organization hosting multiple software projects participating in the contest this year.** We work with many of the leading projects in this area -- see below for a more detailed list. \n\nAn initiative of the [United Nations Foundation](http://www.unfoundation.org/), the [Digital Impact Alliance](http://digitalimpactalliance.org/) helps open source projects set up leadership and governance teams, assists with software project management, and helps projects develop better ways for people to contribute. We also provide technical, architectural, and software development support for projects; and help them with support, engagement, management of their communities of contributors and users. [Read more about the DIAL Open Source Center.](https://www.osc.dial.community/)\n\n**This year, our sub-organizations will include one or more of our participating member open source projects listed below. As projects confirm their participation, they will be noted in this list throughout the coming week:**\n\n- [LibreHealth](https://librehealth.io) (confirmed)\n- [Ushahidi](https://www.ushahidi.com/) (confirmed)\n- [Mifos](http://mifos.org/) (confirmed)\n- [Public Lab (participating directly)](https://codein.withgoogle.com/organizations/public-lab/)\n- [InSTEDD](http://instedd.org/open-source-tools/) (tentative)\n\n**Ready to get engaged?** Join the [DIAL Open Source Center Forum's GCI zone](https://gci.dial.community/), or sign in to the [OSC's Zulip chat server](https://dial.zulipchat.com/) to ask questions or get directed to the various sub-organization projects that will be working with us.",
+    "dev_mailing_list": null,
+    "github": "DIAL-Community",
+    "gitlab": null,
+    "gplus_url": null,
+    "guide_to_working": "## Re-using someone's work?\nAnything you create for any of our tasks must be **your own original work** or used with permission. **You must read and follow the instructions below** if you plan to include or modify someone else's work for this (or any) task.",
+    "guide_to_working_url": "http://docs.osc.dial.community/en/master/gci-policies.html#students-about-plagiarism-and-re-use",
+    "id": 4752143387983872,
+    "image_url": "//lh3.googleusercontent.com/wbf6URPOrBlc3tuzbu8zWMxvrtc6TLsXGsXhiaDjDdaTyycMZdzQJ565gw7Lwtn8UcbzkB6KhNWj48Au86jyOWo",
+    "irc_channel": "https://dial.zulipchat.com",
+    "leaders": [
+      {
+        "display_name": "jz53",
+        "github_updated": 1540958826431,
+        "id": 4890377967370240,
+        "program_year": 2018
+      }
+    ],
+    "mailing_list": "https://forum.osc.dial.community/c/projects/gci",
+    "name": "Digital Impact Alliance",
+    "precis": "The DIAL Open Source Center is a collaborative community for the world's leading open source software projects that make the world better through international development & humanitarian response.",
+    "preferred_contact_method": null,
+    "primary_open_source_license": "GNU General Public License version 3.0 (GPL-3.0)",
+    "program_year": 2018,
+    "programming_languages": [
+      "android",
+      "java",
+      "php",
+      "python",
+      "javascript"
+    ],
+    "slug": "digital-impact-alliance",
+    "stack_exchange": null,
+    "status": 2,
+    "tags": [
+      "humanitarian",
+      "international",
+      "social good",
+      "charity",
+      "health"
+    ],
+    "twitter_url": "https://twitter.com/DIAL_Community",
+    "website_url": "http://digitalimpactalliance.org/",
+    "wikidata_url": null,
+    "wikipedia_urls": null,
+    "winners": {}
+  },
+  {
+    "accepted_org_tos": true,
     "blog_url": "http://publiclab.org/blog",
     "chat": {
       "image": "images/chat.png",
       "platform": "OTHER",
       "url": "https://publiclab.org/chat"
     },
-    "completed_task_instance_count": 37,
+    "completed_task_instance_count": 40,
     "contact_email": "web@publiclab.org",
     "description": "## Measuring pollution at low cost\n\nPublic Lab is focused on democratizing the tools and techniques of environmental science so that communities who face pollution and other environmental problems can actually use them.\n\nWe believe that low cost, open source, easy to use hardware and software can enable anyone to collect data with which to hold polluters accountable.\n\n## Sensor data and open hardware development\n\nPublic Lab software projects focus on two areas: data processing for our sensors and tools (MapKnitter.org and SpectralWorkbench.org, among others), and community collaboration and open hardware development (PublicLab.org).\n\nOur browser-based data analysis tools make use of HTML5 features such as CSS 3d transforms for image distortion and the WebRTC webcam API for capturing spectral data, to make advanced features available to users in a powerful cross-platform, user-friendly, database-backed approach to open science tools. Our collaboration and development platform PublicLab.org enables thousands of people to publish updates and share designs for emerging environmental open hardware projects.",
     "dev_mailing_list": null,
@@ -1890,14 +1956,20 @@
     "irc_channel": "http://publiclab.org/chat",
     "leaders": [
       {
+        "display_name": "kluozy02",
+        "github_updated": 1540958828391,
+        "id": 4516638234771456,
+        "program_year": 2018
+      },
+      {
         "display_name": "mohitRJ",
-        "github_updated": 1540884247558,
+        "github_updated": 1540958828773,
         "id": 5807737280659456,
         "program_year": 2018
       },
       {
         "display_name": "Sparks",
-        "github_updated": 1540884247303,
+        "github_updated": 1540958828935,
         "id": 6187077247959040,
         "program_year": 2018
       }
@@ -1939,7 +2011,7 @@
       "platform": "OTHER",
       "url": "https://www.drupal.org/irc#drupal-google"
     },
-    "completed_task_instance_count": 36,
+    "completed_task_instance_count": 38,
     "contact_email": "lechleider.matthew@gmail.com",
     "description": "Drupal is content management software. It's used to make many of the websites and applications you use every day. Drupal has great standard features, like easy content authoring, reliable performance, and excellent security. But what sets it apart is its flexibility; modularity is one of its core principles. Its tools help you build the versatile, structured content that dynamic web experiences need.\n\nIt's also a great choice for creating integrated digital frameworks. You can extend it with any one, or many, of thousands of add-ons. Modules expand Drupal's functionality. Themes let you customize your content's presentation. Distributions are packaged Drupal bundles you can use as starter-kits. Mix and match these components to enhance Drupal's core abilities. Or, integrate Drupal with external services and other applications in your infrastructure. No other content management software is this powerful and scalable.\n\nThe Drupal community is one of the largest open source communities in the world. We're more than 1,000,000 passionate developers, designers, trainers, strategists, coordinators, editors, and sponsors working together. We build Drupal, provide support, create documentation, share networking opportunities, and more. Our shared commitment to the open source spirit pushes the Drupal project forward. New members are always welcome.\n\nCheck out our new contributor documentation for GCI students @ https://www.drupal.org/node/984014",
     "dev_mailing_list": null,
@@ -1953,7 +2025,7 @@
     "leaders": [
       {
         "display_name": "ragasirtahk",
-        "github_updated": 1540884247148,
+        "github_updated": 1540958828780,
         "id": 5301883951382528,
         "program_year": 2018
       }
@@ -2060,7 +2132,7 @@
       "platform": "IRC",
       "url": "irc://irc.freenode.net/postgresql"
     },
-    "completed_task_instance_count": 32,
+    "completed_task_instance_count": 36,
     "contact_email": "pgsql-hackers@lists.postgresql.org",
     "description": "PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. The origins of PostgreSQL date back to 1986 as part of the POSTGRES project at the University of California at Berkeley and has more than 30 years of active development on the core platform.\n\nPostgreSQL has earned a strong reputation for its proven architecture, reliability, data integrity, robust feature set, extensibility, and the dedication of the open source community behind the software to consistently deliver performant and innovative solutions. PostgreSQL runs on all major operating systems, has been ACID-compliant since 2001, and has powerful add-ons such as the popular PostGIS geospatial database extender. It is no surprise that PostgreSQL has become the open source relational database of choice for many people and organisations.",
     "dev_mailing_list": null,
@@ -2161,7 +2233,7 @@
       "platform": "IRC",
       "url": "irc://chat.freenode.net/kde"
     },
-    "completed_task_instance_count": 29,
+    "completed_task_instance_count": 34,
     "contact_email": "kde-community@kde.org",
     "description": "The KDE Community is a free software community dedicated to creating an open and user-friendly computing experience, offering an advanced graphical desktop, a wide variety of applications for communication, work, education and entertainment and a platform to easily build new applications upon. We have a strong focus on finding innovative solutions to old and new problems, creating a vibrant atmosphere open for experimentation.",
     "dev_mailing_list": null,
@@ -2173,7 +2245,14 @@
     "id": 6325746558566400,
     "image_url": "//lh3.googleusercontent.com/jJ9E__ItaszczThB9zGY_nOXR4lmdyWuSJZ_XBHdtJ6ZJK_DlI3YFxFZvfpeX5Vzm_nuXDZmJhjQNXy7iUrAf88",
     "irc_channel": "https://userbase.kde.org/IRC_Channels",
-    "leaders": [],
+    "leaders": [
+      {
+        "display_name": "triplequantum",
+        "github_updated": 1540958828626,
+        "id": 6548211486425088,
+        "program_year": 2018
+      }
+    ],
     "mailing_list": "https://mail.kde.org/mailman/listinfo/kde-devel",
     "name": "KDE Community",
     "precis": "The KDE community produces Free and Open Source software by artists, designers, programmers, translators, writers and other contributors from everywhere.",
@@ -2207,7 +2286,7 @@
       "platform": "GITTER",
       "url": "https://gitter.im/GCI-AOSSIE/"
     },
-    "completed_task_instance_count": 28,
+    "completed_task_instance_count": 32,
     "contact_email": null,
     "description": "We are an Australian not-for-profit umbrella organization for open-source projects. We believe the open-source philosophy provides a resource-efficient channel to transfer knowledge and achieve innovation and education.\n\nIn 2018, we offer the following projects:\n\n* **Agora** (Scala, Javascript): a library of vote counting algorithms for democratic elections.\n* **Mind the Word** (Javascript, HTML, CSS): a browser extension that helps users to learn new languages.\n* **Crowd Alert**  (React-Native, Expo, Jest): a cross-platform mobile application that allows users to post and view incidents around them\n* **Carbon Footprint** (Javascript, HTML, CSS): a browser extension that raises environmental awareness regarding C02 emissions. \n* **Starcross** (iOS,C++,OpenGL,Objective-C): Starcross is a hand-held planetarium for your iOS device. Can be used to identify stars, planets, nebulae and more.\n* **Computational Philosophy** (Isabelle): formalizations of philosophical theories and arguments towards computer-assisted metaphysics, as envisaged by Leibniz.\n\nWe have a diverse group of mentors, including GSoC students from previous years who decided to become long-term contributors as well as academics with extensive experience in supervising undergraduate, M.Sc. and PhD students on theses and projects, whose results are often published and presented in the most prestigious conferences of our research fields.",
     "dev_mailing_list": null,
@@ -2257,7 +2336,7 @@
       "platform": "IRC",
       "url": "https://devel.rtems.org/wiki/Developer/IRC"
     },
-    "completed_task_instance_count": 25,
+    "completed_task_instance_count": 26,
     "contact_email": "gci@rtems.org",
     "description": "[RTEMS (Real-Time Executive for Multiprocessor Systems)](https://www.rtems.org) is a free real-time operating system (RTOS) designed for deeply embedded systems such as automobile electronics, robotic controllers, and on-board satellite instruments. \n\nRTEMS is free open source software that supports multi-processor systems for over a dozen CPU architectures and over 150 specific system boards. In addition, RTEMS is designed to support embedded applications with the most stringent real-time requirements while being compatible with open standards such as POSIX. RTEMS includes optional functional features such as TCP/IP and file systems while still offering minimum executable sizes under 20 KB in useful configurations.\n\nThe RTEMS Project is the collection of individuals, companies, universities, and research institutions that collectively maintain and enhance the RTEMS software base. As a community, we are proud to be popular in the space application software and experimental physics communities. RTEMS has been to Venus, circles Mars, is aboard Curiosity, is in the asteroid belt, is on its way to Jupiter, and soon will circle the sun. It is in use in many high energy physics research labs around the world. There are many RTEMS users who do not belong to the space or physics communities, but our small part in contributing to basic scientific knowledge makes us proud.",
     "dev_mailing_list": null,
@@ -2272,7 +2351,7 @@
     "leaders": [
       {
         "display_name": "Sal",
-        "github_updated": 1540884246328,
+        "github_updated": 1540958827374,
         "id": 6016090942472192,
         "program_year": 2018
       }
@@ -2313,7 +2392,7 @@
       "platform": "OTHER",
       "url": "https://gci.copyleftgames.org/"
     },
-    "completed_task_instance_count": 15,
+    "completed_task_instance_count": 16,
     "contact_email": null,
     "description": "We believe that people learn best while having fun. Many of us learned math, physics, and program code by making and modding video games.\n\nOur software has been used at home and in classrooms around the world for over a decade by students of all ages and experience levels, from a third grade class learning Python as their first language to college students writing code for calculating realtime buoyancy and fluid dynamics.\n\nCopyleft licensing further helps people learn since the source code for the entirety of the game and its mods are always open. Every part of our stack is therefor an educational resource.",
     "dev_mailing_list": null,
@@ -2358,7 +2437,7 @@
       "platform": "GITTER",
       "url": "https://gitter.im/Cloud-CV/"
     },
-    "completed_task_instance_count": 14,
+    "completed_task_instance_count": 16,
     "contact_email": "team@cloudcv.org",
     "description": "**CloudCV** is a young open source cloud platform started in 2013 by students and faculty from Machine Learning and Perception Lab at Virginia Tech (now at Georgia Tech) with the aim to make AI research more reproducible. At CloudCV, we are building tools that enable researchers to build, compare and share start-of-the-algorithms.\n\nCloudCV consists of three major platforms:\n\n**Origami** is an AI-as-a-service solution that allows researchers to easily convert their deep learning models into an online service that is widely accessible to everyone without the need to set up the infrastructure, resolve the dependencies, and build a web service around the deep learning model.\n\n**Fabrik** is an online collaborative platform to build, visualize and train deep learning models with a simple drag-and-drop approach. It allows researchers to collaboratively develop and debug models using a web GUI that allows importing, editing and exporting networks from widely popular frameworks like Caffe and Keras.\n\n**EvalAI** is an evaluation server that will host AI challenges like Visual Question Answering, Image Captioning. In recent years, it has become increasingly difficult to compare an algorithm solving a given task with other existing approaches. By providing a central leaderboard and submission interface, we make it easier for researchers to reproduce the results mentioned in the paper and perform reliable & accurate quantitative analysis.",
     "dev_mailing_list": null,
