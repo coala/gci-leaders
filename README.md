@@ -10,6 +10,13 @@ This is a website to show the current leaders from all organizations in GCI.
  * [Authors](#authors)
  * [License](#license)
 ***
+### Note
+You require `npm v5.8.0` which needs to be installed explicitly using
+```
+npm i npm@5.8.0 -g
+```
+`npm v5.8.0` is the latest release of npm which properly supports optional dependencies, so it won't download extra bits that are not needed, which can help in reducing data downloads.
+***
 ### Installation
 ```
 npm install
