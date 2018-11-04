@@ -11,6 +11,24 @@
       <hr />
     </div>
     <div>
+      <a class="title" href=https:&#x2F;&#x2F;labplot.kde.org&#x2F;2018&#x2F;11&#x2F;03&#x2F;import-of-json-ngspice&#x2F;><h1>Import of JSON and ngspice files</h1></a>
+      <h5>2018-11-03T21:25:51.000Z</h5>
+      <i class="author">Alexander Semke</i>
+      <div class="content">
+        <p>We continue adding support for more data formats that can be imported into LabPlot. As part of the upcoming release we add the <strong>support for JSON file and for ngspice raw file format</strong> which we want to introduce in this short blog post.</p> <p>After the selection of a <strong>JSON</strong> file in the &#8220;Import File&#8221; dialog, its content is shown in a tree view in a manner that many user will be familiar with from other JSON viewers. The relevant parts in a such a JSON file that one usually wants to visualize are arrays and objects. Once the root element that needs to be imported is selected, LabPlot automatically recognizes its type and the type of its children and generates a two dimensional preview of the data to be imported. This works the same for arrays</p> <p><center><a href="https://labplot.kde.org/wp-content/uploads/2018/10/json_array.png" title=""><br /> <img alt="JSON array" src="https://labplot.kde.org/wp-content/uploads/2018/10/json_array.png" width="40%" /></a> <a href="https://labplot.kde.org/wp-content/uploads/2018/10/json_array_preview.png" title=""><img alt="Preview of JSON array" src="https://labplot.kde.org/wp-content/uploads/2018/10/json_array_preview.png" width="40%" /></a><br /> </center></p> <p>as well as for JSON objects<br /> <center><a href="https://labplot.kde.org/wp-content/uploads/2018/10/json_object.png" title=""><br /> <img alt="JSON object" src="https://labplot.kde.org/wp-content/uploads/2018/10/json_object.png" width="40%" /></a> <a href="https://labplot.kde.org/wp-content/uploads/2018/10/json_object_preview.png" title=""><img alt="Preview of JSON object" src="https://labplot.kde.org/wp-content/uploads/2018/10/json_object_preview.png" width="40%" /></a><br /> </center></p> <p>After such a local file was imported, the plotting of data can be done as usual. The part that is of more practical interest, namely the import of data from online web services like stock prices, weather data, data monitoring services, etc., still needs to be implemented. Such services usually exchange the data in JSON format and the features described above can be considered as the preparational steps also in this direction. This is something for the near future.</p> <p><br /> In the previous release we made the support for live data available. To demonstrate this feature we used an <a href="https://labplot.kde.org/2018/05/16/support-for-live-data/" title="">example</a> based on the results of calculations done in <a href="http://ngspice.sourceforge.net/" title="">ngspice</a> &#8211; an open-source circuit simulator. The ngspice simulation was controlled by a small PyQt GUI and the results where written out to an ASCII file which was then consumed by LabPlot (import of live data and its visualization).</p> <p>Though quite a nice example, performance wise not the best solution since ngspice (or the user) has to convert from its internal representation (&#8220;raw format&#8221;) to a format suitable for the import in LabPlot, i.e. column-wise storage of values in ASCII/binary file. To improve here, we decided to add the support for <strong>ngspice&#8217;s native raw format</strong>. We read both flavors of it &#8211; binary and ASCII. When opening such a file, LabPlot auto-detects the ngspice raw format and selects the proper import filter.</p> <p>To demonstrate this, we use a simple circuit consisting of a <a href="https://en.wikipedia.org/wiki/JFET" title="">junction gate field-effect transistor</a> and of two variable voltages &#8211; gate-source and drain-source:<center><br /> <a href="https://labplot.kde.org/wp-content/uploads/2018/10/circuit.png" title=""><br /> <img alt="Circuit" src="https://labplot.kde.org/wp-content/uploads/2018/10/circuit.png" width="50%" /><br /> </a><br /> </center></p> <p>The behavior of such a transistor is usually studied with the help of its &#8220;characteristic curves&#8221; &#8211; the transfer characteristic showing the current as the function of the gain-source voltage and the output characteristic showing the current as the function of the drain-source voltage. Again, the calculation is done with ngspice but this time we read the produced raw files directly with the new import filter: <center><br /> <a href="https://labplot.kde.org/wp-content/uploads/2018/10/transistor_characteristic_curves.png" title=""><br /> <img alt="Transistor Characteristic Curves" src="https://labplot.kde.org/wp-content/uploads/2018/10/transistor_characteristic_curves.png" width="100%" /><br /> </a><br /> </center></p> <p>To generate the second plot where a family of I<sub>d</sub> curves is calculated for different values of V<sub>gs</sub>, we had to implement a new feature in LabPlot to allow to only connect points that are monotonically increasing. Since all the curves in this family are put into the same data set, without this options the end points of the lines would have been connected with the origin which is not what the user wants to see for this specific data set.</p> <p>The idea for this example and the technical input around ngspice was contributed by Orestes Mas from the Technical University of Catalonia.</p>
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;techievena.github.io&#x2F;alexa&#x2F;2018&#x2F;11&#x2F;03&#x2F;smart-apertium.html><h1>Abinash Senapati: Smart Apertium</h1></a>
+      <h5>2018-11-03T00:00:00.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        <p><a href="https://www.amazon.in/dp/B07JFPT9NR/ref=syps?ie=UTF8&amp;qid=1539593875&amp;sr=8-1&amp;keywords=smart+apertium"><img alt="Smart Apertium" src="https://techievena.github.io/img/post_images/smart_apertium.jpg" /></a></p>
+      </div>
+      <a class="title" href=http:&#x2F;&#x2F;postgis.net&#x2F;2018&#x2F;11&#x2F;03&#x2F;howard_hughes><h1>Howard Hughes Medical Institute</h1></a>
+      <h5>2018-11-03T00:00:00.000Z</h5>
+      <i class="author">Tom Kazimiers</i>
+      <div class="content">
+        [object Object]
+      </div>
       <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;faithngetich188&#x2F;11-02-2018&#x2F;outreachy-proposal><h1>Outreachy proposal:</h1></a>
       <h5>2018-11-02T20:40:38.000Z</h5>
       <i class="author">faithngetich188</i>
@@ -118,6 +136,12 @@ For other time zones daylight saving/summer time change dates, see <a href="http
       <div class="content">
         <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
       </div>
+      <a class="title" href=http:&#x2F;&#x2F;postgis.net&#x2F;2018&#x2F;11&#x2F;02&#x2F;vanguard_appraisals><h1>Vanguard Appraisals</h1></a>
+      <h5>2018-11-02T00:00:00.000Z</h5>
+      <i class="author">Andy Colson</i>
+      <div class="content">
+        [object Object]
+      </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.musicbrainz.org&#x2F;2018&#x2F;11&#x2F;01&#x2F;server-update-2018-11-01&#x2F;><h1>Server update, 2018-11-01</h1></a>
       <h5>2018-11-01T21:16:07.000Z</h5>
       <i class="author">yvanzo</i>
@@ -205,7 +229,7 @@ For other time zones daylight saving/summer time change dates, see <a href="http
       <div class="content">
         [object Object]
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;roberts_ecofarm&#x2F;10-31-2018&#x2F;inexpensive-conductivity-probe-for-drinking-water-monitoring-network-step-1-sensor-probe-design><h1>Inexpensive conductivity probe for drinking water monitoring network Step 1 - Sensor Probe design</h1></a>
+      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;roberts_ecofarm&#x2F;10-31-2018&#x2F;inexpensive-conductivity-probe-for-drinking-water-monitoring-network-step-1-sensor-probe-design><h1>Inexpensive conductivity probe Step 1 - Sensor Probe design (revised)</h1></a>
       <h5>2018-10-31T16:55:21.000Z</h5>
       <i class="author">roberts_ecofarm</i>
       <div class="content">
@@ -793,12 +817,6 @@ Wikimedia Foundation</em></p>
       <i class="author">Victor Poughon</i>
       <div class="content">
         
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;blog.qt.io&#x2F;blog&#x2F;2018&#x2F;10&#x2F;23&#x2F;qt-5-9-7-released&#x2F;><h1>Qt 5.9.7 Released</h1></a>
-      <h5>2018-10-23T08:41:10.000Z</h5>
-      <i class="author">Qt Dev Loop</i>
-      <div class="content">
-        <p>Qt 5.9.7 is&#160;released today.&#160;As a patch release Qt 5.9.7 does not add any new functionality, but provides important&#160;bug fixes and other improvements.</p> <p>Compared to Qt 5.9.6, the new Qt 5.9.7 contains <a href="https://bugreports.qt.io/issues/?filter=20149" target="_blank">almost 60 bug fixes</a>. In&#160;total there are around 180 changes in Qt 5.9.7 compared to Qt 5.9.6. For details of the most important changes, please check&#160;the <a href="https://wiki.qt.io/Qt_5.9.7_Change_Files" target="_blank">Change files of Qt 5.9.7</a>.</p> <p>Qt 5.9.7 can be updated to using the maintenance tool of the online installer. For new installations, please <a href="https://account.qt.io/" target="_blank">download latest online installer from Qt Account portal</a> or from <a href="https://www.qt.io/download/" target="_blank">qt.io Download page</a>. Offline packages are available for commercial users in <a href="https://account.qt.io/" target="_blank">the Qt Account portal</a> and at the qt.io <a href="https://www.qt.io/download/">Download page</a> for open-source users.</p> <p>As written in previous blog posts target is still continue publishing new patch releases for Qt 5.9 series, but with slower cadence than earlier.</p> <p>The post <a href="https://blog.qt.io/blog/2018/10/23/qt-5-9-7-released/" rel="nofollow">Qt 5.9.7 Released</a> appeared first on <a href="https://blog.qt.io" rel="nofollow">Qt Blog</a>.</p>
       </div>
       <a class="title" href=https:&#x2F;&#x2F;www.postgresql.org&#x2F;about&#x2F;news&#x2F;1897&#x2F;><h1>Barman v2.5 - Now with Support for PostgreSQL 11</h1></a>
       <h5>2018-10-23T00:00:00.000Z</h5>
@@ -1623,18 +1641,6 @@ Wikimedia Foundation</em></p>
       </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.gvsig.org&#x2F;2018&#x2F;10&#x2F;08&#x2F;abiertas-las-inscripciones-a-los-talleres-de-las-14as-jornadas-internacionales-de-gvsig&#x2F;><h1>Abiertas las inscripciones a los talleres de las 14as Jornadas Internacionales de gvSIG</h1></a>
       <h5>2018-10-08T08:57:30.000Z</h5>
-      <i class="author">Mario</i>
-      <div class="content">
-        [object Object]
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;eox.at&#x2F;2018&#x2F;10&#x2F;building-a-python-interface-to-vires&#x2F;><h1>Building a Python interface to VirES</h1></a>
-      <h5>2018-10-08T08:08:20.000Z</h5>
-      <i class="author">Ashley Smith</i>
-      <div class="content">
-        
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;blog.gvsig.org&#x2F;2018&#x2F;10&#x2F;05&#x2F;curso-presencial-de-gvsig-desktop-aplicado-a-arqueologia-en-valencia-espana&#x2F;><h1>Curso presencial de gvSIG Desktop aplicado a Arqueología en Valencia (España)</h1></a>
-      <h5>2018-10-05T12:29:51.000Z</h5>
       <i class="author">Mario</i>
       <div class="content">
         [object Object]
