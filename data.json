@@ -7,7 +7,7 @@
       "platform": "GITTER",
       "url": "https://gitter.im/scorelab/Google-Code-In"
     },
-    "completed_task_instance_count": 974,
+    "completed_task_instance_count": 984,
     "contact_email": "info@scorelab.org",
     "description": "The Sustainable Computing Research Lab (SCoRe) has conducted research covering various aspects of mobile, cloud, iot, digital forensic, information security and more. The goal of our research is to generate computing solutions through identifying low-cost methodologies and strategies that lead to sustainability​.\n\nAt present, the SCoRe Lab is at a stage of its evolution in which it has been able to secure high donor confidence as evidenced by no less than 5 simultaneous foreign funded projects underway since 2005. SCoRe Lab has been a pioneer in cooperating with Internet Society (ISOC), Swedish Agency for International Development Cooperation (Sida)/The Department for Research Cooperation (SAREC), The Swedish Program for Information and Communication Technology in Developing Regions (Spider) and Information Society Innovation Fund (ISIF) in the area of computer science by establishing several interesting ICT research projects. These projects are considered to be the benchmarks of such projects in the World.",
     "dev_mailing_list": null,
@@ -22,61 +22,61 @@
     "leaders": [
       {
         "display_name": "Anurag Parida",
-        "github_updated": 1541384451109,
+        "github_updated": 1541390949513,
         "id": 5364886423994368,
         "program_year": 2018
       },
       {
         "display_name": "Dilshan Ratnayake",
-        "github_updated": 1541384450767,
+        "github_updated": 1541390949005,
         "id": 5766205752213504,
         "program_year": 2018
       },
       {
         "display_name": "Geethmaka Dissanayake",
-        "github_updated": 1541384450963,
+        "github_updated": 1541390949065,
         "id": 6215180443713536,
         "program_year": 2018
       },
       {
         "display_name": "jmularski",
-        "github_updated": 1541384451112,
+        "github_updated": 1541390949516,
         "id": 5659239725924352,
         "program_year": 2018
       },
       {
         "display_name": "kunalbhatia",
-        "github_updated": 1541384451360,
+        "github_updated": 1541390949513,
         "id": 5949607902183424,
         "program_year": 2018
       },
       {
         "display_name": "Manish Varrier",
-        "github_updated": 1541384451154,
+        "github_updated": 1541390949578,
         "id": 5713447179255808,
         "program_year": 2018
       },
       {
         "display_name": "Palash",
-        "github_updated": 1541384451048,
+        "github_updated": 1541390949516,
         "id": 5510056989687808,
         "program_year": 2018
       },
       {
         "display_name": "RohanCode",
-        "github_updated": 1541384451118,
+        "github_updated": 1541390949515,
         "id": 5960662023929856,
         "program_year": 2018
       },
       {
         "display_name": "Sanyam",
-        "github_updated": 1541384451063,
+        "github_updated": 1541390949394,
         "id": 5747736117772288,
         "program_year": 2018
       },
       {
         "display_name": "Łukasz Myśliwiec",
-        "github_updated": 1541384450730,
+        "github_updated": 1541390949072,
         "id": 5375144382955520,
         "program_year": 2018
       }
@@ -132,62 +132,62 @@
     "leaders": [
       {
         "display_name": "Anantha Vijay",
-        "github_updated": 1541384447692,
+        "github_updated": 1541390946212,
         "id": 5388413583753216,
         "program_year": 2018
       },
       {
         "display_name": "Baftek",
-        "github_updated": 1541384447700,
+        "github_updated": 1541390946272,
         "id": 6563938549366784,
         "program_year": 2018
       },
       {
         "display_name": "HarshHC",
-        "github_updated": 1541384447687,
+        "github_updated": 1541390947044,
         "id": 6120306478415872,
         "program_year": 2018
       },
       {
         "display_name": "Maier Ilya",
-        "github_updated": 1541384447090,
+        "github_updated": 1541390945770,
         "id": 4688147720962048,
         "program_year": 2018
       },
       {
         "display_name": "Michael",
-        "github_updated": 1541384447691,
+        "github_updated": 1541390947165,
         "id": 6481553761763328,
         "program_year": 2018
       },
       {
         "display_name": "pranav",
-        "github_updated": 1541384447687,
+        "github_updated": 1541390946383,
         "id": 5008865578975232,
         "program_year": 2018
       },
       {
         "display_name": "ribhavsharma",
-        "github_updated": 1541384447676,
+        "github_updated": 1541390946332,
         "id": 6006000621453312,
         "program_year": 2018
       },
       {
         "display_name": "Saba Khukhunashvili",
-        "github_updated": 1541384447034,
+        "github_updated": 1541390945768,
         "id": 5984052734590976,
         "program_year": 2018
       },
       {
         "display_name": "Sai Vittal B",
-        "github_updated": 1541384447679,
+        "github_updated": 1541390946280,
         "id": 5340282435403776,
         "program_year": 2018
       },
       {
         "display_name": "Sidhya Tikku",
         "github_account": "sidhyatikku",
-        "github_updated": 1541218041225,
+        "github_updated": 1541390945869,
         "id": 4656706849079296,
         "program_year": 2018
       }
@@ -231,7 +231,7 @@
       "platform": "GITTER",
       "url": "https://gitter.im/fossasia/fossasia"
     },
-    "completed_task_instance_count": 639,
+    "completed_task_instance_count": 640,
     "contact_email": "office@fossasia.org",
     "description": "FOSSASIA develops Open Source software and hardware for conversational AIs, science and event management with a global developer community from its base in Asia. The organization organizes Open Technology events, runs coding programs and the #Codeheat development contest. The annual FOSSASIA Summit is the premier Open Technology event in Asia for developers, contributors, start-ups, and technology companies.",
     "dev_mailing_list": null,
@@ -245,25 +245,25 @@
     "leaders": [
       {
         "display_name": "AppleCat",
-        "github_updated": 1541384455694,
+        "github_updated": 1541390952823,
         "id": 6288373984526336,
         "program_year": 2018
       },
       {
         "display_name": "Ashwanth Kumar",
-        "github_updated": 1541384456183,
+        "github_updated": 1541390952788,
         "id": 6488832087162880,
         "program_year": 2018
       },
       {
         "display_name": "Jeewal Kunwar",
-        "github_updated": 1541384455441,
+        "github_updated": 1541390952442,
         "id": 5373759155339264,
         "program_year": 2018
       },
       {
         "display_name": "mikolajhojda",
-        "github_updated": 1541384455645,
+        "github_updated": 1541390952810,
         "id": 6480110182989824,
         "program_year": 2018
       },
@@ -276,7 +276,7 @@
       },
       {
         "display_name": "ryan10145",
-        "github_updated": 1541384456033,
+        "github_updated": 1541390952793,
         "id": 5542836112982016,
         "program_year": 2018
       },
@@ -290,7 +290,7 @@
       {
         "display_name": "shreesh",
         "github_account": "shreeshu05",
-        "github_updated": 1541218048424,
+        "github_updated": 1541390952754,
         "id": 4683803529314304,
         "program_year": 2018
       },
@@ -304,7 +304,7 @@
       {
         "display_name": "Supun_TE",
         "github_account": "STEdirisuriya",
-        "github_updated": 1541218048672,
+        "github_updated": 1541390952781,
         "id": 4599767762993152,
         "program_year": 2018
       }
@@ -352,7 +352,7 @@
       "platform": "OTHER",
       "url": "http://openwisp.org/support.html"
     },
-    "completed_task_instance_count": 636,
+    "completed_task_instance_count": 638,
     "contact_email": null,
     "description": "In the summer of 2008 the [Metropolitan City of Rome](http://www.cittametropolitanaroma.gov.it/) decided to start a **free of charge and public Wi-Fi network** to be spread over its 5352 SQ KM territory including Rome and 120 other cities for a total of about 4.5 million inhabitants. The main objective of the project, called **ProvinciaWiFi** (later renamed [WiFi Metropolitano](http://www.cittametropolitanaroma.gov.it/homepage/elenco-siti-tematici/wifimetropolitano/)), was to take a decisive step to reduce the existing **digital divide** by fostering and facilitating the use of ICT by citizens.\n\nFrom the outset it was decided to commit the project to a completely open philosophy. For this reason a clear choice towards open software and operating systems and the availability of every modification, update and improvement to the community was made. The same approach was adopted for the knowledge and the experience acquired within the project. In order to pursue this goals the Province of Rome called the university consortium *CASPUR* (later merged in the [CINECA](https://www.cineca.it/it/progetti/openwisp) consortium) to develop the technical solution. In this context, a research project conducted by the *CINECA* consortium found its perfect application. This project proposed an innovative methodology for the distribution of networks (more precisely Virtual LANs used for Wi-Fi connectivity) between geographically distant sites.\n\nThe software tools, including the OpenWISP 2 [network management system](http://openwisp.org) and different [NetJSON](http://netjson.org/) implementations are released to the public free of charge under open-source licenses, hoping this will allow a broader audience to benefit from our work.",
     "dev_mailing_list": null,
@@ -366,61 +366,61 @@
     "leaders": [
       {
         "display_name": "cking",
-        "github_updated": 1541384448993,
+        "github_updated": 1541390948006,
         "id": 4980945204543488,
         "program_year": 2018
       },
       {
         "display_name": "Daniel Wang",
-        "github_updated": 1541384448999,
+        "github_updated": 1541390948006,
         "id": 5780156091203584,
         "program_year": 2018
       },
       {
         "display_name": "EdgeKing810",
-        "github_updated": 1541384449412,
+        "github_updated": 1541390948006,
         "id": 4706723689398272,
         "program_year": 2018
       },
       {
         "display_name": "Krow",
-        "github_updated": 1541384448997,
+        "github_updated": 1541390948130,
         "id": 6414964051935232,
         "program_year": 2018
       },
       {
         "display_name": "Madhav Mehndiratta",
-        "github_updated": 1541384448448,
+        "github_updated": 1541390947297,
         "id": 5580493513818112,
         "program_year": 2018
       },
       {
         "display_name": "Mihir",
-        "github_updated": 1541384449043,
+        "github_updated": 1541390947965,
         "id": 6490085848514560,
         "program_year": 2018
       },
       {
         "display_name": "Pritish Jain",
-        "github_updated": 1541384449602,
+        "github_updated": 1541390948004,
         "id": 5840994286174208,
         "program_year": 2018
       },
       {
         "display_name": "Reza Juliandri",
-        "github_updated": 1541384448657,
+        "github_updated": 1541390947291,
         "id": 5236777716547584,
         "program_year": 2018
       },
       {
         "display_name": "Rishabh",
-        "github_updated": 1541384449043,
+        "github_updated": 1541390947964,
         "id": 4999294110138368,
         "program_year": 2018
       },
       {
         "display_name": "yash_ar",
-        "github_updated": 1541384449214,
+        "github_updated": 1541390947965,
         "id": 6534348003082240,
         "program_year": 2018
       }
@@ -462,7 +462,7 @@
       "platform": "OTHER",
       "url": "https://irc.openmrs.org"
     },
-    "completed_task_instance_count": 525,
+    "completed_task_instance_count": 527,
     "contact_email": "helpdesk@openmrs.org",
     "description": "[OpenMRS](http://openmrs.org/) is a collaborative open source project to develop software to support the delivery of health care in developing countries. We are a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. [Our mission](http://openmrs.org/about/mission/) is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software.\r\n\r\nThe [OpenMRS software platform](http://openmrs.org/about/) and a reference application enable the design of a customized medical records system with no programming knowledge. It is a common platform upon which medical informatics efforts in developing countries can be built.\r\n\r\nWorking on Google Code-in tasks for OpenMRS is a great way to join the free and open source software movement, and at the same time use your talents to help people in developing countries and around the world on the front lines of the battle against HIV/AIDS, TB, Malaria, and other public health challenges. For more detailed about OpenMRS and GCI, visit our [wiki documentation](https://wiki.openmrs.org/display/RES/Google+Code-in+2018) and watch [this short video](https://www.youtube.com/watch?v=HPxx1_svu_A) created by a previous OpenMRS GCI participant.",
     "dev_mailing_list": null,
@@ -476,61 +476,61 @@
     "leaders": [
       {
         "display_name": "Aditya13",
-        "github_updated": 1541384453501,
+        "github_updated": 1541390951207,
         "id": 6268965262196736,
         "program_year": 2018
       },
       {
         "display_name": "anuar2k",
-        "github_updated": 1541384453829,
+        "github_updated": 1541390951206,
         "id": 4862722740060160,
         "program_year": 2018
       },
       {
         "display_name": "Devansh9",
-        "github_updated": 1541384453567,
+        "github_updated": 1541390951280,
         "id": 5861088626212864,
         "program_year": 2018
       },
       {
         "display_name": "iperez",
-        "github_updated": 1541384453546,
+        "github_updated": 1541390951277,
         "id": 5047208379416576,
         "program_year": 2018
       },
       {
         "display_name": "jubel",
-        "github_updated": 1541384453483,
+        "github_updated": 1541390951248,
         "id": 6454704142811136,
         "program_year": 2018
       },
       {
         "display_name": "Leader",
-        "github_updated": 1541384453537,
+        "github_updated": 1541390951237,
         "id": 5372218268712960,
         "program_year": 2018
       },
       {
         "display_name": "Nikodem Bernat",
-        "github_updated": 1541384453211,
+        "github_updated": 1541390950921,
         "id": 5758597083430912,
         "program_year": 2018
       },
       {
         "display_name": "Satvik",
-        "github_updated": 1541384453523,
+        "github_updated": 1541390951267,
         "id": 4700913403953152,
         "program_year": 2018
       },
       {
         "display_name": "symt",
-        "github_updated": 1541384453503,
+        "github_updated": 1541390951292,
         "id": 5468306787008512,
         "program_year": 2018
       },
       {
         "display_name": "WZCoding",
-        "github_updated": 1541384453181,
+        "github_updated": 1541390950958,
         "id": 5073890175877120,
         "program_year": 2018
       }
@@ -589,37 +589,37 @@
     "leaders": [
       {
         "display_name": "Brian M",
-        "github_updated": 1541384447654,
+        "github_updated": 1541390946394,
         "id": 6688523336810496,
         "program_year": 2018
       },
       {
         "display_name": "Ivan Makarov",
-        "github_updated": 1541384447687,
+        "github_updated": 1541390946212,
         "id": 5817552237232128,
         "program_year": 2018
       },
       {
         "display_name": "laxyapahuja",
-        "github_updated": 1541384447694,
+        "github_updated": 1541390947043,
         "id": 5794430733778944,
         "program_year": 2018
       },
       {
         "display_name": "Matej Plavevski",
-        "github_updated": 1541384447120,
+        "github_updated": 1541390945767,
         "id": 5993067870945280,
         "program_year": 2018
       },
       {
         "display_name": "Skshm",
-        "github_updated": 1541384447879,
+        "github_updated": 1541390946280,
         "id": 6359339930484736,
         "program_year": 2018
       },
       {
         "display_name": "T1duS",
-        "github_updated": 1541384447858,
+        "github_updated": 1541390947196,
         "id": 5752859812429824,
         "program_year": 2018
       }
@@ -661,7 +661,7 @@
       "platform": "OTHER",
       "url": "http://chat.sugarlabs.org:9090/"
     },
-    "completed_task_instance_count": 304,
+    "completed_task_instance_count": 305,
     "contact_email": "sugar-devel@lists.sugarlabs.org",
     "description": "Sugar is a learning platform that reinvents how computers are used for education. Collaboration, reflection, and discovery are integrated directly into the user interface. Sugar promotes \"studio thinking\" and \"reflective practice\". Through Sugar's clarity of design, children and teachers have the opportunity to use computers on their own terms. Students can reshape, reinvent, and reapply both software and content into powerful learning activities. Sugar's focus on sharing, criticism, and exploration is grounded in the culture of free software (FLOSS).",
     "dev_mailing_list": null,
@@ -675,61 +675,61 @@
     "leaders": [
       {
         "display_name": "Alejandro Garcia",
-        "github_updated": 1541384450287,
+        "github_updated": 1541390949131,
         "id": 5739878407995392,
         "program_year": 2018
       },
       {
         "display_name": "aryanharitsh",
-        "github_updated": 1541384450322,
+        "github_updated": 1541390949142,
         "id": 4936817116708864,
         "program_year": 2018
       },
       {
         "display_name": "Ashnidh",
-        "github_updated": 1541384450380,
+        "github_updated": 1541390949155,
         "id": 5631409008934912,
         "program_year": 2018
       },
       {
         "display_name": "FreddieN",
-        "github_updated": 1541384450322,
+        "github_updated": 1541390949565,
         "id": 5395797437841408,
         "program_year": 2018
       },
       {
         "display_name": "funderpanda",
-        "github_updated": 1541384450419,
+        "github_updated": 1541390949119,
         "id": 5085235399098368,
         "program_year": 2018
       },
       {
         "display_name": "Mayank Singh",
-        "github_updated": 1541384450419,
+        "github_updated": 1541390949110,
         "id": 6042728195424256,
         "program_year": 2018
       },
       {
         "display_name": "nathanjacob",
-        "github_updated": 1541384450311,
+        "github_updated": 1541390949150,
         "id": 5437447715422208,
         "program_year": 2018
       },
       {
         "display_name": "Sarthak",
-        "github_updated": 1541384450204,
+        "github_updated": 1541390949146,
         "id": 5111381348057088,
         "program_year": 2018
       },
       {
         "display_name": "sdziuda",
-        "github_updated": 1541384450452,
+        "github_updated": 1541390949385,
         "id": 6151703092002816,
         "program_year": 2018
       },
       {
         "display_name": "undefined",
-        "github_updated": 1541384450307,
+        "github_updated": 1541390949141,
         "id": 5700387928539136,
         "program_year": 2018
       }
@@ -784,61 +784,61 @@
     "leaders": [
       {
         "display_name": "arcaynia",
-        "github_updated": 1541384450090,
+        "github_updated": 1541390949051,
         "id": 6509367433101312,
         "program_year": 2018
       },
       {
         "display_name": "boboquack",
-        "github_updated": 1541384450602,
+        "github_updated": 1541390949691,
         "id": 5026583426367488,
         "program_year": 2018
       },
       {
         "display_name": "Jan Rosa",
-        "github_updated": 1541384450755,
+        "github_updated": 1541390949515,
         "id": 4933284489330688,
         "program_year": 2018
       },
       {
         "display_name": "MrSpecjal",
-        "github_updated": 1541384450588,
+        "github_updated": 1541390949539,
         "id": 6599814142754816,
         "program_year": 2018
       },
       {
         "display_name": "Nathan",
-        "github_updated": 1541384450802,
+        "github_updated": 1541390949594,
         "id": 6751850784096256,
         "program_year": 2018
       },
       {
         "display_name": "pipix",
-        "github_updated": 1541384450711,
+        "github_updated": 1541390949410,
         "id": 4978832751722496,
         "program_year": 2018
       },
       {
         "display_name": "refeed",
-        "github_updated": 1541384450792,
+        "github_updated": 1541390949587,
         "id": 6042863721775104,
         "program_year": 2018
       },
       {
         "display_name": "Shreyas Minocha",
-        "github_updated": 1541384450891,
+        "github_updated": 1541390949508,
         "id": 6471404015845376,
         "program_year": 2018
       },
       {
         "display_name": "stibba",
-        "github_updated": 1541384450219,
+        "github_updated": 1541390949015,
         "id": 5590612691648512,
         "program_year": 2018
       },
       {
         "display_name": "takidelfin",
-        "github_updated": 1541384450606,
+        "github_updated": 1541390949497,
         "id": 5938919741849600,
         "program_year": 2018
       }
@@ -1060,31 +1060,31 @@
     "leaders": [
       {
         "display_name": "BachToTheFuture",
-        "github_updated": 1541384447807,
+        "github_updated": 1541390946699,
         "id": 6487090712805376,
         "program_year": 2018
       },
       {
         "display_name": "Harshithkc",
-        "github_updated": 1541384447829,
+        "github_updated": 1541390947946,
         "id": 6427409793417216,
         "program_year": 2018
       },
       {
         "display_name": "nishanth1232",
-        "github_updated": 1541384448299,
+        "github_updated": 1541390947201,
         "id": 5554870611345408,
         "program_year": 2018
       },
       {
         "display_name": "Ojasva",
-        "github_updated": 1541384448345,
+        "github_updated": 1541390947849,
         "id": 5524143878438912,
         "program_year": 2018
       },
       {
         "display_name": "Qazi Omair Ahmed",
-        "github_updated": 1541384447850,
+        "github_updated": 1541390946701,
         "id": 5539862468886528,
         "program_year": 2018
       }
@@ -1243,55 +1243,55 @@
     "leaders": [
       {
         "display_name": "JustinA",
-        "github_updated": 1541384448977,
+        "github_updated": 1541390948119,
         "id": 5502340946722816,
         "program_year": 2018
       },
       {
         "display_name": "MajesticHero",
-        "github_updated": 1541384448536,
+        "github_updated": 1541390947902,
         "id": 5174865058332672,
         "program_year": 2018
       },
       {
         "display_name": "Mapurav",
-        "github_updated": 1541384448575,
+        "github_updated": 1541390947270,
         "id": 5510349450117120,
         "program_year": 2018
       },
       {
         "display_name": "Martina Hanusova",
-        "github_updated": 1541384448951,
+        "github_updated": 1541390947990,
         "id": 6125194016980992,
         "program_year": 2018
       },
       {
         "display_name": "MateuszKomajda",
-        "github_updated": 1541384448401,
+        "github_updated": 1541390947264,
         "id": 5857541150998528,
         "program_year": 2018
       },
       {
         "display_name": "PMS",
-        "github_updated": 1541384449682,
+        "github_updated": 1541390948002,
         "id": 6431423322914816,
         "program_year": 2018
       },
       {
         "display_name": "Soumitra Shewale",
-        "github_updated": 1541384448310,
+        "github_updated": 1541390947306,
         "id": 4849151180275712,
         "program_year": 2018
       },
       {
         "display_name": "Thea M",
-        "github_updated": 1541384448561,
+        "github_updated": 1541390947283,
         "id": 6451263739789312,
         "program_year": 2018
       },
       {
         "display_name": "Łukasz Ameljan",
-        "github_updated": 1541384448531,
+        "github_updated": 1541390947207,
         "id": 5403911100825600,
         "program_year": 2018
       }
@@ -1345,37 +1345,37 @@
     "leaders": [
       {
         "display_name": "echoduck",
-        "github_updated": 1541384451504,
+        "github_updated": 1541390949897,
         "id": 6522669181698048,
         "program_year": 2018
       },
       {
         "display_name": "Kev Heavy",
-        "github_updated": 1541384451138,
+        "github_updated": 1541390949607,
         "id": 4536901118722048,
         "program_year": 2018
       },
       {
         "display_name": "Margi",
-        "github_updated": 1541384451496,
+        "github_updated": 1541390949909,
         "id": 5912275308249088,
         "program_year": 2018
       },
       {
         "display_name": "MatteCatte",
-        "github_updated": 1541384451574,
+        "github_updated": 1541390950443,
         "id": 6479294709628928,
         "program_year": 2018
       },
       {
         "display_name": "ShadyCake",
-        "github_updated": 1541384451520,
+        "github_updated": 1541390949970,
         "id": 6506868852654080,
         "program_year": 2018
       },
       {
         "display_name": "synnek1337",
-        "github_updated": 1541384451469,
+        "github_updated": 1541390949900,
         "id": 4684689164992512,
         "program_year": 2018
       }
@@ -1450,43 +1450,43 @@
     "leaders": [
       {
         "display_name": "CaptainNemo",
-        "github_updated": 1541384448012,
+        "github_updated": 1541390946193,
         "id": 5327442060247040,
         "program_year": 2018
       },
       {
         "display_name": "Jakub Szczepaniak",
-        "github_updated": 1541384447502,
+        "github_updated": 1541390945895,
         "id": 5913811044270080,
         "program_year": 2018
       },
       {
         "display_name": "jon_snow",
-        "github_updated": 1541384447565,
+        "github_updated": 1541390945816,
         "id": 5066033976049664,
         "program_year": 2018
       },
       {
         "display_name": "Krzysztof",
-        "github_updated": 1541384447489,
+        "github_updated": 1541390946109,
         "id": 6033499552219136,
         "program_year": 2018
       },
       {
         "display_name": "RichardB",
-        "github_updated": 1541384447416,
+        "github_updated": 1541390945766,
         "id": 6597625219383296,
         "program_year": 2018
       },
       {
         "display_name": "SachinR",
-        "github_updated": 1541384447572,
+        "github_updated": 1541390945901,
         "id": 6670961702076416,
         "program_year": 2018
       },
       {
         "display_name": "Somya",
-        "github_updated": 1541384447551,
+        "github_updated": 1541390946200,
         "id": 5099984937549824,
         "program_year": 2018
       }
@@ -1530,7 +1530,7 @@
       "platform": "IRC",
       "url": "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
     },
-    "completed_task_instance_count": 113,
+    "completed_task_instance_count": 114,
     "contact_email": "terasology@gmail.com",
     "description": "MovingBlocks is the original name of the organization behind Terasology, DestinationSol, and a series of related work aimed at making game development in Java easier and more fun\n\nAfter participating in programs like GSOC and GCI for years we're becoming The Terasology Foundation, a registered non-profit, and look forward to years more of educational awareness, challenging architecture, powerful developer workspaces, fun content, and much more\n\nTerasology is a super extensible open source voxel-based game. Born from a Minecraft-inspired tech demo, it is gradually becoming a stable platform for all sorts of gameplay settings in a voxel world\n\nFrom the ground up, Terasology was built to be a super hackable and modular game. We host a large amount of game content modules under the Terasology organization on GitHub, all community maintained. We welcome new ideas, both crazy and well thought-out for modules and game extensions from anyone and everyone, so feel free to talk to us on IRC or Discord\n\nDestination Sol is a fun little space arcade shooter we adopted as open source to learn more about LibGDX, releasing on Steam and Google Play, and to have somewhere to apply our frameworks\n\nThe creators and maintainers are a diverse mix of software developers, designers, game testers, graphic artists, musicians and even a few open source loving high schoolers. We encourage and appreciate contributions from everybody, and try to be as warm and welcoming as possible to newcomers",
     "dev_mailing_list": null,
@@ -1544,44 +1544,44 @@
     "leaders": [
       {
         "display_name": "BSA",
-        "github_updated": 1541384448815,
+        "github_updated": 1541390948179,
         "id": 4744392297414656,
         "program_year": 2018
       },
       {
         "display_name": "DAI",
-        "github_updated": 1541384448829,
+        "github_updated": 1541390947782,
         "id": 6508830495080448,
         "program_year": 2018
       },
       {
         "display_name": "Graviton",
-        "github_updated": 1541384448829,
+        "github_updated": 1541390948203,
         "id": 5890519252074496,
         "program_year": 2018
       },
       {
         "display_name": "MK",
         "github_account": "mkalb",
-        "github_updated": 1541218042351,
+        "github_updated": 1541390947234,
         "id": 6682529508622336,
         "program_year": 2018
       },
       {
         "display_name": "Phoenix909",
-        "github_updated": 1541384448137,
+        "github_updated": 1541390947138,
         "id": 6435702167306240,
         "program_year": 2018
       },
       {
         "display_name": "putawan-de",
-        "github_updated": 1541384448142,
+        "github_updated": 1541390947054,
         "id": 6725073810489344,
         "program_year": 2018
       },
       {
         "display_name": "RatMoleRat",
-        "github_updated": 1541384448919,
+        "github_updated": 1541390947815,
         "id": 4985440793788416,
         "program_year": 2018
       }
@@ -1640,25 +1640,25 @@
     "leaders": [
       {
         "display_name": "sasha1009",
-        "github_updated": 1541384448716,
+        "github_updated": 1541390947128,
         "id": 5971398049660928,
         "program_year": 2018
       },
       {
         "display_name": "Shivam Rai",
-        "github_updated": 1541384449626,
+        "github_updated": 1541390948179,
         "id": 4571795010093056,
         "program_year": 2018
       },
       {
         "display_name": "ShubhamSharama",
-        "github_updated": 1541384448015,
+        "github_updated": 1541390947132,
         "id": 4731796802502656,
         "program_year": 2018
       },
       {
         "display_name": "SunveerSingh",
-        "github_updated": 1541384448752,
+        "github_updated": 1541390947852,
         "id": 5573113417826304,
         "program_year": 2018
       }
@@ -1720,7 +1720,7 @@
       "platform": "IRC",
       "url": "irc://irc.freenode.net/musicbrainz"
     },
-    "completed_task_instance_count": 106,
+    "completed_task_instance_count": 108,
     "contact_email": "support@metabrainz.org",
     "description": "The MetaBrainz Foundation provides the backbone for [a number of projects](https://metabrainz.org/projects) rooted in crowd sourcing open data, namely:\n\n* [MusicBrainz](https://musicbrainz.org/): open music metadata database\n* [MusicBrainz Picard](https://picard.musicbrainz.org/): music file tagger, using data from MusicBrainz\n* [BookBrainz](https://bookbrainz.org/): open \"book\" database\n* [ListenBrainz](https://listenbrainz.org/): repository of listen data\n* [AcousticBrainz](https://acousticbrainz.org/): crowd sourced database of acoustic information for music\n* [CritiqueBrainz](https://critiquebrainz.org/): Creative Commons-licensed reviews\n* [Cover Art Archive](https://coverartarchive.org/): repository of album cover art",
     "dev_mailing_list": null,
@@ -1734,25 +1734,25 @@
     "leaders": [
       {
         "display_name": "abhi_ohri",
-        "github_updated": 1541384449574,
+        "github_updated": 1541390948732,
         "id": 5638600730345472,
         "program_year": 2018
       },
       {
         "display_name": "C1e0",
-        "github_updated": 1541384450443,
+        "github_updated": 1541390949339,
         "id": 5033418363502592,
         "program_year": 2018
       },
       {
         "display_name": "G30rg3",
-        "github_updated": 1541384450606,
+        "github_updated": 1541390949347,
         "id": 4823594782687232,
         "program_year": 2018
       },
       {
         "display_name": "KVD",
-        "github_updated": 1541384450466,
+        "github_updated": 1541390949343,
         "id": 6276003572744192,
         "program_year": 2018
       }
@@ -1813,55 +1813,55 @@
     "leaders": [
       {
         "display_name": "abhishalya",
-        "github_updated": 1541384450506,
+        "github_updated": 1541390948120,
         "id": 6030511395831808,
         "program_year": 2018
       },
       {
         "display_name": "cliu13",
-        "github_updated": 1541384450508,
+        "github_updated": 1541390948180,
         "id": 6191521935130624,
         "program_year": 2018
       },
       {
         "display_name": "Kacper",
-        "github_updated": 1541384450466,
+        "github_updated": 1541390949006,
         "id": 4744518361415680,
         "program_year": 2018
       },
       {
         "display_name": "kx-chen",
-        "github_updated": 1541384450692,
+        "github_updated": 1541390948133,
         "id": 4765788079652864,
         "program_year": 2018
       },
       {
         "display_name": "NNeast",
-        "github_updated": 1541384450494,
+        "github_updated": 1541390948119,
         "id": 5133773562707968,
         "program_year": 2018
       },
       {
         "display_name": "shakeelsamsu",
-        "github_updated": 1541384450464,
+        "github_updated": 1541390948179,
         "id": 4667669082013696,
         "program_year": 2018
       },
       {
         "display_name": "Sheshank",
-        "github_updated": 1541384450508,
+        "github_updated": 1541390948179,
         "id": 6327623073398784,
         "program_year": 2018
       },
       {
         "display_name": "vex8",
-        "github_updated": 1541384450568,
+        "github_updated": 1541390948180,
         "id": 4505509102092288,
         "program_year": 2018
       },
       {
         "display_name": "zeet",
-        "github_updated": 1541384450736,
+        "github_updated": 1541390948133,
         "id": 6533480285470720,
         "program_year": 2018
       }
@@ -1903,7 +1903,7 @@
       "platform": "ZULIP",
       "url": "https://ns-3.zulipchat.com/"
     },
-    "completed_task_instance_count": 97,
+    "completed_task_instance_count": 98,
     "contact_email": "consortium@nsnam.org",
     "description": "ns-3 is a discrete-event, packet-level network simulator with an emphasis on networking research and education. Users of ns-3 can construct simulations of computer networks using models of traffic generators, protocols such as TCP/IP, and devices and channels such as Wi-Fi and LTE, and analyze or visualize the results. Simulation plays a vital role in the research and education process, because of the ability for simulations to obtain reproducible results (particularly for wireless protocol design), scale to large networks, and study systems that have not yet been implemented. A particular emphasis in ns-3 is the high degree of realism in the models and integration of the tool with VM environments and testbeds. Very large scale simulations are possible; simulations of millions of nodes have been published. ns-3 has been in development since 2005 and has been making regular releases since June 2008 (our last release was ns-3.29 in September 2018). The tool is in wide use; we have a users mailing list (Google Groups forum) of over 8000 members, roughly 700 posts per month. Our developers list has over 1500 subscribers, and the code base credits 220 authors, supported by 10 active maintainers. ns-3 is operated as an open source project, originally funded with financial backing from three NSF grants and from the French government (and via help from GSoC and ESA Summer of Code in Space), but with most current contributions coming from interested researchers and students worldwide.",
     "dev_mailing_list": null,
@@ -1918,31 +1918,31 @@
     "leaders": [
       {
         "display_name": "Asanali",
-        "github_updated": 1541384445571,
+        "github_updated": 1541390944154,
         "id": 6514313490595840,
         "program_year": 2018
       },
       {
         "display_name": "bartekche",
-        "github_updated": 1541384445571,
+        "github_updated": 1541390944154,
         "id": 5155012008214528,
         "program_year": 2018
       },
       {
         "display_name": "Parth Pandya",
-        "github_updated": 1541384445571,
+        "github_updated": 1541390944154,
         "id": 4645637913051136,
         "program_year": 2018
       },
       {
         "display_name": "Parth Pratim",
-        "github_updated": 1541384445571,
+        "github_updated": 1541390944154,
         "id": 5414601005989888,
         "program_year": 2018
       },
       {
         "display_name": "Phyxkal",
-        "github_updated": 1541384445571,
+        "github_updated": 1541390944154,
         "id": 6221940135034880,
         "program_year": 2018
       }
@@ -1994,13 +1994,13 @@
     "leaders": [
       {
         "display_name": "dolphingarlic",
-        "github_updated": 1541384449308,
+        "github_updated": 1541390947604,
         "id": 4843379616645120,
         "program_year": 2018
       },
       {
         "display_name": "Will Eggleston",
-        "github_updated": 1541384448578,
+        "github_updated": 1541390946670,
         "id": 4806373306007552,
         "program_year": 2018
       }
@@ -2092,7 +2092,7 @@
       "platform": "ZULIP",
       "url": "https://dial.zulipchat.com"
     },
-    "completed_task_instance_count": 79,
+    "completed_task_instance_count": 81,
     "contact_email": "osc@dial.community",
     "description": "**We are a GCI umbrella organization hosting multiple software projects participating in the contest this year.** We work with many of the leading projects in this area -- see below for a more detailed list. \n\nAn initiative of the [United Nations Foundation](http://www.unfoundation.org/), the [Digital Impact Alliance](http://digitalimpactalliance.org/) helps open source projects set up leadership and governance teams, assists with software project management, and helps projects develop better ways for people to contribute. We also provide technical, architectural, and software development support for projects; and help them with support, engagement, management of their communities of contributors and users. [Read more about the DIAL Open Source Center.](https://www.osc.dial.community/)\n\n**This year, our sub-organizations will include one or more of our participating member open source projects listed below. As projects confirm their participation, they will be noted in this list throughout the coming week:**\n\n- [LibreHealth](https://librehealth.io) (confirmed)\n- [Ushahidi](https://www.ushahidi.com/) (confirmed)\n- [Mifos](http://mifos.org/) (confirmed)\n- [Public Lab (participating directly)](https://codein.withgoogle.com/organizations/public-lab/)\n- [InSTEDD](http://instedd.org/open-source-tools/) (tentative)\n\n**Ready to get engaged?** Join the [DIAL Open Source Center Forum's GCI zone](https://gci.dial.community/), or sign in to the [OSC's Zulip chat server](https://dial.zulipchat.com/) to ask questions or get directed to the various sub-organization projects that will be working with us.",
     "dev_mailing_list": null,
@@ -2107,7 +2107,7 @@
     "leaders": [
       {
         "display_name": "jz53",
-        "github_updated": 1541384446277,
+        "github_updated": 1541390944993,
         "id": 4890377967370240,
         "program_year": 2018
       }
@@ -2163,25 +2163,25 @@
     "leaders": [
       {
         "display_name": "lightspeedana",
-        "github_updated": 1541384447032,
+        "github_updated": 1541390945973,
         "id": 4765521019928576,
         "program_year": 2018
       },
       {
         "display_name": "Nathan1337",
-        "github_updated": 1541384447694,
+        "github_updated": 1541390945685,
         "id": 5068059891990528,
         "program_year": 2018
       },
       {
         "display_name": "raghav_p",
-        "github_updated": 1541384447015,
+        "github_updated": 1541390945973,
         "id": 4829526669393920,
         "program_year": 2018
       },
       {
         "display_name": "Tanvir13559",
-        "github_updated": 1541384446554,
+        "github_updated": 1541390945114,
         "id": 5348544207650816,
         "program_year": 2018
       }
@@ -2290,13 +2290,13 @@
     "leaders": [
       {
         "display_name": "aniketdvd",
-        "github_updated": 1541384448374,
+        "github_updated": 1541390947570,
         "id": 5977311984746496,
         "program_year": 2018
       },
       {
         "display_name": "ragasirtahk",
-        "github_updated": 1541384448374,
+        "github_updated": 1541390947697,
         "id": 5301883951382528,
         "program_year": 2018
       }
@@ -2418,7 +2418,7 @@
     "leaders": [
       {
         "display_name": "Simran Singh",
-        "github_updated": 1541384446673,
+        "github_updated": 1541390945671,
         "id": 6350048842481664,
         "program_year": 2018
       }
@@ -2475,7 +2475,7 @@
     "leaders": [
       {
         "display_name": "triplequantum",
-        "github_updated": 1541384448272,
+        "github_updated": 1541390946667,
         "id": 6548211486425088,
         "program_year": 2018
       }
@@ -2527,19 +2527,19 @@
     "leaders": [
       {
         "display_name": "kluozy02",
-        "github_updated": 1541384448710,
+        "github_updated": 1541390946695,
         "id": 4516638234771456,
         "program_year": 2018
       },
       {
         "display_name": "mohitRJ",
-        "github_updated": 1541384449158,
+        "github_updated": 1541390947567,
         "id": 5807737280659456,
         "program_year": 2018
       },
       {
         "display_name": "Sparks",
-        "github_updated": 1541384449139,
+        "github_updated": 1541390947938,
         "id": 6187077247959040,
         "program_year": 2018
       }
@@ -2581,7 +2581,7 @@
       "platform": "IRC",
       "url": "https://devel.rtems.org/wiki/Developer/IRC"
     },
-    "completed_task_instance_count": 37,
+    "completed_task_instance_count": 39,
     "contact_email": "gci@rtems.org",
     "description": "[RTEMS (Real-Time Executive for Multiprocessor Systems)](https://www.rtems.org) is a free real-time operating system (RTOS) designed for deeply embedded systems such as automobile electronics, robotic controllers, and on-board satellite instruments. \n\nRTEMS is free open source software that supports multi-processor systems for over a dozen CPU architectures and over 150 specific system boards. In addition, RTEMS is designed to support embedded applications with the most stringent real-time requirements while being compatible with open standards such as POSIX. RTEMS includes optional functional features such as TCP/IP and file systems while still offering minimum executable sizes under 20 KB in useful configurations.\n\nThe RTEMS Project is the collection of individuals, companies, universities, and research institutions that collectively maintain and enhance the RTEMS software base. As a community, we are proud to be popular in the space application software and experimental physics communities. RTEMS has been to Venus, circles Mars, is aboard Curiosity, is in the asteroid belt, is on its way to Jupiter, and soon will circle the sun. It is in use in many high energy physics research labs around the world. There are many RTEMS users who do not belong to the space or physics communities, but our small part in contributing to basic scientific knowledge makes us proud.",
     "dev_mailing_list": null,
@@ -2596,13 +2596,13 @@
     "leaders": [
       {
         "display_name": "Sal",
-        "github_updated": 1541384447419,
+        "github_updated": 1541390946128,
         "id": 6016090942472192,
         "program_year": 2018
       },
       {
         "display_name": "Shashvatjain",
-        "github_updated": 1541384447352,
+        "github_updated": 1541390946193,
         "id": 5894594706276352,
         "program_year": 2018
       }
@@ -2658,7 +2658,7 @@
       {
         "display_name": "gautamjajoo",
         "github_account": "gautamjajoo",
-        "github_updated": 1541218042216,
+        "github_updated": 1541390947120,
         "id": 6562440847294464,
         "program_year": 2018
       }
@@ -2714,7 +2714,7 @@
     "leaders": [
       {
         "display_name": "quiet",
-        "github_updated": 1541384445571,
+        "github_updated": 1541390944154,
         "id": 5700832323436544,
         "program_year": 2018
       }
