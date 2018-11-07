@@ -1,16 +1,24 @@
 language: python
 python: 3.6
 
+
 before_install:
-  - nvm install
-  - npm install
+  - npm i pnpm -g
+  - pnpm install
+  - cd node_modules/jquery.i18n
+  - mkdir libs
+  - cd libs
+  - REPO=https://github.com/santhoshtr/CLDRPluralRuleParser.git
+  - git clone --recurse-submodules $REPO
+  - cd ../../..
+  - pnpm install
   - pip3 install coala-bears
   - export PATH=$PATH:./node_modules/.bin
   - export NODE_PATH=$NODE_PATH:./node_modules
 
 script:
   - coala --non-interactive -V
-  - npm run build
+  - pnpm run build
   - ./.ci/deploy.sh
 
 notifications:
