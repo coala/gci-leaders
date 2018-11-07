@@ -1,7 +1,6 @@
 language: python
 python: 3.6
 
-
 before_install:
   - npm i pnpm -g
   - pnpm install
@@ -10,7 +9,9 @@ before_install:
   - cd libs
   - REPO=https://github.com/santhoshtr/CLDRPluralRuleParser.git
   - git clone --recurse-submodules $REPO
+  - ls
   - cd ../../..
+  - ls
   - pnpm install
   - pip3 install coala-bears
   - export PATH=$PATH:./node_modules/.bin

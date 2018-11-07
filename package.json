@@ -27,7 +27,6 @@
     "find-rss": "^1.6.4",
     "glob": "^7.1.2",
     "graphql-client": "^2.0.0",
-    "iconv-lite": "^0.4.24",
     "jquery": "^3.2.1",
     "jquery.i18n": "git+https://github.com/wikimedia/jquery.i18n.git",
     "json2yaml": "^1.1.0",
@@ -35,11 +34,11 @@
     "mustache": "^2.3.0",
     "netlify-env": "^0.0.4",
     "node-fetch": "^1.7.3",
-    "pnpm": "2.17.7",
     "rss": "^1.2.2",
     "sort-keys": "^2.0.0",
     "valid-github-username": "0.0.1",
-    "wikidata-sdk": "^5.5.0"
+    "wikidata-sdk": "^5.5.0",
+    "iconv-lite": "^0.4.24"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.3",

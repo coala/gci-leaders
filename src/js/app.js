@@ -24,7 +24,7 @@ export default function init() {
     const noClaims = new Date(progress.noclaims)
     const current = new Date()
     const percentagePassed =
-      100 - (noClaims - current) / (noClaims - competitionOpen) * 100
+      100 - ((noClaims - current) / (noClaims - competitionOpen)) * 100
 
     if (percentagePassed > 100) {
       progressOuter.style.display = 'none'
