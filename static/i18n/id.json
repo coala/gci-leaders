@@ -1,0 +1,21 @@
+{
+  "page-title": "Pemimpin Sementara Google Code-in 2018",
+  "last-updated": "Terakhir diperbarui",
+  "order-info": "Peserta utama untuk setiap organisasi (dan akun GitHub mereka, jika berlaku) tercantum secara acak.",
+  "tasks-completed": "Tugas Selesai",
+  "footer-text": "Google Code-in dan logo Google Code-in adalah merek dagang dari Google Inc.",
+  "orgs-no-listed": "Organisasi-organisasi yang tidak mempunyai pemimpin yang terdaftar",
+  "passed": "$1% berlalu, sekitar $2 sebelum tugas mengklaim berakhir",
+  "seconds-ago": ​​"$1 {{PLURAL:$1|detik|detik}} yang lalu",
+  "minutes-ago": ​​"$1 {{PLURAL:$1|menit|menit}} yang lalu",
+  "hours-ago": ​​"$1 {{PLURAL:$1|jam|jam}} yang lalu",
+  "days-ago": "$1 {{PLURAL:$1|hari|hari}} yang lalu",
+  "months-ago": ​​"$1 {{PLURAL:$1|bulan|bulan}} yang lalu",
+  "years-ago": ​​"$1 {{PLURAL:$1|tahun|tahun}} yang lalu",
+  "seconds": "$1 {{PLURAL:$1|detik|detik}}",
+  "minutes": "$1 {{PLURAL:$1|menit|menit}}",
+  "hours": "$1 {{PLURAL:$1|jam|jam}}",
+  "days": "$1 {{PLURAL:$1|hari|hari}}",
+  "months": "$1 {{PLURAL:$1|bulan|bulan}}",
+  "years": "$1 {{PLURAL:$1|tahun|tahun}}"
+}
