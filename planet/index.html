@@ -11,6 +11,18 @@
       <hr />
     </div>
     <div>
+      <a class="title" href=https:&#x2F;&#x2F;www.volkerkrause.eu&#x2F;2018&#x2F;12&#x2F;08&#x2F;kde-privacy-finding-insecure-network-connections.html><h1>Finding insecure network connections</h1></a>
+      <h5>2018-12-08T12:15:00.000Z</h5>
+      <i class="author">Volker Krause</i>
+      <div class="content">
+        <p>One obvious aspect of KDE&#8217;s <a href="https://phabricator.kde.org/T7050">privacy goal</a> is eliminating all network connections that are not using transport encryption. That&#8217;s however not as straightforward to ensure as it may sound, it&#8217;s easy to have a long forgotten HTTP link in a rarely used dialog that should have been changed to HTTPS many years ago already. How do we find all these cases?</p> <h3 id="scope">Scope</h3> <p>First of all, this is not about intentional or malicious attempts to bypass or weaken transport encryption at any level, but about finding our own mistakes. That is, simple typos forgetting the crucial &#8216;s&#8217; after &#8216;http&#8217;, or legacy code from a time before the corresponding service even supported transport encryption.</p> <p>This is also not about identifying servers that only offer weak or otherwise broken transport security, and communicating that to the user as we are used to from web browsers. All of that needs to be looked at too of course, but that&#8217;s a different task.</p> <h3 id="source-code">Source Code</h3> <p>Naively, searching the source code for <code class="highlighter-rouge">http:</code> and replacing it with <code class="highlighter-rouge">https:</code> would be a good start. However, it&#8217;s a bit more complicated than that, mainly due to http URIs being used both as resource identifiers and as addresses for resources. A common case for the former are XML namespaces, those are not actually retrieved via the network, so http URIs are actually not a problem (on the contrary, changing them might confuse the code dealing with them). In the latter case the URIs are actually URLs and are used for network operations, those we need to fix.</p> <p>Still, a bit of crude grep work can turn up quite some useful results already. This can be clickable links in code (<a href="https://phabricator.kde.org/D16904">D16904</a>, <a href="https://phabricator.kde.org/R209:33447a7024a2ebaa777e91f7e708b7c7f2c2221e">R209:33447a</a>) or documentation (<a href="https://phabricator.kde.org/D17262">D17262</a>), downloaded content (<a href="https://phabricator.kde.org/D7414">D7414</a>, <a href="https://phabricator.kde.org/D17223">D17223</a>) or access to online services (<a href="https://phabricator.kde.org/D7408">D7408</a>, <a href="https://phabricator.kde.org/D16925">D16925</a>, <a href="https://phabricator.kde.org/D16946">D16946</a>). But many hits are part of code documentation, automatic tests or license information (<a href="https://phabricator.kde.org/R1007:aff001bd4afa5d8866d60760fccbaa8dbfdb7c3f">R1007:aff001</a>), which are less severe in their impact. Sometimes URLs also appear in translations, so those would need to be checked too.</p> <h3 id="compiled-files">Compiled Files</h3> <p>Another place to look for <code class="highlighter-rouge">http:</code> strings is in the compiled binaries. That&#8217;s less complete, but seems to have a much smaller false positive rate. A simple approach is grep-ing through the output of <code class="highlighter-rouge">strings</code> and <code class="highlighter-rouge">strings -l e</code> (the latter decodes 16bit little endian Unicode strings as used by QStringLiteral), and filtering out common URIs as needed in the source code search too.</p> <h3 id="runtime-monitoring">Runtime Monitoring</h3> <p>An entirely different approach for identifying clear text connections is observing network activity at runtime. Tools like <a href="http://www.brendangregg.com/blog/2015-10-31/tcpconnect-tcpaccept-bcc.html">tcpconnect</a> of the bcc suite seems to be a good starting point, as it allows continuous monitoring without noticeable impact, unlike e.g. capturing the entire network communication with <a href="https://www.wireshark.org/">Wireshark</a>.</p> <p>With this we can also find non-HTTP connections, as well as entirely unnecessary network activity (<a href="https://phabricator.kde.org/D7410">D7410</a>, <a href="https://phabricator.kde.org/D7438">D7438</a>). However, we wont notice anything from code paths that aren&#8217;t run.</p> <h3 id="contribute">Contribute</h3> <p>This is a perfect topic to get started with I think, fixing <code class="highlighter-rouge">http:</code> links is as easy as it gets, and yet that has relevant impact on the privacy or our users. But it doesn&#8217;t stop there, as we also need to build the tools to identify these issues more reliably. There isn&#8217;t much yet in terms of tooling, so a simple script would already be an improvement (e.g. to automatically check the KIO search provider desktop files), but if you are into elaborate runtime tracing techniques like used by the bcc tools, here&#8217;s a real-world problem to use this for :)</p>
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;waynebekke&#x2F;12-08-2018&#x2F;how-can-i-obtain-ndvi-value-of-a-photo-of-a-single-plant-that-i-took-using-the-raspberry-pi-noir-with-blue-filter><h1>How can I obtain NDVI value of a photo of a single plant that I took using the Raspberry Pi NoIR with blue filter</h1></a>
+      <h5>2018-12-08T09:29:51.000Z</h5>
+      <i class="author">waynebekke</i>
+      <div class="content">
+        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
+      </div>
       <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;stevie&#x2F;12-07-2018&#x2F;community-science-soil-testing-fellowship><h1>Community Science Soil Testing Fellowship</h1></a>
       <h5>2018-12-07T21:19:31.000Z</h5>
       <i class="author">stevie</i>
@@ -1016,18 +1028,6 @@ Wikimedia Foundation</em></p>
       <div class="content">
         [object Object]
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;www.kdab.com&#x2F;kdab-at-capitole-du-libre&#x2F;><h1>KDAB at Capitole du Libre</h1></a>
-      <h5>2018-11-28T13:31:38.000Z</h5>
-      <i class="author">KDAB on Qt</i>
-      <div class="content">
-        <p class="p1">Le Capitole du Libre, &#233;v&#232;nement de logiciel libre annuel &#224; Toulouse auquel KDAB (France) &#233;tait Sponsor Or pour la <img align="right" alt="" class="alignright size-medium wp-image-19201" height="118" src="https://www.kdab.com/wp-content/uploads/stories/Cap-Libre-2018-300x118.jpg" style="margin: 15px 0 15px 15px;" width="300" />8&#232;me ann&#233;e cons&#233;cutive, s&#8217;est achev&#233; la semaine derni&#232;re apr&#232;s 2 jours de conf&#233;rence intense proposant de nombreuses pr&#233;sentations en parall&#232;le.</p> <p class="p1">Les sujets allaient de l&#8217;IoT et l&#8217;embarqu&#233; au C++ et &#224; la 3D en passant par les libert&#233;s et vie priv&#233;e ainsi que le financement du logiciel libre pour n&#8217;en citer que quelques-uns.</p> <p><a href="https://2018.capitoledulibre.org/programme/">Voyez le programme ici</a>.</p> <p class="p1">M. Kevin Ottens a anim&#233; &#8216;Des blobs color&#233;s pour l&#8217;analyse de donn&#233;es communautaires&#8217; et M. Franck Arrecot a pr&#233;sent&#233; &#160;&#8216;Introduction &#224; Qt QML et &#224; la cr&#233;ation de composants&#8217;.</p> <p class="p1">Si vous n&#8217;avez pas pu y assister, vous pouvez t&#233;l&#233;charger leur pr&#233;sentation ici:</p> <ul> <li class="p1"><a href="https://ervin.ipsquad.net/slides/talks/cdl2018-analyse-donnees-communautaires/">pr&#233;sentation de M. K&#233;vin Ottens</a></li> <li class="p1"><a href="https://www.kdab.com/wp-content/uploads/stories/Capitole-du-Libre-2018-Intro-QML_Franck_slides_to_publish.pdf">pr&#233;sentation de M. Franck Arrecot</a></li> </ul> <p class="p1">Merci &#224; tous ceux qui sont venus et &#224; l&#8217;an prochain!</p> <p>The post <a href="https://www.kdab.com/kdab-at-capitole-du-libre/" rel="nofollow">KDAB at Capitole du Libre</a> appeared first on <a href="https://www.kdab.com" rel="nofollow">KDAB</a>.</p>
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;cfastie&#x2F;11-28-2018&#x2F;nano-particle-monitoring><h1>Nano particle monitoring</h1></a>
-      <h5>2018-11-28T04:44:28.000Z</h5>
-      <i class="author">cfastie</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/027/872/medium/Dust_20181127-4203.JPG' alt=''> <br />
-      </div>
       <a class="title" href=https:&#x2F;&#x2F;wikimediafoundation.org&#x2F;2018&#x2F;11&#x2F;27&#x2F;were-building-a-future-of-free-knowledge-donate-and-join-us-today&#x2F;><h1>We’re building a future of free knowledge. Donate and join us today.</h1></a>
       <h5>2018-11-27T14:00:50.000Z</h5>
       <i class="author">Pats Pena</i>
@@ -1141,17 +1141,17 @@ we&#8217;d written. It was a pretty small bug, the key we were using to dump the
       <div class="content">
         [object Object]
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;www.postgresql.org&#x2F;about&#x2F;news&#x2F;1908&#x2F;><h1>Pgpool-II 4.0.2, 3.7.7, 3.6.14, 3.5.18 and 3.4.21 are now officially released.</h1></a>
-      <h5>2018-11-22T00:00:00.000Z</h5>
-      <i class="author"></i>
-      <div class="content">
-        <h3>What is Pgpool-II?</h3> <p>Pgpool-II is a tool to add useful features to PostgreSQL, including:</p> <ul> <li>connection pooling</li> <li>load balancing</li> <li>automatic fail over and more.</li> </ul> <h3>Minor releases</h3> <p>Pgpool Global Development Group is pleased to announce the availability of following versions of Pgpool-II:</p> <ul> <li>4.0.2</li> <li>3.7.7</li> <li>3.6.14</li> <li>3.5.18</li> <li>3.4.21</li> </ul> <p>Release notes for versions prior 3.6 are no longer included in the source code. </p> <p>Please take a look at <a href="http://www.pgpool.net/docs/latest/en/html/release.html">release notes</a>.</p> <p>You can download <a href="http://pgpool.net/mediawiki/index.php/Downloads">the source code and RPMs</a>.</p>
-      </div>
       <a class="title" href=http:&#x2F;&#x2F;postgis.net&#x2F;2018&#x2F;11&#x2F;22&#x2F;postgis-2.2.8><h1>PostGIS 2.2.8 EOL</h1></a>
       <h5>2018-11-22T00:00:00.000Z</h5>
       <i class="author">Regina Obe</i>
       <div class="content">
         [object Object]
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;www.postgresql.org&#x2F;about&#x2F;news&#x2F;1908&#x2F;><h1>Pgpool-II 4.0.2, 3.7.7, 3.6.14, 3.5.18 and 3.4.21 are now officially released.</h1></a>
+      <h5>2018-11-22T00:00:00.000Z</h5>
+      <i class="author"></i>
+      <div class="content">
+        <h3>What is Pgpool-II?</h3> <p>Pgpool-II is a tool to add useful features to PostgreSQL, including:</p> <ul> <li>connection pooling</li> <li>load balancing</li> <li>automatic fail over and more.</li> </ul> <h3>Minor releases</h3> <p>Pgpool Global Development Group is pleased to announce the availability of following versions of Pgpool-II:</p> <ul> <li>4.0.2</li> <li>3.7.7</li> <li>3.6.14</li> <li>3.5.18</li> <li>3.4.21</li> </ul> <p>Release notes for versions prior 3.6 are no longer included in the source code. </p> <p>Please take a look at <a href="http://www.pgpool.net/docs/latest/en/html/release.html">release notes</a>.</p> <p>You can download <a href="http://pgpool.net/mediawiki/index.php/Downloads">the source code and RPMs</a>.</p>
       </div>
       <a class="title" href=http:&#x2F;&#x2F;blog.geoserver.org&#x2F;2018&#x2F;11&#x2F;20&#x2F;geoserver-2-14-1-released&#x2F;><h1>GeoSever 2.14.1 released</h1></a>
       <h5>2018-11-20T23:32:04.000Z</h5>
