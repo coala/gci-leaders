@@ -31,6 +31,7 @@ $(window).on('load', function() {
     Español: 'es',
     Polski: 'pl',
     'Norwegian Bokmål': 'nb_NO',
+    Sinhala: 'si',
   }
 
   var locList = $('#lang-select')
