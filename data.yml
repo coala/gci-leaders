@@ -1007,7 +1007,7 @@
       platform: "GITTER"
       url: "https://gitter.im/OSGeo-GCI/community"
     completed_task_instance_count: 0
-    contact_email: "gci-admin@osgeo.org"
+    contact_email: "gci-osgeo@googlegroups.com"
     description: "OSGeo is a non-profit organization serving as an umbrella organization for the Open Source Geospatial community in general and several code projects in particular:\n\n## Content Management Systems\n\nGeoNode\n\n## Desktop Applications\n\nGRASS GIS\ngvSIG\nMarble\nQGIS\n\n## Geospatial Libraries\n\nFDO\nGDAL/OGR\nGEOS\nGeoTools\nOrfeo ToolBox (OTB)\nOSSIM\nPostGIS\n\n## Metadata Catalogs\n\nGeoNetwork\npycsw\n\n## Web Mapping\n\ndeegree\ngeomajas\nGeoMOOSE\nGeoServer\nMapbender\nMapFish\nMapGuide Open Source\nMapServer\nOpenLayers\nPyWPS\n\n## Incubating Projects\n\nistSOS\nMetaCRS\nOpticks\nOskari\nTeam Engine\nZOO-Project\n\n## Outreach Projects\n\nGeoForAll - Education and Curriculum\nOSGeo-Live\n\n## OSGeo Community Projects\n\nGeoinformatica\nGeoWebCache\nMapProxy\npgRouting\nPortable GIS\nPostal Address Geo-Coder\nProj4php\nPronto Raster\nVirtual Terrain Project\n\nWe host regional and international FOSS4G conferences with typical attendance of 500-1200+ geospatial developers, industry and government leaders, and researchers. Our mailing lists collectively go out to ~ 31.050 unique subscribers."
     dev_mailing_list: null
     github: "OSGeo-GCI"
