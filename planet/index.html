@@ -11,6 +11,127 @@
       <hr />
     </div>
     <div>
+      <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;accommodating-flock-in-the-release-schedule&#x2F;><h1>Accommodating Flock in the release schedule</h1></a>
+      <h5>2019-11-07T07:21:41.000Z</h5>
+      <i class="author">Ben Cotton</i>
+      <div class="content">
+        <img width="150" height="105" src="https://communityblog.fedoraproject.org/wp-content/uploads/2017/06/flock-cal-150x105.png" class="webfeedsFeaturedVisual wp-post-image" alt="Calendar showing days of Flock - Tue Aug 29, Wed Aug 30, Thu Aug 31, Fri Sep 1" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" />
+<p>Jiří Konečný posted a <a href="https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/thread/QXTZIAHCPCCVWCGKFG6NYYN6ODAOFZ6D/">request on the devel list</a> a few weeks ago—he wanted to require a successful compose before the release is branched from Rawhide. As often happens, it&#8217;s not as simple as it seems on the surface, and the discussion eventually came around to not branching right after Flock.</p>
+
+
+
+<p>This, too, isn&#8217;t as simple as it might seem. Changing one milestone in the schedule has impacts on the remaining milestones. We can make changes, of course, but we want to make sure we&#8217;re aware of the potential side effects. After discussing this with Mohan Boddu of the release engineering team, I have a few possible alternatives.</p>
+
+
+
+<span id="more-8336"></span>
+
+
+
+<h2>Considerations</h2>
+
+
+
+<p>Before I present the alternatives, I want to cover a few of the considerations that went into this. The first is that Flock itself is not a predictable part of the schedule. Although it&#8217;s generally in early August, it <a href="https://fedoraproject.org/wiki/Flock#Past_conferences">bounces around a bit</a>. This means it&#8217;s hard to predict ahead of time what the impact will be on the schedule.</p>
+
+
+
+<h2>Schedule alternatives</h2>
+
+
+
+<h3>Option 0: Do nothing</h3>
+
+
+
+<p><a href="https://bcotton.fedorapeople.org/schedule-edits/f31-option0.html">Option 0</a> is the baseline. It keeps the schedule the way it is. If the release engineers are jetlagged after Flock, they still have work to do. It&#8217;s worth noting here that in alternate years, the release engineering team won&#8217;t be traveling as far, so option 0 may be fine half the time.</p>
+
+
+
+<h3>Option 1: Delay branching</h3>
+
+
+
+<p><a href="https://bcotton.fedorapeople.org/schedule-edits/f31-option1.html">Option 1</a> delays the branching by a week, while keeping all other milestones in place. This shortens the time between branching and Bodhi activation/Beta freeze from two weeks to one. This is the simplest change from a schedule standpoint, but it only gives maintainers a week to test things in branched before the freeze kicks in.</p>
+
+
+
+<h3>Option 2: Delay branching, shorten beta freeze</h3>
+
+
+
+<p><a href="https://bcotton.fedorapeople.org/schedule-edits/f31-option2.html">Option 2</a> also delays branching by a week, but keeps the branch-to-Bodhi-activation window at two weeks. Thus the Beta freeze is shortened from three weeks to two. This gives maintainers the two week window to finish changes in branched, but shortens the amount of time available for testing. Mohan attributes the improved on-time delivery in the last few releases to the longer Beta freeze. Shortening this may result in unplanned changes to the schedule.</p>
+
+
+
+<h3>Option 3: Delay branching, delay beta release</h3>
+
+
+
+<p><a href="https://bcotton.fedorapeople.org/schedule-edits/f31-option3.html">Option 3</a> continues the pattern of delaying the branching by a week. Instead of shortening the Beta freeze, it pushes the freeze back a week, too. This shortens the time from Beta to Final by a week—from five weeks to four. It also means that the time from the Beta release to the beginning of Final freeze is two weeks if we release on the preferred target, one week if we release on Beta target #1. If the Beta release slips beyond target date #1, we immediately go into Final freeze or we delay the Final release.</p>
+
+
+
+<h3>Option 4: Delay everything</h3>
+
+
+
+<p>Option 4 adds a week to everything from the branch point and beyond.  I include it here for completeness, although I strongly oppose it. The first reason I oppose it is marketing-related. With this option, the Final target date #1 milestone may end up in November. While it is still a week after the preferred target date, moving from October to November has a perceived difference. The second reason is that it pushes the elections further into December, so additional slips could mean the voting period ends up colliding with the end-of-year holidays.</p>
+
+
+
+<h3>Options 0-4 summarized</h3>
+
+
+
+<p>Here&#8217;s what the Fedora 31 schedule would look like under the various options.</p>
+
+
+
+<table class="wp-block-table"><tbody><tr><td><strong>Milestone</strong></td><td><strong>Option 0</strong></td><td><strong>Option 1 </strong></td><td><strong>Option 2</strong></td><td><strong>Option 3</strong></td><td><strong>Option 4</strong></td></tr><tr><td>Flock</td><td>08–11 Aug</td><td>08–11 Aug</td><td>08–11 Aug</td><td>08–11 Aug</td><td>08–11 Aug</td></tr><tr><td>Change completion deadline (testable)</td><td>13 Aug</td><td>20 Aug</td><td>20 Aug</td><td>20 Aug</td><td>20 Aug</td></tr><tr><td>Branch</td><td>13 Aug</td><td>20 Aug</td><td>20 Aug</td><td>20 Aug</td><td>20 Aug</td></tr><tr><td>Bodhi activation</td><td>27 Aug</td><td>27 Aug</td><td>3 Sep</td><td>3 Sep</td><td>3 Sep</td></tr><tr><td>Change 100% code complete deadline</td><td>27 Aug</td><td>27 Aug</td><td>3 Sep</td><td>3 Sep</td><td>3 Sep</td></tr><tr><td>Beta Freeze starts</td><td>27 Aug</td><td>27 Aug</td><td>3 Sep</td><td>3 Sep</td><td>3 Sep</td></tr><tr><td>Beta preferred target date</td><td>17 Sep</td><td>17 Sep</td><td>17 Sep</td><td>24 Sep</td><td>24 Sep</td></tr><tr><td>Final freeze starts</td><td>8 Oct</td><td>8 Oct</td><td>8 Oct</td><td>8 Oct</td><td>15 Oct</td></tr><tr><td>Final preferred target</td><td>22 Oct</td><td>22 Oct</td><td>22 Oct</td><td>22 Oct</td><td>29 Oct</td></tr><tr><td>Final target #1</td><td>29 Oct</td><td>29 Oct</td><td>29 Oct</td><td>29 Oct</td><td>5 Nov</td></tr></tbody></table>
+
+
+
+<h2>Non-schedule alternatives</h2>
+
+
+
+<h3>Move Flock</h3>
+
+
+
+<p>Okay, this is a schedule alternative, but not a Schedule<img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/2122.png" alt="™" class="wp-smiley" style="height: 1em; max-height: 1em;" /> alternative. One option would be to say the week before the branch is off-limits for Flock. Of course, this could mean holding Flock later in the schedule where it might negatively impact feature finalization or testing instead of branching and composing. It might also make it more difficult to find a venue at an appropriate price. But it is a choice.</p>
+
+
+
+<h3>Make composes better</h3>
+
+
+
+<p>I know the release engineering team is working on this independently of whatever schedule changes we may make. In an ideal world, composes would always work. As <a href="https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/message/SU64OID2UDCK4FGFRKZ6GXSQBGCBRZMF/">Kevin Fenzi noted</a>, Rawhide gating should help catch many of the issues. </p>
+
+
+
+<h3>Freeze right after branching</h3>
+
+
+
+<p>Several people suggested a variation of doing a brief freeze after branching until a successful compose completes. This could be one day or several, depending, but the freeze would end as soon as the compose is available.</p>
+
+
+
+<h2>My recommendation</h2>
+
+
+
+<p>I&#8217;m inclined to go with option 0, plus a brief freeze after branch. The Flock dates are variable and so it&#8217;s difficult to pre-plan around them. With Rawhide gating and a freeze in place, we should be less likely to see a repeat of this. In addition, while this is a regular problem, both <a href="https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/message/ZZZBDJBERNER23E2U5HMBVZMBN6LQVFC/">Jiŕi</a> and <a href="https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/message/MMBOUXCTUR3NVLZVFW3A4LN5IDVNLWGL/">Kevin</a> said this was an abnormally-long version of it. I&#8217;m hesitant to make a structural change in the schedule to accommodate an anomaly that will be mitigated by other means.</p>
+
+
+
+<p><em>Editor&#8217;s note: comments are disabled on this post. Please use the <a href="https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/thread/QXTZIAHCPCCVWCGKFG6NYYN6ODAOFZ6D/">devel list thread </a>for discussion.</em></p>
+<p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/accommodating-flock-in-the-release-schedule/">Accommodating Flock in the release schedule</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
+
+      </div>
       <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;vanjo63&#x2F;11-06-2019&#x2F;public-lab-s-microscope-set-up><h1>Public Lab&#39;s Microscope Set-up (#21418)</h1></a>
       <h5>2019-11-06T21:39:32.000Z</h5>
       <i class="author">vanjo63</i>
@@ -94,14 +215,14 @@
 <p>Important people, from university to local industries, came to speak and gave interesting insights on said disciplines, stimulating discussions that protracted from morning to evening!</p>
 <h2>Fedora</h2>
 <p>How about Fedora? Well, Fedora was ever present during the event. We placed gadgets on the registration desk, dedicated a special lunch menu entry, tried to install it everywhere we could put our hands on people PCs. We also used Fedora to win a Cybersecurity challenge! You may ask: how did we do so many things? Don&#8217;t worry, let&#8217;s see them with some quick photos <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
-
+<p>
 <a href='https://communityblog.fedoraproject.org/linux-day-2019-bari-a-retrospective/1-front_desk/'><img width="4160" height="3120" src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/1-front_desk.jpg" class="attachment-full size-full" alt="Linux Day Front Desk" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/1-front_desk.jpg 4160w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/1-front_desk-300x225.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/1-front_desk-768x576.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/1-front_desk-1024x768.jpg 1024w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/1-front_desk-766x575.jpg 766w" sizes="(max-width: 4160px) 100vw, 4160px" /></a>
 <a href='https://communityblog.fedoraproject.org/linux-day-2019-bari-a-retrospective/2-gadgets_closeup/'><img width="1280" height="720" src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/2-gadgets_closeup.jpg" class="attachment-full size-full" alt="Linux Day Gadgets" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/2-gadgets_closeup.jpg 1280w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/2-gadgets_closeup-300x169.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/2-gadgets_closeup-768x432.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/2-gadgets_closeup-1024x576.jpg 1024w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/2-gadgets_closeup-766x431.jpg 766w" sizes="(max-width: 1280px) 100vw, 1280px" /></a>
 <a href='https://communityblog.fedoraproject.org/linux-day-2019-bari-a-retrospective/3-people/'><img width="4160" height="3120" src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/3-people.jpg" class="attachment-full size-full" alt="Audience at Linux Day Talks" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/3-people.jpg 4160w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/3-people-300x225.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/3-people-768x576.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/3-people-1024x768.jpg 1024w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/3-people-766x575.jpg 766w" sizes="(max-width: 4160px) 100vw, 4160px" /></a>
 <a href='https://communityblog.fedoraproject.org/linux-day-2019-bari-a-retrospective/4-menu_of_the_day/'><img width="3120" height="4160" src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/4-menu_of_the_day.jpg" class="attachment-full size-full" alt="The Menu of the Day" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/4-menu_of_the_day.jpg 3120w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/4-menu_of_the_day-225x300.jpg 225w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/4-menu_of_the_day-768x1024.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/4-menu_of_the_day-766x1021.jpg 766w" sizes="(max-width: 3120px) 100vw, 3120px" /></a>
 <a href='https://communityblog.fedoraproject.org/linux-day-2019-bari-a-retrospective/5-install_party/'><img width="4160" height="3120" src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/5-install_party.jpg" class="attachment-full size-full" alt="People at Linux Day Install Party" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/5-install_party.jpg 4160w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/5-install_party-300x225.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/5-install_party-768x576.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/5-install_party-1024x768.jpg 1024w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/5-install_party-766x575.jpg 766w" sizes="(max-width: 4160px) 100vw, 4160px" /></a>
 <a href='https://communityblog.fedoraproject.org/linux-day-2019-bari-a-retrospective/6-ctf_winners/'><img width="4208" height="3120" src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/6-ctf_winners.jpg" class="attachment-full size-full" alt="CTF winners" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/6-ctf_winners.jpg 4208w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/6-ctf_winners-300x222.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/6-ctf_winners-768x569.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/6-ctf_winners-1024x759.jpg 1024w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/6-ctf_winners-766x568.jpg 766w" sizes="(max-width: 4208px) 100vw, 4208px" /></a>
-
+</p>
 <h3>Linux and beyond</h3>
 <p>This Linux Day was a great impulse for our local community here in Bari and I congratulate with UNPLUG community and URL Rete Libera association for an astonishing organization and work! People got inspired under the name of open source and new, insightful technologies. It was the first ever to earn such popularity.</p>
 <p>I hope <a href="https://corsaro.fedorapeople.org/assets-linuxDay2019Bari/Four_Facts_and_Foundations_of_Fedora.odp">my talk</a> gave to all this people a path to embrace open source communities by seeing them as they really are: a group of extraordinary people with selflessness and other great values. It was a human-side stimulus to join Fedora, I believe that such an experiment was successful: people thanked me for such original talk that shared a part of Linux communities that is often overlooked: people, human beings, how to give credit to their work and how to share new work.</p>
@@ -2047,47 +2168,6 @@ Wikimedia Foundation<br />
 
 <ul><li><a href="https://github.com/fedora-infra/bodhi/projects/3">Rawhide Gating</a>: Still on track for early November release.</li><li><a href="https://github.com/repoSpanner/repoSpanner">repoSpanner</a>: Push request performance increased by 51%!</li><li>CentOS CI MS messaging plugin now in testing. Ack of messages is still missing but the fix is in progress. Both publishing and consuming are working.</li><li>Mirrorlist code change for CentOS 8</li></ul>
 <p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/fpgm-update-2019-49/">FPgM update: 2019-41</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
-
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;fedora-localization-platform-migrates-to-weblate&#x2F;><h1>Fedora localization platform migrates to Weblate</h1></a>
-      <h5>2019-10-10T14:46:55.000Z</h5>
-      <i class="author">Jean-Baptiste Holcroft</i>
-      <div class="content">
-        <img width="150" height="150" src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/10/translation-150x150.png" class="webfeedsFeaturedVisual wp-post-image" alt="Fedora Localization Project" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" />
-<p>Fedora Project provides an operating system that is used in a wide variety of languages and cultures. To make it easy for non-native English speakers to use Fedora, significant effort is made to translate the user interfaces, websites and other materials.</p>
-
-
-
-<p>Part of this work is done in the <a href="https://fedora.zanata.org/">Fedora translation platform</a>, which will migrate to <a href="https://weblate.org">Weblate</a> in the coming months.</p>
-
-
-
-<span id="more-8253"></span>
-
-
-
-<p>This migration was mandatory as development and maintenance of Zanata — the previous translation platform — ceased in 2018.</p>
-
-
-
-<p>There are a number of translation platforms available, but having a translation platform that is open source, answering Fedora Project&#8217;s needs, and likely to be long-lived are key considerations in choosing Weblate. Most other translation platforms being closed source or lacking features.</p>
-
-
-
-<p>The translation teams will be testing out Weblate over the next few months and expect it to enter production use in early 2020. More details on the transition to using Weblate are available in the <a href="https://fedoraproject.org/wiki/L10N_Move_to_Weblate#Migration_plan">wiki</a>.</p>
-
-
-
-<p>Contributions both in the transition process and in translating are welcome and can be initiated by joining the Translation mailing list or by  joining by following updates on <a href="https://teams.fedoraproject.org/project/translation-platform-migration">Translation platform migration project</a> on teams.</p>
-
-
-
-<h2>Would you like to try it out?</h2>
-
-
-
-<ol><li>Visit the <a href="https://translate.stg.fedoraproject.org/projects/">weblate site</a></li><li>Log in with your FAS account</li><li>Start translating (the three available projects are related to our documentation and contains general purpose content)</li><li>You’ll see the result on the <a href="https://docs.stg.fedoraproject.org">Docs staging site</a> (it is updated once a day)</li><li>Send your feedback and questions on our <a href="mailto:trans@lists.fedoraproject.org">mailing list</a> so we can do our  best to find the right configuration of the tool for our community.</li></ol>
-<p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/fedora-localization-platform-migrates-to-weblate/">Fedora localization platform migrates to Weblate</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
 
       </div>
       <a class="title" href=https:&#x2F;&#x2F;www.blogger.com&#x2F;feeds&#x2F;3178496836985515242&#x2F;posts&#x2F;default&#x2F;5868065623696910879><h1>Visiting the Institut Ciutat de Balaguer to introduce Liquid Galaxy LAB activities</h1></a>
