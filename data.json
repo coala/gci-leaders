@@ -444,6 +444,7 @@
       "az": "https://az.wikipedia.org/wiki/Drupal",
       "be": "https://be.wikipedia.org/wiki/Drupal",
       "bg": "https://bg.wikipedia.org/wiki/Drupal",
+      "bn": "https://bn.wikipedia.org/wiki/%E0%A6%A1%E0%A7%8D%E0%A6%B0%E0%A7%81%E0%A6%AA%E0%A6%BE%E0%A6%B2",
       "bs": "https://bs.wikipedia.org/wiki/Drupal",
       "ca": "https://ca.wikipedia.org/wiki/Drupal",
       "ckb": "https://ckb.wikipedia.org/wiki/%D8%AF%D8%B1%D9%88%D9%BE%D8%A7%D9%84",
@@ -1640,9 +1641,9 @@
     "programming_languages": [
       "java",
       "opengl",
-      "lwjgl",
       "gradle",
-      "groovy"
+      "groovy",
+      "vuejs"
     ],
     "slug": "the-terasology-foundation",
     "stack_exchange": null,
@@ -1650,9 +1651,9 @@
     "tags": [
       "games",
       "extensibility",
-      "fun",
       "ai",
-      "graphics"
+      "graphics",
+      "codeuino"
     ],
     "twitter_url": "https://twitter.com/Terasology",
     "website_url": "https://terasology.org/",
