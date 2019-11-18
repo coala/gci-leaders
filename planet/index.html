@@ -11,6 +11,190 @@
       <hr />
     </div>
     <div>
+      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;warren&#x2F;11-18-2019&#x2F;of-the-earth-harvest-boxes><h1>Of the Earth Harvest Boxes (#21520)</h1></a>
+      <h5>2019-11-18T04:50:59.000Z</h5>
+      <i class="author">@jywarren</i>
+      <div class="content">
+        <img src='https://publiclab.org/system/images/photos/000/036/589/medium/image.png' alt=''> <br />
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;warren&#x2F;11-18-2019&#x2F;rhode-island-community-garden-network><h1>Rhode Island Community Garden Network (#21519)</h1></a>
+      <h5>2019-11-18T04:49:18.000Z</h5>
+      <i class="author">@jywarren</i>
+      <div class="content">
+        <img src='https://publiclab.org/system/images/photos/000/036/590/medium/image.png' alt=''> <br />
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;adding-an-option-to-hide-map-in-browse-events&#x2F;><h1>Adding an option to hide map in browse events.</h1></a>
+      <h5>2019-11-17T10:13:29.000Z</h5>
+      <i class="author">Anupam-dagar</i>
+      <div class="content">
+        <img width="768" height="373" src="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/toggle.jpg?fit=768%2C373&amp;ssl=1" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="" srcset="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/toggle.jpg?w=1920&amp;ssl=1 1920w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/toggle.jpg?resize=750%2C364&amp;ssl=1 750w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/toggle.jpg?resize=1024%2C498&amp;ssl=1 1024w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/toggle.jpg?resize=300%2C146&amp;ssl=1 300w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/toggle.jpg?resize=768%2C373&amp;ssl=1 768w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/toggle.jpg?resize=1536%2C746&amp;ssl=1 1536w" sizes="(max-width: 768px) 100vw, 768px" data-attachment-id="18885" data-permalink="https://blog.fossasia.org/adding-an-option-to-hide-map-in-browse-events/toggle/" data-orig-file="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/toggle.jpg?fit=1920%2C933&amp;ssl=1" data-orig-size="1920,933" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="" data-image-description="" data-medium-file="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/toggle.jpg?fit=750%2C364&amp;ssl=1" data-large-file="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/toggle.jpg?fit=1024%2C498&amp;ssl=1" />
+<p><a href="https://github.com/fossasia/open-event-frontend">Open Event</a> provides filtering while browsing events. These filters are present in a sidebar which also consists of a map. In this blog, I will describe how I implemented the feature to toggle the visibility of the map present in sidebar for mobile devices.<br></p>
+
+
+
+<p><strong>About the issue</strong></p>
+
+
+
+<p>This issue was part of improvements decided for the browse events section. Earlier the map in sidebar was shown irrespective of the user’s device. It is essentially not required to always show the map in mobile device and is a better choice to provide user with an option to view or hide the map.<br></p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/3izFcidQXS5nCSSbbKyb8-nuKx3azksnjN8fvmcStIgZrCZg2KjgC7HR6Jz5P_C_AMOTBh_6NVtTW1ZmJzqefb_H6KkpRbvPyX1WUnPQMUzd0Va6SsXGBtq3qyrUQ0QI1OMUnq6M" alt="" /></figure>
+
+
+
+<p>Sidebar as viewed from an android device before the fix was merged.<br></p>
+
+
+
+<p><strong>The Solution</strong></p>
+
+
+
+<p>A button is introduced in the mobile view which controls if the map should be visible or hidden. In the sidebar component (app/components/explore/side-bar.js), a variable “isMapVisible” which decides if the map should be visible (if it is true) or not (if it is false) at a particular instant. A new action “toggleMap” is written which changes the value of “isMapVisible” whenever the button is clicked. <br><br></p>
+
+
+
+<figure class="wp-block-table"><table class=""><tbody><tr><td>isMapVisible = true;<br>@action<br>&nbsp; toggleMap() {<br>&nbsp; &nbsp; this.toggleProperty(&#8216;isMapVisible&#8217;);<br>&nbsp; }</td></tr></tbody></table></figure>
+
+
+
+<p>In the handlebar file (app/templates/components/explore/side-bar.hbs), the map and associated text is changed as per the truthy or falsy value of the “isMapVisible” in the component.<br><br></p>
+
+
+
+<figure class="wp-block-table"><table class=""><tbody><tr><td>&lt;<strong>div</strong> class=&#8221;map item {{if (not isMapVisible) &#8216;mobile hidden&#8217;}}&#8221;&gt;<br><br>{{#<strong>if</strong> device.isMobile}}<br>&nbsp; &lt;<strong>div</strong> class=&#8221;ui bottom attached button&#8221; role=&#8221;button&#8221; {{action &#8216;toggleMap&#8217;}}&gt; {{if (not isMapVisible) &#8216;Show&#8217; &#8216;Hide&#8217;}} Map &lt;/<strong>div</strong>&gt;<br>{{/<strong>if</strong>}}</td></tr></tbody></table></figure>
+
+
+
+<p>After making the changes, the sidebar looks as follows on the mobile devices<br></p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/uuVs2zwX_AOGfBTdZKfsfoDAxV1wzLghqnYDKyaY2k-RSkk8r7ykl-9JN42OJk8PbXwg6IZAx1mnlMBPVBJ-cJcd2LfXjsrxKk2oNTphBlq5wVdtCgrGUhml0tX2hQdVYDoENK9D" alt="" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/Q--luGH0tBErGhdgBhy6TLcS1w8D1OnQiyWEnCT7M7-3ocDObBbrfaXdogE2a_M0TJIVYTp1roIEufkhaayN6lH5Z0Z43H4Ea3xCAZEUFEU-GV6UxhaC4y92ZiMQbwpkhXSxqgPk" alt="" /></figure>
+
+
+
+<p>The above images are from an Android device.<br></p>
+
+
+
+<p><strong>Resources:</strong></p>
+
+
+
+<p>Issue: <a href="https://github.com/fossasia/open-event-frontend/issues/3122">https://github.com/fossasia/open-event-frontend/issues/3122<strong><br></strong></a>Pull Request: <a href="https://github.com/fossasia/open-event-frontend/pull/3444">https://github.com/fossasia/open-event-frontend/pull/3444</a></p>
+
+
+
+<p>Ember Docs:<a href="https://guides.emberjs.com/v2.14.0/tutorial/simple-component/">https://guides.emberjs.com/v2.14.0/tutorial/simple-component/</a>Toggle Component Tutorial: <a href="https://www.learnhowtoprogram.com/ember-js/ember-js/components-hide-show-image">https://www.learnhowtoprogram.com/ember-js/ember-js/components-hide-show-image</a></p>
+
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;addition-of-new-filters-for-event-search&#x2F;><h1>Addition of new filters for event search</h1></a>
+      <h5>2019-11-17T10:10:00.000Z</h5>
+      <i class="author">Anupam-dagar</i>
+      <div class="content">
+        <img width="768" height="373" src="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/newfilters.jpg?fit=768%2C373&amp;ssl=1" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="" srcset="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/newfilters.jpg?w=1920&amp;ssl=1 1920w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/newfilters.jpg?resize=750%2C364&amp;ssl=1 750w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/newfilters.jpg?resize=1024%2C498&amp;ssl=1 1024w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/newfilters.jpg?resize=300%2C146&amp;ssl=1 300w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/newfilters.jpg?resize=768%2C373&amp;ssl=1 768w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/newfilters.jpg?resize=1536%2C746&amp;ssl=1 1536w" sizes="(max-width: 768px) 100vw, 768px" data-attachment-id="18880" data-permalink="https://blog.fossasia.org/addition-of-new-filters-for-event-search/newfilters/" data-orig-file="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/newfilters.jpg?fit=1920%2C933&amp;ssl=1" data-orig-size="1920,933" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="" data-image-description="" data-medium-file="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/newfilters.jpg?fit=750%2C364&amp;ssl=1" data-large-file="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/11/newfilters.jpg?fit=1024%2C498&amp;ssl=1" />
+<p><a href="https://github.com/fossasia/open-event-frontend">Open Event</a> has an event search provided but it lacked two of the userful filters which will make searching for an event for a user easier than the current ecosystem. In this blog post, I describe how I implemented filtering of events on the basis of CFP status and Ticket Type.<br></p>
+
+
+
+<p><strong>About the issue</strong></p>
+
+
+
+<p>Addition of these two filters were subparts of improving the browse events page better. The browse events page currently functions in an optimal way but these improvements make it even better.<br></p>
+
+
+
+<p><strong>How the filters are added</strong></p>
+
+
+
+<p>For adding these two filters, it was required that the request sent to server to filter the event must contain ticket type and cfp so that the results from the server can be received. To achieve this, the frontend code needed the following changes:</p>
+
+
+
+<ol><li>Passing of request variable into sidebar component present in app/templates/explore.hbs and addition of a clear filter for the same in the same file.e startDate=start_date endDate=end_date location=location ticket_type=ticket_type}</li></ol>
+
+
+
+<figure class="wp-block-table"><table class=""><tbody><tr><td>{{explore/side-bar model=model category=category sub_category=sub_category event_type=event_type startDate=start_date endDate=end_date location=location ticket_type=ticket_type}}<br>{{#<strong>if</strong> filters.ticket_type}}<br>&nbsp; &lt;<strong>div</strong> class=&#8221;ui mini label&#8221;&gt;<br>&nbsp; &nbsp; {{ticket_type}}<br>&nbsp; &nbsp; &lt;<strong>a</strong> role=&#8221;button&#8221; {{action &#8216;clearFilter&#8217; &#8216;ticket_type&#8217;}}&gt;<br>&nbsp; &nbsp; &nbsp; &lt;<strong>i</strong> class=&#8221;icon close&#8221;&gt;&lt;/<strong>i</strong>&gt;<br>&nbsp; &nbsp; &lt;/<strong>a</strong>&gt;<br>&nbsp; &lt;/<strong>div</strong>&gt;<br>{{/<strong>if</strong>}}</td></tr></tbody></table></figure>
+
+
+
+<ol><li>Adding UI for both the filters in app/templates/components/explore/side-bar.hbs. Accordion UI is used to achieve this.</li></ol>
+
+
+
+<figure class="wp-block-table"><table class=""><tbody><tr><td>&nbsp; &lt;<strong>div</strong> class=&#8221;item&#8221;&gt;<br>&nbsp; &nbsp; {{#<strong>ui-accordion</strong>}}<br>&nbsp; &nbsp; &nbsp; &lt;<strong>span</strong> class=&#8221;title&#8221;&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;<strong>i</strong> class=&#8221;dropdown icon&#8221;&gt;&lt;/<strong>i</strong>&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; {{t &#8216;Ticket Type&#8217; }}<br>&nbsp; &nbsp; &nbsp; &lt;/<strong>span</strong>&gt;<br>&nbsp; &nbsp; &nbsp; &lt;<strong>div</strong> class=&#8221;content menu&#8221;&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;<strong>a</strong> href=&#8221;#&#8221;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; class=&#8221;link item {{if (eq ticket_type &#8216;free&#8217;) &#8216;active&#8217;}}&#8221;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{action &#8216;selectTicketType&#8217; &#8216;free&#8217;}}&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{t &#8216;Free&#8217;}}<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/<strong>a</strong>&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;<strong>a</strong> href=&#8221;#&#8221;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; class=&#8221;link item {{if (eq ticket_type &#8216;paid&#8217;) &#8216;active&#8217;}}&#8221;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{action &#8216;selectTicketType&#8217; &#8216;paid&#8217;}}&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{t &#8216;Paid&#8217;}}<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/<strong>a</strong>&gt;<br>&nbsp; &nbsp; &nbsp; &lt;/<strong>div</strong>&gt;<br>&nbsp; &nbsp; {{/<strong>ui-accordion</strong>}}<br>&nbsp; &lt;/<strong>div</strong>&gt;</td></tr></tbody></table></figure>
+
+
+
+<ol><li>Editing the routes (app/routes/explore.js) to make sure if the request has new filter parameter then it should be sent to server.</li></ol>
+
+
+
+<figure class="wp-block-table"><table class=""><tbody><tr><td>if (params.ticket_type) {<br>&nbsp; &nbsp; &nbsp; filterOptions.push({<br>&nbsp; &nbsp; &nbsp; &nbsp; name : &#8216;tickets&#8217;,<br>&nbsp; &nbsp; &nbsp; &nbsp; op &nbsp; : &#8216;any&#8217;,<br>&nbsp; &nbsp; &nbsp; &nbsp; val&nbsp; : {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; name : &#8216;type&#8217;,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; op &nbsp; : &#8216;eq&#8217;,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; val&nbsp; : params.ticket_type<br>&nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; });<br>&nbsp; &nbsp; }</td></tr></tbody></table></figure>
+
+
+
+<ol><li>Addition of new request parameter in the controller (app/controllers/explore.js)</li></ol>
+
+
+
+<figure class="wp-block-table"><table class=""><tbody><tr><td>queryParams&nbsp; : [&#8216;category&#8217;, &#8216;sub_category&#8217;, &#8216;event_type&#8217;, &#8216;start_date&#8217;, &#8216;end_date&#8217;, &#8216;location&#8217;, &#8216;ticket_type&#8217;],<br><br>ticket_type&nbsp; : null,<br><br>if (filterType === &#8216;ticket_type&#8217;) {&nbsp;&nbsp;this.set(&#8216;ticket_type&#8217;, null);<br>}</td></tr></tbody></table></figure>
+
+
+
+<ol><li>Editing the sidebar component to set the value of request parameter when the user interacts with the filter.</li></ol>
+
+
+
+<figure class="wp-block-table"><table class=""><tbody><tr><td>hideClearFilters: computed(&#8216;category&#8217;, &#8216;sub_category&#8217;, &#8216;event_type&#8217;, &#8216;startDate&#8217;, &#8216;endDate&#8217;, &#8216;location&#8217;, &#8216;ticket_type&#8217;, function() {<br>&nbsp; &nbsp; return !(this.category || this.sub_category || this.event_type || this.startDate || this.endDate || this.location || this.ticket_type !== null);<br>}),<br><br>selectTicketType(ticketType) {<br>&nbsp; this.set(&#8216;ticket_type&#8217;, ticketType === this.ticket_type ? null : ticketType);<br>},<br><br>this.set(&#8216;ticket_type&#8217;, null);</td></tr><tr><td><br></td></tr></tbody></table></figure>
+
+
+
+<p>Sidebar after the addition of filters.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/k0ZdjTFGC8goaNWEZTtdNM_isnZcTFQFIJm1fJ1ddsL7yOJGcFS3P-UpmYhcXlYFk9C2fX-fS4t6rPpB_ofZM9k6pEKs83aV6nCNfhOc4lSuxQOpJw7BtZYU8soNbn8jNnjzTOfh" alt="" /></figure>
+
+
+
+<p><strong>Resources:</strong></p>
+
+
+
+<p>Issue: <a href="https://github.com/fossasia/open-event-frontend/issues/3098">https://github.com/fossasia/open-event-frontend/issues/3098<strong><br></strong></a>Pull Requests:</p>
+
+
+
+<p>Ticket Type: <a href="https://github.com/fossasia/open-event-frontend/pull/3158/files">https://github.com/fossasia/open-event-frontend/pull/3158<strong><br></strong></a>CFS: <a href="https://github.com/fossasia/open-event-frontend/pull/3144">https://github.com/fossasia/open-event-frontend/pull/3144</a></p>
+
+
+
+<p>Specifying Query Params: <a href="https://guides.emberjs.com/release/routing/query-params/">https://guides.emberjs.com/release/routing/query-params/</a></p>
+
+
+
+<p>UI Resources for the feature: <a href="https://semantic-org.github.io/Semantic-UI-Ember/#/modules/accordion">https://semantic-org.github.io/Semantic-UI-Ember/#/modules/accordion</a><br></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+      </div>
       <a class="title" href=https:&#x2F;&#x2F;www.blogger.com&#x2F;feeds&#x2F;3178496836985515242&#x2F;posts&#x2F;default&#x2F;4340826448937512660><h1>Liquid Galaxy LAB Facens, en el congreso de sensoramiento remoto sobre las aplicaciones de defensa</h1></a>
       <h5>2019-11-16T12:28:00.002Z</h5>
       <i class="author">Unknown</i>
@@ -23,11 +207,11 @@
       <div class="content">
         <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;warren&#x2F;11-16-2019&#x2F;relic-site-accumulation-in-rhode-island><h1>Relic Site Accumulation in Rhode Island (#21501)</h1></a>
+      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;warren&#x2F;11-16-2019&#x2F;relic-site-accumulation-in-rhode-island><h1>Recovering RI&#39;s Lost Industrial Footprint (#21501)</h1></a>
       <h5>2019-11-16T01:03:47.000Z</h5>
       <i class="author">@jywarren</i>
       <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/552/medium/image.png' alt=''> <br />
+        <img src='https://publiclab.org/system/images/photos/000/036/585/medium/relic_gif.gif' alt=''> <br />
       </div>
       <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;warren&#x2F;11-16-2019&#x2F;mashapaug-pond><h1>Mashapaug Pond (#21500)</h1></a>
       <h5>2019-11-16T00:53:23.000Z</h5>
@@ -35,11 +219,11 @@
       <div class="content">
         <img src='https://publiclab.org/system/images/photos/000/036/551/medium/image.png' alt=''> <br />
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;warren&#x2F;11-16-2019&#x2F;deindustrialization-in-rhode-island><h1>Deindustrialization in Rhode Island (#21499)</h1></a>
+      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;warren&#x2F;11-16-2019&#x2F;deindustrialization-in-rhode-island><h1>Deindustrialization in Rhode Island: An Uneven Geography (#21499)</h1></a>
       <h5>2019-11-16T00:49:40.000Z</h5>
       <i class="author">@jywarren</i>
       <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/550/medium/image.png' alt=''> <br />
+        <img src='https://publiclab.org/system/images/photos/000/036/576/medium/image.png' alt=''> <br />
       </div>
       <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;fpgm-report-2019-46&#x2F;><h1>FPgM report: 2019-46</h1></a>
       <h5>2019-11-15T21:42:44.000Z</h5>
@@ -1019,23 +1203,11 @@
 <p>&nbsp;</p>
 
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;SimonKirkman88&#x2F;11-05-2019&#x2F;can-i-use-a-single-camera-with-rgb-and-extended-nir-to-capture-ndvi><h1>Can I use a single camera with RGB and extended NIR to capture NDVI? (#21404)</h1></a>
-      <h5>2019-11-05T22:04:27.000Z</h5>
-      <i class="author">SimonKirkman88</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
-      </div>
       <a class="title" href=https:&#x2F;&#x2F;medium.com&#x2F;tensorflow&#x2F;the-tensorflow-blog-has-moved-3ec67b671229?source&#x3D;rss----dca47aab201b---4><h1>Our blog has moved</h1></a>
       <h5>2019-11-05T18:36:51.000Z</h5>
       <i class="author">TensorFlow</i>
       <div class="content">
         <p><em>Posted by </em><a href="https://twitter.com/random_forests"><em>Josh Gordon</em></a><em> for the TensorFlow team.</em></p><p>Dear readers,</p><p>The TensorFlow blog has moved to <a href="https://blog.tensorflow.org">https://blog.tensorflow.org</a>. Please visit us there.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*n_V0WobqWAJUUeVVZX9gkg.png" /><figcaption>Visit our new blog at https://blog.tensorflow.org</figcaption></figure><p>Thank you to our readers, and to our many guest authors who have created an incredible collection of content representing a diverse body of work. Thanks also to Medium for a great couple of years.</p><p>Although we’ve decided to move our blog, articles from the global TensorFlow community — including students, researchers, and companies large and small — will remain an important part of it.</p><p>In the future, new articles will be published on <a href="https://blog.tensorflow.org">https://blog.tensorflow.org</a>. The existing articles here on Medium will remain unchanged.</p><p>Over the next month, we plan to gradually republish our collection of articles on Medium to the new blog, so you’ll be able to find everything in one place. We’ve republished a few so far, with many more to go. With their permission, we plan to republish guest articles on the new blog in the same time frame.</p><p>Thank you again, and see you at <a href="https://blog.tensorflow.org">https://blog.tensorflow.org</a>.</p><img src="https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=3ec67b671229" width="1" height="1"><hr><p><a href="https://medium.com/tensorflow/the-tensorflow-blog-has-moved-3ec67b671229">Our blog has moved</a> was originally published in <a href="https://medium.com/tensorflow">TensorFlow</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;rollinrenola&#x2F;11-05-2019&#x2F;oil-and-gas-monitoring-fellowship-update><h1>Oil and Gas Monitoring Fellowship Update: (#21402)</h1></a>
-      <h5>2019-11-05T16:55:36.000Z</h5>
-      <i class="author">rollinrenola</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
       </div>
       <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;linux-day-2019-bari-a-retrospective&#x2F;><h1>Linux Day 2019 @ Bari: A Retrospective</h1></a>
       <h5>2019-11-05T06:30:32.000Z</h5>
@@ -10525,403 +10697,6 @@ n<span style="color:#d2cd86">++</span><span style="color:#b060b0">;</span>
 
 
 <p>	Eventyay, FOSSASIA, Flask, SMTP, Open Event, Sendgrid, Python<br></p>
-
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;allowing-event-owner-to-transfer-an-event-in-eventyay&#x2F;><h1>Allowing Event Owner to Transfer an event in Eventyay</h1></a>
-      <h5>2019-08-28T17:11:34.000Z</h5>
-      <i class="author">shreyanshdwivedi</i>
-      <div class="content">
-        <img width="600" height="319" src="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2019/08/ezgif.com-video-to-gif2.gif?fit=600%2C319&amp;ssl=1" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="" data-attachment-id="18356" data-permalink="https://blog.fossasia.org/allowing-event-owner-to-transfer-an-event-in-eventyay/ezgif-com-video-to-gif2/" data-orig-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2019/08/ezgif.com-video-to-gif2.gif?fit=600%2C319&amp;ssl=1" data-orig-size="600,319" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ezgif.com-video-to-gif(2)" data-image-description="" data-medium-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2019/08/ezgif.com-video-to-gif2.gif?fit=600%2C319&amp;ssl=1" data-large-file="https://i1.wp.com/blog.fossasia.org/wp-content/uploads/2019/08/ezgif.com-video-to-gif2.gif?fit=600%2C319&amp;ssl=1" />
-<p>This blog post will showcase an option which can be used by an event owner to transfer his event to another user in <a href="https://github.com/fossasia/open-event-frontend">Open Event Frontend</a>. Till the invited user accepts the invitation, the previous owner will have all the rights but as soon as the invited user becomes the new owner of the event the previous owner will cease to have any control over the event.</p>
-
-
-
-<p>It is a 2-step process just to ensure that user doesn’t transfers the event accidentally.</p>
-
-
-
-<p>The user needs to go to <em>Settings</em> option of the event. The user will get an option to transfer event in the form of a red button along with the following text:</p>
-
-
-
-<table class="wp-block-table"><tbody><tr><td><em>Transfer ownership of this event to another user. You&#8217;ll lose all the owner rights once they accept the ownership.</em></td></tr></tbody></table>
-
-
-
-<figure class="wp-block-image"><img src="https://lh3.googleusercontent.com/_nRB1ZRY1vx29kKiTj2g27StuVaIoD4Llz69OhWUOlCT4GXFoQuIIDNMAkPjrtzNQ5QWYC7A9ZQwFDrp1iq7cz0gVGFmR9teCMvzw2mq4ZI-pH3R6NvaCFWpngbYdEqk-9KzqhO7" alt="" /><figcaption><em>Option to transfer event in Open Event Frontend</em></figcaption></figure>
-
-
-
-<p>When a user clicks on the option to transfer the event, a modal pops up asking the user to confirm the event name. Once user fills in correct event name the <em>Proceed</em> button becomes active.</p>
-
-
-
-<figure class="wp-block-image"><img src="https://lh3.googleusercontent.com/4EbmFHqw6l5bj7CegsscTVAmHWjGx06QFFsrClLC42APEJ8S9tJmx_dp-lZSCq0dbJcjvKn3BxQovtHKcLLpRBHuKbaXL6OlcUkkqaZVOitD2C4Fo6nbvguMhYO8O2dLEtOoQFLJ" alt="" /><figcaption><em>Modal to confirm event name</em></figcaption></figure>
-
-
-
-<p>The code snippet which triggers the action to open the modal <em>event-transfer-modal </em>is given below:</p>
-
-
-
-<pre class="wp-block-preformatted">&lt;<strong>button</strong> {{action 'openEventTransferModal' model.event.id
-model.event.name}} class='ui red button'&gt;
-   {{t 'Transfer Ownership'}}
-&lt;/<strong>button</strong>&gt;</pre>
-
-
-
-<pre class="wp-block-preformatted">openEventTransferModal(id, name) {    
-    <strong>this</strong>.setProperties({
-       'isEventTransferModalOpen' : <strong>true</strong>,
-       'confirmEventName'         : '',
-       'eventId'                  : id,
-       'eventName'                : name
-     });
- }</pre>
-
-
-
-<p>The code snippet which takes care of event name confirmation to make <em>Proceed </em>button active:</p>
-
-
-
-<pre class="wp-block-preformatted">isNameDifferent  : computed('confirmEventName',  
-      'eventName', function() {   
-           <strong>return</strong> <strong>this</strong>.eventName ? 
-           <strong>this</strong>.confirmEventName.toLowerCase() !==
-           <strong>this</strong>.eventName.toLowerCase() : <strong>true</strong>;
-       })</pre>
-
-
-
-<p>When user confirms the event name and hits <em>Proceed </em>button, a new modal appears which asks users to fill in the email of the user to whom the event is to be transferred. Also, the user needs to check a checkbox to ensure that he/she agrees to the terms of event transferring.</p>
-
-
-
-<figure class="wp-block-image"><img src="https://lh3.googleusercontent.com/QwWQ9kPj1BXgg-HV0Hs-NsusaYFL-Ls4cXHVlpln23hRYnHQEguxrjHSZUnLZW6yrY8ldjpLjscj7Vps4DGyH53tne0FzhkybeHWa7Ugqb6j6mDSj5IybkqLd41p0WnYE55i9PBn" alt="" /><figcaption><em>Final confirmation to transfer the event</em></figcaption></figure>
-
-
-
-<p>The code snippet which triggers the action to open the modal <em>confirm-event-transfer-modal </em>is given below: </p>
-
-
-
-<pre class="wp-block-preformatted">&lt;<strong>button</strong> {{action openConfirmEventTransferModal}} class="ui red button {{if isNameDifferent 'disabled'}}"&gt;   
-    {{t 'Proceed'}}
-&lt;/<strong>button</strong>&gt;</pre>
-
-
-
-<pre class="wp-block-preformatted">openConfirmEventTransferModal() {     
-     <strong>const</strong> currentInvite =
-             <strong>this</strong>.model.roleInvites.createRecord({});
-     <strong>let</strong> { roles } = <strong>this</strong>.model;
-     <strong>for</strong> (<strong>const</strong> role <strong>of</strong> roles ? roles.toArray() : [])    
-     {
-         <strong>if</strong> (role.name === 'owner') {
-             currentInvite.set('role', role);
-         }
-     }
-     <strong>this</strong>.setProperties({
-         'isEventTransferModalOpen'        : <strong>false</strong>,
-         'isConfirmEventTransferModalOpen' : <strong>true</strong>,
-         'checked'                         : <strong>false</strong>,
-         currentInvite
-     });
-   }</pre>
-
-
-
-<p>When the <em>confirm-event-transfer-modal </em>is to be opened, a new role invite is created and passed to the modal so that when the user fills in the email of the new owner, the role invite is simply updated by a PATCH request.&nbsp;</p>
-
-
-
-<p>When the user fills in email ID and enters <em>Transfer </em>button, the <strong><em>transferEvent() </em></strong>function is called.</p>
-
-
-
-<pre class="wp-block-preformatted"><strong>async</strong> transferEvent() {
-     <strong>try</strong> {
-       <strong>this</strong>.set('isLoading', <strong>true</strong>);
-       <strong>this</strong>.currentInvite.set('roleName', 'owner');
-       <strong>await</strong> <strong>this</strong>.currentInvite.save();
-       <strong>this</strong>.setProperties({
-         'isConfirmEventTransferModalOpen' : <strong>false</strong>,
-         'checked'                         : <strong>false</strong>
-       });
-       <strong>this</strong>.notify.success(<strong>this</strong>.l10n.t('Owner Role Invite sent
-       successfully.'));
-     } <strong>catch</strong> (error) {
-       <strong>this</strong>.notify.error(<strong>this</strong>.l10n.t(error.message));
-     }
-     <strong>this</strong>.set('isLoading', <strong>false</strong>);
-   }
- }</pre>
-
-
-
-<p>The transferEvent() function updates the role invited created while opening of <em>confirm-event-transfer-modal </em>and then save() function is called upon the role invite. All the modals are then closed and role invite mail is sent to the new owner. When the new owner clicks on the link in the mail and accepts the invite, event is transferred to him/her and the previous owner is deprived of any control over the event.</p>
-
-
-
-<p></p>
-
-
-
-<p><strong>Resources:</strong></p>
-
-
-
-<ul><li><a href="https://guides.emberjs.com/release/templates/">EmberJS templates</a></li><li><a href="https://guides.emberjs.com/release/templates/">EmberJS controllers</a></li><li><a href="https://semantic-org.github.io/Semantic-UI-Ember/#/modules/modal">Semantic UI &#8211; modal module</a></li></ul>
-
-
-
-<p><strong>Related work and code repo</strong><strong>:</strong></p>
-
-
-
-<ul><li><a href="https://github.com/fossasia/open-event-frontend">Front-End Repository</a></li><li><a href="https://github.com/fossasia/open-event-server">API Server Repository</a></li><li><a href="https://github.com/fossasia/open-event-frontend/pull/3013">Frontend PR</a></li><li><a href="https://github.com/fossasia/open-event-server/pull/6048">Server PR</a></li></ul>
-
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;migration-to-model-view-viewmodel-architecture-and-livedata-in-eventyay-organizer-app&#x2F;><h1>Migration to Model-View-ViewModel Architecture and LiveData in Open Event Organizer App</h1></a>
-      <h5>2019-08-28T16:44:56.000Z</h5>
-      <i class="author">ShridharGoel</i>
-      <div class="content">
-        <img width="768" height="156" src="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/08/MVVM-diagram.png?fit=768%2C156&amp;ssl=1" class="webfeedsFeaturedVisual wp-post-image" alt="MVVM" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="" srcset="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/08/MVVM-diagram.png?w=845&amp;ssl=1 845w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/08/MVVM-diagram.png?resize=300%2C61&amp;ssl=1 300w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/08/MVVM-diagram.png?resize=750%2C153&amp;ssl=1 750w, https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/08/MVVM-diagram.png?resize=768%2C156&amp;ssl=1 768w" sizes="(max-width: 768px) 100vw, 768px" data-attachment-id="18347" data-permalink="https://blog.fossasia.org/migration-to-model-view-viewmodel-architecture-and-livedata-in-eventyay-organizer-app/mvvm-diagram/" data-orig-file="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/08/MVVM-diagram.png?fit=845%2C172&amp;ssl=1" data-orig-size="845,172" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="MVVM (Model-View-ViewModel)" data-image-description="" data-medium-file="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/08/MVVM-diagram.png?fit=750%2C153&amp;ssl=1" data-large-file="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/08/MVVM-diagram.png?fit=845%2C172&amp;ssl=1" />
-<p><a href="https://github.com/fossasia/open-event-organizer-android">Open Event Organizer App (Eventyay Organizer App)</a> is the Android app used by event organizers to create and manage events on the Eventyay platform as well as check-in and check-out attendees along with other functionalities. The app used the MVP (Model-View-Presenter) architecture and is being ported to MVVM (Model-View-ViewModel). This article will explain the procedure of migrating MVP to MVVM architecture and implementing LiveData. <br></p>
-
-
-
-<p><strong>Why migrate to MVVM?</strong><br></p>
-
-
-
-<p>The MVVM architecture is designed to store and manage UI-related data in a lifecycle conscious way. Configuration changes such as screen rotations are handled properly by ViewModels.<br></p>
-
-
-
-<p><strong>Tight Coupling:</strong><br></p>
-
-
-
-<p>The issue of tight coupling is resolved since only the View holds the reference to ViewModel and not vice versa. A single View can hold references to multiple ViewModels.</p>
-
-
-
-<p><strong>Testability:</strong><br></p>
-
-
-
-<p>Since Presenters are hard bound to Views, writing unit tests becomes slightly difficult as there is a dependency of a View.<br></p>
-
-
-
-<p>ViewModels are more unit test friendly as they can be independently tested. There is no dependency of the View.<br></p>
-
-
-
-<p>Here, the implementation is being described with the example of <a href="https://github.com/fossasia/open-event-orga-app/tree/development/app/src/main/java/com/eventyay/organizer/core/event/about">About Event</a> module in the <a href="https://github.com/fossasia/open-event-orga-app">Open Event Organizer App</a>.<br></p>
-
-
-
-<p>First step is the creation of a new class AboutEventViewModel which extends ViewModel.<br></p>
-
-
-
-<pre style='color:#000020;background:#f6f8ff'><span style='color:#7f9fbf;font-weight:bold'>@Binds</span>
-<span style='color:#7f9fbf;font-weight:bold'>@IntoMap</span>
-<span style='color:#7f9fbf;font-weight:bold'>@ViewModelKey(AboutEventViewModel.class)</span>
-<span style='color:#200080;font-weight:bold'>public</span> <span style='color:#200080;font-weight:bold'>abstract</span> ViewModel bindAboutEventViewModel(AboutEventViewModel aboutEventViewModel)<span style='color:#308080'>;</span>
-</pre>
-<!--Created using ToHtml.com on 2019-09-02 14:31:30 UTC -->
-
-
-
-<p>The new ViewModel has to be added to the ViewModelModule:</p>
-
-
-
-<p>Constructor for the ViewModel:<br></p>
-
-
-
-<pre style='color:#000020;background:#f6f8ff'><span style='color:#7f9fbf;font-weight:bold'>@Inject</span>
-<span style='color:#200080;font-weight:bold'>public</span> AboutEventViewModel(EventRepository eventRepository,  CopyrightRepository copyrightRepository,
-DatabaseChangeListener&lt;Copyright&gt; copyrightChangeListener) <span style='color:#406080'>{</span>
-    <span style='color:#200080;font-weight:bold'>this</span><span style='color:#308080'>.</span>eventRepository <span style='color:#308080'>=</span> eventRepository<span style='color:#406080'>;</span>
-    <span style='color:#200080;font-weight:bold'>this</span><span style='color:#308080'>.</span>copyrightRepository <span style='color:#308080'>=</span> copyrightRepository<span style='color:#406080'>;</span>
-    <span style='color:#200080;font-weight:bold'>this</span><span style='color:#308080'>.</span>copyrightChangeListener <span style='color:#308080'>=</span> copyrightChangeListener<span style='color:#406080'>;</span>
-
-    eventId <span style='color:#308080'>=</span> ContextManager<span style='color:#308080'>.</span>getSelectedEvent<span style='color:#308080'>(</span><span style='color:#308080'>)</span><span style='color:#308080'>.</span>getId<span style='color:#308080'>(</span><span style='color:#308080'>)</span><span style='color:#406080'>;</span>
-<span style='color:#406080'>}</span>
-</pre>
-<!--Created using ToHtml.com on 2019-09-02 14:32:14 UTC -->
-
-
-
-<p>We are using Dagger2 for dependency injection.&nbsp;<br></p>
-
-
-
-<p><strong>LiveData</strong><br></p>
-
-
-
-<p>LiveData is a lifecycle-aware data holder with the observer pattern.<br></p>
-
-
-
-<p>When we have a LiveData object (e.g. list of attendees), we can add some LifecycleOwner (it can be Activity or Fragment) as an observer. Using this:<br></p>
-
-
-
-<p>The Activity or Fragment will remain updated with the data changes.<br></p>
-
-
-
-<p>Observers are only notified if they are in the STARTED or RESUMED state which is also known as the active state. This prevents memory leaks and NullPointerExceptions because inactive observers are not notified about changes.<br></p>
-
-
-
-<p>Now, let’s discuss about the implementation of LiveData. We will create objects of SingleEventLiveData&lt;&gt; class.</p>
-
-
-
-<pre style='color:#000020;background:#f6f8ff'><span style='color:#200080;font-weight:bold'>private</span> <span style='color:#200080;font-weight:bold'>final</span> SingleEventLiveData&lt;Boolean&gt; progress = new SingleEventLiveData&lt;&gt;()<span style='color:#308080'>;</span>
-<span style='color:#200080;font-weight:bold'>private</span> <span style='color:#200080;font-weight:bold'>final</span> SingleEventLiveData&lt;String&gt; error = new SingleEventLiveData&lt;&gt;()<span style='color:#308080'>;</span>
-<span style='color:#200080;font-weight:bold'>private</span> <span style='color:#200080;font-weight:bold'>final</span> SingleEventLiveData&lt;Event&gt; success = new SingleEventLiveData&lt;&gt;()<span style='color:#308080'>;</span>
-<span style='color:#200080;font-weight:bold'>private</span> <span style='color:#200080;font-weight:bold'>final</span> SingleEventLiveData&lt;Copyright&gt; showCopyright = new SingleEventLiveData&lt;&gt;()<span style='color:#308080'>;</span>
-<span style='color:#200080;font-weight:bold'>private</span> <span style='color:#200080;font-weight:bold'>final</span> SingleEventLiveData&lt;Boolean&gt; changeCopyrightMenuItem = new SingleEventLiveData&lt;&gt;()<span style='color:#308080'>;</span>
-<span style='color:#200080;font-weight:bold'>private</span> <span style='color:#200080;font-weight:bold'>final</span> SingleEventLiveData&lt;String&gt; showCopyrightDeleted = new SingleEventLiveData&lt;&gt;()<span style='color:#308080'>;</span>
-</pre>
-<!--Created using ToHtml.com on 2019-09-02 14:32:35 UTC -->
-
-
-
-<p>The functions to get the LiveData objects:<br></p>
-
-
-
-<pre style='color:#000020;background:#f6f8ff'><span style='color:#200080;font-weight:bold'>public</span> LiveData&lt;Boolean&gt; getProgress() <span style='color:#406080'>{</span>
-    <span style='color:#200080;font-weight:bold'>return</span> progress<span style='color:#406080'>;</span>
-<span style='color:#406080'>}</span>
-
-<span style='color:#200080;font-weight:bold'>public</span> LiveData&lt;Event&gt; getSuccess() <span style='color:#406080'>{</span>
-    <span style='color:#200080;font-weight:bold'>return</span> success<span style='color:#406080'>;</span>
-<span style='color:#406080'>}</span>
-
-<span style='color:#200080;font-weight:bold'>public</span> LiveData&lt;String&gt; getError() <span style='color:#406080'>{</span>
-    <span style='color:#200080;font-weight:bold'>return</span> error<span style='color:#406080'>;</span>
-<span style='color:#406080'>}</span>
-
-<span style='color:#200080;font-weight:bold'>public</span> LiveData&lt;Copyright&gt; getShowCopyright() <span style='color:#406080'>{</span>
-    <span style='color:#200080;font-weight:bold'>return</span> showCopyright<span style='color:#406080'>;</span>
-<span style='color:#406080'>}</span>
-
-<span style='color:#200080;font-weight:bold'>public</span> LiveData&lt;Boolean&gt; getChangeCopyrightMenuItem() <span style='color:#406080'>{</span>
-    <span style='color:#200080;font-weight:bold'>return</span> changeCopyrightMenuItem<span style='color:#406080'>;</span>
-<span style='color:#406080'>}</span>
-
-<span style='color:#200080;font-weight:bold'>public</span> LiveData&lt;String&gt; getShowCopyrightDeleted() <span style='color:#406080'>{</span>
-    <span style='color:#200080;font-weight:bold'>return</span> showCopyrightDeleted<span style='color:#406080'>;</span>
-<span style='color:#406080'>}</span>
-</pre>
-<!--Created using ToHtml.com on 2019-09-02 14:33:09 UTC -->
-
-
-
-<p>Now, we can remove getView() methods and instead, these objects will be used to call various methods defined in the fragment.</p>
-
-
-
-<p>Let’s discuss the changes required in the AboutEventFragment now.<br></p>
-
-
-
-<p>The Fragment will have ViewModelProvider.Factory injected.</p>
-
-
-
-<pre style='color:#000020;background:#f6f8ff'><span style='color:#7f9fbf;font-weight:bold'>@Inject</span>
-ViewModelProvider.Factory viewModelFactory<span style='color:#308080'>;</span>
-</pre>
-<!--Created using ToHtml.com on 2019-09-02 14:33:30 UTC -->
-
-
-
-<p>Declare an object of the ViewModel.</p>
-
-
-
-<pre style='color:#000020;background:#f6f8ff'><span style='color:#200080;font-weight:bold'>private</span> AboutEventViewModel aboutEventViewModel<span style='color:#308080'>;</span>
-</pre>
-<!--Created using ToHtml.com on 2019-09-02 14:33:48 UTC -->
-
-
-
-<p>Then, in onCreateView(), viewModelFactory will be passed to the ViewModelProviders.of() method as the factory, which is the second parameter.</p>
-
-
-
-<pre style='color:#000020;background:#f6f8ff'>aboutEventViewModel = ViewModelProviders.of(this, viewModelFactory).get(AboutEventViewModel.class)<span style='color:#308080'>;</span>
-</pre>
-<!--Created using ToHtml.com on 2019-09-02 14:34:15 UTC -->
-
-
-
-<p>Replace all references to the Presenter with references to the ViewModel.<br></p>
-
-
-
-<p>Add the Fragment as an observer to the changes by adding the following in the onStart() method:<br></p>
-
-
-
-<pre style='color:#000020;background:#f6f8ff'>aboutEventViewModel.getProgress().observe(this, this::showProgress)<span style='color:#308080'>;</span>
-aboutEventViewModel.getSuccess().observe(this, this::showResult)<span style='color:#308080'>;</span>
-aboutEventViewModel.getError().observe(this, this::showError)<span style='color:#308080'>;</span>
-aboutEventViewModel.getShowCopyright().observe(this, this::showCopyright)<span style='color:#308080'>;</span>
-aboutEventViewModel.getChangeCopyrightMenuItem().observe(this, this::changeCopyrightMenuItem)<span style='color:#308080'>;</span>
-aboutEventViewModel.getShowCopyrightDeleted().observe(this, this::showCopyrightDeleted)<span style='color:#308080'>;</span>
-</pre>
-<!--Created using ToHtml.com on 2019-09-02 14:34:38 UTC -->
-
-
-
-<p>Two parameters are passed to the observe() method  &#8211;  first one is LifecycleOwner, which is our Fragment in this case. The second one is a callback along with a parameter and is used to call the required method.<br></p>
-
-
-
-<p>With this, the implementation of MVVM and LiveData is brought to completion.</p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p><strong>Resources:</strong></p>
-
-
-
-<p>Documentation: <a href="https://developer.android.com/topic/libraries/architecture/viewmodel">ViewModel</a>, <a href="https://developer.android.com/topic/libraries/architecture/livedata">LiveData</a></p>
-
-
-
-<p>Further reading: </p>
-
-
-
-<ul><li><a href="https://medium.com/mindorks/migration-from-mvp-to-mvvm-using-android-architecture-components-4bc058a1f73c">Migration from MVP to MVVM using Android Architecture Components</a></li><li><a href="https://proandroiddev.com/mvp-to-mvvm-transformation-611959d5e0ca">MVP to MVVM transformation</a></li></ul>
-
-
-
-<p>Open Event Organizer App: <a href="https://github.com/fossasia/open-event-organizer-android">Project repo</a>, <a href="https://play.google.com/store/apps/details?id=com.eventyay.organizer">Play Store</a>, <a href="https://f-droid.org/en/packages/com.eventyay.organizer/">F-Droid</a></p>
 
       </div>
       <a class="title" href=https:&#x2F;&#x2F;mifos.org&#x2F;blog&#x2F;gsoc-2019&#x2F;><h1>Meet the 2019 Google Summer of Code Class of Interns</h1></a>
