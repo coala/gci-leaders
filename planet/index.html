@@ -52,7 +52,7 @@
 
 
 
-<p>There is <a href="https://elections.fedoraproject.org/about/mindshare_f30">one seat open</a> on the Mindshare Committee</p>
+<p>There is <a href="https://elections.fedoraproject.org/about/mindshare_f31">one seat open</a> on the Mindshare Committee</p>
 
 
 
@@ -219,93 +219,24 @@
 <p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/fesco-election-interview-with-kevin-fenzi-kevin-2/">FESCo election: Interview with Kevin Fenzi (kevin)</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
 
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;fesco-election-interview-with-fabio-valentini-decathorpe-3&#x2F;><h1>FESCo election: interview with Fabio Valentini (decathorpe)</h1></a>
+      <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;fesco-election-interview-randy-barlow-bowlofeggs-2&#x2F;><h1>FESCo election interview: Randy Barlow (bowlofeggs)</h1></a>
       <h5>2019-11-20T23:55:00.000Z</h5>
-      <i class="author">decathorpe</i>
-      <div class="content">
-        
-<p><em>This is a part of the FESCo Elections Interviews series. <a rel="noreferrer noopener" href="https://elections.fedoraproject.org" target="_blank">Voting</a>  is open to all Fedora contributors who are a member of at least one non-CLA group. The voting period starts on Thursday, 21 November and closes promptly at 23:59:59 UTC on Thursday, 5 December 2019.</em></p>
-
-
-
-<h2>Interview with Fabio Valentini</h2>
-
-
-
-<ul><li><strong>Fedora account:</strong> decathorpe</li><li><strong>IRC nick:</strong> decathorpe (found in fedora-{golang,java,python,ruby,rust,stewardship,meeting*})</li><li><a href="https://fedoraproject.org/wiki/User:Decathorpe">Fedora user wiki page</a></li></ul>
-
-
-
-<span id="more-8391"></span>
-
-
-
-<h2>Questions</h2>
-
-
-
-<h3>Describe some of the important technical issues you foresee affecting the Fedora community. What insight do you bring to these issues?</h3>
-
-
-
-<p>One of the big issues I see today is the increasingly large number of  packages that fail to build or install on fedora, which seems to have  about <em>doubled</em> between Fedora 29 and rawhide, according to my  data. I am trying to reintroduce a regular dependency check report for  rawhide (and maybe stable/testing as well), which would at least make  the problem more visible, and provide pointers to the most problematic  missing dependencies.</p>
-
-
-
-<p> There&#8217;s also the fallout from the &#8211; currently incomplete (or broken,  depending on who you ask) &#8211; implementation of Modularity, which has  caused upgrade issues (the &#8220;libgit2 issue&#8221;), various issues around the  Java stack, including the broken eclipse packages in fedora 31+ and the  &#8220;forced move&#8221; to modules (or even the recommendation to use the flatpak  version instead), and so on. I&#8217;ve been actively working to keep the  non-modular Java stack maintained under the umbrella of the Stewardship  SIG, so packagers who can&#8217;t (or won&#8217;t) move their packages into modules  don&#8217;t suffer from this current, broken situation.</p>
-
-
-
-<h3>What objectives or goals should FESCo focus on to help keep Fedora on the cutting edge of open source development?</h3>
-
-
-
-<p>With stagnating contributor numbers and an ever growing package base, I think the most important thing to tackle is making the packager workflow more streamlined. I already see progress being made into the right direction here (for example, making package un-orphaning a push-button action in pagure instead of having to go through a releng ticket manually). This both makes working on fedora packages easier for existing maintainers, and should make fedora a more attractive, modern project to contribute to for newcomers. The multi-build update workflow for rawhide with on-demand side-tags also seems like a good improvement, both for packagers, and for the stability of rawhide. I think a gating check that rejects packages which introduce broken dependencies into the repository would be a good addition, as well (and it might help reduce the number of broken dependencies over time).</p>
-
-
-
-<p> Improvements in this area directly benefits the stability of fedora and the ability of packagers to deliver new features faster &#8211; which means fedora can continue to be the best platform for developers.</p>
-
-
-
-<h3>What are the areas of the distribution and our processes that, in your opinion, need improvement the most? Do you have any ideas how FESCo would be able to help in those &#8220;trouble spots&#8221;?</h3>
-
-
-
-<p>I see a lot of issues surrounding Modularity (both regarding policy and implementation), but that topic has already sparked more debates than any other change in fedora since I joined a few years ago, so let&#8217;s not focus on that for now <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
-
-
-
-<p>Other than that, I see the large (and growing) number of packages with broken dependencies as a big issue, and a sign that the fedora repositories aren&#8217;t in a great state &#8211; not even mentioning the fact that dependencies that aren&#8217;t satisfiable from the official repos might pose a legal risk for fedora, as well.</p>
-
-
-
-<p>I think the updated FTBFS and Non-responsive maintainer processes already help here, since they make the problem of broken packages more visible for dependent packagers, and introduce an automatic cleanup of packages that fail to build and that nobody cares about.</p>
-
-
-
-<p>Another area that I sometimes find a bit lacking is documentation for some common tasks (like getting a package&#8217;s dependency tree, or querying things that need to be rebuilt in case of ABI changes, …). While there is documentation and policy covering these tasks, it might be good to give concrete examples for correctly determining the impact of a change. This might also help to reduce the number of broken updates (and surprise SONAME bumps) in fedora, making development of rawhide more stable and predictable.</p>
-<p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/fesco-election-interview-with-fabio-valentini-decathorpe-3/">FESCo election: interview with Fabio Valentini (decathorpe)</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
-
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;fesco-election-interview-zbigniew-jedrzejewski-szmek-zbyszek&#x2F;><h1>FESCo election interview: Zbigniew Jędrzejewski-Szmek (zbyszek)</h1></a>
-      <h5>2019-11-20T23:55:00.000Z</h5>
-      <i class="author">zbyszek</i>
+      <i class="author">bowlofeggs</i>
       <div class="content">
         
 <p><em>This is a part of the FESCo Elections Interviews series. <a rel="noreferrer noopener" href="https://elections.fedoraproject.org" target="_blank">Voting</a> is open to all Fedora contributors who are a member of at least one non-CLA group. The voting period starts on Thursday, 21 November and closes promptly at 23:59:59 UTC on Thursday, 5 December 2019.</em></p>
 
 
 
-<h2>Interview with Zbigniew Jędrzejewski-Szmek</h2>
+<h2>Interview with Randy Barlow</h2>
 
 
 
-<ul><li><strong>Fedora account:</strong> zbyszek</li><li><strong>IRC nick:</strong> zbyszek (found in fedora-devel, #systemd, #fedora-rust, #fedora-python, #fedora-neuro)</li><li><a href="https://fedoraproject.org/wiki/User:Zbyszek">Fedora user wiki page</a></li></ul>
+<ul><li><strong>Fedora account:</strong> bowlofeggs</li><li><strong>IRC nick:</strong> bowlofeggs (found in #fedora-apps, #fedora-admin, #fedora-noc, #fedora-devel, #redhat-cpe)</li><li><a href="https://fedoraproject.org/wiki/User:Bowlofeggs">Fedora user wiki page</a></li></ul>
 
 
 
-<span id="more-8394"></span>
+<span id="more-8393"></span>
 
 
 
@@ -317,17 +248,19 @@
 
 
 
-<p>We have plenty of new stuff happening in package creation and<br>delivery: automatic generation of build requirements and reuse of<br>upstream project metadata, new packaging macros, rawhide gating,<br>library ABI checks, packaging automation like Packit and Modularity,<br>more CI capabilities, rawhide side-tags and gating, new delivery<br>formats like Silverblue, containers, flatpaks, modules. The challenge<br>is how to integrate those technologies into existing workflows so that<br>the old approaches can coexist and be gradually replaced; how to allow<br>hawkish packagers who are ready to switch to the latest and greatest<br>to move forward quickly, without breaking workflows of more<br>conservative maintainers. We also need to keep in mind packaging<br>outside of the core distribution: copr users, spins, distributions<br>which rebuild our packages, people who maintain in-house packages.</p>
+<p>There have been many regressions with ease of use for tooling that 
+packagers need to use to deliver software to Fedora&#8217;s users over the 
+past few years. Quite a few things are manual now that used to be 
+automatic. As a member of the infrastructure group, I have some first 
+hand knowledge of how and why these changes happened, and I have ideas 
+on how we can improve them.</p>
 
 
 
-<p>We declare that allowing people to build solutions on top of Fedora is<br />
-our goal, and we need to weigh the changes that we introduce in this<br />
-light.</p>
-
-
-
-<p>FESCo does not have the ability to tell people what to do. It is only<br /> useful as a place where questions are asked, and voices of interested<br /> parties are recorded. As a FESCo member my goal will be to ask<br /> questions and gather feedback until any given issue is clear. We can&#8217;t<br /> achieve unanimity, and we can&#8217;t always satisfy everyone, but we need<br /> to anticipate problems and minimize disruption while still allowing<br /> the technology to move forward.</p>
+<p>There is also a project aimed at bringing the CentOS and Fedora 
+dist-gits together in the horizon. I&#8217;ve been working on gathering 
+requirements for this project with some other folks, and has potential 
+to lead towards many technical changes being proposed.</p>
 
 
 
@@ -335,33 +268,7 @@ light.</p>
 
 
 
-<p>In the next two release cycles:</p>
-
-
-
-<ul><li>
-Make gating finally widely used, by concentrating of general tests<br />
-that are applicable to a wide range of packages, to catch<br />
-install/uninstall/upgrade issues, library ABI compatibility breaks,<br />
-missing dependencies. This will make packaging more robust, and empower<br />
-packagers to move on to more interesting tasks.
-</li><li>
-Finish the transition to Python 3, keep only those Python 2 packages<br />
-  that we absolutely must.
-</li><li>
-Transition to Java 11 and make the Java ecosystem healthy again.
-</li><li>
-Figure out how to enable the good parts of Modularity, as implemented<br />
-now or as equivalent functionality, without making things difficult for<br />
-everyone else.
-</li></ul>
-
-
-
-<p>On slightly longer scale: automatize packaging of language-specific<br />
-stacks like Python or Rust by reusing upstream metadata and making the<br />
-package creation and update mechanism as simple as possible. Make the<br />
-flow from upstream releases to distro packages fully automatic.</p>
+<p>I think Fedora is more difficult to contribute to than it needs to be. Some of this is due to the usability regressions I mentioned above, but I also think the barrier of entry is fairly high to join the package maintainers. There are some other distributions that allow contributors to simply open pull requests on GitHub, as an example of how low the barrier to entry could be. We, in comparison, require contributors to sign a CLA, submit a package review, perform several practice package reviews, and find a sponsor to join. I suspect that this limits our contributor pool significantly. I think it would be wise to rethink how we operate here, and find ways to lower the barrier of entry for new contributors. One example is to make it easier for contributors to send patches to the project without requiring them to be packagers.</p>
 
 
 
@@ -369,17 +276,8 @@ flow from upstream releases to distro packages fully automatic.</p>
 
 
 
-<p>No big surprises considering what I wrote above: we have a lot of<br />
-friction where new technologies are being introduced, and the new<br />
-conflicts with the old. Not every project that is brought forward is<br />
-ultimately worth integrating in Fedora, and FESCo should ask hard<br />
-questions and require contingency plans and coordinate reverts if need<br />
-be.</p>
-
-
-
-<p>Another problem is the stagnation or even shrinking of the number of<br /> contributors. I believe the technical problems discussed above are<br /> significantly contributing to this: the &#8220;packaging story&#8221; is nowadays<br /> much more complicated and uncertain and less documented than it used<br /> to be; at the same time many experienced packagers are busy fighting<br /> fires and fighting on the mailing lists, so we don&#8217;t have time for<br /> newcomers and docs and polish. This is a problem now, but the upside<br /> is that once those pressing issues are be solved, the experience for<br /> new packagers will improve and we can hope to grow the project again.</p>
-<p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/fesco-election-interview-zbigniew-jedrzejewski-szmek-zbyszek/">FESCo election interview: Zbigniew Jędrzejewski-Szmek (zbyszek)</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
+<p>As we&#8217;ve seen on the devel list recently, there is friction within the community around the modularity project. Some of the issues are technical, some of them are related to policy, and likely most of them are due to misunderstandings of communication and of the project itself. I think FESCo can help here by working to clarify these misunderstandings so that everybody can see the problem statements and proposed solutions more clearly.</p>
+<p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/fesco-election-interview-randy-barlow-bowlofeggs-2/">FESCo election interview: Randy Barlow (bowlofeggs)</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
 
       </div>
       <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;fesco-election-interview-with-miro-hroncok-churchyard-2&#x2F;><h1>FESCo election: interview with Miro Hrončok (churchyard)</h1></a>
@@ -573,24 +471,24 @@ state.</p>
 <p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/fesco-election-interview-with-david-cantrell-dcantrel/">FESCo election: interview with David Cantrell (dcantrel)</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
 
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;fesco-election-interview-randy-barlow-bowlofeggs-2&#x2F;><h1>FESCo election interview: Randy Barlow (bowlofeggs)</h1></a>
+      <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;fesco-election-interview-zbigniew-jedrzejewski-szmek-zbyszek&#x2F;><h1>FESCo election interview: Zbigniew Jędrzejewski-Szmek (zbyszek)</h1></a>
       <h5>2019-11-20T23:55:00.000Z</h5>
-      <i class="author">bowlofeggs</i>
+      <i class="author">zbyszek</i>
       <div class="content">
         
 <p><em>This is a part of the FESCo Elections Interviews series. <a rel="noreferrer noopener" href="https://elections.fedoraproject.org" target="_blank">Voting</a> is open to all Fedora contributors who are a member of at least one non-CLA group. The voting period starts on Thursday, 21 November and closes promptly at 23:59:59 UTC on Thursday, 5 December 2019.</em></p>
 
 
 
-<h2>Interview with Randy Barlow</h2>
+<h2>Interview with Zbigniew Jędrzejewski-Szmek</h2>
 
 
 
-<ul><li><strong>Fedora account:</strong> bowlofeggs</li><li><strong>IRC nick:</strong> bowlofeggs (found in #fedora-apps, #fedora-admin, #fedora-noc, #fedora-devel, #redhat-cpe)</li><li><a href="https://fedoraproject.org/wiki/User:Bowlofeggs">Fedora user wiki page</a></li></ul>
+<ul><li><strong>Fedora account:</strong> zbyszek</li><li><strong>IRC nick:</strong> zbyszek (found in fedora-devel, #systemd, #fedora-rust, #fedora-python, #fedora-neuro)</li><li><a href="https://fedoraproject.org/wiki/User:Zbyszek">Fedora user wiki page</a></li></ul>
 
 
 
-<span id="more-8393"></span>
+<span id="more-8394"></span>
 
 
 
@@ -602,19 +500,17 @@ state.</p>
 
 
 
-<p>There have been many regressions with ease of use for tooling that 
-packagers need to use to deliver software to Fedora&#8217;s users over the 
-past few years. Quite a few things are manual now that used to be 
-automatic. As a member of the infrastructure group, I have some first 
-hand knowledge of how and why these changes happened, and I have ideas 
-on how we can improve them.</p>
+<p>We have plenty of new stuff happening in package creation and<br>delivery: automatic generation of build requirements and reuse of<br>upstream project metadata, new packaging macros, rawhide gating,<br>library ABI checks, packaging automation like Packit and Modularity,<br>more CI capabilities, rawhide side-tags and gating, new delivery<br>formats like Silverblue, containers, flatpaks, modules. The challenge<br>is how to integrate those technologies into existing workflows so that<br>the old approaches can coexist and be gradually replaced; how to allow<br>hawkish packagers who are ready to switch to the latest and greatest<br>to move forward quickly, without breaking workflows of more<br>conservative maintainers. We also need to keep in mind packaging<br>outside of the core distribution: copr users, spins, distributions<br>which rebuild our packages, people who maintain in-house packages.</p>
 
 
 
-<p>There is also a project aimed at bringing the CentOS and Fedora 
-dist-gits together in the horizon. I&#8217;ve been working on gathering 
-requirements for this project with some other folks, and has potential 
-to lead towards many technical changes being proposed.</p>
+<p>We declare that allowing people to build solutions on top of Fedora is<br />
+our goal, and we need to weigh the changes that we introduce in this<br />
+light.</p>
+
+
+
+<p>FESCo does not have the ability to tell people what to do. It is only<br /> useful as a place where questions are asked, and voices of interested<br /> parties are recorded. As a FESCo member my goal will be to ask<br /> questions and gather feedback until any given issue is clear. We can&#8217;t<br /> achieve unanimity, and we can&#8217;t always satisfy everyone, but we need<br /> to anticipate problems and minimize disruption while still allowing<br /> the technology to move forward.</p>
 
 
 
@@ -622,7 +518,33 @@ to lead towards many technical changes being proposed.</p>
 
 
 
-<p>I think Fedora is more difficult to contribute to than it needs to be. Some of this is due to the usability regressions I mentioned above, but I also think the barrier of entry is fairly high to join the package maintainers. There are some other distributions that allow contributors to simply open pull requests on GitHub, as an example of how low the barrier to entry could be. We, in comparison, require contributors to sign a CLA, submit a package review, perform several practice package reviews, and find a sponsor to join. I suspect that this limits our contributor pool significantly. I think it would be wise to rethink how we operate here, and find ways to lower the barrier of entry for new contributors. One example is to make it easier for contributors to send patches to the project without requiring them to be packagers.</p>
+<p>In the next two release cycles:</p>
+
+
+
+<ul><li>
+Make gating finally widely used, by concentrating of general tests<br />
+that are applicable to a wide range of packages, to catch<br />
+install/uninstall/upgrade issues, library ABI compatibility breaks,<br />
+missing dependencies. This will make packaging more robust, and empower<br />
+packagers to move on to more interesting tasks.
+</li><li>
+Finish the transition to Python 3, keep only those Python 2 packages<br />
+  that we absolutely must.
+</li><li>
+Transition to Java 11 and make the Java ecosystem healthy again.
+</li><li>
+Figure out how to enable the good parts of Modularity, as implemented<br />
+now or as equivalent functionality, without making things difficult for<br />
+everyone else.
+</li></ul>
+
+
+
+<p>On slightly longer scale: automatize packaging of language-specific<br />
+stacks like Python or Rust by reusing upstream metadata and making the<br />
+package creation and update mechanism as simple as possible. Make the<br />
+flow from upstream releases to distro packages fully automatic.</p>
 
 
 
@@ -630,8 +552,86 @@ to lead towards many technical changes being proposed.</p>
 
 
 
-<p>As we&#8217;ve seen on the devel list recently, there is friction within the community around the modularity project. Some of the issues are technical, some of them are related to policy, and likely most of them are due to misunderstandings of communication and of the project itself. I think FESCo can help here by working to clarify these misunderstandings so that everybody can see the problem statements and proposed solutions more clearly.</p>
-<p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/fesco-election-interview-randy-barlow-bowlofeggs-2/">FESCo election interview: Randy Barlow (bowlofeggs)</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
+<p>No big surprises considering what I wrote above: we have a lot of<br />
+friction where new technologies are being introduced, and the new<br />
+conflicts with the old. Not every project that is brought forward is<br />
+ultimately worth integrating in Fedora, and FESCo should ask hard<br />
+questions and require contingency plans and coordinate reverts if need<br />
+be.</p>
+
+
+
+<p>Another problem is the stagnation or even shrinking of the number of<br /> contributors. I believe the technical problems discussed above are<br /> significantly contributing to this: the &#8220;packaging story&#8221; is nowadays<br /> much more complicated and uncertain and less documented than it used<br /> to be; at the same time many experienced packagers are busy fighting<br /> fires and fighting on the mailing lists, so we don&#8217;t have time for<br /> newcomers and docs and polish. This is a problem now, but the upside<br /> is that once those pressing issues are be solved, the experience for<br /> new packagers will improve and we can hope to grow the project again.</p>
+<p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/fesco-election-interview-zbigniew-jedrzejewski-szmek-zbyszek/">FESCo election interview: Zbigniew Jędrzejewski-Szmek (zbyszek)</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
+
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;fesco-election-interview-with-fabio-valentini-decathorpe-3&#x2F;><h1>FESCo election: interview with Fabio Valentini (decathorpe)</h1></a>
+      <h5>2019-11-20T23:55:00.000Z</h5>
+      <i class="author">decathorpe</i>
+      <div class="content">
+        
+<p><em>This is a part of the FESCo Elections Interviews series. <a rel="noreferrer noopener" href="https://elections.fedoraproject.org" target="_blank">Voting</a>  is open to all Fedora contributors who are a member of at least one non-CLA group. The voting period starts on Thursday, 21 November and closes promptly at 23:59:59 UTC on Thursday, 5 December 2019.</em></p>
+
+
+
+<h2>Interview with Fabio Valentini</h2>
+
+
+
+<ul><li><strong>Fedora account:</strong> decathorpe</li><li><strong>IRC nick:</strong> decathorpe (found in fedora-{golang,java,python,ruby,rust,stewardship,meeting*})</li><li><a href="https://fedoraproject.org/wiki/User:Decathorpe">Fedora user wiki page</a></li></ul>
+
+
+
+<span id="more-8391"></span>
+
+
+
+<h2>Questions</h2>
+
+
+
+<h3>Describe some of the important technical issues you foresee affecting the Fedora community. What insight do you bring to these issues?</h3>
+
+
+
+<p>One of the big issues I see today is the increasingly large number of  packages that fail to build or install on fedora, which seems to have  about <em>doubled</em> between Fedora 29 and rawhide, according to my  data. I am trying to reintroduce a regular dependency check report for  rawhide (and maybe stable/testing as well), which would at least make  the problem more visible, and provide pointers to the most problematic  missing dependencies.</p>
+
+
+
+<p> There&#8217;s also the fallout from the &#8211; currently incomplete (or broken,  depending on who you ask) &#8211; implementation of Modularity, which has  caused upgrade issues (the &#8220;libgit2 issue&#8221;), various issues around the  Java stack, including the broken eclipse packages in fedora 31+ and the  &#8220;forced move&#8221; to modules (or even the recommendation to use the flatpak  version instead), and so on. I&#8217;ve been actively working to keep the  non-modular Java stack maintained under the umbrella of the Stewardship  SIG, so packagers who can&#8217;t (or won&#8217;t) move their packages into modules  don&#8217;t suffer from this current, broken situation.</p>
+
+
+
+<h3>What objectives or goals should FESCo focus on to help keep Fedora on the cutting edge of open source development?</h3>
+
+
+
+<p>With stagnating contributor numbers and an ever growing package base, I think the most important thing to tackle is making the packager workflow more streamlined. I already see progress being made into the right direction here (for example, making package un-orphaning a push-button action in pagure instead of having to go through a releng ticket manually). This both makes working on fedora packages easier for existing maintainers, and should make fedora a more attractive, modern project to contribute to for newcomers. The multi-build update workflow for rawhide with on-demand side-tags also seems like a good improvement, both for packagers, and for the stability of rawhide. I think a gating check that rejects packages which introduce broken dependencies into the repository would be a good addition, as well (and it might help reduce the number of broken dependencies over time).</p>
+
+
+
+<p> Improvements in this area directly benefits the stability of fedora and the ability of packagers to deliver new features faster &#8211; which means fedora can continue to be the best platform for developers.</p>
+
+
+
+<h3>What are the areas of the distribution and our processes that, in your opinion, need improvement the most? Do you have any ideas how FESCo would be able to help in those &#8220;trouble spots&#8221;?</h3>
+
+
+
+<p>I see a lot of issues surrounding Modularity (both regarding policy and implementation), but that topic has already sparked more debates than any other change in fedora since I joined a few years ago, so let&#8217;s not focus on that for now <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p>Other than that, I see the large (and growing) number of packages with broken dependencies as a big issue, and a sign that the fedora repositories aren&#8217;t in a great state &#8211; not even mentioning the fact that dependencies that aren&#8217;t satisfiable from the official repos might pose a legal risk for fedora, as well.</p>
+
+
+
+<p>I think the updated FTBFS and Non-responsive maintainer processes already help here, since they make the problem of broken packages more visible for dependent packagers, and introduce an automatic cleanup of packages that fail to build and that nobody cares about.</p>
+
+
+
+<p>Another area that I sometimes find a bit lacking is documentation for some common tasks (like getting a package&#8217;s dependency tree, or querying things that need to be rebuilt in case of ABI changes, …). While there is documentation and policy covering these tasks, it might be good to give concrete examples for correctly determining the impact of a change. This might also help to reduce the number of broken updates (and surprise SONAME bumps) in fedora, making development of rawhide more stable and predictable.</p>
+<p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/fesco-election-interview-with-fabio-valentini-decathorpe-3/">FESCo election: interview with Fabio Valentini (decathorpe)</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
 
       </div>
       <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;council-election-interview-with-alberto-rodriguez-sanchez-bt0dotninja&#x2F;><h1>Council election: Interview with Alberto Rodríguez Sánchez (bt0dotninja)</h1></a>
@@ -683,18 +683,6 @@ to lead towards many technical changes being proposed.</p>
 <p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/council-election-interview-with-alberto-rodriguez-sanchez-bt0dotninja/">Council election: Interview with Alberto Rodríguez Sánchez (bt0dotninja)</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
 
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;mimiss&#x2F;11-20-2019&#x2F;dfrobot-turbidity-sensor-troubleshooting><h1>DFRobot Turbidity Sensor Troubleshooting (#21539)</h1></a>
-      <h5>2019-11-20T15:35:14.000Z</h5>
-      <i class="author">mimiss</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/642/medium/Image_from_iOS.jpg' alt=''> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;Bronwen&#x2F;11-20-2019&#x2F;home-made-disaster-kit-plan-ahead-with-this-game><h1>Home-Made Disaster Kit: Plan Ahead With This Game! (#21538)</h1></a>
-      <h5>2019-11-20T14:57:51.000Z</h5>
-      <i class="author">@noaliasbronwen</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/643/medium/IMG_20191120_112245.jpg' alt=''> <br />
-      </div>
       <a class="title" href=https:&#x2F;&#x2F;wikimediafoundation.org&#x2F;news&#x2F;2019&#x2F;11&#x2F;19&#x2F;setting-the-record-straight-wtsocial&#x2F;><h1>Setting the record straight—WT:Social is not affiliated with Wikipedia or the Wikimedia Foundation</h1></a>
       <h5>2019-11-19T19:24:24.000Z</h5>
       <i class="author">Wikimedia Foundation</i>
@@ -712,30 +700,6 @@ to lead towards many technical changes being proposed.</p>
       <i class="author">Unknown</i>
       <div class="content">
         <div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-J_OUX3tl5qE/XdQ5B5NoBwI/AAAAAAAHdAc/zb2Tsp9sNeE1VJBDMZ84fQpqs6_0PAloQCLcBGAsYHQ/s1600/images%2B%25281%2529.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="142" data-original-width="354" height="160" src="https://1.bp.blogspot.com/-J_OUX3tl5qE/XdQ5B5NoBwI/AAAAAAAHdAc/zb2Tsp9sNeE1VJBDMZ84fQpqs6_0PAloQCLcBGAsYHQ/s400/images%2B%25281%2529.jpg" width="400" /></a></div><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both; text-align: left;">We're starting a new Open Project codenamed <b>Sea Forecasting</b> that will pursue several objectives:</div><div class="separator" style="clear: both; text-align: left;"><br /></div><div class="separator" style="clear: both; text-align: left;">- Capture weather data from oceans and seas.</div><div class="separator" style="clear: both; text-align: left;">- Creating a local Hadoop instance on a Liquid Galaxy server to acquire the data from open APIS, legacy databases, rovs, etc</div><div class="separator" style="clear: both; text-align: left;">- Developing a IA to have weather predictions based on this data</div><div class="separator" style="clear: both; text-align: left;">- Creating a full visualization on the Liquid Galaxy, including sea temperatures, paths of machinery that capture this data, like ROVs, Buoys, scientific vessels and other sensor networks.</div><div class="separator" style="clear: both; text-align: left;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-6oq8UQj_5JY/XdQ62IQGO7I/AAAAAAAHdAw/_v1-ufLLtRczk4lSpdJShsKlp8e_rrCKACLcBGAsYHQ/s1600/images.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="123" data-original-width="410" height="192" src="https://1.bp.blogspot.com/-6oq8UQj_5JY/XdQ62IQGO7I/AAAAAAAHdAw/_v1-ufLLtRczk4lSpdJShsKlp8e_rrCKACLcBGAsYHQ/s640/images.jpg" width="640" /></a></div><div class="separator" style="clear: both; text-align: left;"><br /></div><div class="separator" style="clear: both; text-align: left;">Various students are starting to work on the project and also we'll have tasks for students in Google Code-in and all the global network of Liquid Galaxy laboratories.</div><br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-v7ozRnWT2qE/XdQ69761WcI/AAAAAAAHdA4/5_RHuu9UfvEHj_hdKd7Ju78tGoVNGbouwCLcBGAsYHQ/s1600/seawatch-headere3a882f1f3db67859f9dff250019aa6e.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="782" data-original-width="1600" height="156" src="https://1.bp.blogspot.com/-v7ozRnWT2qE/XdQ69761WcI/AAAAAAAHdA4/5_RHuu9UfvEHj_hdKd7Ju78tGoVNGbouwCLcBGAsYHQ/s320/seawatch-headere3a882f1f3db67859f9dff250019aa6e.jpg" width="320" /></a></div><br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;charlotte_clarke&#x2F;11-19-2019&#x2F;oil-and-gas-monitoring-methods-fellow-update-week-9><h1>Oil and Gas Monitoring Methods Fellow Update: Week 9 (#21532)</h1></a>
-      <h5>2019-11-19T16:14:51.000Z</h5>
-      <i class="author">charlotte_clarke</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;rollinrenola&#x2F;11-19-2019&#x2F;week-7-fellowship-update><h1>Week 7 Fellowship Update (#21531)</h1></a>
-      <h5>2019-11-19T15:11:02.000Z</h5>
-      <i class="author">rollinrenola</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;Bronwen&#x2F;11-20-2019&#x2F;responding-to-environmental-disasters-building-a-kit><h1>Responding to Environmental Disasters-- Building a Kit (#21526)</h1></a>
-      <h5>2019-11-18T18:00:28.000Z</h5>
-      <i class="author">@noaliasbronwen</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/598/medium/IMG_20191025_084652.jpg' alt=''> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;Bronwen&#x2F;11-18-2019&#x2F;fall-workshops-in-nyc-oil-gas><h1>Fall Workshops in NYC- Oil &amp; Gas (#21523)</h1></a>
-      <h5>2019-11-18T15:28:13.000Z</h5>
-      <i class="author">@noaliasbronwen</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/597/medium/IMG_20190928_140715.jpg' alt=''> <br />
       </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;making-email-ids-case-insensitive&#x2F;><h1>Making Email IDs Case Insensitive</h1></a>
       <h5>2019-11-18T14:55:28.000Z</h5>
@@ -831,18 +795,6 @@ to lead towards many technical changes being proposed.</p>
 
 <p><br></p>
 
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;warren&#x2F;11-18-2019&#x2F;of-the-earth-harvest-boxes><h1>Of the Earth Harvest Boxes (#21520)</h1></a>
-      <h5>2019-11-18T04:50:59.000Z</h5>
-      <i class="author">@jywarren</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/589/medium/image.png' alt=''> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;warren&#x2F;11-18-2019&#x2F;rhode-island-community-garden-network><h1>Rhode Island Community Garden Network (#21519)</h1></a>
-      <h5>2019-11-18T04:49:18.000Z</h5>
-      <i class="author">@jywarren</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/590/medium/image.png' alt=''> <br />
       </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;adding-an-option-to-hide-map-in-browse-events&#x2F;><h1>Adding an option to hide map in browse events.</h1></a>
       <h5>2019-11-17T10:13:29.000Z</h5>
@@ -1022,54 +974,6 @@ to lead towards many technical changes being proposed.</p>
       <div class="content">
         <div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-NxeXsVZ5Jws/Xc_rAZfFxFI/AAAAAAAHcuA/IZOGsNiMcM4r1FptGHpnCJyzsGapFkz6gCLcBGAsYHQ/s1600/WhatsApp%2BImage%2B2019-11-13%2Bat%2B19.00.37.jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1200" data-original-width="1600" height="240" src="https://1.bp.blogspot.com/-NxeXsVZ5Jws/Xc_rAZfFxFI/AAAAAAAHcuA/IZOGsNiMcM4r1FptGHpnCJyzsGapFkz6gCLcBGAsYHQ/s320/WhatsApp%2BImage%2B2019-11-13%2Bat%2B19.00.37.jpeg" width="320" /></a></div><br />Llega a Sorocaba el gran evento tecnológico SERFA (congreso de sensoramiento remoto sobre las aplicaciones de defensa) en su novena edición, se está desarrollando desde el día 11 hasta el 14 de noviembre, en el parque tecnológico de Sorocaba.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-GlB1zsJGfRs/Xc_q_Hvq19I/AAAAAAAHctw/Wnj-z4RDPOc8IX3yEZhsggB7tlDwbPxZQCLcBGAsYHQ/s1600/WhatsApp%2BImage%2B2019-11-13%2Bat%2B15.15.10.jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="585" data-original-width="1040" height="180" src="https://1.bp.blogspot.com/-GlB1zsJGfRs/Xc_q_Hvq19I/AAAAAAAHctw/Wnj-z4RDPOc8IX3yEZhsggB7tlDwbPxZQCLcBGAsYHQ/s320/WhatsApp%2BImage%2B2019-11-13%2Bat%2B15.15.10.jpeg" width="320" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-YcIlz_RrLXE/Xc_q_EBz6UI/AAAAAAAHct4/J8yjIBWBUlESkt8vTAVJKuyMSl6uG2hXACLcBGAsYHQ/s1600/WhatsApp%2BImage%2B2019-11-13%2Bat%2B18.58.46.jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1200" data-original-width="1600" height="240" src="https://1.bp.blogspot.com/-YcIlz_RrLXE/Xc_q_EBz6UI/AAAAAAAHct4/J8yjIBWBUlESkt8vTAVJKuyMSl6uG2hXACLcBGAsYHQ/s320/WhatsApp%2BImage%2B2019-11-13%2Bat%2B18.58.46.jpeg" width="320" /></a></div><br /><br />El principal motivo por el cual se realiza este congreso, es el gran crecimiento del mercado aeroespacial brasileño y las nuevas tecnologías que lo envuelven, centrándose principalmente en el sensoramiento a través de satélites y cómo trabajar con los datos obtenidos.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-InPnviLRMoQ/Xc_q_AGGaNI/AAAAAAAHct0/fcOkNdfGxHUXUMl7qgzUWEec6XW-eWkYACLcBGAsYHQ/s1600/WhatsApp%2BImage%2B2019-11-13%2Bat%2B18.58.57.jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="1200" height="320" src="https://1.bp.blogspot.com/-InPnviLRMoQ/Xc_q_AGGaNI/AAAAAAAHct0/fcOkNdfGxHUXUMl7qgzUWEec6XW-eWkYACLcBGAsYHQ/s320/WhatsApp%2BImage%2B2019-11-13%2Bat%2B18.58.57.jpeg" width="240" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-8kuAmqTT-lM/Xc_q_yzlBhI/AAAAAAAHct8/19aXTzXGCO8mFxADmdHd8zFhplumjZciwCLcBGAsYHQ/s1600/WhatsApp%2BImage%2B2019-11-13%2Bat%2B18.59.27.jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="585" data-original-width="1040" height="180" src="https://1.bp.blogspot.com/-8kuAmqTT-lM/Xc_q_yzlBhI/AAAAAAAHct8/19aXTzXGCO8mFxADmdHd8zFhplumjZciwCLcBGAsYHQ/s320/WhatsApp%2BImage%2B2019-11-13%2Bat%2B18.59.27.jpeg" width="320" /></a></div><br />Donde el Liquid Galaxy se presentó como una herramienta para mostrar datos satelitales sobre el mundo de manera inmersiva y facilitando la exploración de esos datos de una forma gráfica.
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;jevs&#x2F;11-16-2019&#x2F;which-no-ir-12mm-lens-should-i-get-for-640x480-webcam><h1>Which No IR 12mm lens should I get for 640x480 webcam? (#21503)</h1></a>
-      <h5>2019-11-16T05:03:13.000Z</h5>
-      <i class="author">jevs</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;warren&#x2F;11-16-2019&#x2F;relic-site-accumulation-in-rhode-island><h1>Recovering RI&#39;s Lost Industrial Footprint (#21501)</h1></a>
-      <h5>2019-11-16T01:03:47.000Z</h5>
-      <i class="author">@jywarren</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/585/medium/relic_gif.gif' alt=''> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;warren&#x2F;11-16-2019&#x2F;mashapaug-pond><h1>Mashapaug Pond (#21500)</h1></a>
-      <h5>2019-11-16T00:53:23.000Z</h5>
-      <i class="author">@jywarren</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/551/medium/image.png' alt=''> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;warren&#x2F;11-16-2019&#x2F;deindustrialization-in-rhode-island><h1>Deindustrialization in Rhode Island: An Uneven Geography (#21499)</h1></a>
-      <h5>2019-11-16T00:49:40.000Z</h5>
-      <i class="author">@jywarren</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/576/medium/image.png' alt=''> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;enviromicro&#x2F;11-15-2019&#x2F;community-science-drinking-water-quality><h1>Community Science: Drinking Water Quality (#21497)</h1></a>
-      <h5>2019-11-15T19:05:21.000Z</h5>
-      <i class="author">enviromicro</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/534/medium/PeelPlate2.jpg' alt=''> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;zomb23&#x2F;11-15-2019&#x2F;feasibility-check-ndvi-analysis-of-moss><h1>Feasibility-check: NDVI analysis of moss (#21496)</h1></a>
-      <h5>2019-11-15T16:20:01.000Z</h5>
-      <i class="author">zomb23</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;liz&#x2F;11-15-2019&#x2F;do-you-have-experience-using-a-gas-chromatograph><h1>Do you have experience using a gas chromatograph? (#21495)</h1></a>
-      <h5>2019-11-15T15:54:04.000Z</h5>
-      <i class="author">@lizbarry</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;it13&#x2F;11-15-2019&#x2F;how-to-calculate-ndvi-index-in-python><h1>How to calculate NDVI index in python ? (#21494)</h1></a>
-      <h5>2019-11-15T12:01:36.000Z</h5>
-      <i class="author">it13</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
-      </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.fossasia.org&#x2F;making-an-about-section-for-badge-magic-android-app&#x2F;><h1>Making an About Section for Badge Magic Android App</h1></a>
       <h5>2019-11-15T11:46:11.000Z</h5>
       <i class="author">yashk2000</i>
@@ -1233,30 +1137,6 @@ to lead towards many technical changes being proposed.</p>
 
 <p>Tags: Android, Java, Phimpme, PSLabs Android, Repo size, git, history, repo cleaner, bfg, commit history</p>
 
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;geoderek&#x2F;11-13-2019&#x2F;suggestions-for-helium-tank-balloon-kit><h1>Suggestions for helium tank Balloon kit (#21478)</h1></a>
-      <h5>2019-11-13T17:03:10.000Z</h5>
-      <i class="author">geoderek</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;charlotte_clarke&#x2F;11-13-2019&#x2F;oil-gas-openhour-follow-up-community-environmental-protection-and-advocacy><h1>Oil &amp; Gas OpenHour Follow Up: Community Environmental Protection and Advocacy (#21477)</h1></a>
-      <h5>2019-11-13T16:35:26.000Z</h5>
-      <i class="author">charlotte_clarke</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;pataxte&#x2F;11-12-2019&#x2F;mapknitter-downloading-exporting><h1>mapknitter, downloading, exporting (#21467)</h1></a>
-      <h5>2019-11-12T16:14:14.000Z</h5>
-      <i class="author">pataxte</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;wmacfarl&#x2F;11-12-2019&#x2F;oil-and-gas-hardware-fellow-status-update-week-7><h1>Oil and Gas Hardware Fellow Status Update: Week 7 (#21466)</h1></a>
-      <h5>2019-11-12T15:44:01.000Z</h5>
-      <i class="author">wmacfarl</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/364/medium/IMG_20191110_204333_%283%29.jpg' alt=''> <br />
       </div>
       <a class="title" href=https:&#x2F;&#x2F;blog.metabrainz.org&#x2F;2019&#x2F;11&#x2F;12&#x2F;musicbrainz-server-update-2019-11-11&#x2F;><h1>MusicBrainz Server update, 2019-11-11</h1></a>
       <h5>2019-11-12T08:02:26.000Z</h5>

@@ -800,8 +800,8 @@
     "description": "JBoss Community is a community of open source projects. The community hosts a large number of projects that are written in various programming languages. The primary language is Java. But there are also projects that are written in Ruby, PHP, Node and other languages.\n\nProject categories range from better testing support over IDEs, application servers, application and performance monitoring to micro-services.",
     "dev_mailing_list": null,
     "github": "JBossOutreach",
-    "guide_to_working": "",
-    "guide_to_working_url": "",
+    "guide_to_working": "Please read the student handbook at https://github.com/JBossOutreach/gci-students-handbook",
+    "guide_to_working_url": "https://github.com/JBossOutreach/gci-students-handbook",
     "id": 5690985418326016,
     "image_url": "//lh3.googleusercontent.com/DC1PftqAGZZZ1Rgy2hqboBAFpJPTcgDvo93yhnolsF7Fz3iUV2AMHRGtDkHmS3lJnlq_aq41E9u7FR0PebGSz_4K",
     "irc_channel": "https://gitter.im/JBossOutreach/gci",
@@ -814,7 +814,8 @@
     "program_year": 2019,
     "programming_languages": [
       "java",
-      "docker"
+      "docker",
+      "javascript"
     ],
     "slug": "jboss-community",
     "stack_exchange": {
