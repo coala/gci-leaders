@@ -243,7 +243,7 @@
       "accesibility"
     ],
     "twitter_url": null,
-    "website_url": "https://ccextractor.org",
+    "website_url": "https://gci2019.ccextractor.org/",
     "wikidata_url": null,
     "wikipedia_urls": null,
     "winners": {}
@@ -1444,6 +1444,7 @@
     "wikidata_url": "//www.wikidata.org/wiki/Q21447895",
     "wikipedia_urls": {
       "ar": "https://ar.wikipedia.org/wiki/%D8%AA%D9%86%D8%B3%D8%B1%D9%81%D9%84%D9%88",
+      "bn": "https://bn.wikipedia.org/wiki/%E0%A6%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%B8%E0%A6%B0%E0%A6%AB%E0%A7%8D%E0%A6%B2%E0%A7%8B",
       "ca": "https://ca.wikipedia.org/wiki/TensorFlow",
       "commons": "https://commons.wikimedia.org/wiki/Category:TensorFlow",
       "de": "https://de.wikipedia.org/wiki/TensorFlow",
