@@ -207,7 +207,7 @@
     leaders: []
     mailing_list: "https://groups.google.com/forum/#!forum/ccextractor-dev"
     name: "CCExtractor Development"
-    precis: "Officially: Accesibility tools with a focus on subtitles. Unofficially: Everything is an excuse to learn new things! This year we're doing Rust, Flutter, FFmpeg internals and tensorflow."
+    precis: "Officially: Accessibility tools with a focus on subtitles. Unofficially: Everything is an excuse to learn new things! This year we're doing Rust, Flutter, FFmpeg internals and tensorflow."
     preferred_contact_method: null
     primary_open_source_license: "GNU General Public License version 2.0 (GPL-2.0)"
     program_year: 2019
