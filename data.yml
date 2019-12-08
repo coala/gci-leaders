@@ -6,7 +6,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/openwisp/general"
-    completed_task_instance_count: 741
+    completed_task_instance_count: 831
     contact_email: null
     description: "In the summer of 2008 the [Metropolitan City of Rome](http://www.cittametropolitanaroma.gov.it/) decided to start a **free of charge and public Wi-Fi network** to be spread over its 5352 SQ KM territory including Rome and 120 other cities for a total of about 4.5 million inhabitants. The main objective of the project, called **ProvinciaWiFi** (later renamed [WiFi Metropolitano](http://www.cittametropolitanaroma.gov.it/homepage/elenco-siti-tematici/wifimetropolitano/)), was to take a decisive step to reduce the existing **digital divide** by fostering and facilitating the use of ICT by citizens.\n\nFrom the outset it was decided to commit the project to a completely open philosophy. For this reason a clear choice towards open software and operating systems and the availability of every modification, update and improvement to the community was made. The same approach was adopted for the knowledge and the experience acquired within the project. In order to pursue this goals the Province of Rome called the university consortium *CASPUR* (later merged in the [CINECA](https://www.cineca.it/it/progetti/openwisp) consortium) to develop the technical solution. In this context, a research project conducted by the *CINECA* consortium found its perfect application. This project proposed an innovative methodology for the distribution of networks (more precisely Virtual LANs used for Wi-Fi connectivity) between geographically distant sites.\n\nThe software tools, including the OpenWISP 2 [network management system](http://openwisp.org) and different [NetJSON](http://netjson.org/) implementations are released to the public free of charge under open-source licenses, hoping this will allow a broader audience to benefit from our work."
     dev_mailing_list: null
@@ -19,83 +19,83 @@
     leaders: 
       - 
         display_name: "a09hopper"
-        github_updated: 1575704359638
+        github_updated: 1575790722310
         program_year: 2019
       - 
         display_name: "aaPle"
-        github_updated: 1575704359760
-        program_year: 2019
-      - 
-        display_name: "Abhisar Anand"
-        github_updated: 1575704359766
+        github_updated: 1575790722305
         program_year: 2019
       - 
         display_name: "calixo888"
-        github_updated: 1575704359777
+        github_updated: 1575790722269
         program_year: 2019
       - 
         display_name: "Dương"
-        github_updated: 1575704359487
+        github_updated: 1575790722167
         program_year: 2019
       - 
         display_name: "FiiD"
-        github_updated: 1575704359638
+        github_updated: 1575790722312
+        program_year: 2019
+      - 
+        display_name: "gagas"
+        github_updated: 1575790721877
         program_year: 2019
       - 
         display_name: "Ibnu Fachrizal"
-        github_updated: 1575704359810
+        github_updated: 1575790722291
         program_year: 2019
       - 
         display_name: "JoshDaBosh"
-        github_updated: 1575704359810
+        github_updated: 1575790722297
         program_year: 2019
       - 
         display_name: "Kamil Cholewa"
-        github_updated: 1575704359060
+        github_updated: 1575790721849
         program_year: 2019
       - 
         display_name: "KidzMyujikku"
-        github_updated: 1575704359760
+        github_updated: 1575790722294
         program_year: 2019
       - 
         display_name: "luke"
-        github_updated: 1575704359760
+        github_updated: 1575790722406
         program_year: 2019
       - 
         display_name: "marfgold1"
-        github_updated: 1575704359810
+        github_updated: 1575790722310
         program_year: 2019
       - 
         display_name: "Naman Khare"
-        github_updated: 1575704359766
+        github_updated: 1575790722377
         program_year: 2019
       - 
         display_name: "nikita_e_ru"
-        github_updated: 1575704359192
+        github_updated: 1575790721941
         program_year: 2019
       - 
         display_name: "Portatolova"
-        github_updated: 1575704359760
+        github_updated: 1575790722297
         program_year: 2019
       - 
         display_name: "Rakkapps"
-        github_updated: 1575704359177
+        github_updated: 1575790721977
         program_year: 2019
       - 
         display_name: "Rayhan Rafiud Darojat"
-        github_updated: 1575704359151
+        github_updated: 1575790721905
         program_year: 2019
       - 
         display_name: "sk"
-        github_updated: 1575704359834
+        github_updated: 1575790722313
         program_year: 2019
       - 
         display_name: "TP123"
-        github_updated: 1575704359810
+        github_updated: 1575790722292
         program_year: 2019
       - 
         display_name: "Weirdo914"
-        github_updated: 1575704359742
+        github_updated: 1575790722274
         program_year: 2019
     mailing_list: "https://groups.google.com/d/forum/openwisp/join"
     name: "OpenWISP"
@@ -130,7 +130,7 @@
       image: "images/chat.png"
       platform: "OTHER"
       url: "https://github.com/tensorflow/community"
-    completed_task_instance_count: 653
+    completed_task_instance_count: 681
     contact_email: "webpaige@google.com"
     description: "TensorFlow™ is an open source software library for high performance numerical computation. Its flexible architecture allows easy deployment of computation across a variety of platforms (CPUs, GPUs, TPUs), and from desktops to clusters of servers to mobile and edge devices. Originally developed by researchers and engineers from the Google Brain team within Google’s AI organization, it comes with strong support for machine learning and deep learning and the flexible numerical computation core is used across many other scientific domains."
     dev_mailing_list: null
@@ -142,12 +142,36 @@
     irc_channel: "https://github.com/tensorflow/community"
     leaders: 
       - 
+        display_name: "abhaykashyap03"
+        github_updated: 1575790761656
+        program_year: 2019
+      - 
+        display_name: "An Onimous Boy"
+        github_updated: 1575790773942
+        program_year: 2019
+      - 
         display_name: "boron"
-        github_updated: 1575704369403
+        github_updated: 1575790761654
         program_year: 2019
       - 
         display_name: "Ja-sniff/Javismb"
-        github_updated: 1575704381285
+        github_updated: 1575790772729
+        program_year: 2019
+      - 
+        display_name: "jedlimlx"
+        github_updated: 1575790761656
+        program_year: 2019
+      - 
+        display_name: "Rachin"
+        github_updated: 1575790761632
+        program_year: 2019
+      - 
+        display_name: "Ryan"
+        github_updated: 1575790761613
+        program_year: 2019
+      - 
+        display_name: "WZHANG"
+        github_updated: 1575790761858
         program_year: 2019
     mailing_list: "https://github.com/tensorflow/community"
     name: "TensorFlow"
@@ -209,7 +233,7 @@
       image: "images/chat.png"
       platform: "OTHER"
       url: "https://webchat.freenode.net/?channels=#fedora-summer-coding"
-    completed_task_instance_count: 310
+    completed_task_instance_count: 380
     contact_email: "summer-coding@lists.fedoraproject.org"
     description: "The Fedora Project is a community of people working together to build a free and open source software platform and to collaborate on and share user-focused solutions built on that platform. Or, in plain English, we make an operating system and we make it easy for you do useful stuff with it.\n \nA key component of this is our **Community**. This community, which you will join as an participant in Google Code In, is creating a platform that supports the work of a diverse audience. Your contributions can affect people you've never met in situations you've never dreamed of. The Fedora community includes software engineers, artists, system administrators, web designers, writers, speakers, and translators -- all of whom will be happy to help you get started.\n \nFull project description available here: https://docs.fedoraproject.org/en-US/project/\n \nWe believe that all contributors should expect and be part of a safe and friendly environment for constructive contribution. We can more effectively and successfully compare and challenge different ideas to find the best solutions for advancement, while building the size, diversity, and strength of our community."
     dev_mailing_list: null
@@ -222,71 +246,83 @@
     leaders: 
       - 
         display_name: "Coppertint"
-        github_updated: 1575704360498
+        github_updated: 1575790721210
         program_year: 2019
       - 
         display_name: "EmperorAj"
-        github_updated: 1575704360447
+        github_updated: 1575790721156
         program_year: 2019
       - 
         display_name: "hosein2006"
-        github_updated: 1575704360424
+        github_updated: 1575790721237
+        program_year: 2019
+      - 
+        display_name: "hydrophobefireman"
+        github_updated: 1575790721824
         program_year: 2019
       - 
         display_name: "jokelovehate"
-        github_updated: 1575704360483
+        github_updated: 1575790721367
         program_year: 2019
       - 
         display_name: "justan00b"
-        github_updated: 1575704360985
+        github_updated: 1575790721834
         program_year: 2019
       - 
         display_name: "m1m3"
-        github_updated: 1575704360796
+        github_updated: 1575790722005
         program_year: 2019
       - 
         display_name: "Michael"
-        github_updated: 1575704360872
+        github_updated: 1575790721849
         program_year: 2019
       - 
         display_name: "nasirhm"
-        github_updated: 1575704360876
+        github_updated: 1575790721849
         program_year: 2019
       - 
         display_name: "Norem80"
-        github_updated: 1575704360877
+        github_updated: 1575790721852
         program_year: 2019
       - 
         display_name: "Rajvardhan"
-        github_updated: 1575704360849
+        github_updated: 1575790721849
+        program_year: 2019
+      - 
+        display_name: "Rakkapps"
+        github_updated: 1575790721356
         program_year: 2019
       - 
         display_name: "Sash713"
-        github_updated: 1575704360517
+        github_updated: 1575790721252
         program_year: 2019
       - 
         display_name: "simon7l7"
-        github_updated: 1575704361075
+        github_updated: 1575790721849
         program_year: 2019
       - 
         display_name: "skr1p7"
-        github_updated: 1575704360823
+        github_updated: 1575790722072
+        program_year: 2019
+      - 
+        display_name: "strawberryshaker2005"
+        github_updated: 1575790721222
         program_year: 2019
       - 
         display_name: "synnek"
-        github_updated: 1575704360899
+        github_updated: 1575790721852
         program_year: 2019
       - 
         display_name: "u7693"
-        github_updated: 1575704361059
+        github_updated: 1575790721852
         program_year: 2019
       - 
         display_name: "Vyachko"
-        github_updated: 1575704360539
+        github_updated: 1575790721278
         program_year: 2019
       - 
         display_name: "wikwg9"
-        github_updated: 1575704360899
+        github_updated: 1575790721852
         program_year: 2019
     mailing_list: "https://lists.fedoraproject.org/admin/lists/summer-coding@lists.fedoraproject.org"
     name: "Fedora Project"
@@ -340,7 +376,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/OSGeo-GCI/community"
-    completed_task_instance_count: 276
+    completed_task_instance_count: 340
     contact_email: "gci-osgeo@googlegroups.com"
     description: "OSGeo is a non-profit organization serving as an umbrella organization for the Open Source Geospatial community in general and several code projects in particular:\n\n## Content Management Systems\n\nGeoNode\n\n## Desktop Applications\n\nGRASS GIS\ngvSIG\nMarble\nQGIS\n\n## Geospatial Libraries\n\nFDO\nGDAL/OGR\nGEOS\nGeoTools\nOrfeo ToolBox (OTB)\nOSSIM\nPostGIS\n\n## Metadata Catalogs\n\nGeoNetwork\npycsw\n\n## Web Mapping\n\ndeegree\ngeomajas\nGeoMOOSE\nGeoServer\nMapbender\nMapFish\nMapGuide Open Source\nMapServer\nOpenLayers\nPyWPS\n\n## Incubating Projects\n\nistSOS\nMetaCRS\nOpticks\nOskari\nTeam Engine\nZOO-Project\n\n## Outreach Projects\n\nGeoForAll - Education and Curriculum\nOSGeo-Live\n\n## OSGeo Community Projects\n\nGeoinformatica\nGeoWebCache\nMapProxy\npgRouting\nPortable GIS\nPostal Address Geo-Coder\nProj4php\nPronto Raster\nVirtual Terrain Project\n\nWe host regional and international FOSS4G conferences with typical attendance of 500-1200+ geospatial developers, industry and government leaders, and researchers. Our mailing lists collectively go out to ~ 31.050 unique subscribers."
     dev_mailing_list: null
@@ -354,23 +390,27 @@
     leaders: 
       - 
         display_name: "anishagnihotri"
-        github_updated: 1575704356658
+        github_updated: 1575790717944
         program_year: 2019
       - 
         display_name: "miong"
-        github_updated: 1575704356939
+        github_updated: 1575790718199
         program_year: 2019
       - 
         display_name: "Navya Garg"
-        github_updated: 1575704356944
+        github_updated: 1575790718214
+        program_year: 2019
+      - 
+        display_name: "Pranay"
+        github_updated: 1575790718189
         program_year: 2019
       - 
         display_name: "SwapnadeepPro"
-        github_updated: 1575704356807
+        github_updated: 1575790718064
         program_year: 2019
       - 
         display_name: "TanvirSingh"
-        github_updated: 1575704356982
+        github_updated: 1575790718200
         program_year: 2019
     mailing_list: "https://www.osgeo.org/community/communications/"
     name: "OSGeo"
@@ -422,7 +462,7 @@
       image: "images/chat.png"
       platform: "OTHER"
       url: "https://ccextractor.org/public:general:support"
-    completed_task_instance_count: 217
+    completed_task_instance_count: 256
     contact_email: null
     description: "The organization that brought to you CCExtractor which in turn brings the subtitles that make it possible for language students and hard of hearing people to enjoy media. \n\nBut we use that as an excuse to have fun and learn a lot new things: This year it's going to be Rust (a \"new\" language from Mozilla which is becoming really important for high speed tools), Tensorflow (a fundamental tool in artificial intelligence), Flutter (a fantastic framework for mobile application development), and FFmpeg (the best all around video tool, and we want to learn it inside out).\n\nOf course we also welcome technical documentation writers, graphic designers, community managers (but not in the \"spammy\" sense) and more."
     dev_mailing_list: null
@@ -435,8 +475,16 @@
     irc_channel: "https://ccextractor.org/public:general:support"
     leaders: 
       - 
+        display_name: "Krzysztof"
+        github_updated: 1575790719198
+        program_year: 2019
+      - 
+        display_name: "Sam P"
+        github_updated: 1575790718953
+        program_year: 2019
+      - 
         display_name: "Techno-Disaster"
-        github_updated: 1575704357669
+        github_updated: 1575790719197
         program_year: 2019
     mailing_list: "https://groups.google.com/forum/#!forum/ccextractor-dev"
     name: "CCExtractor Development"
@@ -469,7 +517,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/fossasia/fossasia"
-    completed_task_instance_count: 203
+    completed_task_instance_count: 232
     contact_email: "fossasia@googlegroups.com"
     description: "FOSSASIA is an organization developing open source software applications and open hardware together with a global developer community from its base in Asia. It is our goal to improve people’s lives and create a sustainable future with open technologies. With our open source approach we enable people to collaboratively create, share, adapt and change technology according to their own ideas and needs. We provide the events, training, education programs and contests for young developers, share open source best practices, incubate projects and do the marketing, and promotion necessary to build, scale, and sustain open tech projects and our community."
     dev_mailing_list: null
@@ -481,24 +529,32 @@
     irc_channel: "https://gitter.im/fossasia/fossasia"
     leaders: 
       - 
+        display_name: "Chamod Nilushanka Perera"
+        github_updated: 1575790725744
+        program_year: 2019
+      - 
         display_name: "Hasala"
-        github_updated: 1575704364304
+        github_updated: 1575790726071
         program_year: 2019
       - 
         display_name: "Kumuditha_S.A.C.K"
-        github_updated: 1575704364038
+        github_updated: 1575790725701
         program_year: 2019
       - 
         display_name: "makoteq"
-        github_updated: 1575704364320
+        github_updated: 1575790726150
         program_year: 2019
       - 
         display_name: "Nishith"
-        github_updated: 1575704364313
+        github_updated: 1575790726077
+        program_year: 2019
+      - 
+        display_name: "Sid911"
+        github_updated: 1575790726079
         program_year: 2019
       - 
         display_name: "Supun_TE"
-        github_updated: 1575704363983
+        github_updated: 1575790725779
         program_year: 2019
     mailing_list: "http://groups.google.com/group/fossasia"
     name: "FOSSASIA"
@@ -540,7 +596,7 @@
       image: "images/chat.png"
       platform: "OTHER"
       url: "https://wiki.openmrs.org/display/IRC/Home"
-    completed_task_instance_count: 176
+    completed_task_instance_count: 204
     contact_email: "community@openmrs.org"
     description: "OpenMRS is a collaborative open-source project to develop software to support the delivery of health care in developing countries. We are a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. Our mission is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software.\n\nThe OpenMRS software platform and a reference application enable the design of a customized medical records system with no programming knowledge. It is a common platform upon which medical informatics efforts in developing countries can be built.\nWorking on Google Code-in tasks for OpenMRS is a great way to join the free and open-source software movement, and at the same time use your talents to help people in developing countries and around the world on the front lines of the battle against HIV/AIDS, TB, Malaria, and other public health challenges. For more detailed about OpenMRS and GCI, visit http://openmrs.org/ and watch this short video created by a previous OpenMRS GCI participant."
     dev_mailing_list: null
@@ -552,32 +608,48 @@
     irc_channel: "http://irc.openmrs.org"
     leaders: 
       - 
+        display_name: "darshvatsa"
+        github_updated: 1575790724005
+        program_year: 2019
+      - 
         display_name: "Devanshk09"
-        github_updated: 1575704362079
+        github_updated: 1575790723522
+        program_year: 2019
+      - 
+        display_name: "kanha"
+        github_updated: 1575790723818
         program_year: 2019
       - 
         display_name: "mihiraggarwal"
-        github_updated: 1575704362224
+        github_updated: 1575790723734
         program_year: 2019
       - 
         display_name: "Raydex"
-        github_updated: 1575704362268
+        github_updated: 1575790723929
         program_year: 2019
       - 
         display_name: "Ribhav Sharma"
-        github_updated: 1575704362358
+        github_updated: 1575790723719
         program_year: 2019
       - 
         display_name: "riskycase"
-        github_updated: 1575704362264
+        github_updated: 1575790723776
+        program_year: 2019
+      - 
+        display_name: "Roku234"
+        github_updated: 1575790723752
         program_year: 2019
       - 
         display_name: "Saad Khaleeq"
-        github_updated: 1575704362224
+        github_updated: 1575790723822
+        program_year: 2019
+      - 
+        display_name: "ShobhitRathi_"
+        github_updated: 1575790723787
         program_year: 2019
       - 
         display_name: "tixpro"
-        github_updated: 1575704361966
+        github_updated: 1575790723487
         program_year: 2019
     mailing_list: "http://omrsgci2019@googlegroups.com"
     name: "OpenMRS"
@@ -608,12 +680,85 @@
     winners: {}
   - 
     accepted_org_tos: true
+    blog_url: "https://www.liquidgalaxy.eu/"
+    chat: 
+      image: "images/logos/slack.png"
+      platform: "SLACK"
+      url: "http://lgcodein.slack.com"
+    completed_task_instance_count: 193
+    contact_email: "lgcodein@gmail.com"
+    description: "Liquid Galaxy hardware consists of 3 or more computers driving multiple displays, usually one computer for each display. Liquid Galaxy applications have been developed using a master/slave architecture. The view orientation of each slave display is configured in reference to the view of the master display. Navigation on the system is done from the master instance and the location on the master is broadcast to the slaves over UDP. The slave instances, knowing their own locations in reference to the master, then change their views accordingly.\n\nThe Liquid Galaxy Project, while making use of Google Earth software, does not develop the Google Earth code-base itself. Google Earth is not open source software, although it is free (as in beer). Instead, the Liquid Galaxy Project works on extending the Liquid Galaxy system with open source software both improving its administration and enabling open source applications, so that content of various types can be displayed in the immersive panoramic environment.\n\nPlease students: email us at lgcodein@gmail.com if you want to join our new Slack channel."
+    dev_mailing_list: null
+    github: "LiquidGalaxyLAB"
+    guide_to_working: "Publish the requested deliverables at the Google Code-in dashboard, and send always a copy to lgcodein@gmail.com for mentor review and approval.\t\t\t\t\nNOTE: to avoid cheatting issues we ask students to not upload his code to be reviewed on github."
+    guide_to_working_url: "https://www.liquidgalaxy.eu/"
+    id: 5709111577018368
+    image_url: "//lh3.googleusercontent.com/Xd9M83FxjFLxysY75cZFlhn3SyenvzBZM56PK0M8L58r6zQwY-s2_2c8JhwRHux9apDnYljJx4erxlzlyVSaE6U"
+    irc_channel: "http://lgcodein.slack.com"
+    leaders: 
+      - 
+        display_name: "Imflevi"
+        github_updated: 1575790718767
+        program_year: 2019
+      - 
+        display_name: "ItsSzczepan"
+        github_updated: 1575790718667
+        program_year: 2019
+      - 
+        display_name: "kahy"
+        github_updated: 1575790719035
+        program_year: 2019
+      - 
+        display_name: "Merul Dhiman"
+        github_updated: 1575790718693
+        program_year: 2019
+      - 
+        display_name: "Raghav"
+        github_updated: 1575790719013
+        program_year: 2019
+      - 
+        display_name: "sintemal"
+        github_updated: 1575790719012
+        program_year: 2019
+      - 
+        display_name: "Syahir"
+        github_updated: 1575790719190
+        program_year: 2019
+    mailing_list: null
+    name: "Liquid Galaxy project"
+    precis: "Liquid Galaxy is a remarkable panoramic system that is tremendously compelling. It started off as a Google 20% project to run Google Earth across a cluster of PC's and it has grown from there!"
+    preferred_contact_method: null
+    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
+    program_year: 2019
+    programming_languages: 
+      - "python"
+      - "vue"
+      - "html5"
+      - "javascript"
+      - "java"
+    slug: "liquid-galaxy-project"
+    stack_exchange: null
+    status: 2
+    tags: 
+      - "maps"
+      - "machine learning"
+      - "graphics"
+      - "big data"
+      - "augmented reality"
+    twitter_url: "https://twitter.com/_liquidgalaxy"
+    website_url: "https://www.liquidgalaxy.eu/"
+    wikidata_url: "//www.wikidata.org/wiki/Q21463290"
+    wikipedia_urls: 
+      en: "https://en.wikipedia.org/wiki/Liquid_Galaxy"
+    winners: {}
+  - 
+    accepted_org_tos: true
     blog_url: null
     chat: 
       image: "images/chat.png"
       platform: "OTHER"
       url: "https://wiki.sugarlabs.org/go/Google_Code_In_2018#Getting_set_up_on_IRC"
-    completed_task_instance_count: 155
+    completed_task_instance_count: 161
     contact_email: "walter@sugarlabs.org"
     description: "Sugar Labs contributes to and helps maintain the award-winning Sugar Learning Platform, which promotes collaborative learning through Sugar Activities.\n\nSugar is an activity-focused, free/libre open-source software learning platform for children. Collaboration, reflection, and discovery are integrated directly into the user interface. Through Sugar's clarity of design, children and teachers have the opportunity to use computers on their own terms. Students can reshape, reinvent, and reapply both software and content into powerful learning activities. Sugar's focus on sharing, criticism, and exploration is grounded in the culture of free software (FLOSS)"
     dev_mailing_list: null
@@ -626,15 +771,15 @@
     leaders: 
       - 
         display_name: "AndreaGon"
-        github_updated: 1575704360020
+        github_updated: 1575790720807
         program_year: 2019
       - 
         display_name: "Bottersnike"
-        github_updated: 1575704360053
+        github_updated: 1575790720695
         program_year: 2019
       - 
         display_name: "sdziuda"
-        github_updated: 1575704360024
+        github_updated: 1575790720766
         program_year: 2019
     mailing_list: "http://lists.sugarlabs.org"
     name: "Sugar Labs"
@@ -669,7 +814,7 @@
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "https://www.mediawiki.org/wiki/MediaWiki_on_IRC"
-    completed_task_instance_count: 141
+    completed_task_instance_count: 161
     contact_email: null
     description: "Wikimedia believes that knowledge should be free for every human being. We prioritize efforts that empower disadvantaged and underrepresented communities, and that help overcome barriers to participation. We believe in mass collaboration, diversity and consensus building to achieve our goals.\nWikipedia has become the fifth most-visited site in the world, used by more than 400 million people every month in more than 280 languages. We have more content projects including [Wikimedia Commons](https://commons.wikimedia.org/), [Wikidata](https://www.wikidata.org/), or [Wikisource](https://wikisource.org/). We also maintain the [MediaWiki](https://www.mediawiki.org/) software engine and a wide collection of free and open source software projects around it. Those software projects use a variety of technologies and languages, such as PHP, JavaScript, node.js, CSS, Lua, Java, Objective-C, or C++, to mention a few.\nBut there is much more we can do: stabilize infrastructure, increase participation, improve quality, increase reach, encourage innovation.\nYou can help to these goals in many ways and become part of an international community!"
     dev_mailing_list: null
@@ -682,31 +827,35 @@
     leaders: 
       - 
         display_name: "arcaynia"
-        github_updated: 1575704359425
+        github_updated: 1575790721460
         program_year: 2019
       - 
         display_name: "BrandonXLF"
-        github_updated: 1575704359926
+        github_updated: 1575790722074
+        program_year: 2019
+      - 
+        display_name: "Crutishnyk"
+        github_updated: 1575790721497
         program_year: 2019
       - 
         display_name: "Juan"
-        github_updated: 1575704359545
+        github_updated: 1575790721484
         program_year: 2019
       - 
         display_name: "Netx"
-        github_updated: 1575704359929
+        github_updated: 1575790722007
         program_year: 2019
       - 
         display_name: "taavi"
-        github_updated: 1575704359926
+        github_updated: 1575790722071
         program_year: 2019
       - 
         display_name: "TechneSiyam"
-        github_updated: 1575704359483
+        github_updated: 1575790721563
         program_year: 2019
       - 
         display_name: "Zoran Dori"
-        github_updated: 1575704359405
+        github_updated: 1575790721478
         program_year: 2019
     mailing_list: "https://lists.wikimedia.org/mailman/listinfo/wikitech-l"
     name: "Wikimedia"
@@ -909,73 +1058,12 @@
     winners: {}
   - 
     accepted_org_tos: true
-    blog_url: "https://www.liquidgalaxy.eu/"
-    chat: 
-      image: "images/logos/slack.png"
-      platform: "SLACK"
-      url: "http://lgcodein.slack.com"
-    completed_task_instance_count: 136
-    contact_email: "lgcodein@gmail.com"
-    description: "Liquid Galaxy hardware consists of 3 or more computers driving multiple displays, usually one computer for each display. Liquid Galaxy applications have been developed using a master/slave architecture. The view orientation of each slave display is configured in reference to the view of the master display. Navigation on the system is done from the master instance and the location on the master is broadcast to the slaves over UDP. The slave instances, knowing their own locations in reference to the master, then change their views accordingly.\n\nThe Liquid Galaxy Project, while making use of Google Earth software, does not develop the Google Earth code-base itself. Google Earth is not open source software, although it is free (as in beer). Instead, the Liquid Galaxy Project works on extending the Liquid Galaxy system with open source software both improving its administration and enabling open source applications, so that content of various types can be displayed in the immersive panoramic environment.\n\nPlease students: email us at lgcodein@gmail.com if you want to join our new Slack channel."
-    dev_mailing_list: null
-    github: "LiquidGalaxyLAB"
-    guide_to_working: "Publish the requested deliverables at the Google Code-in dashboard, and send always a copy to lgcodein@gmail.com for mentor review and approval.\t\t\t\t\nNOTE: to avoid cheatting issues we ask students to not upload his code to be reviewed on github."
-    guide_to_working_url: "https://www.liquidgalaxy.eu/"
-    id: 5709111577018368
-    image_url: "//lh3.googleusercontent.com/Xd9M83FxjFLxysY75cZFlhn3SyenvzBZM56PK0M8L58r6zQwY-s2_2c8JhwRHux9apDnYljJx4erxlzlyVSaE6U"
-    irc_channel: "http://lgcodein.slack.com"
-    leaders: 
-      - 
-        display_name: "kahy"
-        github_updated: 1575704357803
-        program_year: 2019
-      - 
-        display_name: "Raghav"
-        github_updated: 1575704357740
-        program_year: 2019
-      - 
-        display_name: "sintemal"
-        github_updated: 1575704357812
-        program_year: 2019
-      - 
-        display_name: "Syahir"
-        github_updated: 1575704357810
-        program_year: 2019
-    mailing_list: null
-    name: "Liquid Galaxy project"
-    precis: "Liquid Galaxy is a remarkable panoramic system that is tremendously compelling. It started off as a Google 20% project to run Google Earth across a cluster of PC's and it has grown from there!"
-    preferred_contact_method: null
-    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
-    program_year: 2019
-    programming_languages: 
-      - "python"
-      - "vue"
-      - "html5"
-      - "javascript"
-      - "java"
-    slug: "liquid-galaxy-project"
-    stack_exchange: null
-    status: 2
-    tags: 
-      - "maps"
-      - "machine learning"
-      - "graphics"
-      - "big data"
-      - "augmented reality"
-    twitter_url: "https://twitter.com/_liquidgalaxy"
-    website_url: "https://www.liquidgalaxy.eu/"
-    wikidata_url: "//www.wikidata.org/wiki/Q21463290"
-    wikipedia_urls: 
-      en: "https://en.wikipedia.org/wiki/Liquid_Galaxy"
-    winners: {}
-  - 
-    accepted_org_tos: true
     blog_url: "http://fb.me/brlcad"
     chat: 
       image: "images/logos/zulip.png"
       platform: "ZULIP"
       url: "https://brlcad.zulipchat.com"
-    completed_task_instance_count: 122
+    completed_task_instance_count: 134
     contact_email: "devs@brlcad.org"
     description: "This is the place to be if you love or want to learn more about computer graphics, 3D printing, 2D and 3D geometry, solid modeling, CAx (CAD/CAM/CAE/etc), visualization, and high-performance computing!\n\nWe have LOTS of tasks that will range in difficulty from super easy to challenging, but we will help you no matter your experience!"
     dev_mailing_list: null
@@ -988,11 +1076,11 @@
     leaders: 
       - 
         display_name: "Chiranjiv S Malhi"
-        github_updated: 1575704356912
+        github_updated: 1575790718529
         program_year: 2019
       - 
         display_name: "Jebbly"
-        github_updated: 1575704357247
+        github_updated: 1575790718805
         program_year: 2019
     mailing_list: "http://brlcad.org/wiki/Mailing_Lists"
     name: "BRL-CAD"
@@ -1033,7 +1121,7 @@
       image: "images/logos/slack.png"
       platform: "SLACK"
       url: "https://slackinvite.julialang.org/"
-    completed_task_instance_count: 111
+    completed_task_instance_count: 131
     contact_email: ""
     description: "Julia is a programming language for ease of use and performance, which is rapidly gaining momentum in all kinds of technical and scientific computing. Our community of users have built state of the art packages in many areas of mathematics, machine learning, and the physical sciences . A Code In project in Julia is an opportunity to work at the intersection of programming and mathematics. \n\nWork on the core language is welcome, but we are also acting as an umbrella organisation for several packages in the Julia ecosystem. Notable packages include Flux (deep learning), DifferentialEquations, JuliaBerry (physical computing), and PiCraft (Minecraft) . We have a range of tasks available, from simple to complex. Our tasks include introductory material involving learning Julia and its ecosystem, some graphic design opportunties, as well as many tasks involving significant Julia programming."
     dev_mailing_list: null
@@ -1047,23 +1135,23 @@
     leaders: 
       - 
         display_name: "abhishalya"
-        github_updated: 1575704357446
+        github_updated: 1575790718989
         program_year: 2019
       - 
         display_name: "FrancisJ"
-        github_updated: 1575704357484
+        github_updated: 1575790718973
         program_year: 2019
       - 
         display_name: "kfung"
-        github_updated: 1575704357511
+        github_updated: 1575790719022
         program_year: 2019
       - 
         display_name: "mikolajhojda"
-        github_updated: 1575704357492
+        github_updated: 1575790719032
         program_year: 2019
       - 
         display_name: "Nand_V"
-        github_updated: 1575704357603
+        github_updated: 1575790719006
         program_year: 2019
     mailing_list: "https://discourse.julialang.org/"
     name: "The Julia Programming Language"
@@ -1093,7 +1181,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/JBossOutreach/gci"
-    completed_task_instance_count: 90
+    completed_task_instance_count: 113
     contact_email: null
     description: "JBoss Community is a community of open source projects. The community hosts a large number of projects that are written in various programming languages. The primary language is Java. But there are also projects that are written in Ruby, PHP, Node and other languages.\n\nProject categories range from better testing support over IDEs, application servers, application and performance monitoring to micro-services."
     dev_mailing_list: null
@@ -1106,19 +1194,19 @@
     leaders: 
       - 
         display_name: "Anglov"
-        github_updated: 1575704357331
+        github_updated: 1575790718696
         program_year: 2019
       - 
         display_name: "crowded-geek"
-        github_updated: 1575704357526
+        github_updated: 1575790718719
         program_year: 2019
       - 
         display_name: "Skyterix"
-        github_updated: 1575704357035
+        github_updated: 1575790718410
         program_year: 2019
       - 
         display_name: "Teabagger"
-        github_updated: 1575704357397
+        github_updated: 1575790718725
         program_year: 2019
     mailing_list: null
     name: "JBoss Community"
@@ -1153,7 +1241,7 @@
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "https://musicbrainz.org/doc/Communication/IRC"
-    completed_task_instance_count: 78
+    completed_task_instance_count: 101
     contact_email: "support@metabrainz.org"
     description: "The MetaBrainz Foundation provides the backbone for [a number of projects](https://metabrainz.org/projects) rooted in crowd sourcing open data, namely:\n\n* [MusicBrainz](https://musicbrainz.org/): open music metadata database\n* [MusicBrainz Picard](https://picard.musicbrainz.org/): music file tagger, using data from MusicBrainz\n* [BookBrainz](https://bookbrainz.org/): open \"book\" database\n* [ListenBrainz](https://listenbrainz.org/): repository of listen data\n* [AcousticBrainz](https://acousticbrainz.org/): crowd sourced database of acoustic information for music\n* [CritiqueBrainz](https://critiquebrainz.org/): Creative Commons-licensed reviews\n* [Cover Art Archive](https://coverartarchive.org/): repository of album cover art"
     dev_mailing_list: null
@@ -1166,11 +1254,19 @@
     leaders: 
       - 
         display_name: "CODEin_JDB"
-        github_updated: 1575704360410
+        github_updated: 1575790721578
         program_year: 2019
       - 
         display_name: "peanutcat"
-        github_updated: 1575704360750
+        github_updated: 1575790722101
+        program_year: 2019
+      - 
+        display_name: "Rishikesh"
+        github_updated: 1575790722074
+        program_year: 2019
+      - 
+        display_name: "RyanWolf"
+        github_updated: 1575790722166
         program_year: 2019
     mailing_list: "https://community.metabrainz.org/"
     name: "MetaBrainz Foundation"
@@ -1209,7 +1305,7 @@
       image: "images/logos/zulip.png"
       platform: "ZULIP"
       url: "http://systers-opensource.zulipchat.com"
-    completed_task_instance_count: 76
+    completed_task_instance_count: 92
     contact_email: "systers-os-admins@googlegroups.com"
     description: "# **We welcome everyone! We have tasks that involves no coding experience.**\n\n# About\nSysters is an international AnitaB.org community encouraging the participation of all women involved in technology. We have over 8,500 members from more than 70 countries around the world. **We welcome the participation of women technologists of all ages at any stage of their studies or careers.** Systers Open Source is a sub-community of Systers that has over 1,500 members from more than 15 time zones.\n\n# Mobile App\nSysters Open Source has *many* projects, but we are focusing on **Mentorship System** ([Android](https://github.com/systers/mentorship-android) & [Backend](https://github.com/systers/mentorship-backend)) for Google Code-in this year. In the past, we received feedback from participants that working on multiple projects was confusing so each year we rotate through our active projects. Mentorship System is an application that matches women in tech to mentor each other, on career development, through 1:1 relations during a certain period of time.\n\n# Mentors\nAll Systers mentors are volunteers. We have mentors from different time zones which means our organization *does not* currently have 24-hour availability on [Zulip Chat](http://systers-opensource.zulipchat.com) or the GCI Website.\n* If a task takes longer than 24 hours for review, politely ping the **task's assigned mentors** in [#gci > task review needed](https://systers-opensource.zulipchat.com/#narrow/stream/212722-gci/topic/task.20review.20needed/near/179228625) topic. Follow the instructions to alert your mentors.\n* If a task takes longer than 36 hours for review, politely ping the **@admins** in [#gci > task review needed](https://systers-opensource.zulipchat.com/#narrow/stream/212722-gci/topic/task.20review.20needed/near/179228625) topic's response that you created before. Review the topics instructions."
     dev_mailing_list: null
@@ -1223,15 +1319,19 @@
     leaders: 
       - 
         display_name: "_daksha_"
-        github_updated: 1575704358992
+        github_updated: 1575790720526
+        program_year: 2019
+      - 
+        display_name: "asawesome07"
+        github_updated: 1575790720532
         program_year: 2019
       - 
         display_name: "BartekPacia"
-        github_updated: 1575704358976
+        github_updated: 1575790720677
         program_year: 2019
       - 
         display_name: "laxya"
-        github_updated: 1575704358576
+        github_updated: 1575790720183
         program_year: 2019
     mailing_list: null
     name: "Systers, an AnitaB.org community"
@@ -1266,7 +1366,7 @@
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "irc://chat.freenode.net/haiku"
-    completed_task_instance_count: 69
+    completed_task_instance_count: 77
     contact_email: "contact@haiku-os.org"
     description: "Haiku is named after the classical three-line Japanese poetry form. Haiku poetry is known for its quiet power, elegance and simplicity - among the core qualities of BeOS which we aim to recreate in Haiku. BeOS included some haiku in its user interface, in the form of network error messages displayed by its web browser.\n\nWhile Haiku is approaching its second Beta release, another goal for the project is to share knowledge about operating system development, with a clean code base and a community ready to help newcomers learn how things are done."
     dev_mailing_list: null
@@ -1279,7 +1379,11 @@
     leaders: 
       - 
         display_name: "Tunas"
-        github_updated: 1575704357440
+        github_updated: 1575790718753
+        program_year: 2019
+      - 
+        display_name: "Vrondir"
+        github_updated: 1575790718998
         program_year: 2019
     mailing_list: "https://www.haiku-os.org/community/ml"
     name: "Haiku"
@@ -1415,59 +1519,12 @@
     winners: {}
   - 
     accepted_org_tos: true
-    blog_url: null
-    chat: 
-      image: "images/chat.png"
-      platform: "OTHER"
-      url: "https://github.com/OpenRoberta/robertalab/wiki/Community"
-    completed_task_instance_count: 58
-    contact_email: "roberta-zentrale@iais.fraunhofer.de"
-    description: "Introduction\n==\n\nThe Roberta Initiative “Learning with Robots” was started more than 15 years ago by Fraunhofer IAIS in Germany with the objective to get kids interested in technology and science by constructing and programming robotic kits. The project provides a gender sensitive course concept and materials for teachers to run coding classes. The idea behind the Open Roberta Lab is to provide a simple and easy to use programming environment for everybody.\n\nThe Lab\n==\n\nThe Open Roberta® Lab is an open source programming environment, developed to introduce kids to program robots and microcontrollers. The software is a web application running in the browser. Users program robots using a Blockly-based graphical programming language called NEPO®. A simulation is available for those who don't have a real robot at hand. Since 2014 https://lab.open-roberta.org/ is online and has had more than 225 000 visits in 2018 across more than 100 countries.\n\nThe backend is written in Java. It provides user management and robot support in the shape of an evolving plugin system. Each robot subsystem handles code generation and communication with the robot. As of now the project comes with 10 different robot plugins:\n\n* EV3 LEGO Mindstorms\n* NXT LEGO Mindstorms\n* BBC micro:bit\n* Calliope mini\n* Bot’n Roll, Arduino-based\n* NAO\n* Bob3\n* Nepo4Arduino\n* mBot\n* SenseBox\n\nOutlook\n==\n\nWhile the software is stable and widely used, we're looking for new ideas, but also help on existing ideas to develop the project further."
-    dev_mailing_list: null
-    github: "OpenRoberta"
-    guide_to_working: ""
-    guide_to_working_url: "https://openroberta.github.io/openroberta-gci/"
-    id: 5170975272861696
-    image_url: "//lh3.googleusercontent.com/GA038CUY3BSr9jh7G9KuRuaNoxoiNEJ3HFvzTfTaMAK6_ElUsRhc4wa4Yqp-HlXGFOqvR6061LMWflCEt2uJLw"
-    irc_channel: "https://github.com/OpenRoberta/robertalab/wiki/Community"
-    leaders: 
-      - 
-        display_name: "nishanth1232"
-        github_updated: 1575704357677
-        program_year: 2019
-    mailing_list: null
-    name: "Open Roberta"
-    precis: "The Open Roberta® Lab is an online IDE introducing kids to the world of coding, by teaching them how to program robots with NEPO®"
-    preferred_contact_method: null
-    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
-    program_year: 2019
-    programming_languages: 
-      - "java"
-      - "javascript"
-      - "nepo"
-    slug: "open-roberta"
-    stack_exchange: null
-    status: 2
-    tags: 
-      - "education"
-      - "robotics"
-      - "visual programming"
-      - "web"
-    twitter_url: null
-    website_url: "https://lab.open-roberta.org"
-    wikidata_url: "//www.wikidata.org/wiki/Q18629564"
-    wikipedia_urls: 
-      de: "https://de.wikipedia.org/wiki/Open_Roberta"
-      en: "https://en.wikipedia.org/wiki/Open_Roberta"
-    winners: {}
-  - 
-    accepted_org_tos: true
     blog_url: "http://www.scorelab.org/blog/index.html"
     chat: 
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/scorelab/scorelab"
-    completed_task_instance_count: 57
+    completed_task_instance_count: 72
     contact_email: "info@scorelab.org"
     description: "The Sustainable Computing Research Lab (SCoRe) has conducted research covering various aspects of mobile, cloud, IoT, digital forensic, information security and more. The goal of our research is to generate computing solutions through identifying low-cost methodologies and strategies that lead to sustainability​."
     dev_mailing_list: null
@@ -1480,8 +1537,16 @@
     irc_channel: "https://gitter.im/scorelab/scorelab"
     leaders: 
       - 
+        display_name: "CJ"
+        github_updated: 1575790722835
+        program_year: 2019
+      - 
+        display_name: "hello.world.0905"
+        github_updated: 1575790722626
+        program_year: 2019
+      - 
         display_name: "kunalbhatia"
-        github_updated: 1575704361026
+        github_updated: 1575790722926
         program_year: 2019
     mailing_list: "https://groups.google.com/forum/#!forum/score-community"
     name: "SCoRe Lab"
@@ -1510,12 +1575,108 @@
     winners: {}
   - 
     accepted_org_tos: true
+    blog_url: null
+    chat: 
+      image: "images/chat.png"
+      platform: "OTHER"
+      url: "https://github.com/OpenRoberta/robertalab/wiki/Community"
+    completed_task_instance_count: 65
+    contact_email: "roberta-zentrale@iais.fraunhofer.de"
+    description: "Introduction\n==\n\nThe Roberta Initiative “Learning with Robots” was started more than 15 years ago by Fraunhofer IAIS in Germany with the objective to get kids interested in technology and science by constructing and programming robotic kits. The project provides a gender sensitive course concept and materials for teachers to run coding classes. The idea behind the Open Roberta Lab is to provide a simple and easy to use programming environment for everybody.\n\nThe Lab\n==\n\nThe Open Roberta® Lab is an open source programming environment, developed to introduce kids to program robots and microcontrollers. The software is a web application running in the browser. Users program robots using a Blockly-based graphical programming language called NEPO®. A simulation is available for those who don't have a real robot at hand. Since 2014 https://lab.open-roberta.org/ is online and has had more than 225 000 visits in 2018 across more than 100 countries.\n\nThe backend is written in Java. It provides user management and robot support in the shape of an evolving plugin system. Each robot subsystem handles code generation and communication with the robot. As of now the project comes with 10 different robot plugins:\n\n* EV3 LEGO Mindstorms\n* NXT LEGO Mindstorms\n* BBC micro:bit\n* Calliope mini\n* Bot’n Roll, Arduino-based\n* NAO\n* Bob3\n* Nepo4Arduino\n* mBot\n* SenseBox\n\nOutlook\n==\n\nWhile the software is stable and widely used, we're looking for new ideas, but also help on existing ideas to develop the project further."
+    dev_mailing_list: null
+    github: "OpenRoberta"
+    guide_to_working: ""
+    guide_to_working_url: "https://openroberta.github.io/openroberta-gci/"
+    id: 5170975272861696
+    image_url: "//lh3.googleusercontent.com/GA038CUY3BSr9jh7G9KuRuaNoxoiNEJ3HFvzTfTaMAK6_ElUsRhc4wa4Yqp-HlXGFOqvR6061LMWflCEt2uJLw"
+    irc_channel: "https://github.com/OpenRoberta/robertalab/wiki/Community"
+    leaders: 
+      - 
+        display_name: "nishanth1232"
+        github_updated: 1575790719057
+        program_year: 2019
+    mailing_list: null
+    name: "Open Roberta"
+    precis: "The Open Roberta® Lab is an online IDE introducing kids to the world of coding, by teaching them how to program robots with NEPO®"
+    preferred_contact_method: null
+    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
+    program_year: 2019
+    programming_languages: 
+      - "java"
+      - "javascript"
+      - "nepo"
+    slug: "open-roberta"
+    stack_exchange: null
+    status: 2
+    tags: 
+      - "education"
+      - "robotics"
+      - "visual programming"
+      - "web"
+    twitter_url: null
+    website_url: "https://lab.open-roberta.org"
+    wikidata_url: "//www.wikidata.org/wiki/Q18629564"
+    wikipedia_urls: 
+      de: "https://de.wikipedia.org/wiki/Open_Roberta"
+      en: "https://en.wikipedia.org/wiki/Open_Roberta"
+    winners: {}
+  - 
+    accepted_org_tos: true
+    blog_url: "https://forum.terasology.org/"
+    chat: 
+      image: "images/logos/irc.png"
+      platform: "IRC"
+      url: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
+    completed_task_instance_count: 49
+    contact_email: "terasology@gmail.com"
+    description: "The Terasology Foundation is the organization behind Terasology, DestinationSol, and a series of related work aimed at making game development in Java easier and more fun. We've been working for years on educational awareness, challenging architecture, powerful developer workspaces, fun content, and much more\n\nTerasology is a super extensible open source voxel-based game. Born from a Minecraft-inspired tech demo, it is gradually becoming a stable platform for all sorts of gameplay settings in a voxel world\n\nFrom the ground up, Terasology was built to be a super hackable and modular game. We host a large amount of game content modules under the Terasology organization on GitHub, all community maintained. We welcome new ideas, both crazy and well thought-out for modules and game extensions from anyone and everyone, so feel free to talk to us on IRC or Discord\n\nDestination Sol is a fun little space arcade shooter we adopted as open source to learn more about LibGDX, releasing on Steam and Android, and to have somewhere to apply our frameworks\n\nThe creators and maintainers are a diverse mix of software developers, designers, game testers, graphic artists, musicians and even a few open source loving high schoolers. We encourage and appreciate contributions from everybody, and try to be as warm and welcoming as possible to newcomers"
+    dev_mailing_list: null
+    github: "MovingBlocks"
+    gitlab: null
+    guide_to_working: ""
+    guide_to_working_url: "https://github.com/MovingBlocks/Terasology/wiki/GCI"
+    id: 5699684471930880
+    image_url: "//lh3.googleusercontent.com/VJr9S0Joed_A-zZAhyjQ_d55NhmjxLRagRQPztHdLwPDeaUddx-FY_PEYahqMwGey84N59dJgqwxdCUMXdPtkd8"
+    irc_channel: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
+    leaders: 
+      - 
+        display_name: "nailorcn"
+        github_updated: 1575790719514
+        program_year: 2019
+    mailing_list: null
+    name: "The Terasology Foundation"
+    precis: "An open source voxel world - imagine the possibilities! Makers of video games, Terasology, Destination Sol, and a small slew of libraries & frameworks for game development"
+    preferred_contact_method: null
+    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
+    program_year: 2019
+    programming_languages: 
+      - "java"
+      - "opengl"
+      - "gradle"
+      - "groovy"
+      - "vuejs"
+    slug: "the-terasology-foundation"
+    stack_exchange: null
+    status: 2
+    tags: 
+      - "games"
+      - "extensibility"
+      - "ai"
+      - "graphics"
+      - "codeuino"
+    twitter_url: "https://twitter.com/Terasology"
+    website_url: "https://terasology.org/"
+    wikidata_url: null
+    wikipedia_urls: null
+    winners: {}
+  - 
+    accepted_org_tos: true
     blog_url: "https://mifos.org/blog/"
     chat: 
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/openMF/mifos"
-    completed_task_instance_count: 41
+    completed_task_instance_count: 48
     contact_email: "info@mifos.org"
     description: "The Mifos Initiative is a US-based 501(c)3 non-profit whose mission is to speed the elimination of poverty by leading a global community that builds, supports, and uses Mifos, a free and open source platform enabling the delivery of digital financial services to the world’s 3 billion poor and underbanked. Our game-changing approach unites financial institutions, local technology partners, and volunteer developers to innovate with a set of open source core banking building blocks to build impactful digital financial services. \n\nMore than 12 million clients are being reached by 350 financial institutions & fintech innovators who use the Mifos software to power their operations across 40+ countries.\n\nWe’re at the forefront of transformative technology for financial services to the poor. You will work with a global community guided by creating a world of 3 Billion Maries. You’ll get to build cutting edge enterprise tech that is cloud-native & mobile, research the fast-paced fintech market, craft messages & design graphics for our donor base, design optimal user experience for apps serving the poor, all mentored by leading fintech developers & financial inclusion practitioners that will shape you professionally: \n* Mobile Wallets & Mobile Banking Apps via SMS, USSD, & Android\n* Android Mobile Apps to empower field officers to effectively serve the poor\n* New apps leveraging AI and machine learning \n* Angular based web apps for managing the back office of a financial institution"
     dev_mailing_list: null
@@ -1528,15 +1689,15 @@
     leaders: 
       - 
         display_name: "Oussema.exe"
-        github_updated: 1575704359236
+        github_updated: 1575790720472
         program_year: 2019
       - 
         display_name: "PiyushSharma99"
-        github_updated: 1575704359810
+        github_updated: 1575790720744
         program_year: 2019
       - 
         display_name: "rg"
-        github_updated: 1575704359810
+        github_updated: 1575790720723
         program_year: 2019
     mailing_list: "https://mifos.org/resources/community/communications/"
     name: "The Mifos Initiative"
@@ -1570,52 +1731,51 @@
     winners: {}
   - 
     accepted_org_tos: true
-    blog_url: "https://forum.terasology.org/"
+    blog_url: "https://publiclab.org/blog"
     chat: 
-      image: "images/logos/irc.png"
-      platform: "IRC"
-      url: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
-    completed_task_instance_count: 39
-    contact_email: "terasology@gmail.com"
-    description: "The Terasology Foundation is the organization behind Terasology, DestinationSol, and a series of related work aimed at making game development in Java easier and more fun. We've been working for years on educational awareness, challenging architecture, powerful developer workspaces, fun content, and much more\n\nTerasology is a super extensible open source voxel-based game. Born from a Minecraft-inspired tech demo, it is gradually becoming a stable platform for all sorts of gameplay settings in a voxel world\n\nFrom the ground up, Terasology was built to be a super hackable and modular game. We host a large amount of game content modules under the Terasology organization on GitHub, all community maintained. We welcome new ideas, both crazy and well thought-out for modules and game extensions from anyone and everyone, so feel free to talk to us on IRC or Discord\n\nDestination Sol is a fun little space arcade shooter we adopted as open source to learn more about LibGDX, releasing on Steam and Android, and to have somewhere to apply our frameworks\n\nThe creators and maintainers are a diverse mix of software developers, designers, game testers, graphic artists, musicians and even a few open source loving high schoolers. We encourage and appreciate contributions from everybody, and try to be as warm and welcoming as possible to newcomers"
+      image: "images/chat.png"
+      platform: "OTHER"
+      url: "https://publiclab.org/chat"
+    completed_task_instance_count: 43
+    contact_email: "jeff@publiclab.org"
+    description: "## Measuring pollution at low cost\n\nPublic Lab is focused on democratizing the tools and techniques of environmental science so that communities who face pollution and other environmental problems can actually use them.\n\nWe believe that low cost, open source, easy to use hardware and software can enable anyone to collect data with which to hold polluters accountable.\n\n## Sensor data and open hardware development\n\nPublic Lab software projects focus on two areas: community collaboration and open hardware development (PublicLab.org), and data processing for our sensors and tools (MapKnitter.org and SpectralWorkbench.org, among others).\n\nOur collaboration and development platform PublicLab.org enables thousands of people to publish updates and share designs for emerging environmental open hardware projects. Our browser-based data analysis tools make use of HTML5 features such as CSS 3d transforms for image distortion and the WebRTC webcam API for capturing spectral data, to make advanced features available to users in a powerful cross-platform, user-friendly, database-backed approach to open science tools."
     dev_mailing_list: null
-    github: "MovingBlocks"
-    gitlab: null
-    guide_to_working: ""
-    guide_to_working_url: "https://github.com/MovingBlocks/Terasology/wiki/GCI"
-    id: 5699684471930880
-    image_url: "//lh3.googleusercontent.com/VJr9S0Joed_A-zZAhyjQ_d55NhmjxLRagRQPztHdLwPDeaUddx-FY_PEYahqMwGey84N59dJgqwxdCUMXdPtkd8"
-    irc_channel: "https://github.com/MovingBlocks/Terasology/wiki/Using-IRC"
+    github: "publiclab"
+    guide_to_working: "Please start with our \"first-timers-only\" tasks which are described at https://code.publiclab.org (we have cross-labeled many gci-candidate tasks as first-timers-only as well)."
+    guide_to_working_url: ""
+    id: 5664911678504960
+    image_url: "//lh3.googleusercontent.com/NO_lpPy_CmtyA1gTNY9zgOAOp_I75OgvdRrTY_y_CTSWOOiQ4_qsFeIouAZoZoAMIscEhQ45bPeQRgPHbjGG4Q"
+    irc_channel: "https://publiclab.org/chat"
     leaders: 
       - 
-        display_name: "nailorcn"
-        github_updated: 1575704358415
+        display_name: "pythongiant"
+        github_updated: 1575790720808
         program_year: 2019
-    mailing_list: null
-    name: "The Terasology Foundation"
-    precis: "An open source voxel world - imagine the possibilities! Makers of video games, Terasology, Destination Sol, and a small slew of libraries & frameworks for game development"
+    mailing_list: "https://publiclab.org/lists"
+    name: "Public Lab"
+    precis: "Open hardware and software to help communities measure and analyze pollution"
     preferred_contact_method: null
-    primary_open_source_license: "Apache License 2.0 (Apache-2.0)"
+    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
     program_year: 2019
     programming_languages: 
-      - "java"
-      - "opengl"
-      - "gradle"
-      - "groovy"
-      - "vuejs"
-    slug: "the-terasology-foundation"
+      - "ruby on rails"
+      - "ruby"
+      - "javascript"
+      - "node.js"
+    slug: "public-lab"
     stack_exchange: null
     status: 2
     tags: 
-      - "games"
-      - "extensibility"
-      - "ai"
-      - "graphics"
-      - "codeuino"
-    twitter_url: "https://twitter.com/Terasology"
-    website_url: "https://terasology.org/"
-    wikidata_url: null
-    wikipedia_urls: null
+      - "science and medicine"
+      - "science"
+      - "environment"
+      - "collaboration"
+      - "community"
+    twitter_url: "https://twitter.com/publiclab"
+    website_url: "https://publiclab.org"
+    wikidata_url: "//www.wikidata.org/wiki/Q43895494"
+    wikipedia_urls: 
+      en: "https://en.wikipedia.org/wiki/Public_Lab"
     winners: {}
   - 
     accepted_org_tos: true
@@ -1624,7 +1784,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/rstats-gci/gci-student"
-    completed_task_instance_count: 33
+    completed_task_instance_count: 41
     contact_email: "gsoc-r@googlegroups.com"
     description: "R includes\n\n* efficient data handling, storage, and linear algebra,\n* a large collection of tools for data analysis and machine learning,\n* graphical facilities for display either on-screen or on hardcopy, and\n* a programming language which includes conditionals, loops, user-defined recursive functions and input and output facilities.\n\nThe term “environment” is intended to characterize R as a fully planned and coherent system, rather than an incremental accretion of very specific and inflexible tools, as is frequently the case with other data analysis software.\n\nR is designed around a true programming language, and it allows users to add new functions. Much of the R system is itself written in the R programming language, which makes it easy for users to follow the algorithmic choices made. For computationally-intensive tasks, C, C++ and Fortran code can be linked and called at run time. Advanced users can write C code to manipulate R objects directly.\n\nMany users think of R as a statistics system. We prefer to think of it of an environment within which statistical techniques are implemented. R can be easily extended via packages. There are about eight recommended packages which are supplied with the standard R distribution, and many thousands more are available through the Comprehensive R Archive Network (CRAN)."
     dev_mailing_list: null
@@ -1638,7 +1798,15 @@
     leaders: 
       - 
         display_name: "Adam Z"
-        github_updated: 1575704356938
+        github_updated: 1575790718201
+        program_year: 2019
+      - 
+        display_name: "aserapio"
+        github_updated: 1575790718061
+        program_year: 2019
+      - 
+        display_name: "programmingwizard"
+        github_updated: 1575790718207
         program_year: 2019
     mailing_list: "https://groups.google.com/forum/#!forum/gsoc-r"
     name: "R Project for Statistical Computing"
@@ -1671,7 +1839,7 @@
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/AOSSIE/Lobby"
-    completed_task_instance_count: 32
+    completed_task_instance_count: 37
     contact_email: null
     description: "We are an Australian not-for-profit umbrella organization for open-source projects. We believe the open-source philosophy provides a resource-efficient channel to transfer knowledge and achieve innovation and education.\n\nIn 2019, we offer the following projects:\n\n* **Agora**: An electronic voting library.\n* **Agora-Web**: An online portal for democratic elections.\n* **Aossie Scholar**:  Providing better and fairer metrics to all the scholars.\n* **Carbon Assistant**: Provides conversational access to the CarbonFootprint API.\n* **CarbonFootprint**: A browser extension to track the C02 emissions.\n* **CarbonFootprint API**: A universal API to find the C02 emissions.\n* **CarbonFootprint-Mobile**: A cross-platform app to monitor and track their C02 emissions.\n* **CrowdAlert**: Platform to report and view the incidents around the globe.\n* **Mind the Word**: A browser extension that helps users to learn new languages.\n* **Social Street Smart**: An extension that makes the Internet a more productive.\n* **Starcross**: Starcross Android App brings the facility of Night Sky Gazing.\n\nWe have a diverse group of mentors, including GSoC students from previous years who decided to become long-term contributors as well as academics with extensive experience in supervising."
     dev_mailing_list: null
@@ -1711,56 +1879,12 @@
     winners: {}
   - 
     accepted_org_tos: true
-    blog_url: "https://publiclab.org/blog"
-    chat: 
-      image: "images/chat.png"
-      platform: "OTHER"
-      url: "https://publiclab.org/chat"
-    completed_task_instance_count: 32
-    contact_email: "jeff@publiclab.org"
-    description: "## Measuring pollution at low cost\n\nPublic Lab is focused on democratizing the tools and techniques of environmental science so that communities who face pollution and other environmental problems can actually use them.\n\nWe believe that low cost, open source, easy to use hardware and software can enable anyone to collect data with which to hold polluters accountable.\n\n## Sensor data and open hardware development\n\nPublic Lab software projects focus on two areas: community collaboration and open hardware development (PublicLab.org), and data processing for our sensors and tools (MapKnitter.org and SpectralWorkbench.org, among others).\n\nOur collaboration and development platform PublicLab.org enables thousands of people to publish updates and share designs for emerging environmental open hardware projects. Our browser-based data analysis tools make use of HTML5 features such as CSS 3d transforms for image distortion and the WebRTC webcam API for capturing spectral data, to make advanced features available to users in a powerful cross-platform, user-friendly, database-backed approach to open science tools."
-    dev_mailing_list: null
-    github: "publiclab"
-    guide_to_working: "Please start with our \"first-timers-only\" tasks which are described at https://code.publiclab.org (we have cross-labeled many gci-candidate tasks as first-timers-only as well)."
-    guide_to_working_url: ""
-    id: 5664911678504960
-    image_url: "//lh3.googleusercontent.com/NO_lpPy_CmtyA1gTNY9zgOAOp_I75OgvdRrTY_y_CTSWOOiQ4_qsFeIouAZoZoAMIscEhQ45bPeQRgPHbjGG4Q"
-    irc_channel: "https://publiclab.org/chat"
-    leaders: []
-    mailing_list: "https://publiclab.org/lists"
-    name: "Public Lab"
-    precis: "Open hardware and software to help communities measure and analyze pollution"
-    preferred_contact_method: null
-    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
-    program_year: 2019
-    programming_languages: 
-      - "ruby on rails"
-      - "ruby"
-      - "javascript"
-      - "node.js"
-    slug: "public-lab"
-    stack_exchange: null
-    status: 2
-    tags: 
-      - "science and medicine"
-      - "science"
-      - "environment"
-      - "collaboration"
-      - "community"
-    twitter_url: "https://twitter.com/publiclab"
-    website_url: "https://publiclab.org"
-    wikidata_url: "//www.wikidata.org/wiki/Q43895494"
-    wikipedia_urls: 
-      en: "https://en.wikipedia.org/wiki/Public_Lab"
-    winners: {}
-  - 
-    accepted_org_tos: true
     blog_url: null
     chat: 
       image: "images/logos/slack.png"
       platform: "SLACK"
       url: "https://circuitverse-team.slack.com/join/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE"
-    completed_task_instance_count: 31
+    completed_task_instance_count: 36
     contact_email: "support@circuitverse.org"
     description: "CircuitVerse is an easy to use digital logic circuit simulator which aims at providing a platform to create, share and learn digital circuits. It can run on almost any device without the need for installing any software. The platform has been designed for use by students, professionals and hobbyists alike. The vision is to develop a community around the platform which will aid students to self-learn digital logic design. Apart from the simulator, users can create, learn, collaborate and share their work. CircuitVerse is currently used by several universities worldwide since it provides features for teachers to create groups and host assignments on the platform."
     dev_mailing_list: null
@@ -1771,7 +1895,11 @@
     id: 5643278318305280
     image_url: "//lh3.googleusercontent.com/K-3syK-Xoegf9QDP05IG8hu3CbOSoiW04_enCysw90__UvtoTnybcsHdVe6dobCFFUIbK4hfSokgdy6tN3pYhwio"
     irc_channel: "https://circuitverse-team.slack.com/join/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE"
-    leaders: []
+    leaders: 
+      - 
+        display_name: "Jro"
+        github_updated: 1575790717200
+        program_year: 2019
     mailing_list: "https://circuitverse.us20.list-manage.com/subscribe?u=89207abda49deef3ba56f1411&id=29473194d6"
     name: "CircuitVerse.org"
     precis: "Have fun exploring logic circuits right from your browser!"
@@ -1805,7 +1933,7 @@
       image: "images/logos/zulip.png"
       platform: "ZULIP"
       url: "https://ns-3.zulipchat.com/"
-    completed_task_instance_count: 26
+    completed_task_instance_count: 33
     contact_email: "tahiliani@nitk.edu.in"
     description: "ns-3 is a discrete-event, packet-level network simulator with an emphasis on networking research and education. Users of ns-3 can construct simulations of computer networks using models of traffic generators, protocols such as TCP/IP, and devices and channels such as Wi-Fi and LTE, and analyze/visualize the results. Simulation plays a vital role in the research and education process, because of the ability for simulations to obtain reproducible results (particularly for wireless protocol design), scale to large networks, and study systems that have not yet been implemented. A particular emphasis in ns-3 is the high degree of realism in the models and integration of the tool with VM environments and testbeds. Very large scale simulations are possible; simulations of millions of nodes have been published. ns-3 has been in development since 2005 and has been making regular releases since June 2008 (our last release was ns-3.30.1 in September 2019). The tool is in wide use; we have a users mailing list (Google Groups forum) of over 9000 members, roughly 700 posts per month. Our developers list has over 1500 subscribers, and the code base credits 220 authors, supported by roughly ten active maintainers. ns-3 is operated as an open source project, originally funded with financial backing from NSF grants and from the French government (and via help from GSoC, GCI and ESA SOCIS), but with most current contributions coming from interested researchers and students worldwide."
     dev_mailing_list: null
@@ -1819,7 +1947,15 @@
     leaders: 
       - 
         display_name: "howie"
-        github_updated: 1575704355883
+        github_updated: 1575790717200
+        program_year: 2019
+      - 
+        display_name: "Kr0n0s"
+        github_updated: 1575790717200
+        program_year: 2019
+      - 
+        display_name: "ra1nst0rm3d"
+        github_updated: 1575790717200
         program_year: 2019
     mailing_list: "https://mailman.isi.edu/mailman/listinfo/ns-developers"
     name: "The ns-3 Network Simulator Project"
@@ -1850,7 +1986,7 @@
       image: "images/logos/slack.png"
       platform: "SLACK"
       url: "https://www.drupal.org/slack"
-    completed_task_instance_count: 25
+    completed_task_instance_count: 32
     contact_email: "lechleider.matthew@gmail.com"
     description: "Drupal has great standard features, like easy content authoring, reliable performance, and excellent security. But what sets it apart is its flexibility; modularity is one of its core principles. Its tools help you build the versatile, structured content that dynamic web experiences need.\n\nIt's also a great choice for creating integrated digital frameworks. You can extend it with any one, or many, of thousands of add-ons. Modules expand Drupal's functionality. Themes let you customize your content's presentation. Distributions are packaged Drupal bundles you can use as starter-kits. Mix and match these components to enhance Drupal's core abilities. Or, integrate Drupal with external services and other applications in your infrastructure. No other content management software is this powerful and scalable.\n\nThe Drupal community is one of the largest open source communities in the world. We're more than 1,000,000 passionate developers, designers, trainers, strategists, coordinators, editors, and sponsors working together. We build Drupal, provide support, create documentation, share networking opportunities, and more. Our shared commitment to the open source spirit pushes the Drupal project forward. New members are always welcome."
     dev_mailing_list: null
@@ -1955,53 +2091,10 @@
     accepted_org_tos: true
     blog_url: null
     chat: 
-      image: "images/chat.png"
-      platform: "OTHER"
-      url: "https://gci.copyleftgames.org/"
-    completed_task_instance_count: 21
-    contact_email: null
-    description: "Copyleft Games Group is dedicated to helping developers create games without restrictions of proprietary licenses or royalty fees. Our goals for Google Code-In 2019 include:\n* Reworking our engine for better cloud support\n* Integrating [VR support](https://en.wikipedia.org/wiki/OpenXR)\n* Classroom \"Learn how to code\" material for ages 8-12\n* Migrating our collaboration tools to [MIX](https://xmpp.org/extensions/xep-0369.html)\n\nWe focus heavily on community participation and consider this a major factor in selecting our finalists and grand prize winners. Several of our past Google Code-in grand prize winners have demonstrated strong communication skills but were new to software development."
-    dev_mailing_list: null
-    github: null
-    gitlab: null
-    guide_to_working: "Use our web-based chat at https://gci.copyleftgames.org/ for help from mentors and other students. Community involvement, including helping other students, is a major factor we consider when choosing finalists and grand prize winners."
-    guide_to_working_url: ""
-    id: 5138293390311424
-    image_url: "//lh3.googleusercontent.com/9Y5I0fF0CdSoUXkF_GSByTe_Jtv9VBHsEqiRNALzlTgKEgctxDOtuFQD4LcK1vV4KuMoWL82IQXhve5RJ2O6XDY"
-    irc_channel: "https://gci.copyleftgames.org"
-    leaders: []
-    mailing_list: null
-    name: "Copyleft Games"
-    precis: "Tools and engines for making games"
-    preferred_contact_method: null
-    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
-    program_year: 2019
-    programming_languages: 
-      - "python"
-      - "rust"
-      - "lua"
-      - "xml"
-      - "opengl"
-    slug: "copyleft-games"
-    stack_exchange: null
-    status: 2
-    tags: 
-      - "games"
-      - "graphics"
-      - "network"
-    twitter_url: null
-    website_url: "https://gci.copyleftgames.org/"
-    wikidata_url: null
-    wikipedia_urls: null
-    winners: {}
-  - 
-    accepted_org_tos: true
-    blog_url: null
-    chat: 
       image: "images/logos/irc.png"
       platform: "IRC"
       url: "irc://irc.freenode.net/#apertium"
-    completed_task_instance_count: 19
+    completed_task_instance_count: 24
     contact_email: "apertium-contact@lists.sourceforge.net"
     description: "Apertium is a shallow-transfer machine translation system, which uses finite state transducers for all of its lexical transformations, and hidden Markov models and/or constraint grammars for part-of-speech tagging or word category disambiguation.\n\nOther machine translation systems available at present are mostly commercial and use proprietary technologies, which makes them very hard to adapt to new usages; furthermore, they use different technologies for different language pairs, which makes it very difficult, for instance, to integrate them into a single multilingual content management system. Finally, most of them are not available for most of the languages in the world, as they rely heavily on resources that are not available for any but a few languages.\n\nApertium uses a language-independent specification to allow for the ease of contributing to Apertium, more efficient development, and enhancing the project's overall growth.\n\nAt present, Apertium has released more than 40 stable language pairs, delivering fast translation with reasonably intelligible or excellent results, depending on the language pair. Being an open-source project, Apertium provides tools for potential developers to build their own language pair and contribute to the project."
     dev_mailing_list: null
@@ -2092,10 +2185,53 @@
     accepted_org_tos: true
     blog_url: null
     chat: 
+      image: "images/chat.png"
+      platform: "OTHER"
+      url: "https://gci.copyleftgames.org/"
+    completed_task_instance_count: 21
+    contact_email: null
+    description: "Copyleft Games Group is dedicated to helping developers create games without restrictions of proprietary licenses or royalty fees. Our goals for Google Code-In 2019 include:\n* Reworking our engine for better cloud support\n* Integrating [VR support](https://en.wikipedia.org/wiki/OpenXR)\n* Classroom \"Learn how to code\" material for ages 8-12\n* Migrating our collaboration tools to [MIX](https://xmpp.org/extensions/xep-0369.html)\n\nWe focus heavily on community participation and consider this a major factor in selecting our finalists and grand prize winners. Several of our past Google Code-in grand prize winners have demonstrated strong communication skills but were new to software development."
+    dev_mailing_list: null
+    github: null
+    gitlab: null
+    guide_to_working: "Use our web-based chat at https://gci.copyleftgames.org/ for help from mentors and other students. Community involvement, including helping other students, is a major factor we consider when choosing finalists and grand prize winners."
+    guide_to_working_url: ""
+    id: 5138293390311424
+    image_url: "//lh3.googleusercontent.com/9Y5I0fF0CdSoUXkF_GSByTe_Jtv9VBHsEqiRNALzlTgKEgctxDOtuFQD4LcK1vV4KuMoWL82IQXhve5RJ2O6XDY"
+    irc_channel: "https://gci.copyleftgames.org"
+    leaders: []
+    mailing_list: null
+    name: "Copyleft Games"
+    precis: "Tools and engines for making games"
+    preferred_contact_method: null
+    primary_open_source_license: "GNU General Public License version 3.0 (GPL-3.0)"
+    program_year: 2019
+    programming_languages: 
+      - "python"
+      - "rust"
+      - "lua"
+      - "xml"
+      - "opengl"
+    slug: "copyleft-games"
+    stack_exchange: null
+    status: 2
+    tags: 
+      - "games"
+      - "graphics"
+      - "network"
+    twitter_url: null
+    website_url: "https://gci.copyleftgames.org/"
+    wikidata_url: null
+    wikipedia_urls: null
+    winners: {}
+  - 
+    accepted_org_tos: true
+    blog_url: null
+    chat: 
       image: "images/logos/gitter.png"
       platform: "GITTER"
       url: "https://gitter.im/Cloud-CV/"
-    completed_task_instance_count: 5
+    completed_task_instance_count: 10
     contact_email: "team@cloudcv.org"
     description: "**CloudCV** is a young open-source cloud platform started in 2013 by students and faculty from Machine Learning and Perception Lab at Virginia Tech (now at Georgia Tech) with the aim to make AI research more reproducible. At CloudCV, we are building tools that enable researchers to build, compare and share start-of-the-algorithms.\n\nOne of our major projects is EvalAI which is an evaluation server that hosts AI challenges like Visual Question Answering, Image Captioning. In recent years, it has become increasingly difficult to compare an algorithm solving a given task with other existing approaches. By providing a central leaderboard and submission interface, we make it easier for researchers to reproduce the results mentioned in the paper and perform reliable & accurate quantitative analysis."
     dev_mailing_list: null
