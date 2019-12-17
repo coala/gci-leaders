@@ -11,6 +11,292 @@
       <hr />
     </div>
     <div>
+      <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;speeding-up-mdapi&#x2F;><h1>Speeding up mdapi</h1></a>
+      <h5>2019-12-17T06:59:00.000Z</h5>
+      <i class="author">Clément Verna</i>
+      <div class="content">
+        <img width="150" height="150" src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/03/fedora_infra-150x150.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" />
+<p>mdapi is a service that provides a HTTP API to the different RPM repository metadata. To learn more about this service, its <a href="https://madpi.fedoraproject.org">home page</a> contains a how-to-use guide with some example.</p>
+
+
+
+<span id="more-8404"></span>
+
+
+
+<h3>What is the problem ?</h3>
+
+
+
+<p>Since mdapi runs on the Fedora infrastructure <a href="https://os.fedoraproject.org">OpenShift instance </a>some of its performances issues were highlighted. The liveliness and readiness probes used by OpenShift to monitor the service state started to time out when mdapi is under load (see the <a href="https://pagure.io/fedora-infrastructure/issue/8264">ticket</a>). Which in turns triggered the service restart, causing quite a few requests to fail.</p>
+
+
+
+<p>The <a href="https://apps.fedoraproject.org/packages/">packages application</a> indexing is responsible for the heavy load. The indexing is the process that populates the full text search database of the application. This database powers the search feature of the application. The Indexing performs multiple requests to mdapi for 80 000+ packages in order to retrieve information such as the description or the upstream url of a package.</p>
+
+
+
+<h3>How mdapi works</h3>
+
+
+
+<p>mdapi is composed of 2 main components. An hourly <a href="https://infrastructure.fedoraproject.org/cgit/ansible.git/tree/roles/openshift-apps/mdapi/files/cron.yml">cron job</a> which downloads the latest RPM repository metadata databases (see an <a href="https://dl.fedoraproject.org/pub/fedora/linux/releases/31/Everything/x86_64/os/repodata/">example</a>) and a web service that provides HTTP API to these metadata.</p>
+
+
+
+<p>The web service is using the <a href="https://aiohttp.readthedocs.io/en/stable/">aiohttp</a> web framework in order to leverage the Python asyncio performances (you can read <a href="http://blog.pingoured.fr/index.php?post/2015/11/19/Introducing-mdapi">the original blog</a> from pingou about mdapi). So why do we have many requests failure ?</p>
+
+
+
+<h3>The bottleneck</h3>
+
+
+
+<p>When the service was written (4 years ago), asyncio in Python was fairly new and the ecosystem was quite poor. The main bottleneck with the service is the usage of a synchronous API (using sqlalchemy) to access the sqlite databases. </p>
+
+
+
+<p>This means that every requests trying to access the metadata in the database was blocking the other requests. These blocking call to sqlite are making the server deal with each request one after the other in a synchronous manner.</p>
+
+
+
+<h3>The solution</h3>
+
+
+
+<p>The solution was to replace <a href="https://www.sqlalchemy.org/">sqlalchemy</a> by the <a href="https://github.com/jreese/aiosqlite">aiosqlite</a> library which provides a asynchronous API to access the databases. If you are interested in the implementation details you can consult the <a href="https://pagure.io/mdapi/pull-request/91">Pull-Request</a>.</p>
+
+
+
+<h4>How to test the performance</h4>
+
+
+
+<p>To test the performance gain, I have use the Apache ab tool which is provided by the httpd-tools package on Fedora. This tools allow to perform concurrent requests which is handy to simulate loads.</p>
+
+
+
+<p>You can see below the 2 runs of the tool against the master branch (with sqlalchemy) and the feature branch (using aiosqlite). The performance improved from serving 28.5 requests per seconds to 97 requests per seconds for 100 concurrent requests.</p>
+
+
+
+<pre class="wp-block-preformatted">[root@localhost /]# ab -c 100 -n 1000 http://127.0.0.1:8080/f31/pkg/guake
+ This is ApacheBench, Version 2.3 &lt;$Revision: 1843412 $&gt;
+ Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+ Licensed to The Apache Software Foundation, http://www.apache.org/
+ Benchmarking 127.0.0.1 (be patient)
+ Completed 100 requests
+ Completed 200 requests
+ Completed 300 requests
+ Completed 400 requests
+ Completed 500 requests
+ Completed 600 requests
+ Completed 700 requests
+ Completed 800 requests
+ Completed 900 requests
+ Completed 1000 requests
+ Finished 1000 requests
+ Server Software:        Python/3.7
+ Server Hostname:        127.0.0.1
+ Server Port:            8080
+ Document Path:          /f31/pkg/guake
+ Document Length:        2676 bytes
+ Concurrency Level:      100
+ Time taken for tests:   35.073 seconds
+ Complete requests:      1000
+ Failed requests:        0
+ Total transferred:      2820000 bytes
+ HTML transferred:       2676000 bytes
+ Requests per second:    28.51 <a href="mean">#/sec</a>
+ Time per request:       3507.265 <a href="mean">ms</a>
+ Time per request:       35.073 [ms] (mean, across all concurrent requests)
+ Transfer rate:          78.52 [Kbytes/sec] received
+ Connection Times (ms)
+               min  mean[+/-sd] median   max
+ Connect:        0    1   0.8      1       4
+ Processing:    79 3420 324.7   3494    3605
+ Waiting:       75 3325 525.7   3486    3601
+ Total:         79 3421 324.7   3495    3605
+ Percentage of the requests served within a certain time (ms)
+   50%   3495
+   66%   3545
+   75%   3555
+   80%   3565
+   90%   3581
+   95%   3581
+   98%   3605
+   99%   3605
+  100%   3605 (longest request)</pre>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<pre class="wp-block-preformatted">[root@localhost /]# ab -c 100 -n 1000 http://127.0.0.1:8080/f31/pkg/guake
+ This is ApacheBench, Version 2.3 &lt;$Revision: 1843412 $&gt;
+ Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+ Licensed to The Apache Software Foundation, http://www.apache.org/
+ Benchmarking 127.0.0.1 (be patient)
+ Completed 100 requests
+ Completed 200 requests
+ Completed 300 requests
+ Completed 400 requests
+ Completed 500 requests
+ Completed 600 requests
+ Completed 700 requests
+ Completed 800 requests
+ Completed 900 requests
+ Completed 1000 requests
+ Finished 1000 requests
+ Server Software:        Python/3.7
+ Server Hostname:        127.0.0.1
+ Server Port:            8080
+ Document Path:          /f31/pkg/guake
+ Document Length:        2676 bytes
+ Concurrency Level:      100
+ Time taken for tests:   10.305 seconds
+ Complete requests:      1000
+ Failed requests:        0
+ Total transferred:      2835000 bytes
+ HTML transferred:       2676000 bytes
+ Requests per second:    97.04 <a href="mean">#/sec</a>
+ Time per request:       1030.539 <a href="mean">ms</a>
+ Time per request:       10.305 [ms] (mean, across all concurrent requests)
+ Transfer rate:          268.65 [Kbytes/sec] received
+ Connection Times (ms)
+               min  mean[+/-sd] median   max
+ Connect:        0    0   0.9      0       4
+ Processing:    58  989 310.0    984    1906
+ Waiting:       53  981 308.8    979    1905
+ Total:         58  990 310.1    984    1910
+ Percentage of the requests served within a certain time (ms)
+   50%    984
+   66%   1084
+   75%   1161
+   80%   1211
+   90%   1318
+   95%   1448
+   98%   1769
+   99%   1907
+  100%   1910 (longest request)</pre>
+<p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/speeding-up-mdapi/">Speeding up mdapi</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
+
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;sagarpreet&#x2F;12-17-2019&#x2F;introducing-new-inline-lel-power-tags><h1>Introducing new inline LEL power tags (#21773)</h1></a>
+      <h5>2019-12-17T05:20:13.000Z</h5>
+      <i class="author">@sagarpreet_07</i>
+      <div class="content">
+        <img src='https://publiclab.org/system/images/photos/000/037/125/medium/Screenshot_2019-11-09_at_3.06.06_PM.png' alt=''> <br />
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;geoderek&#x2F;12-16-2019&#x2F;mapknitter-map-of-p-cola-beach-1><h1>MapKnitter map of P-Cola Beach 1 (#21770)</h1></a>
+      <h5>2019-12-16T21:08:59.000Z</h5>
+      <i class="author">geoderek</i>
+      <div class="content">
+        <img src='https://publiclab.org/system/images/photos/000/037/111/medium/IMG_20191012_103218.jpg' alt=''> <br />
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;fedora-program-update-2019-50&#x2F;><h1>Fedora program update: 2019-50</h1></a>
+      <h5>2019-12-16T16:09:02.000Z</h5>
+      <i class="author">Ben Cotton</i>
+      <div class="content">
+        <img width="150" height="150" src="https://communityblog.fedoraproject.org/wp-content/uploads/2018/09/fpgm-report-150x150.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="Fedora Program Manager weekly report on Fedora Project development and progress" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" />
+<p>Here’s your report of what has happened in Fedora this week. The <a href="https://communityblog.fedoraproject.org/fedora-31-elections-results/">elections</a> have ended. Congratulations to the winning candidates.</p>
+
+
+
+<ul><li><a href="#announcements">Announcements</a></li><li><a href="#help-wanted">Help wanted</a></li><li><a href="#upcoming-meetings">Upcoming meetings</a></li><li><a href="#releases">Releases</a></li><li><a href="#cpe-update">CPE update</a></li></ul>
+
+
+
+<span id="more-8486"></span>
+
+
+
+<h2 id="announcements">Announcements</h2>
+
+
+
+<ul><li><a href="https://lists.fedoraproject.org/archives/list/devel-announce@lists.fedoraproject.org/thread/44RI765ATDKPERZLSEW2T2BGRYW6OSOI/">Orphaned packages</a> seeking maintainers</li><li>Fedora Atomic Host is <a href="https://www.projectatomic.io/blog/2019/11/fedora-atomic-host-nearing-eol/">nearing end of life</a>.</li><li><a href="https://lists.fedoraproject.org/archives/list/devel-announce@lists.fedoraproject.org/thread/V7TGJH4XV6EZ7NO62MFWLGH7EQCU2CD2/">Long term FTBFS packages</a> will be retired in February.</li></ul>
+
+
+
+<h3 id="cfps">CfPs</h3>
+
+
+
+<figure class="wp-block-table"><table class=""><thead><tr><th>Conference</th><th>Location</th><th>Date</th><th>CfP</th></tr></thead><tbody><tr><td><a href="https://2020.indycloudconf.com/">Indy Cloud Conf</a></td><td>Indianapolis, IN, US</td><td>26–27 Mar 2020</td><td><a href="https://www.papercall.io/indycloudconf2020">closes 21 Dec</a></td></tr><tr><td><a href="https://conferences.oreilly.com/oscon/oscon-or/">OSCON</a></td><td>Portland, OR, US</td><td>13–16 Jul 2020</td><td><a href="https://conferences.oreilly.com/oscon/oscon-or/public/cfp/781">closes 14 Jan</a></td></tr></tbody></table></figure>
+
+
+
+<h2 id="help-wanted">Help wanted</h2>
+
+
+
+<h2 id="upcoming-meetings">Upcoming meetings</h2>
+
+
+
+<ul><li>FPgM office hours —<a href="https://apps.fedoraproject.org/calendar/meeting/9527/"> 1400 UTC Wednesday</a> in #fedora-meeting-1</li><li>Prioritized bugs meeting — <a href="https://apps.fedoraproject.org/calendar/meeting/9564/">1600 UTC Wednesday</a> in #fedora-meeting-1 </li></ul>
+
+
+
+<h2 id="releases">Releases</h2>
+
+
+
+<h3 id="fedora-32">Fedora 32</h3>
+
+
+
+<h4 id="schedule">Schedule</h4>
+
+
+
+<ul><li><strong>2019-12-25</strong> Submission deadline for Changes requiring infrastructure changes</li><li><strong>2019-12-31</strong> Submission deadline for Changes requiring a mass rebuild</li><li><strong>2019-12-31</strong> Submission deadline for System-Wide Changes</li><li><strong>2020-01-21</strong> Submission deadline for Self-Contained Changes</li><li><strong>2020-01-22</strong> Mass rebuild begins</li></ul>
+
+
+
+<h4 id="changes">Changes</h4>
+
+
+
+<figure class="wp-block-table"><table class=""><thead><tr><th>Proposal</th><th>Type</th><th>Status</th></tr></thead><tbody><tr><td><a href="https://fedoraproject.org/wiki/Changes/GLIBC231">The GNU C Library version 2.31</a></td><td>System-Wide</td><td><a href="https://pagure.io/fesco/issue/2289#comment-615911">Accepted</a></td></tr><tr><td><a href="https://fedoraproject.org/wiki/Changes/DisallowEmptyPasswordsByDefault">Disallow Empty Password By Default</a></td><td>System-Wide</td><td><a href="https://pagure.io/fesco/issue/2291#comment-615815">Rejected</a></td></tr><tr><td><a href="https://fedoraproject.org/wiki/Changes/Move_apt_package_from_RPM_to_DPKG_backend">Rebase apt package from apt-rpm to Debian’s apt</a></td><td>Self-Contained</td><td><a href="https://pagure.io/fesco/issue/2292#comment-615909">Accepted</a></td></tr><tr><td><a href="https://fedoraproject.org/wiki/Changes/Drop_Optical_Media_Criterion">Drop Optical Media Release Criterion</a></td><td>System-Wide</td><td>Announced</td></tr><tr><td><a href="https://fedoraproject.org/wiki/Changes/LLVM-10">LLVM 10</a></td><td>System-Wide</td><td>Announced</td></tr><tr><td><a href="https://fedoraproject.org/wiki/Changes/Stop-Shipping-Individual-Component-Libraries-In-clang-lib-Package">Stop shipping individual component libraries in clang-libs package</a></td><td>System-Wide</td><td>Announced</td></tr></tbody></table></figure>
+
+
+
+<p><em>Changes approved, rejected, or withdrawn will be removed from this table the next week. See the <a href="https://fedoraproject.org/wiki/Releases/32/ChangeSet">ChangeSet page</a> for a full list of approved changes.</em></p>
+
+
+
+<h3 id="fedora-33">Fedora 33</h3>
+
+
+
+<h4 id="changes-1">Changes</h4>
+
+
+
+<figure class="wp-block-table"><table class=""><thead><tr><th>Proposal</th><th>Type</th><th>Status</th></tr></thead><tbody><tr><td><a href="https://fedoraproject.org/wiki/Changes/Python3.9">Python 3.9</a></td><td>System-Wide</td><td><a href="https://pagure.io/fesco/issue/2299">Ready for FESCo</a></td></tr></tbody></table></figure>
+
+
+
+<p><em>Changes approved, rejected, or withdrawn will be removed from this table the next week. See the <a href="https://fedoraproject.org/wiki/Releases/32/ChangeSet">ChangeSet page</a> for a full list of approved changes.</em></p>
+<p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/fedora-program-update-2019-50/">Fedora program update: 2019-50</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
+
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;stevie&#x2F;12-16-2019&#x2F;are-there-simple-tests-for-nitrates-in-well-water><h1>Are there simple tests for nitrates in well water? (#21769)</h1></a>
+      <h5>2019-12-16T14:59:58.000Z</h5>
+      <i class="author">stevie</i>
+      <div class="content">
+        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
+      </div>
+      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;Maranatha&#x2F;12-16-2019&#x2F;how-do-i-start-with-reafforestation-project><h1>How do I start with reafforestation project? (#21762)</h1></a>
+      <h5>2019-12-16T05:41:12.000Z</h5>
+      <i class="author">Maranatha</i>
+      <div class="content">
+        <img src='https://publiclab.org/system/images/photos/000/023/444/original/Screenshot_20180204-101546_2.png' alt='PublicLab'> <br />
+      </div>
       <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;radimir_cacic09&#x2F;12-14-2019&#x2F;just-some-tests><h1>Just some tests :) (#21754)</h1></a>
       <h5>2019-12-14T11:12:29.000Z</h5>
       <i class="author">radimir_cacic09</i>
@@ -526,18 +812,6 @@ never contributed before, this is a perfect way to get started.</p>
 <p>The post <a rel="nofollow" href="https://mifos.org/blog/fintech-advisor-ali-hussein-kassim/">Mifos Welcomes Fintech Advisor, Ali Hussein Kassim</a> appeared first on <a rel="nofollow" href="https://mifos.org">Mifos Initiative</a>.</p>
 
       </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;srgonsalves1&#x2F;12-05-2019&#x2F;rhode-island-community-garden-network><h1>Rhode Island Community Garden Network (#21675)</h1></a>
-      <h5>2019-12-05T15:00:01.000Z</h5>
-      <i class="author">srgonsalves1</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/883/medium/image_%282%29.png' alt=''> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;srgonsalves1&#x2F;12-05-2019&#x2F;recipes-for-dyes-chemicals-metals-and-acids-at-cranston-print-works><h1>Recipes for Dyes: Chemicals, Metals, and Acids at Cranston Print Works (#21673)</h1></a>
-      <h5>2019-12-05T14:36:30.000Z</h5>
-      <i class="author">srgonsalves1</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/876/medium/dye1.jpg' alt=''> <br />
-      </div>
       <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;heroes-of-fedora-hof-f31-final&#x2F;><h1>Heroes of Fedora (HoF) – F31 Final</h1></a>
       <h5>2019-12-05T06:50:00.000Z</h5>
       <i class="author">coremodule</i>
@@ -599,18 +873,6 @@ never contributed before, this is a perfect way to get started.</p>
 <p>   <sup id="reports">1</sup> The total number of <i>new</i> reports (including   &#8220;excess reports&#8221;). Reopened reports or reports with a changed version are not   included, because it was not technically easy to retrieve those. This is one   of the reasons why you shouldn&#8217;t take the numbers too seriously, but just as   interesting and fun data.<br>   <sup id="excess">2</sup> Excess reports are those that were closed as   NOTABUG, WONTFIX, WORKSFORME, CANTFIX or INSUFFICIENT_DATA.   Excess reports are not necessarily a bad thing, but they make for interesting   statistics. Close manual inspection is required to separate valuable excess   reports from those which are less valuable.<br>   <sup id="proposed">3</sup> This only includes reports that were created by   that particular user and accepted as blockers afterwards. The user might have   proposed other people&#8217;s reports as blockers, but this is not reflected in   this number.   </p>
 <p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/heroes-of-fedora-hof-f31-final/">Heroes of Fedora (HoF) &#8211; F31 Final</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
 
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;stevie&#x2F;12-04-2019&#x2F;what-are-the-health-impacts-of-the-aluf-plastics-plant-from-air-pollution><h1>What are the health impacts of the Aluf Plastics Plant from air pollution? (#21664)</h1></a>
-      <h5>2019-12-04T15:34:38.000Z</h5>
-      <i class="author">stevie</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/859/medium/c10a146a466abaac6dcb5efff47f7a8.jpg' alt=''> <br />
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;publiclab.org&#x2F;notes&#x2F;stevie&#x2F;12-04-2019&#x2F;how-do-we-keep-the-pressure-and-momentum-high-after-a-recent-court-ruling-win><h1>How do we keep the pressure and momentum high after a recent court ruling win? (#21663)</h1></a>
-      <h5>2019-12-04T15:27:10.000Z</h5>
-      <i class="author">stevie</i>
-      <div class="content">
-        <img src='https://publiclab.org/system/images/photos/000/036/858/medium/image.jpg' alt=''> <br />
       </div>
       <a class="title" href=https:&#x2F;&#x2F;mifos.org&#x2F;blog&#x2F;mifos-financial-innovation-award&#x2F;><h1>Mifos selected as Runner-Up for Best Financial Inclusion Initiative at 2019 Financial Innovation Awards</h1></a>
       <h5>2019-12-04T00:13:48.000Z</h5>
@@ -851,156 +1113,6 @@ Wikimedia Foundation</em></p>
 
 <p>   <sup id="reports">1</sup> The total number of <i>new</i> reports (including   &#8220;excess reports&#8221;). Reopened reports or reports with a changed version are not   included, because it was not technically easy to retrieve those. This is one   of the reasons why you shouldn&#8217;t take the numbers too seriously, but just as   interesting and fun data.<br>   <sup id="excess">2</sup> Excess reports are those that were closed as   NOTABUG, WONTFIX, WORKSFORME, CANTFIX or INSUFFICIENT_DATA.   Excess reports are not necessarily a bad thing, but they make for interesting   statistics. Close manual inspection is required to separate valuable excess   reports from those which are less valuable.<br>   <sup id="proposed">3</sup> This only includes reports that were created by   that particular user and accepted as blockers afterwards. The user might have   proposed other people&#8217;s reports as blockers, but this is not reflected in   this number.   </p>
 <p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/heroes-of-fedora-hof-f31-beta/">Heroes of Fedora (HoF) &#8211; F31 Beta</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
-
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;accidental-eol-bug-closures&#x2F;><h1>Accidental EOL bug closures</h1></a>
-      <h5>2019-11-27T19:24:26.000Z</h5>
-      <i class="author">Ben Cotton</i>
-      <div class="content">
-        <img width="150" height="150" src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/11/andre-mouton-CMk58lFxK4E-unsplash-150x150.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" />
-<p>As you&#8217;re probably aware, Fedora 29 reached End-of-Life (EOL) status yesterday. The Fedora Program Manager (that&#8217;s me!) is responsible for closing any bugs that are still open against that version. Typically, several thousand bugs remain open, so there is a script to do this. This morning, I accidentally closed bugs as EOL that should not have been closed. In the interests of community transparency, I want to share what happened.</p>
-
-
-
-<span id="more-8432"></span>
-
-
-
-<h2>How does the script work?</h2>
-
-
-
-<p>The <a href="https://pagure.io/fedora-project-schedule/blob/master/f/scripts/closebugs/fedora_close_eol.pl">script</a> is fairly simple: given a comma-separated values (CSV) file with a list of bugs, it iterates over the rows and closes the bugs. So the key input is the CSV file, which is created in the Bugzilla web interface and downloaded for the script to parse.</p>
-
-
-
-<h2>What went wrong?</h2>
-
-
-
-<p>Simply put: I messed up. When I created the CSV file, I neglected to specify the version in the Bugzilla search. As a result, I had a CSV file with 20,000 bugs. I started the script and it processed approximately 150 bugs before the community noticed that bugs were being closed inappropriately.</p>
-
-
-
-<p>I immediately stopped the script and manually audited the bugs that had been closed. Almost all of them should not have been closed. Some community members reopened bugs themselves and I reopened the rest.</p>
-
-
-
-<p>The bug closing script prints a count of bugs before it begins working. I noticed that it said &#8220;20,000&#8221; and I thought to myself &#8220;that seems like a big number&#8221;, but I did not think to check previous releases to see how close it was.</p>
-
-
-
-<h2>How will I prevent this in the future?</h2>
-
-
-
-<p>For the Fedora 28 EOL, I <a href="https://pagure.io/fedora-project-schedule/c/49e2e8767c7c0ab14ff5807391903941efd8b982?branch=master">modified the scripts</a> to take the version and date as arguments. Previously it was hard-coded in a heredoc. Since the script already requires a version, it was easy to <a href="https://pagure.io/fedora-project-schedule/c/a664b8f8a69027a308f0844e09b77c9241b147cb?branch=master">add a check</a> to ensure the CSV file does not include bugs from the wrong version. While it&#8217;s entirely possible for me to find new ways to mis-close bugs, today&#8217;s error should not be repeated.</p>
-
-
-
-<p>I apologize to the Fedora community for the confusion and extra work this created. At publication time, the script is running with the correct input.</p>
-<p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/accidental-eol-bug-closures/">Accidental EOL bug closures</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
-
-      </div>
-      <a class="title" href=https:&#x2F;&#x2F;communityblog.fedoraproject.org&#x2F;latinoware2019&#x2F;><h1>Latinoware 2019</h1></a>
-      <h5>2019-11-27T10:00:00.000Z</h5>
-      <i class="author">wolnei</i>
-      <div class="content">
-        
-<figure class="wp-block-image"><img src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/opening-1024x682.jpg" alt="" class="wp-image-8451" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/opening-1024x682.jpg 1024w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/opening-300x200.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/opening-768x512.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/opening-766x510.jpg 766w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/opening.jpg 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>opening ceremony</figcaption></figure>
-
-
-
-<p>In its 16th edition, Latinoware started on Wednesday (27) and continued until Friday (29), with a program of over 300 activities.  The Latin American Congress of Free Software and Open Technologies at the Rafain Palace Hotel &amp; Convention, in Foz do Iguaçu, attracted over 2700 of participants, including children, students, professionals and even older people, interested in the different topics addressed.</p>
-
-
-
-<span id="more-8435"></span>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/map.jpg" alt="" class="wp-image-8452" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/map.jpg 870w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/map-300x202.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/map-768x516.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/map-766x515.jpg 766w" sizes="(max-width: 870px) 100vw, 870px" /><figcaption>event map</figcaption></figure>
-
-
-
-<h2>Booth Setup</h2>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/booth-1024x576.jpg" alt="" class="wp-image-8453" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/booth-1024x576.jpg 1024w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/booth-300x169.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/booth-768x432.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/booth-766x431.jpg 766w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/booth.jpg 1440w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Fedora booth</figcaption></figure>
-
-
-
-<p>I arrived early in the morning&nbsp; to organize our booth at exposition space and distributed eight type of stickers, pens, cords and buttons.  All the ambassadors present in our stand, explain about Fedora to participants and help them install in their computers.</p>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/ambassador-1024x576.jpg" alt="" class="wp-image-8459" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/ambassador-1024x576.jpg 1024w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/ambassador-300x169.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/ambassador-768x432.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/ambassador-1536x864.jpg 1536w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/ambassador-2048x1152.jpg 2048w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/ambassador-766x431.jpg 766w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Ambassador explain</figcaption></figure>
-
-
-
-<h2>Fedora Robotics</h2>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/robotic-1024x576.jpg" alt="" class="wp-image-8458" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/robotic-1024x576.jpg 1024w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/robotic-300x169.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/robotic-768x432.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/robotic-1536x864.jpg 1536w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/robotic-2048x1152.jpg 2048w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/robotic-766x431.jpg 766w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Battle bots</figcaption></figure>
-
-
-
-<p>Many children were playing with educational robotics and using Fedora Robotics to upload their code to their ARM board at Free Robotic room.</p>
-
-
-
-<h2>Talks</h2>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/fedoraproject-1024x576.jpg" alt="" class="wp-image-8457" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/fedoraproject-1024x576.jpg 1024w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/fedoraproject-300x169.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/fedoraproject-768x432.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/fedoraproject-1536x864.jpg 1536w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/fedoraproject-2048x1152.jpg 2048w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/fedoraproject-766x431.jpg 766w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Fedora Project</figcaption></figure>
-
-
-
-<p>Occurred on Thursday (28) at space Bolivia on 5pm a introduction about Fedora Project with  a presentation of our slogan, structure, organization, sub-projects, who uses it and how to participate.</p>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/fedoraqa.jpg" alt="" class="wp-image-8456" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/fedoraqa.jpg 834w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/fedoraqa-300x225.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/fedoraqa-768x576.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/fedoraqa-766x575.jpg 766w" sizes="(max-width: 834px) 100vw, 834px" /><figcaption>Fedora QA</figcaption></figure>
-
-
-
-<p>Friday (29) at space Uruguay on 4pm a more technical presentation about  Fedora QA take place, it was explained BugZilla, test cases and plans, test days, automated testing, version criteria and processes.</p>
-
-
-
-<h2>Packing up</h2>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/gifts-1024x576.jpg" alt="" class="wp-image-8455" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/gifts-1024x576.jpg 1024w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/gifts-300x169.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/gifts-768x432.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/gifts-766x431.jpg 766w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/gifts.jpg 1440w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>gifts</figcaption></figure>
-
-
-
-<p>Once again on the last day of any event in Brazil, is the free distribution of adhesives, limited to one per person each type as we had stock. At end Fedora Project distributed 100 pens, 1000 adhesives, 200 badge cords to old or new contributors, installed 2 notebooks and answered many questions about why and in what can use Fedora. Badge cord again made a good buzz at event, attracting new people to contribute and will be the working cord of old contributors, so our brand will be visible daily.<br>The main activity occurred at 16h with the official photo capture the event with all participants and 2pm was event final goodbye ceremony.</p>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/official-photo.jpg" alt="" class="wp-image-8454" srcset="https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/official-photo.jpg 1024w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/official-photo-300x200.jpg 300w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/official-photo-768x512.jpg 768w, https://communityblog.fedoraproject.org/wp-content/uploads/2019/12/official-photo-766x511.jpg 766w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>official photo</figcaption></figure>
-
-
-
-<h2>Attending Ambassadors</h2>
-
-
-
-<p><a href="https://fedoraproject.org/wiki/User:Lin">Juan Carlos Lin (Lin)</a></p>
-
-
-
-<p><a href="https://fedoraproject.org/wiki/User:Silviopalmieri">SIlvio Palmieri (SIlviopalmieri)</a></p>
-
-
-
-<p><a href="https://fedoraproject.org/wiki/User:Wolnei">Wolnei Junior (Wolnei)</a></p>
-<p>The post <a rel="nofollow" href="https://communityblog.fedoraproject.org/latinoware2019/">Latinoware 2019</a> appeared first on <a rel="nofollow" href="https://communityblog.fedoraproject.org">Fedora Community Blog</a>.</p>
 
       </div>
       <a class="title" href=https:&#x2F;&#x2F;www.blogger.com&#x2F;feeds&#x2F;3178496836985515242&#x2F;posts&#x2F;default&#x2F;1442427424540819110><h1>Coding interships at the Liquid Galaxy LAB, Nerea</h1></a>
