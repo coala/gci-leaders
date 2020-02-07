@@ -1,4 +1,5 @@
 import init from './app'
+const langs = require('./languages.json')
 
 var browserLocale
 
@@ -26,12 +27,7 @@ function updateTranslation(localex) {
 }
 
 $(window).on('load', function() {
-  var localeOptions = {
-    English: 'en',
-    Español: 'es',
-    Polski: 'pl',
-    'Norwegian Bokmål': 'nb_NO',
-  }
+  var localeOptions = langs
 
   var locList = $('#lang-select')
   $.each(localeOptions, function(key, value) {
